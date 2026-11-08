@@ -1,0 +1,155 @@
+[
+  {
+    "run": "runs/level1_run1.json",
+    "model": "gpt-oss-20b",
+    "seconds": 10.6,
+    "tool_events": 0,
+    "has_final_text": true,
+    "final_chars": 509,
+    "token_usage": "not_recorded"
+  },
+  {
+    "run": "runs/level1_run2.json",
+    "model": "gpt-oss-20b",
+    "seconds": 0.4,
+    "tool_events": 0,
+    "has_final_text": true,
+    "final_chars": 509,
+    "token_usage": "not_recorded"
+  },
+  {
+    "run": "runs/level2_run1.json",
+    "model": "gpt-oss-20b",
+    "seconds": 40.8,
+    "tool_events": 8,
+    "has_final_text": false,
+    "final_chars": 0,
+    "token_usage": "not_recorded"
+  },
+  {
+    "run": "runs/level2_run2.json",
+    "model": "gpt-oss-20b",
+    "seconds": 6.4,
+    "tool_events": 8,
+    "has_final_text": false,
+    "final_chars": 0,
+    "token_usage": "not_recorded"
+  },
+  {
+    "run": "runs/level3_run0_noguard.json",
+    "model": "gpt-oss-20b",
+    "seconds": 127.9,
+    "tool_events": 12,
+    "has_final_text": false,
+    "final_chars": 0,
+    "token_usage": "not_recorded"
+  },
+  {
+    "run": "runs/level3_run2.json",
+    "model": "gpt-oss-20b",
+    "seconds": 68.6,
+    "tool_events": 8,
+    "has_final_text": false,
+    "final_chars": 0,
+    "token_usage": "not_recorded"
+  },
+  {
+    "run": "runs/level3_run3.json",
+    "model": "gpt-oss-20b",
+    "seconds": 103.8,
+    "tool_events": 7,
+    "has_final_text": true,
+    "final_chars": 803,
+    "token_usage": "not_recorded"
+  },
+  {
+    "run": "runs/v1_fetch12000/level1_seed11.json",
+    "model": "gpt-oss-20b",
+    "seconds": 11.5,
+    "tool_events": 0,
+    "has_final_text": true,
+    "final_chars": 528,
+    "token_usage": "not_recorded"
+  },
+  {
+    "run": "runs/v1_fetch12000/level1_seed22.json",
+    "model": "gpt-oss-20b",
+    "seconds": 25.3,
+    "tool_events": 0,
+    "has_final_text": true,
+    "final_chars": 137,
+    "token_usage": "not_recorded"
+  },
+  {
+    "run": "runs/v1_fetch12000/level1_seed33.json",
+    "model": "gpt-oss-20b",
+    "seconds": 11.6,
+    "tool_events": 0,
+    "has_final_text": true,
+    "final_chars": 706,
+    "token_usage": "not_recorded"
+  },
+  {
+    "run": "runs/v1_fetch12000/level2_seed11.json",
+    "model": "gpt-oss-20b",
+    "seconds": 367.9,
+    "tool_events": 7,
+    "has_final_text": false,
+    "final_chars": 0,
+    "token_usage": "not_recorded"
+  },
+  {
+    "run": "runs/v1_fetch12000/level2_seed22.json",
+    "model": "gpt-oss-20b",
+    "seconds": 762.6,
+    "tool_events": 7,
+    "has_final_text": false,
+    "final_chars": 0,
+    "token_usage": "not_recorded"
+  },
+  {
+    "run": "runs/v1_fetch12000/level3_seed11.json",
+    "model": "gpt-oss-20b",
+    "seconds": 537.1,
+    "tool_events": 7,
+    "has_final_text": false,
+    "final_chars": 0,
+    "token_usage": "not_recorded"
+  },
+  {
+    "run": "runs/v1_fetch12000/level3_seed22.json",
+    "model": "gpt-oss-20b",
+    "seconds": 444.5,
+    "tool_events": 7,
+    "has_final_text": false,
+    "final_chars": 0,
+    "token_usage": "not_recorded"
+  },
+  {
+    "run": "runs/v2_fetch5000/level2_seed11.json",
+    "model": "gpt-oss-20b",
+    "seconds": 758.3,
+    "tool_events": 7,
+    "has_final_text": false,
+    "final_chars": 0,
+    "token_usage": "not_recorded"
+  },
+  {
+    "run": "runs/v2_fetch5000/level2_seed22.json",
+    "model": "gpt-oss-20b",
+    "seconds": 352.0,
+    "tool_events": 7,
+    "has_final_text": false,
+    "final_chars": 0,
+    "token_usage": "not_recorded"
+  },
+  {
+    "run": "runs/v2_fetch5000/level3_seed11.json",
+    "model": "gpt-oss-20b",
+    "seconds": 345.5,
+    "tool_events": 7,
+    "has_final_text": true,
+    "final_chars": 984,
+    "token_usage": "not_recorded"
+  }
+]

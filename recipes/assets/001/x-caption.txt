@@ -1,0 +1,2 @@
+别再为 Agent、MCP、Skill、Harness 这些词多交订阅费。我用“核对三家AI套餐”做了一次可追溯演示：记忆会带入旧价，联网也会漏金额，检查单负责补查和自检。12档、原答卷、官方原文和逐格验收全公开；仍有现价没核定，不硬填。不做模型排名。
+https://github.com/xumao5393/ai-recipes-zh/blob/main/recipes/001-agent-mcp-skill-harness-tested.md

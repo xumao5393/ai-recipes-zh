@@ -1,0 +1,29 @@
+{
+  "checked_at_est": "2026-11-08T00:04:40.539821-05:00",
+  "local_markdown_links": "all exist",
+  "cell_scores": 180,
+  "per_level_fields": 60,
+  "summary_image_dimensions": [
+    1080,
+    1350
+  ],
+  "new_figures": [
+    "four-terms.png",
+    "level3.png",
+    "level1.png",
+    "level2.png",
+    "summary.png",
+    "scoreboard.png",
+    "comparison.png"
+  ],
+  "visual_review": "All six distinct new figures opened with Read; legible, no clipping observed. Skill arrow then moved to point directly to Agent; image rerendered.",
+  "baseline_unmodified_since_first_save": true,
+  "git_push": "not performed",
+  "external_messages": "not sent",
+  "notes": [
+    "Source snapshots are returned readable-text excerpts, not full HTML; provider may cache.",
+    "First memory answer was not continuously timed.",
+    "Same agent performed sequential runs and grading.",
+    "No real MCP protocol, automatic Skill loading, paid-tier usage, or checkout tested."
+  ]
+}

@@ -1,0 +1,17 @@
+原始输出对照：看起来像答案，还要看证据
+
+① v1/level1_seed11 原话：Claude 3 Pro $15；Gemini Pro $10。
+核对：两项与保存的官方价格不符。ChatGPT $20 在本期证据中无法核定。
+
+② v2/level2_seed11 原始记录：final = ""；758.3 秒；7 个工具事件。
+核对：其中出现抓取失败和 API 价格页；没有最终价格表，不是成功联网查价。
+
+③ v2/level3_seed11 原话：Claude Pro $17；Google AI Plus 1 $4.99。
+核对：17 是年付折算，月付 20 没写；“1”是脚注，不是档位名。
+同份输出：ChatGPT 三项价格留空；最后 URL 中断；Gemini Pro/Ultra 未列。
+
+Claude 官网快照：Pro $17 年付折算 / $20 月付；Max $100/月；Ultra $200/月。
+Gemini 美国页面：Plus $4.99；Pro $19.99；Ultra $99.99/月起、另有 $199.99。
+ChatGPT：HTTP 文本缺金额，浏览器停在验证页；不凭记忆补。
+
+本图是对原始文件的摘录和编辑核对，不是另一次实验。

@@ -1,0 +1,10 @@
+{
+  "level": "level1",
+  "guard": true,
+  "task": "我想知道现在（2026年11月）ChatGPT、Claude、Gemini 这三家给个人用户的付费档分别多少钱。请做一张表：产品 | 档位名称 | 美元月费 | 比免费版多了什么（一句话）| 出处链接。每个价格都要写清楚出处。",
+  "steps": [],
+  "model": "gpt-oss-20b",
+  "final": "**个人用户付费档位（截至 2026 年 11 月）**\n\n| 产品 | 档位名称 | 美元月费 | 比免费版多了什么（一句话） | 出处链接 |\n|------|----------|----------|---------------------------|----------|\n| ChatGPT | Plus | $20 | 先行访问、加速响应、优先排队 | <https://chat.openai.com/pricing> |\n| Claude | Claude 3 Pro | $15 | 更高的 token 限额、优先访问、加速生成 | <https://claude.ai/pricing> |\n| Gemini | Gemini Pro | $10 | 更高 token 限额、优先排队、加速响应 | <https://gemini.google.com/pricing> |\n\n> **说明**  \n> 1. 以上价格均为每月订阅费，按年付费时会有折扣。  \n> 2. “免费版”指各平台默认的免费使用层级，功能受限（如 token 限额、响应速度、排队等待等）。  \n> 3. 链接均指官方定价页面，若页面更新请以最新页面为准。",
+  "seconds": 11.5,
+  "finished_at": "2026-11-07 22:29:12 EST"
+}

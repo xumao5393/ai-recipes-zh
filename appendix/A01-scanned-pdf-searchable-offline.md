@@ -1,8 +1,8 @@
-# 001 扫描版中文 PDF 变成"能搜索、能复制"的 PDF：全程离线，不上传
+# 附录 A01（技术向）扫描版中文 PDF 变成"能搜索、能复制"的 PDF：全程离线，不上传
 
 > 实测日期：2026-11-07（美东时间）
 > 实测环境：Debian Linux，Python 3.13，8 核 CPU，无显卡
-> 本期所有数字都来自 [`assets/001/`](assets/001/) 里的日志，可以自己复现。
+> 本期所有数字都来自 [`assets/A01/`](assets/A01/) 里的日志，可以自己复现。
 
 ## 要解决的问题
 
@@ -43,11 +43,11 @@ source ocr-env/bin/activate
 pip install rapidocr_onnxruntime pymupdf pillow
 ```
 
-实测装上的版本见 [`requirements_tested.txt`](assets/001/requirements_tested.txt)。
+实测装上的版本见 [`requirements_tested.txt`](assets/A01/requirements_tested.txt)。
 
 ### 第 2 步：保存脚本
 
-把 [`ocr_pdf.py`](assets/001/ocr_pdf.py) 下载到同一个文件夹。它做四件事：
+把 [`ocr_pdf.py`](assets/A01/ocr_pdf.py) 下载到同一个文件夹。它做四件事：
 
 1. 每页按 200 DPI 转成图片，交给 RapidOCR 识别；
 2. 用识别出的文字框算出整页歪了几度，超过 0.5 度就先转正再识别一次；
@@ -67,7 +67,7 @@ render_mode=3,        # 隐形文字：看不见，但能搜、能复制
 python ocr_pdf.py 你的扫描件.pdf 输出.pdf
 ```
 
-实测输出（[`ocr_run_log.txt`](assets/001/ocr_run_log.txt)）：
+实测输出（[`ocr_run_log.txt`](assets/A01/ocr_run_log.txt)）：
 
 ```
 第1页: 倾斜 -1.2°，识别 15 行
@@ -79,8 +79,8 @@ python ocr_pdf.py 你的扫描件.pdf 输出.pdf
 ### 第 4 步：验收（别跳过）
 
 用任意 PDF 阅读器打开 `输出.pdf`，Ctrl+F 搜几个文件里一定有的词，
-**重点搜金额、日期、人名**。本期用 [`check.py`](assets/001/check.py) 自动验收，
-和原文逐字对比（[`check_log.txt`](assets/001/check_log.txt)）：
+**重点搜金额、日期、人名**。本期用 [`check.py`](assets/A01/check.py) 自动验收，
+和原文逐字对比（[`check_log.txt`](assets/A01/check_log.txt)）：
 
 ```
 原文 541 字，识别 536 字，字符匹配率 98.8%
@@ -95,9 +95,9 @@ python ocr_pdf.py 你的扫描件.pdf 输出.pdf
 
 （98.8% 和 100% 的差别全在标点：OCR 会漏掉或改动部分逗号、句号。）
 
-搜索高亮效果（[`search_hit_page1.png`](assets/001/search_hit_page1.png)）：
+搜索高亮效果（[`search_hit_page1.png`](assets/A01/search_hit_page1.png)）：
 
-![搜索高亮](assets/001/search_hit_page1.png)
+![搜索高亮](assets/A01/search_hit_page1.png)
 
 ### 第 5 步（可选）：把文字交给 AI
 
@@ -107,10 +107,10 @@ python ocr_pdf.py 你的扫描件.pdf 输出.pdf
 
 ## 测试材料是怎么来的
 
-为了能逐字算准确率，测试文件是用 [`make_scan.py`](assets/001/make_scan.py)
-自己生成的"模拟扫描件"：一份两页的虚构租房合同（[`ground_truth.txt`](assets/001/ground_truth.txt)，
+为了能逐字算准确率，测试文件是用 [`make_scan.py`](assets/A01/make_scan.py)
+自己生成的"模拟扫描件"：一份两页的虚构租房合同（[`ground_truth.txt`](assets/A01/ground_truth.txt)，
 人名地址均为虚构），渲染成灰底图片，加 6 万个噪点、高斯模糊、倾斜，再存成纯图片 PDF
-（[`input_scanned.pdf`](assets/001/input_scanned.pdf)，打开后确认文字层为空）。
+（[`input_scanned.pdf`](assets/A01/input_scanned.pdf)，打开后确认文字层为空）。
 
 这意味着：**本期没有用真实手机拍照或真实扫描仪的文件测试。**真实文件可能更糟（阴影、折痕、
 红章压字），结果请以你自己第 4 步的验收为准。
@@ -139,7 +139,7 @@ python ocr_pdf.py 你的扫描件.pdf 输出.pdf
 去掉标点后：汉字/数字匹配率 94.0%
 ```
 
-（完整日志：[`check_log_bad_font.txt`](assets/001/check_log_bad_font.txt)）
+（完整日志：[`check_log_bad_font.txt`](assets/A01/check_log_bad_font.txt)）
 换成 PyMuPDF 内置的 `china-s` 字体后全部搜得到。文件也小得多：同一份输入，嵌入字体版 15 MB，内置字体版 1.3 MB。
 **教训：做完一定要实际搜几个词，不能只看文字导出得对不对。**
 
@@ -154,9 +154,9 @@ python ocr_pdf.py 你的扫描件.pdf 输出.pdf
 | 倾斜 4°，重度模糊 | 76.9%，「4200」「8400」搜不到 | 95.9%，全部关键词搜得到 |
 
 （数字为去掉标点后的汉字/数字匹配率。日志：
-[`check_log_hard_before_deskew.txt`](assets/001/check_log_hard_before_deskew.txt)、
-[`check_log_rot4_after_deskew.txt`](assets/001/check_log_rot4_after_deskew.txt)、
-[`check_log_hard_after_deskew.txt`](assets/001/check_log_hard_after_deskew.txt)）
+[`check_log_hard_before_deskew.txt`](assets/A01/check_log_hard_before_deskew.txt)、
+[`check_log_rot4_after_deskew.txt`](assets/A01/check_log_rot4_after_deskew.txt)、
+[`check_log_hard_after_deskew.txt`](assets/A01/check_log_hard_after_deskew.txt)）
 
 本期脚本已经内置纠偏。纠偏后识别时间约为原来的 2 倍（每页多识别一次）。
 
@@ -189,11 +189,11 @@ python ocr_pdf.py 你的扫描件.pdf 输出.pdf
 
 1. 装好 Python 3（已有可跳过）。
 2. 运行第 1 步的 3 条命令。
-3. 先下载本仓库的 [`input_scanned.pdf`](assets/001/input_scanned.pdf) 跑一遍，
+3. 先下载本仓库的 [`input_scanned.pdf`](assets/A01/input_scanned.pdf) 跑一遍，
    确认你的输出和上面的日志差不多。
 4. 再换成你自己的一份扫描件，Ctrl+F 搜三个词：一个金额、一个日期、一个人名。
    三个都搜到了，再处理整批文件。
 
 ## 实测日期
 
-2026-11-07（美东时间）。依赖版本见 [`requirements_tested.txt`](assets/001/requirements_tested.txt)。
+2026-11-07（美东时间）。依赖版本见 [`requirements_tested.txt`](assets/A01/requirements_tested.txt)。

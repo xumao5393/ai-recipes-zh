@@ -1,0 +1,102 @@
+{
+  "basis": "saved official readable text excerpts; not checkout, not independent second reviewer",
+  "coverage": "12 rows x 5 fields; Go current price unresolved, source for current price unresolved",
+  "reference": [
+    {
+      "row_id": "chatgpt-go",
+      "product": "ChatGPT",
+      "plan": "Go",
+      "monthly_price": "未核定；1月公告美国$8",
+      "benefit": "更多工具/图像/文件用量",
+      "evidence": "openai-go-help.txt;openai-go-announcement.txt"
+    },
+    {
+      "row_id": "chatgpt-plus",
+      "product": "ChatGPT",
+      "plan": "Plus",
+      "monthly_price": "$20/月",
+      "benefit": "更高模型及工具限额",
+      "evidence": "openai-plus.txt"
+    },
+    {
+      "row_id": "chatgpt-pro100",
+      "product": "ChatGPT",
+      "plan": "Pro 100",
+      "monthly_price": "$100/月",
+      "benefit": "Pro模型和工具用量",
+      "evidence": "openai-pro.txt"
+    },
+    {
+      "row_id": "chatgpt-pro200",
+      "product": "ChatGPT",
+      "plan": "Pro 200",
+      "monthly_price": "$200/月",
+      "benefit": "更多Pro用量",
+      "evidence": "openai-pro.txt"
+    },
+    {
+      "row_id": "chatgpt-pro500",
+      "product": "ChatGPT",
+      "plan": "Pro 500",
+      "monthly_price": "$500/月",
+      "benefit": "最高Pro用量及Ultrafast",
+      "evidence": "openai-pro.txt"
+    },
+    {
+      "row_id": "claude-pro",
+      "product": "Claude",
+      "plan": "Pro",
+      "monthly_price": "$20/月；$200年付（官网显示$17/月）",
+      "benefit": "更多用量/模型/Code",
+      "evidence": "claude-pricing.txt"
+    },
+    {
+      "row_id": "claude-max",
+      "product": "Claude",
+      "plan": "Max",
+      "monthly_price": "$100/月",
+      "benefit": "5x Pro",
+      "evidence": "claude-pricing.txt"
+    },
+    {
+      "row_id": "claude-ultra",
+      "product": "Claude",
+      "plan": "Ultra",
+      "monthly_price": "$200/月",
+      "benefit": "10x Pro每周额度，已验证无5小时限制",
+      "evidence": "claude-pricing.txt"
+    },
+    {
+      "row_id": "google-plus",
+      "product": "Gemini",
+      "plan": "Google AI Plus",
+      "monthly_price": "$4.99/月",
+      "benefit": "更高AI用量及存储",
+      "evidence": "google-pricing.txt"
+    },
+    {
+      "row_id": "google-pro",
+      "product": "Gemini",
+      "plan": "Google AI Pro",
+      "monthly_price": "$19.99/月；$199.99年付",
+      "benefit": "更高用量及5TB",
+      "evidence": "google-pricing.txt"
+    },
+    {
+      "row_id": "google-ultra5",
+      "product": "Gemini",
+      "plan": "Google AI Ultra 5x",
+      "monthly_price": "$99.99/月",
+      "benefit": "5x Pro，20TB",
+      "evidence": "google-pricing.txt"
+    },
+    {
+      "row_id": "google-ultra20",
+      "product": "Gemini",
+      "plan": "Google AI Ultra 20x",
+      "monthly_price": "$199.99/月",
+      "benefit": "20x Pro，30TB",
+      "evidence": "google-pricing.txt"
+    }
+  ]
+}

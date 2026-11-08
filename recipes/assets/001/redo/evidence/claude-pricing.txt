@@ -1,0 +1,41 @@
+SOURCE: https://www.anthropic.com/pricing
+PRESERVED: 2026-11-08T00:00:42.939373-05:00 (EST; preservation time, not publication date or exact fetch time)
+FETCH WINDOW: 2026-11-07 23:59:56–2026-11-08 00:00:43 EST; exact per-call seconds not instrumented
+METHOD: functions.WebFetch; selected verbatim excerpts from returned readable text, not full HTML or a browser screenshot. Sections omitted; whitespace/bullets normalized. Provider may cache content.
+
+# Pricing
+### Pro
+For everyday work
+$17
+Per month with annual subscription discount ($200 billed up front). $20 if billed monthly.
+Everything in Free, plus:
+- More usage than Free, every 5 hours and every week*
+- Fable, paid with usage credits New
+- Hand off and schedule tasks
+- Claude Dashboards (beta)
+- Claude Code
+- Claude Science
+- Projects
+- More Claude models
+- Claude in Chrome and Microsoft 365
+### Max
+For all-day work
+$100
+Everything in Pro, plus:
+- 5x Pro usage every 5 hours and every week*
+- Fable included, up to half your weekly limit New
+- $100 a month in API credits to build on the Claude Platform † New
+- Early access to advanced Claude features
+- Priority access at high traffic times
+### Ultra
+For your longest tasks
+$200
+Everything in Max, plus:
+- No 5-hour limit ‡
+- 10x Pro usage every week*
+- $200 a month in API credits, up from $100 on Max † New
+‡ No 5-hour limit for verified accounts.
+Prices shown don’t include applicable tax. Price and plans are subject to change at Anthropic's discretion.
+| Billing cycle | n/a | Monthly and annual | Monthly | Monthly |
+#### How are Max and Ultra different from Pro?
+Max and Ultra are built for people who work with Claude throughout the day and want longer, uninterrupted sessions. You get everything in Pro, plus more usage. Max gives you 5x the usage of Pro, every 5 hours and every week. Ultra gives you 10x the weekly usage of Pro, with no 5-hour limit for verified accounts. Both plans include Fable, our top model, for up to half your weekly limit, and a monthly API credit to build on the Claude Platform: $100 on Max, $200 on Ultra. Both plans are billed monthly. See the cards above for current pricing.

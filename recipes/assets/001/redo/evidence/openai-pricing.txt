@@ -1,0 +1,39 @@
+SOURCE: https://openai.com/chatgpt/pricing/
+PRESERVED: 2026-11-08T00:00:42.939373-05:00 (EST; preservation time, not publication date or exact fetch time)
+FETCH WINDOW: 2026-11-07 23:59:56–2026-11-08 00:00:43 EST; exact per-call seconds not instrumented
+METHOD: functions.WebFetch; selected verbatim excerpts from returned readable text, not full HTML or a browser screenshot. Sections omitted; whitespace/bullets normalized. Provider may cache content.
+
+# Pricing
+See pricing for our individual, business, and enterprise plans.
+### Go
+- More messages with tools
+- More uploads
+- More image creation
+- More voice chats
+- Longer memory
+### Plus
+Best for advanced work and productivity
+Everything in Go and:
+- Advanced reasoning models with GPT-6
+- Expanded messages and uploads
+- More complex and accurate image creation
+- Expanded deep research
+- Expanded memory and context
+- Projects, scheduled tasks, and custom GPTs
+- Expanded Codex usage
+- Expanded access to ChatGPT Work on desktop, web, and mobile
+- Early access to new features
+### Pro
+Best for research and coding
+- Your choice of 3 usage tiers
+- Pro reasoning powered by GPT-6 Astra
+- Longer Codex and ChatGPT Work sessions
+- Dot, your always-on agent
+- Unlimited and faster image creation
+- Maximum deep research
+- Maximum memory and context
+- Expanded projects, tasks, and custom GPTs
+- Research preview of new features
+- Up to in monthly API credits to build your own apps and agents.****
+### How does ChatGPT’s pricing work?
+The free version of ChatGPT is available to everyone. Paid plans (Go, Plus, Business, and Enterprise) are priced per user per month. We offer monthly plans for Go, Plus and Business and annual plans for Business and Enterprise.

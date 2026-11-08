@@ -1,0 +1,28 @@
+{
+  "total_fields_per_level": 60,
+  "scores": {
+    "level1": {
+      "correct": 22,
+      "wrong": 4,
+      "missing": 34,
+      "fabricated_source": 0,
+      "elapsed_seconds": null,
+      "timing_note": "Not instrumented; saved before research; no latency comparison."
+    },
+    "level2": {
+      "correct": 43,
+      "wrong": 0,
+      "missing": 17,
+      "fabricated_source": 0,
+      "elapsed_seconds": 16.911124
+    },
+    "level3": {
+      "correct": 58,
+      "wrong": 0,
+      "missing": 2,
+      "fabricated_source": 0,
+      "elapsed_seconds": 79.420909
+    }
+  },
+  "interpretation": "single sequential worked demonstration; not app benchmark, independent trial, causal effect or blind grading"
+}

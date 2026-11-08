@@ -1,0 +1,25 @@
+SOURCE: https://one.google.com/about/google-ai-plans/
+PRESERVED: 2026-11-08T00:00:42.939373-05:00 (EST; preservation time, not publication date or exact fetch time)
+FETCH WINDOW: 2026-11-07 23:59:56–2026-11-08 00:00:43 EST; exact per-call seconds not instrumented
+METHOD: functions.WebFetch; selected verbatim excerpts from returned readable text, not full HTML or a browser screenshot. Sections omitted; whitespace/bullets normalized. Provider may cache content.
+
+## Google AI Plus
+$4.99
+- 400 GB of cloud storage across Gmail, Drive, and Photos.
+## Google AI Pro
+5 TB storage
+- Expanded access to Gemini 4 Argon in the Gemini app and AI Mode in Search. 2
+- 5 TB of cloud storage across Gmail, Drive, and Photos.
+## Google AI Ultra
+- Cloud storage starting at 20 TB across Gmail, Drive, and Photos.
+Availability varies by country – see full list of countries and regions where Google AI Pro and YouTube Premium are supported.
+Monthly ($19.99)
+Annual ($199.99)
+- Google AI Pro bundle
+$19.99/mo
+Digital spend estimates, including per-user cost, are for illustrative purposes only and are based solely on your self-reported inputs. Actual costs, individual feature eligibility, usage capacity, and savings may vary depending on your specific subscriptions, regional availability, and plan terms. Offers and pricing are subject to change.
+## Find the right Google AI plan for you
+| Features | Google AI Plus $4.99/mo | Google AI Pro $19.99/mo | Google AI Ultra 5x $99.99/mo | Google AI Ultra 20x $199.99/mo |
+| --- | --- | --- | --- | --- |
+| Storage for Gmail, Google Drive, Google Photos | 400 GB or 2 TB | 5 TB | 20 TB | 30 TB |
+| Higher Usage Limits | Two times (non-AI plans) | Four times (non-AI plans) | 5x (Pro plan) | 20x (Pro plan) |
