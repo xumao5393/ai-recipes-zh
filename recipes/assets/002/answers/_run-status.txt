@@ -1,0 +1,16 @@
+tool: status
+note: report
+saved_at: Sun Nov 08 2026 08:45:41 GMT-0600 (Central Standard Time)
+---
+chatgpt — 登录要求；发送后出现“Sign in to continue”，未答复，模型未显示。
+gemini — 已回答并保存 r002-gemini.txt；Flash-Lite。
+copilot — 登录要求；跳转 Microsoft“Sign in to your account”，未显示模型。
+grok — 未回答；提交后显示“Continue your conversation / Sign up to continue seamlessly with Grok’s full power”；Fast。
+duckai-claude — 已回答并保存 r002-duckai-claude.txt；Claude Haiku 5.5。
+duckai-gpt — 已回答并保存 r002-duckai-gpt.txt；GPT-5.4 mini。
+deepseek — 未见保存文件；此前状态/模型未确认。
+doubao — 未见保存文件；此前状态/模型未确认。
+kimi — 未见保存文件；此前状态/模型未确认。
+qianwen — 已回答并保存 r002-qianwen.txt；Qwen-快速，匿名；已从历史找回。
+yuanbao — 未见保存文件；此前状态/模型未确认。
+zhipu — 登录要求；微信扫码或手机号+短信验证码登录；GLM-5.3-Flash极致；未填手机号/验证码。

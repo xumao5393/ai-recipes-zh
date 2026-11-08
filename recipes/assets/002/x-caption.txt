@@ -1,0 +1,2 @@
+租房合同里埋了10个坑，丢给4个免费AI（千问、Gemini、duck.ai里的Claude和GPT），全程免登录：10个坑全找到了。但法条每家都有引错，Gemini还写出“第五百八Y六条”。0元配方：千问找坑→Claude交叉→国家法律法规数据库核对条号。原始回答和截图全公开👇
+https://github.com/xumao5393/ai-recipes-zh/blob/main/recipes/002-rental-contract-ai-check.md

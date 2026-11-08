@@ -1,0 +1,33 @@
+{
+ "test_date": "2026-11-08 (America/New_York, 约 09:15-09:45 EST)",
+ "method": "同一提示词（prompt.txt）新开对话、默认设置、未登录；完整回答原文见 answers/；人工对照 answer_key.json 与 law/ 里的法条原文逐条判定。",
+ "tools": {
+  "gemini": {"ui_label": "Gemini Flash-Lite（网页版，未登录）", "traps_found": "10/10",
+    "strongest_basis_cited": "6/10 正确，1 部分（第十条只引497未引506）",
+    "wrong_citations": ["押金依据写成“第五百八Y六条”，586条实为定金条款，与押金无关"],
+    "garbled_numbers": ["第五百八Y六条", "第五百四3条", "第五百八5条"],
+    "notes": "另引《消费者权益保护法》，个人房东出租是否适用存疑，未计入错误；第十一条小标题编号写成“4）”。"},
+  "duckai-gpt": {"ui_label": "duck.ai 里的 GPT-5.4 mini（未登录）", "traps_found": "10/10",
+    "strongest_basis_cited": "3/10 正确，2 部分",
+    "wrong_citations": ["第八条、第十五条两处把711条说成保管不善/正常磨损相关（711条实为“未按约定方法使用致损，出租人可解约并索赔”；保管不善是714条）", "优先承租权写成730条（730条是不定期租赁；优先承租权在734条）"],
+    "garbled_numbers": [],
+    "notes": "第十条只引了506条“故意或重大过失造成财产损失”那半句，漏了最关键的“造成对方人身损害的免责条款无效”；708条的括号说明加了原文没有的内容。"},
+  "duckai-claude": {"ui_label": "duck.ai 里的 Claude Haiku 5.5（未登录）", "traps_found": "10/10",
+    "strongest_basis_cited": "10/10",
+    "wrong_citations": ["706条被说成“六个月以上应采用书面形式”（那是707条；706条是登记备案不影响效力）", "728条被说成出租人无权处分（728条实为妨害优先购买权的赔偿）"],
+    "garbled_numbers": [],
+    "notes": "唯一引对722条（逾期须先催告、给合理期限）的；把第14条宠物条款标为“低风险”提醒，算轻度多报。"},
+  "qianwen": {"ui_label": "千问 Qwen-快速（网页版，未登录匿名对话）", "traps_found": "10/10（第六条只抓了停水停电和24小时搬离，没点出“逾期1天就解约、没收押金”）",
+    "strongest_basis_cited": "8/10 正确，2 部分",
+    "wrong_citations": ["把“不得采取暴力、威胁等方式逼迁”标成《住房租赁条例》第七条（原文在第十二条；第七条讲出租住房安全标准）"],
+    "garbled_numbers": [],
+    "notes": "四家里唯一引用2025年9月施行的《住房租赁条例》（第九条、第十条引对）；唯一引用710条（正常损耗不赔）；944条是物业条款，它明确写了“同理”类推，未算错误；对优先承租权说“可保留为协商事项”，弱化了734条。"}
+ },
+ "not_run": {
+  "chatgpt": "未登录发送后弹出 Sign in to continue，未答（screenshots/chatgpt-login-wall.png）",
+  "grok": "提交后要求注册/登录才继续（screenshots/grok-login-wall.png）",
+  "copilot": "跳转微软登录页",
+  "zhipu": "智谱清言要求微信扫码或手机号验证码（screenshots/zhipu-login-wall.png）",
+  "deepseek_doubao_kimi_yuanbao": "本期没跑成，未拿到回答，记为未测"
+ }
+}

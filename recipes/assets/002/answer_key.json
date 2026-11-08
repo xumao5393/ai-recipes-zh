@@ -1,0 +1,81 @@
+{
+ "note": "10 planted traps (T) + decoy clauses that are normal (D). Legal text verified against 民法典 full text published by 人民政协网 2020-06-01 (rmzxw.com.cn/c/2020-06-01/2587006_*.shtml), extracted to civil_code_extract.txt. 2026-11-08 修订：初版答案键漏了2025-09-15施行的《住房租赁条例》（国务院令第812号），评分时从千问回答中发现，已对照中国政府网原文补入（law/housing_rental_regulation_2025.txt）。补入不改变任何一家的“找到/没找到”判定。",
+ "traps": [
+  {
+   "id": "T1",
+   "clause": "第四条",
+   "what": "押金到期一律不退，充作清洁折旧费",
+   "basis": "497条(二)加重对方责任/格式条款；710条正常使用损耗不赔；《住房租赁条例》第十条（押金须约定扣减情形，无正当理由不得扣减）",
+   "severity": "高"
+  },
+  {
+   "id": "T2",
+   "clause": "第五条",
+   "what": "甲方可单方涨租，不同意算乙方违约",
+   "basis": "543条变更须协商一致；497条",
+   "severity": "高"
+  },
+  {
+   "id": "T3",
+   "clause": "第六条",
+   "what": "逾期1天即解约、没收押金、停水停电、24小时搬离",
+   "basis": "722条应先催告合理期限；停水停电属自力强制，无合同依据亦难合法；《住房租赁条例》第十二条（解除须留合理腾退时间，不得以暴力、威胁等非法方式逼迁）",
+   "severity": "高"
+  },
+  {
+   "id": "T4",
+   "clause": "第八条",
+   "what": "主体结构、管线、家电所有维修都归乙方",
+   "basis": "712条出租人维修义务(可另约定，但全部转嫁+与原因无关明显不公)；713条；497条",
+   "severity": "中"
+  },
+  {
+   "id": "T5",
+   "clause": "第九条",
+   "what": "房东随时进入、无需通知",
+   "basis": "承租人占有使用权；隐私权(1032条)；1033条(二)未经同意不得进入他人住宅；《住房租赁条例》第九条（三）（出租人不得擅自进入租赁住房）",
+   "severity": "中"
+  },
+  {
+   "id": "T6",
+   "clause": "第十条",
+   "what": "任何人身伤害甲方都不负责",
+   "basis": "506条造成人身损害的免责条款无效；731条危及安全可随时解除；《住房租赁条例》第七条（出租住房须符合消防、燃气等强制标准，不得危及人身安全）",
+   "severity": "高"
+  },
+  {
+   "id": "T7",
+   "clause": "第十一条",
+   "what": "卖房则合同自动终止，7天搬离无补偿",
+   "basis": "725条买卖不破租赁",
+   "severity": "高"
+  },
+  {
+   "id": "T8",
+   "clause": "第十二条",
+   "what": "放弃优先购买权和优先承租权",
+   "basis": "726条优先购买权；734条优先承租权；497条(三)排除主要权利",
+   "severity": "中"
+  },
+  {
+   "id": "T9",
+   "clause": "第十三条",
+   "what": "违约金不对等：乙方赔剩余全部租金，甲方只退未住租金",
+   "basis": "585条违约金过高可请求调减；497条",
+   "severity": "高"
+  },
+  {
+   "id": "T10",
+   "clause": "第十五条",
+   "what": "恢复全新状态，正常磨损也要赔",
+   "basis": "710条正常损耗不赔；733条按使用后状态返还",
+   "severity": "中"
+  }
+ ],
+ "decoys": [
+  "第三条 押一付三/物业甲方/水电乙方：常见且合理",
+  "第七条 未经同意不得转租：716条本身允许",
+  "第十四条 养宠物需同意：常见约定"
+ ],
+ "scoring": "A trap counts as FOUND only if the answer explicitly flags that clause as a problem for the tenant. Article citations are checked separately: CORRECT if the cited article number matches the 民法典 text, WRONG if the number does not say what the AI claims (hallucinated/mismatched)."
+}
