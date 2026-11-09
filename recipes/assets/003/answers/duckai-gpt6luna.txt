@@ -1,0 +1,37 @@
+tool: duckai-gpt6luna
+note: GPT-6 Luna (free, shown in model picker and answer header); Duck.ai free, not logged in, default Fast mode; saved from page innerText (no clipboard tool; markdown formatting lost; inline "feedvisor.com" citation-link labels kept as they appeared; trailing UI text "Read More / Navigating Product Safety... / 2nd opinion / Jump to latest response" omitted)
+saved_at: Mon Nov  9 09:32:28 EST 2026
+---
+Amazon.com Listing
+
+Title
+Collapsible Silicone Cup with Clip, 16.9 fl oz (500 mL), Folding Cup with PP Lid and ABS Clip, Upper-Rack Dishwasher Safe, Gray
+
+Bullet Points
+
+FOLDING DESIGN: Expands to 5.91 in tall and folds to 1.77 in tall; cup opening measures 2.76 in in diameter.
+CAPACITY AND MATERIALS: Holds 16.9 US fl oz (500 mL) when expanded. Cup body is silicone, lid is PP, and clip is ABS plastic.
+CARE AND USE: Dishwasher safe on the upper rack only. Do not use in a microwave.
+LID NOTE: The press-button lid is not leakproof. The cup may leak if tipped over or placed on its side.
+WHAT’S INCLUDED: One cup and one clip, packed in a color box. Available colors: gray, blue, and pink.
+
+Description
+This collapsible silicone cup holds 16.9 US fl oz (500 mL) when expanded. It measures 5.91 in tall when expanded and 1.77 in tall when folded, with a 2.76 in opening. The cup body is silicone, the lid is PP, and the clip is ABS plastic. The cup is dishwasher safe on the upper rack only; do not microwave. The press-button lid is not leakproof, and the cup may leak if tipped over or placed on its side. Package includes one cup and one clip.
+
+Search Terms
+collapsible silicone cup folding cup travel camping cup reusable cup portable cup clip compact cup
+
+中文说明
+
+以下说法不建议直接照搬到亚马逊美国站：
+
+“抗菌防霉”：这是抗菌、抑菌或防霉功效声称，资料没有检测报告支持；这类声称可能涉及额外的法规和平台合规要求。不要放在标题、卖点、描述或后台关键词中。相关平台合规资料也提醒，抗菌等功效声称需要证明，可能涉及额外要求。
+feedvisor.com
+“环保无毒”：同时包含环境和安全性声称，资料没有依据证明。不要改写成 “eco-friendly”“non-toxic” 等英语宣传词。
+“防摔耐用”：资料没有跌落测试或耐久性证据，不能据此承诺产品防摔或耐用。
+“户外露营旅行必备”：属于带有夸张色彩的促销说法；“必备”也不是可核实的产品属性。可客观描述折叠结构和挂扣，但不要声称它是“必备”。
+“全网爆款”：属于无法由产品资料证实的热销或排名宣传，不应使用 “best seller”“best-selling” 等相近说法。
+“食品级硅胶”：虽然供应商资料这样标注，但未提供检测报告或认证文件。上面的英文 listing 暂时只写 “silicone”；在能提供相应证明前，不建议把 “food-grade” 作为可验证的质量或安全承诺。平台合规资料指出，产品页面声称应准确，并应能提供支持依据。
+feedvisor.com
+
+我把硅胶杯身耐温换算为 -40°F 至 446°F，杯盖 PP 的耐温上限换算为 212°F。由于商品资料说明杯盖不是密封盖、倒置或横放会漏水，listing 明确写出了这一点，也没有把它描述成防漏杯。

@@ -1,0 +1,227 @@
+{
+ "duckai-claude": {
+  "chars": 3389,
+  "title": "Collapsible Silicone Water Cup with Hanging Clip, 16.9 fl oz (500 ml) Expanded, Foldable Travel Cup for Camping, Hiking and Outdoor Use, Gray Blue Pink",
+  "title_len": 151,
+  "title_repeats_over2": {},
+  "title_banned_chars": [],
+  "search_terms": "collapsible cup silicone water cup foldable travel cup camping cup hiking cup portable drinking cup outdoor cup hanging clip gray blue pink silicone bottle folding cup",
+  "search_terms_bytes": 167,
+  "english_hits": {
+   "K1": [],
+   "K2": [],
+   "K3": [],
+   "K4": [
+    "microwave"
+   ],
+   "K5": [],
+   "K6": [
+    "100°C",
+    "212",
+    "230",
+    "446"
+   ],
+   "K7": []
+  },
+  "zh_flags": {
+   "抗菌": true,
+   "环保": true,
+   "无毒": true,
+   "防摔": true,
+   "爆款": true,
+   "必备": true,
+   "密封": true,
+   "认证": true,
+   "FDA": true,
+   "EPA": true,
+   "FTC": true
+  }
+ },
+ "duckai-gpt": {
+  "chars": 2254,
+  "title": "Collapsible Silicone Water Cup with Hook, 500ml Foldable Travel Cup, Food-Grade Silicone Cup with PP Press-Closure Lid, Dishwasher Safe Top Rack, Gray/Blue/Pink",
+  "title_len": 160,
+  "title_repeats_over2": {
+   "cup": 3
+  },
+  "title_banned_chars": [],
+  "search_terms": "collapsible silicone cup foldable travel cup silicone water cup with hook 500ml food grade silicone pp lid abs hook gray blue pink top rack dishwasher",
+  "search_terms_bytes": 150,
+  "english_hits": {
+   "K1": [],
+   "K2": [],
+   "K3": [],
+   "K4": [
+    "microwave"
+   ],
+   "K5": [
+    "leak"
+   ],
+   "K6": [
+    "100°C",
+    "212",
+    "230",
+    "446"
+   ],
+   "K7": []
+  },
+  "zh_flags": {
+   "抗菌": true,
+   "环保": true,
+   "无毒": true,
+   "防摔": true,
+   "爆款": true,
+   "必备": true,
+   "密封": true,
+   "认证": true,
+   "FDA": true,
+   "EPA": false,
+   "FTC": false
+  }
+ },
+ "duckai-gpt6luna": {
+  "chars": 1904,
+  "title": "Collapsible Silicone Cup with Clip, 16.9 fl oz (500 mL), Folding Cup with PP Lid and ABS Clip, Upper-Rack Dishwasher Safe, Gray\n\nBullet Points\n\nFOLDING DESIGN: Expands to 5.91 in tall and folds to 1.77 in tall; cup opening measures 2.76 in in diameter.\nCAPACITY AND MATERIALS: Holds 16.9 US fl oz (500 mL) when expanded. Cup body is silicone, lid is PP, and clip is ABS plastic.\nCARE AND USE: Dishwasher safe on the upper rack only. Do not use in a microwave.\nLID NOTE: The press-button lid is not leakproof. The cup may leak if tipped over or placed on its side.\nWHAT’S INCLUDED: One cup and one clip, packed in a color box. Available colors: gray, blue, and pink.\n\nDescription\nThis collapsible silicone cup holds 16.9 US fl oz (500 mL) when expanded. It measures 5.91 in tall when expanded and 1.77 in tall when folded, with a 2.76 in opening. The cup body is silicone, the lid is PP, and the clip is ABS plastic. The cup is dishwasher safe on the upper rack only; do not microwave. The press-button lid is not leakproof, and the cup may leak if tipped over or placed on its side. Package includes one cup and one clip.\n\nSearch Terms\ncollapsible silicone cup folding cup travel camping cup reusable cup portable cup clip compact cup",
+  "title_len": 1234,
+  "title_repeats_over2": {
+   "collapsible": 3,
+   "silicone": 5,
+   "cup": 17,
+   "clip": 7,
+   "fl": 3,
+   "oz": 3,
+   "ml": 3,
+   "folding": 3,
+   "pp": 3,
+   "lid": 6,
+   "ab": 3,
+   "upper": 3,
+   "rack": 3,
+   "dishwasher": 3,
+   "safe": 3,
+   "tall": 4,
+   "when": 4,
+   "expanded": 3,
+   "i": 9,
+   "not": 4,
+   "it": 3,
+   "one": 4
+  },
+  "title_banned_chars": [],
+  "search_terms": "collapsible silicone cup folding cup travel camping cup reusable cup portable cup clip compact cup",
+  "search_terms_bytes": 98,
+  "english_hits": {
+   "K1": [],
+   "K2": [],
+   "K3": [],
+   "K4": [
+    "microwave"
+   ],
+   "K5": [
+    "leak"
+   ],
+   "K6": [],
+   "K7": []
+  },
+  "zh_flags": {
+   "抗菌": true,
+   "环保": true,
+   "无毒": true,
+   "防摔": true,
+   "爆款": true,
+   "必备": true,
+   "密封": true,
+   "认证": true,
+   "FDA": false,
+   "EPA": false,
+   "FTC": false
+  }
+ },
+ "gemini": {
+  "chars": 3089,
+  "title": "Collapsible Silicone Travel Water Bottle, 17 oz Foldable Drinking Cup with Carabiner Clip, Portable Reusable Cup for Outdoor Camping, Hiking, and Sports (Gray, Blue, Pink)",
+  "title_len": 171,
+  "title_repeats_over2": {},
+  "title_banned_chars": [],
+  "search_terms": "collapsible silicone water bottle foldable travel cup portable reusable drinking cup outdoor camping hiking cup with carabiner clip",
+  "search_terms_bytes": 131,
+  "english_hits": {
+   "K1": [],
+   "K2": [],
+   "K3": [],
+   "K4": [
+    "microwave"
+   ],
+   "K5": [
+    "leak"
+   ],
+   "K6": [
+    "100°C",
+    "212",
+    "230",
+    "446"
+   ],
+   "K7": []
+  },
+  "zh_flags": {
+   "抗菌": true,
+   "环保": true,
+   "无毒": true,
+   "防摔": false,
+   "爆款": true,
+   "必备": false,
+   "密封": false,
+   "认证": true,
+   "FDA": true,
+   "EPA": true,
+   "FTC": false
+  }
+ },
+ "qianwen-B": {
+  "chars": 12,
+  "note": "no listing produced"
+ },
+ "qianwen-retryA": {
+  "chars": 12,
+  "note": "no listing produced"
+ },
+ "qianwen-short": {
+  "chars": 972,
+  "title": "",
+  "title_len": 0,
+  "title_repeats_over2": {},
+  "title_banned_chars": [],
+  "search_terms": "",
+  "search_terms_bytes": 0,
+  "english_hits": {
+   "K1": [],
+   "K2": [],
+   "K3": [
+    "BPA"
+   ],
+   "K4": [],
+   "K5": [
+    "Leak"
+   ],
+   "K6": [],
+   "K7": []
+  },
+  "zh_flags": {
+   "抗菌": false,
+   "环保": false,
+   "无毒": false,
+   "防摔": false,
+   "爆款": false,
+   "必备": false,
+   "密封": false,
+   "认证": false,
+   "FDA": false,
+   "EPA": false,
+   "FTC": false
+  }
+ },
+ "qianwen": {
+  "chars": 25,
+  "note": "no listing produced"
+ }
+}

@@ -1,0 +1,2 @@
+义乌拿货上亚马逊，别让 AI 直接翻译“抗菌防霉、环保无毒”：亚马逊把“抗菌”当农药类宣称，没 EPA 注册可能下架。同一份带坑资料免登录实测 5 个 AI，4 家都没写违规词，但单位换算、标题同词超两次有人翻车；资料给少了，千问还自己加“防漏”。原始回答全公开👇
+https://github.com/xumao5393/ai-recipes-zh/blob/main/recipes/003-yiwu-amazon-listing-ai-check.md

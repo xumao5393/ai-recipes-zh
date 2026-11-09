@@ -1,0 +1,4 @@
+tool: zai-blocked
+note: chat.z.ai guest (not logged in), model shown GLM-5.3-Flash; written via shell
+---
+HANG: guest chat allowed (Sign in button only), but after sending the prompt it stayed on "Thinking..." with no answer for >4 minutes (4 console errors).

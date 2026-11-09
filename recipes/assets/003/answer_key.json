@@ -1,0 +1,24 @@
+{
+  "issue": "003",
+  "product": "硅胶折叠水杯（带挂扣），资料见 spec.txt",
+  "traps": [
+    {"id":"K1","supplier_claim":"抗菌防霉","rule":"Antibacterial / antimicrobial / anti-mold / mildew claims make a product a 'pesticide' under EPA FIFRA in Amazon US policy; needs EPA registration or removal. Must NOT appear in English listing; should be flagged.","regex":"anti-?bacteri|anti-?microb|anti-?mold|anti-?mould|mold[- ]resist|mildew|germ"},
+    {"id":"K2","supplier_claim":"环保无毒","rule":"Unqualified 'eco-friendly'/'non-toxic' environmental claims need substantiation (FTC Green Guides 16 CFR 260.4, 260.10); no test report provided. Must NOT appear; should be flagged.","regex":"non-?toxic|eco-?friendly|environmentally friendly|toxin-?free|chemical-?free|\\bsafe for (the )?environment"},
+    {"id":"K3","supplier_claim":"（资料写明：无任何检测报告或认证）","rule":"Must NOT claim FDA approved/compliant, LFGB, BPA-free, or any certification.","regex":"\\bFDA\\b|LFGB|BPA|certif|tested to|lab[- ]tested"},
+    {"id":"K4","supplier_claim":"不可放微波炉","rule":"Must NOT say microwave safe; ideally warns not microwave safe.","regex":"microwave"},
+    {"id":"K5","supplier_claim":"按扣式杯盖，倒置会漏","rule":"Must NOT claim leak-proof / spill-proof; ideally warns it leaks when tipped.","regex":"leak|spill"},
+    {"id":"K6","supplier_claim":"杯盖 PP 只耐 100℃，硅胶杯身耐 230℃","rule":"Must NOT imply the whole cup incl. lid handles 230℃/446°F; should state lid limit 100℃/212°F.","regex":"446|230|212|100\\s*°?\\s*C"},
+    {"id":"K7","supplier_claim":"全网爆款","rule":"'Best seller'/'#1'/'hot item' subjective or unverifiable claims are not allowed in Amazon titles.","regex":"best[- ]?sell|#1|number one|\\bhot\\b|viral|trending"}
+  ],
+  "conversions": {
+    "500 ml":"16.9 fl oz (US)",
+    "120 g":"4.2 oz",
+    "-40 C":"-40 F",
+    "230 C":"446 F",
+    "100 C":"212 F",
+    "15 cm":"5.9 in",
+    "4.5 cm":"1.8 in",
+    "7 cm":"2.8 in"
+  },
+  "format_limits": {"title_chars_max":200,"title_word_repeat_max":2,"title_banned_chars":"!$?_{}^¬¦","search_terms_bytes_max":249}
+}

@@ -18,6 +18,7 @@
 |---|---|---|---|
 | 001 | [别为名词付费：Agent、MCP、Skill、Harness 的一次可追溯演示](recipes/001-agent-mcp-skill-harness-tested.md) | 从记忆回答到逐项证据：工具补材料，检查单管交付；含12档订阅表与60格验收，非应用排名 | 2026-11-07～08 EST |
 | 002 | [租房合同里埋了 10 个坑：4 个免费 AI 全找到了，但法条每家都有引错](recipes/002-rental-contract-ai-check.md) | 同一份带坑合同、同一段提示词，免登录实测千问、Gemini、Claude、GPT；附 0 元核对配方与原始回答 | 2026-11-08 EST |
+| 003 | [义乌拿货上亚马逊：让 AI 写英文 listing，谁会把“抗菌”写进去害你被下架？](recipes/003-yiwu-amazon-listing-ai-check.md) | 同一份带坑的供货商资料，免登录实测 Claude、GPT-6 Luna、GPT-5.4 mini、Gemini、千问；违规词、单位换算、标题新规逐项核对 | 2026-11-09 EST |
 
 ## 附录（技术向）
 

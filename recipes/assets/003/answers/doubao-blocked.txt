@@ -1,0 +1,4 @@
+tool: doubao-blocked
+note: doubao.com, not logged in; written via shell
+---
+LOGIN WALL: region restriction page "受区域限制，请先登录再使用豆包。你也可以选择使用 Dola。" (buttons: 使用 Dola / 登录); redirected to /security/doubao-region-ban

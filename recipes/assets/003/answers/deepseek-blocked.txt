@@ -1,0 +1,4 @@
+tool: deepseek-blocked
+note: chat.deepseek.com not logged in; written via shell
+---
+LOGIN WALL: redirected to /sign_in; asks for email/password Log in, Sign up, Log in with Google, Login with Apple

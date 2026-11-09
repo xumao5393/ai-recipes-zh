@@ -1,0 +1,4 @@
+tool: kimi-blocked
+note: kimi.com, not logged in, UI shows K3 High; written via shell
+---
+LOGIN WALL: on sending, a login dialog appeared: WeChat QR login, Phone number (+86) with Send code, Sign in with SSO, Log in with Google

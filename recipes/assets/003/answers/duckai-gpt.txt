@@ -1,0 +1,48 @@
+tool: duckai-gpt
+note: duck.ai model shown: GPT-5.4 mini (Fast, free tier; GPT-6 Luna also listed free but not used); no login (anonymous). [file repaired 2026-11-09: an earlier mis-save had mixed in the Claude answer; body below is the GPT answer only, cross-checked against r003-duckai-gpt.pdf]
+saved_at: Mon Nov 09 2026 08:19:42 GMT-0600 (Central Standard Time)
+---
+**Title**  
+Collapsible Silicone Water Cup with Hook, 500ml Foldable Travel Cup, Food-Grade Silicone Cup with PP Press-Closure Lid, Dishwasher Safe Top Rack, Gray/Blue/Pink
+
+**Bullet Points**  
+- **Collapsible Design:** Expands to 15 cm / 5.9 in height and folds down to 4.5 cm / 1.8 in for easy storage and carrying.  
+- **500ml Capacity:** Holds up to 500 ml / 16.9 fl oz when fully expanded, suitable for daily drinking, travel, and outdoor use.  
+- **Food-Grade Materials:** Cup body is made of food-grade silicone; lid is PP; hook is ABS plastic.  
+- **Temperature Range:** Silicone body withstands -40°C to 230°C / -40°F to 446°F; PP lid withstands up to 100°C / 212°F.  
+- **Use Notes:** Dishwasher safe on the top rack only. Not microwave safe. The press-closure lid is not airtight and may leak if turned upside down or laid on its side.
+
+**Description**  
+This collapsible silicone water cup is designed for compact everyday carrying and outdoor use. The cup body is made of food-grade silicone, with a PP lid and ABS plastic hook. When expanded, it holds 500 ml / 16.9 fl oz, with a height of 15 cm / 5.9 in. When folded, the height is reduced to 4.5 cm / 1.8 in for easier storage.
+
+The silicone cup body is rated for -40°C to 230°C / -40°F to 446°F, and the PP lid is rated up to 100°C / 212°F. It is dishwasher safe on the top rack only, but not microwave safe. Please note that the press-closure lid is not a sealed lid, so liquid may leak if the cup is inverted or placed horizontally.
+
+Package includes 1 cup and 1 hook, packed in a color box. Available colors: gray, blue, and pink.
+
+**Search Terms**  
+collapsible silicone cup foldable travel cup silicone water cup with hook 500ml food grade silicone pp lid abs hook gray blue pink top rack dishwasher
+
+中文说明：这份资料里亚马逊美国站上**不能直接用**的说法主要有这些：
+
+1. **“抗菌防霉”**  
+   不能直接写，除非你有正规测试报告或认证。它属于功效/抑菌类宣称，平台和合规风险都高。
+
+2. **“环保无毒”**  
+   不能直接写。  
+   “环保”是泛化环保宣称；“无毒”也是强功效/安全性宣称，需要证据支撑。
+
+3. **“防摔耐用”**  
+   不能直接写成确定性卖点。  
+   这是耐用性/抗摔性能宣称，没有测试数据就不建议用。
+
+4. **“户外露营旅行必备，全网爆款”**  
+   不能直接用。  
+   “必备”“爆款”属于主观营销夸张，且“全网爆款”无法验证，容易引起平台审核问题。
+
+5. **“密封盖”**  
+   不能用，资料里明确写了**不是密封盖**，倒置或横放会漏水。
+
+6. **任何认证/检测相关表述**  
+   资料里没有任何检测报告或认证文件，所以不能写“认证过”“测试合格”“FDA/LFGB”等类似说法。
+
+如果你愿意，我还可以继续帮你把这份 listing 再优化成更像美国站风格的版本。

@@ -1,0 +1,61 @@
+tool: duckai-claude
+note: duck.ai model shown: Claude Haiku 5.5 (Fast, free tier); no login (anonymous). [header fixed after save via shell; body pasted via helper page]
+saved_at: Mon Nov 09 2026 08:18:38 GMT-0600 (Central Standard Time)
+---
+## 1. 标题（Title）
+
+**Collapsible Silicone Water Cup with Hanging Clip, 16.9 fl oz (500 ml) Expanded, Foldable Travel Cup for Camping, Hiking and Outdoor Use, Gray Blue Pink**
+
+---
+
+## 2. 五条卖点（Bullet Points）
+
+- **Collapsible for easy storage:** The cup stands **5.9 in (15 cm)** tall when open and folds down to **1.8 in (4.5 cm)** for packing in a backpack, suitcase or bag.
+- **500 ml (16.9 fl oz) capacity:** Holds **16.9 fl oz (500 ml)** when fully expanded. The mouth is **2.8 in (7 cm)** in diameter, and the cup weighs **4.2 oz (120 g)**.
+- **Silicone body with PP lid and hanging clip:** The body is made of food-grade silicone, the lid is PP plastic, and the included ABS hanging clip lets you attach the cup to a bag or gear.
+- **Temperature ratings:** The silicone body is rated from **-40°F to 446°F (-40°C to 230°C)**. The PP lid is rated up to **212°F (100°C)**.
+- **Care and use:** The cup is **dishwasher safe on the top rack only** and **not microwave safe**. The lid is a snap-on lid, not a sealed one, so keep the cup upright and do not tip or lay it on its side.
+
+---
+
+## 3. 产品描述（Description）
+
+This collapsible silicone water cup is designed for camping, hiking, travel and everyday outdoor use. When open, it holds **16.9 fl oz (500 ml)** and stands **5.9 in (15 cm)** tall. When folded, it compresses to **1.8 in (4.5 cm)**, so it takes up little space in a bag or pack. The **2.8 in (7 cm)** wide mouth makes it easy to fill and drink from.
+
+The cup body is made of food-grade silicone. The lid is PP plastic and the hanging clip is ABS plastic. The silicone body is rated from **-40°F to 446°F (-40°C to 230°C)**, while the PP lid is rated up to **212°F (100°C)**. Please keep the lid's temperature limit in mind when filling the cup.
+
+For cleaning, place the cup on the **top rack of the dishwasher only**. Do not use the microwave to heat it. The lid snaps onto the cup but does not seal, so keep the cup upright during carrying.
+
+The package includes **1 cup, 1 hanging clip**, packed in a colored box. Available in **gray, blue and pink**.
+
+---
+
+## 4. 后台搜索关键词（Search Terms）
+
+collapsible cup silicone water cup foldable travel cup camping cup hiking cup portable drinking cup outdoor cup hanging clip gray blue pink silicone bottle folding cup
+
+---
+
+## 中文说明：资料中哪些内容不能直接用于亚马逊美国站
+
+上面的 listing 已经去掉了供货商的宣传语和没有依据的说法。原资料中有以下几类内容需要注意：
+
+| 原资料说法 | 能否直接用 | 原因与建议 |
+|---|---|---|
+| **抗菌防霉** | 不能用 | 杯子宣称有抗菌或防霉效果，在美国属于杀菌或防霉功效宣称，通常需要 EPA 注册和相应测试报告。供货商没有提供任何检测报告，因此不能写。 |
+| **环保无毒** | 不能用 | “Non-toxic”和“eco-friendly”都需要有依据支撑，属于 FTC 监管的宣称，需要测试或认证。没有报告，不能写。 |
+| **防摔耐用** | 不能用 | “Drop-proof”“durable”需要跌落或耐用性测试数据。资料中没有，因此只能不写。 |
+| **全网爆款** | 不能用 | 销量排名无法核实，亚马逊也不允许在 listing 中使用“best seller”之类未经证实的说法，这类表述只能由平台的徽章体现。 |
+| **食品级硅胶** | 可以写，但需确认 | 资料中写了食品级，我在 listing 中保留了。但亚马逊美国站和美国监管机构对食品接触材料有合规要求，供货商没有提供任何文件，建议先索取 FDA 食品接触合规声明或第三方检测报告。 |
+| **耐温 -40℃～230℃** | 只能分开写 | 230℃ 只适用于硅胶杯身，杯盖 PP 最高只能到 100℃，不能写成整杯耐 230℃。 |
+| **挂扣 / 按扣式杯盖** | 不能写成“防漏” | 资料说杯盖不是密封盖，倒置或横放会漏水，所以不能写 leak-proof 或 spill-proof，只能如实提示使用注意事项。 |
+| **洗碗机 / 微波炉** | 必须写清条件 | 只能上层洗碗机，不能微波，必须明确写在 listing 中，避免退货和差评。 |
+| **户外露营旅行必备** | 不建议照搬 | “必备”是主观表述。我在标题和描述中只写了适用场景（露营、徒步、旅行），没有写“must-have”。 |
+
+另外，资料中**没有任何检测报告或认证文件**。如果你计划在亚马逊美国站销售，建议尽快确认以下内容：
+
+- 食品接触材料的合规证明（如 FDA 相关声明或 LFGB 等检测报告），用于支持“食品级”的说法。
+- 如果产品可能被儿童使用，需要确认是否涉及 CPSIA 儿童产品要求。
+- 如果在加州销售，需要关注 Prop 65 相关要求。
+
+没有这些文件，listing 中就只能写资料里能直接确认的产品信息，不能加入功效或安全性方面的承诺。
