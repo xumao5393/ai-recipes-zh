@@ -1,0 +1,5 @@
+tool: qianwen-blocked
+note: https://www.qianwen.com default 快速/Qwen-快速, not logged in. Prompt pasted and Enter pressed; no answer generated.
+saved_at_box_local: 2026-11-10T09:21:19 EST
+---
+Pressing send immediately opened a login modal: title "登录解锁完整功能", buttons "使用 Google 登录" and "使用手机号登录" (checkbox "我已阅读并同意 用户协议、隐私政策"), plus QR code "用千问 APP 扫码登录". No answer was produced; prompt remained in the page as a pending message. Site header also shows a "登录" button.

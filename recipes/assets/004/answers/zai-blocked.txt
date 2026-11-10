@@ -1,0 +1,5 @@
+tool: zai-blocked
+note: https://chat.z.ai guest (first load showed "Login session expired. Please sign in again." modal; clicked "Skip for now"), model shown GLM-5.3-Flash, Thinking on by default (not toggled by me)
+saved_at_box_local: 2026-11-10T09:24:33 EST
+---
+Prompt sent as guest. UI showed only a collapsed "Thinking..." indicator with spinner/stop button for more than 4 minutes (about 4.5 min) with no answer text produced. Recorded as hang. Sign in button top-right.

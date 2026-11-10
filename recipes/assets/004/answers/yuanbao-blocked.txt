@@ -1,0 +1,5 @@
+tool: yuanbao-blocked
+note: https://yuanbao.tencent.com redirected to /chat/<id>, sidebar shows "Not logged in"
+saved_at_box_local: 2026-11-10T09:25:00 EST
+---
+Login modal "Log In with WeChat - Please scan the QR code" with tabs WeChat / Phone / QQ, overlay on chat; header "Log In" button. Chat box ("Send Message", "Quick Answer") sits behind modal. Not attempted further.

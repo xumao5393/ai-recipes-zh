@@ -1,0 +1,38 @@
+{
+ "duckai-claude": {
+  "提到1218": true,
+  "提到1283": true,
+  "提到省65": true,
+  "提到1332": true,
+  "提到114": true,
+  "乙店不用店铺券": true,
+  "出现198减25(违反门槛)": false
+ },
+ "duckai-gpt": {
+  "提到1218": false,
+  "提到1283": true,
+  "提到省65": false,
+  "提到1332": true,
+  "提到114": false,
+  "乙店不用店铺券": false,
+  "出现198减25(违反门槛)": false
+ },
+ "duckai-gpt6luna": {
+  "提到1218": false,
+  "提到1283": true,
+  "提到省65": false,
+  "提到1332": true,
+  "提到114": false,
+  "乙店不用店铺券": false,
+  "出现198减25(违反门槛)": false
+ },
+ "duckai-other": {
+  "提到1218": false,
+  "提到1283": true,
+  "提到省65": false,
+  "提到1332": false,
+  "提到114": false,
+  "乙店不用店铺券": false,
+  "出现198减25(违反门槛)": true
+ }
+}

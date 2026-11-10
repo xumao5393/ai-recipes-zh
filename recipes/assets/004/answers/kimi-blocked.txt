@@ -1,0 +1,5 @@
+tool: kimi-blocked
+note: https://www.kimi.com, not logged in (sidebar "Log in to sync chat history"), model badge "K3 High". Prompt typed (replacing an old leftover draft) and Enter pressed
+saved_at_box_local: 2026-11-10T09:25:17 EST
+---
+Send immediately opened login modal: "WeChat QR login" QR code; "Phone number" (+86) with "Verification code / Send code" and "Log in" button; "Sign in with SSO"; checkbox "I agree to Terms of Service and Privacy Policy"; "If you use Log in with Google, visit kimi.ai". No answer generated.

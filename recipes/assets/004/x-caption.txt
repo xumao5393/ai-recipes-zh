@@ -1,0 +1,2 @@
+今年双11没有跨店满减了，消费券一单只能用一张，怎么拆单最省？同一车货丢给4个免费AI：只有Claude算到最省的1218元。两个GPT把乙店20元券用掉，金额掉到198，白丢25元消费券；Mistral报的1198更低，却是违反门槛的假省。原始回答全公开👇
+https://github.com/xumao5393/ai-recipes-zh/blob/main/recipes/004-double11-voucher-split-ai-check.md

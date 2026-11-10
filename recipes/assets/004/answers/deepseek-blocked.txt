@@ -1,0 +1,5 @@
+tool: deepseek-blocked
+note: https://chat.deepseek.com, not logged in; redirected to /sign_in
+saved_at_box_local: 2026-11-10T09:21:19 EST
+---
+Redirected to chat.deepseek.com/sign_in: form with "Phone number / email address", "Password", "Log in", "Forgot password?", "Sign up", "Log in with Google", "Login with Apple". Cookie banner shown. No guest chat available.

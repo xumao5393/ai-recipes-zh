@@ -1,0 +1,5 @@
+tool: doubao-blocked
+note: https://www.doubao.com/chat/ not logged in; redirected to /security/doubao-region-ban?source=1
+saved_at_box_local: 2026-11-10T09:25:00 EST
+---
+Page text: "受区域限制，请先登录再使用豆包。你也可以选择使用 Dola。" Buttons: "使用 Dola", "登录". No chat available.
