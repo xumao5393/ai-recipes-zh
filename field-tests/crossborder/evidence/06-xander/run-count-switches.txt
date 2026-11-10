@@ -1,0 +1,6 @@
+# 时间(开始): 2026-11-09 18:31:27 EST
+# 命令: HOME=<sandbox>/h2 XANDER_HOME=<sandbox>/x3 unshare -rn node count_switches.mjs <clone副本 run2>
+顶层字段: items,limits,operations,howToTurnOn
+开关条数: 31 其中 on=true: 0 implemented=true: 31
+工具总数: 38 名称: xander_status,xander_fba_inbound,xander_spapi_get,xander_listing_get,xander_spapi_report,xander_ads_account_budget,xander_ads_profiles,xander_ads_list,xander_ads_report,xander_ads_report_rows,xander_review_ad_performance,xander_diagnose_asin,xander_save_diagnostic,xander_diagnostics,xander_experiment_create,xander_experiment_review,xander_experiments,xander_archive_overview,xander_archive_set_fact,xander_archive_product,xander_archive_history,xander_archive_note,xander_archive_notes,xander_archive_import_csv,xander_calc_ad_economics,xander_calc_replenishment,xander_calc_profit,xander_content_check,xander_promotions,xander_record_promotion_receipt,xander_switches,xander_prepare_change,xander_execute_change,xander_verify_change,xander_reconcile_account_budget_rollback,xander_change_log,xander_ziniao_status,xander_ziniao_snapshot
+# exit=0 耗时=0.095s

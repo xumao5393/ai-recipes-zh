@@ -1,0 +1,39 @@
+date: 2026-11-09 14:49:21 EST
+=== symlinks? ===
+drwxr-xr-x  8 box box 4096 Nov  9 14:44 /workspace/fourday-20261109/crossborder/sandbox/home/.cache
+drwxr-xr-x  6 box box 4096 Nov  9 14:42 /workspace/fourday-20261109/crossborder/sandbox/home/.cache/ms-playwright
+drwxr-xr-x  4 box box 4096 Nov  9 14:41 /workspace/fourday-20261109/crossborder/sandbox/home/.local
+drwxr-xr-x  5 box box 4096 Nov  9 14:43 /workspace/fourday-20261109/crossborder/sandbox/home/.local/share
+drwxr-xr-x  4 box box 4096 Nov  9 14:42 /workspace/fourday-20261109/crossborder/sandbox/home/.local/share/uv
+drwxr-xr-x  3 box box 4096 Nov  9 14:41 /workspace/fourday-20261109/crossborder/sandbox/home/.local/share/uv/tools
+drwxr-xr-x  5 box box 4096 Nov  9 14:41 /workspace/fourday-20261109/crossborder/sandbox/home/.local/share/uv/tools/vibe-seller
+drwxr-xr-x 17 box box 4096 Nov  9 14:44 /workspace/fourday-20261109/crossborder/sandbox/home/.vibe-seller
+=== df ===
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/vdb        128G   22G  107G  17% /
+/dev/vdb        128G   22G  107G  17% /
+/dev/vdb        128G   22G  107G  17% /
+/dev/vdb        128G   22G  107G  17% /
+=== one-by-one du -sb ===
+741935865	<home>/.local/share/uv/tools/vibe-seller
+741M	<home>/.local/share/uv/tools/vibe-seller
+711303470	<home>/.cache/ms-playwright
+681M	<home>/.cache/ms-playwright
+420921737	<home>/.cache/ms-playwright/chromium-1248
+403M	<home>/.cache/ms-playwright/chromium-1248
+285084594	<home>/.cache/ms-playwright/chromium_headless_shell-1248
+273M	<home>/.cache/ms-playwright/chromium_headless_shell-1248
+5296998	<home>/.cache/ms-playwright/ffmpeg-1013
+5.1M	<home>/.cache/ms-playwright/ffmpeg-1013
+402933377	<home>/.vibe-seller
+387M	<home>/.vibe-seller
+342114174	<home>/.vibe-seller/node_modules
+327M	<home>/.vibe-seller/node_modules
+2260375218	<home>
+2.2G	<home>
+=== du -x vs plain on HOME ===
+2.2G	<home>
+2.2G	<home>
+=== apparent vs disk ===
+711303470	<home>/.cache/ms-playwright
+711303470	<home>/.cache/ms-playwright

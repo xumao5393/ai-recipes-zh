@@ -1,0 +1,11 @@
+# post-redaction inventory note (2026-11-09 14:45 EST America/New_York)
+# Original summary.txt left unchanged (append-only policy for non-secret evidence).
+# Cookie/token fields redacted in cookies.txt, home-*-headers, web-stdout.txt — see ../../CORRECTIONS.md
+# Large asset bodies deleted; digests in asset-digests.txt
+# New timing/wildcard evidence under rerun-listen-and-wildcard/
+
+# 2026-11-09 14:50 EST · duplicate SPA HTML bodies
+# Confirmed identical (40102 B, sha256=30c62bbc14998f776071a22342df64f79a8af929f3c9dd975e47c2a2524792a2, md5=55515d0765fb11becb05dc3a62f12906):
+#   kept: home-jar.body
+#   deleted: api_.body, api_index.html.body
+# See ../../CORRECTIONS.md

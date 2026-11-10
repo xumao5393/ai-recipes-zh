@@ -1,0 +1,5 @@
+tag: v0.2.0
+published_at: 2026-10-08T14:43:41Z
+VibeSeller-Setup.exe	size_bytes=413477438	size_MiB=394.322813	size_MB_1e6=413.477438	downloads=317
+vibe_seller-0.2.0-py3-none-any.whl	size_bytes=2034813	size_MiB=1.940549	size_MB_1e6=2.034813	downloads=22
+vibe_seller-0.2.0.tar.gz	size_bytes=10754661	size_MiB=10.256444	size_MB_1e6=10.754661	downloads=14

@@ -1,0 +1,34 @@
+time: 2026-11-09 20:30:08 EST
+url: http://127.0.0.1:8080/api/v1/checks
+body_file: fixtures/03-trademark-hit-etsy.json
+body_sha256: e464af695135402e740ea0e803839a1fd953c76fa828b97e8a92f831825aa0d4
+http_status: 200
+response_sha256: a80a5ec20d4107dc91051a601ba98067d8de32ebb65f8a1c17dd97e9623d3c85
+response_bytes: 588
+response_json:
+{
+  "checkId": "6d98ebbd-e475-4cfd-bf73-6bc97846f443",
+  "status": "COMPLETED",
+  "marketplace": "ETSY",
+  "rulesetVersion": "etsy-2026-12",
+  "analysisVersion": "etsy-2026-12",
+  "contentHash": "62615a7eb4487d8ce5eb10287ac99f8d13be35f24d8758ae896af223f0e83bd9",
+  "cached": false,
+  "createdAt": "2026-11-10T01:30:08.356827Z",
+  "summary": {
+    "errors": 1,
+    "warnings": 0,
+    "infos": 0
+  },
+  "findings": [
+    {
+      "ruleId": "required_fields",
+      "source": "RULE",
+      "severity": "ERROR",
+      "field": "category",
+      "value": null,
+      "message": "Thiếu trường bắt buộc 'category'.",
+      "suggestion": "Bổ sung giá trị cho trường 'category' trước khi publish."
+    }
+  ]
+}

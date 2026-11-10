@@ -1,0 +1,29 @@
+{
+  "marketplace": "AMAZON",
+  "parent": {
+    "sku": "TEE-P",
+    "product_type": "SHIRT",
+    "variation_theme": "Color-Size",
+    "title": "Retro Sunset Tee"
+  },
+  "children": [
+    {
+      "sku": "TEE-RED-S",
+      "parent_sku": "TEE-P",
+      "title": "Retro Sunset Tee - Red - S",
+      "attributes": {
+        "Color": "Red",
+        "Size": "S"
+      }
+    },
+    {
+      "sku": "TEE-RED-M",
+      "parent_sku": "TEE-X",
+      "title": "Retro Sunset Tee - Red - M",
+      "attributes": {
+        "Color": "Red",
+        "Size": "M"
+      }
+    }
+  ]
+}

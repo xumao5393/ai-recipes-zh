@@ -1,0 +1,10 @@
+# 锁定文件副本核对  2026-11-09 17:32:55 EST
+# 命令: (cd boss-office && sha256sum -c repo/evidence/03-export/SHA256SUMS.txt) 于 17:29:42 EST 全部 OK；下面核对 sandbox 副本与原件逐个一致
+bb33d7e6f773abeca09817f36006bd804291c7b5aa6e119ce7460d1bed718a4d  triage.py  与原件一致
+fcbc8089e70ce56c6b7a076ec4416943398a3521ccb5e6b77ab552e12fa0e5de  score.py  与原件一致
+f2f9eff90a16dd2950daaf68831ed14482f21e550c2c165b788810c688f6bde7  known_contacts.csv  与原件一致
+03066f79b80c038fb2ab6079bda50dbd18a5e158f4b76f784e1f56e35b4c78cf  inbox.json  与原件一致
+116b0d6071ea0046f9a3d6d5a806c3cd965098f130169c9ba53e30620191cb82  holdout.json  与原件一致
+b5bc450319c04267b954db81865b86ea710d34e7b2310ce7b590dea136d2baf2  truth.csv  与原件一致
+adcba4cbe043226154fabf6ee5b79a3aab5efabb86a8a561be1b1979290d8cab  holdout_truth.csv  与原件一致
+# 备注：triage_frozen.sha256 第2行是时间戳，sha256sum -c 提示 '1 line is improperly formatted'，triage.py 本身 OK

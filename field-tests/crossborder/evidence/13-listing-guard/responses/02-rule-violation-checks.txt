@@ -1,0 +1,97 @@
+time: 2026-11-09 20:30:08 EST
+url: http://127.0.0.1:8080/api/v1/checks
+body_file: fixtures/02-rule-violation-etsy.json
+body_sha256: 3236b74158a04ebc057353296d2c4e86ad73d4cfbf11e264e2c43fb4f306a8cc
+http_status: 200
+response_sha256: c4a0cb915d794ce6f1f766cccacaaa271745c716729aabc7f15ce9be35816278
+response_bytes: 2757
+response_json:
+{
+  "checkId": "81c62088-f0c7-4664-969f-4eb59f0cb1cc",
+  "status": "COMPLETED",
+  "marketplace": "ETSY",
+  "rulesetVersion": "etsy-2026-12",
+  "analysisVersion": "etsy-2026-12",
+  "contentHash": "5318fc229fe8fd0d33b13736322b5cd1d841af34ce2b0ac66e6fb507c9bcc231",
+  "cached": false,
+  "createdAt": "2026-11-10T01:30:08.262536Z",
+  "summary": {
+    "errors": 4,
+    "warnings": 4,
+    "infos": 0
+  },
+  "findings": [
+    {
+      "ruleId": "required_fields",
+      "source": "RULE",
+      "severity": "ERROR",
+      "field": "category",
+      "value": null,
+      "message": "Thiếu trường bắt buộc 'category'.",
+      "suggestion": "Bổ sung giá trị cho trường 'category' trước khi publish."
+    },
+    {
+      "ruleId": "price_quantity_positive",
+      "source": "RULE",
+      "severity": "ERROR",
+      "field": "quantity",
+      "value": "0",
+      "message": "Số lượng là 0, phải lớn hơn 0.",
+      "suggestion": "Nhập số lượng lớn hơn 0."
+    },
+    {
+      "ruleId": "title_length",
+      "source": "RULE",
+      "severity": "ERROR",
+      "field": "title",
+      "value": "SUPER SALE FREE SHIPPING BEST PRICE Handmade Mug Mug Mug !!!!! xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "message": "Tiêu đề dài 183 ký tự, tối đa 140.",
+      "suggestion": "Rút ngắn tiêu đề ít nhất 43 ký tự."
+    },
+    {
+      "ruleId": "title_repeated_words",
+      "source": "RULE",
+      "severity": "WARNING",
+      "field": "title",
+      "value": "Mug",
+      "message": "Từ 'Mug' xuất hiện 3 lần trong tiêu đề, tối đa 1 lần.",
+      "suggestion": "Bỏ bớt 2 lần xuất hiện của từ 'Mug' trong tiêu đề."
+    },
+    {
+      "ruleId": "title_promotional_terms",
+      "source": "RULE",
+      "severity": "WARNING",
+      "field": "title",
+      "value": "FREE SHIPPING",
+      "message": "Tiêu đề có cụm từ về giá, vận chuyển hoặc khuyến mãi: 'FREE SHIPPING'.",
+      "suggestion": "Cân nhắc bỏ cụm từ này khỏi tiêu đề: theo hướng dẫn của Etsy, Etsy tự gắn nhãn về giá, vận chuyển và khuyến mãi cho sản phẩm trong kết quả tìm kiếm."
+    },
+    {
+      "ruleId": "title_promotional_terms",
+      "source": "RULE",
+      "severity": "WARNING",
+      "field": "title",
+      "value": "SALE",
+      "message": "Tiêu đề có cụm từ về giá, vận chuyển hoặc khuyến mãi: 'SALE'.",
+      "suggestion": "Cân nhắc bỏ cụm từ này khỏi tiêu đề: theo hướng dẫn của Etsy, Etsy tự gắn nhãn về giá, vận chuyển và khuyến mãi cho sản phẩm trong kết quả tìm kiếm."
+    },
+    {
+      "ruleId": "tag_count",
+      "source": "RULE",
+      "severity": "ERROR",
+      "field": "tags",
+      "value": null,
+      "message": "Listing có 15 tag, tối đa 13.",
+      "suggestion": "Bỏ bớt 2 tag, giữ lại các tag liên quan nhất."
+    },
+    {
+      "ruleId": "duplicate_tags",
+      "source": "RULE",
+      "severity": "WARNING",
+      "field": "tags[1]",
+      "value": "mug",
+      "message": "Tag 'mug' trùng với tag ở vị trí 1.",
+      "suggestion": "Xoá tag trùng hoặc thay bằng một tag khác để tận dụng đủ chỗ."
+    }
+  ]
+}

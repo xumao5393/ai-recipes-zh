@@ -1,0 +1,5 @@
+# Node 版本 · 2026-11-09 19:30 EST · n=1
+本机 node: v24.22.1
+package.json engines.node: >=22.5.0
+semver.satisfies('24.22.1', '>=22.5.0') = true
+结论：满足要求，未另装 Node / nvm。

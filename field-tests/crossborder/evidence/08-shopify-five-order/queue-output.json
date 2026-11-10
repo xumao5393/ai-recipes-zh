@@ -1,0 +1,83 @@
+{
+  "label": "方法来自网站文章，没有他人实测数据",
+  "source_url": "https://whiskerbeacon.com/guides/shopify-automation-with-grok-bot/",
+  "reference_time_utc": "2026-11-09T23:00:00Z",
+  "input_orders": 5,
+  "exception_rows": 4,
+  "excluded_normal": [
+    "#FAKE-1001"
+  ],
+  "queue": [
+    {
+      "order": "#FAKE-1002",
+      "admin_url": "https://example.invalid/admin/orders/9002",
+      "customer": "Bob Address",
+      "exception": "address_problem",
+      "evidence": [
+        "shipping_address.address_verification=failed",
+        "shipping_address.city=empty",
+        "shipping_address.zip=empty"
+      ],
+      "age_hours": 34,
+      "age_start": "2026-11-08T12:05:00Z",
+      "proposed_next_step": "Internal: verify/correct shipping address with customer data on file; hold fulfilment until fixed.",
+      "approval_needed": [
+        "customer_message"
+      ]
+    },
+    {
+      "order": "#FAKE-1003",
+      "admin_url": "https://example.invalid/admin/orders/9003",
+      "customer": "Cara Backorder",
+      "exception": "backorder",
+      "evidence": [
+        "line_items[1].sku=SKU-B2;inventory_status=backordered;fulfillable_quantity=2"
+      ],
+      "age_hours": 31,
+      "age_start": "2026-11-08T16:00:00Z",
+      "proposed_next_step": "Internal: confirm restock ETA; draft delay notice for merchant review.",
+      "approval_needed": [
+        "customer_message",
+        "inventory_edit"
+      ]
+    },
+    {
+      "order": "#FAKE-1004",
+      "admin_url": "https://example.invalid/admin/orders/9004",
+      "customer": "Dan Late",
+      "exception": "late_shipment",
+      "evidence": [
+        "fulfillment_status=unfulfilled",
+        "promised_ship_by=2026-11-05T23:59:59Z",
+        "fulfillments:no_success"
+      ],
+      "age_hours": 95,
+      "age_start": "2026-11-05T23:59:59Z",
+      "proposed_next_step": "Internal: escalate fulfilment; draft apology/delay notice for merchant review.",
+      "approval_needed": [
+        "customer_message",
+        "cancellation",
+        "discount"
+      ]
+    },
+    {
+      "order": "#FAKE-1005",
+      "admin_url": "https://example.invalid/admin/orders/9005",
+      "customer": "Eve Incomplete",
+      "exception": "incomplete",
+      "evidence": [
+        "missing:fulfillment_status",
+        "missing:fulfillments",
+        "missing:promised_ship_by",
+        "missing:line_items[0].inventory_status",
+        "missing:line_items[0].fulfillable_quantity"
+      ],
+      "age_hours": 26,
+      "age_start": "2026-11-08T20:01:00Z",
+      "proposed_next_step": "Merchant: supply missing fulfilment fields before classifying; do not guess.",
+      "approval_needed": []
+    }
+  ],
+  "actions_executed": [],
+  "note": "Queue only. No refund/cancel/discount/inventory/customer send was performed."
+}

@@ -1,0 +1,4 @@
+docker_cli: ABSENT
+docker_sock: ls: cannot access '/var/run/docker.sock': No such file or directory
+podman: ABSENT
+sudo_nopass: 

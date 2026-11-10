@@ -1,0 +1,25 @@
+{
+  "marketplace": "ETSY",
+  "listing": {
+    "title": "Zibblefrax Style Ceramic Mug",
+    "description": "Fictional test listing using an invented demo catalog mark. Not a real trademark.",
+    "tags": [
+      "ceramic",
+      "mug",
+      "demo",
+      "test",
+      "kitchen"
+    ],
+    "materials": [
+      "stoneware"
+    ],
+    "who_made": "i_did",
+    "when_made": "2020_2024",
+    "taxonomy_id": 1234,
+    "price": "20.00",
+    "quantity": 5,
+    "images": [
+      "https://example.invalid/zibble.jpg"
+    ]
+  }
+}

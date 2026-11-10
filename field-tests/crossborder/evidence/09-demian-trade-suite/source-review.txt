@@ -1,0 +1,37 @@
+# source-review · demian-trade-suite-dsh-plugin 安装前静态审查
+时区 EST。审查时间：2026-11-09 19:22:57–19:25:40 EST（clone / npm pack 之后；plugin add、离线计算、dsh web 都在审查结论之后）。
+顺序：clone → npm pack 核对 → 本审查 → 审查干净才运行。
+
+## 版本钉死
+- commit：e4c909ecd13beb7eba118815f61ba5b4eb15afaa（2026-11-01 15:51:30 +0800 = 02:51:30 EST），共 3 个提交
+  https://github.com/southcul/demian-trade-suite-dsh-plugin/commit/e4c909ecd13beb7eba118815f61ba5b4eb15afaa
+- npm：dsh-plugin-demian-trade-suite@1.0.1，gitHead 同上述 commit；tarball 11 个文件与 git 对应文件 sha256 全部一致（见 UPSTREAM-SHA256.txt）
+- 文件清单与 sha256：见 UPSTREAM-SHA256.txt（git 16 个跟踪文件；npm 11 个，不含 docs/scripts/gitignore 等）
+
+## 1. 生命周期脚本（package.json + npm view）
+- scripts 只有 `"package": "python scripts/package.py"`——自定义打包脚本，**不是** preinstall / install / postinstall / prepare / prepack / prepublish。
+- 无 dependencies / peerDependencies / optionalDependencies / devDependencies / engines。
+- scripts/package.py：只读本仓库文件写 zip + 打 sha256，无网络、无子进程（标准库 hashlib/zipfile/pathlib）。
+- cordis.patch.yml（2 行）：insert id=demian-trade-suite-panel，name=dsh-plugin-demian-trade-suite；无 installer 角色、无 !!js。
+
+## 2. 网络 / 进程 / 动态执行检索
+命令范围：index.js client.js assets/workbench.html scripts/package.py cordis.patch.yml package.json
+命中要点：
+- index.js：只 `import { readFileSync } from 'node:fs'`，把 workbench.html 注册到宿主 `ctx.webServer` 的 exact 路由 `/plugins/demian-trade-suite/workbench.html`；不发外网请求。
+- client.js：DSH 客户端模块，用宿主注入的 React；iframe `src` 固定为本 origin 的上述路径；无 fetch。
+- workbench.html：单文件应用；`localStorage` 读写草稿/卖方信息/语言；`window.print()` / `Blob`+`URL.createObjectURL` 做本机导出；`new Image()` + FileReader 处理用户本地上传的 logo/图。**未发现 fetch / XMLHttpRequest / WebSocket / navigator.sendBeacon / http(s) 外连 / CDN script src**。
+- package.json 的 repository/homepage URL 是元数据，非运行时请求。
+- 无 child_process / eval / new Function（client 的 factory(require) 是 DSH ModuleLoader 约定）。
+
+## 3. 读写哪些文件
+- 宿主半：只读包内 `assets/workbench.html`（readFileSync）。
+- 工作台：浏览器 localStorage（同 origin）；导入导出用户选择的本地文件；不读系统密钥或其它程序目录。
+
+## 4. 装柜计算要点（行号供复核；不贴大段原文）
+- VEHICLES 柜型内尺寸与标称容积（约 L6152–6160）。
+- lgEffDims / lgGross / lgRotations / lgCalc（约 L6278 起）：totalCbm = Σ(eff.l×eff.w×eff.h×qty/1e6)；usage = usedVolume/(w×h×d)×100；nEst = max(1, ceil(totalCbm/(vol×0.85)), ceil(totalGw/(maxWeight×0.9)))。
+
+## 结论
+- **无安装期自动脚本；无 npm 依赖；运行时默认路径不出外网**（只服务本机 origin / 本机存储）。
+- 未声明 dsh 版本；审查干净，允许尝试加载。
+- 本轮网络访问只有：git clone（github.com）、api.github.com 元数据、npm view / npm pack（registry.npmjs.org），全部只读。模型请求：无。DeepSeek 官方 API 地址：未碰。

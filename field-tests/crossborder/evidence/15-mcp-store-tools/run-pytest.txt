@@ -1,0 +1,125 @@
+time_start: 2026-11-09 21:31:57 EST
+cmd: unshare -rn bash -c 'ip link set lo up; unset MCP_STORE_TOOLS_LIVE SHOPIFY_STORE_DOMAIN SHOPIFY_STOREFRONT_TOKEN MCP_AUTH_TOKEN; prove no egress; python -m pytest --cov --cov-report=term -v'
+cwd: <sandbox>/15-mcp-store-tools/upstream
+python: <sandbox>/15-mcp-store-tools/venv/bin/python
+note: loopback up for local sockets if any; no other interfaces; live env vars unset so tests/test_live.py stay skipped
+
+==== offline proof ====
+interfaces:
+lo               UNKNOWN        127.0.0.1/8 ::1/128 
+routes:
+curl pypi (should fail):
+curl: (6) Could not resolve host: pypi.org
+curl_exit=6
+curl github:
+curl: (6) Could not resolve host: github.com
+curl_github_exit=6
+MCP_STORE_TOOLS_LIVE=<unset>
+SHOPIFY_STORE_DOMAIN=<unset>
+==== pytest ====
+============================= test session starts ==============================
+platform linux -- Python 3.13.5, pytest-9.2.0, pluggy-1.7.0 -- <sandbox>/15-mcp-store-tools/venv/bin/python
+cachedir: .pytest_cache
+rootdir: <sandbox>/15-mcp-store-tools/upstream
+configfile: pyproject.toml
+plugins: cov-7.1.0, asyncio-1.4.1.post1, anyio-4.16.0
+asyncio: mode=Mode.AUTO, debug=False, asyncio_default_fixture_loop_scope=function, asyncio_default_test_loop_scope=function
+collecting ... collected 79 items
+
+tests/test_audit.py::test_a_clean_catalog_has_no_issues PASSED           [  1%]
+tests/test_audit.py::test_every_check_flags_its_own_problem PASSED       [  2%]
+tests/test_audit.py::test_duplicates_examples_cap_and_top_issues PASSED  [  3%]
+tests/test_audit.py::test_an_empty_catalog_reports_zero_percent PASSED   [  5%]
+tests/test_audit.py::test_no_urls_anywhere_is_reported_once_as_a_store_wide_note PASSED [  6%]
+tests/test_http.py::test_requests_need_the_exact_bearer_token PASSED     [  7%]
+tests/test_http.py::test_rate_limit_answers_429_with_retry_after_per_client PASSED [  8%]
+tests/test_http.py::test_healthz_skips_auth_and_everything_else_does_not PASSED [ 10%]
+tests/test_http.py::test_build_app_layers_health_rate_limit_and_auth PASSED [ 11%]
+tests/test_live.py::test_demo_store_answers_every_tool_over_stdio SKIPPED [ 12%]
+tests/test_live.py::test_demo_store_over_streamable_http_with_a_bearer_token SKIPPED [ 13%]
+tests/test_live.py::test_real_store_with_a_storefront_token SKIPPED      [ 15%]
+tests/test_live.py::test_real_store_rejects_a_wrong_token SKIPPED (s...) [ 16%]
+tests/test_metadata.py::test_server_json_matches_the_package PASSED      [ 17%]
+tests/test_scale.py::test_audit_and_deals_over_5000_products_with_throttling PASSED [ 18%]
+tests/test_scale.py::test_the_product_cap_stops_the_walk_early PASSED    [ 20%]
+tests/test_server.py::test_tools_are_listed_with_read_only_hints_and_bounds PASSED [ 21%]
+tests/test_server.py::test_search_then_get_product PASSED                [ 22%]
+tests/test_server.py::test_policies PASSED                               [ 24%]
+tests/test_server.py::test_bad_input_and_store_failures_are_tool_errors PASSED [ 25%]
+tests/test_server.py::test_config_requires_both_variables PASSED         [ 26%]
+tests/test_server.py::test_config_accepts_a_pasted_store_url[https://demo.myshopify.com/] PASSED [ 27%]
+tests/test_server.py::test_config_accepts_a_pasted_store_url[demo.myshopify.com/admin] PASSED [ 29%]
+tests/test_server.py::test_config_accepts_a_pasted_store_url[ Demo.myshopify.com ] PASSED [ 30%]
+tests/test_server.py::test_config_rejects_values_that_are_not_store_domains[not a domain] PASSED [ 31%]
+tests/test_server.py::test_config_rejects_values_that_are_not_store_domains[demo..com] PASSED [ 32%]
+tests/test_server.py::test_config_rejects_values_that_are_not_store_domains[localhost] PASSED [ 34%]
+tests/test_server.py::test_version_flag PASSED                           [ 35%]
+tests/test_server.py::test_demo_store_uses_the_public_sample_endpoint PASSED [ 36%]
+tests/test_server.py::test_collections_then_browse_pages PASSED          [ 37%]
+tests/test_server.py::test_config_reads_country_and_language PASSED      [ 39%]
+tests/test_server.py::test_search_rejects_an_inverted_price_range PASSED [ 40%]
+tests/test_server.py::test_prompts_are_listed_and_name_only_real_tools PASSED [ 41%]
+tests/test_server.py::test_ctrl_c_stops_the_server_once_without_a_traceback PASSED [ 43%]
+tests/test_server.py::test_main_reports_ctrl_c_and_exits_130 PASSED      [ 44%]
+tests/test_server.py::test_run_serves_the_chosen_transport PASSED        [ 45%]
+tests/test_server.py::test_recommendations_store_info_and_pages PASSED   [ 46%]
+tests/test_server.py::test_build_cart_link_merges_lines_and_rejects_bad_items PASSED [ 48%]
+tests/test_server.py::test_audit_catalog_tool_reports_the_whole_catalog PASSED [ 49%]
+tests/test_server.py::test_deals_compare_options_and_country_through_mcp PASSED [ 50%]
+tests/test_server.py::test_resources_expose_store_info_collections_and_policies PASSED [ 51%]
+tests/test_skill.py::test_frontmatter_follows_the_skill_spec PASSED      [ 53%]
+tests/test_skill.py::test_skill_documents_exactly_the_served_tools PASSED [ 54%]
+tests/test_skill.py::test_reference_links_resolve PASSED                 [ 55%]
+tests/test_storefront.py::test_search_sends_the_token_and_returns_plain_products PASSED [ 56%]
+tests/test_storefront.py::test_search_filters_are_sent_and_enforced_on_the_results PASSED [ 58%]
+tests/test_storefront.py::test_product_includes_variants_and_missing_is_none PASSED [ 59%]
+tests/test_storefront.py::test_products_with_more_variants_than_shown_are_flagged PASSED [ 60%]
+tests/test_storefront.py::test_policies_skip_unset_ones_and_drop_scripts PASSED [ 62%]
+tests/test_storefront.py::test_throttling_is_retried_then_reported PASSED [ 63%]
+tests/test_storefront.py::test_retry_after_is_honoured_and_capped PASSED [ 64%]
+tests/test_storefront.py::test_errors_never_leak_the_token PASSED        [ 65%]
+tests/test_storefront.py::test_plain_text_bounds_and_strips_markup PASSED [ 67%]
+tests/test_storefront.py::test_browse_maps_sorts_to_each_api_sort_key PASSED [ 68%]
+tests/test_storefront.py::test_country_and_language_are_sent_with_every_store_query PASSED [ 69%]
+tests/test_storefront.py::test_policies_and_collections_are_cached_but_products_are_not PASSED [ 70%]
+tests/test_storefront.py::test_network_errors_are_retried_then_reported PASSED [ 72%]
+tests/test_storefront.py::test_client_and_graphql_errors_are_reported[response0-error \\(404\\)\\.$] PASSED [ 73%]
+tests/test_storefront.py::test_client_and_graphql_errors_are_reported[response1-error \\(400\\): Online Store channel is locked] PASSED [ 74%]
+tests/test_storefront.py::test_client_and_graphql_errors_are_reported[response2-error \\(400\\)\\.$] PASSED [ 75%]
+tests/test_storefront.py::test_client_and_graphql_errors_are_reported[response3-bad field] PASSED [ 77%]
+tests/test_storefront.py::test_search_falls_back_to_the_keyword_query_when_the_index_is_empty PASSED [ 78%]
+tests/test_storefront.py::test_recommendations_map_kinds_to_intents_and_missing_is_none PASSED [ 79%]
+tests/test_storefront.py::test_store_info_is_flattened_and_cached PASSED [ 81%]
+tests/test_storefront.py::test_page_search_uses_the_index_then_falls_back_to_matching_words PASSED [ 82%]
+tests/test_storefront.py::test_cart_link_checks_variants_and_totals_lines PASSED [ 83%]
+tests/test_storefront.py::test_all_products_walks_every_page_and_reports_truncation PASSED [ 84%]
+tests/test_storefront.py::test_sale_fields_show_compare_at_price_and_percent_off PASSED [ 86%]
+tests/test_storefront.py::test_option_search_matches_real_variants_case_insensitively PASSED [ 87%]
+tests/test_storefront.py::test_country_overrides_the_configured_market_per_call PASSED [ 88%]
+tests/test_storefront.py::test_deals_sort_by_discount_and_respect_the_minimum PASSED [ 89%]
+tests/test_storefront.py::test_compare_lists_options_and_differences PASSED [ 91%]
+tests/test_storefront.py::test_page_search_falls_back_to_articles_too PASSED [ 92%]
+tests/test_storefront.py::test_stock_counts_when_the_token_allows_them PASSED [ 93%]
+tests/test_storefront.py::test_untracked_stock_reads_as_unknown_not_zero PASSED [ 94%]
+tests/test_storefront.py::test_a_token_without_inventory_scope_falls_back_once_and_remembers PASSED [ 96%]
+tests/test_storefront.py::test_other_errors_on_the_stock_query_are_not_swallowed PASSED [ 97%]
+tests/test_storefront.py::test_size_abbreviations_match_store_spellings PASSED [ 98%]
+tests/test_storefront.py::test_option_search_carries_stock_counts_when_allowed PASSED [100%]
+
+================================ tests coverage ================================
+_______________ coverage: platform linux, python 3.13.5-final-0 ________________
+
+Name                                                                                                                                 Stmts   Miss  Cover   Missing
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+<sandbox>/15-mcp-store-tools/venv/lib/python3.13/site-packages/mcp_store_tools/__init__.py         0      0   100%
+<sandbox>/15-mcp-store-tools/venv/lib/python3.13/site-packages/mcp_store_tools/audit.py           29      0   100%
+<sandbox>/15-mcp-store-tools/venv/lib/python3.13/site-packages/mcp_store_tools/http.py            63      2    97%   65, 92
+<sandbox>/15-mcp-store-tools/venv/lib/python3.13/site-packages/mcp_store_tools/server.py         179      2    99%   311, 460
+<sandbox>/15-mcp-store-tools/venv/lib/python3.13/site-packages/mcp_store_tools/storefront.py     366      3    99%   388, 607, 755
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+TOTAL                                                                                                                                  637      7    99%
+Required test coverage of 95.0% reached. Total coverage: 98.90%
+======================== 75 passed, 4 skipped in 3.90s =========================
+pytest_elapsed_sec=4.519
+pytest_exit=0
+time_end: 2026-11-09 21:32:01 EST

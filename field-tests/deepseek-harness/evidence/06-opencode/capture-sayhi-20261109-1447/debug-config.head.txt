@@ -1,0 +1,26 @@
+[
+  {
+    "type": "document",
+    "path": "/tmp/ochome/.config/opencode/opencode.json",
+    "info": {
+      "$schema": "https://opencode.ai/config.json",
+      "model": {
+        "providerID": "deepseek",
+        "model": "deepseek-chat"
+      },
+      "providers": {
+        "deepseek": {
+          "settings": {
+            "headerTimeout": 5000,
+            "chunkTimeout": 5000,
+            "baseURL": "http://127.0.0.1:19016/v1"
+          }
+        }
+      }
+    }
+  },
+  {
+    "type": "directory",
+    "path": "/tmp/ochome/.config/opencode"
+  }
+]

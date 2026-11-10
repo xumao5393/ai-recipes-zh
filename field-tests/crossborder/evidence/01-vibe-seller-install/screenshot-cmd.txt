@@ -1,0 +1,3 @@
+start screenshot: 2026-11-09 14:43:15 EST
+end screenshot: 2026-11-09 14:43:17 EST
+-rw-r--r-- 1 box box 44027 Nov  9 14:43 /workspace/fourday-20261109/crossborder/repo/evidence/01-vibe-seller-install/homepage-screenshot.png

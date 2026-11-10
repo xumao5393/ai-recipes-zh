@@ -1,0 +1,11 @@
+# network-notes (GAP Free MicroVM SSH probe)
+- System DNS resolves gap.geta.team and gap-node-01-u3.vm.elestio.app to 198.18.0.1 (proxy fake-ip range).
+- HTTPS to https://gap.geta.team/free-vm works (HTTP 200) through that DNS — no DoH / no IP override used.
+- TCP connect to system-resolved 198.18.0.1:2121 returns immediately, but SSH banner read timed out after 5s (n=1 probe before keygen).
+- Per Kumo: if network blocks, stop; do not bypass with DoH or direct IP.
+
+## SSH attempt1 (2026-11-09 19:31:14 EST, n=1)
+- Resolved via system DNS to 198.18.0.1:2121 (proxy fake-ip).
+- TCP "Connection established" then remote returned HTTP/1.1 400 Bad Request (Server: Pingora) instead of an SSH banner.
+- ssh exit 255 in ~13 ms. No shell. Did not bypass with DoH or direct IP. Did not retry.
+- Private throwaway key deleted after attempt (ssh-key-deleted.txt). Public key fingerprint retained.

@@ -1,0 +1,20 @@
+# 时间(开始): 2026-11-09 17:30:15 EST
+# 命令: python3 triage.py inbox.json
+# exit=0 耗时=0.029s
+# stderr:
+# cwd: crossborder/sandbox/05-dsh-trade-assistant/ours（03-export 锁定文件的副本）
+# stdout:
+E03	诈骗/钓鱼风险	风险词: login to view, log ?in
+E05	诈骗/钓鱼风险	发件域名 greenleaf-retaii.example 和老客户 greenleaf-retail.example 只差几个字母；风险词: bank details, new account, accounts have moved
+E08	诈骗/钓鱼风险	风险词: net ?\d+ days, to be advised
+E13	诈骗/钓鱼风险	风险词: registration (and certification )?fee, pay \d+ ?usd, selected as supplier
+E01	真询盘	有数量 3000 pcs 和规格词 500ml
+E07	真询盘	有数量 500 pcs 和规格词 350ml；免费邮箱，需另行核实
+E10	真询盘	有数量 2000 pcs 和规格词 750ml
+E14	真询盘	有数量 1000 pcs 和规格词 infuser
+E04	老客户跟进	域名在老客户名单（老客户，PO#2291）
+E12	老客户跟进	域名在老客户名单（老客户，订单0815）
+E02	泛问/低价值	只要价格/资料，无具体产品数量
+E09	泛问/低价值	只要价格/资料，无具体产品数量
+E06	广告	群发/推广特征
+E11	广告	群发/推广特征

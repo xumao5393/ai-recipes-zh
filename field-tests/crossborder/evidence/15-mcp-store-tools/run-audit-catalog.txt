@@ -1,0 +1,189 @@
+time_start: 2026-11-09 21:32:26 EST
+cmd: unshare -rn ... python drivers/audit_catalog_driver.py --fixture fixtures/catalog-nodes.json --expected-sha256 51bdbcd6dfa662d72d4b1cc88cdc94bc30c8208351b09b528eab0023d3c5252a
+note: same offline namespace as pytest; fixture hash frozen at 2026-11-09 21:31:38 EST, checked again immediately before this run
+pre-run sha256: 51bdbcd6dfa662d72d4b1cc88cdc94bc30c8208351b09b528eab0023d3c5252a  <sandbox>/15-mcp-store-tools/fixtures/catalog-nodes.json
+
+curl pypi (should fail):
+curl: (6) Could not resolve host: pypi.org
+curl_exit=6
+HTTP Request: POST https://demo.myshopify.com/api/2026-10/graphql.json "HTTP/1.1 200 OK"
+{
+  "tools": [
+    "search_products",
+    "get_product",
+    "list_collections",
+    "browse_products",
+    "list_policies",
+    "get_policy",
+    "get_recommendations",
+    "get_store_info",
+    "search_pages",
+    "build_cart_link",
+    "audit_catalog",
+    "find_deals",
+    "compare_products"
+  ],
+  "report": {
+    "products_checked": 13,
+    "truncated": false,
+    "top_issues": [
+      "duplicate_title",
+      "short_description",
+      "no_image"
+    ],
+    "checks": {
+      "short_description": {
+        "label": "Description missing or under 100 characters",
+        "count": 1,
+        "percent": 7.7,
+        "examples": [
+          {
+            "title": "Pine Hook",
+            "handle": "pine-hook",
+            "url": "https://demo.example/products/pine-hook"
+          }
+        ]
+      },
+      "no_image": {
+        "label": "No product image",
+        "count": 1,
+        "percent": 7.7,
+        "examples": [
+          {
+            "title": "Bare Shelf",
+            "handle": "bare-shelf",
+            "url": "https://demo.example/products/bare-shelf"
+          }
+        ]
+      },
+      "no_product_type": {
+        "label": "No product type",
+        "count": 1,
+        "percent": 7.7,
+        "examples": [
+          {
+            "title": "Mystery Box",
+            "handle": "mystery-box",
+            "url": "https://demo.example/products/mystery-box"
+          }
+        ]
+      },
+      "no_vendor": {
+        "label": "No vendor",
+        "count": 1,
+        "percent": 7.7,
+        "examples": [
+          {
+            "title": "Anonymous Mug",
+            "handle": "anonymous-mug",
+            "url": "https://demo.example/products/anonymous-mug"
+          }
+        ]
+      },
+      "no_tags": {
+        "label": "No tags",
+        "count": 1,
+        "percent": 7.7,
+        "examples": [
+          {
+            "title": "Plain Coaster",
+            "handle": "plain-coaster",
+            "url": "https://demo.example/products/plain-coaster"
+          }
+        ]
+      },
+      "not_on_online_store": {
+        "label": "Not published to the online store (no product URL)",
+        "count": 1,
+        "percent": 7.7,
+        "examples": [
+          {
+            "title": "Warehouse Lamp",
+            "handle": "warehouse-lamp",
+            "url": ""
+          }
+        ]
+      },
+      "sold_out": {
+        "label": "Sold out (no variant available)",
+        "count": 1,
+        "percent": 7.7,
+        "examples": [
+          {
+            "title": "Sold Out Tent",
+            "handle": "sold-out-tent",
+            "url": "https://demo.example/products/sold-out-tent"
+          }
+        ]
+      },
+      "wide_price_range": {
+        "label": "Highest variant price is over 3x the lowest (check for a typo)",
+        "count": 1,
+        "percent": 7.7,
+        "examples": [
+          {
+            "title": "Typo Bundle",
+            "handle": "typo-bundle",
+            "url": "https://demo.example/products/typo-bundle"
+          }
+        ]
+      },
+      "title_all_caps": {
+        "label": "Title in ALL CAPS",
+        "count": 1,
+        "percent": 7.7,
+        "examples": [
+          {
+            "title": "SHOUTING SIGN",
+            "handle": "shouting-sign",
+            "url": "https://demo.example/products/shouting-sign"
+          }
+        ]
+      },
+      "title_too_long": {
+        "label": "Title longer than 70 characters",
+        "count": 1,
+        "percent": 7.7,
+        "examples": [
+          {
+            "title": "A Decorative Banner With An Overlong Name For The Hallway Wall XXXXXXXX",
+            "handle": "long-title-banner",
+            "url": "https://demo.example/products/long-title-banner"
+          }
+        ]
+      },
+      "duplicate_title": {
+        "label": "Title shared with another product",
+        "count": 2,
+        "percent": 15.4,
+        "examples": [
+          {
+            "title": "Cedar Crate",
+            "handle": "cedar-crate-a",
+            "url": "https://demo.example/products/cedar-crate-a"
+          },
+          {
+            "title": "Cedar Crate",
+            "handle": "cedar-crate-b",
+            "url": "https://demo.example/products/cedar-crate-b"
+          }
+        ]
+      }
+    },
+    "notes": [],
+    "scope": "Published storefront data only: drafts, inventory counts, SEO fields, and sales are not visible to this audit."
+  },
+  "transport_calls": [
+    {
+      "operation": "Browse",
+      "url": "https://demo.myshopify.com/api/2026-10/graphql.json",
+      "after": null
+    }
+  ],
+  "call_count": 1
+}
+driver_elapsed_sec=0.660
+driver_exit=0
+time_end: 2026-11-09 21:32:27 EST
+post-run sha256: 51bdbcd6dfa662d72d4b1cc88cdc94bc30c8208351b09b528eab0023d3c5252a  <sandbox>/15-mcp-store-tools/fixtures/catalog-nodes.json
+git_status:

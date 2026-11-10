@@ -1,0 +1,12 @@
+# MASKING · 13-listing-guard
+时间：2026-11-09 20:33 EST
+1. 上游源码不入公开库：只留 commit 链接与 UPSTREAM-SHA256.txt 说明。原件在 <sandbox>/13-listing-guard/upstream/。
+2. API key：admin `key create demo-client` 打印的密钥只留在 internal-archive/13-listing-guard/secrets/ 与 sandbox secrets/；公开 run-admin-key-create.txt / run-mcp-http.txt 等用 <REDACTED_API_KEY>。
+3. Maven 完整下载日志（约 1600+ 行）放 internal-archive/.../raw-runs/run-mvn-package.raw.txt；公开 run-mvn-package.txt 只留头尾与 BUILD SUCCESS。
+4. api.log 全文放 internal-archive/.../raw-runs/api.log；公开只留 api-startup-excerpts.txt。
+5. 路径：公开文件里沙箱根替换为 <sandbox>/13-listing-guard，工作区根替换为 <workspace>，主目录替换为 <home>。
+6. JDK / Docker 静态包 / .deb 安装包不入公开库（体积大），只留安装命令与版本记录。
+7. 编号 13：开工前已在 crossborder/PLAN.md 登记（实测员 11-09 20:22）。
+8. Kumo 裁定：在本机自建实例上用 admin 建 demo-client/key 不算注册；key 不进证据原文。
+9. DEMO 商标目录是仓库自带的虚构数据（catalogs/demo），不是真实商标库。
+10. 2026-11-09 20:35 EST：测试用 key（keyId o10k7rb2）在证据收齐后已 admin revoke，防止工具日志残留被复用。

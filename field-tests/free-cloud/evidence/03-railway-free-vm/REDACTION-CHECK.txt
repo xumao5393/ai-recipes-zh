@@ -1,0 +1,6 @@
+# REDACTION CHECK 2026-11-09 15:38:28 EST
+private key / unredacted signup code in non-html: none
+IPs in non-html: see network-notes placeholders; localhost 127.0.0.1 intentional in CF worker evidence
+ /home/box: none
+node_modules in repo: none
+SSH private key deleted from /tmp

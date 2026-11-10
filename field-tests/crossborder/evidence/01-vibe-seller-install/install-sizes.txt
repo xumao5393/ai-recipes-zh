@@ -1,0 +1,3 @@
+712M	/workspace/fourday-20261109/crossborder/sandbox/home/.local/share/uv/tools/vibe-seller
+681M	/workspace/fourday-20261109/crossborder/sandbox/home/.cache/ms-playwright
+327M	/workspace/fourday-20261109/crossborder/sandbox/home/.vibe-seller

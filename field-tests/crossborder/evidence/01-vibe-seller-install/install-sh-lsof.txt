@@ -1,0 +1,60 @@
+335-  curl -sSL https://raw.githubusercontent.com/zpoint/vibe-seller/main/install.sh | bash -s -- --dev
+336-
+337-  Installs system dependencies (curl, git, uv, node, pnpm, sqlite3,
+338:  lsof, claude CLI), clones the repo if needed, creates ./.venv,
+339-  runs `uv pip install -e .`, sets up Playwright, builds the frontend
+340-  from source. For contributors.
+341-
+--
+587-}
+588-
+589-# ============================================================
+590:# Dependency: lsof
+591-# ============================================================
+592:check_lsof() {
+593:    if _check lsof; then
+594:        _success "lsof found"
+595-        return 0
+596-    fi
+597-    return 1
+598-}
+599-
+600:install_lsof() {
+601:    _info "Installing lsof..."
+602-    if [[ "$OS" == "macos" ]]; then
+603:        _success "lsof ships with macOS"
+604-        return 0
+605-    fi
+606:    _pkg_install lsof || {
+607:        _error "Could not install lsof"
+608-        exit 1
+609-    }
+610:    _success "lsof installed"
+611-}
+612-
+613-# ============================================================
+--
+801-    # Runtime deps the daemon's agents need but the wheel can't ship:
+802-    # claude CLI (the AI backend's subprocess), sqlite3 (agents query
+803-    # per-account email DBs via `sqlite3 <path>`), node (claude CLI is
+804:    # an npm package), lsof (vibe-seller stop). Without these,
+805-    # `vibe-seller start` succeeds but the first agent task fails
+806-    # with FileNotFoundError. --dev mode installs them via main()'s
+807-    # DEPS loop; the default mode `exit 0`s before reaching that loop,
+--
+809-    # was dropped in an install.sh refactor that introduced a
+810-    # half-working default install, observed as a CI verify-testpypi
+811-    # failure on v0.0.6 (FileNotFoundError on `claude` spawn).
+812:    if ! check_lsof; then
+813:        install_lsof
+814-    fi
+815-    if ! check_sqlite3; then
+816-        install_sqlite3
+--
+999-
+1000-    # Required dependencies
+1001-    local FAILED=0
+1002:    local DEPS=(curl git uv node pnpm sqlite3 lsof)
+1003-
+1004-    for dep in "${DEPS[@]}"; do
+1005-        if ! "check_${dep}"; then

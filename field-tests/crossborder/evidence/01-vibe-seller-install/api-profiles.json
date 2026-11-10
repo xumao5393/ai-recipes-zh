@@ -1,0 +1,11 @@
+{
+    "profiles": [
+        {
+            "id": "default",
+            "name": "Claude",
+            "description": "System default configuration",
+            "env": {},
+            "load_global_mcp": false
+        }
+    ]
+}

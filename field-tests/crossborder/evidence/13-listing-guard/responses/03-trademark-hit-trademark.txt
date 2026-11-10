@@ -1,0 +1,42 @@
+time: 2026-11-09 20:30:08 EST
+url: http://127.0.0.1:8080/api/v1/trademark-checks
+body_file: fixtures/03-trademark-hit-etsy.json
+body_sha256: e464af695135402e740ea0e803839a1fd953c76fa828b97e8a92f831825aa0d4
+http_status: 200
+response_sha256: a579e0ea682e21e640cdb421033e7159046c8ba1193e2fce570ae46f9f45e65b
+response_bytes: 1067
+response_json:
+{
+  "checkId": "affe082a-7d1e-45d7-b107-5a5852b7144b",
+  "marketplace": "ETSY",
+  "rulesetVersion": "trademark-risk-2026-11",
+  "catalogVersion": "demo-fictional-2026-11-f1deea4df852",
+  "analysisVersion": "ce4dff7da93b95e27fd800b7d93b6469391dda350505111c506657499d2ee1a4",
+  "cached": false,
+  "completeness": "COMPLETE",
+  "riskLevel": "HIGH",
+  "failedRuleIds": [],
+  "disclaimer": "Kết quả chỉ là cảnh báo tham khảo, không phải kết luận pháp lý về việc một nội dung có vi phạm nhãn hiệu hay không.",
+  "createdAt": "2026-11-10T01:30:08.436437Z",
+  "expiresAt": "2026-12-10T01:30:08.436437Z",
+  "findings": [
+    {
+      "ruleId": "catalog_exact",
+      "risk": "HIGH",
+      "field": "title",
+      "start": 0,
+      "end": 10,
+      "snippet": "Zibblefrax",
+      "mark": "Zibblefrax",
+      "matchType": "EXACT",
+      "score": 1.0,
+      "insideColorPhrase": false,
+      "otherRuleIds": [],
+      "sourceIds": [
+        "DEMO-001"
+      ],
+      "message": "Từ 'Zibblefrax' ở title trùng với nhãn hiệu 'Zibblefrax' trong danh mục tham chiếu.",
+      "suggestion": "Xem lại việc dùng 'Zibblefrax' ở title. Đây chỉ là cảnh báo tham khảo, không phải kết luận pháp lý."
+    }
+  ]
+}

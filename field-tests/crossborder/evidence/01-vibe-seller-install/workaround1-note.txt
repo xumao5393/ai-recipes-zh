@@ -1,0 +1,4 @@
+workaround1: apt install lsof failed (mirror 500). Downloaded lsof_4.99.4+dfsg-2_amd64.deb directly, extracted usr/bin/lsof to $HOME/.local/bin/lsof
+sha256: 76ca9b82da6d5dabd66609937675768a593c20c5e544171a2d9544060a1780b7
+deb_bytes: 315732
+binary: /workspace/fourday-20261109/crossborder/sandbox/home/.local/bin/lsof (208792 bytes)

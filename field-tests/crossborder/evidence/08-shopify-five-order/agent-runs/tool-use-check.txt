@@ -1,0 +1,3 @@
+2026-11-09 ~19:30 EST: read each of the 3 runs' transcripts afterwards.
+Each one has exactly 2 messages: the prompt (identical text, sha256 of the frozen copy 21396634…a80b) and 1 assistant answer. There were 0 tool calls in any run, so no file reads, commands or network.
+Dispatched at 19:21–19:22 EST, all three in parallel; each was a fresh background worker that did not carry this conversation's context.

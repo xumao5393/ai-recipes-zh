@@ -1,0 +1,5 @@
+# asset digests (computed before deleting bodies)
+# 2026-11-09 America/New_York
+probe_assets_index-BgUyXZcc.js.body	bytes=970770	sha256=c7e9821660f7e0f0524cc7cb1a375a5171eebbe68e167b80d290bd2ea391286d
+probe_assets_index-lh_YM6sT.css.body	bytes=87126	sha256=ac7c3d764558542be08b2da02e208c01bf2b9953a7a94bf1fd109bdc03e2d3a4
+probe_assets_vendor-BUMdD3V7.js.body	bytes=741528	sha256=7675048a90d0419365a342c4eb81713aa8582b82a76b08ba2a8fc27160575265

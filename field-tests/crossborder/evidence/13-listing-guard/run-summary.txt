@@ -1,0 +1,8 @@
+commit: deaa18a9e29cb591d770ce2eab5a8d864ba8aa6f
+clone_time: 2026-11-09 20:22:09 EST
+jdk: Temurin 21.0.13+9
+mvn_package: BUILD SUCCESS 23.006s ending 2026-11-09 20:28:21 EST
+postgres: 17.11 + pgvector 0.8.0 online 20:27:50 EST
+api_health: 200 at 20:29:56 EST
+trademark_catalog: demo-fictional-2026-11-f1deea4df852
+mcp_http: listening 127.0.0.1:8765/mcp; tools/list=6; check_listing clean findings=[] cached=true

@@ -1,0 +1,17 @@
+{
+  "label": "agent-run-loop-timeout",
+  "n": 1,
+  "dsh_exit": 124,
+  "elapsed_s": 120.107,
+  "note": "假模型在 review 成功后误发 next_step，未发 continue_after_approval，超时前空转。SDR 工具已挂上（含 13 个 sdr_*）。连接监控见 ss-port-focus：对端均为 127.0.0.1。",
+  "request_count": 2189,
+  "kinds": {
+    "create": 1,
+    "title": 1,
+    "next": 1096,
+    "review": 1091
+  },
+  "first_has_sdr_create": true,
+  "sdr_tools_in_first_req": 13,
+  "host": "127.0.0.1:19022"
+}

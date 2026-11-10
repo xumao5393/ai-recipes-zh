@@ -1,0 +1,7 @@
+# 时间(开始): 2026-11-09 17:30:16 EST
+# 命令: unshare -rn node <workspace>/crossborder/repo/evidence/05-dsh-trade-assistant/run_plugin.mjs src ours/holdout.json --with-from
+# exit=0 耗时=0.035s
+# stderr:
+# cwd: crossborder/sandbox/05-dsh-trade-assistant；src=clone@ddce582
+# stdout: 原样存 internal-archive/05-dsh-trade-assistant/plugin-b2-from.raw.json（含上游正则原文）；公开版去掉 type_evidence 正则原文、只留命中条数 → plugin-b2-from.json
+# stdout sha256: 304ff24afe8e13f34c929892fd09b9216f457a4b881cbb0461564f84a0510bb9

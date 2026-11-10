@@ -1,0 +1,4 @@
+2026-11-09T20:29:54.699-05:00  INFO [] [/] 346847 --- [listing-guard-api] [           main] c.t.l.api.policy.EmbeddingConfig         : Embedding provider: none. Rule checks work; policy ingest and retrieval are off until listing-guard.embedding.provider is api or ollama.
+2026-11-09T20:29:55.402-05:00  INFO [] [/] 346847 --- [listing-guard-api] [           main] c.t.l.a.t.TrademarkCatalogRuntime        : Trademark checks are ready on catalog version demo-fictional-2026-11-f1deea4df852
+2026-11-09T20:29:55.431-05:00  INFO [] [/] 346847 --- [listing-guard-api] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-11-09T20:29:55.448-05:00  INFO [] [/] 346847 --- [listing-guard-api] [           main] c.t.l.api.ListingGuardApplication        : Started ListingGuardApplication in 4.93 seconds (process running for 5.319)

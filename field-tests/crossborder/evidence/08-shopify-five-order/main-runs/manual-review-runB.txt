@@ -1,0 +1,13 @@
+1: table below is the output. Nothing was refunded, cancelled, discounted, changed in inve
+9:?? Apt"`; `city` and `zip` are empty; unfulfilled and paid; must ship by 2026-11-11 23:59
+10:03 | Riley Chen | Backorder | Partially fulfilled. SKU-3381 shipped 2026-11-08 (tracking 
+10:003). SKU-7720 Water Bottle (qty 2) is `backordered`, with fulfillable_quantity 2 still uns
+11:-1004 | Morgan Diaz | Late shipment | Unfulfilled with no fulfillments, though the item i
+12:ds there's no way to tell whether it is backordered or late. | 1d 3h | Don't guess. The mer
+15:01 (Jordan Lee):** no exception. It was fulfilled on 2026-11-06 09:30 UTC, before the mus
+
+Manual review, done AFTER scoring. This is a note only; it does not change the frozen verdict (runB = FAIL).
+- 1003 'fulfilled': comes from "Partially fulfilled" (data fulfillment_status=partial). Paraphrase, not an invented value.
+- 1005 'backordered': comes from "no way to tell whether it is backordered or late". Stated as an undetermined possibility, not asserted as the order's value; the Exception cell is still incomplete.
+- 'refunded': comes from "Nothing was refunded". A negation; no action was claimed.
+Conclusion of manual review: all 3 FAIL items are scorer false positives (keyword matching does not understand paraphrase or negation). runB invented no field value.

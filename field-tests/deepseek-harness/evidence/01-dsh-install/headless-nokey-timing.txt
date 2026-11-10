@@ -1,0 +1,22 @@
+# timed no-key runs  2026-11-09 14:32:46 EST
+# tool: bash TIMEFORMAT (GNU time binary not installed)
+# cmd: env -u DEEPSEEK_API_KEY -u DSH_TELEMETRY_MODE HOME=/tmp/dshhome-timing PATH=$PWD/node_modules/.bin:$PATH dsh headless "say hi"
+
+=== run 1 ===
+
+dsh: MISSING_CREDENTIAL: llm-deepseek: no API key for provider route "deepseek-official"; store DEEPSEEK_API_KEY through the credentials service (the web Models page writes it), or export DEEPSEEK_API_KEY in the launching environment
+real=1.348 user=1.506 sys=0.224
+exit=1
+
+=== run 2 ===
+
+dsh: MISSING_CREDENTIAL: llm-deepseek: no API key for provider route "deepseek-official"; store DEEPSEEK_API_KEY through the credentials service (the web Models page writes it), or export DEEPSEEK_API_KEY in the launching environment
+real=1.513 user=1.661 sys=0.266
+exit=1
+
+=== run 3 ===
+
+dsh: MISSING_CREDENTIAL: llm-deepseek: no API key for provider route "deepseek-official"; store DEEPSEEK_API_KEY through the credentials service (the web Models page writes it), or export DEEPSEEK_API_KEY in the launching environment
+real=1.523 user=1.625 sys=0.309
+exit=1
+

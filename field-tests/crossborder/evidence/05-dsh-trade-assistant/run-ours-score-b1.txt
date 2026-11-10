@@ -1,0 +1,7 @@
+# 时间(开始): 2026-11-09 17:30:15 EST
+# 命令: python3 score.py inbox.json truth.csv
+# exit=0 耗时=0.045s
+# stderr:
+# cwd: crossborder/sandbox/05-dsh-trade-assistant/ours（03-export 锁定文件的副本）
+# stdout:
+对 14/14

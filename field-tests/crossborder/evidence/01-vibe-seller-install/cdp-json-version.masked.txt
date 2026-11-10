@@ -1,0 +1,72 @@
+=== GET http://127.0.0.1:9222/json/version ===
+{
+    "Browser": "Chrome/156.0.8078.47",
+    "File-Path-Style": "posix",
+    "Protocol-Version": "1.3",
+    "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+    "V8-Version": "15.6.75.19",
+    "WebKit-Version": "537.36 (@1d17a2e2ee147bb7d6ae2ab6abdb3a2510c17775)",
+    "webSocketDebuggerUrl": "ws://127.0.0.1:9222/devtools/browser/<cdp_session_id>"
+}
+
+=== GET http://127.0.0.1:9222/json/list ===
+[
+    {
+        "description": "",
+        "devtoolsFrontendUrl": "https://chrome-devtools-frontend.appspot.com/serve_rev/@1d17a2e2ee147bb7d6ae2ab6abdb3a2510c17775/inspector.html?ws=127.0.0.1:9222/devtools/page/4331A5223D860107BA69270471A2198D",
+        "id": "4331A5223D860107BA69270471A2198D",
+        "title": "about:blank",
+        "type": "page",
+        "url": "about:blank",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9222/devtools/page/4331A5223D860107BA69270471A2198D"
+    },
+    {
+        "description": "",
+        "devtoolsFrontendUrl": "https://chrome-devtools-frontend.appspot.com/serve_rev/@1d17a2e2ee147bb7d6ae2ab6abdb3a2510c17775/inspector.html?ws=127.0.0.1:9222/devtools/page/C3B8277FAB1458AA1FF9BE046B4C51B2",
+        "id": "C3B8277FAB1458AA1FF9BE046B4C51B2",
+        "title": "Omnibox Popup",
+        "type": "browser_ui",
+        "url": "chrome://omnibox-popup.top-chrome/",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9222/devtools/page/C3B8277FAB1458AA1FF9BE046B4C51B2"
+    },
+    {
+        "description": "",
+        "devtoolsFrontendUrl": "https://chrome-devtools-frontend.appspot.com/serve_rev/@1d17a2e2ee147bb7d6ae2ab6abdb3a2510c17775/inspector.html?ws=127.0.0.1:9222/devtools/page/B2E02226ABF6238B5FB964EF027C8B57",
+        "id": "B2E02226ABF6238B5FB964EF027C8B57",
+        "title": "Omnibox Popup",
+        "type": "browser_ui",
+        "url": "chrome://omnibox-popup.top-chrome/omnibox_popup_aim.html",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9222/devtools/page/B2E02226ABF6238B5FB964EF027C8B57"
+    },
+    {
+        "description": "",
+        "devtoolsFrontendUrl": "https://chrome-devtools-frontend.appspot.com/serve_rev/@1d17a2e2ee147bb7d6ae2ab6abdb3a2510c17775/inspector.html?ws=127.0.0.1:9222/devtools/page/1DF48A9D5E97EAF2F3D1CF93E9769EBF",
+        "id": "1DF48A9D5E97EAF2F3D1CF93E9769EBF",
+        "title": "Google Hangouts",
+        "type": "background_page",
+        "url": "chrome-extension://nkeimhogjdpnpccoofpliimaahmaaome/background.html",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9222/devtools/page/1DF48A9D5E97EAF2F3D1CF93E9769EBF"
+    },
+    {
+        "description": "",
+        "devtoolsFrontendUrl": "https://chrome-devtools-frontend.appspot.com/serve_rev/@1d17a2e2ee147bb7d6ae2ab6abdb3a2510c17775/worker_app.html?ws=127.0.0.1:9222/devtools/page/35853CDB4DDA04C89C78018FEE85C351",
+        "id": "35853CDB4DDA04C89C78018FEE85C351",
+        "title": "Service Worker chrome-extension://fignfifoniblkonapihmkfakmlgkbkcf/service_worker.js",
+        "type": "service_worker",
+        "url": "chrome-extension://fignfifoniblkonapihmkfakmlgkbkcf/service_worker.js",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9222/devtools/page/35853CDB4DDA04C89C78018FEE85C351"
+    },
+    {
+        "description": "",
+        "devtoolsFrontendUrl": "https://chrome-devtools-frontend.appspot.com/serve_rev/@1d17a2e2ee147bb7d6ae2ab6abdb3a2510c17775/worker_app.html?ws=127.0.0.1:9222/devtools/page/000C8F0C41CA310BCBD18DCBEF7D6385",
+        "id": "000C8F0C41CA310BCBD18DCBEF7D6385",
+        "title": "Service Worker chrome-extension://degmfphhmnjibfnchlaoidnjmnogphdi/background.js",
+        "type": "service_worker",
+        "url": "chrome-extension://degmfphhmnjibfnchlaoidnjmnogphdi/background.js",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9222/devtools/page/000C8F0C41CA310BCBD18DCBEF7D6385"
+    },
+    {
+        "description": "",
+        "devtoolsFrontendUrl": "https://chrome-devtools-frontend.appspot.com/serve_rev/@1d17a2e2ee147bb7d6ae2ab6abdb3a2510c17775/worker_app.html?ws=127.0.0.1:9222/devtools/page/62078320859C32C0024091B3BF0D8772",
+        "id": "62078320859C32C0024091B3BF0D8772",
+        "title": "Service Worker chrome-extension://pepbbmbblgcmapcjhemlpmmnmflaallh/background/background.js",

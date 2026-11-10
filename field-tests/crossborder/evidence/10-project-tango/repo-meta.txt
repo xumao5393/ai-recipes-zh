@@ -1,0 +1,12 @@
+# repo-meta · 2026-11-09 19:30 EST 查询 api.github.com（commit 详情曾遇限流，以本地 git log 为准）
+full_name: CoderGamerUnknow/Project-Tango
+html_url: https://github.com/CoderGamerUnknow/Project-Tango
+stargazers_count: 0
+forks_count: 0
+license: MIT
+created_at: 2026-07-09T08:10:03Z
+pushed_at: 2026-10-25T08:22:21Z
+default_branch: main
+pinned_commit: 114ca95dfbda877a7ac2f0a0d75b2e57ec308365
+package.json version: 3.2.0
+engines.node: >=22.5.0

@@ -1,0 +1,11 @@
+# repo-meta · 2026-11-09 20:22 EST
+full_name: sorchk/dsh-event-notice
+stargazers_count: 0
+forks_count: 0
+license: MIT
+created_at: 2026-11-08T12:35:59Z
+pushed_at: 2026-11-10T01:17:34Z
+pinned_commit: a791d4de6dcb933278ea602e5db3cb4affbc0ede
+package.json version: 0.5.6
+engines.node: >=20
+dsh_version_declared: 无（无 engines.dsh / peerDependencies）

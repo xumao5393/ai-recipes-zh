@@ -1,0 +1,18 @@
+# idealTree reproduce  2026-11-09 14:33:12 EST
+# tmpdir: /tmp/dsh-idealTree-J78rqV
+# step: do NOT npm init; run npm install @deepseek-ai/dsh@0.2.2-rc.1 directly
+
+total 16
+drwx------   2 box  box   4096 Nov  9 14:33 .
+drwxrwxrwt. 39 root root 12288 Nov  9 14:33 ..
+
+--- npm install (attempt 1) ---
+npm error Tracker "idealTree" already exists
+npm error A complete log of this run can be found in: /home/<user>/.npm/_logs/2026-11-09T19_33_12_380Z-debug-0.log
+exit=1
+
+--- dir after attempt ---
+total 16
+drwx------   2 box  box   4096 Nov  9 14:33 .
+drwxrwxrwt. 39 root root 12288 Nov  9 14:33 ..
+# also saved idealTree-npm-debug.log (hostname redacted)

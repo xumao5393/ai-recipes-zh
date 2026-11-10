@@ -1,0 +1,31 @@
+
+==> Vibe Seller — installing from PyPI
+
+[ok] Platform: linux (x86_64)
+==> Installing vibe-seller from PyPI
+
+[ok] curl found
+[ok] uv 0.13.7
+[ok] lsof found
+[ok] sqlite3 3.46.1
+[ok] node v24.22.1
+==> Installing Claude Code CLI (project-local)...
+
+added 2 packages in 3s
+[ok] claude CLI installed (project-local)
+==> Running 'uv tool install vibe-seller'
+==> Installing Playwright Chromium browser
+==> Checking which Chromium download source is faster...
+==> Downloading Chromium from cdn.playwright.dev
+Installing dependencies...
+Switching to root user to install dependencies...
+Err:1 http://deb.debian.org/debian trixie InRelease
+  500  Internal Server Error [IP: 198.18.0.1 80]
+Err:2 http://deb.debian.org/debian trixie-updates InRelease
+  500  Internal Server Error [IP: 198.18.0.1 80]
+Err:3 http://deb.debian.org/debian-security trixie-security InRelease
+  500  Internal Server Error [IP: 198.18.0.1 80]
+Hit:4 https://dl.google.com/linux/chrome-stable/deb stable InRelease
+Reading package lists...
+Failed to install browsers
+Error: Installation process exited with code: 100

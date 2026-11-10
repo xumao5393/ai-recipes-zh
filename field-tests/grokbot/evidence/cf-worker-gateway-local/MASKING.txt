@@ -1,0 +1,11 @@
+# MASKING · cf-worker-gateway-local
+- 无真实 Cloudflare 账号、无真实 webhook、无 API key。
+- 叫醒只打 127.0.0.1:8788 本地假接收器。
+- node_modules / wrangler 缓存均在 /tmp/cf-worker-outside-repo/，不进 repo。
+- 原文 HTML 存证；摘录见 EXCERPT-woshipm.txt。无他人打包产物。
+- 2026-11-09 15:39 EST：第三方网页全文（*.html 及全文 .txt）移到 internal-archive/…/fullpages/，不入公开仓库；公开仓库只留 URL、HTTP 状态、抓取时间、sha256（*.sha256.txt）和 EXCERPT 摘录。
+
+# 2026-11-09 16:22 EST 返工
+- EXCERPT-woshipm.txt 已修订（补作者/日期、删统计与备案号）；旧版备份在 internal-archive/cf-worker-gateway-local/EXCERPT-woshipm.before-r2.txt
+- 新增 wake-log-sim-c.jsonl（模拟 C 重跑原件）；叫醒只打 127.0.0.1，无真实 webhook
+- 2026-11-09 16:24 EST：EXCERPT-woshipm.txt 再压短，只留 L80/L81/L177/L186，删 internal-archive 路径；上一版在 internal-archive/cf-worker-gateway-local/EXCERPT-woshipm.before-r3.txt。

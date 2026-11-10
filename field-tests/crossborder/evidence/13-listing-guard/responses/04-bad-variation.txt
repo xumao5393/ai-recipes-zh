@@ -1,0 +1,106 @@
+time: 2026-11-09 20:30:08 EST
+url: http://127.0.0.1:8080/api/v1/variation-checks
+body_file: fixtures/04-bad-variation-amazon.json
+body_sha256: 09ef31dfe021473af8810fdd13574422084d30d94b590b205619504a65220ece
+http_status: 200
+response_sha256: 1bdce06467416127e49a1df4de9645b430c3c5211373408de284426e81297bb1
+response_bytes: 3519
+response_json:
+{
+  "checkId": "1a06eac3-9766-4d3e-b403-4af217f6ea85",
+  "marketplace": "AMAZON",
+  "rulesetVersion": "variation-checks-2026-11",
+  "analysisVersion": "3c9a28cc998dc3a1b5d03c2d0e1cb9166fa2b0d1e7a387afc59868f2273737c0",
+  "cached": false,
+  "completeness": "COMPLETE",
+  "failedRuleIds": [],
+  "disclaimer": "Kết quả chỉ là cảnh báo tham khảo dựa trên nguồn thứ cấp và quy tắc nội bộ, không phải xác nhận hay kết luận của Amazon hoặc Etsy.",
+  "createdAt": "2026-11-10T01:30:08.504549Z",
+  "expiresAt": "2026-12-10T01:30:08.504549Z",
+  "summary": {
+    "errors": 0,
+    "warnings": 7,
+    "infos": 0
+  },
+  "findings": [
+    {
+      "ruleId": "parent_child_structure",
+      "kind": "child_parent_sku_mismatch",
+      "severity": "WARNING",
+      "sourceStatus": "SECONDARY",
+      "field": "children[1].parent_sku",
+      "value": "TEE-X",
+      "relatedFields": [
+        "parent.sku"
+      ],
+      "message": "Child thứ 2 có parent_sku 'TEE-X', khác SKU của parent 'TEE-P'.",
+      "suggestion": "Sửa parent_sku của child này cho trùng SKU của parent 'TEE-P', hoặc đưa child sang parent đúng."
+    },
+    {
+      "ruleId": "apparel_size_attributes",
+      "kind": "size_attribute_missing",
+      "severity": "WARNING",
+      "sourceStatus": "SECONDARY",
+      "field": "children[0].attributes.size_system",
+      "value": null,
+      "relatedFields": [],
+      "message": "Child thứ 1 thiếu thuộc tính 'size_system' của quần áo (product_type 'SHIRT').",
+      "suggestion": "Điền 'size_system' cho child này; theo nguồn thứ cấp, quần áo cần bộ thuộc tính size này."
+    },
+    {
+      "ruleId": "apparel_size_attributes",
+      "kind": "size_attribute_missing",
+      "severity": "WARNING",
+      "sourceStatus": "SECONDARY",
+      "field": "children[0].attributes.size_class",
+      "value": null,
+      "relatedFields": [],
+      "message": "Child thứ 1 thiếu thuộc tính 'size_class' của quần áo (product_type 'SHIRT').",
+      "suggestion": "Điền 'size_class' cho child này; theo nguồn thứ cấp, quần áo cần bộ thuộc tính size này."
+    },
+    {
+      "ruleId": "apparel_size_attributes",
+      "kind": "size_attribute_missing",
+      "severity": "WARNING",
+      "sourceStatus": "SECONDARY",
+      "field": "children[0].attributes.body_type",
+      "value": null,
+      "relatedFields": [],
+      "message": "Child thứ 1 thiếu thuộc tính 'body_type' của quần áo (product_type 'SHIRT').",
+      "suggestion": "Điền 'body_type' cho child này; theo nguồn thứ cấp, quần áo cần bộ thuộc tính size này."
+    },
+    {
+      "ruleId": "apparel_size_attributes",
+      "kind": "size_attribute_missing",
+      "severity": "WARNING",
+      "sourceStatus": "SECONDARY",
+      "field": "children[1].attributes.size_system",
+      "value": null,
+      "relatedFields": [],
+      "message": "Child thứ 2 thiếu thuộc tính 'size_system' của quần áo (product_type 'SHIRT').",
+      "suggestion": "Điền 'size_system' cho child này; theo nguồn thứ cấp, quần áo cần bộ thuộc tính size này."
+    },
+    {
+      "ruleId": "apparel_size_attributes",
+      "kind": "size_attribute_missing",
+      "severity": "WARNING",
+      "sourceStatus": "SECONDARY",
+      "field": "children[1].attributes.size_class",
+      "value": null,
+      "relatedFields": [],
+      "message": "Child thứ 2 thiếu thuộc tính 'size_class' của quần áo (product_type 'SHIRT').",
+      "suggestion": "Điền 'size_class' cho child này; theo nguồn thứ cấp, quần áo cần bộ thuộc tính size này."
+    },
+    {
+      "ruleId": "apparel_size_attributes",
+      "kind": "size_attribute_missing",
+      "severity": "WARNING",
+      "sourceStatus": "SECONDARY",
+      "field": "children[1].attributes.body_type",
+      "value": null,
+      "relatedFields": [],
+      "message": "Child thứ 2 thiếu thuộc tính 'body_type' của quần áo (product_type 'SHIRT').",
+      "suggestion": "Điền 'body_type' cho child này; theo nguồn thứ cấp, quần áo cần bộ thuộc tính size này."
+    }
+  ]
+}

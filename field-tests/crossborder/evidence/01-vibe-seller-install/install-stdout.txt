@@ -1,0 +1,9 @@
+
+==> Vibe Seller — installing from PyPI
+
+[ok] Platform: linux (x86_64)
+==> Installing vibe-seller from PyPI
+
+[ok] curl found
+[ok] uv 0.13.7
+==> Installing lsof...

@@ -1,0 +1,20 @@
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Length: 315732
+Server: Apache
+X-Content-Type-Options: nosniff
+X-Frame-Options: sameorigin
+Referrer-Policy: no-referrer
+X-Xss-Protection: 1
+Permissions-Policy: interest-cohort=()
+Last-Modified: Thu, 20 Feb 2025 00:20:08 GMT
+ETag: "4d154-62e87d62a93b9"
+X-Clacks-Overhead: GNU Terry Pratchett
+Cache-Control: public, max-age=2592000
+Content-Type: application/vnd.debian.binary-package
+Backend: 4qpvL1tJyeV1P6Tmf0Lj8g--F_skroutz_debian_backend_mirrors_debian_org
+Via: 1.1 varnish, 1.1 varnish, 1.1 varnish
+Accept-Ranges: bytes
+Age: 612839
+Date: Mon, 09 Nov 2026 19:40:48 GMT
+X-Served-By: cache-ams2100096-AMS, cache-ams-eham8680031-AMS, cache-iad-kcgs7200147-IAD

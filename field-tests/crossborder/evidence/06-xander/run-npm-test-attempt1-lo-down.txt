@@ -1,0 +1,5 @@
+# 时间(开始): 2026-11-09 18:23:08 EST
+# 命令: HOME=<sandbox>/home XANDER_HOME=<sandbox>/xhome unshare -rn npm test   (cwd=clone 副本 run/，node v24.22.1，npm 11.21.1)
+# 结果: 未跑完。18:29:5x EST 手动 kill（已跑约 6.8 分钟）。原因判断：unshare -rn 新网络命名空间里回环口 lo 默认是 DOWN，测试自带的本地假亚马逊服务（test/mock-amazon.js）连不上 127.0.0.1，大量用例 15s/120s 超时。
+# kill 时输出里 ✔/✖ 行合计 614，其中 ✖ 185（不完整，不作结论）
+# 完整原始输出: internal-archive/06-xander/npmtest-lo-down.out

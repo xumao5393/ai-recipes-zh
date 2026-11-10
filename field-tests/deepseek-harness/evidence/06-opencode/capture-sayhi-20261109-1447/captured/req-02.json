@@ -1,0 +1,48 @@
+{
+ "method": "POST",
+ "path": "/v1/chat/completions",
+ "headers": {
+  "Authorization": "<redacted>",
+  "Content-Type": "application/json",
+  "User-Agent": "opencode/latest/2.2.6/cli",
+  "b3": "af72e7673503c07a3aed70cb46a043ae-46a2bb1cea7563b0-1-f3da807420302465",
+  "traceparent": "<redacted>",
+  "x-opencode-client": "cli",
+  "x-opencode-project": "<redacted>",
+  "x-opencode-session": "<redacted>",
+  "x-opencode-session-id": "<redacted>",
+  "x-session-affinity": "<redacted>",
+  "x-session-id": "<redacted>",
+  "Connection": "keep-alive",
+  "Accept": "*/*",
+  "Host": "127.0.0.1:19016",
+  "Accept-Encoding": "gzip, deflate, br, zstd",
+  "Content-Length": "2148"
+ },
+ "body_len": 2148,
+ "body": {
+  "model": "deepseek-flash",
+  "messages": [
+   {
+    "role": "system",
+    "content": {
+     "length": 1806,
+     "sha256": "a8382db91f60f816e5a7c3057edc771476ae817e2bd53273577e4bf4ab3add02",
+     "first_line": "You name conversations so the user can find them later in a list of past sessions.",
+     "_masked": true
+    }
+   },
+   {
+    "role": "user",
+    "content": "Here is the first message of the conversation:\n\n<message>\nsay hi\n</message>\n\nReply with only the title."
+   }
+  ],
+  "stream": true,
+  "stream_options": {
+   "include_usage": true
+  },
+  "thinking": {
+   "type": "disabled"
+  }
+ }
+}

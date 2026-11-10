@@ -1,0 +1,28 @@
+date: 2026-11-09 14:45:27 EST
+741M	/workspace/fourday-20261109/crossborder/sandbox/home/.local/share/uv/tools/vibe-seller
+681M	/workspace/fourday-20261109/crossborder/sandbox/home/.cache/ms-playwright
+379M	/workspace/fourday-20261109/crossborder/sandbox/home/.vibe-seller
+552K	/workspace/fourday-20261109/crossborder/sandbox/home/.local/bin
+---
+327M	/workspace/fourday-20261109/crossborder/sandbox/home/.vibe-seller/node_modules
+236K	/workspace/fourday-20261109/crossborder/sandbox/home/.vibe-seller/data
+28K	/workspace/fourday-20261109/crossborder/sandbox/home/.vibe-seller/logs
+---
+total_sandbox_home:
+2.2G	/workspace/fourday-20261109/crossborder/sandbox/home
+vibe-seller version: vibe-seller 0.2.0
+uv tool: vibe-seller v0.2.0
+- vibe-seller
+claude local: lrwxrwxrwx 1 box box 43 Nov  9 14:41 /workspace/fourday-20261109/crossborder/sandbox/home/.vibe-seller/node_modules/.bin/claude -> ../@anthropic-ai/claude-code/bin/claude.exe
+playwright chromium dirs:
+chromium-1248
+chromium_headless_shell-1248
+ffmpeg-1013
+cdp still up:
+Chrome/156.0.8078.4
+auth_required:
+{"auth_required":false}
+profiles:
+{"profiles":[{"id":"default","name":"Claude","description":"System default configuration","env":{},"load_global_mcp":false}]}
+stores_count:
+1

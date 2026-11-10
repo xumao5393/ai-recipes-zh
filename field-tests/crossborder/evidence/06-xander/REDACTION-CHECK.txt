@@ -1,0 +1,20 @@
+# REDACTION-CHECK · 06-xander  2026-11-09 18:33:54 EST
+# 范围: 本目录全部文件（不含本文件）+ ../../06-Xander亚马逊运营插件-离线审查与计算器核对.md
+## box 主目录路径
+# rg -n --glob '!REDACTION-CHECK.txt' -e '<home>'
+0 命中
+## <workspace> 绝对路径
+# rg -n --glob '!REDACTION-CHECK.txt' -e '<workspace>'
+0 命中（18:34 EST 改 MASKING.txt 第3条措辞后重跑；首次 18:33:54 只命中 MASKING.txt 第3条说明文字本身）
+## box 用户名
+# rg -n --glob '!REDACTION-CHECK.txt' -e '\bbox\b'
+0 命中
+## key 模式
+# rg -n --glob '!REDACTION-CHECK.txt' -e '(AKIA[0-9A-Z]{16}|sk-[A-Za-z0-9]{16,}|ghp_[A-Za-z0-9]{20,}|github_pat_|Atzr\|[A-Za-z0-9]{8,}|amzn1\.application-oa2-client\.[a-f0-9]{8,}|xox[bp]-|Bearer [A-Za-z0-9._-]{20,}|PRIVATE KEY)'
+0 命中
+## webhook
+# rg -n --glob '!REDACTION-CHECK.txt' -e 'webhook|hooks\.'
+0 命中
+## DeepSeek 官方地址
+# rg -n --glob '!REDACTION-CHECK.txt' -e 'api\.deepseek\.com'
+0 命中

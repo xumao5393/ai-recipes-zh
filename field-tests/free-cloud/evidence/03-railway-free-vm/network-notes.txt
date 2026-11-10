@@ -1,0 +1,6 @@
+# DNS / 连通性说明（打码版）
+- 本机系统 DNS 把 railway.new 解析到 <dns-sinkhole>（RFC 2544/测试网段，常见于本地代理/沙箱 DNS 劫持）。
+- 经 Cloudflare/Google DoH 得到 railway.new A = <railway.new-A>（证据见 internal-archive/doh-*.json，不同步）。
+- TCP 直连 <railway.new-A>:22 成功，SSH banner = SSH-2.0-Go。
+- 因此实测用：ssh -o HostName=<railway.new-A> -o HostKeyAlias=railway.new ...
+- HTTPS 访问 https://railway.com/free-vm 正常（HTTP 200）。

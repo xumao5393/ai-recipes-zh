@@ -1,0 +1,31 @@
+# 对照：hand-expected.md（冻结于 21:31:38 EST）vs audit_catalog 实际返回（21:32:26–21:32:27 EST，n=1）
+# 此对照写于运行之后，不回溯改 hand-expected.md。
+
+products_checked: 预期 13 / 实际 13
+truncated: 预期 false / 实际 false
+top_issues: 预期 ["duplicate_title", "short_description", "no_image"] / 实际相同
+notes: 预期 [] / 实际 []
+scope: 与 audit.py L91–92 原文一致
+
+各检查 count / 命中 handle（均一致）：
+short_description 1 pine-hook
+no_image 1 bare-shelf
+no_product_type 1 mystery-box
+no_vendor 1 anonymous-mug
+no_tags 1 plain-coaster
+not_on_online_store 1 warehouse-lamp
+sold_out 1 sold-out-tent
+wide_price_range 1 typo-bundle
+title_all_caps 1 shouting-sign
+title_too_long 1 long-title-banner
+duplicate_title 2 cedar-crate-a, cedar-crate-b
+
+percent：1/13 显示 7.7、2/13 显示 15.4，与源码 round(100 * count / total, 1) 一致。
+transport_calls：1 次，operation=Browse，url=https://demo.myshopify.com/api/2026-10/graphql.json，after=null。
+这是 MockTransport 的记录地址（驱动里 Config.shop=demo.myshopify.com），不是对真实主机的请求。同一次 unshare 命名空间里 curl https://pypi.org 为 Could not resolve host（exit 6）。日志里的
+  HTTP Request: POST https://demo.myshopify.com/api/2026-10/graphql.json "HTTP/1.1 200 OK"
+来自 httpx 在 MockTransport 上的 INFO 日志（驱动没走 server.main()，因此没把 httpx 日志降到 WARNING）。
+list_tools 得到 13 个名字，与源码/README 一致。
+oak-stool 未出现在任何 examples 中，与预期一致。
+
+只说明：在这份自编目录上，工具返回了与规则手算一致的计数。不评价规则在真实目录上准不准。

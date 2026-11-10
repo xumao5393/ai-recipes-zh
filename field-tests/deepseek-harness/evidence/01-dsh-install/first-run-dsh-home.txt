@@ -1,0 +1,84 @@
+# first-run ~/.dsh  2026-11-09 14:33:18 EST
+# HOME=/tmp/dshhome-firstrun-bwnual
+# cmd: env -u DEEPSEEK_API_KEY -u DSH_TELEMETRY_MODE HOME=/tmp/dshhome-firstrun-bwnual PATH=$PWD/node_modules/.bin:$PATH dsh headless "say hi"
+
+=== BEFORE ===
+total 16
+drwx------   2 box  box   4096 Nov  9 14:33 .
+drwxrwxrwt. 40 root root 12288 Nov  9 14:33 ..
+
+=== RUN ===
+
+dsh: MISSING_CREDENTIAL: llm-deepseek: no API key for provider route "deepseek-official"; store DEEPSEEK_API_KEY through the credentials service (the web Models page writes it), or export DEEPSEEK_API_KEY in the launching environment
+exit=0
+
+=== AFTER ls -la HOME ===
+total 20
+drwx------   3 box  box   4096 Nov  9 14:33 .
+drwxrwxrwt. 40 root root 12288 Nov  9 14:33 ..
+drwxr-xr-x   5 box  box   4096 Nov  9 14:33 .dsh
+
+=== AFTER ls -la HOME/.dsh ===
+total 24
+drwxr-xr-x 5 box box 4096 Nov  9 14:33 .
+drwx------ 3 box box 4096 Nov  9 14:33 ..
+-rw-r--r-- 1 box box   37 Nov  9 14:33 .anonymous-user-id
+drwxr-xr-x 3 box box 4096 Nov  9 14:33 profiles
+drwx------ 3 box box 4096 Nov  9 14:33 sessions
+drwx------ 3 box box 4096 Nov  9 14:33 storages
+
+=== AFTER find HOME/.dsh -maxdepth 2 ===
+d /tmp/dshhome-firstrun-bwnual/.dsh
+d /tmp/dshhome-firstrun-bwnual/.dsh/profiles
+d /tmp/dshhome-firstrun-bwnual/.dsh/profiles/headless
+d /tmp/dshhome-firstrun-bwnual/.dsh/sessions
+d /tmp/dshhome-firstrun-bwnual/.dsh/sessions/--workspace-fourday-20261109-deepseek-harness-sandbox--
+d /tmp/dshhome-firstrun-bwnual/.dsh/storages
+d /tmp/dshhome-firstrun-bwnual/.dsh/storages/session_projcache
+f /tmp/dshhome-firstrun-bwnual/.dsh/.anonymous-user-id
+
+=== note on sessions/ ===
+Observed: even a no-key first run creates sessions/ (with a workspace-keyed subdir),
+along with profiles/, storages/, and .anonymous-user-id.
+sessions/ PRESENT after this no-key run
+total 12
+drwx------ 3 box box 4096 Nov  9 14:33 --workspace-fourday-20261109-deepseek-harness-sandbox--
+drwx------ 3 box box 4096 Nov  9 14:33 .
+drwxr-xr-x 5 box box 4096 Nov  9 14:33 ..
+
+=== reference: /tmp/dshhome/.dsh (used by earlier capture, has sessions) ===
+total 24
+drwxr-xr-x 5 box box 4096 Nov  9 14:07 .
+drwxr-xr-x 4 box box 4096 Nov  9 14:06 ..
+-rw-r--r-- 1 box box   37 Nov  9 14:06 .anonymous-user-id
+drwxr-xr-x 3 box box 4096 Nov  9 14:06 profiles
+drwx------ 4 box box 4096 Nov  9 14:32 sessions
+drwx------ 3 box box 4096 Nov  9 14:07 storages
+2026-11-09 14:32:23.612232539 -0500 /tmp/dshhome/.dsh/sessions
+2026-11-09 14:06:55.886609153 -0500 /tmp/dshhome/.dsh/.anonymous-user-id
+2026-11-09 14:06:54.202471608 -0500 /tmp/dshhome/.dsh/profiles
+2026-11-09 14:07:10.439797729 -0500 /tmp/dshhome/.dsh/storages
+
+# correction re-run for exit code  2026-11-09 14:33:43 EST
+# HOME=/tmp/dshhome-firstrun2-6cIUpX (fresh; previous tee used || true which masked exit)
+=== BEFORE ===
+total 16
+drwx------   2 box  box   4096 Nov  9 14:33 .
+drwxrwxrwt. 41 root root 12288 Nov  9 14:33 ..
+=== RUN stdout/stderr ===
+
+dsh: MISSING_CREDENTIAL: llm-deepseek: no API key for provider route "deepseek-official"; store DEEPSEEK_API_KEY through the credentials service (the web Models page writes it), or export DEEPSEEK_API_KEY in the launching environment
+exit=1
+=== AFTER ls -la HOME/.dsh ===
+total 24
+drwxr-xr-x 5 box box 4096 Nov  9 14:33 .
+drwx------ 3 box box 4096 Nov  9 14:33 ..
+-rw-r--r-- 1 box box   37 Nov  9 14:33 .anonymous-user-id
+drwxr-xr-x 3 box box 4096 Nov  9 14:33 profiles
+drwx------ 3 box box 4096 Nov  9 14:33 sessions
+drwx------ 3 box box 4096 Nov  9 14:33 storages
+=== sessions present? ===
+total 12
+drwx------ 3 box box 4096 Nov  9 14:33 --workspace-fourday-20261109-deepseek-harness-sandbox--
+drwx------ 3 box box 4096 Nov  9 14:33 .
+drwxr-xr-x 5 box box 4096 Nov  9 14:33 ..

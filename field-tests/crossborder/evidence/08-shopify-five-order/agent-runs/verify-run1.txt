@@ -1,0 +1,27 @@
+OK  #FAKE-1002 shipping_address.address_verification=failed | data: failed
+OK  #FAKE-1002 shipping_address.address1=??? Apt | data: ??? Apt
+OK  #FAKE-1002 shipping_address.city="" | data: 
+OK  #FAKE-1002 shipping_address.zip="" | data: 
+OK  #FAKE-1002 fulfillment_status=unfulfilled | data: unfulfilled
+OK  #FAKE-1002 financial_status=paid | data: paid
+OK  #FAKE-1002 promised_ship_by=2026-11-11T23:59:59Z | data: 2026-11-11T23:59:59Z
+OK  #FAKE-1003 fulfillment_status=partial | data: partial
+OK  #FAKE-1003 line_items[1].sku=SKU-B2 | data: SKU-B2
+OK  #FAKE-1003 line_items[1].inventory_status=backordered | data: backordered
+OK  #FAKE-1003 line_items[1].fulfillable_quantity=2 | data: 2
+OK  #FAKE-1003 fulfillments[0].line_item_skus=["SKU-B1"] | data: ["SKU-B1"]
+OK  #FAKE-1003 promised_ship_by=2026-11-12T23:59:59Z | data: 2026-11-12T23:59:59Z
+OK  #FAKE-1004 promised_ship_by=2026-11-05T23:59:59Z | data: 2026-11-05T23:59:59Z
+OK  #FAKE-1004 fulfillment_status=unfulfilled | data: unfulfilled
+OK  #FAKE-1004 fulfillments=[] | data: []
+OK  #FAKE-1004 line_items[0].inventory_status=in_stock | data: in_stock
+OK  #FAKE-1004 line_items[0].fulfillable_quantity=1 | data: 1
+OK  #FAKE-1004 financial_status=paid | data: paid
+OK  #FAKE-1005 missing:fulfillment_status | data: null
+OK  #FAKE-1005 missing:fulfillments | data: null
+OK  #FAKE-1005 missing:promised_ship_by | data: null
+OK  #FAKE-1005 missing:line_items[0].fulfillable_quantity | data: null
+OK  #FAKE-1005 missing:line_items[0].inventory_status | data: null
+OK  #FAKE-1005 financial_status=paid | data: paid
+OK  #FAKE-1005 shipping_address.address_verification=confirmed | data: confirmed
+TOTAL evidence=26 mismatched=0

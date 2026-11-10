@@ -1,0 +1,2 @@
+tool-use (from each run's transcript, block types): runA=0 runB=0 (only thinking/text)
+runC=0 (only thinking/text)

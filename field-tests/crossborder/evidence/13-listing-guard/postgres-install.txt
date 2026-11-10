@@ -1,0 +1,502 @@
+=== download postgres debs 2026-11-09 20:26:31 EST ===
+note: apt hits sand proxy 198.18:80 → 500; curl to Fastly IP works; DNS for deb.debian.org is NOT 198.18
+libecpg-compat3_17.11-0+deb13u1_amd64.deb
+libecpg-compat3_17.11-0+deb13u1_arm64.deb
+libecpg-compat3_17.11-0+deb13u1_armel.deb
+libecpg-compat3_17.11-0+deb13u1_armhf.deb
+libecpg-compat3_17.11-0+deb13u1_i386.deb
+libecpg-compat3_17.11-0+deb13u1_ppc64el.deb
+libecpg-compat3_17.11-0+deb13u1_riscv64.deb
+libecpg-compat3_17.11-0+deb13u1_s390x.deb
+libecpg-dev_17.11-0+deb13u1_amd64.deb
+libecpg-dev_17.11-0+deb13u1_arm64.deb
+libecpg-dev_17.11-0+deb13u1_armel.deb
+libecpg-dev_17.11-0+deb13u1_armhf.deb
+libecpg-dev_17.11-0+deb13u1_i386.deb
+libecpg-dev_17.11-0+deb13u1_ppc64el.deb
+libecpg-dev_17.11-0+deb13u1_riscv64.deb
+libecpg-dev_17.11-0+deb13u1_s390x.deb
+libecpg6_17.11-0+deb13u1_amd64.deb
+libecpg6_17.11-0+deb13u1_arm64.deb
+libecpg6_17.11-0+deb13u1_armel.deb
+libecpg6_17.11-0+deb13u1_armhf.deb
+libecpg6_17.11-0+deb13u1_i386.deb
+libecpg6_17.11-0+deb13u1_ppc64el.deb
+libecpg6_17.11-0+deb13u1_riscv64.deb
+libecpg6_17.11-0+deb13u1_s390x.deb
+libpgtypes3_17.11-0+deb13u1_amd64.deb
+libpgtypes3_17.11-0+deb13u1_arm64.deb
+libpgtypes3_17.11-0+deb13u1_armel.deb
+libpgtypes3_17.11-0+deb13u1_armhf.deb
+libpgtypes3_17.11-0+deb13u1_i386.deb
+libpgtypes3_17.11-0+deb13u1_ppc64el.deb
+libpgtypes3_17.11-0+deb13u1_riscv64.deb
+libpgtypes3_17.11-0+deb13u1_s390x.deb
+libpq-dev_17.11-0+deb13u1_amd64.deb
+libpq-dev_17.11-0+deb13u1_arm64.deb
+libpq-dev_17.11-0+deb13u1_armel.deb
+libpq-dev_17.11-0+deb13u1_armhf.deb
+libpq-dev_17.11-0+deb13u1_i386.deb
+libpq-dev_17.11-0+deb13u1_ppc64el.deb
+libpq-dev_17.11-0+deb13u1_riscv64.deb
+libpq-dev_17.11-0+deb13u1_s390x.deb
+postgresql-all_225+deb11u1_all.deb
+postgresql-all_248+deb12u1_all.deb
+postgresql-all_278_all.deb
+postgresql-all_293_all.deb
+postgresql-client-common_225+deb11u1_all.deb
+postgresql-client-common_248+deb12u1_all.deb
+postgresql-client-common_278_all.deb
+postgresql-client-common_293_all.deb
+postgresql-client_13+225+deb11u1_all.deb
+postgresql-client_15+248+deb12u1_all.deb
+postgresql-client_17+278_all.deb
+postgresql-client_18+293_all.deb
+postgresql-common-dev_278_all.deb
+postgresql-common-dev_293_all.deb
+postgresql-common_225+deb11u1_all.deb
+postgresql-common_248+deb12u1_all.deb
+postgresql-common_278_all.deb
+postgresql-common_293_all.deb
+postgresql-contrib_13+225+deb11u1_all.deb
+postgresql-contrib_15+248+deb12u1_all.deb
+postgresql-doc_13+225+deb11u1_all.deb
+postgresql-doc_15+248+deb12u1_all.deb
+postgresql-doc_17+278_all.deb
+postgresql-doc_18+293_all.deb
+postgresql-server-dev-all_225+deb11u1_all.deb
+postgresql-server-dev-all_248+deb12u1_amd64.deb
+postgresql-server-dev-all_248+deb12u1_arm64.deb
+postgresql-server-dev-all_248+deb12u1_armel.deb
+postgresql-server-dev-all_248+deb12u1_armhf.deb
+postgresql-server-dev-all_248+deb12u1_i386.deb
+postgresql-server-dev-all_248+deb12u1_mips64el.deb
+postgresql-server-dev-all_248+deb12u1_mipsel.deb
+postgresql-server-dev-all_248+deb12u1_ppc64el.deb
+postgresql-server-dev-all_248+deb12u1_s390x.deb
+postgresql-server-dev-all_278_all.deb
+postgresql-server-dev-all_293_all.deb
+postgresql_13+225+deb11u1_all.deb
+postgresql_15+248+deb12u1_all.deb
+postgresql_17+278_all.deb
+postgresql_18+293_all.deb
+download_start: 2026-11-09 20:26:48 EST
+GET https://deb.debian.org/debian/pool/main/p/postgresql-common/postgresql-common_278_all.deb
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+  6  109k    6  6881    0     0  97182      0  0:00:01 --:--:--  0:00:01 96915
+100  109k  100  109k    0     0   991k      0 --:--:-- --:--:-- --:--:--  985k
+-rw-r--r-- 1 <user> <user> 112028 Nov  9 20:26 postgresql-common_278_all.deb
+GET https://deb.debian.org/debian/pool/main/p/postgresql-common/postgresql_17+278_all.deb
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+100 16660  100 16660    0     0  1072k      0 --:--:-- --:--:-- --:--:-- 1084k
+-rw-r--r-- 1 <user> <user> 16660 Nov  9 20:26 postgresql_17+278_all.deb
+GET https://deb.debian.org/debian/pool/main/p/postgresql-17/postgresql-17_17.11-0+deb13u1_amd64.deb
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+100 15.9M  100 15.9M    0     0  19.8M      0 --:--:-- --:--:-- --:--:-- 19.9M
+-rw-r--r-- 1 <user> <user> 16678028 Nov  9 20:26 postgresql-17_17.11-0+deb13u1_amd64.deb
+GET https://deb.debian.org/debian/pool/main/p/postgresql-17/libpq5_17.11-0+deb13u1_amd64.deb
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+100  231k  100  231k    0     0  10.3M      0 --:--:-- --:--:-- --:--:-- 10.7M
+-rw-r--r-- 1 <user> <user> 237376 Nov  9 20:26 libpq5_17.11-0+deb13u1_amd64.deb
+GET https://deb.debian.org/debian/pool/main/p/pgvector/postgresql-17-pgvector_0.8.0-1_amd64.deb
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+100  255k  100  255k    0     0  11.2M      0 --:--:-- --:--:-- --:--:-- 11.3M
+-rw-r--r-- 1 <user> <user> 261480 Nov  9 20:26 postgresql-17-pgvector_0.8.0-1_amd64.deb
+GET https://deb.debian.org/debian/pool/main/s/ssl-cert/ssl-cert_1.1.3_all.deb
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+100 16816  100 16816    0     0  82360      0 --:--:-- --:--:-- --:--:-- 82029
+-rw-r--r-- 1 <user> <user> 16816 Nov  9 20:26 ssl-cert_1.1.3_all.deb
+GET https://deb.debian.org/debian/pool/main/libx/libxslt/libxslt1.1_1.1.35-1.2+deb13u2_amd64.deb
+                                 Dload  Upload   Total   Spent    Left  Speed
+
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+curl: (22) The requested URL returned error: 404
+Selecting previously unselected package ssl-cert.
+(Reading database ... 38380 files and directories currently installed.)
+Preparing to unpack ssl-cert_1.1.3_all.deb ...
+Unpacking ssl-cert (1.1.3) ...
+Preparing to unpack libpq5_17.11-0+deb13u1_amd64.deb ...
+Unpacking libpq5:amd64 (17.11-0+deb13u1) over (17.11-0+deb13u1) ...
+Selecting previously unselected package postgresql-common.
+Preparing to unpack postgresql-common_278_all.deb ...
+Adding 'diversion of /usr/bin/pg_config to /usr/bin/pg_config.libpq-dev by postgresql-common'
+Unpacking postgresql-common (278) ...
+Selecting previously unselected package postgresql-17.
+Preparing to unpack postgresql-17_17.11-0+deb13u1_amd64.deb ...
+Unpacking postgresql-17 (17.11-0+deb13u1) ...
+Selecting previously unselected package postgresql.
+Preparing to unpack postgresql_17+278_all.deb ...
+Unpacking postgresql (17+278) ...
+Selecting previously unselected package postgresql-17-pgvector.
+Preparing to unpack postgresql-17-pgvector_0.8.0-1_amd64.deb ...
+Unpacking postgresql-17-pgvector (0.8.0-1) ...
+Setting up ssl-cert (1.1.3) ...
+Setting up libpq5:amd64 (17.11-0+deb13u1) ...
+dpkg: dependency problems prevent configuration of postgresql-common:
+ postgresql-common depends on libjson-perl; however:
+  Package libjson-perl is not installed.
+ postgresql-common depends on postgresql-common-dev (= 278); however:
+  Package postgresql-common-dev is not installed.
+
+dpkg: error processing package postgresql-common (--install):
+ dependency problems - leaving unconfigured
+dpkg: dependency problems prevent configuration of postgresql-17:
+ postgresql-17 depends on locales | locales-all; however:
+  Package locales is not installed.
+  Package locales-all is not installed.
+ postgresql-17 depends on postgresql-common (>= 252~); however:
+  Package postgresql-common is not configured yet.
+
+dpkg: error processing package postgresql-17 (--install):
+ dependency problems - leaving unconfigured
+dpkg: dependency problems prevent configuration of postgresql:
+ postgresql depends on postgresql-17; however:
+  Package postgresql-17 is not configured yet.
+
+dpkg: error processing package postgresql (--install):
+ dependency problems - leaving unconfigured
+dpkg: dependency problems prevent configuration of postgresql-17-pgvector:
+ postgresql-17-pgvector depends on postgresql-17; however:
+  Package postgresql-17 is not configured yet.
+ postgresql-17-pgvector depends on postgresql-17-jit-llvm (>= 19); however:
+  Package postgresql-17-jit-llvm is not installed.
+  Package postgresql-17 which provides postgresql-17-jit-llvm is not configured yet.
+
+dpkg: error processing package postgresql-17-pgvector (--install):
+ dependency problems - leaving unconfigured
+Processing triggers for libc-bin (2.41-12+deb13u4) ...
+Errors were encountered while processing:
+ postgresql-common
+ postgresql-17
+ postgresql
+ postgresql-17-pgvector
+dpkg: dependency problems prevent configuration of postgresql-17:
+ postgresql-17 depends on locales | locales-all; however:
+  Package locales is not installed.
+  Package locales-all is not installed.
+
+dpkg: error processing package postgresql-17 (--configure):
+ dependency problems - leaving unconfigured
+dpkg: dependency problems prevent configuration of postgresql-17-pgvector:
+ postgresql-17-pgvector depends on postgresql-17; however:
+  Package postgresql-17 is not configured yet.
+ postgresql-17-pgvector depends on postgresql-17-jit-llvm (>= 19); however:
+  Package postgresql-17-jit-llvm is not installed.
+  Package postgresql-17 which provides postgresql-17-jit-llvm is not configured yet.
+
+dpkg: error processing package postgresql-17-pgvector (--configure):
+ dependency problems - leaving unconfigured
+dpkg: dependency problems prevent configuration of postgresql-common:
+ postgresql-common depends on libjson-perl; however:
+  Package libjson-perl is not installed.
+ postgresql-common depends on postgresql-common-dev (= 278); however:
+  Package postgresql-common-dev is not installed.
+
+dpkg: error processing package postgresql-common (--configure):
+ dependency problems - leaving unconfigured
+dpkg: dependency problems prevent configuration of postgresql:
+ postgresql depends on postgresql-17; however:
+  Package postgresql-17 is not configured yet.
+
+dpkg: error processing package postgresql (--configure):
+ dependency problems - leaving unconfigured
+Errors were encountered while processing:
+ postgresql-17
+ postgresql-17-pgvector
+ postgresql-common
+ postgresql
+Selecting previously unselected package libjson-perl.
+(Reading database ... 40223 files and directories currently installed.)
+Preparing to unpack libjson-perl_4.10000-1_all.deb ...
+Unpacking libjson-perl (4.10000-1) ...
+Selecting previously unselected package postgresql-common-dev.
+Preparing to unpack postgresql-common-dev_278_all.deb ...
+Unpacking postgresql-common-dev (278) ...
+Selecting previously unselected package locales.
+Preparing to unpack locales_2.41-12+deb13u4_all.deb ...
+Unpacking locales (2.41-12+deb13u4) ...
+Setting up libjson-perl (4.10000-1) ...
+dpkg: dependency problems prevent configuration of postgresql-common-dev:
+ postgresql-common-dev depends on libipc-run-perl; however:
+  Package libipc-run-perl is not installed.
+
+dpkg: error processing package postgresql-common-dev (--install):
+ dependency problems - leaving unconfigured
+dpkg: dependency problems prevent configuration of locales:
+ locales depends on libc-l10n (>> 2.41); however:
+  Package libc-l10n is not installed.
+
+dpkg: error processing package locales (--install):
+ dependency problems - leaving unconfigured
+Errors were encountered while processing:
+ postgresql-common-dev
+ locales
+dpkg: dependency problems prevent configuration of locales:
+ locales depends on libc-l10n (>> 2.41); however:
+  Package libc-l10n is not installed.
+
+dpkg: error processing package locales (--configure):
+ dependency problems - leaving unconfigured
+dpkg: dependency problems prevent configuration of postgresql-common-dev:
+ postgresql-common-dev depends on libipc-run-perl; however:
+  Package libipc-run-perl is not installed.
+
+dpkg: error processing package postgresql-common-dev (--configure):
+ dependency problems - leaving unconfigured
+dpkg: dependency problems prevent configuration of postgresql-17:
+ postgresql-17 depends on locales | locales-all; however:
+  Package locales is not configured yet.
+  Package locales-all is not installed.
+
+dpkg: error processing package postgresql-17 (--configure):
+ dependency problems - leaving unconfigured
+dpkg: dependency problems prevent configuration of postgresql-17-pgvector:
+ postgresql-17-pgvector depends on postgresql-17; however:
+  Package postgresql-17 is not configured yet.
+ postgresql-17-pgvector depends on postgresql-17-jit-llvm (>= 19); however:
+  Package postgresql-17-jit-llvm is not installed.
+  Package postgresql-17 which provides postgresql-17-jit-llvm is not configured yet.
+
+dpkg: error processing package postgresql-17-pgvector (--configure):
+ dependency problems - leaving unconfigured
+dpkg: dependency problems prevent configuration of postgresql-common:
+ postgresql-common depends on postgresql-common-dev (= 278); however:
+  Package postgresql-common-dev is not configured yet.
+
+dpkg: error processing package postgresql-common (--configure):
+ dependency problems - leaving unconfigured
+dpkg: dependency problems prevent configuration of postgresql:
+ postgresql depends on postgresql-17; however:
+  Package postgresql-17 is not configured yet.
+
+dpkg: error processing package postgresql (--configure):
+ dependency problems - leaving unconfigured
+Errors were encountered while processing:
+ locales
+ postgresql-common-dev
+ postgresql-17
+ postgresql-17-pgvector
+ postgresql-common
+ postgresql
+Desired=Unknown/Install/Remove/Purge/Hold
+| Status=Not/Inst/Conf-files/Unpacked/halF-conf/Half-inst/trig-aWait/Trig-pend
+|/ Err?=(none)/Reinst-required (Status,Err: uppercase=bad)
+||/ Name                   Version         Architecture Description
++++-======================-===============-============-=========================================================
+iU  locales                2.41-12+deb13u4 all          GNU C Library: National Language (locale) data [support]
+iU  postgresql-17          17.11-0+deb13u1 amd64        The World's Most Advanced Open Source Relational Database
+iU  postgresql-17-pgvector 0.8.0-1         amd64        Open-source vector similarity search for Postgres
+iU  postgresql-common      278             all          PostgreSQL database-cluster manager
+Selecting previously unselected package libc-l10n.
+(Reading database ... 40968 files and directories currently installed.)
+Preparing to unpack libc-l10n_2.41-12+deb13u4_all.deb ...
+Unpacking libc-l10n (2.41-12+deb13u4) ...
+Selecting previously unselected package libipc-run-perl.
+Preparing to unpack libipc-run-perl_20260402.0-1_all.deb ...
+Unpacking libipc-run-perl (20260402.0-1) ...
+Setting up libc-l10n (2.41-12+deb13u4) ...
+dpkg: dependency problems prevent configuration of libipc-run-perl:
+ libipc-run-perl depends on libio-pty-perl (>= 1:1.25); however:
+  Package libio-pty-perl is not installed.
+
+dpkg: error processing package libipc-run-perl (--install):
+ dependency problems - leaving unconfigured
+Errors were encountered while processing:
+ libipc-run-perl
+Setting up locales (2.41-12+deb13u4) ...
+Generating locales (this might take a while)...
+Generation complete.
+dpkg: dependency problems prevent configuration of libipc-run-perl:
+ libipc-run-perl depends on libio-pty-perl (>= 1:1.25); however:
+  Package libio-pty-perl is not installed.
+
+dpkg: error processing package libipc-run-perl (--configure):
+ dependency problems - leaving unconfigured
+dpkg: dependency problems prevent configuration of postgresql-common-dev:
+ postgresql-common-dev depends on libipc-run-perl; however:
+  Package libipc-run-perl is not configured yet.
+
+dpkg: error processing package postgresql-common-dev (--configure):
+ dependency problems - leaving unconfigured
+dpkg: dependency problems prevent configuration of postgresql-common:
+ postgresql-common depends on postgresql-common-dev (= 278); however:
+  Package postgresql-common-dev is not configured yet.
+
+dpkg: error processing package postgresql-common (--configure):
+ dependency problems - leaving unconfigured
+dpkg: dependency problems prevent configuration of postgresql-17:
+ postgresql-17 depends on postgresql-common (>= 252~); however:
+  Package postgresql-common is not configured yet.
+
+dpkg: error processing package postgresql-17 (--configure):
+ dependency problems - leaving unconfigured
+dpkg: dependency problems prevent configuration of postgresql-17-pgvector:
+ postgresql-17-pgvector depends on postgresql-17; however:
+  Package postgresql-17 is not configured yet.
+ postgresql-17-pgvector depends on postgresql-17-jit-llvm (>= 19); however:
+  Package postgresql-17-jit-llvm is not installed.
+  Package postgresql-17 which provides postgresql-17-jit-llvm is not configured yet.
+
+dpkg: error processing package postgresql-17-pgvector (--configure):
+ dependency problems - leaving unconfigured
+dpkg: dependency problems prevent configuration of postgresql:
+ postgresql depends on postgresql-17; however:
+  Package postgresql-17 is not configured yet.
+
+dpkg: error processing package postgresql (--configure):
+ dependency problems - leaving unconfigured
+Errors were encountered while processing:
+ libipc-run-perl
+ postgresql-common-dev
+ postgresql-common
+ postgresql-17
+ postgresql-17-pgvector
+ postgresql
+Selecting previously unselected package libio-pty-perl.
+(Reading database ... 41038 files and directories currently installed.)
+Preparing to unpack libio-pty-perl_1.31-1+b1_amd64.deb ...
+Unpacking libio-pty-perl (1:1.31-1+b1) ...
+dpkg: dependency problems prevent configuration of libio-pty-perl:
+ libio-pty-perl depends on perl (>= 5.42.2-3); however:
+  Version of perl on system is 5.40.1-6+deb13u1.
+ libio-pty-perl depends on perlapi-5.42.2; however:
+  Package perlapi-5.42.2 is not installed.
+
+dpkg: error processing package libio-pty-perl (--install):
+ dependency problems - leaving unconfigured
+Errors were encountered while processing:
+ libio-pty-perl
+dpkg: dependency problems prevent configuration of libio-pty-perl:
+ libio-pty-perl depends on perl (>= 5.42.2-3); however:
+  Version of perl on system is 5.40.1-6+deb13u1.
+ libio-pty-perl depends on perlapi-5.42.2; however:
+  Package perlapi-5.42.2 is not installed.
+
+dpkg: error processing package libio-pty-perl (--configure):
+ dependency problems - leaving unconfigured
+dpkg: dependency problems prevent configuration of libipc-run-perl:
+ libipc-run-perl depends on libio-pty-perl (>= 1:1.25); however:
+  Package libio-pty-perl is not configured yet.
+
+dpkg: error processing package libipc-run-perl (--configure):
+ dependency problems - leaving unconfigured
+dpkg: dependency problems prevent configuration of postgresql-common-dev:
+ postgresql-common-dev depends on libipc-run-perl; however:
+  Package libipc-run-perl is not configured yet.
+
+dpkg: error processing package postgresql-common-dev (--configure):
+ dependency problems - leaving unconfigured
+dpkg: dependency problems prevent configuration of postgresql-common:
+ postgresql-common depends on postgresql-common-dev (= 278); however:
+  Package postgresql-common-dev is not configured yet.
+
+dpkg: error processing package postgresql-common (--configure):
+ dependency problems - leaving unconfigured
+dpkg: dependency problems prevent configuration of postgresql-17:
+ postgresql-17 depends on postgresql-common (>= 252~); however:
+  Package postgresql-common is not configured yet.
+
+dpkg: error processing package postgresql-17 (--configure):
+ dependency problems - leaving unconfigured
+dpkg: dependency problems prevent configuration of postgresql-17-pgvector:
+ postgresql-17-pgvector depends on postgresql-17; however:
+  Package postgresql-17 is not configured yet.
+ postgresql-17-pgvector depends on postgresql-17-jit-llvm (>= 19); however:
+  Package postgresql-17-jit-llvm is not installed.
+  Package postgresql-17 which provides postgresql-17-jit-llvm is not configured yet.
+
+dpkg: error processing package postgresql-17-pgvector (--configure):
+ dependency problems - leaving unconfigured
+dpkg: dependency problems prevent configuration of postgresql:
+ postgresql depends on postgresql-17; however:
+  Package postgresql-17 is not configured yet.
+
+dpkg: error processing package postgresql (--configure):
+ dependency problems - leaving unconfigured
+Errors were encountered while processing:
+ libio-pty-perl
+ libipc-run-perl
+ postgresql-common-dev
+ postgresql-common
+ postgresql-17
+ postgresql-17-pgvector
+ postgresql
+dpkg: error: unable to check lock file for dpkg database directory /var/lib/dpkg: Permission denied
+Selecting previously unselected package libipc-run-perl.
+(Reading database ... 41029 files and directories currently installed.)
+Preparing to unpack libipc-run-perl_20231003.0-2_all.deb ...
+Unpacking libipc-run-perl (20231003.0-2) ...
+Setting up libipc-run-perl (20231003.0-2) ...
+Setting up postgresql-common-dev (278) ...
+Setting up postgresql-common (278) ...
+Creating config file /etc/postgresql-common/createcluster.conf with new version
+Building PostgreSQL dictionaries from installed myspell/hunspell packages...
+Removing obsolete dictionary files:
+invoke-rc.d: could not determine current runlevel
+invoke-rc.d: policy-rc.d denied execution of start.
+Created symlink '/etc/systemd/system/multi-user.target.wants/postgresql.service' → '/usr/lib/systemd/system/postgresql.service'.
+Setting up postgresql-17 (17.11-0+deb13u1) ...
+update-alternatives: updating alternative /usr/share/postgresql/17/man/man1/psql.1.gz because link group psql.1.gz has changed slave links
+Creating new PostgreSQL cluster 17/main ...
+/usr/lib/postgresql/17/bin/initdb -D /var/lib/postgresql/17/main --auth-local peer --auth-host scram-sha-256 --no-instructions
+The files belonging to this database system will be owned by user "postgres".
+This user must also own the server process.
+
+The database cluster will be initialized with locale "C.UTF-8".
+The default database encoding has accordingly been set to "UTF8".
+The default text search configuration will be set to "english".
+
+Data page checksums are disabled.
+
+fixing permissions on existing directory /var/lib/postgresql/17/main ... ok
+creating subdirectories ... ok
+selecting dynamic shared memory implementation ... posix
+selecting default "max_connections" ... 100
+selecting default "shared_buffers" ... 128MB
+selecting default time zone ... America/New_York
+creating configuration files ... ok
+running bootstrap script ... ok
+performing post-bootstrap initialization ... ok
+syncing data to disk ... ok
+invoke-rc.d: could not determine current runlevel
+invoke-rc.d: policy-rc.d denied execution of start.
+Setting up postgresql-17-pgvector (0.8.0-1) ...
+Setting up postgresql (17+278) ...
+Desired=Unknown/Install/Remove/Purge/Hold
+| Status=Not/Inst/Conf-files/Unpacked/halF-conf/Half-inst/trig-aWait/Trig-pend
+|/ Err?=(none)/Reinst-required (Status,Err: uppercase=bad)
+||/ Name                   Version         Architecture Description
++++-======================-===============-============-=========================================================
+ii  postgresql-17          17.11-0+deb13u1 amd64        The World's Most Advanced Open Source Relational Database
+ii  postgresql-17-pgvector 0.8.0-1         amd64        Open-source vector similarity search for Postgres
+ii  postgresql-common      278             all          PostgreSQL database-cluster manager
+/usr/bin/pg_ctlcluster
+Ver Cluster Port Status Owner    Data directory              Log file
+17  main    5432 down   postgres /var/lib/postgresql/17/main /var/log/postgresql/postgresql-17-main.log
+2026-11-09 20:27:43 EST
+
+=== CORRECTION 2026-11-09 20:44 EST ===
+第 2 行原文写 “curl to Fastly IP works”，听上去像直连 IP。更正：本文件 download_start 段里实际命令是 `GET https://deb.debian.org/...`，走域名和系统 DNS，没有指定 IP，也没有用 --resolve 或直连 IP。是 HTTPS 按域名下载，没有指定 IP。
+Kumo（2026-11-09 20:36 EST）认定：apt 那次 HTTP 500 之后改用 HTTPS 按域名下载，不算绕开网络控制。
+新规：以后遇到 403、拦截页或其他明确拒绝就停下，不换协议重试。
+原件字节数 N=24432；追加更正前 sha256=17ccff9e414ae23506efc9aa2153d5d2d607d839c1e85763b4043dc397f65818。可用 `head -c 24432 postgres-install.txt | sha256sum` 复现。详见 CORRECTIONS.md。

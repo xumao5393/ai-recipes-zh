@@ -1,0 +1,80 @@
+#!/bin/bash
+set -euo pipefail
+
+# Vibe Seller installer.
+#
+# Two modes:
+#
+#   1. Default (end users) — installs the published `vibe-seller`
+#      package from PyPI via `uv tool install`, then fetches the
+#      Playwright Chromium binary. The wheel ships the built frontend
+#      so you get a working web UI with no clone.
+#
+#        curl -sSL https://raw.githubusercontent.com/zpoint/vibe-seller/main/install.sh | bash
+#
+#   2. --dev (contributors) — clones the repo, installs system deps,
+#      creates the venv, runs `uv pip install -e .`, sets up Playwright,
+#      builds the frontend from source. When run via curl|bash, the
+#      repo is cloned to $VIBE_SELLER_HOME (default ~/vibe-seller) and
+#      this script is re-executed from inside the clone.
+#
+#        curl -sSL https://raw.githubusercontent.com/zpoint/vibe-seller/main/install.sh | bash -s -- --dev
+#
+# Other flags:
+#   --check-only      Check dev-mode dependencies without installing.
+#                     Implies --dev (only meaningful in a clone).
+#   --help, -h        Print this help and exit.
+
+# -- Parse flags first (bootstrap behaviour depends on --dev) --
+DEV=false
+CHECK_ONLY=false
+HELP=false
+PRINT_PATH=false
+TEST_PYPI=false
+NIGHTLY=false
+VERSION=""
+# `while + shift` so we can take an argument after --version. Other
+# flags stay positional-agnostic.
+while [ $# -gt 0 ]; do
+    case "$1" in
+        --dev)         DEV=true ;;
+        --check-only)  CHECK_ONLY=true; DEV=true ;;  # check-only is dev-only
+        --print-path)  PRINT_PATH=true ;;  # emit the tool PATH, for start.sh
+        --test-pypi)   TEST_PYPI=true ;;
+        --nightly)     NIGHTLY=true ;;
+        --version)     VERSION="${2:-}"; shift ;;
+        --version=*)   VERSION="${1#*=}" ;;
+        --help|-h)     HELP=true ;;
+    esac
+    shift
+done
+# Normalize: strip any leading `v` (so callers can pass `v0.0.1` or `0.0.1`).
+VERSION="${VERSION#v}"
+
+# -- Dev-mode bootstrap: clone repo if not already in one --
+# Detection requires a *vibe-seller* checkout, not just any directory
+# with a pyproject.toml — running `curl ... | bash` from inside an
+# unrelated Python project (or `cwd` resolving there) must not be
+# mistaken for an in-tree run.
+_SCRIPT_PATH="${BASH_SOURCE[0]:-$0}"
+SCRIPT_DIR="$(cd "$(dirname "$_SCRIPT_PATH")" 2>/dev/null && pwd)" || SCRIPT_DIR=""
+_is_vibe_seller_checkout() {
+    local dir="$1"
+    [ -n "$dir" ] || return 1
+    [ -f "$dir/pyproject.toml" ] || return 1
+    [ -f "$dir/start.sh" ] || return 1
+    # Confirm the project metadata identifies as vibe-seller, not a
+    # different package whose script happens to share a directory.
+    grep -qE '^name *= *"vibe-seller"' "$dir/pyproject.toml" 2>/dev/null
+}
+
+if [ "$DEV" = true ] && ! _is_vibe_seller_checkout "$SCRIPT_DIR"; then
+    INSTALL_DIR="${VIBE_SELLER_HOME:-$HOME/vibe-seller}"
+    REPO_URL="${VIBE_SELLER_REPO:-https://github.com/zpoint/vibe-seller}"
+
+    printf "==> Vibe Seller dev bootstrap (target: %s)\n" "$INSTALL_DIR"
+
+    if ! command -v git >/dev/null 2>&1; then
+        echo "Error: git is required for --dev install. Install git and re-run." >&2
+        exit 1
+    fi

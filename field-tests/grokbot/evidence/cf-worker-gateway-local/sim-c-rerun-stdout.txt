@@ -1,0 +1,35 @@
+{
+  "hosts": {
+    "vps-a": {
+      "reports": 8640,
+      "wakes_reported_by_worker": 40,
+      "wake_reasons": {
+        "transition_to_fault": 20,
+        "transition_to_ok": 20
+      },
+      "fault_report_count": 60,
+      "fault_episodes_requested": 20,
+      "fault_episodes_placed": 20,
+      "fault_duration_reports": 3,
+      "expected_wakes_if_all_episodes_isolated": "about 2 per episode (enter fault + leave to ok), so ~2*episodes_placed if no merges"
+    }
+  },
+  "totals": {
+    "reports": 8640,
+    "wakes_from_worker": 40
+  },
+  "assumptions": {
+    "days": 30,
+    "reports_per_day_per_host": 288,
+    "hosts": [
+      "vps-a"
+    ],
+    "total_reports_expected": 8640,
+    "fault_episodes_per_host": 20,
+    "fault_duration_reports": 3,
+    "wake_rules": "wake on first fault, status transition ok<->fault, or fault code change; suppress duplicate same status",
+    "note_author_claim": "Author self-reported 8640->40-60; our numbers depend on fault injection assumptions and are NOT a verification of the author claim.",
+    "seed": 99,
+    "implementation": "our own minimal Worker; article published no code"
+  }
+}

@@ -1,0 +1,444 @@
+{
+  "version": 3,
+  "tasks": {
+    "sdr_20261109213653_7534007c": {
+      "task_id": "sdr_20261109213653_7534007c",
+      "task": "开发 3 个美国户外用品客户",
+      "market": "US",
+      "product": "户外用品",
+      "target_count": 3,
+      "campaign_version": "v2",
+      "campaign_key": "cf959708ffb75e507077",
+      "stage": "close",
+      "plan": {
+        "market": "US",
+        "product": "户外用品",
+        "target_count": 3,
+        "dry_run": true
+      },
+      "prospects": [
+        {
+          "canonical_lead_id": "lead_fa6f2146e3c0613a",
+          "company": "Northstar Outdoor Supply",
+          "domain": "northstar-outdoor.example",
+          "market": "US",
+          "source": "synthetic-demo"
+        },
+        {
+          "canonical_lead_id": "lead_2d919c7e7930df5b",
+          "company": "Canyon Trail Outfitters",
+          "domain": "canyon-trail.example",
+          "market": "US",
+          "source": "synthetic-demo"
+        },
+        {
+          "canonical_lead_id": "lead_07189492b4523486",
+          "company": "Harbor Peak Gear",
+          "domain": "harbor-peak.example",
+          "market": "US",
+          "source": "synthetic-demo"
+        }
+      ],
+      "research": {
+        "lead_fa6f2146e3c0613a": {
+          "company": "Northstar Outdoor Supply",
+          "evidence": [
+            "synthetic public profile: northstar-outdoor.example",
+            "demo evidence only"
+          ]
+        },
+        "lead_2d919c7e7930df5b": {
+          "company": "Canyon Trail Outfitters",
+          "evidence": [
+            "synthetic public profile: canyon-trail.example",
+            "demo evidence only"
+          ]
+        },
+        "lead_07189492b4523486": {
+          "company": "Harbor Peak Gear",
+          "evidence": [
+            "synthetic public profile: harbor-peak.example",
+            "demo evidence only"
+          ]
+        }
+      },
+      "scores": {
+        "lead_fa6f2146e3c0613a": {
+          "score": 20,
+          "fit": "synthetic-fit",
+          "rationale": "market and product match"
+        },
+        "lead_2d919c7e7930df5b": {
+          "score": 19,
+          "fit": "synthetic-fit",
+          "rationale": "market and product match"
+        },
+        "lead_07189492b4523486": {
+          "score": 18,
+          "fit": "synthetic-fit",
+          "rationale": "market and product match"
+        }
+      },
+      "drafts": [
+        {
+          "email_id": "draft_1_c0613a",
+          "lead_id": "lead_fa6f2146e3c0613a",
+          "company": "Northstar Outdoor Supply",
+          "subject": "户外用品 catalogue for Northstar Outdoor Supply [TAMPERED-AFTER-APPROVAL]",
+          "body": "Hello Northstar Outdoor Supply team,\n\nWe prepared a synthetic 户外用品 catalogue for the US market. Would a short review be useful?\n\nBest regards,\nSDR demo team",
+          "channel": "email",
+          "citations": [
+            "synthetic public profile: northstar-outdoor.example"
+          ],
+          "guardrail": "passed",
+          "draft_hash": "9b8d919b36b443a28bbc4caacb60e29c7624f3120b43b454d8fc7749f0f11a50",
+          "connector": {
+            "connector": "email",
+            "status": "draft-only",
+            "dry_run": true,
+            "draft_id": "email_d468ab0f-4db0-4d47-90cf-19335ead6364",
+            "input": {
+              "recipient": {
+                "domain": "northstar-outdoor.example"
+              },
+              "subject": "户外用品 catalogue for Northstar Outdoor Supply",
+              "body": "Hello Northstar Outdoor Supply team,\n\nWe prepared a synthetic 户外用品 catalogue for the US market. Would a short review be useful?\n\nBest regards,\nSDR demo team"
+            }
+          }
+        },
+        {
+          "email_id": "draft_2_30df5b",
+          "lead_id": "lead_2d919c7e7930df5b",
+          "company": "Canyon Trail Outfitters",
+          "subject": "户外用品 catalogue for Canyon Trail Outfitters",
+          "body": "Hello Canyon Trail Outfitters team,\n\nWe prepared a synthetic 户外用品 catalogue for the US market. Would a short review be useful?\n\nBest regards,\nSDR demo team",
+          "channel": "email",
+          "citations": [
+            "synthetic public profile: canyon-trail.example"
+          ],
+          "guardrail": "passed",
+          "draft_hash": "98cd429e52e02396cd41292adbdc933b5283a77eabe0f0e91b201454aac526b5",
+          "connector": {
+            "connector": "email",
+            "status": "draft-only",
+            "dry_run": true,
+            "draft_id": "email_723a6520-d099-4255-bc9e-0e99d05973de",
+            "input": {
+              "recipient": {
+                "domain": "canyon-trail.example"
+              },
+              "subject": "户外用品 catalogue for Canyon Trail Outfitters",
+              "body": "Hello Canyon Trail Outfitters team,\n\nWe prepared a synthetic 户外用品 catalogue for the US market. Would a short review be useful?\n\nBest regards,\nSDR demo team"
+            }
+          }
+        },
+        {
+          "email_id": "draft_3_523486",
+          "lead_id": "lead_07189492b4523486",
+          "company": "Harbor Peak Gear",
+          "subject": "户外用品 catalogue for Harbor Peak Gear",
+          "body": "Hello Harbor Peak Gear team,\n\nWe prepared a synthetic 户外用品 catalogue for the US market. Would a short review be useful?\n\nBest regards,\nSDR demo team",
+          "channel": "email",
+          "citations": [
+            "synthetic public profile: harbor-peak.example"
+          ],
+          "guardrail": "passed",
+          "draft_hash": "b07da97cc41dd93cd68a4c722c10393386cd439b434b0a02ac97d3f2b6670b5a",
+          "connector": {
+            "connector": "email",
+            "status": "draft-only",
+            "dry_run": true,
+            "draft_id": "email_2d65e3ac-6bac-4c36-94d3-ed51a7db5934",
+            "input": {
+              "recipient": {
+                "domain": "harbor-peak.example"
+              },
+              "subject": "户外用品 catalogue for Harbor Peak Gear",
+              "body": "Hello Harbor Peak Gear team,\n\nWe prepared a synthetic 户外用品 catalogue for the US market. Would a short review be useful?\n\nBest regards,\nSDR demo team"
+            }
+          }
+        }
+      ],
+      "approvals": {
+        "draft_1_c0613a": {
+          "status": "approved",
+          "approver": "dsh-user",
+          "approved_at": "2026-11-09T21:36:53.272Z",
+          "draft_hash": "9b8d919b36b443a28bbc4caacb60e29c7624f3120b43b454d8fc7749f0f11a50"
+        },
+        "draft_2_30df5b": {
+          "status": "approved",
+          "approver": "dsh-user",
+          "approved_at": "2026-11-09T21:36:53.272Z",
+          "draft_hash": "98cd429e52e02396cd41292adbdc933b5283a77eabe0f0e91b201454aac526b5"
+        },
+        "draft_3_523486": {
+          "status": "approved",
+          "approver": "dsh-user",
+          "approved_at": "2026-11-09T21:36:53.272Z",
+          "draft_hash": "b07da97cc41dd93cd68a4c722c10393386cd439b434b0a02ac97d3f2b6670b5a"
+        }
+      },
+      "follow_ups": [
+        {
+          "lead_id": "lead_fa6f2146e3c0613a",
+          "day": 2,
+          "channel": "email",
+          "status": "planned"
+        },
+        {
+          "lead_id": "lead_2d919c7e7930df5b",
+          "day": 5,
+          "channel": "email",
+          "status": "planned"
+        },
+        {
+          "lead_id": "lead_07189492b4523486",
+          "day": 10,
+          "channel": "email",
+          "status": "planned"
+        }
+      ],
+      "quotation_pack": [
+        {
+          "product": "户外用品",
+          "market": "US",
+          "source": "synthetic catalogue",
+          "status": "draft-only"
+        }
+      ],
+      "report": {
+        "task_id": "sdr_20261109213653_7534007c",
+        "status": "closed",
+        "market": "US",
+        "product": "户外用品",
+        "prospects": [
+          {
+            "lead_id": "lead_fa6f2146e3c0613a",
+            "company": "Northstar Outdoor Supply",
+            "domain": "northstar-outdoor.example"
+          },
+          {
+            "lead_id": "lead_2d919c7e7930df5b",
+            "company": "Canyon Trail Outfitters",
+            "domain": "canyon-trail.example"
+          },
+          {
+            "lead_id": "lead_07189492b4523486",
+            "company": "Harbor Peak Gear",
+            "domain": "harbor-peak.example"
+          }
+        ],
+        "knowledge_refs": [],
+        "approved_drafts": 3,
+        "follow_up_count": 3,
+        "quotation_pack_count": 1,
+        "external_delivery": "draft-only",
+        "dry_run": true
+      },
+      "knowledge_refs": [],
+      "created_at": "2026-11-09T21:36:53.121Z",
+      "updated_at": "2026-11-09T21:36:53.346Z"
+    }
+  },
+  "leads": {
+    "lead_fa6f2146e3c0613a": {
+      "canonical_lead_id": "lead_fa6f2146e3c0613a",
+      "company": "Northstar Outdoor Supply",
+      "domain": "northstar-outdoor.example",
+      "market": "US",
+      "source": "synthetic-demo",
+      "suppression_status": "claimed",
+      "claimed_by": "sdr_20261109213653_7534007c",
+      "claimed_at": "2026-11-09T21:36:53.194Z"
+    },
+    "lead_2d919c7e7930df5b": {
+      "canonical_lead_id": "lead_2d919c7e7930df5b",
+      "company": "Canyon Trail Outfitters",
+      "domain": "canyon-trail.example",
+      "market": "US",
+      "source": "synthetic-demo",
+      "suppression_status": "claimed",
+      "claimed_by": "sdr_20261109213653_7534007c",
+      "claimed_at": "2026-11-09T21:36:53.194Z"
+    },
+    "lead_07189492b4523486": {
+      "canonical_lead_id": "lead_07189492b4523486",
+      "company": "Harbor Peak Gear",
+      "domain": "harbor-peak.example",
+      "market": "US",
+      "source": "synthetic-demo",
+      "suppression_status": "claimed",
+      "claimed_by": "sdr_20261109213653_7534007c",
+      "claimed_at": "2026-11-09T21:36:53.194Z"
+    }
+  },
+  "audit": [
+    {
+      "event_id": "4e72aa3f-86ff-4870-bd96-8eb27df27581",
+      "at": "2026-11-09T21:36:53.121Z",
+      "task_id": "sdr_20261109213653_7534007c",
+      "stage": "task_parse",
+      "action": "task.created",
+      "detail": {
+        "campaign_key": "cf959708ffb75e507077"
+      }
+    },
+    {
+      "event_id": "dc1a42d3-d3c9-4bae-8c07-1c7f5ea8a3b2",
+      "at": "2026-11-09T21:36:53.150Z",
+      "task_id": "sdr_20261109213653_7534007c",
+      "stage": "prospect_discovery",
+      "action": "stage.completed",
+      "detail": {
+        "stage": "prospect_discovery",
+        "result": {
+          "keys": [
+            "plan",
+            "knowledge"
+          ]
+        }
+      }
+    },
+    {
+      "event_id": "32ca6c3b-1a40-4b11-918e-35eb9d92508c",
+      "at": "2026-11-09T21:36:53.194Z",
+      "task_id": "sdr_20261109213653_7534007c",
+      "stage": "company_research",
+      "action": "stage.completed",
+      "detail": {
+        "stage": "company_research",
+        "result": {
+          "keys": [
+            "prospects",
+            "dedupe",
+            "dry_run"
+          ]
+        }
+      }
+    },
+    {
+      "event_id": "b69211cc-45b8-410f-b2fd-001febfac505",
+      "at": "2026-11-09T21:36:53.213Z",
+      "task_id": "sdr_20261109213653_7534007c",
+      "stage": "prospect_scoring",
+      "action": "stage.completed",
+      "detail": {
+        "stage": "prospect_scoring",
+        "result": {
+          "keys": [
+            "researched",
+            "dry_run"
+          ]
+        }
+      }
+    },
+    {
+      "event_id": "c7fe92bf-364f-4082-bf26-c4a0ad39e85b",
+      "at": "2026-11-09T21:36:53.237Z",
+      "task_id": "sdr_20261109213653_7534007c",
+      "stage": "email_draft",
+      "action": "stage.completed",
+      "detail": {
+        "stage": "email_draft",
+        "result": {
+          "keys": [
+            "scored",
+            "dry_run"
+          ]
+        }
+      }
+    },
+    {
+      "event_id": "44702782-2f4b-45ff-9e1c-7cb458700b13",
+      "at": "2026-11-09T21:36:53.252Z",
+      "task_id": "sdr_20261109213653_7534007c",
+      "stage": "human_approval",
+      "action": "stage.completed",
+      "detail": {
+        "stage": "human_approval",
+        "result": {
+          "keys": [
+            "drafts",
+            "dry_run",
+            "channel"
+          ],
+          "count": 3
+        }
+      }
+    },
+    {
+      "event_id": "a88022b0-2515-4bc9-a7e1-f23feb82bd84",
+      "at": "2026-11-09T21:36:53.272Z",
+      "task_id": "sdr_20261109213653_7534007c",
+      "stage": "human_approval",
+      "action": "approval.recorded",
+      "detail": {
+        "approved": [
+          "draft_1_c0613a",
+          "draft_2_30df5b",
+          "draft_3_523486"
+        ],
+        "pending": [],
+        "approver": "dsh-user"
+      }
+    },
+    {
+      "event_id": "6938bc45-b5d4-4dae-82d3-f98928145c14",
+      "at": "2026-11-09T21:36:53.291Z",
+      "task_id": "sdr_20261109213653_7534007c",
+      "stage": "follow_up_plan",
+      "action": "approval.gate_passed",
+      "detail": {
+        "approved_count": 3
+      }
+    },
+    {
+      "event_id": "9492decf-2dc7-4f74-ae01-862dda5eeef9",
+      "at": "2026-11-09T21:36:53.311Z",
+      "task_id": "sdr_20261109213653_7534007c",
+      "stage": "quotation_pack",
+      "action": "stage.completed",
+      "detail": {
+        "stage": "quotation_pack",
+        "result": {
+          "keys": [
+            "follow_ups"
+          ]
+        }
+      }
+    },
+    {
+      "event_id": "c9c8d154-9e24-4504-b4ce-1c893546ade6",
+      "at": "2026-11-09T21:36:53.328Z",
+      "task_id": "sdr_20261109213653_7534007c",
+      "stage": "close",
+      "action": "stage.completed",
+      "detail": {
+        "stage": "close",
+        "result": {
+          "keys": [
+            "quotation_pack"
+          ]
+        }
+      }
+    },
+    {
+      "event_id": "34c0be31-9fed-4c8c-84a6-8953e70a6efc",
+      "at": "2026-11-09T21:36:53.346Z",
+      "task_id": "sdr_20261109213653_7534007c",
+      "stage": "close",
+      "action": "stage.completed",
+      "detail": {
+        "stage": "close",
+        "result": {
+          "keys": [
+            "report"
+          ]
+        }
+      }
+    }
+  ],
+  "runtime_config": {},
+  "knowledge": {}
+}

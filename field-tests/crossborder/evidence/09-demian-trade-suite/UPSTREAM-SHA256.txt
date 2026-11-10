@@ -1,0 +1,20 @@
+# 上游跟踪文件 sha256（git archive HEAD = e4c909ec…）
+# 原件目录: crossborder/internal-archive/09-demian-trade-suite/upstream-src/
+# npm tarball 1.0.1 sha256: c69dd1c8d539d436bbc55ddf952529778604af3caefe195dad1b3b405cad5898
+# tarball 与 git 共享文件（11 个）sha256 全部一致；git 多 .gitattributes/.gitignore/docs/screenshot.png/screenshots.json/scripts/package.py
+8d75fbed0329d55480242ea79c61cbdd3da312c700298bfba9572b81ec325cc6  ./.gitattributes
+698ef0d3dfed9feef92cbf86d11ac00108fb459ef860054702a2fe3dc2db1f22  ./.gitignore
+410dca0a817e4a9c87f31395e23637927c930b61e34a292305fcb10377169936  ./LICENSE
+ead5d5380145e2dcb0a92b67c32e1a20a75e7725242522e00fe5cffe5479a449  ./README.md
+4ee702b84cd88e30a528bda50d50e23723bddadf7441e10115e9a014c76993b0  ./assets/icon-180.png
+79bb401ef185960731e2269024ed6717ad34983bf26e00216167310cb2fe9afe  ./assets/workbench.html
+85639b0dd5094378d85b792d3024af470875f25c72b75b3c865405368d0083c5  ./client.js
+91e0cf49398d01dff0708b463b7e21fd45f6ba7e97d071e1588ad3b29f91537b  ./cordis.patch.yml
+4492ee8555101422a50b6d3b4f82d60dc4c6fcc5f675c91dc4ce188fc8a8ebad  ./docs/screenshot.png
+33f9532b71fdec6e523efd4826cfc3e77b4469be12d43e7bd4e2857eabeb7df1  ./icon.svg
+f1302c0bc579a6d24b77bea62ffc093fddc3f598cec74e198a81fba4e70043a7  ./index.js
+885deeb94d9306949b6b3458ce77e90473e5d6d8cbaf5e0f25c89826ccfd7d1c  ./locale/en.json
+7daf60b4aa24fc710afdf994ae279adac2fdb2dd0abbaee20c31e296512d8d83  ./locale/zh.json
+ef90e3dcb1d68eb67eb07eac359a5e1aa0f833a6df2cc74e8f637eda8d832668  ./package.json
+8230318e8fd75b67af373e3b5401e26354057933a3fa9ae47cfe065472873751  ./screenshots.json
+df969037126793fdba5b75c00ef50f0234c2a51011c16ead88215c16cdda226c  ./scripts/package.py

@@ -1,0 +1,46 @@
+# MASKING / 归档记录
+updated: 2026-11-09 14:51:14 EST
+
+## 为何归档
+挑刺员要求：未打码原件移出 repo（crossborder/repo/），放到 crossborder/internal-archive/01-vibe-seller-install/；仓库内只留打码副本。
+
+## 本次移走的文件（→ internal-archive/01-vibe-seller-install/）
+move_time: 2026-11-09 14:51:14 EST
+reason: 挑刺员要求——未打码原件移出 repo，仅留打码副本；含 install_id / 店铺UUID / 本地邮箱 / 截图中的安装ID前缀 / CDP session UUID
+MOVED api-auth-me.json
+MOVED api-settings.json
+MOVED store-browser-start-cmd.txt
+MOVED store-create-try.txt
+MOVED browser-web-start2-body.txt
+MOVED store-browser-start-body.txt
+MOVED cdp-after-vibe-start.txt
+MOVED cdp-chrome-stderr.txt
+MOVED cdp-json-version.txt
+MOVED homepage-screenshot.png
+MOVED host-127-bind-test-20261109.txt
+
+## 仓库内打码副本（evidence/01-vibe-seller-install/）
+- api-auth-me.masked.json          （id→<user_id>, email→<local_email>）
+- api-settings.masked.json         （install_id→<install_id>）
+- api-stores-after-create.masked.json
+- store-create-try.masked.txt      （店铺 UUID→<store_uuid>）
+- store-browser-start-cmd.masked.txt
+- store-browser-start-body.masked.txt
+- browser-web-start2-body.masked.txt
+- cdp-after-vibe-start.masked.txt  （CDP session UUID→<cdp_session_id>）
+- cdp-chrome-stderr.masked.txt
+- cdp-json-version.masked.txt
+- host-127-bind-test-20261109.masked.txt（HOME 路径→<home>）
+- homepage-screenshot.NOTE.txt     （说明原 PNG 已归档）
+
+## 打码规则
+- 主机名 → <host>
+- 用户/沙箱 HOME 路径 → <home>
+- install_id → <install_id>
+- 店铺 UUID → <store_uuid>
+- 用户 UUID → <user_id>
+- 本地占位邮箱 → <local_email>
+- CDP session UUID → <cdp_session_id>
+- 证据原文只追加/归档，不就地改写已移走的原件
+
+2026-11-09 14:56 EST 追加：上述 internal-archive 目录为本地内部归档，不随仓库发布。

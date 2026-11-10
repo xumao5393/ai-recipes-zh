@@ -1,0 +1,59 @@
+# EXCERPT — h2.nexus terms reading (IDEAS #49)
+# Full HTML archived in internal-archive/14-h2-nexus/pages/
+# Fetched 2026-11-09 America/New_York. No VM opened; /cli (free-server entry) not fetched.
+
+## A. https://h2.nexus/terms-of-use/ (HTTP 200) — titled "Terms of Service"
+Company: H2NEXUS CLOUD SERVICES FZCO; Published and came into effect 10.09.2026
+
+### Scope / acceptance ("accessing or using")
+"These Terms govern the Client's use of our website, client area, control panel, virtual servers, dedicated servers, cloud infrastructure, IP addressing, network services, support services, software, APIs, documentation and any related services collectively, the “Services”."
+
+"By registering an account, ordering, paying for, accessing or using the Services, the Client confirms that the Client has read, understood and accepted these Terms. If the Client does not agree with these Terms, the Client must not use the Services."
+
+### Incorporated policies (no separate AUP URL)
+"1.4. These Terms apply together with the Privacy Policy, the policies set out in the sections of these Terms (including the Acceptable Use Policy, the Anti-Spam Policy and the SLA) and any additional policies, tariff descriptions or special terms published by the Company for specific services."
+
+### Login / account
+"3.1. To use certain Services, the Client must create an account."
+"3.2. The Client must provide true, accurate, current and complete registration, billing and contact information."
+"3.8. The Company may require account verification, identity verification, business verification, payment verification or additional KYC/KYB information from the Client before or after activation of Services."
+
+### Email (account communications)
+"20.3. The Client is responsible for maintaining a valid email address and checking Client Area notifications."
+"20.4. A notice sent to the Client's registered email address or Client Area is treated as delivered, so the Client should keep contact details up to date and check the Client Area regularly."
+
+### Age
+"1.2. The Client must be at least 18 years old to use the Services."
+
+### Acceptable Use (Section 8 — AUP inside Terms; separate /aup = 404)
+"8.1. The Client must use the Services only for lawful, safe and legitimate purposes."
+"8.3. Prohibited activities include, but are not limited to:"
+... "unauthorised scanning, brute-force attacks, vulnerability exploitation or penetration testing against third parties;"
+... "circumvention of the Company's limits, billing, anti-abuse systems, rate limits or technical controls."
+
+### Free / PROMO / trial mentions in Terms
+"5.9. ... For PROMO, trial, daily rental, temporary or special-offer Services, data may be retained for up to 1 day or deleted earlier where technically necessary."
+"14.5. PROMO, free, trial, special-offer or low-cost Services may be subject to stricter limits, including: ..."
+"16.5. SLA does not apply to: PROMO, free, trial, beta, daily rental or special-offer Services;"
+(Terms do not expressly state that the 15-minute free server may be used without an account.)
+
+### Marketing vs Terms
+"17.3. Descriptions in marketing materials, website pages, support messages or tariff pages are provided in good faith for information; specific guarantees beyond these Terms and the SLA apply only where expressly agreed in writing."
+
+## B. https://h2.nexus/privacy-policy/ (HTTP 200)
+Published and came into effect 21.07.2026
+
+"2.1. Account data: name, company name, email address, Telegram username, phone number, billing address, country, account ID, login data and account settings."
+"3.1. Directly from the Client when the Client registers, orders Services, contacts support, submits documents, makes payments or configures Services."
+"3.2. Automatically when the Client uses our website, Client Area, control panel, API or Services."
+"10.4. The Client is responsible for ensuring that the Client's registered email address is valid and monitored."
+"16.1. Our Services are not intended for persons under 18."
+
+## C. https://h2.nexus/ (HTTP 200) — product / FAQ copy (NOT Terms)
+FAQ: "Do you offer trial servers? What’s your refund policy?"
+"Yes — for a quick test you can use our free server for 15 minutes, with no registration or card ( free server → ). We don't offer longer trial servers, but you can order any paid server for just one day and test whatever you need — no questions or waiting."
+Nav/FAQ link target for "free server": href="/cli" (page not fetched this round — may open the free VM; left unread).
+
+## D. Separate AUP / other legal probes
+/aup /acceptable-use-policy/ /fair-use/ /cookie-policy/ /legal/ → HTTP 404
+AUP content is Section 8 of Terms of Service only.

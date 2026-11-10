@@ -1,0 +1,10 @@
+# run-check · Shopify five-order offline
+# start: 2026-11-09 18:37:13 EST
+# cmd: unshare -rn python3 check_exceptions.py fake-orders.json
+# cwd: crossborder/repo/evidence/07-shopify-five-order
+# label: 方法来自网站文章，没有他人实测数据
+# end: 2026-11-09 18:37:13 EST
+# exit: 0
+# elapsed_ms: 25
+# stderr_bytes: 0
+# stdout_sha256: b61128b244afaaea97d93b1ffe4e05839eecbb0be4cadc9f4f332e3be4e661cb

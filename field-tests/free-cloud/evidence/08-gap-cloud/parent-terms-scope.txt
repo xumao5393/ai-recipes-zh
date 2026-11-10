@@ -1,0 +1,20 @@
+# Parent-brand terms: exact scope wording (archived HTML in internal-archive/08-gap-cloud/pages/)
+# Fetched 2026-11-09; excerpted for coverage question: do they cover gap.geta.team Free MicroVM?
+
+## https://geta.team/terms (HTTP 200)
+Verbatim:
+- "We provide our users with access to AI employee services that allow them to deploy and manage autonomous AI employees (hereinafter, the \"Services\") through the website geta.team."
+- "These Terms of Use, together with any documents herein mentioned, set forth the terms and conditions governing the use of this website, and the purchase and usage of the Services through Geta.Team (hereinafter, the \"Terms\")."
+- "\"Our Website\" refers to the website \"geta.team\"."
+- Page text has no occurrence of "gap.geta.team", "GAP Cloud", or "MicroVM" (rg count 0 in archived HTML body text).
+
+Conclusion for coverage of gap.geta.team Free MicroVM: 无法确认是否覆盖（条款自定范围是 geta.team 网站与 AI employee Services，未点名 gap 子站或 Free MicroVM）。
+
+## https://elest.io/terms (HTTP 200)
+Verbatim (line breaks collapsed):
+- "...deploy and manage Open source software (hereinafter, the \"Services\") through the website Elest.io."
+- "These Terms of Use, together with any documents herein mentioned, set forth the terms and conditions governing the use of this website, and the purchase and usage of the Services through Elest.io (hereinafter, the \"Terms\")."
+- "\"Our Website\" refers to the website \"Elest.io\"."
+- Archived body text: 0 hits for gap.geta.team / GAP Cloud / MicroVM / free-vm.
+
+Conclusion for coverage of gap.geta.team Free MicroVM: 无法确认是否覆盖（条款自定范围是 Elest.io 网站与其上 Open source software Services；SSH 主机落在 *.vm.elestio.app 这一事实，条款正文未把 gap.geta.team Free MicroVM 写进适用范围）。elest.io 条款只是粗看过。

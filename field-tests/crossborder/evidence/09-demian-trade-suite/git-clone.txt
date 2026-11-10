@@ -1,0 +1,14 @@
+# git clone 记录
+# 时间: 2026-11-09 19:22:57 EST（开始）；real 0.474s；exit 0
+# 命令: git clone https://github.com/southcul/demian-trade-suite-dsh-plugin src
+# DNS: getent hosts github.com → 198.18.0.1（本机代理的 fake-ip 段）；clone 成功，不是黑洞拦截，未做任何绕过
+HEAD: e4c909ecd13beb7eba118815f61ba5b4eb15afaa 2026-11-01 15:51:30 +0800
+提交历史：共 3 个提交
+commit 链接: https://github.com/southcul/demian-trade-suite-dsh-plugin/commit/e4c909ecd13beb7eba118815f61ba5b4eb15afaa
+
+# raw clone 输出（已掩码路径）
+Cloning into 'src'...
+
+real	0m0.474s
+user	0m0.054s
+sys	0m0.022s

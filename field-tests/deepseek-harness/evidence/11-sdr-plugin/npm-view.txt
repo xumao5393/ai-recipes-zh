@@ -1,0 +1,18 @@
+version = '0.2.3'
+engines = { node: '>=20' }
+dist-tags = { latest: '0.2.3' }
+time = {
+  created: '2026-08-18T01:22:44.042Z',
+  modified: '2026-08-28T16:12:18.522Z',
+  '0.2.0': '2026-08-18T01:22:44.389Z',
+  '0.2.1': '2026-08-18T02:17:35.477Z',
+  '0.2.2': '2026-08-18T02:31:24.903Z',
+  '0.2.3': '2026-08-28T16:12:18.115Z'
+}
+repository = {
+  type: 'git',
+  url: 'git+https://github.com/Xuxchloris/deepseek-harness-sdr-plugin.git',
+  directory: 'packages/dsh-sdr'
+}
+homepage = 'https://github.com/Xuxchloris/deepseek-harness-sdr-plugin#readme'
+description = 'DeepSeek Harness plugin for a controllable SDR digital employee'

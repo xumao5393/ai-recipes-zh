@@ -1,0 +1,9 @@
+extracted_from: assets/workbench.html (git = npm 1.0.1)
+byte_offset_start: 322489
+byte_offset_end_exclusive: 375587
+extracted_bytes: 53098
+sha256: 0e8c197a088f6148a388ca2cabcf23e5b4780c392d018049d4e5e8f9ee7c535f
+cmp_git_workbench_slice: MATCH
+cmp_npm_tarball_workbench_slice: MATCH
+workbench_full_sha256: 79bb401ef185960731e2269024ed6717ad34983bf26e00216167310cb2fe9afe
+note: extracted bytes are an unmodified contiguous slice; no rewrite

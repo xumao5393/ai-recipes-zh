@@ -1,0 +1,17 @@
+# REDACTION-CHECK · 15-mcp-store-tools  2026-11-09 21:36 EST
+# 范围: 本目录全部文件（不含本文件）+ ../../15-mcp-store-tools-只读Shopify目录审计MCP离线实测.md
+## 主目录绝对路径 /home/
+# rg -n --glob '!REDACTION-CHECK.txt' -e '/home/'
+0 命中
+## 工作区绝对路径 /workspace/
+# rg -n --glob '!REDACTION-CHECK.txt' -e '/workspace/'
+0 命中
+## 沙箱用户名
+# 在公开文件中搜路径型用户名；fixture handle「mystery-box」含 box 字样，已人工排除，不是用户名
+0 命中
+## 作者邮箱原文
+# 公开 git-clone.txt 已改为 <REDACTED_EMAIL>
+0 命中
+## 常见密钥模式
+# rg -n --glob '!REDACTION-CHECK.txt' -e '(AKIA[0-9A-Z]{16}|sk-[A-Za-z0-9]{16,}|ghp_[A-Za-z0-9]{20,}|github_pat_|PRIVATE KEY)'
+0 命中

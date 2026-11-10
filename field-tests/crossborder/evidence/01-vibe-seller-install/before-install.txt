@@ -1,0 +1,6 @@
+=== before install ===
+vibe-seller: not in PATH
+No tools installed
+total 8
+drwxr-xr-x 2 box box 4096 Nov  9 14:40 .
+drwxr-xr-x 3 box box 4096 Nov  9 14:40 ..

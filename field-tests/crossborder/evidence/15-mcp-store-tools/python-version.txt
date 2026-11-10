@@ -1,0 +1,5 @@
+time: 2026-11-09 21:25:32 EST（环境检查） / 21:29:00 EST（建 venv 时复述）
+system: Python 3.13.5
+venv: Python 3.13.5
+pyproject requires-python: >=3.11
+n=1

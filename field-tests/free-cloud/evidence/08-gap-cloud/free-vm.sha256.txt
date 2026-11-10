@@ -1,0 +1,1 @@
+e5840d3733c2d125edc71f779d9abe00bd81e7da602dfa055bcb56f3f4f2241a  <workspace>/free-cloud/sandbox/08-gap-cloud/pages/free-vm.html

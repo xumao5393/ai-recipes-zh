@@ -1,0 +1,2 @@
+dispatched 2026-11-09 19:26:33 EST: 3 fresh Grok Bot background workers (no prior conversation context), identical prompt = prompt-main.txt (sha256 573637e8...709d), after FROZEN.sha256
+runA / runB / runC

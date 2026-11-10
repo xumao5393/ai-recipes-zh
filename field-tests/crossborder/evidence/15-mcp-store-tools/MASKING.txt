@@ -1,0 +1,10 @@
+# MASKING · 15-mcp-store-tools
+时间：2026-11-09 21:35 EST
+1. 上游源码不入公开库：只留 commit 链接与 UPSTREAM-SHA256.txt。原件在 <sandbox>/15-mcp-store-tools/upstream/。
+2. 带绝对路径的原始运行日志留在 <sandbox>/15-mcp-store-tools/raw/；公开证据已把 <workspace>、<sandbox>、<home> 换掉。
+3. git log 里的作者邮箱在公开 git-clone.txt 中改为 <REDACTED_EMAIL>；姓名 Ali Raza 保留（与 LICENSE / 提交者一致）。
+4. 路径：公开文件里沙箱根替换为 <sandbox>/15-mcp-store-tools，工作区根替换为 <workspace>，主目录替换为 <home>。
+5. 编号 15：开工前已在 crossborder/PLAN.md 两处登记（实测员 11-09 21:23 EST）。
+6. 未使用、未保存任何 Shopify / mock.shop / Storefront token；驱动里的 token 字面量是仓库测试同款 "public-token"，只进 MockTransport 的请求头，未出网。
+7. venv、wheel 缓存、.pytest_cache 不入库。
+8. GitHub API 403 响应里的 rate-limit 与 request-id 是公开响应头，原样保留；未带认证重试。

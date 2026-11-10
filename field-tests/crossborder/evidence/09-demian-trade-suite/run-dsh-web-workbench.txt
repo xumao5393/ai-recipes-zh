@@ -1,0 +1,38 @@
+# 真实 dsh web 提供 workbench · 2026-11-09 19:26:35–19:26:41 EST · n=1
+# unshare -rn + lo up；dsh --profile web --no-open --host 127.0.0.1 --port 0
+# 启动后打印的 URL 里的 token 已脱敏（原件 internal-archive/.../raw-runs/web.out）
+# 进程随后被 kill，未开浏览器，未发模型请求，未碰 DeepSeek 官方 API 地址
+dsh web: http://127.0.0.1:33807/?token=<redacted>
+---ERR---
+---PID 298742---
+PORT=33807
+HTTP/1.1 200 OK
+Content-Type: text/html; charset=utf-8
+Cache-Control: no-store
+X-Content-Type-Options: nosniff
+Vary: Accept-Encoding
+Date: Tue, 10 Nov 2026 00:26:40 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+Transfer-Encoding: chunked
+
+375618 run/web-workbench.body
+13
+
+## response headers
+HTTP/1.1 200 OK
+Content-Type: text/html; charset=utf-8
+Cache-Control: no-store
+X-Content-Type-Options: nosniff
+Vary: Accept-Encoding
+Date: Tue, 10 Nov 2026 00:26:40 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+Transfer-Encoding: chunked
+
+
+## body
+bytes: 375618
+sha256: 79bb401ef185960731e2269024ed6717ad34983bf26e00216167310cb2fe9afe
+cmp workbench.html: MATCH
+装柜相关字样命中数（rg 装柜计算|20.GP|VEHICLES）: 13

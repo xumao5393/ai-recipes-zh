@@ -1,0 +1,229 @@
+==== /api/browser/web/start
+{
+  "post": {
+    "tags": [
+      "browser"
+    ],
+    "summary": "Start Web Browser",
+    "description": "Start (or reuse) the store-less orchestrator web browser.\n\nThe web wrapper (``bin/_web/browser-use``) calls this lazily on\nfirst use, mirroring ``POST /api/stores/{id}/browser/start`` for\nstore browsers.",
+    "operationId": "start_web_browser_api_browser_web_start_post",
+    "parameters": [
+      {
+        "name": "force",
+        "in": "query",
+        "required": false,
+        "schema": {
+          "type": "boolean",
+          "description": "Accepted for parity with the store browser-start route. The web browser has no Ziniao force-restart path, so this is currently a no-op; wrappers pass force=1.",
+          "default": false,
+          "title": "Force"
+        },
+        "description": "Accepted for parity with the store browser-start route. The web browser has no Ziniao force-restart path, so this is currently a no-op; wrappers pass force=1."
+      }
+    ],
+    "responses": {
+      "200": {
+        "description": "Successful Response",
+        "content": {
+          "application/json": {
+            "schema": {}
+          }
+        }
+      },
+      "422": {
+        "description": "Validation Error",
+        "content": {
+          "application/json": {
+            "schema": {
+              "$ref": "#/components/schemas/HTTPValidationError"
+            }
+          }
+        }
+      }
+    }
+  }
+}
+==== /api/stores/{store_id}/browser/start
+{
+  "post": {
+    "tags": [
+      "stores"
+    ],
+    "summary": "Start Browser",
+    "description": "Start the browser session for a store (lazy startup).",
+    "operationId": "start_browser_api_stores__store_id__browser_start_post",
+    "parameters": [
+      {
+        "name": "store_id",
+        "in": "path",
+        "required": true,
+        "schema": {
+          "type": "string",
+          "title": "Store Id"
+        }
+      },
+      {
+        "name": "force",
+        "in": "query",
+        "required": false,
+        "schema": {
+          "type": "boolean",
+          "description": "If True and Ziniao is detected in normal (non-WebDriver) mode, kill-and-relaunch Ziniao in WebDriver mode then retry the start. Default False preserves the existing safety: the user must explicitly click Force Restart in the UI. Agent task wrappers pass force=True so they can self-recover instead of failing the task.",
+          "default": false,
+          "title": "Force"
+        },
+        "description": "If True and Ziniao is detected in normal (non-WebDriver) mode, kill-and-relaunch Ziniao in WebDriver mode then retry the start. Default False preserves the existing safety: the user must explicitly click Force Restart in the UI. Agent task wrappers pass force=True so they can self-recover instead of failing the task."
+      }
+    ],
+    "responses": {
+      "200": {
+        "description": "Successful Response",
+        "content": {
+          "application/json": {
+            "schema": {}
+          }
+        }
+      },
+      "422": {
+        "description": "Validation Error",
+        "content": {
+          "application/json": {
+            "schema": {
+              "$ref": "#/components/schemas/HTTPValidationError"
+            }
+          }
+        }
+      }
+    }
+  }
+}
+==== /api/ziniao-accounts
+{
+  "get": {
+    "tags": [
+      "ziniao-accounts"
+    ],
+    "summary": "List Accounts",
+    "operationId": "list_accounts_api_ziniao_accounts_get",
+    "responses": {
+      "200": {
+        "description": "Successful Response",
+        "content": {
+          "application/json": {
+            "schema": {
+              "items": {
+                "$ref": "#/components/schemas/ZiniaoAccountResponse"
+              },
+              "type": "array",
+              "title": "Response List Accounts Api Ziniao Accounts Get"
+            }
+          }
+        }
+      }
+    }
+  },
+  "post": {
+    "tags": [
+      "ziniao-accounts"
+    ],
+    "summary": "Create Account",
+    "operationId": "create_account_api_ziniao_accounts_post",
+    "requestBody": {
+      "content": {
+        "application/json": {
+          "schema": {
+            "$ref": "#/components/schemas/ZiniaoAccountCreate"
+          }
+        }
+      },
+      "required": true
+    },
+    "responses": {
+      "200": {
+        "description": "Successful Response",
+        "content": {
+          "application/json": {
+            "schema": {
+              "$ref": "#/components/schemas/ZiniaoAccountResponse"
+            }
+          }
+        }
+      },
+      "422": {
+        "description": "Validation Error",
+        "content": {
+          "application/json": {
+            "schema": {
+              "$ref": "#/components/schemas/HTTPValidationError"
+            }
+          }
+        }
+      }
+    }
+  }
+}
+==== /api/stores
+{
+  "get": {
+    "tags": [
+      "stores"
+    ],
+    "summary": "List Stores",
+    "operationId": "list_stores_api_stores_get",
+    "responses": {
+      "200": {
+        "description": "Successful Response",
+        "content": {
+          "application/json": {
+            "schema": {
+              "items": {
+                "$ref": "#/components/schemas/StoreResponse"
+              },
+              "type": "array",
+              "title": "Response List Stores Api Stores Get"
+            }
+          }
+        }
+      }
+    }
+  },
+  "post": {
+    "tags": [
+      "stores"
+    ],
+    "summary": "Create Store",
+    "operationId": "create_store_api_stores_post",
+    "requestBody": {
+      "content": {
+        "application/json": {
+          "schema": {
+            "$ref": "#/components/schemas/StoreCreate"
+          }
+        }
+      },
+      "required": true
+    },
+    "responses": {
+      "200": {
+        "description": "Successful Response",
+        "content": {
+          "application/json": {
+            "schema": {
+              "$ref": "#/components/schemas/StoreResponse"
+            }
+          }
+        }
+      },
+      "422": {
+        "description": "Validation Error",
+        "content": {
+          "application/json": {
+            "schema": {
+              "$ref": "#/components/schemas/HTTPValidationError"
+            }
+          }
+        }
+      }
+    }
+  }
+}

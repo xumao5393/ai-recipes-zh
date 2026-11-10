@@ -1,0 +1,5 @@
+vibe-seller --version: vibe-seller 0.2.0
+pypi: 0.2.0
+github main sha: 7693f9a7cff956210f62ff2baf707f937d2943c6
+license: Apache-2.0
+release tag: v0.2.0

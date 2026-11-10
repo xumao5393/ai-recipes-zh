@@ -1,0 +1,6 @@
+# REDACTION CHECK 2026-11-09 16:23:11 EST · CF Worker 返工后
+home-directory path scan hits: 0
+local test-machine username scan hits: 0
+private keys / bearer secrets: 0
+wake-log-sim-c.jsonl lines: 40
+numbers: A100 B50 C40 unchanged

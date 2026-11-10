@@ -1,0 +1,8 @@
+# git clone 记录
+# 时间: 2026-11-09 19:28:50 EST；real 0.485s；exit 0
+# 命令: git clone https://github.com/CoderGamerUnknow/Project-Tango src
+# DNS: getent hosts github.com → 198.18.0.1（fake-ip 代理段）；clone 成功，不是黑洞，未绕过
+HEAD: 114ca95dfbda877a7ac2f0a0d75b2e57ec308365
+提交: 2026-10-25 09:22:20 +0100 docs: rewrite README in house format; README-pinning tests still pass
+提交数: 23；跟踪文件: 45
+commit 链接: https://github.com/CoderGamerUnknow/Project-Tango/commit/114ca95dfbda877a7ac2f0a0d75b2e57ec308365

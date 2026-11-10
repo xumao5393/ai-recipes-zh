@@ -1,0 +1,50 @@
+URL: https://www.amd.com/en/developer/resources/cloud-access/amd-developer-cloud.html
+核对时间: 2026-11-09T14:58:24-05:00 (curl HTTP 200)；devcloud.amd.com 跳登录页，未登录未注册
+--- 原文摘录（行号对应 6d12e79f.txt）---
+ Access high-performance AMD Instinct™ MI300X GPUs through the AMD Developer Cloud — the ideal platform for developers and open-source contributors building and optimizing AI, machine learning, and HPC workloads on AMD hardware. 
+ AMD Provided Cloud Credit 
+ AMD AI Developer Program members receive a complimentary $100 in AMD Developer Cloud credits to accelerate development and prototyping. 
+ * Terms and conditions apply 
+ Join the Program 
+ Pay-As-You-Go 
+ Digital Ocean
+ Get instant access to AMD Instinct GPUs via Digital Ocean. Link your credit card on their secure platform to scale your AI workloads into a production-ready environment. 
+ Sign-Up 
+ Vultr
+ Deploy AMD GPU instances instantly on Vultr. Link your credit card via their secure portal to access high-performance infrastructure built for production-scale AI. 
+ Two AMD Instinct MI300X GPU Instance Configurations 
+ Small Configuration: 1x GPU 
+ GPU Memory: 192GB 
+ vCPUs: 20 vCPUs 
+ System Memory: 240GB 
+ Boot Disk: 720 GB NVMe 
+ Scratch Disk: 5TB NVMe 
+ Large Configuration: 8x GPU 
+ GPU Memory: 1536GB 
+ vCPUs: 160 vCPUs 
+ System Memory: 1920 GB 
+ Boot Disk: 1920 GB NVMe 
+ Scratch Disk: 40 TB NVMe 
+ The AMD Developer Cloud (ADC) provides developers and open-source contributors with access to powerful AMD Instinct™ MI300X GPUs through a third-party cloud website. Users can choose between two access options: pay-as-you-go or apply for complimentary hours. 
+ How do I sign up for the AMD Developer Cloud?
+ To access the AMD Developer Cloud, create an AMD AI Developer Program account and use those same credentials to sign in. 
+ If you created an AMD Developer Cloud account before July 15, you can still sign in using your email address or GitHub account. However, to continue using the AMD Developer Cloud, you'll need to switch your sign-in method to AMD Single Sign-On (SSO). For more details, please review the AMD SSO Migration document . 
+ What is Pay-As-You-Go Access?
+ For developers ready to start building on AMD Instinct GPUs immediately, pay-as-you-go access offers a fast and flexible option. Simply create a new third-party cloud, enter your payment information on a secure platform, and begin developing right away. 
+ What is Complimentary AMD Credit? 
+ AMD is offering an initial $100 complimentary cloud credit to qualified developers who apply and join AMD AI Developer Program. Complimentary credit hours expire thirty (30) days from the date of deposit in your developer cloud account unless stated otherwise in your credit confirmation email. Credits are activated once cloud account is created or logged into via $100 credit link provided. For questions, reach out to:  devcloudrequests@amd.com 
+ What is required to apply for complimentary credit for the AMD Developer Cloud?
+ The AMD Developer Cloud is intended for independent developers and open-source project contributors involved with ML, low-level programming, and AI applications development. 
+ How are applicants awarded AMD complimentary cloud credit?
+ Cloud credit allocation on the AMD Developer Cloud is determined by AMD in its sole discretion, based on the intended use case (e.g., inference, training, finetuning), and a detailed description of how you plan to use the GPU credit. 
+ What happens if I need more cloud hours?
+ You may contact the third-party cloud representative about additional complimentary hours, which may be offered at AMD’s sole discretion or add a valid payment option and pay-as-you-go. You can switch to the production cloud anytime. 
+ When can I expect a response if I receive free credits? 
+ Upon application approval, complimentary credits will be deposited in your third-party AMD Developer Cloud account within three (3) business days. Credits will appear on the “My AMD Home” page in the AMD Developer Cloud console. 
+ When I run out of complimentary AMD cloud credit, will resources be turned off and/or deleted? 
+ If you are granted complimentary credit hours for use on Instinct GPUs in the AMD Developer Cloud and your credit expires and you have no active payment method on file, your AMD GPU VM will be destroyed and you will lose access to the GPU(s) and the data on the GPU(s). Similarly, if complimentary credit hours are exhausted, you will lose access to the GPU, any and all data, and the AMD Developer Cloud. 
+If payment method is added, it will automatically charge your payment method once credit is exhausted. 
+Complimentary AMD cloud credit applies only to use on AMD Instinct MI300X GPUs. Complimentary credit hours for attached volumes, object storage, or backups, if any, on the AMD Developer Cloud will not be offered. If a GPU Instance is powered off, you are still billed and/or credit hours will apply. Charges are incurred until the instance is destroyed. 
+ Will I be billed for powered-off GPU VM?
+ When you power off your GPU VM, you are still billed for it. This is because your disk space, CPU, RAM, and IP address are all reserved, even while powered off. Therefore, charges are made until you destroy the instance. 
+ use AMD Developer Cloud in a manner that violates applicable U.S. export laws, including but not limited to the U.S. Export Administration Regulations (“EAR”) (15 C.F.R Sections 730-774), including but not limited to (i) allowing a permanent resident of EAR Country Groups E:1 (Iran, North Korea, Syria) or E:2 (Cuba) to access or use AMD Developer Cloud; (ii) using AMD Developer Cloud for the design or development of chemical or biological weapons, missile capable systems, nuclear computational platforms/systems, unmanned aerial vehicles, military platforms/systems, or mass surveillance platforms/systems, (iii) allowing any entity or individual listed on any U.S. restricted end-user list or identified on any applicable government end-user list to access or use AMD Developer Cloud; (iv) developing of a supercomputer located in China, Hong Kong or Macau; (v) developing or producing of integrated circuits by a semiconductor manufacturing fabrication facility located in China, Hong Kong or Macau as defined in 744.23 of the EAR meeting the following criteria: (1) Logic integrated circuits using a non-planar transistor architecture or with a “production” technology node of 16/14 nanometers or less (2) NOT AND (NAND) memory integrated circuits with 128 layers or more; or (3) Dynamic random-access memory (DRAM) integrated circuits using a “production” technology node of 18 nanometer half-pitch or less; or 

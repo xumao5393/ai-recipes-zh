@@ -1,0 +1,5 @@
+frozen_at: 2026-11-09 21:31:38 EST
+note: hashes taken before pytest and before audit_catalog driver
+
+51bdbcd6dfa662d72d4b1cc88cdc94bc30c8208351b09b528eab0023d3c5252a  catalog-nodes.json
+ba4da4676f78fa275c6fd7073a11c1ae0a2b28855275bc8e91250b00b0ebcd6f  hand-expected.md

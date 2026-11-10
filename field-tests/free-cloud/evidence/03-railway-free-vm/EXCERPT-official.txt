@@ -1,0 +1,41 @@
+# Railway free-vm 官方摘录（实测前实读）
+核对时间（America/New_York）: 2026-11-09 15:28:31 EST
+
+## free-vm 页
+- URL: https://railway.com/free-vm
+- HTTP: 200
+- sha256: 718808e9a159ecc7c7d972a53c8b41080ca11cc1e82cbac7896e5648bc43bffe
+关键句摘录：
+- Get a VM for free. One command gets you a Linux VM in about 1.4 seconds, with coding agents preinstalled and a live preview URL.
+- $ ssh railway.new
+- Welcome to your Railway VM. You have 60 min to try it out.
+- CPU 2 vCPU / Memory 2 GB / Ready in ~1.4 s / Build time 60 min / Claim time 24 h
+- No dashboard, no config, no card.
+- Bring any SSH key, that's your login.
+- Do I need a Railway account? No. Railway identifies you by your SSH key.
+- What happens after 60 minutes? The build window closes. You then have 24 hours to claim the box... Unclaimed boxes are deleted along with their files.
+- What's installed? The Railway Agent (run agent), Claude Code, Codex, OpenCode, Cursor CLI, Grok, and pi, plus Node, Python, gh, mise, the Railway CLI, and Chromium with Playwright.
+- Is it really free? Yes. While a box is unclaimed, nobody pays for its compute, and you never enter a card.
+- When demand is high... "Anonymous trials are temporarily disabled..."
+
+## Acceptable Use Policy（fair-use 页，实际标题 Acceptable Use Policy）
+- URL: https://railway.com/legal/fair-use
+- HTTP: 200
+- sha256: db5f7480f4ce96cbd96b1fec2b7d81bf31db2f2690c7e556a2da089ee5ce4f8f
+禁止项摘录（与本次测试相关的边界）：不得用于非法活动、挖矿、种子下载、转售算力、规避用量/计费限制、代理/匿名服务、违反第三方 ToS 的 bot/scraper。
+本次计划：开 1 台、只读规格、跑 dsh（不配真实 API key）、不认领、不上传私人文件——属于官方宣传的免注册试用场景，未触碰上述禁止项。
+
+## Terms of Service
+- URL: https://railway.com/legal/terms
+- HTTP: 200
+- sha256: 20c39d8b8ec01e09a33b07d0347b1b8c82e2573378dcb068c78b1675d4e49fa9
+实读结论：条款页可公开访问；未发现“禁止免注册 ssh railway.new”的表述。官方产品页明确将免注册 SSH VM 作为公开产品功能宣传。
+
+## 是否继续实测
+是。官方公开免注册用法；不要求登录/绑卡即可试用；测完不认领，按 24h 规则过期。
+
+## 补充（2026-11-09 约 15:56 EST 复读 https://railway.com/free-vm，返工第2轮）
+- Limits: "Up to 3 boxes per IP address per day, and a shared AI budget per IP per day."
+- FAQ "What if it says to try again later?": "When demand is high, we cap how many free VMs run at once in each region. If you hit the cap, you'll see "Anonymous trials are temporarily disabled. Try again shortly, or sign up to keep building." That attempt doesn't count against your daily limit, so try again in a few minutes, or sign up to keep building right away."
+- 同句也见于 docs.railway.com 免费试用页（内部存档全文 docs-free-trial.txt）。
+- 注：我们 SSH 实收文案为 "Anonymous trials are unavailable right now. Sign up to keep building."，与上句字面不同。

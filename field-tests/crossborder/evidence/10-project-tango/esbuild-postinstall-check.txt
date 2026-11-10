@@ -1,0 +1,31 @@
+# esbuild postinstall 是否实际跑过 · 2026-11-09 19:38–19:39 EST · n=1
+# 对照：同 lockfile 另开临时目录 `npm ci --ignore-scripts`（EXIT 0）
+
+## npm ci 原文警告（run-npm-ci.txt L17–L20）
+npm warn install-scripts 1 package has install scripts not yet covered by allowScripts:
+npm warn install-scripts   esbuild@0.28.2 (postinstall: node install.js)
+npm warn install-scripts
+npm warn install-scripts Run `npm install-scripts ls` to review, or `npm install-scripts approve <pkg>` to allow.
+
+## 本轮 node_modules（npm ci 之后）
+- @esbuild/linux-x64/bin/esbuild：11427952 字节，inode 801622，nlink 2，mtime 2026-11-09 19:29:54 EST
+- esbuild/bin/esbuild：11427952 字节，inode 801622（同一 inode），nlink 2，mtime 同上
+- cmp 两文件：identical；sha256 均为 e1698a3d5c6c0798fee4fd3b5cc816651f460c63d390a7a26ea4beb0b1884100
+- 无 node_modules/esbuild/lib/downloaded-*（install.js 回退下载路径的落盘标记）
+
+## 对照：npm ci --ignore-scripts（临时目录，n=1）
+- esbuild/bin/esbuild：9350 字节（与 npm pack 的 esbuild@0.28.2 tarball 内 bin/esbuild 同为 JS 包装器量级），inode 与平台包不同，nlink 1
+- @esbuild/linux-x64/bin/esbuild：11427952 字节，独立 inode
+- 此时 JS 包装器仍能 `esbuild --version` → 0.28.2（运行时 resolve 平台包）
+
+## install.js 与硬链接的对应
+- maybeOptimizePackage（install.js）：非 win32 时对平台包二进制 `linkSync` 到临时名再 `renameSync` 到 esbuild/bin/esbuild，效果是与平台包二进制共享 inode（硬链接）。
+- 本轮 node_modules 的硬链接状态与该函数效果一致；`--ignore-scripts` 对照下没有该硬链接。
+- 结论：尽管有 allowScripts 警告，**这次 npm ci 过程中 esbuild 的 postinstall（install.js）实际跑过**，并走了“本机已有 @esbuild/linux-x64”的主路径（无 downloaded-* 标记）。警告本身不能当成“没跑”的证明。
+
+## 离线 version（unshare -rn，n=1）
+./node_modules/esbuild/bin/esbuild --version → 0.28.2
+
+## 读代码（非本次观察）
+- install.js 主路径：require.resolve('@esbuild/<platform>/…')；找不到 optional 包时才 npm install / https 拉 registry.npmjs.org。
+- “不必外连”若单独写成结论，只能标成读代码的推断；本次观察到的是：optional 平台包已在 node_modules，且无 downloaded-* 回退标记。

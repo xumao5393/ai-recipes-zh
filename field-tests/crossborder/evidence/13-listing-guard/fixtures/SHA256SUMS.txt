@@ -1,0 +1,6 @@
+f8f0fd23afad694ca96912e5f2ce1e33684c0f9b83632f9a083a2a8523237ff4  01-clean-etsy.json
+8cfb65693327de7e23e68dafe86bdcb9f4f189647d0548b1138cd3babd82d310  01b-clean-etsy-with-category.json
+3236b74158a04ebc057353296d2c4e86ad73d4cfbf11e264e2c43fb4f306a8cc  02-rule-violation-etsy.json
+e464af695135402e740ea0e803839a1fd953c76fa828b97e8a92f831825aa0d4  03-trademark-hit-etsy.json
+09ef31dfe021473af8810fdd13574422084d30d94b590b205619504a65220ece  04-bad-variation-amazon.json
+133377c4da70feac64275b03d1c0932064ac353b6bfb94dd1df5cf0be0e2a378  04b-parent-as-listing-amazon.json

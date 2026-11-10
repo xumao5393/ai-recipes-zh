@@ -1,0 +1,3 @@
+-rw-r--r-- 1 box box 315732 Nov  9 14:41 lsof.deb
+extracted/usr/share/man/man8/lsof.8.gz
+extracted/usr/bin/lsof

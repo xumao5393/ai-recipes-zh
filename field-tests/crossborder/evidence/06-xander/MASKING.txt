@@ -1,0 +1,10 @@
+# MASKING · 06-xander
+时间：2026-11-09 18:34 EST
+1. 上游源码（233 个文件）不入公开库：只留 sha256、字节数和 commit 链接（UPSTREAM-SHA256.txt）。原件在 crossborder/internal-archive/06-xander/upstream-src/（git archive 2992a49c 导出）。
+2. dsh/cordis.patch.yml 里的 agent 预设 persona 提示词、各工具的描述/inputSchema、开关说明文字：公开版都不摘录。工具只列名称（run-count-switches.txt）；xander_switches 的 handler 输出在 run-offline-handlers.txt 里换成一句说明，原样在 internal-archive/06-xander/run-handlers.raw.txt。
+3. 路径：公开文件里的沙箱绝对路径替换为 <sandbox>，工作区根目录前缀替换为 <workspace>；没有用户主目录路径，没有本机用户名。原样输出在 internal-archive/06-xander/run-calc.raw.txt、run-handlers.raw.txt。
+4. npm test 完整输出（573 行，含上游测试用例名）只放 internal-archive/06-xander/npmtest.out；公开 run-npm-test.txt 只留命令、时间、exit、耗时和末尾汇总，并记了完整输出的 sha256。第 1 次（回环口没开、手动停止）的完整输出在 internal-archive/06-xander/npmtest-lo-down.out。
+5. 历史提交的凭据模式扫描结果只记在 internal-archive/06-xander/history-secret-scan.txt；公开版只写一句“未发现真实凭据”。
+6. 证据原文生成后没有改字样。例外：run-offline-handlers.txt 按第 2 条删掉了 switches 输出段；run-npm-test.txt、run-npm-test-attempt1-lo-down.txt 是由运行头部加汇总拼成的。以上都写在这里。
+7. 编号 06：开工前 18:22 EST ls 过 crossborder/repo 和 repo/evidence，最大编号是 05。沙箱目录先叫 sandbox/xander，clone 后改名为 sandbox/06-xander，当时还没生成任何证据文件，没有替换任何字样。
+8. 2026-11-09 18:34 EST：REDACTION-CHECK.txt 里搜索字样中的本机主目录、项目根改为 <home>、<workspace>（同 Kumo 对 05 的要求）；原件在 crossborder/internal-archive/06-xander/before-home-mask/。

@@ -1,0 +1,10 @@
+# 数据目录事后检查  2026-11-09 18:33:40 EST
+# 命令: find <sandbox>/x2 <sandbox>/x3 <sandbox>/h2 -printf '%y %s %p\n'
+# x2 = run-offline calc+handlers 用的 XANDER_HOME；x3 = count_switches 用的；h2 = HOME
+d 4096 <sandbox>/x2
+d 4096 <sandbox>/x2/reports
+d 4096 <sandbox>/x2/exports
+d 4096 <sandbox>/x2/backups
+d 4096 <sandbox>/x2/proposals
+d 4096 <sandbox>/x3
+d 4096 <sandbox>/h2

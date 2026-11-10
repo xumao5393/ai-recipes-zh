@@ -1,0 +1,5 @@
+# SHA256 of archived HTML originals (paths relative to free-cloud/)
+# Created 2026-11-09 20:26:33 EST — verifies internal-archive/14-h2-nexus/pages/
+48681af53bad42af5658f6880b9dc91bfc9a9f133a5bd5ecbb8f77ac8b263840  internal-archive/14-h2-nexus/pages/home.html
+9348d62877b4b134be03161e7a44b1b2f56f732a9db0ef904874b97ace9e7179  internal-archive/14-h2-nexus/pages/privacy-policy.html
+d8395532715353cea3af6c732ddc4b4092202ca6cd420379812ec77052fa1d63  internal-archive/14-h2-nexus/pages/terms-of-use.html

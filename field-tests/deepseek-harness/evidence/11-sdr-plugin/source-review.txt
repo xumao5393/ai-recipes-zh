@@ -1,0 +1,70 @@
+# source-review · @xuxchloris/dsh-sdr 安装脚本与外连静态审查
+时区：America/New_York（EST）。审查时间：2026-11-09 16:24–16:26 EST。
+审查对象：可安装的 DSH 插件包（仓库子目录 packages/dsh-sdr / npm `@xuxchloris/dsh-sdr@0.2.3`）。
+仓库根 README 已转向 Hermes/Alex（v0.4），DSH 插件仍保留在 packages/dsh-sdr。
+
+## 版本钉死
+- git clone commit：`491776832f257f7d63113f8f4b541bd075cdda55`（2026-09-30 21:43:22 +0800 = 09:43:22 EDT）
+  链接：https://github.com/Xuxchloris/deepseek-harness-sdr-plugin/commit/491776832f257f7d63113f8f4b541bd075cdda55
+- npm：`@xuxchloris/dsh-sdr@0.2.3`（published 2026-08-28T16:12:18.115Z = 12:12:18 EDT）
+  链接：https://www.npmjs.com/package/@xuxchloris/dsh-sdr
+- 包内关键文件 sha256（npm 安装副本，与 clone packages/dsh-sdr 同版本号 0.2.3）：
+  - package.json 55a31779b72ff6bab3b70c1da9cf9843785789d1d0ee91162103767689ba506b
+  - cordis.patch.yml 08fb46005c33b1d5daca561b521b078f656b9b48e35ce0b3301870de12e0330a
+  - lib/index.js 5f3eef4cd9c7a3d621ac02beeca0045a5295d177164d347a12c31fc29575d25b
+  - lib/domain.js a226940a3716aff5070c56795da870ffb8a92b07f7021235651c56f84fefe107
+  - presets/sdr/preset.yml ef3ebbdba30e6b6d92e3a49ea68dfd7b5b1fed90a09428e8a5bef00e0bdd81e3
+  - presets/sdr/agent.cordis.yml 334d52b6817e47a21643d74e5b7e31a44eb8cd7f6b6487ce41f8aec5ddf7baa7（length=1586B / text chars≈982；公开不贴原文）
+
+## 生命周期脚本（package.json）
+来源：https://github.com/Xuxchloris/deepseek-harness-sdr-plugin/blob/491776832f257f7d63113f8f4b541bd075cdda55/packages/dsh-sdr/package.json
+- scripts 仅有：`test` → `node --test test/*.test.js`
+- **无** preinstall / install / postinstall / prepare / prepublish / prepack 等安装期脚本
+- dependencies / peerDependencies / optionalDependencies：**均无**（零运行时 npm 依赖）
+- `files` 字段不含 test/，故 npm 包内跑 `npm test` 会显示 0 tests（已实测，见 upstream-npm-test.out.txt）
+- `bin`：无
+
+## dsh plugin add 会触发的钩子
+来源：packages/dsh-sdr/cordis.patch.yml
+https://github.com/Xuxchloris/deepseek-harness-sdr-plugin/blob/491776832f257f7d63113f8f4b541bd075cdda55/packages/dsh-sdr/cordis.patch.yml
+- 内容：向 loader 插入 id=`dsh-sdr-installer`，`config.role: installer`
+- 对应代码：lib/index.js `apply(ctx,{role:'installer'})` → `installManagedPreset()`
+  链接：https://github.com/Xuxchloris/deepseek-harness-sdr-plugin/blob/491776832f257f7d63113f8f4b541bd075cdda55/packages/dsh-sdr/lib/index.js
+- installManagedPreset 行为（只读摘要）：在 `$DSH_HOME/.agent-presets/sdr` 下 `mkdir` + `copyFile` preset.yml/agent.cordis.yml + 写 `.dsh-sdr-managed.json` 标记。**纯本地文件复制，无网络调用。**
+- 注意：`dsh plugin add` 本身主要是把包写进 profile 的 package.json 并用 pnpm 下载；installer 角色在 **profile 启动加载 bundle 时** 才会跑。本轮 `plugin add` 后 `.agent-presets` **尚不存在**（见 agent-presets-check.txt），说明 installer 钩子本轮未执行。
+
+## 网络地址 / 外连静态检索（packages/dsh-sdr）
+检索模式：`https?://`、`fetch(`、axios/undici/got、WebSocket/wss、http(s).request、net.connect、child_process/exec/spawn。
+原始命中见 source-rg-raw.txt（已打码路径）。摘要：
+1. package.json / README 元数据 URL（homepage、bugs、repository、shields、npmjs、github clone 示例）——文档字符串，非运行时请求。
+2. lib/domain.js、contracts、index 中的 `whatsapp` / `email` / `crm` —— connector **通道名枚举**，默认 `DryRunConnector.send()` 返回 `blocked-dry-run`，不发网络。
+3. 测试里的 `smtp.example` / `smtp.baseline.example` —— 示例主机名字符串，用于配置白名单测试，不发起连接。
+4. **未发现** lib 内 `fetch` / `http.request` / `https.request` / `WebSocket` / `child_process` 调用。
+5. postgres-rag.js 仅在部署方注入 pool 时用；默认路径不用。
+
+结论（静态）：**插件包安装期无自定义脚本；运行时代码默认无外连。** 外连只可能来自：(i) npm/pnpm 下载包本身；(ii) 宿主 dsh 启动态（模型/遥测，属 dsh 而非本插件）；(iii) 用户自行替换 live connector。
+
+## 本轮已执行命令（审查前已发生，按 Kumo 新要求停下）
+发生时间约 16:21–16:23 EST；**审查补做于安装之后**。
+1. `git clone --depth 1 https://github.com/Xuxchloris/deepseek-harness-sdr-plugin.git`（只读拉源码）
+2. `npm view @xuxchloris/dsh-sdr …`（registry 元数据）
+3. `npm init -y` + `npm install @deepseek-ai/dsh@0.2.2-rc.1` 于 `<sandbox-sdr>/`（宿主，elapsed≈40.66s，exit 0）
+4. `npm install @xuxchloris/dsh-sdr@0.2.3` 于 `<sandbox-sdr>/pkg-src/`（插件包，exit 0，added 1 package）
+5. `dsh plugin --profile web add @xuxchloris/dsh-sdr`（HOME/DSH_HOME 指临时目录；pnpm 下载 1 包，Done in 923ms，exit 0）
+6. 离线：`node --test`（clone 源码 11 pass）、`node scripts/demo_dsh_sdr.mjs`、自写 `probe-ab.mjs`（不启 dsh、不连模型）
+
+## 外连观察
+- 上述 1–5 必然访问 GitHub / npm registry（任务允许「npm 安装插件包属于下载」；clone 为只读审查）。
+- 离线探针与 clone 测试：只读写本地临时 JsonStore，**无模型请求、无 DeepSeek 官方地址**。
+- `ss -tn` 快照（16:24 EST）可见本机回环与环境既有连接；**不能**据此证明插件进程外连。未再启动 `dsh web` / `dsh headless`。
+- installer 钩子未跑（无 `.agent-presets`）。
+
+## 按新要求的处置
+- **立刻停止**：不再执行 dsh web/headless、不再二次 plugin add、不再装其他包。
+- (a)(b) 两项已用 **库级离线调用** 测完（等同工具背后的 SdrService），证据 probes/；未做「假模型驱动整段 Agent 循环」——该项因停装要求未做，正文标明未测。
+
+## 与「批后改稿仍放行」相关的源码位置（只写位置，不贴原文）
+commit `491776832f257f7d63113f8f4b541bd075cdda55` · 包 `@xuxchloris/dsh-sdr@0.2.3` · 文件 `packages/dsh-sdr/lib/domain.js`
+链接：https://github.com/Xuxchloris/deepseek-harness-sdr-plugin/blob/491776832f257f7d63113f8f4b541bd075cdda55/packages/dsh-sdr/lib/domain.js
+- 第 482–489 行：`continueAfterApproval` 用 `pending()` 判断是否放行，放行时不重算草稿哈希。
+- 第 560–561 行：`pending()` 只看 `approvals[id].status !== "approved"`，不比较当前草稿哈希与批准时保存的哈希。

@@ -1,0 +1,29 @@
+{
+  "note": "假货物尺寸；手算与哈希写于运行前。单位 cm / kg / 箱。无包装、无间隙、无托盘，除非另注。",
+  "vehicle_keys": ["20GP", "40HQ"],
+  "vehicle_table_from_source": {
+    "20GP": {"w": 235, "h": 239, "d": 589, "maxWeight": 28000, "vol": 33.2},
+    "40HQ": {"w": 235, "h": 269, "d": 1203, "maxWeight": 26000, "vol": 76.3}
+  },
+  "groups": [
+    {
+      "id": "A",
+      "desc": "单货无包装",
+      "items": [{"name": "FAKE-A", "l": 50, "w": 40, "h": 30, "qty": 100, "net": 10, "tare": 1, "packMode": "thick", "packThick": 0, "gapL": 0, "gapW": 0, "gapH": 0, "usePallet": false, "dir": "any", "stackLayers": 0, "stackLoad": 0, "fragile": false}]
+    },
+    {
+      "id": "B",
+      "desc": "单货包装厚 2cm",
+      "items": [{"name": "FAKE-B", "l": 50, "w": 40, "h": 30, "qty": 100, "net": 10, "tare": 1, "packMode": "thick", "packThick": 2, "gapL": 0, "gapW": 0, "gapH": 0, "usePallet": false, "dir": "any", "stackLayers": 0, "stackLoad": 0, "fragile": false}]
+    },
+    {
+      "id": "C",
+      "desc": "源码 demoItems 三货（workbench.html demoItems）",
+      "items": [
+        {"name": "Smart Watch X1", "l": 46, "w": 32, "h": 28, "qty": 600, "net": 14, "tare": 1, "pcsCtn": 20, "packMode": "thick", "packThick": 0, "gapL": 0, "gapW": 0, "gapH": 0, "usePallet": false, "dir": "any", "stackLayers": 0, "stackLoad": 0, "fragile": false},
+        {"name": "Bluetooth Speaker S2", "l": 60, "w": 40, "h": 40, "qty": 120, "net": 22, "tare": 2, "pcsCtn": 10, "packMode": "thick", "packThick": 0, "gapL": 0, "gapW": 0, "gapH": 0, "usePallet": false, "dir": "any", "stackLayers": 0, "stackLoad": 0, "fragile": false},
+        {"name": "Accessory Kit", "l": 40, "w": 30, "h": 20, "qty": 90, "net": 6, "tare": 0.5, "pcsCtn": 50, "packMode": "thick", "packThick": 0, "gapL": 0, "gapW": 0, "gapH": 0, "usePallet": false, "dir": "up", "stackLayers": 0, "stackLoad": 0, "fragile": false}
+      ]
+    }
+  ]
+}

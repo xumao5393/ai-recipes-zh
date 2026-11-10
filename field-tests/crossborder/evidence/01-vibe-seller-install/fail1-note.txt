@@ -1,0 +1,4 @@
+fail1: install.sh aborted installing lsof via apt (debian mirror 500 / not signed)
+which lsof: none
+dpkg -l lsof: 
+busybox lsof? --: line 9: busybox: command not found

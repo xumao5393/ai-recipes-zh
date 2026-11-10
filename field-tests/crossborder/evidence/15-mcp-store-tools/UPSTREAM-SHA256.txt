@@ -1,0 +1,5 @@
+upstream source stays in <sandbox>/15-mcp-store-tools/upstream/ (not published in repo/).
+commit: d0cc908416dadf38602cb002d390bd62b85c114c
+url: https://github.com/thealirazadev/mcp-store-tools/commit/d0cc908416dadf38602cb002d390bd62b85c114c
+full tree tarball sha256: 未记录
+pip-built wheel: mcp_store_tools-0.7.1-py3-none-any.whl size=25684 sha256=e57a8840ee157af000d1fc97769cb13f7bca47b4b03a463deb63348c10856e52

@@ -1,0 +1,38 @@
+# MASKING · 05-dsh-trade-assistant
+时间：2026-11-09 17:33 EST
+1. 上游 dsh-trade-assistant 源码（10 个文件）不入公开库：只留 sha256、字节数、commit 链接（UPSTREAM-SHA256.txt）。原件在 crossborder/internal-archive/05-dsh-trade-assistant/upstream-src/（git archive ddce582 导出）。
+2. 插件输出：type_evidence 是上游正则的原文，公开版 plugin-*.json 只留命中条数；完整 stdout 原样存 internal-archive/05-dsh-trade-assistant/plugin-*.raw.json，sha256 记在对应 run-plugin-*.txt。inquiry_type、key_fields、red_flags（级别+一句话提示）保留，用于逐封对比。
+3. 一处历史提交相关发现：按 Kumo 要求公开版不写（不写提交号、文件名、字段名），只记在内部存档。
+4. run-upstream-test*.txt 中的绝对路径前缀替换为 <workspace>；没有用户主目录路径，没有本机用户名。
+5. run-*.txt 由运行包装函数生成（命令、开始时间、exit、耗时、stderr），ours-* 的 stdout 和 plugin-* 的 stdout 去向在运行后补写进同一文件末尾（# cwd / # stdout 段）；内容没有改动。
+6. 询盘样例与我们的脚本没有复制进本目录：只引用 boss-office/repo/evidence/03-export/ 的锁定版本，副本一致性见 locked-copy-check.txt。
+7. 改编号（17:34 EST）：本篇原按 04 号建目录并运行，随后发现跨境 04 已被同时段新写的《订单日报》占用，改为 05。目录 evidence/、internal-archive/、sandbox/ 下的 04-dsh-trade-assistant 一并改名为 05-dsh-trade-assistant；run-*.txt、LOG.md 里命令行与路径中的 "04-dsh-trade-assistant" 字样同步替换为 "05-dsh-trade-assistant"。除此之外内容未改，pre-run-sha256.txt 复核仍为 OK；run-plugin-*.txt 记的 stdout sha256 对应 sandbox 里未改动的原始输出。
+7a. 改编号实际执行的命令（照当时执行的原文抄录，未重构）。
+   第一组，2026-11-09 约 17:33 EST，一次 Shell 调用，cwd = crossborder/：
+     set -e; B=<workspace>; X=$B/crossborder; cd $X
+     mv repo/04-dsh-trade-assistant-询盘规则插件对照.md repo/05-dsh-trade-assistant-询盘规则插件对照.md
+     mv repo/evidence/04-dsh-trade-assistant repo/evidence/05-dsh-trade-assistant
+     mv internal-archive/04-dsh-trade-assistant internal-archive/05-dsh-trade-assistant
+     mv sandbox/04-dsh-trade-assistant sandbox/05-dsh-trade-assistant
+     grep -rl "04-dsh-trade-assistant" repo/05-dsh-trade-assistant-询盘规则插件对照.md repo/evidence/05-dsh-trade-assistant LOG.md | xargs sed -i 's/04-dsh-trade-assistant/05-dsh-trade-assistant/g'
+     sed -i 's/^# 04 dsh-trade-assistant/# 05 dsh-trade-assistant/; s/^## 2026-11-09 17:28–17:33 EST · 04 dsh-trade-assistant/## 2026-11-09 17:28–17:33 EST · 05 dsh-trade-assistant/' repo/05-dsh-trade-assistant-询盘规则插件对照.md LOG.md
+     （同一次调用里还跑了一段 python3 heredoc，只给正文第10行末尾加了“编号用 05……”一句，不是字样替换。）
+   第二组，约 17:34 EST，cwd = repo/evidence/05-dsh-trade-assistant/：
+     sed -i 's/^# MASKING · 04-/# MASKING · 05-/' MASKING.txt
+     sed -i 's/REDACTION-CHECK · 04-/REDACTION-CHECK · 05-/' REDACTION-CHECK.txt
+     （这两个文件的表头在第一组的 grep|sed 里应该已经被改掉了，所以这两条大概率没有改到任何内容；当时没有核对。）
+   被改动字样的文件清单：第一组 grep -rl 当时的输出没有打印，也没有保存。下面的清单是 2026-11-09 17:36 EST 用 rg -c "05-dsh-trade-assistant" 回查得到的；回查只看到现在的内容，如果有人后来又改过某个文件，清单可能不完整。
+     evidence 内（13 个）：
+       run-plugin-b1.txt、run-plugin-b2.txt、run-plugin-b1-from.txt、run-plugin-b2-from.txt（命令行里的 evidence 路径，以及 internal-archive 路径）
+       run-ours-hash.txt、run-ours-b1.txt、run-ours-b2.txt、run-ours-score-b1.txt、run-ours-score-b2.txt（“# cwd: crossborder/sandbox/…”一行）
+       run-upstream-test.txt、run-upstream-test-readme.txt（报错信息里的 <workspace>/crossborder/sandbox/… 路径）
+       MASKING.txt（表头，以及第 1、2 条里的 internal-archive 路径）
+       REDACTION-CHECK.txt（表头和“范围”一行）
+     evidence 外（2 个）：
+       crossborder/repo/05-dsh-trade-assistant-询盘规则插件对照.md（证据链接和标题）
+       crossborder/LOG.md（本篇那段的小标题和最后一行路径；文件在 crossborder/ 下，不在 crossborder/repo/ 下）
+     rg 显示 run-upstream-test-file.txt 以及其余证据文件里没有这个字样，没有被改动。
+   以后改编号，只改目录名和正文，不再替换证据原文里的字样；如果确实需要说明，在 MASKING.txt 里记一条旧路径到新路径的对照。
+8. 2026-11-09 17:35 EST（Kumo）：一处历史提交相关发现从公开正文、source-review.txt、REDACTION-CHECK.txt 删除；git-clone.txt 的逐条提交历史删去，只留 HEAD 与提交数。改前原件在 crossborder/internal-archive/05-dsh-trade-assistant/before-credential-redaction/。
+9. 2026-11-09 17:37 EST（挑刺员）：以下文件里的本机项目根路径替换为 <workspace>：./run-plugin-b1.txt ./run-plugin-b2.txt ./run-plugin-b1-from.txt ./MASKING.txt ./run-plugin-b2-from.txt 。命令：sed -i（把项目根绝对路径全局替换为 <workspace>）。改前原件在 crossborder/internal-archive/05-dsh-trade-assistant/before-workspace-mask/。
+10. 2026-11-09 18:22 EST（Kumo）：REDACTION-CHECK.txt 第4行搜索命令里的本机主目录字样改为 <home>；原件在 crossborder/internal-archive/05-dsh-trade-assistant/before-home-mask/。

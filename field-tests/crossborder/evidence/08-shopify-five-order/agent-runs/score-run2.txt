@@ -1,0 +1,16 @@
+n_input_orders= 5
+n_exception_rows= 4
+excluded_normal= ['#FAKE-1001']
+actions_executed= []
+---
+PASS: #FAKE-1001 excluded
+PASS: #FAKE-1002 -> address_problem
+PASS: #FAKE-1003 -> backorder
+PASS: #FAKE-1004 -> late_shipment
+PASS: #FAKE-1005 -> incomplete
+PASS: #FAKE-1005 evidence is missing-paths only: ['missing:fulfillment_status', 'missing:fulfillments', 'missing:promised_ship_by', 'missing:line_items[0].fulfillable_quantity', 'missing:line_items[0].inventory_status']
+PASS: exception_rows=4
+PASS: no actions executed
+---
+OVERALL: PASS
+exit=0

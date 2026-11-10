@@ -1,0 +1,10 @@
+# MASKING · 11-dsh-event-notice
+时间：2026-11-09 20:24 EST
+1. 上游源码不入公开库：sha256 见 UPSTREAM-SHA256.txt；原件 internal-archive/11-dsh-event-notice/upstream-src/。
+2. dump-config 全文只放 internal-archive/.../raw-runs/；公开只留 demian 同类的插件名摘录。
+3. 路径：公开文件沙箱绝对路径 → <sandbox>，工作区 → <workspace>，主目录 → <home>。
+4. 测试用 cwd /tmp/fake-workdir-for-test 保留（假路径）。127.0.0.1 端口为当次系统分配，照实记录。
+5. 编号 11：开工前已在 boss-office/PLAN.md 登记；未占用行业进度表 07–10。
+6. 未起完整 dsh 假模型会话；未把 DeepSeek 官方地址写入任何请求。
+7. 公开正文/审查里不写公共 ntfy 托管域名的字面主机名（改称「公共 ntfy 托管域名」）；drive 脚本公开版泄漏扫描用字符串拼接，避免写出 <home> 字面路径。
+8. 2026-11-09 20:27 EST 返工（措辞）：改前正文在 internal-archive/11-dsh-event-notice/before-r1-review/。只改正文口径，无新实测。

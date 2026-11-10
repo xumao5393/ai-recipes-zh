@@ -1,0 +1,55 @@
+2026-11-09 14:42:29,416 app.plugins INFO Loaded plugins: builtin
+INFO:     Started server process [137352]
+INFO:     Waiting for application startup.
+2026-11-09 14:42:29,768 apscheduler.scheduler INFO Scheduler started
+2026-11-09 14:42:29,768 app.scheduler.cron INFO Scheduler started
+2026-11-09 14:42:29,768 apscheduler.scheduler INFO Added job "check_waiting_tasks" to job store "default"
+2026-11-09 14:42:29,768 app.scheduler.cron INFO Waiting-task checker registered (every 15 min)
+2026-11-09 14:42:29,768 apscheduler.scheduler INFO Added job "sync_all_email_accounts" to job store "default"
+2026-11-09 14:42:29,768 app.scheduler.cron INFO Email sync job registered (every 5 min)
+2026-11-09 14:42:29,768 apscheduler.scheduler INFO Added job "reap_stuck_planning_tasks" to job store "default"
+2026-11-09 14:42:29,768 app.scheduler.cron INFO Plan-reaper job registered (every 5 min)
+2026-11-09 14:42:29,768 apscheduler.scheduler INFO Added job "reap_stalled_running_tasks" to job store "default"
+2026-11-09 14:42:29,768 app.scheduler.cron INFO Stall-reaper job registered (every 1 min)
+2026-11-09 14:42:29,769 apscheduler.scheduler INFO Added job "sweep_idle_browsers" to job store "default"
+2026-11-09 14:42:29,769 app.scheduler.cron INFO Idle-browser sweeper registered (every 1 min)
+2026-11-09 14:42:29,769 apscheduler.scheduler INFO Added job "reap_finalized_batches" to job store "default"
+2026-11-09 14:42:29,769 app.scheduler.cron INFO Finalize-reaper job registered (every 1 min)
+2026-11-09 14:42:29,769 apscheduler.scheduler INFO Added job "cleanup_old_tasks" to job store "default"
+2026-11-09 14:42:29,769 app.scheduler.cron INFO Task-cleanup job registered (daily at 03:30 server time)
+2026-11-09 14:42:29,771 apscheduler.scheduler INFO Added job "Update Knowledge Catalogs" to job store "default"
+2026-11-09 14:42:29,771 app.scheduler.cron INFO Schedule job added: schedule__catalog_sync (Update Knowledge Catalogs) type=days interval=1 time=03:00
+2026-11-09 14:42:29,772 app.scheduler.cron INFO Rebuilt 1 schedule jobs on startup
+2026-11-09 14:42:29,778 app.scheduler.task_queue INFO TaskQueueScheduler started
+2026-11-09 14:42:29,823 app.workspace.knowledge_sync INFO Knowledge sync (local): 6 copied, 0 unchanged
+2026-11-09 14:42:29,830 app.workspace.skills_sync INFO Skills sync (local): 18 replaced, 0 unchanged
+2026-11-09 14:42:29,834 app.ai.skill_gate_loader INFO Preloaded 2 skill-bundled gate module(s)
+2026-11-09 14:42:29,836 app.workspace.manager INFO Creating shared agent venv at <home>/.vibe-seller/.venv
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:7777 (Press CTRL+C to quit)
+INFO:     127.0.0.1:39142 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39148 - "GET / HTTP/1.1" 200 OK
+2026-11-09 14:42:31,144 app.workspace.venv_bootstrap INFO Bootstrapped pip and uv into agent venv
+INFO:     127.0.0.1:52896 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52908 - "GET /api/status HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52924 - "GET /api/version HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52926 - "GET /api/auth/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52932 - "GET /api/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52944 - "GET /api/settings HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52960 - "GET /api/settings/ai HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52968 - "GET /api/stores HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52980 - "GET /api/tasks HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52988 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53004 - "GET /healthz HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53008 - "GET /ready HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53012 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53022 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53036 - "GET /api/openapi.json HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:53046 - "GET /api/v1/health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:53060 - "GET /api/config HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:53070 - "GET /api/profiles HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53082 - "GET /api/ai/profiles HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:53092 - "GET /assets/index-B0kR509C.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53096 - "GET /vibe-seller.svg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53108 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53112 - "GET /docs HTTP/1.1" 200 OK

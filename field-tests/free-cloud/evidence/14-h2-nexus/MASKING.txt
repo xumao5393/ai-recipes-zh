@@ -1,0 +1,6 @@
+# MASKING · 14-h2-nexus
+1. 完整 HTML 原件在 internal-archive/14-h2-nexus/pages/；公开侧留 url/http/fetched-at/sha256 + EXCERPT/TERMS-DECISION。
+2. sha256sum 输出路径改为 <workspace>…。
+3. 未抓取 /cli（免费机入口），避免打开 VM。
+
+4. 2026-11-09 20:26:33 EST：路径统一说明——公开校验以 SHA256SUMS.txt（internal-archive/…/pages/）为准；原 *.sha256.txt 仍保留抓取时 sandbox 路径行，仅文末追加更正，不改原行。文章改前稿 internal-archive/14-h2-nexus/before-optional-fixes.md。

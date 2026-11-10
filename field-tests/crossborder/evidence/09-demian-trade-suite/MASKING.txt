@@ -1,0 +1,14 @@
+# MASKING · 09-demian-trade-suite
+时间：2026-11-09 19:27 EST
+1. 上游源码不入公开库：只留 sha256、字节数和 commit 链接（UPSTREAM-SHA256.txt）。原件在 crossborder/internal-archive/09-demian-trade-suite/upstream-src/；npm tarball 在同目录 dsh-plugin-demian-trade-suite-1.0.1.tgz。
+2. dsh --dump-config 完整输出（1250 行，含其它 bundle 配置）只放 internal-archive/.../raw-runs/dump-config.raw.txt；公开版只留 demian 相关 3 行。
+3. 路径：公开文件里的沙箱绝对路径替换为 <sandbox>，工作区根替换为 <workspace>，主目录替换为 <home>。
+4. dsh web 启动 URL 中的 token=… 脱敏为 token=<redacted>；原件在 internal-archive/.../raw-runs/web.out。
+5. workbench.html 全文（约 376 KB）不入公开库，只留 sha256 与“经 dsh web 路由原样返回”的核对结果。
+6. 编号 09：开工前已在 crossborder/PLAN.md 登记（实测员 11-09 19:25）。
+7. 证据原文生成后对公开副本做了上述脱敏；脱敏前原件在 internal-archive/.../raw-runs/。
+
+8. 2026-11-09 19:37 EST 返工：改前正文与 evidence 全量在 crossborder/internal-archive/09-demian-trade-suite/before-r1-review/。
+9. 装柜 IIFE 提取件（53098 字节）只放 internal-archive/.../raw-runs/lg-iife-extracted.js；公开只留 sha256 与和包内 workbench.html 切片逐字节一致的证明（lg-iife-extract-meta.txt）。
+10. 旧的 run_offline.mjs 仍留在证据目录作历史对照，正文第 4 节改以 run-vm-lgcalc.txt 为准。
+11. 2026-11-09 19:43 EST：正文补“读者自行切出 IIFE”说明；改前正文在 internal-archive/09-demian-trade-suite/before-extract-howto/。新增 extract-howto-verify.txt（命令复现 sha256，n=1）。

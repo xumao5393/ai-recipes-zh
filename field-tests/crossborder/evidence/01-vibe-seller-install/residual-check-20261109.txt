@@ -1,0 +1,3 @@
+date: 2026-11-09 14:49:51 EST
+ports 7777/9222 clear
+148571 tee /workspace/fourday-20261109/crossborder/repo/evidence/01-vibe-seller-install/residual-check-20261109.txt

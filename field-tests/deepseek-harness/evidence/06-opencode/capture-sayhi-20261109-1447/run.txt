@@ -1,0 +1,5 @@
+==== opencode run say hi ====
+{"type":"step_start","timestamp":1794253640973,"sessionID":"ses_<redacted>","part":{"id":"prt_<redacted>","sessionID":"ses_<redacted>","messageID":"msg_<redacted>","type":"step-start"}}
+{"type":"error","timestamp":1794253640992,"sessionID":"ses_<redacted>","error":{"type":"provider.auth","message":"capture-only mock","status":401,"response":{"body":"{\"type\":\"error\",\"error\":{\"type\":\"authentication_error\",\"message\":\"capture-only mock\"}}"}}}
+exit=1 elapsed_s=0.985
+==== stderr (head) ====

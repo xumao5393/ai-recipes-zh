@@ -1,0 +1,14 @@
+# 时间(开始): 2026-11-09 18:30:10 EST
+# 命令: HOME=<sandbox>/home XANDER_HOME=<sandbox>/xhome unshare -rn sh -c 'ip link set lo up && npm test'   (cwd=clone 副本 run/；只开回环口，无外网)
+# exit=0 耗时=3.694s
+# 汇总（输出末尾原样）:
+✔ 未知动作仍然被拒绝 (0.148206ms)
+ℹ tests 554
+ℹ suites 0
+ℹ pass 554
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 3391.582825
+# ✖ 行数: 0；完整输出 573 行在 internal-archive/06-xander/npmtest.out（sha256 d8cf1988d100ebb01f20f269df21a6bba96be545f8d1e1388a7f2ece5e07578b）

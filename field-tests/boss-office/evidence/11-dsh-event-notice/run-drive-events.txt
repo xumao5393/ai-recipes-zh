@@ -1,0 +1,38 @@
+# 本机假 Webhook 实测 · 2026-11-09 20:23:32 EST · n=1 · unshare -rn + lo · exit 0
+# 方式：node 加载插件 apply()，用 session/event 喂 turn/end(completed)、approval/asked、tool/call(ask_user_question)；
+# fetch 走真实 HTTP 打 127.0.0.1（未 mock）。未启动完整 dsh web/headless，也未接假模型。
+# 通道：仅 webhook；gotifyUrl/ntfyUrl 置空。
+WEBHOOK_URL http://127.0.0.1:46017/hook
+AFTER_COMPLETE received_delta 1
+AFTER_APPROVAL received_delta 1
+AFTER_QUESTION received_delta 1
+{
+  "webhookUrl": "http://127.0.0.1:46017/hook",
+  "n": 1,
+  "count": 3,
+  "payloads": [
+    {
+      "method": "POST",
+      "url": "/hook",
+      "contentType": "application/json",
+      "body": "{\"event\":\"task-complete\",\"title\":\"DSH-TEST · 任务完成\",\"message\":\"会话标题：本地假会话-完成\\n任务正常完成\\n目录：/tmp/fake-workdir-for-test\",\"sessionId\":\"sess-local-1\",\"sessionTitle\":\"本地假会话-完成\",\"parentTitle\":\"\",\"timestamp\":\"2026-11-10T01:23:32.841Z\"}"
+    },
+    {
+      "method": "POST",
+      "url": "/hook",
+      "contentType": "application/json",
+      "body": "{\"event\":\"approval-required\",\"title\":\"DSH-TEST · 需要审批\",\"message\":\"会话标题：本地假会话-完成\\n工具 需要审批：dangerous command needs approval\\n目录：/tmp/fake-workdir-for-test\",\"sessionId\":\"sess-local-1\",\"sessionTitle\":\"本地假会话-完成\",\"parentTitle\":\"\",\"timestamp\":\"2026-11-10T01:23:32.898Z\"}"
+    },
+    {
+      "method": "POST",
+      "url": "/hook",
+      "contentType": "application/json",
+      "body": "{\"event\":\"question-required\",\"title\":\"DSH-TEST · 需要回答问题\",\"message\":\"会话标题：本地假会话-完成\\n助手提出了问题，等待你回答\\n目录：/tmp/fake-workdir-for-test\",\"sessionId\":\"sess-local-1\",\"sessionTitle\":\"本地假会话-完成\",\"parentTitle\":\"\",\"timestamp\":\"2026-11-10T01:23:32.950Z\"}"
+    }
+  ]
+}
+LEAK_SCAN {"has_prompt_like":false,"has_workspace_path":false,"has_home_box":false,"has_api_deepseek":false,"cwd_in_message":true}
+
+real	0m0.291s
+user	0m0.114s
+sys	0m0.068s

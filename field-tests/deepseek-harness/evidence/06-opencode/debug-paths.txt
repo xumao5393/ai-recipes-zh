@@ -1,0 +1,10 @@
+home       /tmp/ochome
+data       /tmp/ochome/.local/share/opencode
+cache      /tmp/ochome/.cache/opencode
+config     /tmp/ochome/.config/opencode
+state      /tmp/ochome/.local/state/opencode
+tmp        /tmp/opencode
+bin        /tmp/ochome/.cache/opencode/bin
+log        /tmp/ochome/.local/share/opencode/log
+repos      /tmp/ochome/.local/share/opencode/repos
+db         /tmp/ochome/.local/share/opencode/opencode.db

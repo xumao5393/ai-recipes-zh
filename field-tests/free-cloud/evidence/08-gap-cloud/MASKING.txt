@@ -1,0 +1,12 @@
+# MASKING — free-cloud 08 GAP Cloud Free MicroVM
+1. ssh-attempt1-err.txt / ssh-attempt1-out.txt / ssh-timing.txt / network-notes.txt：本机绝对路径改为 <workspace> / <home>。未打码原件：internal-archive/08-gap-cloud/ssh-raw/
+2. 私钥只在 sandbox 短暂使用后删除；evidence 只保留公钥与指纹。
+3. 条款全文 HTML 放 internal-archive/08-gap-cloud/pages/，公开侧用 EXCERPT-official.txt + sha256。
+
+4. 2026-11-09 19:33 EST：*.sha256.txt 与 pages-sha256.txt 里 sha256sum 输出的绝对路径改为 <workspace>…；原件在 internal-archive/08-gap-cloud/before-path-mask/。
+
+5. 2026-11-09 19:36 EST：条款偏差改写前正文存 internal-archive/08-gap-cloud/before-terms-deviation-rewrite.md；TERMS-DECISION 改前存同目录 TERMS-DECISION.before-terms-deviation.txt。
+
+6. 2026-11-09 19:39 EST：r2 统一 HTTP 400 口径 + Kumo 追认措辞；改前正文 before-r2-http400-unify.md。
+
+7. 2026-11-09 19:42 EST：TERMS-DECISION.txt 已恢复原件并仅文末追加更正；restore 校验见 TERMS-DECISION.restore-verify.txt / head-c-verify.txt。

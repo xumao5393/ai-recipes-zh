@@ -1,0 +1,19 @@
+monitor_start 2026-11-09T16:32:37-05:00
+2026-11-09T16:32:37-05:00
+State      Recv-Q Send-Q      Local Address:Port        Peer Address:Port Process                                                          
+ESTAB      0      0              172.30.0.2:1339          172.30.0.1:44806 users:(("node",pid=347,fd=22))                                  
+2026-11-09T16:32:37-05:00
+State      Recv-Q Send-Q      Local Address:Port        Peer Address:Port Process                                                          
+ESTAB      0      0              172.30.0.2:1339          172.30.0.1:44806 users:(("node",pid=347,fd=22))                                  
+2026-11-09T16:32:37-05:00
+State      Recv-Q Send-Q      Local Address:Port        Peer Address:Port Process                                                          
+ESTAB      0      0              172.30.0.2:1339          172.30.0.1:44806 users:(("node",pid=347,fd=22))                                  
+2026-11-09T16:32:38-05:00
+State      Recv-Q Send-Q      Local Address:Port        Peer Address:Port Process                                                          
+ESTAB      0      0              172.30.0.2:1339          172.30.0.1:44806 users:(("node",pid=347,fd=22))                                  
+2026-11-09T16:32:38-05:00
+State      Recv-Q Send-Q      Local Address:Port        Peer Address:Port Process                                                          
+ESTAB      0      0              172.30.0.2:1339          172.30.0.1:44806 users:(("node",pid=347,fd=22))                                  
+2026-11-09T16:32:39-05:00
+State      Recv-Q Send-Q      Local Address:Port        Peer Address:Port Process                                                          
+ESTAB      0      0              172.30.0.2:1339          172.30.0.1:44806 users:(("node",pid=347,fd=22))                                  

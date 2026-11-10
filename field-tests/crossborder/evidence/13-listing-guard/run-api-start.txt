@@ -1,0 +1,6 @@
+time_start: 2026-11-09 20:29:50 EST
+embedding=none trademark_catalog=demo-fictional-2026-11-f1deea4df852
+cmd: java -jar listing-guard-api.jar (foreground logged to api.log)
+pid=346847
+health_ok after 7s code=200
+{"status":"UP"}2026-11-09 20:29:56 EST

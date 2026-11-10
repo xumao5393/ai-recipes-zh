@@ -1,0 +1,11 @@
+# MASKING · 10-project-tango
+时间：2026-11-09 19:33 EST
+1. 上游源码不入公开库：只留 sha256 与 commit 链接（UPSTREAM-SHA256.txt）。原件在 crossborder/internal-archive/10-project-tango/upstream-src/。
+2. npm test 完整输出（466 行，含用例名）只放 internal-archive/.../raw-runs/npmtest.raw.txt；公开 run-npm-test.txt 只留命令、时间、exit、耗时和末尾汇总，并记完整输出 sha256。
+3. esbuild/fsevents 的 pack 审阅原件在 internal-archive/.../dep-review/。
+4. 路径：公开文件里的沙箱绝对路径替换为 <sandbox>，工作区根替换为 <workspace>，主目录替换为 <home>。临时数据目录保留 /tmp/tango-min* 形式（不是用户主目录）。
+5. node_modules 不入存档。
+6. 编号 10：开工前已在 crossborder/PLAN.md 登记（实测员 11-09 19:25）。
+7. 我们写的最小读取脚本 run_min_read2.mjs 放在证据目录；曾短暂出现在 clone 树内，已移出，不计入上游。
+8. 2026-11-09 19:39 EST 返工：改前正文与 evidence 全量在 crossborder/internal-archive/10-project-tango/before-r1-review/。
+9. esbuild postinstall 核对见 esbuild-postinstall-check.txt；临时目录 ignore-scripts 对照的 node_modules 已删，只留文字记录。

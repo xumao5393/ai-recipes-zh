@@ -1,0 +1,74 @@
+=== DNS check 2026-11-09 20:23:14 EST ===
+--- github.com ---
+198.18.0.1      STREAM github.com
+198.18.0.1      DGRAM  
+198.18.0.1      RAW    
+::ffff:198.18.0.1 STREAM github.com
+::ffff:198.18.0.1 DGRAM  
+--- raw.githubusercontent.com ---
+198.18.0.1      STREAM raw.githubusercontent.com
+198.18.0.1      DGRAM  
+198.18.0.1      RAW    
+::ffff:198.18.0.1 STREAM raw.githubusercontent.com
+::ffff:198.18.0.1 DGRAM  
+--- api.github.com ---
+198.18.0.1      STREAM api.github.com
+198.18.0.1      DGRAM  
+198.18.0.1      RAW    
+::ffff:198.18.0.1 STREAM api.github.com
+::ffff:198.18.0.1 DGRAM  
+--- registry-1.docker.io ---
+54.209.20.254   STREAM registry-1.docker.io
+54.209.20.254   DGRAM  
+54.209.20.254   RAW    
+2600:1f18:2148:bc01:d715:af32:11b5:ac58 STREAM registry-1.docker.io
+2600:1f18:2148:bc01:d715:af32:11b5:ac58 DGRAM  
+--- auth.docker.io ---
+172.64.144.78   STREAM auth.docker.io.cdn.cloudflare.net
+172.64.144.78   DGRAM  
+172.64.144.78   RAW    
+2a06:98c1:3104::6812:2bb2 STREAM auth.docker.io.cdn.cloudflare.net
+2a06:98c1:3104::6812:2bb2 DGRAM  
+--- production.cloudflare.docker.com ---
+104.16.97.215   STREAM production.cloudflare.docker.com
+104.16.97.215   DGRAM  
+104.16.97.215   RAW    
+2606:4700::6810:64d7 STREAM production.cloudflare.docker.com
+2606:4700::6810:64d7 DGRAM  
+--- deb.debian.org ---
+140.248.150.132 STREAM debian.map.fastlydns.net
+140.248.150.132 DGRAM  
+140.248.150.132 RAW    
+2a04:4e42:79::644 STREAM debian.map.fastlydns.net
+2a04:4e42:79::644 DGRAM  
+--- repo.maven.apache.org ---
+104.18.18.12    STREAM repo.apache.maven.org.cdn.cloudflare.net
+104.18.18.12    DGRAM  
+104.18.18.12    RAW    
+2606:4700::6812:130c STREAM repo.apache.maven.org.cdn.cloudflare.net
+2606:4700::6812:130c DGRAM  
+--- repo1.maven.org ---
+104.18.19.12    STREAM repo1.maven.org.cdn.cloudflare.net
+104.18.19.12    DGRAM  
+104.18.19.12    RAW    
+2606:4700::6812:130c STREAM repo1.maven.org.cdn.cloudflare.net
+2606:4700::6812:130c DGRAM  
+--- generativelanguage.googleapis.com ---
+198.18.0.1      STREAM generativelanguage.googleapis.com
+198.18.0.1      DGRAM  
+198.18.0.1      RAW    
+::ffff:198.18.0.1 STREAM generativelanguage.googleapis.com
+::ffff:198.18.0.1 DGRAM  
+--- ollama.com ---
+198.18.0.1      STREAM ollama.com
+198.18.0.1      DGRAM  
+198.18.0.1      RAW    
+::ffff:198.18.0.1 STREAM ollama.com
+::ffff:198.18.0.1 DGRAM  
+=== git remote test (no fetch) ===
+origin	https://github.com/thanhdatpb/Listing-Guard.git (fetch)
+origin	https://github.com/thanhdatpb/Listing-Guard.git (push)
+SAND_HTTP_PROXY_NAME=runner-egress-proxy
+SAND_EGRESS_TUNNEL_PROXY_ADDR=127.0.0.1:8791
+github_https=200 time=0.257355
+maven=200

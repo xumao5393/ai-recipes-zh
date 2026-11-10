@@ -1,0 +1,3 @@
+vibe-seller running on http://0.0.0.0:7777  (PID 137352)
+  logs: /workspace/fourday-20261109/crossborder/sandbox/home/.vibe-seller/logs/backend_7777.log
+  stop: vibe-seller stop --port 7777

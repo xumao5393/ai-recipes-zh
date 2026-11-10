@@ -1,0 +1,119 @@
+{
+  "n": 1,
+  "dsh_exit": 0,
+  "elapsed_s": 2.085,
+  "profile": "headless",
+  "fake_port": 19023,
+  "task_id": "sdr_20261109213653_7534007c",
+  "final_stage": "close",
+  "tool_seq": [
+    "sdr_create_task",
+    "sdr_next_step×5",
+    "sdr_review_drafts",
+    "sdr_continue_after_approval",
+    "sdr_next_step×3",
+    "sdr_get_report"
+  ],
+  "phases": [
+    {
+      "i": 1,
+      "kind": "create",
+      "phase_before": 0,
+      "phase_after": 1
+    },
+    {
+      "i": 2,
+      "kind": "title",
+      "phase_before": 0,
+      "phase_after": null
+    },
+    {
+      "i": 3,
+      "kind": "next_1",
+      "phase_before": 1,
+      "phase_after": 2
+    },
+    {
+      "i": 4,
+      "kind": "next_2",
+      "phase_before": 2,
+      "phase_after": 3
+    },
+    {
+      "i": 5,
+      "kind": "next_3",
+      "phase_before": 3,
+      "phase_after": 4
+    },
+    {
+      "i": 6,
+      "kind": "next_4",
+      "phase_before": 4,
+      "phase_after": 5
+    },
+    {
+      "i": 7,
+      "kind": "next_5",
+      "phase_before": 5,
+      "phase_after": 6
+    },
+    {
+      "i": 8,
+      "kind": "review",
+      "phase_before": 6,
+      "phase_after": 7
+    },
+    {
+      "i": 9,
+      "kind": "continue",
+      "phase_before": 7,
+      "phase_after": 8
+    },
+    {
+      "i": 10,
+      "kind": "next_post_8",
+      "phase_before": 8,
+      "phase_after": 9
+    },
+    {
+      "i": 11,
+      "kind": "next_post_9",
+      "phase_before": 9,
+      "phase_after": 10
+    },
+    {
+      "i": 12,
+      "kind": "next_post_10",
+      "phase_before": 10,
+      "phase_after": 11
+    },
+    {
+      "i": 13,
+      "kind": "report",
+      "phase_before": 11,
+      "phase_after": 12
+    },
+    {
+      "i": 14,
+      "kind": "done",
+      "phase_before": 12,
+      "phase_after": 12
+    }
+  ],
+  "tamper_after_approval": {
+    "ok": true,
+    "task_id": "sdr_20261109213653_7534007c",
+    "email_id": "draft_1_c0613a",
+    "stored_draft_hash_field": "9b8d919b36b443a28bbc4caacb60e29c7624f3120b43b454d8fc7749f0f11a50",
+    "hash_before_tamper": "9b8d919b36b443a28bbc4caacb60e29c7624f3120b43b454d8fc7749f0f11a50",
+    "hash_after_tamper": "ee7951a0bc74c062ba3ae0e2fc87713e5c7362b218272b7f23739bb4e6895f53",
+    "approval_stored_hash": "9b8d919b36b443a28bbc4caacb60e29c7624f3120b43b454d8fc7749f0f11a50",
+    "approval_status": "approved",
+    "hashes_equal": false
+  },
+  "continue_advanced_despite_tamper": true,
+  "report_dry_run": true,
+  "external_delivery": "draft-only",
+  "auto_uq_harness": "sdr-test-auto-uq (local test-only waterfall answerer; selects all draft options)",
+  "note": "headless 不组合 agent preset，故用 --patch 把 sdr-native-gate 挂到根组合；审批 UI 由测试钩子自动全选。"
+}

@@ -1,0 +1,1 @@
+fail2: install.sh aborted installing sqlite3 via apt (same debian mirror 500)

@@ -1,0 +1,68 @@
+# dsh plugin add · 2026-11-09 20:22:57 EST
+# 钉死: github:sorchk/dsh-event-notice#a791d4de6dcb933278ea602e5db3cb4affbc0ede
+# 第1次：unshare -rn（断网）→ pnpm git fetch 失败，exit 1（需要访问 GitHub；未绕过 DNS）
+# 第2次：允许出网重试 → exit 0，Done in 1.5s；bundles 含 dsh-event-notice（n=1）
+# dump-config：出现 id/name dsh-event-notice（n=1，unshare -rn）
+Mon Nov  9 20:22:57 EST 2026
+dsh: initialized profile web at <sandbox>/tmp-home/.dsh/profiles/web
+ ERROR  Command failed with exit code 128: git fetch --depth 1 origin a791d4de6dcb933278ea602e5db3cb4affbc0ede
+Bad owner or permissions on /etc/ssh/ssh_config.d/20-systemd-ssh-proxy.conf
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+This error happened while installing a direct dependency of <sandbox>/tmp-home/.dsh/profiles/web
+
+pnpm: Command failed with exit code 128: git fetch --depth 1 origin a791d4de6dcb933278ea602e5db3cb4affbc0ede
+Bad owner or permissions on /etc/ssh/ssh_config.d/20-systemd-ssh-proxy.conf
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+    at makeError (/usr/local/share/corepack/v1/pnpm/10.34.6/dist/pnpm.cjs:14871:17)
+    at handlePromise (/usr/local/share/corepack/v1/pnpm/10.34.6/dist/pnpm.cjs:15442:33)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async execGit (/usr/local/share/corepack/v1/pnpm/10.34.6/dist/pnpm.cjs:104781:26)
+    at async gitFetcher (/usr/local/share/corepack/v1/pnpm/10.34.6/dist/pnpm.cjs:104721:11)
+    at async fetcher (/usr/local/share/corepack/v1/pnpm/10.34.6/dist/pnpm.cjs:116879:16)
+    at async run (/usr/local/share/corepack/v1/pnpm/10.34.6/dist/pnpm.cjs:116211:23)
+Command failed with exit code 1: pnpm add 'github:sorchk/dsh-event-notice#a791d4de6dcb933278ea602e5db3cb4affbc0ede'dsh: plugin command failed; diagnostics: <sandbox>/tmp-home/.dsh/profiles/web/.plugin-manager/logs/operation-Dh7Bma/pnpm.log
+dsh: git-hosted plugins build on install via their prepare script, which pnpm blocks until allowed — add the exact key pnpm printed above under allowBuilds in <sandbox>/tmp-home/.dsh/profiles/web/pnpm-workspace.yaml, then re-run
+
+real	0m0.701s
+user	0m0.706s
+sys	0m0.160s
+EXIT:1
+--- retry with network (gitHub only) ---
+
+   ╭──────────────────────────────────────────────────────────────────────╮
+   │                                                                      │
+   │                 Update available! 10.34.6 → 12.18.0.                 │
+   │                 Changelog: https://pnpm.io/v/12.18.0                 │
+   │   To update, run: curl -fsSL https://get.pnpm.io/install.sh | sh -   │
+   │                                                                      │
+   ╰──────────────────────────────────────────────────────────────────────╯
+
+Packages are hard linked from the content-addressable store to the virtual store.
+  Content-addressable store is at: <sandbox>/tmp-home/.local/share/pnpm/store/v10
+  Virtual store is at:             node_modules/.pnpm
+Progress: resolved 0, reused 0, downloaded 1, added 0
+
+dependencies:
++ dsh-event-notice github:sorchk/dsh-event-notice#a791d4de6dcb933278ea602e5db3cb4affbc0ede
+
+Packages: +4
+++++
+Progress: resolved 4, reused 0, downloaded 4, added 4, done
+Done in 1.5s using pnpm v10.34.6
+
+real	0m1.874s
+user	0m1.155s
+sys	0m0.211s
+EXIT_RETRY:0
+
+# dump 摘录：
+# == dsh-event-notice
+# - id: dsh-event-notice
+#   name: dsh-event-notice

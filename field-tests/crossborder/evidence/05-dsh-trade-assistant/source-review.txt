@@ -1,0 +1,46 @@
+# source-review · dsh-trade-assistant 安装前静态审查
+时区：America/New_York（EST）。审查时间：2026-11-09 17:28:52–17:29:40 EST（clone 之后、任何运行之前）。
+顺序：clone → 本审查 → 审查干净才运行。本轮**没有 npm install / dsh plugin add**：lib/inquiry.js 没有任何 import，可以纯 node 直接调用，所以不需要装包。
+
+## 版本钉死
+- commit：ddce5828517f07899e93d4203490c14b2ffc8002（2026-08-24 20:21:52 +0800 = 08:21:52 EDT），共 3 个提交
+  https://github.com/xiong18166089606-design/dsh-trade-assistant/commit/ddce5828517f07899e93d4203490c14b2ffc8002
+- 文件清单与 sha256：见 UPSTREAM-SHA256.txt（10 个跟踪文件，共 939 行 / 47,725 字节）
+
+## 1. 生命周期脚本（package.json）
+https://github.com/xiong18166089606-design/dsh-trade-assistant/blob/ddce5828517f07899e93d4203490c14b2ffc8002/package.json
+- **没有 "scripts" 字段**：没有 preinstall / install / postinstall / prepare / prepack / test 任何脚本（rg '"scripts"' 0 命中）。
+- 没有 dependencies / optionalDependencies；只有 peerDependencies（L31 起）：@deepseek-ai/cordis、@deepseek-ai/dsh-tools。
+- 没有 bin。L14 "dsh.bundle.patch" 指向 cordis.patch.yml。
+- cordis.patch.yml（3 行）：只向 loader 插入 id=trade-assistant，无 config、无 installer 角色。https://github.com/xiong18166089606-design/dsh-trade-assistant/blob/ddce5828517f07899e93d4203490c14b2ffc8002/cordis.patch.yml
+
+## 2. 网络 / 进程 / 动态执行检索
+命令：rg -n "fetch\(|https?://|require\(|import |child_process|exec|spawn|eval\(|new Function|WebSocket|net\.|http\.|https\.|fs\.|readFile|writeFile|process\.env|dns|socket" index.js lib test cordis.patch.yml package.json
+命中只有：
+- index.js L7 import @deepseek-ai/dsh-tools（defineTool，宿主提供）；L8–9 import 本仓库 lib。
+- index.js L42、L74：工具的 execute(args, exec) 方法名，参数 exec 是宿主传入的执行上下文（只读 exec.signal），**不是 child_process.exec**。
+- lib/copywriting.js L4 import ./langs.js。
+- test/inquiry.test.js L1–4 import node:test / node:assert / 本仓库 lib。
+- package.json L37/L39/L41：repository/homepage/bugs 元数据 URL，非运行时请求。
+- lib/inquiry.js、lib/langs.js：**没有任何 import**。
+- 未发现 fetch / http(s) / net / dns / WebSocket / child_process / eval / new Function / fs 读写 / process.env。
+- lib/inquiry.js L15 有一条正则 /https?:\/\/\S+/ ——这是“询盘里含链接就判可疑”的匹配规则，不是请求。
+
+## 3. 读写哪些文件
+- 运行时代码不读不写任何文件（无 fs）。只对传入的 inquiry_text 做正则匹配并返回对象。
+- 我们自己的 run_plugin.mjs 只读本地 inbox.json/holdout.json，结果打到 stdout。
+
+## 4. 规则引擎要点（行号，供复核；不贴原文）
+- lib/inquiry.js L8 TYPE_RULES：按顺序第一个命中即胜出；L10–19 钓鱼/诈骗规则（minHits=1），L17 的附件规则只认 "attachment" 一词或 .zip/.rar/.exe。
+- L86–94 RED_FLAG_PATTERNS：高/中/低危分级；L87 预付费类只认 advance/upfront/processing/registration + fee 紧挨着的写法。
+- L96 matchType、L110 extractFields、L226 analyzeInquiry（入口，导出）、L270 renderInquiry。
+- 插件分类里没有“老客户跟进”“广告”两类，也**没有发件人/域名比对**（入参只有 inquiry_text/product/offer/tone，index.js L20–25）。
+
+## 5. 其他发现
+- （另有一处历史提交相关发现，按 Kumo 要求只记在内部存档，公开版不写。）
+- README L5、L62–66 自称“零模型依赖、无外部 API 调用”——与第 2 节静态检索一致；运行时也在断网命名空间里跑通（见下）。
+
+## 结论
+- **无生命周期/自动执行脚本；运行时代码无外连、无子进程、无动态执行、无文件读写。** 审查干净，进入运行。
+- 运行方式：纯 node 直接 import lib/inquiry.js 的 analyzeInquiry，外面套 unshare -rn（新的网络命名空间，只有一个未启用的回环口，任何外连都会直接失败），exit 0，见 run-plugin-*.txt。
+- 网络访问只有：git clone（github.com）、api.github.com 仓库元数据、npm view 元数据，全部只读、未登录。没有模型请求，没碰 DeepSeek 官方地址，没起 dsh。

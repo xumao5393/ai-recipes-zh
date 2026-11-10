@@ -1,0 +1,11 @@
+fetched_at_est: 2026-11-09 16:21:56 EST
+repo: https://github.com/Xuxchloris/deepseek-harness-sdr-plugin
+clone_commit: 491776832f257f7d63113f8f4b541bd075cdda55
+clone_commit_date: 2026-09-30 21:43:22 +0800 (= 2026-09-30 09:43:22 EDT)
+npm_package: @xuxchloris/dsh-sdr@0.2.3
+npm_published: 2026-08-28T16:12:18.115Z (= 2026-08-28 12:12:18 EDT)
+author_verified_dsh_per_package_readme: 0.1.0-rc.7 and 0.1.1-rc.2 (IDEAS said rc.6; root/npm pages vary)
+our_dsh_target: 0.2.2-rc.1
+dsh_plugin_path_in_repo: packages/dsh-sdr/
+note: root README now describes Hermes/Alex; packages/dsh-sdr kept for DSH compatibility
+3c202eb9e554ef4b63d67f9e0f66153e6c096cf37db8c6fc3269db6d30c21b05  <evidence/11-sdr-plugin>/package-README.md

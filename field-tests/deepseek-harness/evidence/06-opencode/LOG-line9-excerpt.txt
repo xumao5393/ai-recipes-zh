@@ -1,0 +1,3 @@
+摘自 deepseek-harness/LOG.md 第9行（该文件为过程记录，不入库），2026-11-09 15:16 EST 原样摘录：
+
+- 2026-11-09 14:47 EST 实测员：#6 OpenCode 2.2.6，opencode.json 将 deepseek baseURL→127.0.0.1:19016/v1，model=deepseek/deepseek-flash。"say hi"→3×POST /v1/chat/completions（正式 body_len=22803，system_chars=8799 按 system-role join len；12 工具紧凑 JSON 13600；标题 2148/2117）。有 traceparent+x-opencode-* 头。证据 capture-sayhi-20261109-1447。接着 #7 Aider。

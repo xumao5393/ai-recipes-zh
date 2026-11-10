@@ -1,0 +1,2 @@
+=== POST /api/profiles/validate no key ===
+{"ok":true,"code":"no_endpoint","error":"","reported_model":null}

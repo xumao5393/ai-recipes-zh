@@ -1,0 +1,26 @@
+HTTP/2 404 
+date: Tue, 10 Nov 2026 02:28:01 GMT
+content-type: text/plain; charset=utf-8
+content-length: 66
+x-frame-options: SAMEORIGIN
+x-xss-protection: 0
+x-content-type-options: nosniff
+x-permitted-cross-domain-policies: none
+referrer-policy: strict-origin-when-cross-origin
+link: <https://mock.shop/llms.txt>; rel="llms-txt"
+vary: Accept
+content-security-policy: default-src 'none'; base-uri 'none'; frame-ancestors 'none'; form-action 'none'; script-src 'self' https://cdn.shopify.com/shopifycloud/mock_shop/; report-to csp-reports; img-src 'self' https://cdn.shopify.com/shopifycloud/mock_shop/; style-src 'self' 'unsafe-inline' https://cdn.shopify.com/shopifycloud/mock_shop/; font-src 'self' https://cdn.shopify.com/shopifycloud/mock_shop/
+cache-control: no-cache
+x-runtime: 0.001581
+strict-transport-security: max-age=15552000; includeSubDomains; preload
+server-timing: processing;dur=7, socket_queue;dur=3.429
+reporting-endpoints: csp-reports="https://security-reports.shopifysvc.com/reporting-api?source_app=MockShop&policy_id=45766&controller=docs&action=show", other="https://security-reports.shopifysvc.com/reporting-api?source_app=MockShop&policy_id=45766&controller=docs&action=show"
+nel: {"report_to":"cf-nel","success_fraction":0.01,"max_age":604800}
+x-dc: gcp-us-east1,gcp-us-central1
+x-request-id: 4d2ae7f6-c7a2-475d-93c8-cd484bd34d3c-1794277681
+server: cloudflare
+report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=tNN07c0bgWcYoicEKt7DfqpgWPmjRZBJPr7lWm8Yb4w%2FaFXBPyesvasLHEoTFNIfllZifGVs0%2FC41YC3j8Zd1gbJKU%2F4N24Klad%2Bh8I%2BKSjDcICjCdcKvD%2Bp%2Bw%3D%3D"}]}
+alt-svc: h3=":443"; ma=86400
+cf-cache-status: DYNAMIC
+cf-ray: a5819f145b971904-ATL
+

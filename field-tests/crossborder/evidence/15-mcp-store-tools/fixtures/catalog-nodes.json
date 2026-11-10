@@ -1,0 +1,350 @@
+{
+  "note": "Fictional catalog invented for an offline audit_catalog call. Not from mock.shop or any real store.",
+  "nodes": [
+    {
+      "handle": "oak-stool",
+      "title": "Oak Stool",
+      "description": "A solid oak stool with a rounded seat and four splayed legs. Made for a kitchen counter. Fictional catalog item only.",
+      "vendor": "Northpeak",
+      "productType": "Home",
+      "tags": [
+        "demo",
+        "fictional"
+      ],
+      "onlineStoreUrl": "https://demo.example/products/oak-stool",
+      "availableForSale": true,
+      "featuredImage": {
+        "url": "https://cdn.example/oak-stool.jpg",
+        "altText": "stool"
+      },
+      "priceRange": {
+        "minVariantPrice": {
+          "amount": "20.00",
+          "currencyCode": "USD"
+        },
+        "maxVariantPrice": {
+          "amount": "20.00",
+          "currencyCode": "USD"
+        }
+      }
+    },
+    {
+      "handle": "pine-hook",
+      "title": "Pine Hook",
+      "description": "Short.",
+      "vendor": "Northpeak",
+      "productType": "Home",
+      "tags": [
+        "demo",
+        "fictional"
+      ],
+      "onlineStoreUrl": "https://demo.example/products/pine-hook",
+      "availableForSale": true,
+      "featuredImage": {
+        "url": "https://cdn.example/pine-hook.jpg",
+        "altText": null
+      },
+      "priceRange": {
+        "minVariantPrice": {
+          "amount": "20.00",
+          "currencyCode": "USD"
+        },
+        "maxVariantPrice": {
+          "amount": "20.00",
+          "currencyCode": "USD"
+        }
+      }
+    },
+    {
+      "handle": "bare-shelf",
+      "title": "Bare Shelf",
+      "description": "A solid oak stool with a rounded seat and four splayed legs. Made for a kitchen counter. Fictional catalog item only.",
+      "vendor": "Northpeak",
+      "productType": "Home",
+      "tags": [
+        "demo",
+        "fictional"
+      ],
+      "onlineStoreUrl": "https://demo.example/products/bare-shelf",
+      "availableForSale": true,
+      "featuredImage": null,
+      "priceRange": {
+        "minVariantPrice": {
+          "amount": "20.00",
+          "currencyCode": "USD"
+        },
+        "maxVariantPrice": {
+          "amount": "20.00",
+          "currencyCode": "USD"
+        }
+      }
+    },
+    {
+      "handle": "mystery-box",
+      "title": "Mystery Box",
+      "description": "A solid oak stool with a rounded seat and four splayed legs. Made for a kitchen counter. Fictional catalog item only.",
+      "vendor": "Northpeak",
+      "productType": "",
+      "tags": [
+        "demo",
+        "fictional"
+      ],
+      "onlineStoreUrl": "https://demo.example/products/mystery-box",
+      "availableForSale": true,
+      "featuredImage": {
+        "url": "https://cdn.example/mystery-box.jpg",
+        "altText": null
+      },
+      "priceRange": {
+        "minVariantPrice": {
+          "amount": "20.00",
+          "currencyCode": "USD"
+        },
+        "maxVariantPrice": {
+          "amount": "20.00",
+          "currencyCode": "USD"
+        }
+      }
+    },
+    {
+      "handle": "anonymous-mug",
+      "title": "Anonymous Mug",
+      "description": "A solid oak stool with a rounded seat and four splayed legs. Made for a kitchen counter. Fictional catalog item only.",
+      "vendor": "",
+      "productType": "Home",
+      "tags": [
+        "demo",
+        "fictional"
+      ],
+      "onlineStoreUrl": "https://demo.example/products/anonymous-mug",
+      "availableForSale": true,
+      "featuredImage": {
+        "url": "https://cdn.example/anonymous-mug.jpg",
+        "altText": null
+      },
+      "priceRange": {
+        "minVariantPrice": {
+          "amount": "20.00",
+          "currencyCode": "USD"
+        },
+        "maxVariantPrice": {
+          "amount": "20.00",
+          "currencyCode": "USD"
+        }
+      }
+    },
+    {
+      "handle": "plain-coaster",
+      "title": "Plain Coaster",
+      "description": "A solid oak stool with a rounded seat and four splayed legs. Made for a kitchen counter. Fictional catalog item only.",
+      "vendor": "Northpeak",
+      "productType": "Home",
+      "tags": [],
+      "onlineStoreUrl": "https://demo.example/products/plain-coaster",
+      "availableForSale": true,
+      "featuredImage": {
+        "url": "https://cdn.example/plain-coaster.jpg",
+        "altText": null
+      },
+      "priceRange": {
+        "minVariantPrice": {
+          "amount": "20.00",
+          "currencyCode": "USD"
+        },
+        "maxVariantPrice": {
+          "amount": "20.00",
+          "currencyCode": "USD"
+        }
+      }
+    },
+    {
+      "handle": "warehouse-lamp",
+      "title": "Warehouse Lamp",
+      "description": "A solid oak stool with a rounded seat and four splayed legs. Made for a kitchen counter. Fictional catalog item only.",
+      "vendor": "Northpeak",
+      "productType": "Home",
+      "tags": [
+        "demo",
+        "fictional"
+      ],
+      "onlineStoreUrl": null,
+      "availableForSale": true,
+      "featuredImage": {
+        "url": "https://cdn.example/warehouse-lamp.jpg",
+        "altText": null
+      },
+      "priceRange": {
+        "minVariantPrice": {
+          "amount": "20.00",
+          "currencyCode": "USD"
+        },
+        "maxVariantPrice": {
+          "amount": "20.00",
+          "currencyCode": "USD"
+        }
+      }
+    },
+    {
+      "handle": "sold-out-tent",
+      "title": "Sold Out Tent",
+      "description": "A solid oak stool with a rounded seat and four splayed legs. Made for a kitchen counter. Fictional catalog item only.",
+      "vendor": "Northpeak",
+      "productType": "Home",
+      "tags": [
+        "demo",
+        "fictional"
+      ],
+      "onlineStoreUrl": "https://demo.example/products/sold-out-tent",
+      "availableForSale": false,
+      "featuredImage": {
+        "url": "https://cdn.example/sold-out-tent.jpg",
+        "altText": null
+      },
+      "priceRange": {
+        "minVariantPrice": {
+          "amount": "20.00",
+          "currencyCode": "USD"
+        },
+        "maxVariantPrice": {
+          "amount": "20.00",
+          "currencyCode": "USD"
+        }
+      }
+    },
+    {
+      "handle": "typo-bundle",
+      "title": "Typo Bundle",
+      "description": "A solid oak stool with a rounded seat and four splayed legs. Made for a kitchen counter. Fictional catalog item only.",
+      "vendor": "Northpeak",
+      "productType": "Home",
+      "tags": [
+        "demo",
+        "fictional"
+      ],
+      "onlineStoreUrl": "https://demo.example/products/typo-bundle",
+      "availableForSale": true,
+      "featuredImage": {
+        "url": "https://cdn.example/typo-bundle.jpg",
+        "altText": null
+      },
+      "priceRange": {
+        "minVariantPrice": {
+          "amount": "10.00",
+          "currencyCode": "USD"
+        },
+        "maxVariantPrice": {
+          "amount": "50.00",
+          "currencyCode": "USD"
+        }
+      }
+    },
+    {
+      "handle": "shouting-sign",
+      "title": "SHOUTING SIGN",
+      "description": "A solid oak stool with a rounded seat and four splayed legs. Made for a kitchen counter. Fictional catalog item only.",
+      "vendor": "Northpeak",
+      "productType": "Home",
+      "tags": [
+        "demo",
+        "fictional"
+      ],
+      "onlineStoreUrl": "https://demo.example/products/shouting-sign",
+      "availableForSale": true,
+      "featuredImage": {
+        "url": "https://cdn.example/shouting-sign.jpg",
+        "altText": null
+      },
+      "priceRange": {
+        "minVariantPrice": {
+          "amount": "20.00",
+          "currencyCode": "USD"
+        },
+        "maxVariantPrice": {
+          "amount": "20.00",
+          "currencyCode": "USD"
+        }
+      }
+    },
+    {
+      "handle": "long-title-banner",
+      "title": "A Decorative Banner With An Overlong Name For The Hallway Wall XXXXXXXX",
+      "description": "A solid oak stool with a rounded seat and four splayed legs. Made for a kitchen counter. Fictional catalog item only.",
+      "vendor": "Northpeak",
+      "productType": "Home",
+      "tags": [
+        "demo",
+        "fictional"
+      ],
+      "onlineStoreUrl": "https://demo.example/products/long-title-banner",
+      "availableForSale": true,
+      "featuredImage": {
+        "url": "https://cdn.example/long-title-banner.jpg",
+        "altText": null
+      },
+      "priceRange": {
+        "minVariantPrice": {
+          "amount": "20.00",
+          "currencyCode": "USD"
+        },
+        "maxVariantPrice": {
+          "amount": "20.00",
+          "currencyCode": "USD"
+        }
+      }
+    },
+    {
+      "handle": "cedar-crate-a",
+      "title": "Cedar Crate",
+      "description": "A solid oak stool with a rounded seat and four splayed legs. Made for a kitchen counter. Fictional catalog item only.",
+      "vendor": "Northpeak",
+      "productType": "Home",
+      "tags": [
+        "demo",
+        "fictional"
+      ],
+      "onlineStoreUrl": "https://demo.example/products/cedar-crate-a",
+      "availableForSale": true,
+      "featuredImage": {
+        "url": "https://cdn.example/cedar-crate-a.jpg",
+        "altText": null
+      },
+      "priceRange": {
+        "minVariantPrice": {
+          "amount": "20.00",
+          "currencyCode": "USD"
+        },
+        "maxVariantPrice": {
+          "amount": "20.00",
+          "currencyCode": "USD"
+        }
+      }
+    },
+    {
+      "handle": "cedar-crate-b",
+      "title": "Cedar Crate",
+      "description": "A solid oak stool with a rounded seat and four splayed legs. Made for a kitchen counter. Fictional catalog item only.",
+      "vendor": "Northpeak",
+      "productType": "Home",
+      "tags": [
+        "demo",
+        "fictional"
+      ],
+      "onlineStoreUrl": "https://demo.example/products/cedar-crate-b",
+      "availableForSale": true,
+      "featuredImage": {
+        "url": "https://cdn.example/cedar-crate-b.jpg",
+        "altText": null
+      },
+      "priceRange": {
+        "minVariantPrice": {
+          "amount": "20.00",
+          "currencyCode": "USD"
+        },
+        "maxVariantPrice": {
+          "amount": "20.00",
+          "currencyCode": "USD"
+        }
+      }
+    }
+  ]
+}

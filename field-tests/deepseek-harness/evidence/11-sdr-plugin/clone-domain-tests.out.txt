@@ -1,0 +1,20 @@
+✔ 九阶段流程由服务端推进，审批前结构性阻断 (22.035764ms)
+✔ 客户主数据跨活动去重，并对相同活动请求幂等复用 (37.26281ms)
+✔ 审批绑定草稿哈希，默认 connector 全部 dry-run (5.362087ms)
+✔ 状态文件使用原子 JSON 持久化 (0.873084ms)
+✔ connector registry 支持后续 WhatsApp/CRM 实现替换 (0.282875ms)
+✔ Agent 配置需要部署开关，并保留部署基线且拒绝敏感值 (1.983785ms)
+✔ 企业知识跨服务实例持久化，并自动注入开发信引用 (7.168673ms)
+✔ 混合 RAG 支持语义召回、来源版本引用和 Recall@K/MRR 评测 (2.259451ms)
+✔ DSH native tools all publish object JSON schemas (3.337217ms)
+✔ bundle and SDR preset point at the published scoped package (1.659846ms)
+✔ 审批询问透传 agent-owned 执行身份 (11.876551ms)
+ℹ tests 11
+ℹ suites 0
+ℹ pass 11
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 139.299214
+exit=0 elapsed_s=0.176 n=1

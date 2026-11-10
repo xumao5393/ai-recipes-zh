@@ -1,0 +1,527 @@
+ 
+ AMD Developer Cloud 
+ Skip to main content 
+ AMD Website Accessibility Statement 
+ Products
+ Processors 
+ Accelerators 
+ Graphics 
+ Adaptive SoCs, FPGAs, & SOMs 
+ Software, Tools, & Apps 
+ Processors 
+ Server CPUs 
+ EPYC CPU Portfolio 
+ Data Center, Cloud & AI 
+ Network & Edge 
+ Small Business & Hosting 
+ Server CPU Specifications 
+ Business Systems 
+ Ryzen PRO Laptops 
+ Ryzen PRO Desktops 
+ Workstations 
+ PRO Technologies 
+ Ryzen AI for Business 
+ Personal & Gaming 
+ Ryzen Laptops 
+ Ryzen Desktops 
+ Advantage Gaming Laptops 
+ Advantage Gaming Desktops 
+ Ryzen Z Series Handhelds 
+ Ryzen AI for Consumer 
+ Embedded 
+ EPYC and Ryzen 
+ Partner Directory 
+ Resources 
+ Product Specifications 
+ Enterprise Blogs & Insights 
+ Accelerators 
+ GPU Accelerators 
+ Instinct GPUs 
+ Documentation 
+ Cloud Graphics 
+ Adaptive Accelerators 
+ Alveo Data Center Accelerator Cards 
+ Telco Accelerator Cards 
+ DPU Accelerators 
+ Pensando Salina 
+ Ethernet Adapters 
+ Pensando AI NICs 
+ Alveo X3 Series 
+ Solarflare Adapters 
+ Graphics 
+ Workstations 
+ Radeon PRO 
+ Desktops 
+ AMD Advantage Premium 
+ Radeon RX 
+ Laptops 
+ AMD Advantage Premium 
+ Radeon Mobile Graphics 
+ Resources 
+ Product Specifications 
+ Documentation 
+ Adaptive SoCs, FPGAs, & SOMs 
+ Adaptive SoCs & FPGAs 
+ Versal Portfolio 
+ SoC Portfolio 
+ FPGA Portfolio 
+ Cost-Optimized Portfolio 
+ System-on-Modules (SOMs) 
+ Kria SOMs 
+ Kria AI Solutions 
+ Kria K24 SOM 
+ Kria K26 SOM 
+ Technologies 
+ AI Engine 
+ Design Security 
+ Digital Signal Processing 
+ Functional Safety 
+ High Speed Serial 
+ Memory Solutions 
+ Power Efficiency 
+ Resources 
+ Intellectual Property 
+ Design Hubs 
+ Developer Hub 
+ Customer Training 
+ Evaluation Boards & Kits 
+ Evaluation Boards 
+ Boards & Kits Accessories 
+ Software, Tools, & Apps 
+ Processor Tools 
+ MEXT Predictive Memory Software 
+ PRO Technologies 
+ Ryzen AI Software 
+ Ryzen Master Overclocking Utility 
+ StoreMI 
+ Zen Software Studio 
+ Graphics Tools & Apps 
+ AMD Software: Adrenalin Edition 
+ AMD Software: PRO Edition 
+ FidelityFX 
+ Radeon ProRender 
+ Adaptive SoC & FPGA Tools 
+ Design Tools 
+ AMD Ross 
+ Vivado Software 
+ Vitis Software 
+ Vitis Model Composer 
+ Vitis HLS 
+ Vitis AI 
+ Embedded Software 
+ Power Design Manager 
+ Intellectual Property & Apps 
+ Pre-Built IP Cores 
+ Alveo Accelerator App Store 
+ Kria SOM App Store 
+ GPU Accelerator Tools & Apps 
+ ROCm Open Software 
+ Infinity Hub Software Containers 
+ Enterprise AI Reference Stack 
+ Ethernet Adapter Tools 
+ Solarflare Onload Software 
+ Solutions
+ AI 
+ Industries 
+ Workloads 
+ Gaming 
+ AI 
+ Overview 
+ AI Solutions 
+ Advancing Science 
+ AMD Silo AI 
+ Physical AI 
+ Sovereign AI 
+ For Data Center & Cloud 
+ GPU Accelerators 
+ Helios Rackscale Solutions 
+ Server Processors 
+ For Edge & Endpoints 
+ Ryzen AI for Business 
+ Ryzen AI for Consumer 
+ Ryzen AI for Embedded 
+ Radeon Graphics Cards 
+ Adaptive SoCs for Edge 
+ Adaptive SoCs for Embedded 
+ System-on-Modules (SOMs) 
+ For Developers 
+ ROCm AI Developer Hub 
+ Vitis AI Developer Hub 
+ ZenDNN Inference Libraries 
+ Ryzen AI Software 
+ AI Developer Program 
+ AI Academy 
+ Ryzen AI Halo 
+ Industries 
+ Industries 
+ Industries 
+ Aerospace & Defense 
+ Architecture, Engineering, & Construction 
+ Automotive 
+ Broadcast & Pro AV 
+ Data Center 
+ Energy 
+ Industries 
+ Emulation & Prototyping 
+ Financial Services 
+ Healthcare 
+ High-Performance Computing 
+ Home & Lifestyle 
+ Industries 
+ Industrial 
+ Manufacturing 
+ Media & Entertainment 
+ Product Design 
+ Public Sector 
+ Industries 
+ Retail & E-Commerce 
+ Robotics 
+ Semiconductor 
+ Telco & Networking 
+ Test & Measurement 
+ Workloads 
+ Workloads 
+ AI 
+ Cloud Computing 
+ Database & Analytics 
+ Embedded Computing 
+ HCI & Virtualization 
+ Infrastructure Acceleration 
+ Networking Solutions 
+ Quantum Computing 
+ Gaming 
+ Gaming 
+ Gaming with AMD 
+ Featured Games 
+ Systems 
+ Advantage Gaming Systems 
+ Gaming Desktops 
+ Gaming Laptops 
+ Gaming Handhelds 
+ Technologies 
+ Smart Technologies 
+ AMD FSR 
+ FreeSync 
+ HYPR-RX 
+ Resources 
+ AMD Gaming Community 
+ AMD Software: Adrenalin Edition 
+ Resources & Support
+ Downloads 
+ Developer Resources 
+ Partner Resources 
+ Support 
+ Downloads 
+ EPYC Processors 
+ Client & Data Center Tech Docs 
+ EPYC White Papers & Briefs 
+ EPYC Tuning Guides 
+ Radeon Graphics & AMD Chipsets 
+ Drivers 
+ Radeon ProRender Plug-ins 
+ PRO Certified ISV Applications 
+ Adaptive SoCs & FPGAs 
+ Vivado Design Suite 
+ Vitis Software Platform 
+ Vitis Accelerated Libraries 
+ Vitis Embedded Platforms 
+ Embedded Software 
+ Device Models 
+ Package Pinout Files 
+ Power Design Manager 
+ Alveo Accelerators & Kria SOMs 
+ Alveo Package Files 
+ Alveo App Store 
+ Kria App Store 
+ Ryzen Processors 
+ Ryzen Master Overclocking Utility 
+ StoreMI 
+ PRO Manageability Tools for IT Administrators 
+ Ethernet Adapters 
+ Solarflare Software & Downloads 
+ Developer Resources 
+ Overview 
+ Developer Central 
+ AI Developer Program 
+ AI Academy 
+ AI Playbooks 
+ Processors 
+ Zen Software Studio 
+ EPYC Tuning Guides 
+ EPYC Whitepapers & Briefs 
+ Ryzen AI Software 
+ Accelerators 
+ ROCm AI Developer Hub 
+ ROCm Documentation 
+ Enterprise AI Reference Stack 
+ Infinity Hub Software Containers 
+ Pensando DPUs 
+ Embedded Products 
+ Vivado Design Suite 
+ Vitis Software Developer Tools 
+ Vitis AI Developer Hub 
+ Documentation 
+ Product Training 
+ Embedded Partner Solutions 
+ Graphics 
+ GPUOpen Open Source Tools 
+ Documentation 
+ Partner Resources 
+ Overview 
+ Partner Hub Home 
+ AMD Partner Network 
+ Resources by Product 
+ AMD Instinct 
+ EPYC 
+ Ryzen PRO 
+ Ryzen 
+ Ryzen Threadripper 
+ Radeon PRO 
+ Radeon 
+ Resources by Type 
+ Partner Insights Articles 
+ AMD Arena Training 
+ Meet the Experts Webinars 
+ Marketing Materials 
+ Partner FAQs 
+ About Our Partners 
+ Partner Ecosystems & Solutions 
+ Authorized Distributors 
+ Support 
+ AMD Global Support 
+ Support Home 
+ Technical Information Portal 
+ Warranty Services 
+ Product Specifications 
+ Product Security (PSIRT) 
+ Processors & Graphics 
+ Product Support 
+ Knowledge Base 
+ Technical & Warranty Help 
+ PC & Processors Community 
+ Drivers & Software Downloads 
+ Accelerators 
+ Alveo Product Support 
+ Pensando Product Support 
+ Solarflare Product Support 
+ Adaptive SoCs & FPGAs 
+ Product Support 
+ Knowledge Base 
+ Community Forums 
+ Design Hubs 
+ Product Return 
+ Shop
+ Shop AMD 
+ Shop AMD 
+ Gaming & Personal Computing 
+ Ryzen Processors 
+ Promotions & Bundles 
+ Shop All 
+ Adaptive & Embedded Computing 
+ System-on-Modules (SOMs) 
+ Data Center Accelerator Cards 
+ Adaptive SoC & FPGA Evaluation Kits 
+ Get AMD Fan Gear 
+ Visit the Store 
+ Shop Our Retail Partners 
+ Ryzen Processors 
+ Radeon Graphics Cards 
+ Advantage Laptops 
+ Advantage Desktops 
+ Gaming Handhelds 
+ My Account 
+ Create Account 
+ EN 
+ English 
+ 简体中文 
+ 繁體中文 
+ Français 
+ Deutsch 
+ 日本語 
+ 한국어 
+ Português 
+ Español 
+ TABLE OF CONTENTS
+ Developer Central 
+ Browse by Resource Type
+ Software, Tools and Downloads 
+ Documentation 
+ Training 
+ Programs 
+ Community 
+ Support and Reference 
+ Browse by Product Type
+ Processor Resources 
+ Accelerator Resources 
+ Adaptive SoC, FPGA, and SOM Resources 
+ Graphics Resources 
+ Developer Central 
+ AI & HPC Cloud Access 
+ AMD Developer Cloud 
+ AMD Developer Cloud 
+ Test Drive AMD Instinct GPUs Instantly 
+ Access high-performance AMD Instinct™ MI300X GPUs through the AMD Developer Cloud — the ideal platform for developers and open-source contributors building and optimizing AI, machine learning, and HPC workloads on AMD hardware. 
+ Sign Up 
+ Features 
+ Access to Powerful Computing Resources 
+ Provides easy access to AMD GPUs enabling developers to run computationally intensive tasks without investing in dedicated hardware right away. 
+ Pre-Installed Docker Containers and Flexibility 
+ Docker containers preloaded with popular AI software, minimizing setup time, while giving developers the flexibility to customize code to fit their specific needs. 
+ Zero Setup with Cloud-Based Convenience 
+ A Jupyter Notebook environment running inside containers available upon VM launch, with no need for local setup—developers can easily write and run Python code right in the browser. 
+ Scalable GPU Options 
+ AMD Provided Cloud Credit 
+ AMD AI Developer Program members receive a complimentary $100 in AMD Developer Cloud credits to accelerate development and prototyping. 
+ * Terms and conditions apply 
+ Join the Program 
+ Pay-As-You-Go 
+ Digital Ocean
+ Get instant access to AMD Instinct GPUs via Digital Ocean. Link your credit card on their secure platform to scale your AI workloads into a production-ready environment. 
+ Sign-Up 
+ Vultr
+ Deploy AMD GPU instances instantly on Vultr. Link your credit card via their secure portal to access high-performance infrastructure built for production-scale AI. 
+ Sign-Up 
+ Two AMD Instinct MI300X GPU Instance Configurations 
+ Small Configuration: 1x GPU 
+ GPU Memory: 192GB 
+ vCPUs: 20 vCPUs 
+ System Memory: 240GB 
+ Boot Disk: 720 GB NVMe 
+ Scratch Disk: 5TB NVMe 
+ Large Configuration: 8x GPU 
+ GPU Memory: 1536GB 
+ vCPUs: 160 vCPUs 
+ System Memory: 1920 GB 
+ Boot Disk: 1920 GB NVMe 
+ Scratch Disk: 40 TB NVMe 
+ Sign Up for the AMD Developer Cloud Today 
+ Join Developer Cloud 
+ Getting Started Resources 
+ Explore resources to help you begin working with AMD Instinct GPUs on the AMD Developer Cloud. 
+ How to Get Started on the AMD Developer Cloud 
+ Read the Blog 
+ Google ADK + AMD Instinct™ GPUs: The Dynamic Duo for AI Agents
+ Read the Blog 
+ Catch the OCR Wave | VLMs + AMD Developer Cloud
+ Watch the Video 
+ Documentation 
+ Find comprehensive information about ROCm components, tools, compilers, runtimes, and debugger. 
+ ROCm AI Developer Hub 
+ Instinct GPU Documentation 
+ Frequently Asked Questions 
+ What is the AMD Developer Cloud?
+ The AMD Developer Cloud (ADC) provides developers and open-source contributors with access to powerful AMD Instinct™ MI300X GPUs through a third-party cloud website. Users can choose between two access options: pay-as-you-go or apply for complimentary hours. 
+ How do I sign up for the AMD Developer Cloud?
+ To access the AMD Developer Cloud, create an AMD AI Developer Program account and use those same credentials to sign in. 
+ If you created an AMD Developer Cloud account before July 15, you can still sign in using your email address or GitHub account. However, to continue using the AMD Developer Cloud, you'll need to switch your sign-in method to AMD Single Sign-On (SSO). For more details, please review the AMD SSO Migration document . 
+ What is Pay-As-You-Go Access?
+ For developers ready to start building on AMD Instinct GPUs immediately, pay-as-you-go access offers a fast and flexible option. Simply create a new third-party cloud, enter your payment information on a secure platform, and begin developing right away. 
+ What is Complimentary AMD Credit? 
+ AMD is offering an initial $100 complimentary cloud credit to qualified developers who apply and join AMD AI Developer Program. Complimentary credit hours expire thirty (30) days from the date of deposit in your developer cloud account unless stated otherwise in your credit confirmation email. Credits are activated once cloud account is created or logged into via $100 credit link provided. For questions, reach out to:  devcloudrequests@amd.com 
+ What is required to apply for complimentary credit for the AMD Developer Cloud?
+ The AMD Developer Cloud is intended for independent developers and open-source project contributors involved with ML, low-level programming, and AI applications development. 
+ How are applicants awarded AMD complimentary cloud credit?
+ Cloud credit allocation on the AMD Developer Cloud is determined by AMD in its sole discretion, based on the intended use case (e.g., inference, training, finetuning), and a detailed description of how you plan to use the GPU credit. 
+ What happens if I need more cloud hours?
+ You may contact the third-party cloud representative about additional complimentary hours, which may be offered at AMD’s sole discretion or add a valid payment option and pay-as-you-go. You can switch to the production cloud anytime. 
+ When can I expect a response if I receive free credits? 
+ Upon application approval, complimentary credits will be deposited in your third-party AMD Developer Cloud account within three (3) business days. Credits will appear on the “My AMD Home” page in the AMD Developer Cloud console. 
+ When I run out of complimentary AMD cloud credit, will resources be turned off and/or deleted? 
+ If you are granted complimentary credit hours for use on Instinct GPUs in the AMD Developer Cloud and your credit expires and you have no active payment method on file, your AMD GPU VM will be destroyed and you will lose access to the GPU(s) and the data on the GPU(s). Similarly, if complimentary credit hours are exhausted, you will lose access to the GPU, any and all data, and the AMD Developer Cloud. 
+If payment method is added, it will automatically charge your payment method once credit is exhausted. 
+Complimentary AMD cloud credit applies only to use on AMD Instinct MI300X GPUs. Complimentary credit hours for attached volumes, object storage, or backups, if any, on the AMD Developer Cloud will not be offered. If a GPU Instance is powered off, you are still billed and/or credit hours will apply. Charges are incurred until the instance is destroyed. 
+ Will I be billed for powered-off GPU VM?
+ When you power off your GPU VM, you are still billed for it. This is because your disk space, CPU, RAM, and IP address are all reserved, even while powered off. Therefore, charges are made until you destroy the instance. 
+ Who owns the rights to my work in the AMD Developer Cloud?
+ You own the rights to the work performed on the AMD Developer Cloud. AMD will not acquire the rights to use work done in the AMD Developer Cloud. The AMD Developer Cloud allows you to upload source code, files, software, processes, interfaces, data, text, settings, media, or other information for storage, hosting, or processing by the AMD Developer Cloud (your “Services Content”). You will retain copyright and ownership rights to your Services Content in the AMD Developer Cloud. In addition, except to the extent necessary to provide the cloud products that are made available through the AMD Developer Cloud neither AMD nor any other party will process or use your Services Content for any other purpose without your express written permission. 
+ How can I get support?
+ The AMD Developer Cloud is hosted by a third-party cloud provider. Contact your cloud provider for support here .  
+ *Terms and Conditions
+ TERMS OF USE 
+ AMD DEVELOPER CLOUD PROGRAM 
+ These Terms of Use (the "Agreement") set forth the terms and conditions by which you may access and use the hardware and software made available to you by Advanced Micro Devices, Inc. (“AMD”), and apply to all users who access the AMD Developer Cloud. 
+ IMPORTANT - READ CAREFULLY:  DO NOT ACCESS OR USE AMD DEVELOPER CLOUD UNTIL YOU HAVE CAREFULLY READ AND AGREED TO THE FOLLOWING TERMS AND CONDITIONS. This is a legal agreement between you (either an individual or an entity) ("you") and AMD. If you will use AMD Developer Cloud as an employee or other representative of a corporation, partnership or other legal entity, then you must be authorized to sign for and bind that entity in order to accept the terms of this Agreement. In such a case, any references to “you” in this Agreement refer to the entity you represent. 
+ BY ACCESSING THE AMD DEVELOPER CLOUD, YOU ARE ACCEPTING THE TERMS AND CONDITIONS OF THIS AGREEMENT. IF YOU DO NOT AGREE TO THE TERMS OF THIS AGREEMENT, DO NOT ACCESS OR USE THE AMD DEVELOPER CLOUD. 
+ Access to the AMD Developer Cloud. 
+ Subject to the terms and conditions of the Agreement, AMD hereby grants to you a personal, limited, non-exclusive, non-transferable, non-sublicensable, revocable, right to access and to use the AMD Developer Cloud.  Except as set forth in this Service Agreement, no other rights, licenses, or interests are granted, whether through contract or arising under law. All other rights and interests are reserved. 
+Access to the AMD Developer Cloud may be provided through one or more third-party cloud service provider’s online platform (“Platform(s)”).  AMD may add or remove cloud service providers to or from the AMD Developer Cloud program.  AMD may, in its sole discretion, provide your access to the AMD Developer Cloud through a Platform of AMD’s choice.  AMD reserves the right to change the Platform providing your service at any time.  To participate in the AMD Developer Cloud, you may be required to sign up for an account and abide by terms and conditions or other legal requirements enumerated by the Platform.  
+You are solely responsible for all data, software and other content you upload to AMD Developer Cloud (“Customer Content”). You represent and warrant that you have obtained all rights and interests necessary to copy, store, transmit, display, modify, or otherwise use any Customer Content in connection with AMD Developer Cloud. Your use of AMD Developer Cloud and all Customer Content must at all times comply with any privacy notices or policies and all applicable local, state, federal and international laws and regulations, including those relating to data privacy, international transmission of data and import or export of technical or personal data. 
+ Restrictions. 
+ In addition to any other restrictions and limitations stated in this Agreement, you may not: 
+ rent, lease, copy, provide access to or sublicense AMD Developer Cloud to a third party or use AMD Developer Cloud to provide a service to a third-party; 
+ circumvent or expand any of the access permissions established by AMD for your AMD Developer Cloud account; 
+ use AMD Developer Cloud to engage in, facilitate, promote, or permit any illegal activities; 
+ use AMD Developer Cloud in a manner that violates applicable U.S. export laws, including but not limited to the U.S. Export Administration Regulations (“EAR”) (15 C.F.R Sections 730-774), including but not limited to (i) allowing a permanent resident of EAR Country Groups E:1 (Iran, North Korea, Syria) or E:2 (Cuba) to access or use AMD Developer Cloud; (ii) using AMD Developer Cloud for the design or development of chemical or biological weapons, missile capable systems, nuclear computational platforms/systems, unmanned aerial vehicles, military platforms/systems, or mass surveillance platforms/systems, (iii) allowing any entity or individual listed on any U.S. restricted end-user list or identified on any applicable government end-user list to access or use AMD Developer Cloud; (iv) developing of a supercomputer located in China, Hong Kong or Macau; (v) developing or producing of integrated circuits by a semiconductor manufacturing fabrication facility located in China, Hong Kong or Macau as defined in 744.23 of the EAR meeting the following criteria: (1) Logic integrated circuits using a non-planar transistor architecture or with a “production” technology node of 16/14 nanometers or less (2) NOT AND (NAND) memory integrated circuits with 128 layers or more; or (3) Dynamic random-access memory (DRAM) integrated circuits using a “production” technology node of 18 nanometer half-pitch or less; or 
+ use AMD Developer Cloud to: (i) develop inventions directly derived from AMD Developer Cloud or the AMD hardware and software made available to you via AMD Developer Cloud to seek patent protection; (ii) assist in the analysis of your patents or patent applications; or (iii) modify your existing patents; 
+ Disclaimer. 
+ AMD DEVELOPER CLOUD IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND. AMD DISCLAIMS ALL WARRANTIES, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, NONINFRINGEMENT, AND WARRANTIES ARISING FROM CUSTOM OF TRADE OR COURSE OF USAGE. AMD DOES NOT WARRANT THAT THE CUSTOMER CONTENT USED OR UPLOADED BY YOU IN CONNECTION WITH YOUR USE OF AMD DEVELOPER CLOUD WILL BE SECURE OR NOT OTHERWISE LOST OR DAMAGED. FURTHERMORE, AMD IS NOT LIABLE FOR ANY DELAYS, INTERRUPTIONS, SERVICE FAILURES AND OTHER PROBLEMS WITH AMD DEVELOPER CLOUD OR INHERENT IN USE OF THE INTERNET AND ELECTRONIC COMMUNICATIONS OR OTHER SYSTEMS OUTSIDE THE REASONABLE CONTROL OF AMD. THE ENTIRE RISK ASSOCIATED WITH THE USE OF AMD DEVELOPER CLOUD IS ASSUMED BY YOU. Some jurisdictions do not allow the exclusion of implied warranties, so the above exclusion may not apply to you. 
+ Limitation on Liability and Indemnification. 
+ TO THE EXTENT PERMITTED BY LAW, YOU UNDERSTAND AND AGREE THAT AMD AND ITS LICENSORS ARE NOT LIABLE TO YOU FOR ANY DAMAGE WHATSEVER, INCLUDING SPECIAL, INDIRECT OR CONSEQUENTIAL DAMAGES OR DAMAGES ATTRIBUTABLE TO LOSS OF PROFITS, BUSINESS INTERRUPTION, OR CORRUPTION OR LOSS OF INFORMATION, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THIS AGREEMENT OR THE USE OR PERFORMANCE OF AMD DEVELOPER CLOUD EVEN IF AMD AND ITS LICENSORS HAVE BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. AMD's total liability to you for any and all damages, losses, and claims (whether in contract, tort (including negligence) or otherwise) in connection with this Agreement will not exceed $100 USD. You agree to defend, indemnify and hold harmless AMD and its licensors, and any of their directors, officers, employees, affiliates or agents from and against any and all loss, damage, liability and other expenses (including reasonable attorneys' fees), resulting from your use of AMD Developer Cloud or your violation of the terms and conditions of this Agreement. The parties agree that the limitations specified in this section will apply to the maximum extent permitted under applicable law and will survive and apply even if any limited remedy specified in the Agreement is found to have failed of its essential purpose. 
+ Privacy. 
+ AMD may be required under applicable data protection law to provide you with certain information about who we are, how AMD processes any personal data you provide to AMD and for what purposes, and your rights in relation to your personal information and how to exercise them. This information is provided in the AMD privacy notice ( https://www.amd.com/en/legal/privacy.html ). It is important that you read this information. 
+ Termination. 
+ In the event of any violation or potential violation of any of these restrictions or any other material breach of this Agreement, AMD may (in addition to any other remedies available) immediately and without notice suspend or terminate your access or use of AMD Developer Cloud without any liability to you or any third party. Either party may terminate the Agreement without cause and for its convenience at any time by written notice to the other party. Upon termination, you must immediately cease all use of and access to the AMD Developer Cloud and delete (or, at AMD’s request, return) any and all copies of any related documentation you may possess. AMD may revoke your access to and use of AMD Developer Cloud at any time from and after termination, and AMD or the Platform may remove/delete any and all Customer Content and any other data stored by you on AMD Developer Cloud. 
+ General Provisions. 
+ This Agreement sets forth the entire agreement and understanding between the parties with respect to your access and use of AMD Developer Cloud and supersedes and merges all prior oral and written agreements, discussions and understandings between us regarding the subject matter of this Agreement.  No waiver or modification of any provision of this Agreement will be binding unless made in writing and signed by an authorized representative of each party.  You may not assign this Agreement or any of your rights hereunder without the prior written consent of AMD and any assignment without such consent will be null and void. The parties do not intend to create any agency or partnership relationship between them by this Agreement. Each provision of this Agreement will be interpreted in such a manner as to be effective and valid under applicable law. However, if any provision of this Agreement becomes or is declared unenforceable by any court of competent jurisdiction, such provision will be deemed deleted and the remainder of this Agreement will remain in full force and effect. This Agreement is made under and shall be construed according to the laws of the State of Texas, excluding conflicts of law rules. Each party submits to the jurisdiction of the state and federal courts of Travis County and the Western District of Texas for the purposes of this Agreement.  
+ ON THIS PAGE
+ Overview
+ Features
+ Try Today
+ Resources
+ FAQ
+ More
+ Feedback
+ AMD.com Feedback 
+ Privacy Policy</a>. Conversations may be recorded to operate and improve the service. Do not share sensitive information.">
+ Subscribe to the latest news from AMD 
+ Linkedin 
+ AMD
+ AI
+ Server
+ Ryzen
+ Radeon
+ Embedded
+ Gaming
+ Instagram 
+ AMD
+ Developers
+ Gaming
+ Facebook 
+ Developers
+ Gaming
+ Subscriptions 
+ Company 
+ About AMD 
+ Management Team 
+ Corporate Responsibility 
+ Careers 
+ Contact Us 
+ News & Events 
+ Newsroom 
+ Events 
+ Media Library 
+ Resources 
+ Developer Central 
+ Blogs 
+ Case Studies 
+ Webinars 
+ Explore Resources 
+ Partners 
+ AMD Partner Hub 
+ Authorized Distributors 
+ AMD University Program 
+ Investors 
+ Investor Relations 
+ Financial Information 
+ Board of Directors 
+ Governance Documents 
+ SEC Filings 
+ Terms and Conditions 
+ Privacy 
+ Trademarks 
+ Supply Chain Transparency 
+ Fair & Open Competition 
+ UK Tax Strategy 
+ Cookies Policy 
+ Cookie Settings 
+ © 2026 Advanced Micro Devices, Inc. 

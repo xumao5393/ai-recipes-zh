@@ -1,0 +1,39 @@
+created sdr_20261109212321_10f2ec6d: task_parse
+step 1: prospect_discovery
+step 2: company_research
+step 3: prospect_scoring
+step 4: email_draft
+step 5: human_approval
+approval gate: 3 pending
+before approval: 仍有 3 封草稿未获批准: draft_1_c0613a, draft_2_30df5b, draft_3_523486
+report {
+  "task_id": "sdr_20261109212321_10f2ec6d",
+  "status": "closed",
+  "market": "US",
+  "product": "户外用品",
+  "prospects": [
+    {
+      "lead_id": "lead_fa6f2146e3c0613a",
+      "company": "Northstar Outdoor Supply",
+      "domain": "northstar-outdoor.example"
+    },
+    {
+      "lead_id": "lead_2d919c7e7930df5b",
+      "company": "Canyon Trail Outfitters",
+      "domain": "canyon-trail.example"
+    },
+    {
+      "lead_id": "lead_07189492b4523486",
+      "company": "Harbor Peak Gear",
+      "domain": "harbor-peak.example"
+    }
+  ],
+  "knowledge_refs": [],
+  "approved_drafts": 3,
+  "follow_up_count": 3,
+  "quotation_pack_count": 1,
+  "external_delivery": "draft-only",
+  "dry_run": true
+}
+audit entries: 11
+exit=0 elapsed_s=0.06

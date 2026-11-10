@@ -1,0 +1,2 @@
+wildcard_exit=1
+wildcard_v6_exit=1

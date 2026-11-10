@@ -1,0 +1,26 @@
+# MASKING · 08-shopify-five-order
+时间：2026-11-09 18:38 EST
+1. 无上游第三方代码入库：检查脚本与假订单均为本轮自写。公开提示词引用了原文 5 句短句（附来源链接）；整页摘录只留内部档案，不整页转载。（2026-11-09 按挑刺员复审改写本条，原句存内部档案 before-r2-small-fix/）
+2. 假订单里的店铺链接使用 example.invalid，客户名为虚构，无真实 PII。
+3. 公开文件不写绝对路径：run-check.txt 的 cwd 用相对专题路径；若 stderr 出现路径会替换为 <workspace>/<home>（本轮 stderr 为空）。
+4. 无密钥、无回调地址类 URL、未请求 DeepSeek 官方接口。
+5. 编号 07：开工前 18:35 EST ls 过 crossborder/repo 与 repo/evidence，最大编号 06；沙箱目录直接建为 sandbox/07-shopify-five-order，无改号替换。
+6. queue-output.json / compare-output.txt / run-check.txt 在 internal-archive/07-shopify-five-order/ 各留一份 .raw 副本，公开版与之一致（本轮无需打码内容）。
+7. 2026-11-09 18:38 EST：正文初稿环境行含本机用户名，改为「环境：本机 Linux」。MASKING 第4条初稿含回调/官方接口字面检索词，改为不含这些检索字样的表述。改前正文片段未单独存档（改动发生在 REDACTION 首跑之前、尚未对外）。
+8. 2026-11-09 18:39 EST 改号：与同时段《美国进口税粗算》撞用 07。公开目录与正文改为 08。旧→新对照：
+   - repo/07-Shopify五单验收法-本地假订单异常清单.md → repo/08-Shopify五单验收法-本地假订单异常清单.md
+   - repo/evidence/07-shopify-five-order/ → repo/evidence/08-shopify-five-order/
+   - internal-archive/07-shopify-five-order/ → internal-archive/08-shopify-five-order/
+   - sandbox/07-shopify-five-order/ → sandbox/08-shopify-five-order/
+   证据文件内部命令字样未再批量替换（按 05 MASKING 改号约定）；run-check.txt 仍写相对 cwd「…/07-shopify-five-order」，以本条对照为准。
+9. 2026-11-09 19:25 EST 按 Kumo 选的第1条重写：测对象改为 Grok Bot 新开后台子任务（n=3）。改前正文与当时证据整目录副本：internal-archive/08-shopify-five-order/before-agent-rewrite/（正文文件名同公开版；evidence/ 下为改写前公开证据）。
+10. 同次：把 internal-archive/08-shopify-five-order/agent-runs/ 拷入公开 evidence/08-shopify-five-order/agent-runs/。拷入后对 agent-runs 与公开正文/证据做路径扫描：本机主目录、项目根绝对路径、回调地址类字样、DeepSeek 官方地址均为 0 命中，无需再打码。agent-prompt.sha256 里的路径是相对专题路径（internal-archive/…、repo/evidence/…），按约定可保留。
+11. 方法标签补「来源是在推销自家套件的网站」；正文去掉「本轮只测这套验收法本身」；playbook 裸链删除（本篇未用）；第5单期望写成「出一行 incomplete，不填 evidence 以外的字段」；旧自写脚本跑次改称「参考答案与对照脚本自检」。
+12. 2026-11-09 19:29 EST 正式组材料入库：把 internal-archive/08-shopify-five-order/main-runs/ 中公开可用文件拷入 evidence/08-shopify-five-order/main-runs/。transcript-runA/B/C.jsonl 不入库，只在 runs.sha256 保留哈希对照。
+13. 同次打码（公开副本；原件只在 internal-archive/08-shopify-five-order/main-runs/）：
+   - dispatch-log.txt：去掉内部子任务 id 与内部任务类型字样，改为「Grok Bot background workers」和 runA/runB/runC。
+   - tool-use-check.txt：去掉内部读 transcript 工具名，改为「from each run's transcript」。
+   - SUMMARY.txt：去掉内部任务类型字样，改为「Grok Bot background workers」。
+14. 同次扫描公开 main-runs 与正文：本机主目录、项目根绝对路径、持久存储绝对路径、回调地址类字样、DeepSeek 官方地址、内部子任务 id 字样均为 0 命中。假订单里的 gid://shopify/Order/… 是虚构 id，保留。
+
+15. main-runs/runs.sha256 拆成 raw-outputs.sha256（3 行，公开可验）和 transcripts-not-public.sha256（3 行，未公开文件，只作对照）；哈希值未改。

@@ -1,0 +1,1 @@
+2026-11-09T16:33:28-0500 sdr_agent_replay on 127.0.0.1:19022 out=<evidence/11-sdr-plugin>/agent-run/captured state=<evidence/11-sdr-plugin>/agent-run/sdr-state.json tamper=True

@@ -1,0 +1,9 @@
+# MASKING · 11-sdr-plugin
+时区：America/New_York（EST）。
+- 未打码原件在专题根下 internal-archive/11-sdr-plugin/（不同步公开仓库）。
+- 公开 evidence 绝对路径已替换为 <sandbox-sdr> / <evidence/11-sdr-plugin> / <clone-sdr-plugin>。
+- agent.cordis.yml 与工具定义原文不进公开证据；tools-digest.json 仅 {name,length,sha256}（preset 另留 first_line）。
+- 假 API key 只出现在运行环境变量，不写入证据文件。
+- agent-run 超时空转的大批 req/stdout 只留在 internal-archive；公开仅 loop-timeout-summary.json。
+- 上游作者源码不整份入库；可链接 commit。
+- 2026-11-09 18:22 EST：REDACTION-CHECK.txt 第6行标题里的本机主目录与项目根字样改为 <home>、<workspace>（同 Kumo 对跨境 05 的要求）；原件在 deepseek-harness/internal-archive/11-sdr-plugin/before-home-mask/。

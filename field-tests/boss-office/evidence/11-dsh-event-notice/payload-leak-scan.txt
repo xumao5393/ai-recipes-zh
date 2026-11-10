@@ -1,0 +1,7 @@
+# 载荷泄漏扫描 · 与 drive-events 同一次 · n=1
+has_prompt_like: false
+has_workspace_path (<workspace> 字面路径): false
+has_home_path (<home>): false
+has_api_deepseek: false
+cwd_in_message: true（预期：README 写明通知含工作目录；本次 cwd=/tmp/fake-workdir-for-test，为测试替身，不是本机用户路径）
+正文未出现会话 prompt / 工具完整参数原文。

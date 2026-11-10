@@ -1,0 +1,7 @@
+
+dependencies:
++ @xuxchloris/dsh-sdr link:<sandbox-sdr>/pkg-src/node_modules/@xuxchloris/dsh-sdr
+
+Already up to date
+Done in 285ms using pnpm v10.34.6
+ec_sdr=0 ec_uq=0 elapsed=0.988

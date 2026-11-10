@@ -1,0 +1,3 @@
+sha: 7693f9a7cff956210f62ff2baf707f937d2943c6
+date: 2026-11-09T10:22:31Z
+msg: fix(upgrade): the server restarts itself onto an upgraded install (#224)

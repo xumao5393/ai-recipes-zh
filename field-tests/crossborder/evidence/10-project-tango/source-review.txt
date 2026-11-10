@@ -1,0 +1,38 @@
+# source-review · Project-Tango 安装前静态审查
+时区 EST。审查时间：2026-11-09 19:28:50–19:29:50 EST（clone 之后；npm ci / npm test / 最小读取都在审查结论之后）。
+
+## 版本钉死
+- commit：114ca95dfbda877a7ac2f0a0d75b2e57ec308365（2026-10-25 09:22:20 +0100 = 04:22:20 EDT），23 个提交，45 个跟踪文件
+  https://github.com/CoderGamerUnknow/Project-Tango/commit/114ca95dfbda877a7ac2f0a0d75b2e57ec308365
+- package.json version 3.2.0；SERVER_VERSION 同为 3.2.0（src/server.ts）
+
+## 1. 生命周期脚本（本仓库 package.json）
+- 有 pretest（跑 typecheck）、prebuild（删 dist）——只在用户执行 npm test / npm run build 时触发。
+- **没有** preinstall / install / postinstall / prepare / prepack / prepublish。
+- scripts/release-check.mjs：维护者发版前本地/CI 用，不在安装路径上。
+- inspect 脚本会 npx @modelcontextprotocol/inspector——只在用户手动跑时执行；本轮没跑。
+
+## 2. 依赖的安装脚本（装前审）
+package-lock.json 里 hasInstallScript=true 的包：
+1. esbuild@0.28.2（tsx 间接依赖）：postinstall = node install.js。
+   - 已 npm pack 阅读 install.js（internal-archive/.../dep-review/esbuild/）。
+   - 主路径：require.resolve 本机已装的 optionalDependency `@esbuild/<platform>`，不外连。
+   - 回退路径：才会 npm / https 拉 registry.npmjs.org 的平台包。
+   - fsevents@2.3.3：os=darwin，Linux 不装；scripts 无 install/postinstall（只有 prepublishOnly/build）。
+2. 直接依赖 @modelcontextprotocol/sdk、zod：无 install/postinstall（sdk 有 prepack，发版时才跑）。
+
+结论：允许 npm ci。装后日志有 npm 新的 allowScripts 警告（esbuild postinstall 未在允许列表），但 `@esbuild/linux-x64` 已在 node_modules，esbuild --version 返回 0.28.2；随后手动跑了一次 install.js，输出为空、无 “Trying to download”。日志见 run-npm-ci.txt / esbuild-install-manual（内部存档）。
+
+## 3. 网络 / 进程（运行时代码，排除 *.test.ts）
+- 传输：stdio MCP（@modelcontextprotocol/sdk StdioServerTransport）。无 listen 端口、无 fetch 外连。
+- 存储：node:sqlite（内置）或可选 JSON；数据目录 PROJECT_TANGO_DATA_DIR 或默认 ~/.project-tango。
+- child_process：只出现在测试与 scripts/release-check.mjs。
+- README 自称 “No network listener, no secrets”；与静态检索一致。
+
+## 4. 工具面
+list_all_products / get_low_stock_alerts / analyze_sales_metrics / find_orders /
+smart_restock_predictor / draft_product_copy / simulate_order_placement / reset_demo_state
+（见 src/toolNames.ts）。DataProvider 可替换为真店，本轮只用自带 mock。
+
+## 结论
+本仓库无安装期自动脚本；唯一需关注的依赖安装脚本（esbuild）已审，主路径不出网。允许 npm ci 与离线测试/最小读取。

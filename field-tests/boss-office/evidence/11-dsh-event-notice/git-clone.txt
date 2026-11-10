@@ -1,0 +1,8 @@
+# git clone 记录
+# 时间: 2026-11-09 20:22:04 EST；real 0.437s；exit 0
+# 命令: git clone https://github.com/sorchk/dsh-event-notice src
+# DNS: getent hosts github.com → 198.18.0.1（fake-ip）；clone 成功，非黑洞
+HEAD: a791d4de6dcb933278ea602e5db3cb4affbc0ede
+提交: 2026-11-10 09:17:17 +0800 版本：升级到 0.5.6，同步 CHANGELOG 与 README 的版本号与示例
+提交数: 11；跟踪文件: 21
+commit 链接: https://github.com/sorchk/dsh-event-notice/commit/a791d4de6dcb933278ea602e5db3cb4affbc0ede

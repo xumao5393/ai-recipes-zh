@@ -1,0 +1,16 @@
+# npm test（node --test）· 2026-11-09 20:22:35 EST · n=1 · unshare -rn + lo · exit 0 · real 0.497s
+# 前置：npm ci exit 0，3 packages，0 vulnerabilities（见 internal-archive/.../npm-ci.raw.txt）
+ℹ tests 55
+ℹ suites 0
+ℹ pass 55
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 358.137122
+
+real	0m0.497s
+user	0m0.400s
+sys	0m0.107s
+# 完整输出 sha256=cf44e0c5c1edb4ca22149b2e6a0f6c087f5e45fa6853083903f7afbfd35d0025
+# 原件: internal-archive/11-dsh-event-notice/raw-runs/npmtest.raw.txt

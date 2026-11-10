@@ -1,0 +1,5 @@
+tool_dir=/workspace/fourday-20261109/crossborder/sandbox/home/.local/share/uv/tools/vibe-seller
+lrwxrwxrwx 1 box box 102 Nov  9 14:41 /workspace/fourday-20261109/crossborder/sandbox/home/.local/bin/vibe-seller -> /workspace/fourday-20261109/crossborder/sandbox/home/.local/share/uv/tools/vibe-seller/bin/vibe-seller
+-rwxr-xr-x 1 box box 382 Nov  9 14:41 /workspace/fourday-20261109/crossborder/sandbox/home/.local/share/uv/tools/vibe-seller/bin/playwright
+start: 2026-11-09 14:42:08 EST
+end: 2026-11-09 14:42:14 EST

@@ -1,0 +1,50 @@
+fetched_at: 2026-11-09 21:26:13 EST
+endpoint: https://api.github.com/repos/thealirazadev/mcp-store-tools
+cmd: curl -sS -D repo-meta.headers.txt -o repo-meta.body.json -w 'http_code=... ' https://api.github.com/repos/thealirazadev/mcp-store-tools
+note: no -A / --user-agent (curl 8.14.1 default only); no retry after the 403
+result: HTTP 403
+x-ratelimit-limit: 60
+x-ratelimit-remaining: 0
+x-ratelimit-used: 60
+x-ratelimit-resource: core
+body: {"message":"API rate limit exceeded for 104.28.217.48. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting"}
+decision: 按本轮规矩，403 后这条线停止，不改请求头、不换协议/工具/主机、不带令牌重试。因此 stargazers_count / forks_count / created_at / pushed_at 本次未从 API 拿到，记为未记录。
+license_from_clone_LICENSE: MIT (Copyright (c) 2026 Ali Raza)
+version_from_pyproject: 0.7.1
+default_branch_from_clone: 未从 API 记录；clone 时当前分支可在 git-clone 原始日志中看到，公开文件不另写未核过的默认分支名。
+html_url: https://github.com/thealirazadev/mcp-store-tools
+
+==== fetch log ====
+time: 2026-11-09 21:26:13 EST
+cmd: curl -sS -D repo-meta.headers.txt -o repo-meta.body.json -w 'http_code=%{http_code} url_effective=%{url_effective} redirect_url=%{redirect_url} size=%{size_download} time=%{time_total}\n' https://api.github.com/repos/thealirazadev/mcp-store-tools
+note: no -A / --user-agent (curl default UA only); no retry; system DNS
+cwd: <sandbox>/15-mcp-store-tools/raw
+http_code=403 url_effective=https://api.github.com/repos/thealirazadev/mcp-store-tools redirect_url= size=279 time=0.153664
+fetch_exit: 0
+time_end: 2026-11-09 21:26:14 EST
+
+
+==== response headers ====
+HTTP/2 403 
+date: Tue, 10 Nov 2026 02:26:13 GMT
+server: Varnish
+strict-transport-security: max-age=31536000; includeSubdomains; preload
+x-content-type-options: nosniff
+x-frame-options: deny
+x-xss-protection: 1; mode=block
+content-security-policy: default-src 'none'; style-src 'unsafe-inline'
+access-control-allow-origin: *
+access-control-expose-headers: ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-RateLimit-Used, X-RateLimit-Resource, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation, Sunset
+content-type: application/json; charset=utf-8
+referrer-policy: origin-when-cross-origin, strict-origin-when-cross-origin
+x-github-media-type: github.v3; format=json
+x-ratelimit-limit: 60
+x-ratelimit-remaining: 0
+x-ratelimit-used: 60
+x-ratelimit-resource: core
+x-ratelimit-reset: 1794278702
+content-length: 279
+x-github-request-id: 620D:1E7C:1C2DD3:5971E6:6AF280C5
+x-github-edge-region: iad
+
+

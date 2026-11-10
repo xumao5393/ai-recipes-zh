@@ -1,0 +1,24 @@
+# TERMS-DECISION · mock.shop
+时间：2026-11-09 21:28:01–21:28:03 EST
+目的：查找明确适用于 mock.shop 的条款。本轮即使条款允许也不断开 mock.shop / Shopify 接口，也不跑 --demo。
+请求规则：curl 8.14.1 默认 UA，不加 -A / --user-agent；不加 -L；每个 URL 只请求一次；遇 403 / 拦截页 / 明确拒绝则停，不改头、不换协议/工具/主机、不直连 IP。系统 DNS：mock.shop → 198.18.0.1（与 github.com、pypi.org 相同的本机代理假 IP，不当作 sinkhole）。
+
+## 实际请求（均 n=1，完整命令与响应头/正文见 terms/）
+
+| URL | HTTP | 正文（逐字） | sha256 |
+|---|---|---|---|
+| https://mock.shop/terms | 404 | No page at /terms. Start at https://mock.shop/llms.txt | 4d77fd79c7c303a1849a52773462f22ab84caead05831ea757dd20329f2808cc |
+| https://mock.shop/terms-of-service | 404 | No page at /terms-of-service. Start at https://mock.shop/llms.txt | 1ce4c5f5bbd70ea5b1a9c0e399e1f6cd297179a4066fca4cf57cb8ae66af1f9d |
+| https://mock.shop/tos | 404 | No page at /tos. Start at https://mock.shop/llms.txt | 5c27c1365ded3121e5a4dae20b0fbbd5c4d6666f6a11995012627b8f3a7d98cf |
+| https://mock.shop/legal | 404 | No page at /legal. Start at https://mock.shop/llms.txt | 58668fd9f3f1b2bbab4b77f6d48540faca2d7ad6b4753d3721fe4a3cc4867c5a |
+| https://mock.shop/privacy | 404 | No page at /privacy. Start at https://mock.shop/llms.txt | 4b8f5c88de371f6eb4f16fb891d199c468b510812cc93ba668144fe16f1b406d |
+| https://mock.shop/privacy-policy | 404 | No page at /privacy-policy. Start at https://mock.shop/llms.txt | fa5f815b4398c02c4f33382b92b157d9eddfde2159e9c8c440a57466fe8092d4 |
+| https://mock.shop/legal/terms | 404 | No page at /legal/terms. Start at https://mock.shop/llms.txt | e6bba0fd263424f416d6ee4338821793f81ddda2e117c9f0963a3667e00a1f53 |
+| https://mock.shop/aup | 404 | No page at /aup. Start at https://mock.shop/llms.txt | a0ea4354f3e034a1cd129d7bba4941da13660e4e9757783eede67137331c1635 |
+
+没有 403，没有拦截页。没有抓首页，也没有请求 https://mock.shop/api。
+404 正文都指向 https://mock.shop/llms.txt。llms.txt 不是条款/法律页，本轮没有再请求它，也没有据此再换路径。
+
+## 决定
+
+读不到明确适用于 mock.shop 的条款原文。按团队规则（读不到等于不允许），以及 Kumo 的口径（产品页「auth-free, no API keys」一类文案不能当依据），本轮不得连接 mock.shop 或任何 Shopify 接口。本轮本来也只做离线部分，未连接。

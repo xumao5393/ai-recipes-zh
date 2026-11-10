@@ -1,0 +1,3 @@
+workaround2: apt install sqlite3 failed same as lsof. Downloaded sqlite3_3.46.1-7+deb13u2_amd64.deb (+ libsqlite3-0_3.46.1-7+deb13u2_amd64.deb if needed), extracted to $HOME/.local/bin/sqlite3
+sqlite3_sha256: 877b00bd5ab6a3792fdffebd4aeebe0b8178df3c21f0e06f6a3c5186f7a799d9
+lib_sha256: 0a459adaffd901109f7811ab65f58e7a957b4907d05539cf3d1184efdcde0468

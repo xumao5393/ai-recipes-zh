@@ -1,0 +1,11 @@
+{
+  "ok": true,
+  "task_id": "sdr_20261109213653_7534007c",
+  "email_id": "draft_1_c0613a",
+  "stored_draft_hash_field": "9b8d919b36b443a28bbc4caacb60e29c7624f3120b43b454d8fc7749f0f11a50",
+  "hash_before_tamper": "9b8d919b36b443a28bbc4caacb60e29c7624f3120b43b454d8fc7749f0f11a50",
+  "hash_after_tamper": "ee7951a0bc74c062ba3ae0e2fc87713e5c7362b218272b7f23739bb4e6895f53",
+  "approval_stored_hash": "9b8d919b36b443a28bbc4caacb60e29c7624f3120b43b454d8fc7749f0f11a50",
+  "approval_status": "approved",
+  "hashes_equal": false
+}

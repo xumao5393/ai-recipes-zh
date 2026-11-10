@@ -1,0 +1,297 @@
+time_start: 2026-11-09 21:28:01 EST
+policy: curl default UA only (curl 8.14.1, no -A/--user-agent); no -L; one request per URL; stop the mock.shop line on 403, blocking page, or explicit refusal; no header/protocol/tool/host/IP retry
+purpose: find terms that explicitly apply to mock.shop; not connecting to GraphQL/API or --demo
+
+======= 01 https://mock.shop/terms ======
+time: 2026-11-09 21:28:01 EST
+cmd: curl -sS -D <sandbox>/15-mcp-store-tools/raw/terms/01-mock.shop_terms.headers -o <sandbox>/15-mcp-store-tools/raw/terms/01-mock.shop_terms.body -w 'http_code=%{http_code} url_effective=%{url_effective} redirect_url=%{redirect_url} size_download=%{size_download} time_total=%{time_total} content_type=%{content_type}\n' https://mock.shop/terms
+note: no -A, no -L, no retry, system DNS (mock.shop -> 198.18.0.1 proxy, same as github.com/pypi.org)
+curl_writeout: http_code=404 url_effective=https://mock.shop/terms redirect_url= size_download=55 time_total=0.276129 content_type=text/plain; charset=utf-8
+curl_exit: 0
+body_bytes: 55
+headers:
+HTTP/2 404 
+date: Tue, 10 Nov 2026 02:28:01 GMT
+content-type: text/plain; charset=utf-8
+content-length: 55
+x-frame-options: SAMEORIGIN
+x-xss-protection: 0
+x-content-type-options: nosniff
+x-permitted-cross-domain-policies: none
+referrer-policy: strict-origin-when-cross-origin
+link: <https://mock.shop/llms.txt>; rel="llms-txt"
+vary: Accept
+content-security-policy: default-src 'none'; base-uri 'none'; frame-ancestors 'none'; form-action 'none'; script-src 'self' https://cdn.shopify.com/shopifycloud/mock_shop/; report-to csp-reports; img-src 'self' https://cdn.shopify.com/shopifycloud/mock_shop/; style-src 'self' 'unsafe-inline' https://cdn.shopify.com/shopifycloud/mock_shop/; font-src 'self' https://cdn.shopify.com/shopifycloud/mock_shop/
+cache-control: no-cache
+x-runtime: 0.001410
+strict-transport-security: max-age=63072000; includeSubDomains; preload
+server-timing: processing;dur=2, socket_queue;dur=3.746
+reporting-endpoints: csp-reports="https://security-reports.shopifysvc.com/reporting-api?source_app=MockShop&policy_id=45766&controller=docs&action=show", other="https://security-reports.shopifysvc.com/reporting-api?source_app=MockShop&policy_id=45766&controller=docs&action=show"
+x-dc: gcp-us-east1,gcp-us-central1
+x-request-id: 01a1c348-a798-721e-985f-d9fd150cb5fd-1794277681
+server: envoy
+x-shopify-gclb-trace-timing: 1794277681.048
+via: 1.1 google
+nel: {"max_age":0}
+alt-svc: h3=":443"; ma=2592000
+
+body_sha256: 4d77fd79c7c303a1849a52773462f22ab84caead05831ea757dd20329f2808cc
+parsed_http_code: 404
+
+======= 02 https://mock.shop/terms-of-service ======
+time: 2026-11-09 21:28:01 EST
+cmd: curl -sS -D <sandbox>/15-mcp-store-tools/raw/terms/02-mock.shop_terms-of-service.headers -o <sandbox>/15-mcp-store-tools/raw/terms/02-mock.shop_terms-of-service.body -w 'http_code=%{http_code} url_effective=%{url_effective} redirect_url=%{redirect_url} size_download=%{size_download} time_total=%{time_total} content_type=%{content_type}\n' https://mock.shop/terms-of-service
+note: no -A, no -L, no retry, system DNS (mock.shop -> 198.18.0.1 proxy, same as github.com/pypi.org)
+curl_writeout: http_code=404 url_effective=https://mock.shop/terms-of-service redirect_url= size_download=66 time_total=0.267690 content_type=text/plain; charset=utf-8
+curl_exit: 0
+body_bytes: 66
+headers:
+HTTP/2 404 
+date: Tue, 10 Nov 2026 02:28:01 GMT
+content-type: text/plain; charset=utf-8
+content-length: 66
+x-frame-options: SAMEORIGIN
+x-xss-protection: 0
+x-content-type-options: nosniff
+x-permitted-cross-domain-policies: none
+referrer-policy: strict-origin-when-cross-origin
+link: <https://mock.shop/llms.txt>; rel="llms-txt"
+vary: Accept
+content-security-policy: default-src 'none'; base-uri 'none'; frame-ancestors 'none'; form-action 'none'; script-src 'self' https://cdn.shopify.com/shopifycloud/mock_shop/; report-to csp-reports; img-src 'self' https://cdn.shopify.com/shopifycloud/mock_shop/; style-src 'self' 'unsafe-inline' https://cdn.shopify.com/shopifycloud/mock_shop/; font-src 'self' https://cdn.shopify.com/shopifycloud/mock_shop/
+cache-control: no-cache
+x-runtime: 0.001581
+strict-transport-security: max-age=15552000; includeSubDomains; preload
+server-timing: processing;dur=7, socket_queue;dur=3.429
+reporting-endpoints: csp-reports="https://security-reports.shopifysvc.com/reporting-api?source_app=MockShop&policy_id=45766&controller=docs&action=show", other="https://security-reports.shopifysvc.com/reporting-api?source_app=MockShop&policy_id=45766&controller=docs&action=show"
+nel: {"report_to":"cf-nel","success_fraction":0.01,"max_age":604800}
+x-dc: gcp-us-east1,gcp-us-central1
+x-request-id: 4d2ae7f6-c7a2-475d-93c8-cd484bd34d3c-1794277681
+server: cloudflare
+report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=tNN07c0bgWcYoicEKt7DfqpgWPmjRZBJPr7lWm8Yb4w%2FaFXBPyesvasLHEoTFNIfllZifGVs0%2FC41YC3j8Zd1gbJKU%2F4N24Klad%2Bh8I%2BKSjDcICjCdcKvD%2Bp%2Bw%3D%3D"}]}
+alt-svc: h3=":443"; ma=86400
+cf-cache-status: DYNAMIC
+cf-ray: a5819f145b971904-ATL
+
+body_sha256: 1ce4c5f5bbd70ea5b1a9c0e399e1f6cd297179a4066fca4cf57cb8ae66af1f9d
+parsed_http_code: 404
+
+======= 03 https://mock.shop/tos ======
+time: 2026-11-09 21:28:01 EST
+cmd: curl -sS -D <sandbox>/15-mcp-store-tools/raw/terms/03-mock.shop_tos.headers -o <sandbox>/15-mcp-store-tools/raw/terms/03-mock.shop_tos.body -w 'http_code=%{http_code} url_effective=%{url_effective} redirect_url=%{redirect_url} size_download=%{size_download} time_total=%{time_total} content_type=%{content_type}\n' https://mock.shop/tos
+note: no -A, no -L, no retry, system DNS (mock.shop -> 198.18.0.1 proxy, same as github.com/pypi.org)
+curl_writeout: http_code=404 url_effective=https://mock.shop/tos redirect_url= size_download=53 time_total=0.286620 content_type=text/plain; charset=utf-8
+curl_exit: 0
+body_bytes: 53
+headers:
+HTTP/2 404 
+date: Tue, 10 Nov 2026 02:28:01 GMT
+content-type: text/plain; charset=utf-8
+content-length: 53
+x-frame-options: SAMEORIGIN
+x-xss-protection: 0
+x-content-type-options: nosniff
+x-permitted-cross-domain-policies: none
+referrer-policy: strict-origin-when-cross-origin
+link: <https://mock.shop/llms.txt>; rel="llms-txt"
+vary: Accept
+content-security-policy: default-src 'none'; base-uri 'none'; frame-ancestors 'none'; form-action 'none'; script-src 'self' https://cdn.shopify.com/shopifycloud/mock_shop/; report-to csp-reports; img-src 'self' https://cdn.shopify.com/shopifycloud/mock_shop/; style-src 'self' 'unsafe-inline' https://cdn.shopify.com/shopifycloud/mock_shop/; font-src 'self' https://cdn.shopify.com/shopifycloud/mock_shop/
+cache-control: no-cache
+x-runtime: 0.001459
+strict-transport-security: max-age=63072000; includeSubDomains; preload
+server-timing: processing;dur=7, socket_queue;dur=2.563
+reporting-endpoints: csp-reports="https://security-reports.shopifysvc.com/reporting-api?source_app=MockShop&policy_id=45766&controller=docs&action=show", other="https://security-reports.shopifysvc.com/reporting-api?source_app=MockShop&policy_id=45766&controller=docs&action=show"
+x-dc: gcp-us-east1,gcp-us-central1
+x-request-id: 01a1c348-aa06-71d1-9b1a-eff416c80bf4-1794277681
+server: envoy
+x-shopify-gclb-trace-timing: 1794277681.670
+via: 1.1 google
+nel: {"max_age":0}
+alt-svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+body_sha256: 5c27c1365ded3121e5a4dae20b0fbbd5c4d6666f6a11995012627b8f3a7d98cf
+parsed_http_code: 404
+
+======= 04 https://mock.shop/legal ======
+time: 2026-11-09 21:28:01 EST
+cmd: curl -sS -D <sandbox>/15-mcp-store-tools/raw/terms/04-mock.shop_legal.headers -o <sandbox>/15-mcp-store-tools/raw/terms/04-mock.shop_legal.body -w 'http_code=%{http_code} url_effective=%{url_effective} redirect_url=%{redirect_url} size_download=%{size_download} time_total=%{time_total} content_type=%{content_type}\n' https://mock.shop/legal
+note: no -A, no -L, no retry, system DNS (mock.shop -> 198.18.0.1 proxy, same as github.com/pypi.org)
+curl_writeout: http_code=404 url_effective=https://mock.shop/legal redirect_url= size_download=55 time_total=0.269456 content_type=text/plain; charset=utf-8
+curl_exit: 0
+body_bytes: 55
+headers:
+HTTP/2 404 
+date: Tue, 10 Nov 2026 02:28:02 GMT
+content-type: text/plain; charset=utf-8
+content-length: 55
+x-frame-options: SAMEORIGIN
+x-xss-protection: 0
+x-content-type-options: nosniff
+x-permitted-cross-domain-policies: none
+referrer-policy: strict-origin-when-cross-origin
+link: <https://mock.shop/llms.txt>; rel="llms-txt"
+vary: Accept
+content-security-policy: default-src 'none'; base-uri 'none'; frame-ancestors 'none'; form-action 'none'; script-src 'self' https://cdn.shopify.com/shopifycloud/mock_shop/; report-to csp-reports; img-src 'self' https://cdn.shopify.com/shopifycloud/mock_shop/; style-src 'self' 'unsafe-inline' https://cdn.shopify.com/shopifycloud/mock_shop/; font-src 'self' https://cdn.shopify.com/shopifycloud/mock_shop/
+cache-control: no-cache
+x-runtime: 0.001432
+strict-transport-security: max-age=63072000; includeSubDomains; preload
+server-timing: processing;dur=2, socket_queue;dur=2.754
+reporting-endpoints: csp-reports="https://security-reports.shopifysvc.com/reporting-api?source_app=MockShop&policy_id=45766&controller=docs&action=show", other="https://security-reports.shopifysvc.com/reporting-api?source_app=MockShop&policy_id=45766&controller=docs&action=show"
+x-dc: gcp-us-east1,gcp-us-central1
+x-request-id: 01a1c348-ab28-754b-8220-d64105eb6a41-1794277681
+server: envoy
+x-shopify-gclb-trace-timing: 1794277681.960
+via: 1.1 google
+nel: {"max_age":0}
+alt-svc: h3=":443"; ma=2592000
+
+body_sha256: 58668fd9f3f1b2bbab4b77f6d48540faca2d7ad6b4753d3721fe4a3cc4867c5a
+parsed_http_code: 404
+
+======= 05 https://mock.shop/privacy ======
+time: 2026-11-09 21:28:02 EST
+cmd: curl -sS -D <sandbox>/15-mcp-store-tools/raw/terms/05-mock.shop_privacy.headers -o <sandbox>/15-mcp-store-tools/raw/terms/05-mock.shop_privacy.body -w 'http_code=%{http_code} url_effective=%{url_effective} redirect_url=%{redirect_url} size_download=%{size_download} time_total=%{time_total} content_type=%{content_type}\n' https://mock.shop/privacy
+note: no -A, no -L, no retry, system DNS (mock.shop -> 198.18.0.1 proxy, same as github.com/pypi.org)
+curl_writeout: http_code=404 url_effective=https://mock.shop/privacy redirect_url= size_download=57 time_total=0.333874 content_type=text/plain; charset=utf-8
+curl_exit: 0
+body_bytes: 57
+headers:
+HTTP/2 404 
+date: Tue, 10 Nov 2026 02:28:02 GMT
+content-type: text/plain; charset=utf-8
+content-length: 57
+x-frame-options: SAMEORIGIN
+x-xss-protection: 0
+x-content-type-options: nosniff
+x-permitted-cross-domain-policies: none
+referrer-policy: strict-origin-when-cross-origin
+link: <https://mock.shop/llms.txt>; rel="llms-txt"
+vary: Accept
+content-security-policy: default-src 'none'; base-uri 'none'; frame-ancestors 'none'; form-action 'none'; script-src 'self' https://cdn.shopify.com/shopifycloud/mock_shop/; report-to csp-reports; img-src 'self' https://cdn.shopify.com/shopifycloud/mock_shop/; style-src 'self' 'unsafe-inline' https://cdn.shopify.com/shopifycloud/mock_shop/; font-src 'self' https://cdn.shopify.com/shopifycloud/mock_shop/
+cache-control: no-cache
+x-runtime: 0.001616
+strict-transport-security: max-age=15552000; includeSubDomains; preload
+server-timing: processing;dur=2, socket_queue;dur=3.645
+reporting-endpoints: csp-reports="https://security-reports.shopifysvc.com/reporting-api?source_app=MockShop&policy_id=45766&controller=docs&action=show", other="https://security-reports.shopifysvc.com/reporting-api?source_app=MockShop&policy_id=45766&controller=docs&action=show"
+nel: {"report_to":"cf-nel","success_fraction":0.01,"max_age":604800}
+x-dc: gcp-us-east1,gcp-us-central1
+x-request-id: 80238339-821a-49f9-944e-6e26a1c009c8-1794277682
+server: cloudflare
+report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=ETcWXkMEbkPh0g6mbdoCq4KSNNZ7tZi3u8prnjDuI2g62eWwXlAX%2BAQM3V3b3ovzsUG0eEKx%2BtK2t4xe3UFVXCbm7Ez3rNIlJ%2BydT3pTP2bSMyLGSbgY2tlHOA%3D%3D"}]}
+alt-svc: h3=":443"; ma=86400
+cf-cache-status: DYNAMIC
+cf-ray: a5819f1a4e3cb03e-ATL
+
+body_sha256: 4b8f5c88de371f6eb4f16fb891d199c468b510812cc93ba668144fe16f1b406d
+parsed_http_code: 404
+
+======= 06 https://mock.shop/privacy-policy ======
+time: 2026-11-09 21:28:02 EST
+cmd: curl -sS -D <sandbox>/15-mcp-store-tools/raw/terms/06-mock.shop_privacy-policy.headers -o <sandbox>/15-mcp-store-tools/raw/terms/06-mock.shop_privacy-policy.body -w 'http_code=%{http_code} url_effective=%{url_effective} redirect_url=%{redirect_url} size_download=%{size_download} time_total=%{time_total} content_type=%{content_type}\n' https://mock.shop/privacy-policy
+note: no -A, no -L, no retry, system DNS (mock.shop -> 198.18.0.1 proxy, same as github.com/pypi.org)
+curl_writeout: http_code=404 url_effective=https://mock.shop/privacy-policy redirect_url= size_download=64 time_total=0.233870 content_type=text/plain; charset=utf-8
+curl_exit: 0
+body_bytes: 64
+headers:
+HTTP/2 404 
+date: Tue, 10 Nov 2026 02:28:02 GMT
+content-type: text/plain; charset=utf-8
+content-length: 64
+x-frame-options: SAMEORIGIN
+x-xss-protection: 0
+x-content-type-options: nosniff
+x-permitted-cross-domain-policies: none
+referrer-policy: strict-origin-when-cross-origin
+link: <https://mock.shop/llms.txt>; rel="llms-txt"
+vary: Accept
+content-security-policy: default-src 'none'; base-uri 'none'; frame-ancestors 'none'; form-action 'none'; script-src 'self' https://cdn.shopify.com/shopifycloud/mock_shop/; report-to csp-reports; img-src 'self' https://cdn.shopify.com/shopifycloud/mock_shop/; style-src 'self' 'unsafe-inline' https://cdn.shopify.com/shopifycloud/mock_shop/; font-src 'self' https://cdn.shopify.com/shopifycloud/mock_shop/
+cache-control: no-cache
+x-runtime: 0.002035
+strict-transport-security: max-age=63072000; includeSubDomains; preload
+server-timing: processing;dur=2, socket_queue;dur=2.483
+reporting-endpoints: csp-reports="https://security-reports.shopifysvc.com/reporting-api?source_app=MockShop&policy_id=45766&controller=docs&action=show", other="https://security-reports.shopifysvc.com/reporting-api?source_app=MockShop&policy_id=45766&controller=docs&action=show"
+x-dc: gcp-us-east1,gcp-us-central1
+x-request-id: 01a1c348-ada7-75c8-98b9-cb57bf19bb57-1794277682
+server: envoy
+x-shopify-gclb-trace-timing: 1794277682.599
+via: 1.1 google
+nel: {"max_age":0}
+alt-svc: h3=":443"; ma=2592000
+
+body_sha256: fa5f815b4398c02c4f33382b92b157d9eddfde2159e9c8c440a57466fe8092d4
+parsed_http_code: 404
+
+======= 07 https://mock.shop/legal/terms ======
+time: 2026-11-09 21:28:02 EST
+cmd: curl -sS -D <sandbox>/15-mcp-store-tools/raw/terms/07-mock.shop_legal_terms.headers -o <sandbox>/15-mcp-store-tools/raw/terms/07-mock.shop_legal_terms.body -w 'http_code=%{http_code} url_effective=%{url_effective} redirect_url=%{redirect_url} size_download=%{size_download} time_total=%{time_total} content_type=%{content_type}\n' https://mock.shop/legal/terms
+note: no -A, no -L, no retry, system DNS (mock.shop -> 198.18.0.1 proxy, same as github.com/pypi.org)
+curl_writeout: http_code=404 url_effective=https://mock.shop/legal/terms redirect_url= size_download=61 time_total=0.272913 content_type=text/plain; charset=utf-8
+curl_exit: 0
+body_bytes: 61
+headers:
+HTTP/2 404 
+date: Tue, 10 Nov 2026 02:28:02 GMT
+content-type: text/plain; charset=utf-8
+content-length: 61
+x-frame-options: SAMEORIGIN
+x-xss-protection: 0
+x-content-type-options: nosniff
+x-permitted-cross-domain-policies: none
+referrer-policy: strict-origin-when-cross-origin
+link: <https://mock.shop/llms.txt>; rel="llms-txt"
+vary: Accept
+content-security-policy: default-src 'none'; base-uri 'none'; frame-ancestors 'none'; form-action 'none'; script-src 'self' https://cdn.shopify.com/shopifycloud/mock_shop/; report-to csp-reports; img-src 'self' https://cdn.shopify.com/shopifycloud/mock_shop/; style-src 'self' 'unsafe-inline' https://cdn.shopify.com/shopifycloud/mock_shop/; font-src 'self' https://cdn.shopify.com/shopifycloud/mock_shop/
+cache-control: no-cache
+x-runtime: 0.001400
+strict-transport-security: max-age=63072000; includeSubDomains; preload
+server-timing: processing;dur=2, socket_queue;dur=2.539
+reporting-endpoints: csp-reports="https://security-reports.shopifysvc.com/reporting-api?source_app=MockShop&policy_id=45766&controller=docs&action=show", other="https://security-reports.shopifysvc.com/reporting-api?source_app=MockShop&policy_id=45766&controller=docs&action=show"
+x-dc: gcp-us-east1,gcp-us-central1
+x-request-id: 01a1c348-aec2-7132-b37f-ace7b483b4e7-1794277682
+server: envoy
+x-shopify-gclb-trace-timing: 1794277682.882
+via: 1.1 google
+nel: {"max_age":0}
+alt-svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+body_sha256: e6bba0fd263424f416d6ee4338821793f81ddda2e117c9f0963a3667e00a1f53
+parsed_http_code: 404
+
+======= 08 https://mock.shop/aup ======
+time: 2026-11-09 21:28:03 EST
+cmd: curl -sS -D <sandbox>/15-mcp-store-tools/raw/terms/08-mock.shop_aup.headers -o <sandbox>/15-mcp-store-tools/raw/terms/08-mock.shop_aup.body -w 'http_code=%{http_code} url_effective=%{url_effective} redirect_url=%{redirect_url} size_download=%{size_download} time_total=%{time_total} content_type=%{content_type}\n' https://mock.shop/aup
+note: no -A, no -L, no retry, system DNS (mock.shop -> 198.18.0.1 proxy, same as github.com/pypi.org)
+curl_writeout: http_code=404 url_effective=https://mock.shop/aup redirect_url= size_download=53 time_total=0.251108 content_type=text/plain; charset=utf-8
+curl_exit: 0
+body_bytes: 53
+headers:
+HTTP/2 404 
+date: Tue, 10 Nov 2026 02:28:03 GMT
+content-type: text/plain; charset=utf-8
+content-length: 53
+x-frame-options: SAMEORIGIN
+x-xss-protection: 0
+x-content-type-options: nosniff
+x-permitted-cross-domain-policies: none
+referrer-policy: strict-origin-when-cross-origin
+link: <https://mock.shop/llms.txt>; rel="llms-txt"
+vary: Accept
+content-security-policy: default-src 'none'; base-uri 'none'; frame-ancestors 'none'; form-action 'none'; script-src 'self' https://cdn.shopify.com/shopifycloud/mock_shop/; report-to csp-reports; img-src 'self' https://cdn.shopify.com/shopifycloud/mock_shop/; style-src 'self' 'unsafe-inline' https://cdn.shopify.com/shopifycloud/mock_shop/; font-src 'self' https://cdn.shopify.com/shopifycloud/mock_shop/
+cache-control: no-cache
+x-runtime: 0.001316
+strict-transport-security: max-age=15552000; includeSubDomains; preload
+server-timing: processing;dur=2, socket_queue;dur=3.611
+reporting-endpoints: csp-reports="https://security-reports.shopifysvc.com/reporting-api?source_app=MockShop&policy_id=45766&controller=docs&action=show", other="https://security-reports.shopifysvc.com/reporting-api?source_app=MockShop&policy_id=45766&controller=docs&action=show"
+nel: {"report_to":"cf-nel","success_fraction":0.01,"max_age":604800}
+x-dc: gcp-us-east1,gcp-us-central1
+x-request-id: ed96acbc-c7e6-4555-ae59-524ec1fb762f-1794277683
+server: cloudflare
+report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=XE5AfnfWkj4gtvPdS6RXH7sNKXkeBGj2QomeOtGAGnT4x6uIE2duQeV7yID%2F8m5kyNcp71xrTnvEN4%2BIT8kH3ToURDtoJZ2wMYGdpLOzCtnin9LP2c0WQWZfiA%3D%3D"}]}
+alt-svc: h3=":443"; ma=86400
+cf-cache-status: DYNAMIC
+cf-ray: a5819f1fba11adc6-ATL
+
+body_sha256: a0ea4354f3e034a1cd129d7bba4941da13660e4e9757783eede67137331c1635
+parsed_http_code: 404
+
+time_end: 2026-11-09 21:28:03 EST
+stop_flag=0

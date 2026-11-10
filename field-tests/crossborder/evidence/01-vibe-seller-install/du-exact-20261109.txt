@@ -1,0 +1,26 @@
+date: 2026-11-09 14:48:50 EST
+=== du -sb ===
+741935865	/workspace/fourday-20261109/crossborder/sandbox/home/.local/share/uv/tools/vibe-seller
+711303470	/workspace/fourday-20261109/crossborder/sandbox/home/.cache/ms-playwright
+402933377	/workspace/fourday-20261109/crossborder/sandbox/home/.vibe-seller
+404202506	/workspace/fourday-20261109/crossborder/sandbox/home
+=== du -sh ===
+741M	/workspace/fourday-20261109/crossborder/sandbox/home/.local/share/uv/tools/vibe-seller
+681M	/workspace/fourday-20261109/crossborder/sandbox/home/.cache/ms-playwright
+387M	/workspace/fourday-20261109/crossborder/sandbox/home/.vibe-seller
+411M	/workspace/fourday-20261109/crossborder/sandbox/home
+=== ls -la HOME top ===
+total 28
+drwxr-xr-x  7 box box 4096 Nov  9 14:43 .
+drwxr-xr-x  4 box box 4096 Nov  9 14:44 ..
+drwxr-xr-x  8 box box 4096 Nov  9 14:44 .cache
+drwx------  5 box box 4096 Nov  9 14:44 .config
+drwxr-xr-x  4 box box 4096 Nov  9 14:41 .local
+drwxr-xr-x  4 box box 4096 Nov  9 14:41 .npm
+drwxr-xr-x 17 box box 4096 Nov  9 14:44 .vibe-seller
+=== find large under HOME ===
+103M	<home>/.config
+125M	<home>/.local
+157M	<home>/.npm
+343M	<home>/.vibe-seller
+1.5G	<home>/.cache

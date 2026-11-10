@@ -1,0 +1,23 @@
+# 本地假店最小读取 · 2026-11-09 19:32:12–19:32:26 EST · n=1 · unshare -rn + lo up · exit 0
+# 客户端: 本目录 run_min_read2.mjs（MCP SDK StdioClientTransport）
+# 服务端: tsx src/index.ts；PROJECT_TANGO_DATA_DIR 指向一次性临时目录（不碰 ~/.project-tango）
+# 无外网请求；stdio 本地 IPC。
+PRODUCT_KEYS id,name,sku,price,inventoryCount,category,tags,description
+PRODUCT_COUNT 13
+PRODUCT_SAMPLE [{"id":"prod_001","sku":"TCH-AB-001","name":"AeroBuds Pro Wireless Earbuds","category":"tech","price":129.99},{"id":"prod_002","sku":"TCH-PF-004","name":"PulseFit Smart Watch Series 4","category":"tech","price":249},{"id":"prod_003","sku":"TCH-DV-1TB","name":"DataVault Portable SSD 1TB","category":"tech","price":89.5}]
+LOW_KEYS filters,thresholdUsed,alertCount,criticalCount,alerts
+LOW_ALERT_KEYS productId,productName,currentStock,severity
+LOW_SUMMARY {"alertCount":6,"criticalCount":4,"thresholdUsed":5,"alerts":[{"productId":"prod_004","productName":"TypeCraft Mechanical Keyboard","currentStock":0,"severity":"critical"},{"productId":"prod_006","productName":"Highland Merino Wool Sweater","currentStock":1,"severity":"critical"},{"productId":"prod_002","productName":"PulseFit Smart Watch Series 4","currentStock":2,"severity":"critical"},{"productId":"prod_011","productName":"Hearthstone Enameled Cast Iron Dutch Oven","currentStock":2,"severity":"critical"},{"productId":"prod_013","productName":"Vaporly Ultrasonic Aromatherapy Diffuser","currentStock":3,"severity":"low"}]}
+ORDERS {"isError":false,"count":5,"keys":["count","totalMatches","limit","filters","orders"],"first":{"id":"ord_1142","customerName":"Amara Diallo","totalAmount":179,"status":"pending","date":"2026-11-10","lines":[{"productId":"prod_003","productName":"DataVault Portable SSD 1TB","quantity":2,"unitPrice":89.5,"lineTotal":179}]}}
+RESTOCK_SUMMARY {"thresholdUsed":5,"window":{"start":"2026-10-12","end":"2026-11-10","ordersInWindow":142,"totalOrders":142},"recommendationCount":6,"top3":[{"productId":"prod_004","productName":"TypeCraft Mechanical Keyboard","sku":"TCH-TC-KB2","currentStock":0,"unitsSoldInWindow":77,"dailyVelocity":2.567,"daysOfCover":0,"basis":"demand_velocity","recommendedReorderQuantity":54},{"productId":"prod_006","productName":"Highland Merino Wool Sweater","sku":"APL-HM-SWT","currentStock":1,"unitsSoldInWindow":63,"dailyVelocity":2.1,"daysOfCover":0.5,"basis":"demand_velocity","recommendedReorderQuantity":44},{"productId":"prod_011","productName":"Hearthstone Enameled Cast Iron Dutch Oven","sku":"HOM-HS-DO6","currentStock":2,"unitsSoldInWindow":72,"dailyVelocity":2.4,"daysOfCover":0.8,"basis":"demand_velocity","recommendedReorderQuantity":49}]}
+STDERR Project Tango MCP server running on stdio. State: /tmp/tango-min2-jXqfzm/state.db (SQLite, WAL)
+DATA_DIR /tmp/tango-min2-jXqfzm state.db,state.db-shm,state.db-wal
+MIN_READ2 n=1 PASS
+
+real	0m0.481s
+user	0m0.603s
+sys	0m0.122s
+
+# 备注: find_orders 无过滤条件时会报错要求至少提供 order_id 或 customer_name（第 1 次最小读取已记录）；
+# 本次传 customer_name="a"、limit=5。README 称 "a" 可匹配 130/142；本次因 limit=5 只返回 5 条，totalMatches 未在摘要打印。
+# 订单日期字段出现 2026-11-10：与种子数据/“今天”边界有关（箱时区 EST 当时为 11-09），照实记录，未改种子。

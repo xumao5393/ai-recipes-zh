@@ -1,0 +1,4 @@
+# 版本声明 · n=1 · 2026-11-09 20:22 EST
+package.json：engines.node >=20；无 engines.dsh；无 peerDependencies。
+结论：未声明 dsh 版本范围，无法做 semver.satisfies 对照。未使用 allow-version / --force。
+本机 dsh：0.2.2-rc.1。

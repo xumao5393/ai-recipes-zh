@@ -1,0 +1,6 @@
+date: 2026-11-09 14:49:51 EST
+CLI subcommands (from --help): start, stop, upgrade — no reset-auth
+start --host default documented as 0.0.0.0 (cli-help-20261109.txt)
+README claims: vibe-seller reset-auth status|enable|disable|password
+Packaged CLI rejects reset-auth (cli-help-20261109.txt)
+Settings key auth_required observed false on fresh install (api-settings / api-auth-status)

@@ -1,0 +1,4 @@
+方法标签（按 Kumo / IDEAS #40 + 挑刺员 08 意见）：方法来自网站文章，没有他人实测数据。来源是在推销自家套件的网站。
+原始链接：https://whiskerbeacon.com/guides/shopify-automation-with-grok-bot/
+正式组：3 次新开的 Grok Bot 后台子任务（不带本对话上下文）只拿中性名假订单 JSON + 原文 first-task instruction 摘录；未接 Shopify；未登录；未注册；未发消息。冻结打分 1/3 PASS。只覆盖这一条提示词、这一组 5 单、n=3。
+页面末尾推销 Full Front Office Kit。预试（agent-runs/）不算正式结果。

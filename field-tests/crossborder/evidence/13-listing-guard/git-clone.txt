@@ -1,0 +1,10 @@
+time_start: 2026-11-09 20:22:09 EST
+cmd: git clone --depth 50 https://github.com/thanhdatpb/Listing-Guard.git upstream
+Cloning into 'upstream'...
+====
+deaa18a9e29cb591d770ce2eab5a8d864ba8aa6f
+deaa18a9e29cb591d770ce2eab5a8d864ba8aa6f
+2026-11-09 10:48:10 +0700
+Merge pull request #80 from thanhdatpb/fix/trivy-sarif-severity
+233
+2026-11-09 20:22:09 EST

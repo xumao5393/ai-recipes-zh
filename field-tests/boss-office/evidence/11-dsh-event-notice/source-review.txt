@@ -1,0 +1,22 @@
+# source-review · dsh-event-notice 安装前静态审查
+时区 EST。审查时间：2026-11-09 20:22:04–20:22:35 EST（clone 之后；npm test / plugin add / 本机 webhook 都在审查结论之后）。
+commit：a791d4de6dcb933278ea602e5db3cb4affbc0ede（2026-11-10 09:17:17 +0800 = 20:17:17 EST 前一晚？实际 +0800 → 2026-11-09 20:17:17 EST）
+
+## 1. 生命周期脚本
+- scripts 只有 `"test": "node --test"`。**没有** preinstall / install / postinstall / prepare / prepack。
+- dependencies 仅 `@deepseek-ai/schemastery`；package-lock 中 hasInstallScript：无。
+- cordis.patch.yml：insert id=dsh-event-notice，无 installer、无 !!js。
+
+## 2. 出网默认
+- gotifyUrl / webhookUrl 默认 `''`；ntfyUrl 为 `z.string().default()`（无字面默认主机）。
+- 源码与 README **没有**写死公共 ntfy 托管地址 / 公共 Gotify。
+- 未配置地址的通道在发送前跳过（index.js 对空 URL 的判断；测试「没填服务器信息的通道被跳过」覆盖）。
+- 出网入口：lib/notify.js 的 fetch（Gotify / Webhook / ntfy），目标仅用户配置的 URL。
+- client.js 的 fetch('/dsh-event-notice/test') 是打本机 DSH 同源路由，不是外网。
+
+## 3. 版本
+- engines.node >=20；本机 Node v24.22.1 满足。
+- **未声明**支持的 dsh 版本。按 09 同类规则：审查干净后允许尝试加载。本机 dsh 0.2.2-rc.1。
+
+## 结论
+无安装期自动脚本；无不可覆盖的公共推送默认地址。允许：npm test → 尝试 dsh plugin add（钉死 commit）→ 本机 127.0.0.1 webhook 实测。

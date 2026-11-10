@@ -1,0 +1,1 @@
+2026-11-09 17:35 EST（挑刺员第1轮）：readonly-calls-2026-11-09-1725.md 删除 Mao 邮箱/网盘的全部计数（总数、会话数、近7天数、人工估的会话数与重复数、Drive 公开文件数），账号地址改为 <account>；原件移至本专题 internal-archive/connector-boundary/。正文同步删除这些数字，只写“调用成功/已读到计数”。

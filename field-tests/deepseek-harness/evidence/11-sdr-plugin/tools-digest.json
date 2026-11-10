@@ -1,0 +1,93 @@
+{
+  "tools_n": 13,
+  "tool_names": [
+    "sdr_create_task",
+    "sdr_knowledge_search",
+    "sdr_knowledge_upsert",
+    "sdr_knowledge_list",
+    "sdr_knowledge_evaluate",
+    "sdr_next_step",
+    "sdr_review_drafts",
+    "sdr_continue_after_approval",
+    "sdr_get_task",
+    "sdr_get_report",
+    "sdr_audit_log",
+    "sdr_connector_status",
+    "sdr_configure_connector"
+  ],
+  "tools": [
+    {
+      "name": "sdr_create_task",
+      "length": 495,
+      "sha256": "d346d67af13eeef0585895e990324fe0f3d2c6ad51204b3e7035a7d2ba01a8f1"
+    },
+    {
+      "name": "sdr_knowledge_search",
+      "length": 519,
+      "sha256": "39e2544245e1aff2d958defc4ea75a4514533605ec44f951afef19adcc1614c5"
+    },
+    {
+      "name": "sdr_knowledge_upsert",
+      "length": 484,
+      "sha256": "18982738cf7500d1396a0e6da2198e5a12affdb6e8b184d993547ce15f19d054"
+    },
+    {
+      "name": "sdr_knowledge_list",
+      "length": 313,
+      "sha256": "08b08ef48b674a37d8c24fb4e40058e09d09f88ba3f3c0aa5ae0b119168f4910"
+    },
+    {
+      "name": "sdr_knowledge_evaluate",
+      "length": 465,
+      "sha256": "66b837c4f15d4c1b30f95189c8e000eef91a7b2c4f97afb53239ce4dcdd52a94"
+    },
+    {
+      "name": "sdr_next_step",
+      "length": 420,
+      "sha256": "aec60c33a8fc2b56eb00ba976c3dd960d1e3d0202c603c09f89d5666576eeb24"
+    },
+    {
+      "name": "sdr_review_drafts",
+      "length": 1323,
+      "sha256": "6b7fa646df9cdbb1bd91434c9a6460b22c7e5cd22d3a9721731e210dad204002"
+    },
+    {
+      "name": "sdr_continue_after_approval",
+      "length": 427,
+      "sha256": "7a7a05c4f419c4ac295e478dc0ee8405dfca1f403ab6cfb6a5efad50ec763b73"
+    },
+    {
+      "name": "sdr_get_task",
+      "length": 310,
+      "sha256": "1c5d87860d8baab989671b552b6d113ea95f1a98d6c2d1bceb920a9375e8971b"
+    },
+    {
+      "name": "sdr_get_report",
+      "length": 350,
+      "sha256": "85f8b5cb8eb3977a45c40f96a45b511e482c94dfff471a9a4bc811ab1878d0e3"
+    },
+    {
+      "name": "sdr_audit_log",
+      "length": 339,
+      "sha256": "76279afc46e309600efe7de025c71e16a02ba6aed1393737e65fb49168d7d0bb"
+    },
+    {
+      "name": "sdr_connector_status",
+      "length": 252,
+      "sha256": "be4be1a4f35a1ff774fd26794040eeeebd31cfdf438c6335d542870b5bafa450"
+    },
+    {
+      "name": "sdr_configure_connector",
+      "length": 544,
+      "sha256": "db49b0e67477c197af576cb4f45d7d80df7a18f6948953e278c832ef19f93345"
+    }
+  ],
+  "preset_agent_cordis": {
+    "length": 1586,
+    "sha256": "334d52b6817e47a21643d74e5b7e31a44eb8cd7f6b6487ce41f8aec5ddf7baa7",
+    "first_line": "# SDR digital employee preset. The dsh-sdr bundle provides the local TypeScript",
+    "_masked": true,
+    "note": "agent.cordis.yml 原文不进公开证据"
+  },
+  "source": "hashed from clone packages/dsh-sdr/lib/index.js at commit 491776832f257f7d63113f8f4b541bd075cdda55; not a runtime capture"
+}

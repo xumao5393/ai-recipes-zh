@@ -1,0 +1,5 @@
+HOME=/workspace/fourday-20261109/crossborder/sandbox/home
+cmd: bash evidence/.../install.sh  (official curl|bash equivalent, isolated HOME)
+start: 2026-11-09 14:40:25 EST
+install_exit=1
+end: 2026-11-09 14:40:25 EST

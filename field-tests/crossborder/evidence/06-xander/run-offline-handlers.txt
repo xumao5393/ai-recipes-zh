@@ -1,0 +1,11 @@
+# 时间(开始): 2026-11-09 18:31:11 EST
+# 命令: HOME=<sandbox>/h2 XANDER_HOME=<sandbox>/x2 unshare -rn node run_offline.mjs <clone副本 run2> fake-input.json handlers   （全新空数据目录，未接入任何店铺/令牌；断网，回环口也未开）
+# exit=0 耗时=0.075s
+# stderr:
+# stdout:
+## tools 数量: 38
+## xander_status {"check":false} →
+"{\n  \"version\": \"2.9.0\",\n  \"dataDir\": \"<sandbox>/x2\",\n  \"secretStore\": \"本地文件（权限 600，未加密）\",\n  \"stores\": {},\n  \"switchesOn\": [],\n  \"safetyLimits\": {\n    \"bidChangePctMax\": 50,\n    \"budgetChangePctMax\": 100,\n    \"priceChangePctMax\": 20,\n    \"maxChangesPerProposal\": 50\n  },\n  \"settings\": {\n    \"approvalMode\": \"chat\",\n    \"dryRun\": false,\n    \"proposalTtlMinutes\": 30,\n    \"language\": \"zh-CN\"\n  },\n  \"ziniao\": {\n    \"configured\": false,\n    \"controlSwitchOn\": false\n  },\n  \"cloudBackup\": \"未开启\",\n  \"sellerSprite\": \"卖家精灵 MCP 由用户在宿主（Claude/Codex）里单独连接；若工具列表里有它的工具即可使用。\",\n  \"hint\": \"还没接入店铺：请引导用户在终端运行 `xander setup`（见 xander-operations/references/setup-guide.md）。\"\n}"
+## xander_switches {} →
+[公开版删去：handler 输出含上游开关说明文字（约 6000 字符，已被 run_offline.mjs 截断）。原样在 internal-archive/06-xander/run-handlers.raw.txt；条数统计见 run-count-switches.txt]
+## skills/*/SKILL.md（静态读取，不是 dsh 的技能发现）: [{"dir":"analyze-amazon-competitors","frontmatterName":"analyze-amazon-competitors"},{"dir":"build-amazon-advertising-strategy","frontmatterName":"build-amazon-advertising-strategy"},{"dir":"build-amazon-keyword-library","frontmatterName":"build-amazon-keyword-library"},{"dir":"plan-amazon-replenishment","frontmatterName":"plan-amazon-replenishment"},{"dir":"reconcile-amazon-profit","frontmatterName":"reconcile-amazon-profit"},{"dir":"write-amazon-listing","frontmatterName":"write-amazon-listing"},{"dir":"xander-operations","frontmatterName":"xander-operations"}]

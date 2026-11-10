@@ -1,0 +1,91 @@
+time: 2026-11-09 21:25:55 EST
+cmd: getent ahosts / getent hosts for listed domains (system DNS, no DoH, no hosts edit, no IP override)
+
+======= github.com =======
+$ getent ahosts github.com
+198.18.0.1      STREAM github.com
+198.18.0.1      DGRAM  
+198.18.0.1      RAW    
+$ getent hosts github.com
+198.18.0.1      github.com
+
+======= api.github.com =======
+$ getent ahosts api.github.com
+198.18.0.1      STREAM api.github.com
+198.18.0.1      DGRAM  
+198.18.0.1      RAW    
+$ getent hosts api.github.com
+198.18.0.1      api.github.com
+
+======= pypi.org =======
+$ getent ahosts pypi.org
+198.18.0.1      STREAM pypi.org
+198.18.0.1      DGRAM  
+198.18.0.1      RAW    
+$ getent hosts pypi.org
+198.18.0.1      pypi.org
+
+======= files.pythonhosted.org =======
+$ getent ahosts files.pythonhosted.org
+151.101.192.223 STREAM dualstack.python.map.fastly.net
+151.101.192.223 DGRAM  
+151.101.192.223 RAW    
+151.101.128.223 STREAM 
+151.101.128.223 DGRAM  
+151.101.128.223 RAW    
+151.101.64.223  STREAM 
+151.101.64.223  DGRAM  
+151.101.64.223  RAW    
+151.101.0.223   STREAM 
+151.101.0.223   DGRAM  
+151.101.0.223   RAW    
+2a04:4e42:400::223 STREAM 
+2a04:4e42:400::223 DGRAM  
+2a04:4e42:400::223 RAW    
+2a04:4e42:200::223 STREAM 
+2a04:4e42:200::223 DGRAM  
+2a04:4e42:200::223 RAW    
+2a04:4e42::223  STREAM 
+2a04:4e42::223  DGRAM  
+2a04:4e42::223  RAW    
+2a04:4e42:600::223 STREAM 
+2a04:4e42:600::223 DGRAM  
+2a04:4e42:600::223 RAW    
+$ getent hosts files.pythonhosted.org
+2a04:4e42:600::223 dualstack.python.map.fastly.net files.pythonhosted.org
+2a04:4e42:400::223 dualstack.python.map.fastly.net files.pythonhosted.org
+2a04:4e42:200::223 dualstack.python.map.fastly.net files.pythonhosted.org
+2a04:4e42::223  dualstack.python.map.fastly.net files.pythonhosted.org
+
+======= mock.shop =======
+$ getent ahosts mock.shop
+198.18.0.1      STREAM mock.shop
+198.18.0.1      DGRAM  
+198.18.0.1      RAW    
+$ getent hosts mock.shop
+198.18.0.1      mock.shop
+
+======= www.mock.shop =======
+$ getent ahosts www.mock.shop
+198.18.0.1      STREAM www.mock.shop
+198.18.0.1      DGRAM  
+198.18.0.1      RAW    
+$ getent hosts www.mock.shop
+198.18.0.1      www.mock.shop
+
+======= shopify.com =======
+$ getent ahosts shopify.com
+198.18.0.1      STREAM shopify.com
+198.18.0.1      DGRAM  
+198.18.0.1      RAW    
+$ getent hosts shopify.com
+198.18.0.1      shopify.com
+
+======= www.shopify.com =======
+$ getent ahosts www.shopify.com
+198.18.0.1      STREAM www.shopify.com
+198.18.0.1      DGRAM  
+198.18.0.1      RAW    
+$ getent hosts www.shopify.com
+198.18.0.1      www.shopify.com
+

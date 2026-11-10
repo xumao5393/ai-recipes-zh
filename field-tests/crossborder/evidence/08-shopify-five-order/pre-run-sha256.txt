@@ -1,0 +1,4 @@
+02e2dcdc4024157d6d44f9a08eeaee1247005f23c1e2498be0eb54e1813d113e  fake-orders.json
+375b9c05dabf143e5a7b869d841e17bd3e4ec83c302524cf67cd7bc7c1be73cc  hand-expected.md
+a4ce0b94e8fe2449b4465e6fd4d7edb85ee9a84edbbc497bc749bb2c393b53ed  rules.md
+2026-11-09 18:36:24 EST

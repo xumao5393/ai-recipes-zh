@@ -1,0 +1,25 @@
+HTTP/2 404 
+date: Tue, 10 Nov 2026 02:28:02 GMT
+content-type: text/plain; charset=utf-8
+content-length: 64
+x-frame-options: SAMEORIGIN
+x-xss-protection: 0
+x-content-type-options: nosniff
+x-permitted-cross-domain-policies: none
+referrer-policy: strict-origin-when-cross-origin
+link: <https://mock.shop/llms.txt>; rel="llms-txt"
+vary: Accept
+content-security-policy: default-src 'none'; base-uri 'none'; frame-ancestors 'none'; form-action 'none'; script-src 'self' https://cdn.shopify.com/shopifycloud/mock_shop/; report-to csp-reports; img-src 'self' https://cdn.shopify.com/shopifycloud/mock_shop/; style-src 'self' 'unsafe-inline' https://cdn.shopify.com/shopifycloud/mock_shop/; font-src 'self' https://cdn.shopify.com/shopifycloud/mock_shop/
+cache-control: no-cache
+x-runtime: 0.002035
+strict-transport-security: max-age=63072000; includeSubDomains; preload
+server-timing: processing;dur=2, socket_queue;dur=2.483
+reporting-endpoints: csp-reports="https://security-reports.shopifysvc.com/reporting-api?source_app=MockShop&policy_id=45766&controller=docs&action=show", other="https://security-reports.shopifysvc.com/reporting-api?source_app=MockShop&policy_id=45766&controller=docs&action=show"
+x-dc: gcp-us-east1,gcp-us-central1
+x-request-id: 01a1c348-ada7-75c8-98b9-cb57bf19bb57-1794277682
+server: envoy
+x-shopify-gclb-trace-timing: 1794277682.599
+via: 1.1 google
+nel: {"max_age":0}
+alt-svc: h3=":443"; ma=2592000
+

@@ -1,0 +1,25 @@
+{
+  "webhookUrl": "http://127.0.0.1:46017/hook",
+  "n": 1,
+  "count": 3,
+  "payloads": [
+    {
+      "method": "POST",
+      "url": "/hook",
+      "contentType": "application/json",
+      "body": "{\"event\":\"task-complete\",\"title\":\"DSH-TEST · 任务完成\",\"message\":\"会话标题：本地假会话-完成\\n任务正常完成\\n目录：/tmp/fake-workdir-for-test\",\"sessionId\":\"sess-local-1\",\"sessionTitle\":\"本地假会话-完成\",\"parentTitle\":\"\",\"timestamp\":\"2026-11-10T01:23:32.841Z\"}"
+    },
+    {
+      "method": "POST",
+      "url": "/hook",
+      "contentType": "application/json",
+      "body": "{\"event\":\"approval-required\",\"title\":\"DSH-TEST · 需要审批\",\"message\":\"会话标题：本地假会话-完成\\n工具 需要审批：dangerous command needs approval\\n目录：/tmp/fake-workdir-for-test\",\"sessionId\":\"sess-local-1\",\"sessionTitle\":\"本地假会话-完成\",\"parentTitle\":\"\",\"timestamp\":\"2026-11-10T01:23:32.898Z\"}"
+    },
+    {
+      "method": "POST",
+      "url": "/hook",
+      "contentType": "application/json",
+      "body": "{\"event\":\"question-required\",\"title\":\"DSH-TEST · 需要回答问题\",\"message\":\"会话标题：本地假会话-完成\\n助手提出了问题，等待你回答\\n目录：/tmp/fake-workdir-for-test\",\"sessionId\":\"sess-local-1\",\"sessionTitle\":\"本地假会话-完成\",\"parentTitle\":\"\",\"timestamp\":\"2026-11-10T01:23:32.950Z\"}"
+    }
+  ]
+}

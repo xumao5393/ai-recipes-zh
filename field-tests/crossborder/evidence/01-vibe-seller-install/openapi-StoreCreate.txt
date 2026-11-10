@@ -1,0 +1,127 @@
+==== StoreCreate
+{
+  "properties": {
+    "name": {
+      "type": "string",
+      "title": "Name"
+    },
+    "browser_backend": {
+      "type": "string",
+      "title": "Browser Backend",
+      "default": "chrome"
+    },
+    "browser_config": {
+      "additionalProperties": true,
+      "type": "object",
+      "title": "Browser Config",
+      "default": {}
+    },
+    "ziniao_account_id": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "Ziniao Account Id"
+    },
+    "browser_oauth": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "Browser Oauth"
+    },
+    "platforms": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array",
+      "title": "Platforms",
+      "default": [
+        "amazon"
+      ]
+    },
+    "countries": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array",
+      "title": "Countries",
+      "default": [
+        "US"
+      ]
+    },
+    "platform_countries": {
+      "additionalProperties": {
+        "items": {
+          "type": "string"
+        },
+        "type": "array"
+      },
+      "type": "object",
+      "title": "Platform Countries",
+      "default": {}
+    }
+  },
+  "type": "object",
+  "required": [
+    "name"
+  ],
+  "title": "StoreCreate"
+}
+==== ZiniaoAccountCreate
+{
+  "properties": {
+    "name": {
+      "type": "string",
+      "title": "Name"
+    },
+    "company": {
+      "type": "string",
+      "title": "Company"
+    },
+    "username": {
+      "type": "string",
+      "title": "Username"
+    },
+    "password": {
+      "type": "string",
+      "title": "Password"
+    },
+    "socket_port": {
+      "type": "integer",
+      "title": "Socket Port",
+      "default": 16851
+    },
+    "client_path": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "Client Path",
+      "default": "ziniao"
+    }
+  },
+  "type": "object",
+  "required": [
+    "name",
+    "company",
+    "username",
+    "password"
+  ],
+  "title": "ZiniaoAccountCreate"
+}
+==== ProfileCreate
+ candidate StoreProfileCreateRequest
+==== ProfileValidate

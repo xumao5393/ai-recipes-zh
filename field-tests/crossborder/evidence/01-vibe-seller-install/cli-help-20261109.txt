@@ -1,0 +1,48 @@
+=== vibe-seller --help ===
+usage: vibe-seller [-h] [--version] <command> ...
+
+Vibe Seller command-line entry. Run a subcommand to do something — bare `vibe-
+seller` prints this help.
+
+positional arguments:
+  <command>
+    start        Start the server in the background. Closes-terminal-safe; use
+                 `vibe-seller stop` to terminate.
+    stop         Stop a backgrounded server started with `vibe-seller start`.
+    upgrade      Upgrade vibe-seller in place. Uses `uv tool upgrade` when uv
+                 is on PATH (the install.sh path), falls back to `pip install
+                 --upgrade` otherwise.
+
+options:
+  -h, --help     show this help message and exit
+  --version, -V  show program's version number and exit
+=== vibe-seller start --help ===
+usage: vibe-seller start [-h] [--port PORT] [--host HOST] [-f] [--dev]
+
+options:
+  -h, --help        show this help message and exit
+  --port PORT       Port to listen on (default: 7777).
+  --host HOST       Host interface to bind (default: 0.0.0.0).
+  -f, --foreground  Run in the foreground (Ctrl+C to stop). Implied by --dev.
+                    Use when you want to watch logs directly.
+  --dev             Dev mode: foreground + uvicorn auto-reload on code
+                    changes. Only meaningful from a clone where source files
+                    exist.
+=== vibe-seller stop --help ===
+usage: vibe-seller stop [-h] [--port PORT]
+
+options:
+  -h, --help   show this help message and exit
+  --port PORT  Port the server is running on (default: 7777).
+=== reset-auth status (if exists) ===
+usage: vibe-seller [-h] [--version] <command> ...
+vibe-seller: error: argument <command>: invalid choice: 'reset-auth' (choose from start, stop, upgrade)
+reset-auth subcommand not in this CLI entry (exit 2)
+/workspace/fourday-20261109/crossborder/sandbox/home/.local/share/uv/tools/vibe-seller/lib/python3.13/site-packages/aiohttp/web.py
+/workspace/fourday-20261109/crossborder/sandbox/home/.local/share/uv/tools/vibe-seller/lib/python3.13/site-packages/browser_use/browser/session.py
+/workspace/fourday-20261109/crossborder/sandbox/home/.local/share/uv/tools/vibe-seller/lib/python3.13/site-packages/app/cli.py
+/workspace/fourday-20261109/crossborder/sandbox/home/.local/share/uv/tools/vibe-seller/lib/python3.13/site-packages/uvicorn/main.py
+/workspace/fourday-20261109/crossborder/sandbox/home/.local/share/uv/tools/vibe-seller/lib/python3.13/site-packages/app/database.py
+/workspace/fourday-20261109/crossborder/sandbox/home/.local/share/uv/tools/vibe-seller/lib/python3.13/site-packages/app/auth.py
+/workspace/fourday-20261109/crossborder/sandbox/home/.local/share/uv/tools/vibe-seller/lib/python3.13/site-packages/app/routers/auth.py
+/workspace/fourday-20261109/crossborder/sandbox/home/.local/share/uv/tools/vibe-seller/lib/python3.13/site-packages/app/routers/app_settings.py

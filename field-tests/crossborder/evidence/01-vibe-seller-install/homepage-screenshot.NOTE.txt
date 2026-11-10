@@ -1,0 +1,5 @@
+原文件 homepage-screenshot.png 已移至 crossborder/internal-archive/01-vibe-seller-install/homepage-screenshot.png。
+原因：侧栏可见安装 ID 前缀（与 api-settings 中 install_id 同源），按挑刺员要求不进 repo。
+截图内容（文字描述）：Vibe Seller v0.2.0 主界面；+ New Store；Tasks；用户 admin；非登录页。
+
+2026-11-09 14:56 EST 追加：上述 internal-archive 目录为本地内部归档，不随仓库发布。

@@ -1,0 +1,1 @@
+ssh -p 2121 free@gap-node-01-u3.vm.elestio.app

@@ -1,0 +1,7 @@
+total 1288
+drwxr-xr-x   2 box  box    4096 Nov  9 14:41 .
+drwxrwxrwt. 52 root root  12288 Nov  9 14:41 ..
+-rw-r--r--   1 box  box  914584 Nov  9 14:41 libsqlite3-0_3.46.1-7+deb13u2_amd64.deb
+-rw-r--r--   1 box  box  384144 Nov  9 14:41 sqlite3_3.46.1-7+deb13u2_amd64.deb
+extracted/usr/bin/sqlite3
+extracted/usr/lib/x86_64-linux-gnu/libsqlite3.so.0.8.6

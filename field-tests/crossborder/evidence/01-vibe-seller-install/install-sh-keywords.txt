@@ -1,0 +1,52 @@
+9:#      package from PyPI via `uv tool install`, then fetches the
+18:#      repo is cloned to $VIBE_SELLER_HOME (default ~/vibe-seller) and
+72:    INSTALL_DIR="${VIBE_SELLER_HOME:-$HOME/vibe-seller}"
+73:    REPO_URL="${VIBE_SELLER_REPO:-https://github.com/zpoint/vibe-seller}"
+91:        export PATH="$HOME/.local/bin:$HOME/.cargo/bin:$PATH"
+106:        echo "  Pick a different location with VIBE_SELLER_HOME=<path>" >&2
+156:    local p="$HOME/.local/bin:$HOME/.cargo/bin:$PATH"
+265:    mkdir -p "$HOME/.npm-global"
+266:    npm config set prefix "$HOME/.npm-global"
+269:    local path_line='export PATH="$HOME/.npm-global/bin:$PATH"'
+270:    for rc in "$HOME/.bashrc" "$HOME/.zshrc"; do
+276:    export PATH="$HOME/.npm-global/bin:$PATH"
+325:  Installs uv (if missing), runs `uv tool install vibe-seller`, then
+427:    # `uv tool install --index-url <testpypi-url> vibe-seller==X.Y.devZ`
+434:    export PATH="$HOME/.local/bin:$HOME/.cargo/bin:$PATH"
+527:    # We deliberately skip `corepack enable` here: it tries to symlink
+621:    # would skip install_claude() for every existing user and leave
+624:    # that we don't need the local install. Use VIBE_HOME for the
+626:    local data_dir="${VIBE_HOME:-$HOME/.vibe-seller}"
+644:        _warn "npm not available — skipping claude CLI install"
+648:    # globally. The daemon resolves <VIBE_SELLER_DIR>/node_modules/.bin/
+653:    # Match the daemon's resolver (VIBE_HOME — see app/config.py). If
+657:    local data_dir="${VIBE_HOME:-$HOME/.vibe-seller}"
+674:PLAYWRIGHT_MIRROR_HOST="https://cdn.npmmirror.com/binaries/playwright"
+677:# PLAYWRIGHT_DOWNLOAD_HOST=$2 ('' = official CDN), one per line.
+679:    PLAYWRIGHT_DOWNLOAD_HOST="$2" "$1" install --dry-run chromium \
+703:# Echo the PLAYWRIGHT_DOWNLOAD_HOST to use ('' = official CDN). A source
+710:    for host in "" "$PLAYWRIGHT_MIRROR_HOST"; do
+744:# faster source. A PLAYWRIGHT_DOWNLOAD_HOST the user already exported
+754:    if [ -n "${PLAYWRIGHT_DOWNLOAD_HOST:-}" ]; then
+755:        _info "Downloading Chromium from $PLAYWRIGHT_DOWNLOAD_HOST" \
+756:            "(PLAYWRIGHT_DOWNLOAD_HOST)"
+768:    if PLAYWRIGHT_DOWNLOAD_HOST="$host" "$pw" "${args[@]}"; then
+778:# Pulls `vibe-seller` from PyPI via `uv tool install`. The wheel ships
+795:    # sudo. macOS skips the --with-deps branch below, so no sudo
+827:    # Compose `uv tool install` args from --test-pypi / --version.
+863:        _info "Running 'uv tool install $tmp_wheel'"
+864:        uv tool install "$tmp_wheel"
+904:        # later `uv tool upgrade`. Nightlies must stay pinned.
+914:    _info "Running 'uv tool install $spec'"
+915:    uv tool install "$spec"
+919:    # `uv tool run --from vibe-seller` would re-resolve vibe-seller
+922:    # verify step). Direct path skips resolution entirely — playwright
+925:    tool_dir="$(uv tool dir 2>/dev/null)/vibe-seller"
+936:Make sure ${_W}~/.local/bin${_Z} is on your PATH (uv tool puts binaries
+944:Uninstall later:  ${_W}uv tool uninstall vibe-seller${_Z}
+987:    # subsequent steps. When we find tools via the bootstrap above and skip
+991:        echo "$HOME/.local/bin" >> "$GITHUB_PATH"
+992:        echo "$HOME/.cargo/bin" >> "$GITHUB_PATH"
+1047:    # Override venv location: VIBE_SELLER_VENV=/path/to/venv ./install.sh
+1048:    local VENV_DIR="${VIBE_SELLER_VENV:-$SCRIPT_DIR/.venv}"
+1097:if [[ "${VIBE_SELLER_INSTALL_SH_NO_MAIN:-}" != 1 ]]; then

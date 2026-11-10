@@ -1,0 +1,123 @@
+time_start: 2026-11-09 20:23:01 EST
+reason: docker ABSENT; trying apt install docker.io as alternative path closer to README
+2a04:4e42:79::644 debian.map.fastlydns.net deb.debian.org
+2600:9000:201d:8000:3:db06:4200:93a1 d2h67oheeuigaw.cloudfront.net download.docker.com
+2600:9000:201d:f200:3:db06:4200:93a1 d2h67oheeuigaw.cloudfront.net download.docker.com
+2600:9000:201d:a600:3:db06:4200:93a1 d2h67oheeuigaw.cloudfront.net download.docker.com
+2600:9000:201d:f800:3:db06:4200:93a1 d2h67oheeuigaw.cloudfront.net download.docker.com
+2600:9000:201d:1200:3:db06:4200:93a1 d2h67oheeuigaw.cloudfront.net download.docker.com
+2600:9000:201d:d400:3:db06:4200:93a1 d2h67oheeuigaw.cloudfront.net download.docker.com
+2600:9000:201d:3c00:3:db06:4200:93a1 d2h67oheeuigaw.cloudfront.net download.docker.com
+2600:9000:201d:6800:3:db06:4200:93a1 d2h67oheeuigaw.cloudfront.net download.docker.com
+2606:4700::6812:120c repo.apache.maven.org.cdn.cloudflare.net repo.maven.apache.org repo.apache.maven.org
+2606:4700::6812:130c repo.apache.maven.org.cdn.cloudflare.net repo.maven.apache.org repo.apache.maven.org
+198.18.0.1      github.com
+time_start: 2026-11-09 20:23:34 EST
+cmd: sudo apt-get update && sudo DEBIAN_FRONTEND=noninteractive apt-get install -y docker.io docker-compose-v2
+Err:1 http://deb.debian.org/debian trixie InRelease
+  500  Internal Server Error [IP: 198.18.0.1 80]
+Err:2 http://deb.debian.org/debian trixie-updates InRelease
+  500  Internal Server Error [IP: 198.18.0.1 80]
+Err:3 http://deb.debian.org/debian-security trixie-security InRelease
+  500  Internal Server Error [IP: 198.18.0.1 80]
+Get:4 https://dl.google.com/linux/chrome-stable/deb stable InRelease [2548 B]
+Get:5 https://dl.google.com/linux/chrome-stable/deb stable/main amd64 Packages [1411 B]
+Reading package lists...
+E: The repository 'http://deb.debian.org/debian trixie InRelease' is not signed.
+E: Failed to fetch http://deb.debian.org/debian/dists/trixie/InRelease  500  Internal Server Error [IP: 198.18.0.1 80]
+E: Failed to fetch http://deb.debian.org/debian/dists/trixie-updates/InRelease  500  Internal Server Error [IP: 198.18.0.1 80]
+E: The repository 'http://deb.debian.org/debian trixie-updates InRelease' is not signed.
+E: Failed to fetch http://deb.debian.org/debian-security/dists/trixie-security/InRelease  500  Internal Server Error [IP: 198.18.0.1 80]
+E: The repository 'http://deb.debian.org/debian-security trixie-security InRelease' is not signed.
+Reading package lists...
+Building dependency tree...
+Reading state information...
+E: Unable to locate package docker.io
+E: Couldn't find any package by glob 'docker.io'
+E: Couldn't find any package by regex 'docker.io'
+E: Unable to locate package docker-compose-v2
+--: line 10: docker: command not found
+grep: /etc/init.d/docker: No such file or directory
+docker: unrecognized service
+sudo: docker: command not found
+usermod: group 'docker' does not exist
+2026-11-09 20:23:36 EST
+=== docker static binary attempt 2026-11-09 20:24:21 EST ===
+13.226.209.48   STREAM d2h67oheeuigaw.cloudfront.net
+13.226.209.48   DGRAM  
+13.226.209.48   RAW    
+docker-29.8.2.tgz
+docker-29.8.2.tgz
+docker-29.9.0.tgz
+docker-29.9.0.tgz
+docker-29.9.1.tgz
+docker-29.9.1.tgz
+docker-29.9.2.tgz
+docker-29.9.2.tgz
+docker-29.9.3.tgz
+docker-29.9.3.tgz
+time_start: 2026-11-09 20:24:29 EST
+url: https://download.docker.com/linux/static/stable/x86_64/docker-29.9.3.tgz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+100 82.3M  100 82.3M    0     0   221M      0 --:--:-- --:--:-- --:--:--  221M
+-rw-r--r-- 1 <user> <user> 86360685 Nov  9 20:24 docker-29.9.3.tgz
+3fb5d1f13014c18cc54945bc177c58a9056a482dada031e17d12cf2e6922c973  docker-29.9.3.tgz
+containerd
+containerd-shim-runc-v2
+ctr
+docker
+docker-init
+docker-proxy
+dockerd
+runc
+Docker version 29.9.3, build 70efc0e
+Docker version 29.9.3, build 5457199
+=== starting dockerd 2026-11-09 20:24:39 EST ===
+dockerd_pid=338945
+Client:
+ Version:    29.9.3
+ Context:    default
+ Debug Mode: false
+
+Server:
+failed to connect to the docker API at unix://<sandbox>/13-listing-guard/tools/docker/docker.sock; check if the path is correct and if the daemon is running: dial unix <sandbox>/13-listing-guard/tools/docker/docker.sock: connect: no such file or directory
+invalid userland-proxy-path: userland-proxy is enabled, but userland-proxy-path is not set
+=== dockerd iptables=false attempt 2026-11-09 20:25:40 EST ===
+time="2026-11-09T20:25:36.956381232-05:00" level=info msg="Restoring containers: start."
+time="2026-11-09T20:25:36.957705957-05:00" level=info msg="stopping event stream following graceful shutdown" error="grpc: the client connection is closing: context canceled" module=libcontainerd namespace=moby
+time="2026-11-09T20:25:36.957879198-05:00" level=info msg="stopping event stream following graceful shutdown" error="context canceled" module=libcontainerd namespace=plugins.moby
+time="2026-11-09T20:25:36.957903256-05:00" level=info msg="Daemon shutdown complete" error="failed to start daemon: Error initializing network controller: error obtaining controller instance: listen unix <sandbox>/13-listing-guard/tools/docker/run/libnetwork/2419755ae9a2.sock: bind: invalid argument"
+failed to start daemon: Error initializing network controller: error obtaining controller instance: listen unix <sandbox>/13-listing-guard/tools/docker/run/libnetwork/2419755ae9a2.sock: bind: invalid argument
+=== deb https check 2026-11-09 20:25:52 EST ===
+deb_https_trixie=200 ip=140.248.150.132
+deb_http_trixie=200 ip=140.248.150.132
+packages_debian=302 ip=198.18.0.1
+198.18.0.1      STREAM packages.debian.org
+198.18.0.1      DGRAM  
+=== apt retry 2026-11-09 20:26:02 EST ===
+Types: deb
+# http://snapshot.debian.org/archive/debian/20261005T000000Z
+URIs: http://deb.debian.org/debian
+Suites: trixie trixie-updates
+Components: main
+Signed-By: /usr/share/keyrings/debian-archive-keyring.pgp
+
+Types: deb
+# http://snapshot.debian.org/archive/debian-security/20261005T000000Z
+URIs: http://deb.debian.org/debian-security
+Suites: trixie-security
+Components: main
+Signed-By: /usr/share/keyrings/debian-archive-keyring.pgp
+### THIS FILE IS AUTOMATICALLY CONFIGURED ###
+# Changes to this file will not be preserved.
+# This file will not be recreated if removed.
+X-Repolib-Name: Google Chrome
+Types: deb
+URIs: https://dl.google.com/linux/chrome-stable/deb/
+Suites: stable
+Components: main
+Architectures: amd64
+Signed-By: /usr/share/keyrings/google-chrome.gpg

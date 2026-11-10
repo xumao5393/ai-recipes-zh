@@ -1,0 +1,11 @@
+preset_count 9
+- id=kimi name=Kimi models=4 base=https://api.kimi.com/coding/
+- id=minimax name=MiniMax models=4 base=https://api.minimaxi.com/anthropic
+- id=glm name=GLM (China) models=4 base=https://open.bigmodel.cn/api/anthropic
+- id=glm_intl name=GLM (International) models=4 base=https://api.z.ai/api/anthropic
+- id=deepseek name=DeepSeek models=2 base=https://api.deepseek.com/anthropic
+- id=qwen name=Qwen (Pay-as-you-go, China) models=4 base=https://dashscope.aliyuncs.com/apps/anthropic
+- id=qwen_intl name=Qwen (Pay-as-you-go, International) models=4 base=https://{WorkspaceId}.ap-southeast-1.maas.aliyuncs.com/apps/anthropic
+- id=qwen_coding name=Qwen (Coding Plan) models=1 base=https://coding.dashscope.aliyuncs.com/apps/anthropic
+- id=qwen_token name=Qwen (Token Plan) models=4 base=https://token-plan.cn-beijing.maas.aliyuncs.com/apps/anthropic
+saved full presets json bytes 7859

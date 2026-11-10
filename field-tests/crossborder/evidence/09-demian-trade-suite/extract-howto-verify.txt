@@ -1,0 +1,9 @@
+# extract-howto verification · 2026-11-09 19:43:33 EST · n=1
+# source: assets/workbench.html at commit e4c909ecd13beb7eba118815f61ba5b4eb15afaa
+# command: tail -c +322490 workbench.html | head -c 53098 | sha256sum
+# (322490 = byte_offset_start 322489 的 1-based 起点；长度 53098)
+# expected: 0e8c197a088f6148a388ca2cabcf23e5b4780c392d018049d4e5e8f9ee7c535f
+## output
+0e8c197a088f6148a388ca2cabcf23e5b4780c392d018049d4e5e8f9ee7c535f  -
+EXIT:0/0/0
+bytes_out=53098

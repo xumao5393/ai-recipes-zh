@@ -1,0 +1,261 @@
+# EXCERPT — GAP Free MicroVM related official text
+
+## A. https://gap.geta.team/free-vm (full cleaned text; page is short)
+Free MicroVM · GAP Cloud
+Home
+Explore
+Pricing
+Free VM
+MicroVMs
+Docs
+Account
+Menu
+Home
+Explore
+Pricing
+Free VM
+MicroVMs
+Docs
+Account
+GAP Cloud / Free MicroVM
+From command line
+to live app.
+A real Linux VM, ready for your next idea. Bring an SSH key, build for an hour, then claim the same machine and files. No account or card to start.
+Start with one command
+ssh -p 2121 free&#64;gap-node-01-u3.vm.elestio.app
+Copy
+Your Ed25519 or RSA key is your login. Need one?
+ssh-keygen -t ed25519
+Private preview
+Docker ready
+Same VM after claim
+free@gap / terminal
+$
+ssh -p 2121 free&#64;gap-node-01-u3.vm.elestio.app
+GAP / FREE MICROVM
+Your workspace is ready · 1 vCPU · 1 GiB
+60m 00s left to build
+PREVIEW https://…/apps/…/
+Basic Auth free / [unique password]
+CLAIM https://…/free-vm/claim#[private token]
+root@gap:~#
+python3 -m http.server 8080
+Serving your app on port 8080 ✓
+HTTPS preview
+Hello, world.
+Your app is live.
+Protected by Basic Auth
+1 vCPU
+Linux compute
+1 GiB
+Memory
+60 min
+Free build window
+24 h
+To claim after it stops
+01 / The journey
+Connect. Build. Keep it.
+Everything starts in your terminal. You only create an account if you decide the VM is worth keeping.
+01 / CONNECT
+Your key opens the door.
+Connect as
+free
+. The first authenticated session creates your VM. Reconnect with the same key to return to it.
+02 / BUILD
+Make it real.
+Use Docker, Python, Node, Go or PHP. Serve on port 8080 for a live preview protected by Basic Auth, shareable from any IP.
+03 / CLAIM
+Keep what you made.
+After the hour, use your private claim link within 24 hours. Verify your email and keep the same VM, disk and SSH key.
+02 / Watch the flow
+From SSH to shipped.
+Thirty seconds. One command, a live preview, and a machine you can keep.
+Motion design · 30 seconds · no audio needed
+Your browser does not support video. Follow the three steps above.
+03 / Inside your VM
+Useful from the first prompt.
+Debian with familiar development tools preinstalled. Use
+apt
+,
+npm
+,
+pip
+, Go modules, Composer, Docker Hub and public GHCR images through the controlled package proxy during the free trial.
+8 GiB persistent guest disk during the trial
+Docker Engine and Compose, Python, Node, Go and PHP
+One unclaimed VM per source IP and SSH key across GAP nodes
+04 / Safety
+Bounded by design.
+Anonymous outbound access is limited to approved package registries. Arbitrary internet access, private networks, scanning and SSH forwarding are blocked. Package traffic is rate- and volume-limited. Capacity attempts that fail do not create a VM.
+Good to know.
+Do I need to sign up?
+No. An account and verified email are required only if you choose to claim the VM.
+Does disconnecting stop it?
+No. It remains available for the rest of its one-hour build window.
+What happens if I do not claim it?
+The VM stops after one hour. Its disk is deleted when the 24-hour claim window expires.
+Can others see my preview?
+Yes, if you share the URL and Basic Auth credentials. No SSH source-IP match is required.
+Your next idea starts here
+One command. Your own computer.
+Paste it into a terminal. Bring your favorite tools — and your ideas.
+ssh -p 2121 free&#64;gap-node-01-u3.vm.elestio.app
+Copy
+GAP Cloud ·
+Documentation
+·
+Pricing
+
+## B. https://gap.geta.team/docs — Customer and fleet suspension (nearest AUP-like section)
+data for a configured abuse-review window; see Customer and fleet suspension.
+Creation settings and remaining allocation
+The
+/microvms
+creation form defaults to
+Start machine
+and
+Serverless
+.
+CPU and RAM inputs are limited to the agent's remaining allocation across all
+projects on this node. VM slots include stopped and hibernated machines. The
+optional disk quota includes provisioned capacity of retained volumes, not only
+currently running VMs. When no disk quota is configured, the UI states this
+explicitly. Disk capacity must also fit the base guest image.
+Configure a disk quota live with:
+python3 scripts/microvm-access.py set-quota did:gap:AGENT_ID --disk-gib 32
+This optional quota preserves existing approvals: omitting
+disk_gib
+means no
+operator disk quota. It does not reserve physical host storage or change storage
+billing. Use the full desired quota when approving a replacement request; the
+administrator review displays whether a disk quota was requested.
+POST /v1/cloud/projects/{project}/vms
+accepts
+execution_mode
+(
+serverless
+,
+the default, or
+always_on
+) along with existing creation fields. Always-on must
+be separately approved and is checked before any disk allocation. The choice is
+saved before first start, without a second configuration call.
+start: false
+keeps either mode stopped until an explicit start. Server-side allocation checks
+remain authoritative if another request consumes quota while the form is open.
+Administrator resource navigation and project suspension
+In
+/admin
+, open an agent to browse its paginated projects and decision history.
+Projects link back to their owner and show functions, site configuration/releases,
+database schema, project-filtered VM inventory and a shortcut to usage finance.
+The finance view identifies the selected project and can return to all projects.
+Resource metadata lists currently show at most 100 functions/schema entries.
+Agent, project and VM inventory pages support pagination.
+A project can be suspended independently from its owner. Its management operations,
+public workloads and execution leases are denied while the owner's other projects
+remain accessible. Decisions use the same reason, administrator attribution,
+durable history and stale-generation rejection as agent suspension. Disabling
+or restarting the administrator console does not clear either decision.
+Reactivating an agent does not clear a separate project suspension, and reactivating
+a project does not override a suspended owner. This applies within the current
+node. Central customer and operator decisions are applied in addition to these
+local decisions when fleet policy is enabled.
+Fractional CPU, RSA keys and browser VM sessions
+MicroVM CPU allocations accept multiples of 0.25 vCPU. QEMU presents the
+rounded-up number of guest CPUs; Linux cgroup v2 limits the entire QEMU process
+to the purchased CPU time. Quotas and CPU billing use the fractional allocation.
+A configured host CPU quota broker is required for fractional allocations; an
+unavailable broker fails closed before guest execution. RAM and disk remain
+integer MiB and GiB. The web console offers memory from 256 MiB in 256 MiB
+steps, bounded by the remaining agent allocation. SSH public keys may be Ed25519 or RSA (2048–16384 bits),
+with an optional comment. Provide the complete public key, without truncation,
+private key material or authorized_keys options. RSA key format does not enable
+legacy SHA-1 signatures.
+The public
+/microvms
+URL stays on
+GAP_PUBLIC_URL
+and embeds the console from
+the isolated
+GAP_ADMIN_ORIGIN
+management origin, where tenant applications are
+never served. It uses an opaque Secure, HttpOnly, SameSite=Strict session
+cookie scoped to VM management APIs. The bearer stays on the server. Refreshing
+the tab preserves the connection; Disconnect revokes the session. A non-secret
+project identifier and a CSRF value are held in tab session storage. Sessions
+expire after eight hours and survive node process restarts and deployments.
+The node stores encrypted session records in
+GAP_VM_SESSIONS_DB
+(default
+/data/cloud-vm-sessions.sqlite
+, on persistent storage). Keep
+GAP_MASTER_KEY
+stable: changing it invalidates existing sessions. Cookie IDs are stored only
+as hashes, and agent bearers are encrypted with a separate key derived from
+the master key. Disconnect durably revokes the session. API clients continue using
+their bearer tokens.
+SSH connection details and browser terminal
+The
+/microvms
+console displays the selected VM's public SSH command, port,
+ED25519 host fingerprint and authorized public key count. Add Ed25519 or RSA
+public keys from the console. Expose SSH explicitly on an unused TCP slot;
+Free Trial access closes automatically after one hour. Existing approved-tier
+port mappings are preserved. Use the matching private key locally,
+optionally with
+ssh -i /path/to/private_key
+; never upload a private key.
+The web terminal uses a controller-owned, host-key-pinned SSH connection to the
+VM's internal SSH port. It needs no public port and opens
+
+## C. Dedicated ToS/Privacy/AUP on gap.geta.team
+Probed /legal /terms /privacy /aup /acceptable-use /tos /legal/terms /legal/privacy /legal/aup /terms-of-service /privacy-policy /docs/terms /docs/legal /docs/aup /docs/acceptable-use /docs/privacy /docs/terms-of-service /free-vm/terms → HTTP 410 Gone.
+
+## D. Parent brand pages
+https://geta.team/terms HTTP 200 — Geta.Team AI Employees / subscriptions (BYOA); not Free MicroVM-specific.
+https://geta.team/privacy HTTP 200 — same product scope.
+https://elest.io/terms HTTP 200 — Elestio managed DevOps; Free MicroVM host uses *.vm.elestio.app.
+geta.team AUP probes /aup /acceptable-use /fair-use → HTTP 404.
+
+## E. agents.md lines mentioning free/anonymous/claim/SSH key
+Expose a function as a browser endpoint. `public` needs no credential;
+`token` accepts a scoped token valid for 60 minutes; `private` accepts only the
+owner bearer. Never embed the owner bearer in a site:
+```bash
+---
+```
+The returned token lasts 60 minutes. `permissions` may contain `subscribe`,
+`publish`, or both. Omitting it grants both for backward compatibility. An
+empty `channels` array grants every channel in the project; do not issue that
+---
+CPU/RAM resize and disk growth require **stop → PATCH /vm → start**. There is no
+hot resource resize. Public port mappings and SSH keys can change while running.
+Humans can create a VM at `/microvms` after connecting their project with its
+owner token. The form defaults to 1 vCPU, 1024 MiB RAM, 8 GiB disk and started
+---
+first requests share that restore. Do not add client retries for the ordinary wake
+interval; retry only a returned failure. Unchanged SSH keys add no probe to the
+normal resume path; keys changed while hibernated are applied before traffic flows.
+Configure `always_on` only for workloads that need uninterrupted background work.
+---
+this permission returns the VM to serverless mode. The idle timeout is configurable
+from 1 to 60 minutes; 15 is the default. Always-on does not bypass credit or host
+capacity checks. Hibernated VMs still count toward the agent allocation quota.
+```bash
+---
+mapping to guest port 22 consumes one slot and provides direct SSH with no
+bastion. Free Trial accounts can expose only this mapping, require a 5-60 minute
+expiry, and receive keys constrained with `restrict,pty`; application mappings,
+TCP forwarding, agent forwarding and X11 forwarding remain disabled. Approved
+---
+| GET `/vm/ssh` | none; no body needed | Managed public keys, host key/fingerprint and SSH commands |
+| PUT `/vm/ssh` | `authorized_keys: ["ssh-ed25519 AAAA..."]` | Replace managed owner SSH keys, live |
+Writes return asynchronous jobs, use the exact VM generation, and require the
+the microVM access approval. Retry a lost response with the same request ID
+---
+and automatic rebalancing are not enabled.
+This is a cold move: GAP stops the source, transfers retained disks and SSH keys,
+then activates the destination. Running processes and memory are not transferred.
+A running VM restarts; stopped/hibernated machines do not promise a live-memory
+---

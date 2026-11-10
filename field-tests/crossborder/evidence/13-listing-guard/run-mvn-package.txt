@@ -1,0 +1,76 @@
+public_note: full maven log 1631 lines in internal-archive/.../run-mvn-package.raw.txt
+time_start: 2026-11-09 20:27:57 EST
+cmd: ./mvnw -B -DskipTests -pl api,mcp-server -am package
+[INFO] Scanning for projects...
+[INFO] Loaded 24428 auto-discovered prefixes for remote repository central (prefixes-central.txt)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/fasterxml/jackson/jackson-bom/2.21.8/jackson-bom-2.21.8.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/fasterxml/jackson/jackson-bom/2.21.8/jackson-bom-2.21.8.pom (20 kB at 879 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/fasterxml/jackson/jackson-parent/2.21/jackson-parent-2.21.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/fasterxml/jackson/jackson-parent/2.21/jackson-parent-2.21.pom (6.9 kB at 313 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/fasterxml/oss-parent/75/oss-parent-75.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/fasterxml/oss-parent/75/oss-parent-75.pom (24 kB at 1.0 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-dependencies/3.5.16/spring-boot-dependencies-3.5.16.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-dependencies/3.5.16/spring-boot-dependencies-3.5.16.pom (97 kB at 3.2 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/activemq/activemq-bom/6.1.8/activemq-bom-6.1.8.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/activemq/activemq-bom/6.1.8/activemq-bom-6.1.8.pom (7.9 kB at 315 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/activemq/artemis-bom/2.40.0/artemis-bom-2.40.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/activemq/artemis-bom/2.40.0/artemis-bom-2.40.0.pom (9.6 kB at 401 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/activemq/artemis-project/2.40.0/artemis-project-2.40.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/activemq/artemis-project/2.40.0/artemis-project-2.40.0.pom (56 kB at 2.0 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/apache/33/apache-33.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/apache/33/apache-33.pom (24 kB at 896 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/assertj/assertj-bom/3.27.7/assertj-bom-3.27.7.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/assertj/assertj-bom/3.27.7/assertj-bom-3.27.7.pom (3.3 kB at 139 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/io/zipkin/reporter2/zipkin-reporter-bom/3.5.3/zipkin-reporter-bom-3.5.3.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/io/zipkin/reporter2/zipkin-reporter-bom/3.5.3/zipkin-reporter-bom-3.5.3.pom (6.1 kB at 225 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/io/zipkin/brave/brave-bom/6.1.0/brave-bom-6.1.0.pom
+----- reactor / success -----
+[INFO] Listing Guard :: Core                                              [jar]
+[INFO] Listing Guard :: Rule Engine                                       [jar]
+[INFO] Listing Guard :: RAG Analyzer                                      [jar]
+[INFO] Listing Guard :: Trademark Scanner                                 [jar]
+[INFO] Listing Guard :: Variation Checks                                  [jar]
+[INFO] Listing Guard :: Personalization Screening                         [jar]
+[INFO] Listing Guard :: API                                               [jar]
+[INFO] Listing Guard :: MCP Server                                        [jar]
+[INFO] Building Listing Guard :: Core 0.1.0-SNAPSHOT                      [2/9]
+[INFO] Building Listing Guard :: Rule Engine 0.1.0-SNAPSHOT               [3/9]
+[INFO] Building Listing Guard :: RAG Analyzer 0.1.0-SNAPSHOT              [4/9]
+[INFO] Building Listing Guard :: Trademark Scanner 0.1.0-SNAPSHOT         [5/9]
+[INFO] Building Listing Guard :: Variation Checks 0.1.0-SNAPSHOT          [6/9]
+[INFO] Building Listing Guard :: Personalization Screening 0.1.0-SNAPSHOT [7/9]
+[INFO] Building Listing Guard :: API 0.1.0-SNAPSHOT                       [8/9]
+[INFO] Building jar: <sandbox>/13-listing-guard/upstream/api/target/api-0.1.0-SNAPSHOT.jar
+[INFO] Replacing main artifact <sandbox>/13-listing-guard/upstream/api/target/api-0.1.0-SNAPSHOT.jar with repackaged archive, adding nested dependencies in BOOT-INF/.
+[INFO] The original artifact has been renamed to <sandbox>/13-listing-guard/upstream/api/target/api-0.1.0-SNAPSHOT.jar.original
+[INFO] Building Listing Guard :: MCP Server 0.1.0-SNAPSHOT                [9/9]
+[INFO] Building jar: <sandbox>/13-listing-guard/upstream/mcp-server/target/mcp-server-0.1.0-SNAPSHOT.jar
+[INFO] Reactor Summary for Listing Guard 0.1.0-SNAPSHOT:
+[INFO] Listing Guard :: Core .............................. SUCCESS [  3.534 s]
+[INFO] Listing Guard :: Rule Engine ....................... SUCCESS [  2.512 s]
+[INFO] Listing Guard :: RAG Analyzer ...................... SUCCESS [  0.897 s]
+[INFO] Listing Guard :: Trademark Scanner ................. SUCCESS [  1.016 s]
+[INFO] Listing Guard :: Variation Checks .................. SUCCESS [  0.437 s]
+[INFO] Listing Guard :: Personalization Screening ......... SUCCESS [  0.341 s]
+[INFO] Listing Guard :: API ............................... SUCCESS [  7.993 s]
+[INFO] Listing Guard :: MCP Server ........................ SUCCESS [  1.613 s]
+[INFO] BUILD SUCCESS
+[INFO] Total time:  23.006 s
+[INFO] Finished at: 2026-11-09T20:28:21-05:00
+mvn_exit=0
+-rw-r--r-- 1 <user> <user>   666835 Nov  9 20:28 api/target/api-0.1.0-SNAPSHOT.jar
+-rw-r--r-- 1 <user> <user> 70542938 Jan 31  1980 api/target/listing-guard-api.jar
+-rw-r--r-- 1 <user> <user> 10768214 Nov  9 20:28 mcp-server/target/listing-guard-mcp.jar
+-rw-r--r-- 1 <user> <user>    58800 Nov  9 20:28 mcp-server/target/mcp-server-0.1.0-SNAPSHOT.jar
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  23.006 s
+[INFO] Finished at: 2026-11-09T20:28:21-05:00
+[INFO] ------------------------------------------------------------------------
+mvn_exit=0
+2026-11-09 20:28:21 EST
+-rw-r--r-- 1 <user> <user>   666835 Nov  9 20:28 api/target/api-0.1.0-SNAPSHOT.jar
+-rw-r--r-- 1 <user> <user> 70542938 Jan 31  1980 api/target/listing-guard-api.jar
+-rw-r--r-- 1 <user> <user> 10768214 Nov  9 20:28 mcp-server/target/listing-guard-mcp.jar
+-rw-r--r-- 1 <user> <user>    58800 Nov  9 20:28 mcp-server/target/mcp-server-0.1.0-SNAPSHOT.jar

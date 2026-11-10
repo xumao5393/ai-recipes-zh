@@ -1,0 +1,26 @@
+=== GET / ===
+HTTP/1.1 200 OK
+date: Mon, 09 Nov 2026 19:42:29 GMT
+server: uvicorn
+content-type: text/html; charset=utf-8
+accept-ranges: bytes
+content-length: 465
+last-modified: Mon, 09 Nov 2026 19:41:49 GMT
+etag: "096a087ec6854d477fb0da95396e1a90"
+vary: Origin
+
+homepage_bytes=465
+
+=== title/snippet ===
+title: Vibe Seller
+contains[登录]=False
+contains[login]=False
+contains[Login]=False
+contains[设置]=False
+contains[店铺]=False
+contains[新建]=False
+contains[Vibe]=True
+contains[API]=False
+contains[auth]=False
+contains[password]=False
+first_500_chars: '<!doctype html>\n<html lang="en">\n  <head>\n    <meta charset="UTF-8" />\n    <link rel="icon" type="image/svg+xml" href="/vibe-seller.svg" />\n    <meta name="viewport" content="width=device-width, initial-scale=1.0" />\n    <title>Vibe Seller</title>\n    <script type="module" crossorigin src="/assets/index-B0kR509C.js"></script>\n    <link rel="stylesheet" crossorigin href="/assets/index-Dd0ykQsC.css">\n  </head>\n  <body>\n    <div id="root"></div>\n  </body>\n</html>\n'

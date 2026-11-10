@@ -1,0 +1,139 @@
+{
+ "method": "POST",
+ "path": "/v1/chat/completions",
+ "headers": {
+  "Authorization": "<redacted>",
+  "Content-Type": "application/json",
+  "User-Agent": "opencode/latest/2.2.6/cli",
+  "b3": "af72e7673503c07a3aed70cb46a043ae-26138960c8998267-1-743bb3c4dfaad312",
+  "traceparent": "<redacted>",
+  "x-opencode-client": "cli",
+  "x-opencode-project": "<redacted>",
+  "x-opencode-session": "<redacted>",
+  "x-opencode-session-id": "<redacted>",
+  "x-session-affinity": "<redacted>",
+  "x-session-id": "<redacted>",
+  "Connection": "keep-alive",
+  "Accept": "*/*",
+  "Host": "127.0.0.1:19016",
+  "Accept-Encoding": "gzip, deflate, br, zstd",
+  "Content-Length": "22803"
+ },
+ "body_len": 22803,
+ "body": {
+  "model": "deepseek-flash",
+  "messages": [
+   {
+    "role": "system",
+    "content": {
+     "length": 8697,
+     "sha256": "34fd02e4d39a92dc0bb58ba75deb9559c1eb0da8c9638cf22f88676c4138ef52",
+     "first_line": "You are an AI agent running in OpenCode, a coding agent harness. Help the user accomplish their goals using the tools you have available.",
+     "_masked": true
+    }
+   },
+   {
+    "role": "user",
+    "content": "say hi"
+   }
+  ],
+  "tools": [
+   {
+    "name": "edit",
+    "length": 1550,
+    "sha256": "01b9a26e555829a2e00450058aa9d695890d7947be6349f3defcaf2f82cf8851",
+    "_masked": true
+   },
+   {
+    "name": "glob",
+    "length": 663,
+    "sha256": "3db19edf73b6c8312b4723c2c34c2916df0fcd34a3ce8a21a8b07c0f68a4f3df",
+    "_masked": true
+   },
+   {
+    "name": "grep",
+    "length": 1122,
+    "sha256": "79e168f9f8917223a75bef24fdb49b677db53fa8a60f616c8a71839ed35dc656",
+    "_masked": true
+   },
+   {
+    "name": "question",
+    "length": 1459,
+    "sha256": "8c5d1acaabdf180b400a539839c9ff3a4e025029b4d0403e7ad3c50e81739773",
+    "_masked": true
+   },
+   {
+    "name": "read",
+    "length": 990,
+    "sha256": "d51c431a0e6255db99b27f34e068696b7c6366aae312c284b162d781092d7e21",
+    "_masked": true
+   },
+   {
+    "name": "shell",
+    "length": 1529,
+    "sha256": "6402ba78cd2809f4626544027517d01e47315c3d024a3494e33bf5bab1135f92",
+    "_masked": true
+   },
+   {
+    "name": "skill",
+    "length": 507,
+    "sha256": "ab1d792bc9a9e0d0f2aae461f455ff09544a228316b877565956516976f64bf2",
+    "_masked": true
+   },
+   {
+    "name": "subagent",
+    "length": 2727,
+    "sha256": "9c5528c1196537b62f825dc45837158cdb044db110c66d46200072f687cfeac0",
+    "_masked": true
+   },
+   {
+    "name": "webfetch",
+    "length": 807,
+    "sha256": "2e7b5b3e04ea269ee1fad53cbcdb8566f8c66a82915056ed7a52cf355e3b0b77",
+    "_masked": true
+   },
+   {
+    "name": "websearch",
+    "length": 455,
+    "sha256": "f08dadf7387f065896d6c6d116960a55631454972bb20db14db72e9e7238e5e7",
+    "_masked": true
+   },
+   {
+    "name": "write",
+    "length": 563,
+    "sha256": "a8be4e2edeb1da697a05238917be0d13c98702a3fa381cec81d054ca770ab4a0",
+    "_masked": true
+   },
+   {
+    "name": "execute",
+    "length": 1215,
+    "sha256": "b9ae254dc34fda52658ef9a41b80d633d89af09c025e5cfe8a33bb82e1570fde",
+    "_masked": true
+   }
+  ],
+  "stream": true,
+  "stream_options": {
+   "include_usage": true
+  },
+  "max_tokens": 256000,
+  "_tools_meta": {
+   "tools_n": 12,
+   "tool_names": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "tools_json_compact_chars": 13600,
+   "_masked": true
+  }
+ }
+}

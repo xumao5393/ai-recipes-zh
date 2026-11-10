@@ -1,0 +1,120 @@
+{
+    "presets": {
+        "kimi": {
+            "name": "Kimi",
+            "description": "Kimi K3 (1M context) via Moonshot",
+            "load_global_mcp": false,
+            "env": {
+                "ANTHROPIC_BASE_URL": "https://api.kimi.com/coding/",
+                "API_TIMEOUT_MS": "3000000",
+                "CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC": "1",
+                "ENABLE_TOOL_SEARCH": "False",
+                "ANTHROPIC_MODEL": "k3[1m]",
+                "ANTHROPIC_SMALL_FAST_MODEL": "k3[1m]",
+                "ANTHROPIC_DEFAULT_OPUS_MODEL": "k3[1m]",
+                "ANTHROPIC_DEFAULT_SONNET_MODEL": "k3[1m]",
+                "ANTHROPIC_DEFAULT_HAIKU_MODEL": "k3[1m]",
+                "CLAUDE_CODE_SUBAGENT_MODEL": "k3[1m]"
+            },
+            "models": [
+                {
+                    "id": "k3[1m]",
+                    "label": "K3 (1M context)",
+                    "context": "1M",
+                    "vision": true
+                },
+                {
+                    "id": "k3",
+                    "label": "K3 (256K)",
+                    "context": "256K",
+                    "vision": true
+                },
+                {
+                    "id": "kimi-for-coding",
+                    "label": "Kimi for Coding",
+                    "vision": true
+                },
+                {
+                    "id": "kimi-for-coding-highspeed",
+                    "label": "Kimi for Coding \u2014 high-speed",
+                    "vision": true
+                }
+            ]
+        },
+        "minimax": {
+            "name": "MiniMax",
+            "description": "MiniMax-M3 (1M context)",
+            "load_global_mcp": false,
+            "env": {
+                "ANTHROPIC_BASE_URL": "https://api.minimaxi.com/anthropic",
+                "API_TIMEOUT_MS": "3000000",
+                "CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC": "1",
+                "ANTHROPIC_MODEL": "MiniMax-M3[1m]",
+                "ANTHROPIC_SMALL_FAST_MODEL": "MiniMax-M3[1m]",
+                "ANTHROPIC_DEFAULT_SONNET_MODEL": "MiniMax-M3[1m]",
+                "ANTHROPIC_DEFAULT_OPUS_MODEL": "MiniMax-M3[1m]",
+                "ANTHROPIC_DEFAULT_HAIKU_MODEL": "MiniMax-M3[1m]"
+            },
+            "models": [
+                {
+                    "id": "MiniMax-M3[1m]",
+                    "label": "M3 (1M context)",
+                    "context": "1M",
+                    "vision": true
+                },
+                {
+                    "id": "MiniMax-M2.7",
+                    "label": "M2.7",
+                    "context": "200K",
+                    "vision": false
+                },
+                {
+                    "id": "MiniMax-M2.5",
+                    "label": "M2.5",
+                    "context": "200K",
+                    "vision": false
+                },
+                {
+                    "id": "MiniMax-M2.1",
+                    "label": "M2.1",
+                    "context": "200K",
+                    "vision": false
+                }
+            ]
+        },
+        "glm": {
+            "name": "GLM (China)",
+            "group": "GLM",
+            "variant": "China",
+            "description": "GLM-5.2 (1M context) via ZhiPu BigModel",
+            "load_global_mcp": false,
+            "env": {
+                "ANTHROPIC_BASE_URL": "https://open.bigmodel.cn/api/anthropic",
+                "API_TIMEOUT_MS": "3000000",
+                "CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC": "1",
+                "ANTHROPIC_MODEL": "glm-5.2[1m]",
+                "ANTHROPIC_SMALL_FAST_MODEL": "glm-4.7",
+                "ANTHROPIC_DEFAULT_SONNET_MODEL": "glm-5.2[1m]",
+                "ANTHROPIC_DEFAULT_OPUS_MODEL": "glm-5.2[1m]",
+                "ANTHROPIC_DEFAULT_HAIKU_MODEL": "glm-4.7",
+                "CLAUDE_CODE_AUTO_COMPACT_WINDOW": "1000000"
+            },
+            "models": [
+                {
+                    "id": "glm-5.2[1m]",
+                    "label": "GLM-5.2 (1M context)",
+                    "context": "1M",
+                    "vision": false
+                },
+                {
+                    "id": "glm-4.7",
+                    "label": "GLM-4.7",
+                    "context": "200K",
+                    "vision": false
+                },
+                {
+                    "id": "glm-5.1",
+                    "label": "GLM-5.1",
+                    "context": "200K",
+                    "vision": false
+                },

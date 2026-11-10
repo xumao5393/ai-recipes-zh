@@ -1,0 +1,21 @@
+HTTP/1.1 302 Found
+cache-control: private, no-store
+content-security-policy: sandbox; default-src 'none'
+location: ?path=%2Fworkspace%2Ffourday-20261109%2Fdeepseek-harness%2Fsandbox%2Fpackage.json&v=65040%3A224891%3A306%3A1794251203657610397%3A1794251203657610397
+x-content-type-options: nosniff
+Date: Mon, 09 Nov 2026 19:35:31 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+Transfer-Encoding: chunked
+
+HTTP/1.1 200 OK
+cache-control: private, max-age=31536000, immutable
+content-length: 306
+content-security-policy: sandbox; default-src 'none'
+content-type: application/json
+x-content-type-options: nosniff
+Vary: Accept-Encoding
+Date: Mon, 09 Nov 2026 19:35:31 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+

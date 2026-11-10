@@ -1,0 +1,16 @@
+2026-11-09 14:47:59 EST
+=== before stop ===
+no 7777/9222 listeners
+13346 node /var/tmp/sand-playwright-runtime/94507eada9e1d0027bcd4ac5ae198dee/node_modules/@anysphere/sand-playwright-runtime/dist/main.js --cdp-endpoint http://127.0.0.1:9224 --timeout-action 10000 --timeout-settle 100 --timeout-navigation 20000 --codegen none --output-dir /tmp/sand-playwright-output/w2 --post-action-wait quiet --post-action-quiet-ms 120 --post-action-cap-ms 1000 --post-action-request-grace-ms 500 --human-input all --no-runtime-enable --no-mark-targets --run-code-partial-results --committed-navigation-result
+20709 /usr/bin/bwrap --unshare-all --unshare-user --disable-userns --die-with-parent --new-session --cap-drop ALL --proc /proc --dev /dev --tmpfs /tmp --ro-bind-try /usr /usr --ro-bind-try /bin /bin --ro-bind-try /lib /lib --ro-bind-try /lib32 /lib32 --ro-bind-try /lib64 /lib64 --ro-bind-try /libx32 /libx32 --ro-bind /exec-daemon/node /exec-daemon/node --ro-bind /var/tmp/sand-playwright-runtime/94507eada9e1d0027bcd4ac5ae198dee/node_modules/@anysphere/sand-playwright-runtime /var/tmp/sand-playwright-runtime/94507eada9e1d0027bcd4ac5ae198dee/node_modules/@anysphere/sand-playwright-runtime --remount-ro / --chdir /tmp --clearenv --setenv HOME /tmp --setenv TMPDIR /tmp --setenv LANG C.UTF-8 --setenv NODE_ENV production -- /exec-daemon/node --max-old-space-size=384 /var/tmp/sand-playwright-runtime/94507eada9e1d0027bcd4ac5ae198dee/node_modules/@anysphere/sand-playwright-runtime/dist/worker.js
+20710 /usr/bin/bwrap --unshare-all --unshare-user --disable-userns --die-with-parent --new-session --cap-drop ALL --proc /proc --dev /dev --tmpfs /tmp --ro-bind-try /usr /usr --ro-bind-try /bin /bin --ro-bind-try /lib /lib --ro-bind-try /lib32 /lib32 --ro-bind-try /lib64 /lib64 --ro-bind-try /libx32 /libx32 --ro-bind /exec-daemon/node /exec-daemon/node --ro-bind /var/tmp/sand-playwright-runtime/94507eada9e1d0027bcd4ac5ae198dee/node_modules/@anysphere/sand-playwright-runtime /var/tmp/sand-playwright-runtime/94507eada9e1d0027bcd4ac5ae198dee/node_modules/@anysphere/sand-playwright-runtime --remount-ro / --chdir /tmp --clearenv --setenv HOME /tmp --setenv TMPDIR /tmp --setenv LANG C.UTF-8 --setenv NODE_ENV production -- /exec-daemon/node --max-old-space-size=384 /var/tmp/sand-playwright-runtime/94507eada9e1d0027bcd4ac5ae198dee/node_modules/@anysphere/sand-playwright-runtime/dist/worker.js
+20711 /exec-daemon/node --max-old-space-size=384 /var/tmp/sand-playwright-runtime/94507eada9e1d0027bcd4ac5ae198dee/node_modules/@anysphere/sand-playwright-runtime/dist/worker.js
+145404 tee -a /workspace/fourday-20261109/crossborder/repo/evidence/01-vibe-seller-install/stop-service-20261109.txt
+=== vibe-seller stop ===
+No vibe-seller process running on port 7777.
+=== after stop ===
+no 7777/9222 listeners
+=== residual check ===
+ports clear
+145404 tee -a /workspace/fourday-20261109/crossborder/repo/evidence/01-vibe-seller-install/stop-service-20261109.txt
+stop_recorded_at: 2026-11-09 14:48:03 EST

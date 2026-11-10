@@ -1,0 +1,7 @@
+<sandbox-sdr>/tmp-home/.dsh/profiles/web/cordis.patch.yml
+<sandbox-sdr>/tmp-home/.dsh/profiles/web/package.json
+<sandbox-sdr>/tmp-home/.dsh/profiles/web/pnpm-workspace.yaml
+<sandbox-sdr>/tmp-home/.dsh/profiles/web/pnpm-lock.yaml
+<sandbox-sdr>/tmp-home/.local/state/pnpm/pnpm-state.json
+<sandbox-sdr>/tmp-home/.npm/_logs/2026-11-09T21_23_33_912Z-debug-0.log
+<sandbox-sdr>/tmp-home/.npm/_update-notifier-last-checked

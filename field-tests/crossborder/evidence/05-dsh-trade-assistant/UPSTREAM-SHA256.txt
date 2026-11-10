@@ -1,0 +1,11 @@
+# 上游文件 sha256（commit ddce5828517f07899e93d4203490c14b2ffc8002，原件只在 internal-archive，不入公开库）
+14f4a8466b6a2b667c8db6ba520c88d39c9fc6d58ca6db1bd37e8209c3ea3d1f  124B  .gitignore  https://github.com/xiong18166089606-design/dsh-trade-assistant/blob/ddce5828517f07899e93d4203490c14b2ffc8002/.gitignore
+68d624676173da8ed790c4af5a66e0b3a7620f6035b81aba9c3e648d7a4e4002  1089B  LICENSE  https://github.com/xiong18166089606-design/dsh-trade-assistant/blob/ddce5828517f07899e93d4203490c14b2ffc8002/LICENSE
+945a7cc379d1ed9e4ad0e46553fcd516bc4c8f4af0cd33e206864ebe8c8ff93d  3437B  README.md  https://github.com/xiong18166089606-design/dsh-trade-assistant/blob/ddce5828517f07899e93d4203490c14b2ffc8002/README.md
+08d83a341dc760a765a99a1880a6417321bbf2747f7cfa62c995ff8ec60b97ff  68B  cordis.patch.yml  https://github.com/xiong18166089606-design/dsh-trade-assistant/blob/ddce5828517f07899e93d4203490c14b2ffc8002/cordis.patch.yml
+9c850d4c0a42f79ba6ada443bab18fbf3873b62d737330ddb6a873915b3fe737  4851B  index.js  https://github.com/xiong18166089606-design/dsh-trade-assistant/blob/ddce5828517f07899e93d4203490c14b2ffc8002/index.js
+cd83da9921e6932cfac38daa6cbce80421dd2d7b65cb35b83234ce830b16197c  4640B  lib/copywriting.js  https://github.com/xiong18166089606-design/dsh-trade-assistant/blob/ddce5828517f07899e93d4203490c14b2ffc8002/lib/copywriting.js
+965e428edd3fca33064fa37aea210b559e7f864cba17a803a5ed534f86901f56  14929B  lib/inquiry.js  https://github.com/xiong18166089606-design/dsh-trade-assistant/blob/ddce5828517f07899e93d4203490c14b2ffc8002/lib/inquiry.js
+be2bbb2e157d829ca0f41d21cb596bc5c63c45cab659880d2055352d59b9c57f  13100B  lib/langs.js  https://github.com/xiong18166089606-design/dsh-trade-assistant/blob/ddce5828517f07899e93d4203490c14b2ffc8002/lib/langs.js
+51a4d7e77b0bddd0448d5f8162785fa6d2f457e46ad34339d8edcc3c6970a5b3  1104B  package.json  https://github.com/xiong18166089606-design/dsh-trade-assistant/blob/ddce5828517f07899e93d4203490c14b2ffc8002/package.json
+c1f639115b80662923e66c1a92c041ebe914692e88ff20d567d58ea24dfb4c2a  4383B  test/inquiry.test.js  https://github.com/xiong18166089606-design/dsh-trade-assistant/blob/ddce5828517f07899e93d4203490c14b2ffc8002/test/inquiry.test.js

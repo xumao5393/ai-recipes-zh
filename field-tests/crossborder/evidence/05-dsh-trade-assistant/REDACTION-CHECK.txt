@@ -1,0 +1,21 @@
+# REDACTION-CHECK · 05-dsh-trade-assistant  2026-11-09 17:33:15 EST
+# 范围: 本目录全部文件（不含本文件自身）+ ../../05-dsh-trade-assistant-询盘规则插件对照.md
+## box 主目录路径
+# rg -n --glob '!REDACTION-CHECK.txt' -e '<home>'
+0 命中
+## box 用户名
+# rg -n --glob '!REDACTION-CHECK.txt' -e '\bbox\b'
+0 命中
+## key 模式
+# rg -n --glob '!REDACTION-CHECK.txt' -e '(sk-[A-Za-z0-9]{16,}|ghp_[A-Za-z0-9]{20,}|gho_|github_pat_|AKIA[0-9A-Z]{16}|xox[bp]-|Bearer [A-Za-z0-9._-]{20,}|api[_-]?key\s*[:=])'
+0 命中
+## webhook
+# rg -n --glob '!REDACTION-CHECK.txt' -e 'webhook|hooks\.'
+0 命中
+## DeepSeek 官方地址
+# rg -n --glob '!REDACTION-CHECK.txt' -e 'api\.deepseek\.com'
+0 命中
+## 上游正则原文混入
+# rg -n --glob '!REDACTION-CHECK.txt' -e 'transfer\\s\+fee|COUNTRY_RE|western\\s'
+0 命中
+## 结论：以上命中情况见各段；0 命中 = 未发现。

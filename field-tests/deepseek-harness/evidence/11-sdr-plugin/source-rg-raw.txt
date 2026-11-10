@@ -1,0 +1,12 @@
+<clone-sdr-plugin>/packages/dsh-sdr/README.md:3:[![npm version](https://img.shields.io/npm/v/@xuxchloris/dsh-sdr?logo=npm)](https://www.npmjs.com/package/@xuxchloris/dsh-sdr)
+<clone-sdr-plugin>/packages/dsh-sdr/README.md:4:[![license](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/Xuxchloris/deepseek-harness-sdr-plugin/blob/main/LICENSE)
+<clone-sdr-plugin>/packages/dsh-sdr/README.md:10:完整说明、架构图和验收记录见[仓库根目录 README](https://github.com/Xuxchloris/deepseek-harness-sdr-plugin#readme)。
+<clone-sdr-plugin>/packages/dsh-sdr/README.md:24:git clone https://github.com/Xuxchloris/deepseek-harness-sdr-plugin.git
+<clone-sdr-plugin>/packages/dsh-sdr/README.md:43:模式菜单没出现时，重新执行 `dsh plugin --profile web add ...`，重启 `dsh web` 并新建会话。审批工具返回 `fetch failed` 说明当前会话不支持 agent 交互提问，任务会冻结在审批阶段，不会跳过审批继续执行。
+<clone-sdr-plugin>/packages/dsh-sdr/lib/index.js:264:    async execute(args, exec) {
+<clone-sdr-plugin>/packages/dsh-sdr/lib/index.js:272:          ...(exec?.agent !== undefined ? { agent: exec.agent } : {}),
+<clone-sdr-plugin>/packages/dsh-sdr/lib/index.js:273:          signal: exec?.signal,
+<clone-sdr-plugin>/packages/dsh-sdr/package.json:25:  "homepage": "https://github.com/Xuxchloris/deepseek-harness-sdr-plugin#readme",
+<clone-sdr-plugin>/packages/dsh-sdr/package.json:27:    "url": "https://github.com/Xuxchloris/deepseek-harness-sdr-plugin/issues"
+<clone-sdr-plugin>/packages/dsh-sdr/package.json:31:    "url": "git+https://github.com/Xuxchloris/deepseek-harness-sdr-plugin.git",
+<clone-sdr-plugin>/packages/dsh-sdr/lib/domain.js:601:      const body = `Hello ${lead.company} team,\n\nWe prepared a synthetic ${item.product} catalogue for the ${item.market} market. Would a short review be useful?${knowledgeExcerpt ? `\n\nRelevant company information:\n${knowledgeExcerpt}` : ""}\n\nBest regards,\nSDR demo team`;

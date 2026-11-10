@@ -1,0 +1,25 @@
+# 宿主半 mock：直接 import index.js apply + 本地 http · 2026-11-09 19:26:18 EST · n=1 · unshare -rn + lo up · exit 0
+# 不启动完整 dsh；只验证 register 的 exact 路由与 handler
+inject [ 'webServer' ]
+routes [
+  {
+    kind: 'exact',
+    path: '/plugins/demian-trade-suite/workbench.html',
+    hasHandler: true
+  }
+]
+GET_STATUS 200
+CONTENT_TYPE text/html; charset=utf-8
+BODY_BYTES 375615
+BODY_SHA256 ab188b639e7740f4603fbedc16b012f503dc585ad3e3b4b43b56447f3ee8c69c
+HAS_LG_TITLE true
+HAS_VEHICLE_20GP true
+HEAD_STATUS 200
+POST_STATUS 405
+MOCK_ROUTE n=1 PASS
+
+real	0m0.140s
+user	0m0.112s
+sys	0m0.059s
+
+# 说明：fetch().text() 再哈希会因 UTF-8 往返与源文件差 3 字节；以下面真实 dsh web 的字节对比为准。

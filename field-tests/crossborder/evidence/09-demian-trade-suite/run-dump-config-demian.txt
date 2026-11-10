@@ -1,0 +1,6 @@
+# dsh --profile web --dump-config 摘录 · 2026-11-09 19:26 EST · n=1 · unshare -rn · exit 0 · real 0.130s
+# 完整 dump 1250 行在 internal-archive/09-demian-trade-suite/raw-runs/dump-config.raw.txt（含第三方 bundle 配置，不入公开库）
+# 与 demian 相关的行：
+# == dsh-plugin-demian-trade-suite
+- id: demian-trade-suite-panel
+  name: dsh-plugin-demian-trade-suite

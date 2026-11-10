@@ -1,0 +1,71 @@
+[
+  {
+    "file": "req-01.json",
+    "path": "/v1/chat/completions",
+    "body_len": 22803,
+    "model": "deepseek-flash",
+    "stream": true,
+    "tools_n": 12,
+    "system_chars": 8799,
+    "system_method": "len(\"\".join(system-role message contents))",
+    "tools_json_chars_compact": 13600,
+    "tools_json_chars_spaced": 14057,
+    "interesting_headers": {
+      "Authorization": "<redacted>",
+      "User-Agent": "opencode/latest/2.2.6/cli",
+      "traceparent": "00-af72e7673503c07a3aed70cb46a043ae-26138960c8998267-01",
+      "x-opencode-client": "cli",
+      "x-opencode-project": "859103f5cb957a652ab64a837e4d950b813a22c1",
+      "x-opencode-session": "ses_<redacted>",
+      "x-opencode-session-id": "ses_<redacted>",
+      "x-session-affinity": "ses_<redacted>",
+      "x-session-id": "ses_<redacted>"
+    }
+  },
+  {
+    "file": "req-02.json",
+    "path": "/v1/chat/completions",
+    "body_len": 2148,
+    "model": "deepseek-flash",
+    "stream": true,
+    "tools_n": 0,
+    "system_chars": 1806,
+    "system_method": "len(\"\".join(system-role message contents))",
+    "tools_json_chars_compact": 2,
+    "tools_json_chars_spaced": 2,
+    "interesting_headers": {
+      "Authorization": "<redacted>",
+      "User-Agent": "opencode/latest/2.2.6/cli",
+      "traceparent": "00-af72e7673503c07a3aed70cb46a043ae-46a2bb1cea7563b0-01",
+      "x-opencode-client": "cli",
+      "x-opencode-project": "859103f5cb957a652ab64a837e4d950b813a22c1",
+      "x-opencode-session": "ses_<redacted>",
+      "x-opencode-session-id": "ses_<redacted>",
+      "x-session-affinity": "ses_<redacted>",
+      "x-session-id": "ses_<redacted>"
+    }
+  },
+  {
+    "file": "req-03.json",
+    "path": "/v1/chat/completions",
+    "body_len": 2117,
+    "model": "deepseek-flash",
+    "stream": true,
+    "tools_n": 0,
+    "system_chars": 1806,
+    "system_method": "len(\"\".join(system-role message contents))",
+    "tools_json_chars_compact": 2,
+    "tools_json_chars_spaced": 2,
+    "interesting_headers": {
+      "Authorization": "<redacted>",
+      "User-Agent": "opencode/latest/2.2.6/cli",
+      "traceparent": "00-af72e7673503c07a3aed70cb46a043ae-04025f32495b4334-01",
+      "x-opencode-client": "cli",
+      "x-opencode-project": "859103f5cb957a652ab64a837e4d950b813a22c1",
+      "x-opencode-session": "ses_<redacted>",
+      "x-opencode-session-id": "ses_<redacted>",
+      "x-session-affinity": "ses_<redacted>",
+      "x-session-id": "ses_<redacted>"
+    }
+  }
+]

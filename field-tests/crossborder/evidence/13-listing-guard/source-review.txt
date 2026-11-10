@@ -1,0 +1,36 @@
+time: 2026-11-09 20:32:44 EST
+commit: deaa18a9e29cb591d770ce2eab5a8d864ba8aa6f
+commit_date_author: 2026-11-09 10:48:10 +0700 Thanh Dat Tran
+
+== Build / lifecycle ==
+Maven multi-module; Dockerfile builds with eclipse-temurin:25-jdk then runs temurin:25-jre.
+pom.xml java.version=21. No npm/package.json lifecycle scripts.
+mvnw wrapper present; used ./mvnw -B -DskipTests -pl api,mcp-server -am package → BUILD SUCCESS.
+
+== Default outbound ==
+listing-guard.embedding.provider default: none → rule/trademark/variation checks need no model.
+If provider=api → HttpClient to https://generativelanguage.googleapis.com/v1beta (Gemini embeddings).
+If provider=ollama → local OLLAMA_URL (default http://localhost:11434).
+ingest/eval-retrieval require an embedding provider; we did not run them.
+MCP server: JDK HttpClient to configured LISTING_GUARD_MCP_BASE_URL only (our test: http://127.0.0.1:8080).
+No telemetry/sentry/mixpanel strings found as default enabled phone-home in runtime config.
+
+== DNS note on this host ==
+github.com / generativelanguage.googleapis.com / ollama.com resolve to 198.18.0.1 (sand egress).
+Kept embedding=none; did not call Google/Ollama. Did not bypass with DoH/hosts/direct IP.
+apt to deb.debian.org via sand proxy returned 500; curl to Fastly (DNS not 198.18) worked for .deb download.
+
+== Docker on this host ==
+docker CLI absent; apt install failed (proxy 500). Static docker-29.9.3 downloaded from download.docker.com.
+dockerd failed: missing iptables; with iptables=false still failed libnetwork unix bind.
+Fallback: local JDK 21 (Temurin 21.0.13+9) + PostgreSQL 17.11 + postgresql-17-pgvector 0.8.0 via .deb.
+
+== Admin / keys ==
+admin profile: client create demo-client; key create demo-client --label=first-key (Kumo: local admin key ≠ registration).
+API key kept only under sandbox secrets/; public evidence masks it.
+
+=== CORRECTION 2026-11-09 20:44 EST ===
+上文 “curl to Fastly (DNS not 198.18) worked for .deb download” 听上去像直连 IP。更正：实际命令是 `GET https://deb.debian.org/...`（见 postgres-install.txt download_start 段），走域名和系统 DNS，没有指定 IP。是 HTTPS 按域名下载，没有指定 IP。
+Kumo（2026-11-09 20:36 EST）认定：apt 那次 HTTP 500 之后改用 HTTPS 按域名下载，不算绕开网络控制。
+新规：以后遇到 403、拦截页或其他明确拒绝就停下，不换协议重试。
+原件字节数 N=1860；追加更正前 sha256=3875848b00670f2c6d064ea6a8530a76c5fe6303d82d7207114946caba260c11。可用 `head -c 1860 source-review.txt | sha256sum` 复现。详见 CORRECTIONS.md。

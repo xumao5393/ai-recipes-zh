@@ -1,0 +1,11 @@
+{
+    "auth_required": "false",
+    "browser_headless": "false",
+    "max_agent_concurrency": "2",
+    "default_schedule_timezone": "America/New_York",
+    "task_retention_days": "30",
+    "telemetry_enabled": "true",
+    "skills_auto_sync_enabled": "true",
+    "max_upload_size": "104857600",
+    "install_id": "<install_id>"
+}

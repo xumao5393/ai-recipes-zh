@@ -1,0 +1,7 @@
+# git clone 记录
+# 时间: 2026-11-09 17:28:52 EST（开始）；real 0.587s；exit 0
+# 命令: git clone https://github.com/xiong18166089606-design/dsh-trade-assistant src
+# DNS: getent hosts github.com → 198.18.0.1（本机代理的 fake-ip 段）；clone 与 api.github.com 读取都成功，不是黑洞拦截，未做任何绕过
+HEAD: ddce5828517f07899e93d4203490c14b2ffc8002 2026-08-24 20:21:52 +0800
+提交历史：共 3 个提交（逐条历史只放内部存档，见 MASKING.txt）
+commit 链接: https://github.com/xiong18166089606-design/dsh-trade-assistant/commit/ddce5828517f07899e93d4203490c14b2ffc8002

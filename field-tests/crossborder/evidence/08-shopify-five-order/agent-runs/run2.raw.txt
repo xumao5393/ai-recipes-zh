@@ -1,0 +1,28 @@
+```json
+{"input_orders": 5,
+ "queue": [
+  {"order": "#FAKE-1002", "customer": "Bob Address", "exception": "address_problem",
+   "evidence": ["shipping_address.address_verification=failed", "shipping_address.address1=??? Apt", "shipping_address.city=\"\"", "shipping_address.zip=\"\"", "fulfillment_status=unfulfilled", "promised_ship_by=2026-11-11T23:59:59Z"],
+   "age": "1d 11h since created_at 2026-11-08T12:00:00Z (reference 2026-11-09T23:00:00Z)",
+   "proposed_next_step": "Merchant to review the address and decide whether to ask the customer for a corrected shipping address before fulfillment. Hold shipment until the address is verified. The Bot will not contact the customer.",
+   "approval_needed": true},
+  {"order": "#FAKE-1003", "customer": "Cara Backorder", "exception": "backorder",
+   "evidence": ["fulfillment_status=partial", "line_items[1].sku=SKU-B2", "line_items[1].inventory_status=backordered", "line_items[1].fulfillable_quantity=2", "fulfillments[0].line_item_skus=[\"SKU-B1\"]", "promised_ship_by=2026-11-12T23:59:59Z"],
+   "age": "2d 14h since created_at 2026-11-07T09:00:00Z (reference 2026-11-09T23:00:00Z)",
+   "proposed_next_step": "Merchant to confirm the restock date for SKU-B2 and decide whether the remaining 2 units can ship by the promised date of 2026-11-12, or whether the customer needs an update. The Bot will not edit inventory or contact the customer.",
+   "approval_needed": true},
+  {"order": "#FAKE-1004", "customer": "Dan Late", "exception": "late_shipment",
+   "evidence": ["fulfillment_status=unfulfilled", "fulfillments=[]", "promised_ship_by=2026-11-05T23:59:59Z", "line_items[0].inventory_status=in_stock", "line_items[0].fulfillable_quantity=1"],
+   "age": "8d 15h since created_at 2026-11-01T08:00:00Z; past promised_ship_by by about 3d 23h (reference 2026-11-09T23:00:00Z)",
+   "proposed_next_step": "Merchant to find out why an in-stock item has not shipped and put it first for fulfillment. Merchant decides whether to send the customer a delay notice. The Bot will not refund, discount, or contact anyone.",
+   "approval_needed": true},
+  {"order": "#FAKE-1005", "customer": "Eve Incomplete", "exception": "incomplete",
+   "evidence": ["missing:fulfillment_status", "missing:fulfillments", "missing:promised_ship_by", "missing:line_items[0].fulfillable_quantity", "missing:line_items[0].inventory_status"],
+   "age": "1d 3h since created_at 2026-11-08T20:00:00Z (reference 2026-11-09T23:00:00Z)",
+   "proposed_next_step": "Marked incomplete with no exception type guessed. Merchant to check this order's fulfillment status, inventory status, and promised ship date in admin (https://example.invalid/admin/orders/9005).",
+   "approval_needed": true}
+ ],
+ "excluded_normal": ["#FAKE-1001"],
+ "exception_rows": 4,
+ "actions_executed": []}
+```

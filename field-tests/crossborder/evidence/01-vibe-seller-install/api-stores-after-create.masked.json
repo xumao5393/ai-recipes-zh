@@ -1,0 +1,19 @@
+[
+  {
+    "id": "<store_uuid>",
+    "name": "test-no-account",
+    "browser_backend": "chrome",
+    "browser_config": {},
+    "ziniao_account_id": null,
+    "browser_oauth": null,
+    "platforms": [
+      "amazon"
+    ],
+    "countries": [
+      "US"
+    ],
+    "platform_countries": {},
+    "created_at": "2026-11-09T19:44:32.356276+00:00",
+    "updated_at": "2026-11-09T19:44:32.356294+00:00"
+  }
+]

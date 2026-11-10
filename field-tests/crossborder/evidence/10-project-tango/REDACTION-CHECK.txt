@@ -1,0 +1,20 @@
+# REDACTION-CHECK · 10-project-tango  2026-11-09 19:41 EST
+# 范围: 本目录全部文件（不含本文件）+ ../../10-Project-Tango假店铺MCP-离线测试与最小读取.md
+## 主目录路径
+# rg -n --glob '!REDACTION-CHECK.txt' -e '<home>'
+0 命中
+## 工作区绝对路径
+# rg -n --glob '!REDACTION-CHECK.txt' -e '<workspace>'
+0 命中
+## 沙箱用户名字样
+# rg -n --glob '!REDACTION-CHECK.txt' -e '\bbox\b'
+0 命中
+## key 模式
+# rg -n --glob '!REDACTION-CHECK.txt' -e '(AKIA[0-9A-Z]{16}|sk-[A-Za-z0-9]{16,}|ghp_[A-Za-z0-9]{20,}|github_pat_|Atzr\|[A-Za-z0-9]{8,}|xox[bp]-|Bearer [A-Za-z0-9._-]{20,}|PRIVATE KEY)'
+0 命中
+## webhook / 裸 token
+# rg -n --glob '!REDACTION-CHECK.txt' -e 'webhook|hooks\.|token=[A-Za-z0-9]'
+0 命中
+## DeepSeek 官方地址
+# rg -n --glob '!REDACTION-CHECK.txt' -e 'api\.deepseek\.com'
+0 命中

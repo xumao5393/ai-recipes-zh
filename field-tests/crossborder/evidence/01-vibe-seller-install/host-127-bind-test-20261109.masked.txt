@@ -1,0 +1,18 @@
+date_start: 2026-11-09 14:49:46 EST
+cmd: vibe-seller start --host 127.0.0.1 --port 7777
+vibe-seller running on http://127.0.0.1:7777  (PID 148353)
+  logs: <home>/.vibe-seller/logs/backend_7777.log
+  stop: vibe-seller stop --port 7777
+=== ss ===
+LISTEN 0      2048       127.0.0.1:7777       0.0.0.0:*    users:(("python",pid=148353,fd=14))      
+=== curl 127.0.0.1 ===
+http_code=200
+=== auth status ===
+{"auth_required":false}
+=== start stdout from logs listing ===
+LISTEN 0      2048       127.0.0.1:7777       0.0.0.0:*    users:(("python",pid=148353,fd=14))      
+date_stop_cmd: 2026-11-09 14:49:50 EST
+Stopped vibe-seller on port 7777 (PID 148353, via port).
+=== after stop ===
+7777 clear
+date_end: 2026-11-09 14:49:51 EST

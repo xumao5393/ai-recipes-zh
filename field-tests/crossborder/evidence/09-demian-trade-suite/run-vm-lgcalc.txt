@@ -1,0 +1,21 @@
+# 插件原版 lgCalc（vm + DOM 桩）· 2026-11-09 19:37:46 EST · n=1 · unshare -rn · exit 0 · real 0.081s
+# 加载: workbench.html 内装柜 IIFE 的未改动连续字节切片（见 lg-iife-extract-meta.txt）
+# 调用: window.LG.calc（插件源码暴露的 lgCalc），不是 run_offline.mjs
+# 手算/输入: 仍用 19:24:55 EST 的 fake-input.json / hand-calc.md，哈希未改
+IIFE_SHA256 0e8c197a088f6148a388ca2cabcf23e5b4780c392d018049d4e5e8f9ee7c535f
+IIFE_BYTES 53098
+HAND_SHA256 439edf65038b862899527ba1d287180eb2799de4a15b092558d0b35e5101fde1
+INPUT_SHA256 27fd90b1e4a7581b16b5ddc705c6491bd9c2fe15412856d1c31d86907454a207
+LG_KEYS state,calc,loadDemo,clear,toDocs,fromDocs,buildPlan,render,printPlan,switchWs,resize,vehicles
+{"group":"A","vehicle":"20GP","totalCbm":6,"totalGw":1100,"nEst":1,"usage":18.13719792685782,"packed":100,"attempted":100,"match_totalCbm":true,"match_totalGw":true,"match_nEst":true,"hand_totalCbm":6,"hand_totalGw":1100,"hand_nEst":1}
+{"group":"A","vehicle":"40HQ","totalCbm":6,"totalGw":1100,"nEst":1,"usage":7.88979067004639,"packed":100,"attempted":100,"match_totalCbm":true,"match_totalGw":true,"match_nEst":true,"hand_totalCbm":6,"hand_totalGw":1100,"hand_nEst":1}
+{"group":"B","vehicle":"20GP","totalCbm":8.0784,"totalGw":1100,"nEst":1,"usage":24.419923288721368,"packed":100,"attempted":100,"match_totalCbm":true,"match_totalGw":true,"match_nEst":true,"hand_totalCbm":8.0784,"hand_totalGw":1100,"hand_nEst":1}
+{"group":"B","vehicle":"40HQ","totalCbm":8.0784,"totalGw":1100,"nEst":1,"usage":10.62281415815046,"packed":100,"attempted":100,"match_totalCbm":true,"match_totalGw":true,"match_nEst":true,"hand_totalCbm":8.0784,"hand_totalGw":1100,"hand_nEst":1}
+{"group":"C","vehicle":"20GP","totalCbm":38.4096,"totalGw":12465,"nEst":2,"usage":79.67598500476932,"packed":480,"attempted":810,"match_totalCbm":true,"match_totalGw":true,"match_nEst":true,"hand_totalCbm":38.4096,"hand_totalGw":12465,"hand_nEst":2}
+{"group":"C","vehicle":"40HQ","totalCbm":38.4096,"totalGw":12465,"nEst":1,"usage":50.507283953368976,"packed":810,"attempted":810,"match_totalCbm":true,"match_totalGw":true,"match_nEst":true,"hand_totalCbm":38.4096,"hand_totalGw":12465,"hand_nEst":1}
+OVERALL_PLUGIN_LGCALC PASS n=1
+NOTE source: unmodified IIFE from workbench.html via vm; hand calc unchanged from 19:24:55 EST
+
+real	0m0.081s
+user	0m0.054s
+sys	0m0.035s

@@ -1,0 +1,2 @@
+=== POST /api/browser/web/start empty ===
+{"detail":"Failed to start web browser: [Errno 98] error while attempting to bind on address ('127.0.0.1', 9222): address already in use"}

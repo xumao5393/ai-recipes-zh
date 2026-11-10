@@ -1,0 +1,3 @@
+internal-archive/14-h2-nexus/pages/home.html: OK
+internal-archive/14-h2-nexus/pages/privacy-policy.html: OK
+internal-archive/14-h2-nexus/pages/terms-of-use.html: OK

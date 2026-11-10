@@ -1,0 +1,9 @@
+pid=138722 start_epoch=1794253375.040721641
+wait i=5 t=0.489786s code='000' alive=yes
+wait i=10 t=1.087914s code='000' alive=yes
+wait i=15 t=1.688595s code='000' alive=yes
+FIRST_HTTP code=404 elapsed_s=2.182982 body_bytes=0
+
+LISTEN 0      511        127.0.0.1:3080       0.0.0.0:*    users:(("MainThread",pid=138722,fd=21))  
+STDOUT:
+STDERR:

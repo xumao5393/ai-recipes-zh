@@ -1,0 +1,6 @@
+01-clean-etsy.json: OK
+01b-clean-etsy-with-category.json: OK
+02-rule-violation-etsy.json: OK
+03-trademark-hit-etsy.json: OK
+04-bad-variation-amazon.json: OK
+04b-parent-as-listing-amazon.json: OK

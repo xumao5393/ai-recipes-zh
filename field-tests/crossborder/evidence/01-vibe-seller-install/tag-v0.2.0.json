@@ -1,0 +1,10 @@
+{
+  "ref": "refs/tags/v0.2.0",
+  "node_id": "REF_kwDOSc_FzbByZWZzL3RhZ3MvdjAuMi4w",
+  "url": "https://api.github.com/repos/zpoint/vibe-seller/git/refs/tags/v0.2.0",
+  "object": {
+    "sha": "7e7e66b2c25f4e845fd7cf7b2b5daed0a6baf8ef",
+    "type": "tag",
+    "url": "https://api.github.com/repos/zpoint/vibe-seller/git/tags/7e7e66b2c25f4e845fd7cf7b2b5daed0a6baf8ef"
+  }
+}

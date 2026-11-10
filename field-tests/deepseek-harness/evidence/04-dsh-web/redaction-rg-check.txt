@@ -1,0 +1,21 @@
+# rg verification after redaction 2026-11-09 Mon Nov  9 14:41:30 EST 2026
+## pattern: dsh-auth-|\\?token=
+/workspace/fourday-20261109/deepseek-harness/repo/evidence/04-dsh-web/redaction-rg-check.txt:2:## pattern: dsh-auth-|\\?token=
+/workspace/fourday-20261109/deepseek-harness/repo/evidence/04-dsh-web/home-authed.headers:5:set-cookie: dsh-auth-<redacted>=<redacted>; Max-Age=2592000; Path=/; Expires=Wed, 09 Dec 2026 19:34:46 GMT; HttpOnly; SameSite=Strict
+/workspace/fourday-20261109/deepseek-harness/repo/evidence/04-dsh-web/home-jar.headers:5:set-cookie: dsh-auth-<redacted>=<redacted>; Max-Age=2592000; Path=/; Expires=Wed, 09 Dec 2026 19:34:46 GMT; HttpOnly; SameSite=Strict
+/workspace/fourday-20261109/deepseek-harness/repo/evidence/04-dsh-web/cookies.txt:5:#HttpOnly_127.0.0.1	FALSE	/	FALSE	1796844886	dsh-auth-<redacted>	<redacted>
+/workspace/fourday-20261109/deepseek-harness/repo/evidence/04-dsh-web/web-stdout.txt:1:dsh web: http://127.0.0.1:3080/?token=<redacted>
+
+## pattern: token=<redacted> / dsh-auth-<redacted> (expected)
+/workspace/fourday-20261109/deepseek-harness/repo/evidence/04-dsh-web/redaction-rg-check.txt:4:/workspace/fourday-20261109/deepseek-harness/repo/evidence/04-dsh-web/home-authed.headers:5:set-cookie: dsh-auth-<redacted>=<redacted>; Max-Age=2592000; Path=/; Expires=Wed, 09 Dec 2026 19:34:46 GMT; HttpOnly; SameSite=Strict
+/workspace/fourday-20261109/deepseek-harness/repo/evidence/04-dsh-web/redaction-rg-check.txt:5:/workspace/fourday-20261109/deepseek-harness/repo/evidence/04-dsh-web/home-jar.headers:5:set-cookie: dsh-auth-<redacted>=<redacted>; Max-Age=2592000; Path=/; Expires=Wed, 09 Dec 2026 19:34:46 GMT; HttpOnly; SameSite=Strict
+/workspace/fourday-20261109/deepseek-harness/repo/evidence/04-dsh-web/redaction-rg-check.txt:6:/workspace/fourday-20261109/deepseek-harness/repo/evidence/04-dsh-web/cookies.txt:5:#HttpOnly_127.0.0.1	FALSE	/	FALSE	1796844886	dsh-auth-<redacted>	<redacted>
+/workspace/fourday-20261109/deepseek-harness/repo/evidence/04-dsh-web/redaction-rg-check.txt:7:/workspace/fourday-20261109/deepseek-harness/repo/evidence/04-dsh-web/web-stdout.txt:1:dsh web: http://127.0.0.1:3080/?token=<redacted>
+/workspace/fourday-20261109/deepseek-harness/repo/evidence/04-dsh-web/redaction-rg-check.txt:9:## pattern: token=<redacted> / dsh-auth-<redacted> (expected)
+/workspace/fourday-20261109/deepseek-harness/repo/evidence/04-dsh-web/home-authed.headers:5:set-cookie: dsh-auth-<redacted>=<redacted>; Max-Age=2592000; Path=/; Expires=Wed, 09 Dec 2026 19:34:46 GMT; HttpOnly; SameSite=Strict
+/workspace/fourday-20261109/deepseek-harness/repo/evidence/04-dsh-web/home-jar.headers:5:set-cookie: dsh-auth-<redacted>=<redacted>; Max-Age=2592000; Path=/; Expires=Wed, 09 Dec 2026 19:34:46 GMT; HttpOnly; SameSite=Strict
+/workspace/fourday-20261109/deepseek-harness/repo/evidence/04-dsh-web/cookies.txt:5:#HttpOnly_127.0.0.1	FALSE	/	FALSE	1796844886	dsh-auth-<redacted>	<redacted>
+/workspace/fourday-20261109/deepseek-harness/repo/evidence/04-dsh-web/web-stdout.txt:1:dsh web: http://127.0.0.1:3080/?token=<redacted>
+
+## leftover raw token fragments (8Zz|VPhE|Iq1C|P5hZ)
+(no matches)

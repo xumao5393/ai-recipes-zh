@@ -1,0 +1,176 @@
+{
+  "meta": {
+    "label": "方法来自网站文章，没有他人实测数据",
+    "source_url": "https://whiskerbeacon.com/guides/shopify-automation-with-grok-bot/",
+    "note": "Fictional local JSON only. Not from any Shopify store. No API calls.",
+    "reference_time_utc": "2026-11-09T23:00:00Z",
+    "n_orders": 5
+  },
+  "orders": [
+    {
+      "id": "gid://shopify/Order/9001",
+      "name": "#FAKE-1001",
+      "admin_url": "https://example.invalid/admin/orders/9001",
+      "customer": {"display_name": "Alice Normal"},
+      "created_at": "2026-11-05T14:00:00Z",
+      "updated_at": "2026-11-06T10:00:00Z",
+      "fulfillment_status": "fulfilled",
+      "financial_status": "paid",
+      "shipping_address": {
+        "address1": "100 Main St",
+        "city": "Austin",
+        "province_code": "TX",
+        "country_code": "US",
+        "zip": "78701",
+        "address_verification": "confirmed"
+      },
+      "line_items": [
+        {
+          "sku": "SKU-N1",
+          "title": "Normal Widget",
+          "quantity": 1,
+          "fulfillable_quantity": 0,
+          "inventory_status": "in_stock"
+        }
+      ],
+      "fulfillments": [
+        {
+          "status": "success",
+          "shipped_at": "2026-11-06T09:30:00Z",
+          "tracking_number": "FAKETRACK001"
+        }
+      ],
+      "promised_ship_by": "2026-11-07T23:59:59Z"
+    },
+    {
+      "id": "gid://shopify/Order/9002",
+      "name": "#FAKE-1002",
+      "admin_url": "https://example.invalid/admin/orders/9002",
+      "customer": {"display_name": "Bob Address"},
+      "created_at": "2026-11-08T12:00:00Z",
+      "updated_at": "2026-11-08T12:05:00Z",
+      "fulfillment_status": "unfulfilled",
+      "financial_status": "paid",
+      "shipping_address": {
+        "address1": "??? Apt",
+        "city": "",
+        "province_code": "CA",
+        "country_code": "US",
+        "zip": "",
+        "address_verification": "failed"
+      },
+      "line_items": [
+        {
+          "sku": "SKU-A1",
+          "title": "Address Widget",
+          "quantity": 1,
+          "fulfillable_quantity": 1,
+          "inventory_status": "in_stock"
+        }
+      ],
+      "fulfillments": [],
+      "promised_ship_by": "2026-11-11T23:59:59Z"
+    },
+    {
+      "id": "gid://shopify/Order/9003",
+      "name": "#FAKE-1003",
+      "admin_url": "https://example.invalid/admin/orders/9003",
+      "customer": {"display_name": "Cara Backorder"},
+      "created_at": "2026-11-07T09:00:00Z",
+      "updated_at": "2026-11-08T16:00:00Z",
+      "fulfillment_status": "partial",
+      "financial_status": "paid",
+      "shipping_address": {
+        "address1": "55 Harbor Rd",
+        "city": "Seattle",
+        "province_code": "WA",
+        "country_code": "US",
+        "zip": "98101",
+        "address_verification": "confirmed"
+      },
+      "line_items": [
+        {
+          "sku": "SKU-B1",
+          "title": "In-stock Part",
+          "quantity": 1,
+          "fulfillable_quantity": 0,
+          "inventory_status": "in_stock"
+        },
+        {
+          "sku": "SKU-B2",
+          "title": "Backordered Part",
+          "quantity": 2,
+          "fulfillable_quantity": 2,
+          "inventory_status": "backordered"
+        }
+      ],
+      "fulfillments": [
+        {
+          "status": "success",
+          "shipped_at": "2026-11-08T15:00:00Z",
+          "tracking_number": "FAKETRACK003A",
+          "line_item_skus": ["SKU-B1"]
+        }
+      ],
+      "promised_ship_by": "2026-11-12T23:59:59Z"
+    },
+    {
+      "id": "gid://shopify/Order/9004",
+      "name": "#FAKE-1004",
+      "admin_url": "https://example.invalid/admin/orders/9004",
+      "customer": {"display_name": "Dan Late"},
+      "created_at": "2026-11-01T08:00:00Z",
+      "updated_at": "2026-11-08T08:00:00Z",
+      "fulfillment_status": "unfulfilled",
+      "financial_status": "paid",
+      "shipping_address": {
+        "address1": "9 Oak Ave",
+        "city": "Chicago",
+        "province_code": "IL",
+        "country_code": "US",
+        "zip": "60601",
+        "address_verification": "confirmed"
+      },
+      "line_items": [
+        {
+          "sku": "SKU-L1",
+          "title": "Late Widget",
+          "quantity": 1,
+          "fulfillable_quantity": 1,
+          "inventory_status": "in_stock"
+        }
+      ],
+      "fulfillments": [],
+      "promised_ship_by": "2026-11-05T23:59:59Z"
+    },
+    {
+      "id": "gid://shopify/Order/9005",
+      "name": "#FAKE-1005",
+      "admin_url": "https://example.invalid/admin/orders/9005",
+      "customer": {"display_name": "Eve Incomplete"},
+      "created_at": "2026-11-08T20:00:00Z",
+      "updated_at": "2026-11-08T20:01:00Z",
+      "fulfillment_status": null,
+      "financial_status": "paid",
+      "shipping_address": {
+        "address1": "77 Pine St",
+        "city": "Denver",
+        "province_code": "CO",
+        "country_code": "US",
+        "zip": "80202",
+        "address_verification": "confirmed"
+      },
+      "line_items": [
+        {
+          "sku": "SKU-M1",
+          "title": "Mystery Widget",
+          "quantity": 1,
+          "fulfillable_quantity": null,
+          "inventory_status": null
+        }
+      ],
+      "fulfillments": null,
+      "promised_ship_by": null
+    }
+  ]
+}

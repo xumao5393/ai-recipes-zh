@@ -1,0 +1,154 @@
+[
+ {
+  "id": "E01",
+  "inquiry_type": "具体采购",
+  "type_evidence_命中条数": 4,
+  "key_fields": {
+   "数量": "3000 pcs",
+   "交期要求": "needed before March",
+   "客户地区": "Sweden",
+   "客户身份线索": [
+    "贸易/采购型公司，可能在比价"
+   ]
+  },
+  "red_flags": []
+ },
+ {
+  "id": "E02",
+  "inquiry_type": "比价/索取价目表",
+  "type_evidence_命中条数": 2,
+  "key_fields": {},
+  "red_flags": [
+   {
+    "level": "低危",
+    "note": "模板化套话，可能是群发"
+   }
+  ]
+ },
+ {
+  "id": "E03",
+  "inquiry_type": "钓鱼/诈骗",
+  "type_evidence_命中条数": 2,
+  "key_fields": {},
+  "red_flags": [
+   {
+    "level": "中危",
+    "note": "内含链接，勿直接点击，先核验域名"
+   },
+   {
+    "level": "中危",
+    "note": "催促下单/付款的紧迫话术需核实"
+   }
+  ]
+ },
+ {
+  "id": "E04",
+  "inquiry_type": "无法判断",
+  "type_evidence_命中条数": 0,
+  "key_fields": {
+   "数量": "1200 pcs"
+  },
+  "red_flags": []
+ },
+ {
+  "id": "E05",
+  "inquiry_type": "无法判断",
+  "type_evidence_命中条数": 0,
+  "key_fields": {},
+  "red_flags": []
+ },
+ {
+  "id": "E06",
+  "inquiry_type": "无法判断",
+  "type_evidence_命中条数": 0,
+  "key_fields": {
+   "金额线索": "99 USD"
+  },
+  "red_flags": []
+ },
+ {
+  "id": "E07",
+  "inquiry_type": "市场开发/泛询价",
+  "type_evidence_命中条数": 1,
+  "key_fields": {
+   "数量": "500 pcs",
+   "客户地区": "Morocco"
+  },
+  "red_flags": []
+ },
+ {
+  "id": "E08",
+  "inquiry_type": "具体采购",
+  "type_evidence_命中条数": 3,
+  "key_fields": {
+   "数量": "20000 pcs"
+  },
+  "red_flags": []
+ },
+ {
+  "id": "E09",
+  "inquiry_type": "无法判断",
+  "type_evidence_命中条数": 0,
+  "key_fields": {
+   "客户身份线索": [
+    "院校/科研机构，多为小批量或试用采购"
+   ]
+  },
+  "red_flags": []
+ },
+ {
+  "id": "E10",
+  "inquiry_type": "样品需求",
+  "type_evidence_命中条数": 1,
+  "key_fields": {
+   "数量": "2000 pcs",
+   "客户地区": "Spain"
+  },
+  "red_flags": []
+ },
+ {
+  "id": "E11",
+  "inquiry_type": "无法判断",
+  "type_evidence_命中条数": 0,
+  "key_fields": {},
+  "red_flags": []
+ },
+ {
+  "id": "E12",
+  "inquiry_type": "无法判断",
+  "type_evidence_命中条数": 0,
+  "key_fields": {},
+  "red_flags": []
+ },
+ {
+  "id": "E13",
+  "inquiry_type": "无法判断",
+  "type_evidence_命中条数": 0,
+  "key_fields": {
+   "金额线索": "300 USD",
+   "客户身份线索": [
+    "政府/招标背景，注意投标文件与合规要求"
+   ]
+  },
+  "red_flags": [
+   {
+    "level": "高危",
+    "note": "索要预付费/手续费是经典诈骗特征"
+   }
+  ]
+ },
+ {
+  "id": "E14",
+  "inquiry_type": "具体采购",
+  "type_evidence_命中条数": 3,
+  "key_fields": {
+   "数量": "1000 pcs",
+   "规格线索": "grade: 304. Please send catalog.",
+   "客户地区": "Czech",
+   "客户身份线索": [
+    "贸易/采购型公司，可能在比价"
+   ]
+  },
+  "red_flags": []
+ }
+]

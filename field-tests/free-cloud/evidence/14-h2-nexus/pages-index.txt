@@ -1,0 +1,18 @@
+# sha256 index
+48681af53bad42af5658f6880b9dc91bfc9a9f133a5bd5ecbb8f77ac8b263840  <workspace>/free-cloud/sandbox/14-h2-nexus/pages/home.html
+url=https://h2.nexus/
+http=200
+fetched=2026-11-09 20:22:08 EST
+
+d8395532715353cea3af6c732ddc4b4092202ca6cd420379812ec77052fa1d63  <workspace>/free-cloud/sandbox/14-h2-nexus/pages/terms-of-use.html
+url=https://h2.nexus/terms-of-use/
+http=200
+fetched=2026-11-09 20:22:22 EST
+
+9348d62877b4b134be03161e7a44b1b2f56f732a9db0ef904874b97ace9e7179  <workspace>/free-cloud/sandbox/14-h2-nexus/pages/privacy-policy.html
+url=https://h2.nexus/privacy-policy/
+http=200
+fetched=2026-11-09 20:22:08 EST
+
+
+# Correction (2026-11-09 20:26:33 EST): Index paths above still show sandbox/ from fetch. Canonical archived originals: internal-archive/14-h2-nexus/pages/. See SHA256SUMS.txt + SHA256SUMS.verify.txt.

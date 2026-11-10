@@ -1,0 +1,58 @@
+time_start: 2026-11-09 21:25:55 EST
+cwd: <sandbox>/15-mcp-store-tools
+cmd: git clone https://github.com/thealirazadev/mcp-store-tools.git upstream
+note: no --depth first so we can pin exact commit; no UA spoofing (git default)
+Cloning into '<sandbox>/15-mcp-store-tools/upstream'...
+clone_exit: 0
+time_after_clone: 2026-11-09 21:25:56 EST
+cmd: git rev-parse HEAD && git log -1 --format=fuller && git checkout d0cc908 && git rev-parse HEAD && git log -1 --format=fuller && git status && git rev-parse --is-shallow-repository
+HEAD_before_checkout:
+d0cc908416dadf38602cb002d390bd62b85c114c
+commit d0cc908416dadf38602cb002d390bd62b85c114c
+Author:     Ali Raza <REDACTED_EMAIL>
+AuthorDate: Mon Nov 9 01:32:52 2026 +0500
+Commit:     Ali Raza <REDACTED_EMAIL>
+CommitDate: Mon Nov 9 01:32:52 2026 +0500
+
+    build: release 0.7.1
+==== checkout d0cc908 ====
+Note: switching to 'd0cc908'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at d0cc908 build: release 0.7.1
+checkout_exit: 0
+HEAD_after_checkout:
+d0cc908416dadf38602cb002d390bd62b85c114c
+d0cc908416dadf38602cb002d390bd62b85c114c
+commit d0cc908416dadf38602cb002d390bd62b85c114c
+Author:     Ali Raza <REDACTED_EMAIL>
+AuthorDate: Mon Nov 9 01:32:52 2026 +0500
+Commit:     Ali Raza <REDACTED_EMAIL>
+CommitDate: Mon Nov 9 01:32:52 2026 +0500
+
+    build: release 0.7.1
+status:
+HEAD detached at d0cc908
+nothing to commit, working tree clean
+is_shallow:
+false
+commit_count:
+102
+time_end: 2026-11-09 21:25:56 EST
+
+# 补充：Author/Commit 邮箱已改为 <REDACTED_EMAIL>（公开 git 提交里有，公开证据不抄录）。
+# commit_date_America/New_York: 2026-11-08 15:32:52 EST（由 2026-11-09 01:32:52 +0500 换算）

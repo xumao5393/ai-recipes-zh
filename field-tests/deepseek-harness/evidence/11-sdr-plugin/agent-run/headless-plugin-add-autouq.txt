@@ -1,0 +1,6 @@
+
+dependencies:
++ sdr-test-auto-uq link:<sandbox-sdr>/auto-uq
+
+Already up to date
+Done in 289ms using pnpm v10.34.6

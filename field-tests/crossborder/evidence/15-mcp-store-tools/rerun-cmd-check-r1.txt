@@ -1,0 +1,7 @@
+# 2026-11-09 21:39 EST 实测员按正文 §5 完整命令复跑（n=1），用于核对命令可复现
+cwd: <sandbox>/15-mcp-store-tools/upstream (HEAD d0cc908416dadf38602cb002d390bd62b85c114c)
+cmd: unshare -rn bash -c 'ip link set lo up; PYTHONPATH=. ../venv/bin/python ../drivers/audit_catalog_driver.py --fixture ../fixtures/catalog-nodes.json --expected-sha256 51bdbcd6...5252a'
+exit: 0; real 0m0.767s (首次带 time 的那次)
+stdout 顶层字段: tools, report, transport_calls, call_count（与 responses/audit-catalog-fictional.json 相同）
+stdout sha256: ee5407f365636ec5d4b23c64a415a80061adc2ddbb35849ac0f0b84ffafd126d
+入库 JSON sha256: ee5407f365636ec5d4b23c64a415a80061adc2ddbb35849ac0f0b84ffafd126d

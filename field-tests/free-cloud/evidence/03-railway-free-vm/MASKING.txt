@@ -1,0 +1,9 @@
+# MASKING · 03 Railway 免注册 VM
+- 会话输出中的 ssh-signup?code= 已改为 <REDACTED>
+- 预览 URL（*.up.railway.app）若出现改为 https://<vm-name>.up.railway.app
+- 公网 IP / DoH 解析到的真实 A 记录在公开证据中写作 <railway.new-A>；系统 DNS 劫持地址写作 <dns-sinkhole>
+- 本机 LAN 地址写作 <box-lan>；系统 resolver 写作 <resolver>
+- 主机名 / 本机用户名：本次未拿到 shell，无 VM 主机名；本机用户名未写入公开证据
+- 一次性 SSH 私钥：仅存在于 /tmp/railway-ssh-tmp/，测完已删除；公开证据只保留公钥指纹（ssh-key-fingerprint.txt）与公钥文件
+- 未打码原件：free-cloud/internal-archive/03-railway-free-vm/（repo 外，不同步）
+- 2026-11-09 15:39 EST：第三方网页全文（*.html 及全文 .txt）移到 internal-archive/…/fullpages/，不入公开仓库；公开仓库只留 URL、HTTP 状态、抓取时间、sha256（*.sha256.txt）和 EXCERPT 摘录。

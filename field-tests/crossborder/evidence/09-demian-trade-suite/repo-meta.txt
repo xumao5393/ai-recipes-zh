@@ -1,0 +1,11 @@
+# repo-meta · 2026-11-09 19:23:56 EST 查询 api.github.com
+full_name: southcul/demian-trade-suite-dsh-plugin
+html_url: https://github.com/southcul/demian-trade-suite-dsh-plugin
+stargazers_count: 0
+forks_count: 0
+license: MIT
+created_at: 2026-11-01T07:39:41Z
+pushed_at: 2026-11-01T09:02:03Z
+default_branch: main
+pinned_commit: e4c909ecd13beb7eba118815f61ba5b4eb15afaa
+npm: dsh-plugin-demian-trade-suite@1.0.1

@@ -1,0 +1,19 @@
+# dsh plugin add · 2026-11-09 19:25:43 EST · n=1 · unshare -rn（断网）
+# HOME/DSH_HOME 指向沙箱临时目录；命令: dsh plugin --profile web add <sandbox>/src
+# exit 0；real 0.749s
+Mon Nov  9 19:25:43 EST 2026
+dsh: initialized profile web at <sandbox>/tmp-home/.dsh/profiles/web
+
+dependencies:
++ dsh-plugin-demian-trade-suite link:<sandbox>/src
+
+Already up to date
+Done in 497ms using pnpm v10.34.6
+
+real	0m0.749s
+user	0m0.691s
+sys	0m0.200s
+EXIT_LOCAL:0
+
+# 结果：link 安装成功；profile package.json 的 bundles 含 dsh-plugin-demian-trade-suite
+# 未使用 --force / allow-version（无版本要求，无需豁免）

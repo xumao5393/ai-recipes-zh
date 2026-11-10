@@ -1,0 +1,26 @@
+{
+  "marketplace": "ETSY",
+  "listing": {
+    "title": "Handmade Speckle Ceramic Mug 12oz",
+    "description": "A simple handmade ceramic mug for coffee or tea. Speckle glaze. Dishwasher safe. Made in a small studio.",
+    "category": "Home & Living > Kitchen & Dining > Drinkware > Mugs",
+    "tags": [
+      "ceramic",
+      "mug",
+      "handmade",
+      "coffee",
+      "kitchen"
+    ],
+    "materials": [
+      "stoneware",
+      "glaze"
+    ],
+    "who_made": "i_did",
+    "when_made": "2020_2024",
+    "price": "18.00",
+    "quantity": 12,
+    "images": [
+      "https://example.invalid/mug-1.jpg"
+    ]
+  }
+}

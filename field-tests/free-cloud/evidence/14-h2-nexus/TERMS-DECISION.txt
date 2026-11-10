@@ -1,0 +1,63 @@
+# TERMS-DECISION — h2.nexus free 15-minute browser VM (IDEAS #49)
+# Round: terms-reading ONLY. No VM opened. /cli not fetched.
+# Time: 2026-11-09 20:24:10 EST (America/New_York)
+# Evidence: EXCERPT-official.txt; pages sha256 + url + http-code + fetched-at in this folder; full HTML in internal-archive/14-h2-nexus/pages/
+
+## Pages read
+| Page | URL | HTTP | sha256 (file) |
+|---|---|---|---|
+| Home | https://h2.nexus/ | 200 | see home.sha256.txt |
+| Terms of Service | https://h2.nexus/terms-of-use/ | 200 | see terms-of-use.sha256.txt |
+| Privacy Policy | https://h2.nexus/privacy-policy/ | 200 | see privacy-policy.sha256.txt |
+| Separate AUP URL | https://h2.nexus/aup , /acceptable-use-policy/ , … | 404 | n/a — AUP is §8 inside Terms |
+
+Incorporated by reference (read as sections of Terms / linked Privacy): Privacy Policy; Acceptable Use Policy (§8); Anti-Spam Policy (§9); SLA (§16); “any additional policies, tariff descriptions or special terms published by the Company for specific services” (Terms 1.4) — no separate free-VM special terms page found/read.
+
+## (a) Login required?
+Quote (Terms 3.1): "To use certain Services, the Client must create an account."
+Quote (FAQ / product page, NOT Terms): "free server for 15 minutes, with no registration or card"
+Assessment: **unclear**. Terms require an account for “certain Services” but do not name the 15-minute free server. Product-page FAQ says no registration; per Kumo, product-page copy is not grounds to act, and Terms 17.3 says marketing descriptions are informational only.
+
+## (b) Email required?
+Quote (Terms 20.3): "The Client is responsible for maintaining a valid email address and checking Client Area notifications."
+Quote (Privacy 2.1): "Account data: name, company name, email address, …"
+Assessment: **unclear** for the free 15-minute flow. Email is clearly tied to accounts/Client Area. Whether opening the free server creates an account or collects email is not stated in Terms. FAQ claims no registration (marketing only).
+
+## (c) Anonymous use prohibited?
+Quote (Terms acceptance): "By registering an account, ordering, paying for, accessing or using the Services, the Client confirms …"
+No clause found that expressly says “anonymous use is prohibited.”
+Assessment: **unclear / not clearly allowed**. Acceptance attaches to accessing or using Services; Terms do not expressly authorise anonymous free-VM use. FAQ “no registration” is marketing, not Terms clearance. Absence of an explicit ban ≠ permission under Kumo’s rule when other account clauses are unclear.
+
+## (d) Automated or scripted use prohibited?
+Quote (Terms 8.3): prohibited activities include “unauthorised scanning, brute-force attacks, vulnerability exploitation or penetration testing against third parties;” and “circumvention of the Company's limits, billing, anti-abuse systems, rate limits or technical controls.”
+Assessment: **unclear**. No blanket “no bots / no scripts” sentence. Automated testing could still be treated as circumvention of limits/anti-abuse depending on how the free server is gated. Not a clear green light.
+
+## (e) Scope clause ("accessing or using")
+Quote (verbatim): "By registering an account, ordering, paying for, accessing or using the Services, the Client confirms that the Client has read, understood and accepted these Terms."
+Also: Terms govern website, client area, control panel, virtual servers, … APIs, documentation and related services (“Services”).
+Assessment: **clear**. Mere access/use binds the Client to the Terms.
+
+## (f) Other unclear / material points
+- Free 15-minute entry URL on the site is `/cli`; **not fetched** this round to avoid opening a VM.
+- No dedicated free-VM special terms page found beyond general Terms mentions of PROMO/free/trial limits (14.5, 16.5, 5.9).
+- Separate AUP URL 404; AUP only as Terms §8 (read).
+- Age ≥18 (Terms 1.2 / Privacy 16.1) — clear, not blocking for this project’s adult operator.
+- Company may require KYC/KYB before or after activation (Terms 3.8) — unclear whether it can apply mid free session.
+
+## Kumo gate (2026-11-09)
+Open only if terms were fully read **and** none of (login required / email required / anonymous prohibited / automation prohibited) applies; if any clause is unclear → do not open; if terms can't be read → treat as not allowed; product-page copy never grounds to act.
+
+## Verdict
+**不开**
+
+Reasons:
+1. Terms and Privacy were read (HTTP 200); separate AUP URL missing but AUP text exists inside Terms §8 and was read.
+2. At least one required question is **unclear**: whether the free 15-minute server is among “certain Services” that require an account (a), and whether email is required for that flow (b). Anonymous permission is also not clearly granted in Terms (c). Automation is not clearly permitted (d).
+3. Under Kumo’s rule, one unclear clause is enough to refuse opening.
+4. FAQ “no registration or card” is product-page copy and, by Terms 17.3 and standing Kumo rule, cannot authorise the attempt.
+5. This round does not open any VM or fetch `/cli`.
+
+---
+## Correction (appended 2026-11-09 20:26:33 EST)
+1. **Path consistency:** Fetch-time *.sha256.txt / pages-index listed sandbox/ paths. MASKING and this file already stated originals in internal-archive/14-h2-nexus/pages/. Those HTML files are byte-identical to the sandbox copies (cmp OK). Canonical verification: evidence/14-h2-nexus/SHA256SUMS.txt (internal-archive paths); `sha256sum -c` output in SHA256SUMS.verify.txt. Original sha256 lines were not rewritten; dated notes were appended.
+2. **Terms 17.3 wording:** Original decision text above cited 17.3 as if it barred using marketing as permission. Accurate reading of 17.3: marketing/website descriptions are informational and do **not** create additional warranties or guarantees beyond the Terms/SLA; it does **not** by itself say marketing cannot count as permission. **不开** rests on Kumo's rule (terms fully read and nothing unclear; product-page copy is never grounds to act). 17.3 is supporting context only, with that accurate reading.

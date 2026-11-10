@@ -1,0 +1,34 @@
+time: 2026-11-09 20:30:08 EST
+url: http://127.0.0.1:8080/api/v1/checks
+body_file: fixtures/01-clean-etsy.json
+body_sha256: f8f0fd23afad694ca96912e5f2ce1e33684c0f9b83632f9a083a2a8523237ff4
+http_status: 200
+response_sha256: b098ef5fc4de62e8b0866769f5bc4e9390fca8ea80bb628d68170177964360d1
+response_bytes: 588
+response_json:
+{
+  "checkId": "a63084d0-6c11-4531-85d8-c4b8258004c4",
+  "status": "COMPLETED",
+  "marketplace": "ETSY",
+  "rulesetVersion": "etsy-2026-12",
+  "analysisVersion": "etsy-2026-12",
+  "contentHash": "abec27961bbcae9645c4911828cb71445566203e5be25f6bed1f5b1110d3cec9",
+  "cached": false,
+  "createdAt": "2026-11-10T01:30:08.143607Z",
+  "summary": {
+    "errors": 1,
+    "warnings": 0,
+    "infos": 0
+  },
+  "findings": [
+    {
+      "ruleId": "required_fields",
+      "source": "RULE",
+      "severity": "ERROR",
+      "field": "category",
+      "value": null,
+      "message": "Thiếu trường bắt buộc 'category'.",
+      "suggestion": "Bổ sung giá trị cho trường 'category' trước khi publish."
+    }
+  ]
+}

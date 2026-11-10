@@ -1,0 +1,7 @@
+# 版本声明核对 · 2026-11-09 19:23–19:25 EST · n=1
+package.json（git = npm 1.0.1，sha256 ef90e3dc…）:
+- 无 engines 字段
+- 无 peerDependencies / dependencies / optionalDependencies / devDependencies
+- scripts 只有自定义 "package": "python scripts/package.py"（不是 preinstall/install/postinstall/prepare/prepack）
+结论：插件**没有声明**支持的 dsh 版本。按本轮规则，源码审查干净后允许尝试加载。
+本机 dsh：0.2.2-rc.1（<workspace>/deepseek-harness/sandbox/node_modules/@deepseek-ai/dsh）

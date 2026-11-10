@@ -1,0 +1,20 @@
+{
+  "headers": {
+    "host": "127.0.0.1:19022",
+    "connection": "keep-alive",
+    "user-agent": "deepseek-harness/0.2.2-rc.1 (+https://github.com/deepseek-ai/deepseek-harness)",
+    "content-type": "application/json",
+    "accept": "text/event-stream",
+    "x-api-key": "<redacted>",
+    "anthropic-version": "2023-06-01",
+    "x-deepseek-harness-user-id": "<anon-id-redacted>",
+    "x-deepseek-harness-session-id": "session-8e6603f6-0482-4095-b3ee-032c1888aea5",
+    "accept-language": "*",
+    "sec-fetch-mode": "cors",
+    "accept-encoding": "gzip, deflate",
+    "content-length": "784"
+  },
+  "body_len": 784,
+  "tool_names": [],
+  "n_messages": 1
+}

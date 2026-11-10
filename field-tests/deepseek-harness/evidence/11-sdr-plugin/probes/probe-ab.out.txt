@@ -1,0 +1,21 @@
+pkg=<sandbox-sdr>/pkg-src/node_modules/@xuxchloris/dsh-sdr
+stages=["task_parse","prospect_discovery","company_research","prospect_scoring","email_draft","human_approval","follow_up_plan","quotation_pack","close"]
+n=1 each case; clock=2026-11-09T21:23:21.678Z
+a1_created stage=task_parse
+a1_continue_after_approval_at_task_parse: 审批后推进不可用，当前阶段为 task_parse
+a2_after_one_next_step stage=prospect_discovery
+a2_continue_at_prospect_discovery: 审批后推进不可用，当前阶段为 prospect_discovery
+a3_review_at_prospect_discovery: 审批不可用，当前阶段为 prospect_discovery
+a4_forced_stage_in_store=close
+a4_next_on_forced_close stage=close has_report=true
+a5_note: sdr_next_step parameters are task_id only; no stage field in tool schema (see index.js)
+a6_at_approval stage=human_approval drafts=3 pending=3
+a6_next_at_approval blocked=true reason=等待人工审批。请调用 sdr_review_drafts，再调用 sdr_continue_after_approval。
+b1_tamper_before_approve: 草稿 draft_1_c0613a 哈希不匹配
+b2_approve_all pending=[] approved_count=3
+b3_tamper_after_approve continue_err=null continue_ok_stage=follow_up_plan
+b3_stored_approval_hash=9b8d919b36b443a28bbc4caacb60e29c7624f3120b43b454d8fc7749f0f11a50
+b3_current_draft_hash=2afc3832fc5164e249891edef094f467fd8abb5b9f80171d0f9d7b668504f6d0
+b3_hashes_equal=false
+b3_pending_after_tamper=[]
+c1_connectors=email:true,whatsapp:true,crm:true

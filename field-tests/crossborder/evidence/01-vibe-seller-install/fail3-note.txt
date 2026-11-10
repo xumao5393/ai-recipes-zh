@@ -1,0 +1,19 @@
+fail3: uv tool install vibe-seller==0.2.0 succeeded; playwright install --with-deps chromium failed because apt InRelease 500 (same mirror issue). Executable installed.
+which vibe-seller: /workspace/fourday-20261109/crossborder/sandbox/home/.local/bin/vibe-seller
+usage: vibe-seller [-h] [--version] <command> ...
+
+Vibe Seller command-line entry. Run a subcommand to do something — bare `vibe-
+seller` prints this help.
+
+positional arguments:
+  <command>
+    start        Start the server in the background. Closes-terminal-safe; use
+                 `vibe-seller stop` to terminate.
+    stop         Stop a backgrounded server started with `vibe-seller start`.
+    upgrade      Upgrade vibe-seller in place. Uses `uv tool upgrade` when uv
+                 is on PATH (the install.sh path), falls back to `pip install
+                 --upgrade` otherwise.
+
+options:
+  -h, --help     show this help message and exit
+  --version, -V  show program's version number and exit

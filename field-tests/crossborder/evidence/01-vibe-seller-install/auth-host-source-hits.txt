@@ -1,0 +1,16 @@
+/workspace/fourday-20261109/crossborder/sandbox/home/.local/share/uv/tools/vibe-seller/lib/python3.13/site-packages/app/auth.py:57:async def is_auth_required(db: AsyncSession) -> bool:
+/workspace/fourday-20261109/crossborder/sandbox/home/.local/share/uv/tools/vibe-seller/lib/python3.13/site-packages/app/auth.py:60:        select(AppSettings).where(AppSettings.key == 'auth_required')
+/workspace/fourday-20261109/crossborder/sandbox/home/.local/share/uv/tools/vibe-seller/lib/python3.13/site-packages/app/auth.py:79:    auth_on = await is_auth_required(db)
+/workspace/fourday-20261109/crossborder/sandbox/home/.local/share/uv/tools/vibe-seller/lib/python3.13/site-packages/app/cli.py:134:        '--host',
+/workspace/fourday-20261109/crossborder/sandbox/home/.local/share/uv/tools/vibe-seller/lib/python3.13/site-packages/app/cli.py:135:        default='0.0.0.0',
+/workspace/fourday-20261109/crossborder/sandbox/home/.local/share/uv/tools/vibe-seller/lib/python3.13/site-packages/app/cli.py:136:        help='Host interface to bind (default: 0.0.0.0).',
+/workspace/fourday-20261109/crossborder/sandbox/home/.local/share/uv/tools/vibe-seller/lib/python3.13/site-packages/app/cli.py:271:                '--host',
+/workspace/fourday-20261109/crossborder/sandbox/home/.local/share/uv/tools/vibe-seller/lib/python3.13/site-packages/app/routers/app_settings.py:11:from app.auth import get_current_user, is_auth_required
+/workspace/fourday-20261109/crossborder/sandbox/home/.local/share/uv/tools/vibe-seller/lib/python3.13/site-packages/app/routers/app_settings.py:39:    'auth_required',
+/workspace/fourday-20261109/crossborder/sandbox/home/.local/share/uv/tools/vibe-seller/lib/python3.13/site-packages/app/routers/app_settings.py:61:        'auth_required',
+/workspace/fourday-20261109/crossborder/sandbox/home/.local/share/uv/tools/vibe-seller/lib/python3.13/site-packages/app/routers/app_settings.py:92:    auth_on = await is_auth_required(db)
+/workspace/fourday-20261109/crossborder/sandbox/home/.local/share/uv/tools/vibe-seller/lib/python3.13/site-packages/app/routers/app_settings.py:147:        'auth_required',
+/workspace/fourday-20261109/crossborder/sandbox/home/.local/share/uv/tools/vibe-seller/lib/python3.13/site-packages/app/routers/app_settings.py:279:    callers able to trigger that when `auth_required=true`. When auth
+/workspace/fourday-20261109/crossborder/sandbox/home/.local/share/uv/tools/vibe-seller/lib/python3.13/site-packages/app/routers/auth.py:15:    is_auth_required,
+/workspace/fourday-20261109/crossborder/sandbox/home/.local/share/uv/tools/vibe-seller/lib/python3.13/site-packages/app/routers/auth.py:37:    return {'auth_required': await is_auth_required(db)}
+/workspace/fourday-20261109/crossborder/sandbox/home/.local/share/uv/tools/vibe-seller/lib/python3.13/site-packages/app/routers/auth.py:133:    auth_on = await is_auth_required(db)

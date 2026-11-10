@@ -1,0 +1,9 @@
+REDACTION-CHECK 2026-11-09 16:38 EST
+=== api.deepseek.com ===
+0
+=== sk- long ===
+0
+=== <home> or <workspace> ===
+0
+=== dummy-local-only key value in evidence ===
+0

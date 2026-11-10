@@ -1,0 +1,9 @@
+start_epoch=1794253391.055655874 pid=139130
+http t=2.355452s code=404 bytes=0
+http t=2.551896s code=401 bytes=68
+READY_401 elapsed_s=2.551896
+dsh web authentication required; reopen the URL printed by dsh web.
+
+--- stdout ---
+dsh web: http://127.0.0.1:3080/?token=<redacted>
+--- stderr ---

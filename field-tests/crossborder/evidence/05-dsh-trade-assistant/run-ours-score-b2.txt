@@ -1,0 +1,12 @@
+# 时间(开始): 2026-11-09 17:30:15 EST
+# 命令: python3 score.py holdout.json holdout_truth.csv
+# exit=0 耗时=0.046s
+# stderr:
+# cwd: crossborder/sandbox/05-dsh-trade-assistant/ours（03-export 锁定文件的副本）
+# stdout:
+错：H01 脚本=待人工 正确=诈骗/钓鱼风险
+错：H02 脚本=待人工 正确=真询盘
+错：H04 脚本=待人工 正确=诈骗/钓鱼风险
+错：H07 脚本=待人工 正确=广告
+错：H08 脚本=待人工 正确=泛问/低价值
+对 3/8

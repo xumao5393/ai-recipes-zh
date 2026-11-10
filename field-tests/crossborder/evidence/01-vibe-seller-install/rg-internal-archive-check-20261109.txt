@@ -1,0 +1,7 @@
+# rg internal-archive 复查 2026-11-09 14:56:14 EST（在 crossborder/repo/ 下）
+./evidence/01-vibe-seller-install/homepage-screenshot.NOTE.txt:1:原文件 homepage-screenshot.png 已移至 crossborder/internal-archive/01-vibe-seller-install/homepage-screenshot.png。
+./evidence/01-vibe-seller-install/homepage-screenshot.NOTE.txt:5:2026-11-09 14:56 EST 追加：上述 internal-archive 目录为本地内部归档，不随仓库发布。
+./evidence/01-vibe-seller-install/MASKING.txt:5:挑刺员要求：未打码原件移出 repo（crossborder/repo/），放到 crossborder/internal-archive/01-vibe-seller-install/；仓库内只留打码副本。
+./evidence/01-vibe-seller-install/MASKING.txt:7:## 本次移走的文件（→ internal-archive/01-vibe-seller-install/）
+./evidence/01-vibe-seller-install/MASKING.txt:46:2026-11-09 14:56 EST 追加：上述 internal-archive 目录为本地内部归档，不随仓库发布。
+exit=0

@@ -1,0 +1,18 @@
+{
+  "name": "dsh-profile-headless",
+  "private": true,
+  "dependencies": {
+    "@xuxchloris/dsh-sdr": "link:<sandbox-sdr>/pkg-src/node_modules/@xuxchloris/dsh-sdr",
+    "sdr-test-auto-uq": "link:<sandbox-sdr>/auto-uq"
+  },
+  "dsh": {
+    "profile": {
+      "bundles": [
+        "@deepseek-ai/dsh-base",
+        "@deepseek-ai/dsh-headless",
+        "@xuxchloris/dsh-sdr",
+        "sdr-test-auto-uq"
+      ]
+    }
+  }
+}

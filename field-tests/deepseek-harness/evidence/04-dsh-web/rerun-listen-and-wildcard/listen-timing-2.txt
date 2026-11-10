@@ -1,0 +1,11 @@
+command: dsh web --host 127.0.0.1 --port 3080 --no-open
+http_first_response_code: 404
+listen_ready_seconds: 2.391242
+process_still_alive_at_first_http: True
+poll_error_last: URLError(ConnectionRefusedError(111, 'Connection refused'))
+stdout_redacted:
+
+stderr_redacted:
+
+final_exit: -9
+n=1 America/New_York

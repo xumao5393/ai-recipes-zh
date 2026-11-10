@@ -1,0 +1,30 @@
+# REDACTION-CHECK · 13-listing-guard  2026-11-09 20:34 EST
+# 范围: 本目录全部文件（不含本文件）+ ../../13-Listing-Guard本地自托管上架前合规检查.md
+## 主目录绝对路径 /home/
+# rg -n --glob '!REDACTION-CHECK.txt' -e '/home/'
+0 命中
+## 工作区绝对路径 /workspace/
+# rg -n --glob '!REDACTION-CHECK.txt' -e '/workspace/'
+0 命中
+## 沙箱用户 box 字样
+# rg -n --glob '!REDACTION-CHECK.txt' -e '\bbox\b'
+0 命中
+## API key 原文
+# 对照 sandbox secrets/api-key.txt；公开区不得出现完整密钥
+0 命中
+## 常见密钥模式
+# rg -n --glob '!REDACTION-CHECK.txt' -e '(AKIA[0-9A-Z]{16}|sk-[A-Za-z0-9]{16,}|ghp_[A-Za-z0-9]{20,}|github_pat_|PRIVATE KEY)'
+0 命中
+
+# 复跑 2026-11-09 20:45 EST（返工后，含新 CORRECTIONS.md 与正文改写）
+# rg 范围同上（不含本文件）
+## 主目录绝对路径 /home/
+0 命中
+## 工作区绝对路径 /workspace/
+0 命中
+## 沙箱用户 box 字样
+0 命中
+## API key 原文
+0 命中
+## 常见密钥模式
+0 命中

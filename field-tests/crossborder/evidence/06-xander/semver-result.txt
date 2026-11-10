@@ -1,0 +1,13 @@
+# 时间: 2026-11-09 18:22:32 EST
+# 命令: unshare -rn node semver-check.cjs <npm 全局目录>/node_modules/npm/node_modules/semver
+# 本机 dsh 版本来源: deepseek-harness/repo/evidence/11-sdr-plugin/dsh-version.txt = 0.2.2-rc.1
+semver pkg version: 7.8.5
+satisfies(0.2.2-rc.1, ^0.2.1-rc.5) = false
+satisfies(0.2.2-rc.1, ^0.2.1-rc.5, {includePrerelease:true}) = true
+validRange: >=0.2.1-rc.5 <0.3.0-0
+satisfies(0.2.1-rc.5) = true
+satisfies(0.2.1) = true
+satisfies(0.2.2) = true
+satisfies(0.2.9) = true
+satisfies(0.3.0) = false
+# exit=0 耗时=0.151s

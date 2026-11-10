@@ -1,0 +1,29 @@
+debug1: OpenSSH_10.0p2 Debian-7+deb13u4, OpenSSL 3.5.7 9 Jun 2026
+debug3: Running on Linux 6.12.113+ #1 SMP PREEMPT_DYNAMIC Fri Nov  6 22:36:28 UTC 2026 x86_64
+debug3: Started with: ssh -vvv -i <workspace>/free-cloud/sandbox/08-gap-cloud/ssh/id_ed25519 -o IdentitiesOnly=yes -o IdentityAgent=none -o PreferredAuthentications=publickey -o PasswordAuthentication=no -o KbdInteractiveAuthentication=no -o StrictHostKeyChecking=accept-new -o UserKnownHostsFile=<workspace>/free-cloud/sandbox/08-gap-cloud/ssh/known_hosts -o ConnectTimeout=15 -o ConnectionAttempts=1 -o BatchMode=yes -p 2121 free@gap-node-01-u3.vm.elestio.app "echo CONNECTED; date -u; uname -a; cat /etc/os-release; nproc; free -h; df -h; ip addr; curl -sI --max-time 10 https://example.com | head -5; uptime; echo DONE"
+debug1: Reading configuration data /etc/ssh/ssh_config
+debug3: /etc/ssh/ssh_config line 19: Including file /etc/ssh/ssh_config.d/20-systemd-ssh-proxy.conf depth 0
+debug1: Reading configuration data /etc/ssh/ssh_config.d/20-systemd-ssh-proxy.conf
+debug1: /etc/ssh/ssh_config line 21: Applying options for *
+debug2: resolving "gap-node-01-u3.vm.elestio.app" port 2121
+debug3: resolve_host: lookup gap-node-01-u3.vm.elestio.app:2121
+debug3: channel_clear_timeouts: clearing
+debug3: ssh_connect_direct: entering
+debug1: Connecting to gap-node-01-u3.vm.elestio.app [198.18.0.1] port 2121.
+debug3: set_sock_tos: set socket 3 IP_TOS 0xb8
+debug2: fd 3 setting O_NONBLOCK
+debug1: fd 3 clearing O_NONBLOCK
+debug1: Connection established.
+debug3: timeout: 15000 ms remain after connect
+debug1: identity file <workspace>/free-cloud/sandbox/08-gap-cloud/ssh/id_ed25519 type 3
+debug1: identity file <workspace>/free-cloud/sandbox/08-gap-cloud/ssh/id_ed25519-cert type -1
+debug1: Local version string SSH-2.0-OpenSSH_10.0p2 Debian-7+deb13u4
+debug1: kex_exchange_identification: banner line 0: HTTP/1.1 400 Bad Request
+debug1: kex_exchange_identification: banner line 1: Server: Pingora
+debug1: kex_exchange_identification: banner line 2: Date: Tue, 10 Nov 2026 00:31:13 GMT
+debug1: kex_exchange_identification: banner line 3: Content-Length: 0
+debug1: kex_exchange_identification: banner line 4: Cache-Control: private, no-store
+debug1: kex_exchange_identification: banner line 5: Connection: close
+debug1: kex_exchange_identification: banner line 6: 
+kex_exchange_identification: Connection closed by remote host
+Connection closed by 198.18.0.1 port 2121

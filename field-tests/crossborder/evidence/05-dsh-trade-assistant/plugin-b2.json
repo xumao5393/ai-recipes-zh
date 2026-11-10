@@ -1,0 +1,70 @@
+[
+ {
+  "id": "H01",
+  "inquiry_type": "无法判断",
+  "type_evidence_命中条数": 0,
+  "key_fields": {},
+  "red_flags": []
+ },
+ {
+  "id": "H02",
+  "inquiry_type": "具体采购",
+  "type_evidence_命中条数": 2,
+  "key_fields": {
+   "客户地区": "USA"
+  },
+  "red_flags": []
+ },
+ {
+  "id": "H03",
+  "inquiry_type": "具体采购",
+  "type_evidence_命中条数": 2,
+  "key_fields": {
+   "数量": "2400 pcs"
+  },
+  "red_flags": []
+ },
+ {
+  "id": "H04",
+  "inquiry_type": "无法判断",
+  "type_evidence_命中条数": 0,
+  "key_fields": {},
+  "red_flags": []
+ },
+ {
+  "id": "H05",
+  "inquiry_type": "无法判断",
+  "type_evidence_命中条数": 0,
+  "key_fields": {},
+  "red_flags": []
+ },
+ {
+  "id": "H06",
+  "inquiry_type": "具体采购",
+  "type_evidence_命中条数": 2,
+  "key_fields": {
+   "数量": "600 pcs",
+   "客户地区": "Dubai",
+   "客户身份线索": [
+    "贸易/采购型公司，可能在比价"
+   ]
+  },
+  "red_flags": []
+ },
+ {
+  "id": "H07",
+  "inquiry_type": "无法判断",
+  "type_evidence_命中条数": 0,
+  "key_fields": {
+   "金额线索": "49 USD"
+  },
+  "red_flags": []
+ },
+ {
+  "id": "H08",
+  "inquiry_type": "无法判断",
+  "type_evidence_命中条数": 0,
+  "key_fields": {},
+  "red_flags": []
+ }
+]

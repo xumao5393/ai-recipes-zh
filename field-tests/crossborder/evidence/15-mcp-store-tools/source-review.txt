@@ -1,0 +1,31 @@
+# source-review · mcp-store-tools @ d0cc908416dadf38602cb002d390bd62b85c114c
+时间：2026-11-09 21:27 EST（安装前）
+范围：clone 后工作区全部已跟踪文件（无 setup.py / setup.cfg / 自定义 hooks 目录）。扫描原文见 sandbox raw/source-scan.raw.txt（不入库）。
+
+## 构建与生命周期
+- 构建系统：pyproject.toml 声明 build-backend = "hatchling.build"，requires = ["hatchling"]。没有 [tool.hatch.build.hooks] 或自定义 hook。
+- 没有 setup.py、setup.cfg、package.json 生命周期脚本、postinstall。
+- [project.scripts] 仅入口 mcp-store-tools = mcp_store_tools.server:main。
+- Dockerfile 用 uv sync --locked（本轮未用 Docker、未跑 uv）。
+- 安装前未见会在 pip install 时自动出网的项目自身脚本。依赖安装会访问 PyPI（允许）。
+
+## 出网（运行时代码）
+- src/mcp_store_tools/storefront.py：httpx.Client POST 到
+  - 普通店：https://{shop}/api/{api_version}/graphql.json（默认 api_version=2026-10）
+  - DEMO_SHOP == "mock.shop" 时：https://mock.shop/api
+  --demo 时 token 为空（server.py L435）。本轮不跑 --demo，不连这些端点。
+- src/mcp_store_tools/http.py：可选 --transport http 时 uvicorn 在本机监听 /mcp；GET /healthz 探的是 127.0.0.1。本轮未起 HTTP 服务。
+- src/mcp_store_tools/audit.py：纯计算，无网络。
+- tests/fakes.py：httpx.MockTransport，不发起真实请求。
+- tests/test_live.py：需 MCP_STORE_TOOLS_LIVE=1 才会连真实 Storefront / --demo；默认 skipif。本轮未设置该变量。
+- scripts/render_demo.py、examples/demo.py、evals/agent_eval.py：会打真实样例店或拉模型，本轮未运行。
+
+## 工具数量
+README 表格与正文写 13 个只读工具。server.py 中 @server.tool 注册的函数共 13 个（与 tests/test_server.py 断言集合一致）：
+search_products, get_product, list_collections, browse_products, list_policies, get_policy,
+get_recommendations, get_store_info, search_pages, build_cart_link, audit_catalog, find_deals,
+compare_products。
+另有 3 个 resource、3 个 prompt（含与工具同名的 audit_catalog prompt），不计入 13。
+
+## 审查结论
+未见安装期可疑出网脚本，可以在隔离 venv 里安装依赖，并在断网命名空间用假 Storefront 跑默认测试与 audit_catalog。不连 mock.shop、不连真店、不跑 live 测试。

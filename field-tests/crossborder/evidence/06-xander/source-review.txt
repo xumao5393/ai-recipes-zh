@@ -1,0 +1,40 @@
+# source-review · xander-zaozao-xiaban 安装前静态审查
+时区 EST。审查时间：2026-11-09 18:22–18:31 EST（clone 之后；npm test 和离线调用都在审查结论之后、且都在 unshare -rn 断网命名空间里跑）。
+commit：2992a49c036411f6c73d91bd15cf38d58e7ca604（2026-11-09 16:20:36 +0800 = 03:20:36 EST），43 个提交，233 个跟踪文件，见 UPSTREAM-SHA256.txt。
+
+## 1. package.json（https://github.com/gx18391303625-afk/xander-zaozao-xiaban/blob/2992a49c036411f6c73d91bd15cf38d58e7ca604/package.json）
+- scripts 只有 test、test:dsh、mcp、panel、setup、doctor（L27–34），**没有 preinstall/install/postinstall/prepare/prepack**。
+- **没有 dependencies / devDependencies / peerDependencies**；SQLite 用 Node 内置 node:sqlite（lib/archive.js L10、lib/decision-journal.js L5）。
+- engines（L23–26）：node >=22.13，dsh ^0.2.1-rc.5（npm 不强制 engines.dsh；兼容判断见 semver-result.txt）。
+- bin：xander → cli/xander.js（用户手动跑才执行）。
+- dsh/cordis.patch.yml 有 4 处 !!js 表达式：L15 用 node:path/node:module 解析包内 skills 目录；L55、L58 按 process.platform 选 bash/pwsh 工具；L158 按 ctx.get('profileContext') 决定是否启用插件管理工具。都在 dsh 加载时求值，不联网。该文件还含一个“亚马逊运营”agent 预设，带长段 persona 提示词——第三方提示词，公开版不摘录。
+
+## 2. 网络调用（检索 fetch/http(s)/net/WebSocket，排除 test/）
+- 唯一出网入口：lib/http.js L18 request() → L27 fetch()。调用方：
+  - lib/lwa.js L12、L27：Login with Amazon 换令牌。L8 凭证不全直接抛错，不发请求。
+  - lib/spapi.js L30、L116：卖家接口。L17–19 spapiCreds() 没有 spapi:<店铺> 凭证就抛错（“还没接卖家接口”），先于请求。
+  - lib/ads.js L53、L289：广告接口和报表下载。L23–26 adsCreds() 同理，无凭证抛错。
+  - lib/product-type-schema.js L10：下载 Amazon PTD schema，只在 Listing/内容提案路径（lib/ops-listing.js L4、lib/ops-content.js L7）里、拿到 SP-API 返回的链接后才调；L9 限定 https + amazon.com/amazonaws.com。
+  - lib/sync.js L78：S3 云备份。L66–72 settings()：config.sync.enabled 未开或缺 AWS 凭证/口令就抛错。
+  - lib/ziniao.js L25：紫鸟本地接口，L13–16 endpoint 固定 http://127.0.0.1:<端口>；L54 fetch 127.0.0.1 CDP；L57 WebSocket 连本机调试地址。
+- 环境变量（L66–72 lib/regions.js）XANDER_SPAPI_HOST / XANDER_ADS_HOST / XANDER_LWA_URL 可把接口改指本地假服务（测试用）；XANDER_HOME（lib/paths.js L8）、XANDER_SECRET_BACKEND（lib/secrets.js L26）、XANDER_S3_ENDPOINT（lib/sync.js L72）。
+- server/tools.js L65–80 xander_status：check=false 时只本地读配置/凭证存在性；check=true（L76）才调 accessToken 联网。
+- 写入：lib/proposals.js L281 执行前检查开关，关着的拒绝；server/tools.js L520 紫鸟控制同理。开关默认全关（实测 31 条 on=0，见 run-count-switches.txt）。
+- **结论：默认路径（未接入店铺、未开云备份、未开开关）不出网。** 出网都要先有用户自己配的凭证，或 check=true / 用户运行 setup、doctor。
+
+## 3. 子进程 / 动态执行
+- lib/secrets.js L6、L13–21：spawnSync 调系统密钥工具（macOS security、Windows powershell、Linux which/secret-tool），读写本插件自己的凭证项（SERVICE=xander-zaozao-xiaban，L11）。Linux 无 secret-tool 时退回本地文件（权限 600）。
+- panel/server.js L7、L103：spawn 打开浏览器（open/xdg-open/start）；L91 面板只监听 127.0.0.1。用户手动 xander panel 才启动。
+- scripts/sync-plugin.mjs L7、L21：spawnSync，维护者同步插件用的脚本，不在安装或运行路径上。
+- 没有 eval / new Function（cordis.patch.yml 的 !!js 见第 1 节）。
+
+## 4. 文件读写
+- 数据目录 $XANDER_HOME 或 ~/.xander-zaozao（lib/paths.js L7–9），ensureHome 建 reports/proposals/exports/backups（L15–19，权限 700）；config.json、switches.json、archive.db、ledger.jsonl、secrets.local.json（L21–28）。实测：同一个空数据目录先后跑计算器和 xander_status/xander_switches 后，只有这 4 个空子目录（data-dir-after.txt）。
+- 读 package.json 取版本（lib/version.js）。
+
+## 5. 令牌读取
+- 只经 lib/secrets.js getSecret() 读本插件自己存的条目（spapi:<店铺>、ads:<店铺>、ziniao、aws:sync、sync:passphrase）。不读其他程序的令牌文件。
+- 历史提交扫描：未发现真实凭据（细节只记在内部存档）。
+
+## 结论
+无安装期自动脚本；运行时出网全部挡在“已配置凭证 / 打开云备份 / check=true / 用户手动 setup”之后，默认路径不出网（行号见第 2 节）。允许继续：只做不需要装进 dsh 的离线部分。

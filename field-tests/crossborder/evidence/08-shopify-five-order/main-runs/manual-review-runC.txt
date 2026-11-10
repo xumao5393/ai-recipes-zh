@@ -1,0 +1,4 @@
+4:ort. This is a report only. Nothing was refunded, cancelled, discounted or changed in in
+
+Manual review, done AFTER scoring. This is a note only; it does not change the frozen verdict (runC = FAIL).
+- 'refunded': comes from "Nothing was refunded". A negation; no action was claimed. All other checks PASS.

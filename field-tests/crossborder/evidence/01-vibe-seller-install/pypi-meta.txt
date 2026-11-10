@@ -1,0 +1,8 @@
+name: vibe-seller
+version: 0.2.0
+license: None
+summary: Multi-store browser-automation framework for cross-border sellers
+requires_python: >=3.11
+home: https://pypi.org/project/vibe-seller/
+urls: None
+releases sample: ['0.2.1.dev202610192154', '0.2.1.dev202610202105', '0.2.1.dev202610242002', '0.2.1.dev202610262209', '0.2.1.dev202610292216', '0.2.1.dev202610302151', '0.2.1.dev202611012133', '0.2.1.dev202611052306']

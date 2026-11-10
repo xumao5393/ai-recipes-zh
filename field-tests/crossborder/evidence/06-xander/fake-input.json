@@ -1,0 +1,25 @@
+{
+  "_说明": "全部是我们自己编的假数据，不是任何真店数据。",
+  "replenishment": {
+    "scenarios": [1],
+    "rows": [
+      { "sku": "FAKE-A", "dailySales": 10, "sellable": 200, "inbound": [], "leadTimeDays": 30, "coverDays": 30, "safetyDays": 7, "casePack": 24, "unitCost": 3.5 },
+      { "sku": "FAKE-B", "dailySales": 8, "sellable": 100, "inbound": [{ "qty": 120, "availableInDays": 10 }], "leadTimeDays": 20, "coverDays": 30, "safetyDays": 10, "casePack": 50, "moq": 300, "unitCost": 2 }
+    ]
+  },
+  "profit": [
+    { "currency": "USD", "items": [
+      { "name": "销售额", "amount": 1000, "category": "revenue" },
+      { "name": "佣金+FBA", "amount": 300, "category": "fee" },
+      { "name": "广告", "amount": 150, "category": "ads" },
+      { "name": "采购+头程", "amount": 250, "category": "cogs" },
+      { "name": "退款", "amount": 20, "category": "refund" } ] },
+    { "currency": "USD", "items": [
+      { "name": "销售额", "amount": 500, "category": "revenue" },
+      { "name": "佣金+FBA(估)", "amount": 150, "category": "fee", "status": "ESTIMATED" },
+      { "name": "广告", "amount": 60, "category": "ads" },
+      { "name": "采购", "amount": 100, "category": "cogs" },
+      { "name": "调整", "amount": -12.5, "category": "adjustment" },
+      { "name": "仓储费", "amount": null, "category": "other" } ] }
+  ]
+}

@@ -1,0 +1,21 @@
+# npm test · 2026-11-09 19:30:56–19:31:07 EST · n=1 · unshare -rn + lo up · exit 0 · real 10.995s
+# 命令: npm test（pretest=typecheck，然后 node --import tsx --test …）
+# README 徽章/正文声称 287 tests；本次 runner 汇总：
+  ✔ rejects an empty customer name at the schema boundary (0.437547ms)
+  ✔ serialises concurrent orders so stock cannot be oversold (11.609157ms)
+✔ simulate_order_placement (33.377713ms)
+ℹ tests 287
+ℹ suites 55
+ℹ pass 287
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 8143.605174
+
+real	0m10.995s
+user	0m25.419s
+sys	0m3.289s
+# 完整 466 行输出（含用例名）sha256=c38df2fab6f9df53103160f23c26d77aa5e83b5bf11ef20fdf5cf208e713d99e
+# 原件: crossborder/internal-archive/10-project-tango/raw-runs/npmtest.raw.txt
+# 注意：测试自带的启动用的是模拟/子进程 MCP，不等于已接到某个外部 Agent。

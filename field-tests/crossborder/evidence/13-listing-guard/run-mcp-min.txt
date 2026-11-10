@@ -1,0 +1,6 @@
+time_start: 2026-11-09 20:31:09 EST
+cmd: java -jar listing-guard-mcp.jar (stdio)
+BASE_URL= http://127.0.0.1:8080
+API_KEY_LEN= 46
+initialize_response_keys None
+initialize_result_keys None
