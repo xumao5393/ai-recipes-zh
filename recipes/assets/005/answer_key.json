@@ -1,0 +1,31 @@
+{
+ "salary_taxable": 24000,
+ "salary_only_tax": 720.0,
+ "plans": {
+  "A": {
+   "bonus": 36000,
+   "separate_total_tax": 1800.0,
+   "merged_total_tax": 3480.0,
+   "best_method": "单独计税",
+   "best_total_tax": 1800.0,
+   "bonus_net": 34920.0,
+   "bonus_net_if_separate": 34920.0
+  },
+  "B": {
+   "bonus": 38000,
+   "separate_total_tax": 4310.0,
+   "merged_total_tax": 3680.0,
+   "best_method": "并入综合所得",
+   "best_total_tax": 3680.0,
+   "bonus_net": 35040.0,
+   "bonus_net_if_separate": 34410.0
+  }
+ },
+ "answer": {
+  "choose": "B",
+  "method": "并入综合所得",
+  "B_minus_A_net": 120.0,
+  "naive_trap": "只看单独计税会觉得A更好：A净到手34920.0，B单独计税净到手34410.0",
+  "q4": "可以：在次年（2027年）3月1日至6月30日综合所得年度汇算时，在个人所得税App里重新选择计税方式（反过来，预扣时已并入的想改单独计税，要找单位更正预扣申报）"
+ }
+}

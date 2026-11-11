@@ -1,0 +1,2 @@
+年终奖3.6万还是3.8万？都说“别超36000”，其实只对单独计税成立。我把同一份工资条丢给5个免费AI：Claude、GPT-6 Luna、元宝都算对，选3.8万并入综合所得多到手120元；GPT-5.4 mini和Mistral把3166元放进3%档，照它们做反而少拿630元。原始回答全公开👇
+https://github.com/xumao5393/ai-recipes-zh/blob/main/recipes/005-year-end-bonus-tax-ai-check.md

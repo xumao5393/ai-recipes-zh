@@ -1,0 +1,47 @@
+{
+ "duckai-claude-haiku55.export.txt": {
+  "A单独1800": true,
+  "A并入3480": true,
+  "B单独4310": true,
+  "B并入3680": true,
+  "B到手35040": true,
+  "多120": true,
+  "汇算3月1日": true
+ },
+ "duckai-gpt54-mini.export.txt": {
+  "A单独1800": true,
+  "A并入3480": true,
+  "B单独4310": false,
+  "B并入3680": true,
+  "B到手35040": false,
+  "多120": false,
+  "汇算3月1日": true
+ },
+ "duckai-gpt6-luna.export.txt": {
+  "A单独1800": true,
+  "A并入3480": true,
+  "B单独4310": true,
+  "B并入3680": true,
+  "B到手35040": true,
+  "多120": true,
+  "汇算3月1日": true
+ },
+ "duckai-mistral-small4.export.txt": {
+  "A单独1800": false,
+  "A并入3480": true,
+  "B单独4310": false,
+  "B并入3680": true,
+  "B到手35040": false,
+  "多120": false,
+  "汇算3月1日": true
+ },
+ "yuanbao.transcript.txt": {
+  "A单独1800": true,
+  "A并入3480": true,
+  "B单独4310": true,
+  "B并入3680": true,
+  "B到手35040": true,
+  "多120": true,
+  "汇算3月1日": true
+ }
+}
