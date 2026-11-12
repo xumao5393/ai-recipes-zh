@@ -21,6 +21,7 @@
 | 003 | [义乌拿货上亚马逊：让 AI 写英文 listing，谁会把“抗菌”写进去害你被下架？](recipes/003-yiwu-amazon-listing-ai-check.md) | 同一份带坑的供货商资料，免登录实测 Claude、GPT-6 Luna、GPT-5.4 mini、Gemini、千问；违规词、单位换算、标题新规逐项核对 | 2026-11-09 EST |
 | 004 | [双11 没有跨店满减了：让 AI 帮你拆单用券，4 个免费 AI 只有 1 个算到最省](recipes/004-double11-voucher-split-ai-check.md) | 同一车货、同一套今年的消费券，电脑穷举出最优 1218 元；免登录实测 Claude、GPT-6 Luna、GPT-5.4 mini、Mistral，谁丢了 25 元券、谁违反门槛 | 2026-11-10 EST |
 | 005 | [年终奖 3.6 万还是 3.8 万？5 个免费 AI 帮你算，2 个踩了“3000 元雷区”](recipes/005-year-end-bonus-tax-ai-check.md) | 月薪 1.5 万的示例，脚本算出正解“选 3.8 万、并入综合所得，多 120 元”；免登录实测 Claude、GPT-6 Luna、元宝、GPT-5.4 mini、Mistral，谁把 3166 元放进 3% 档 | 2026-11-11 EST |
+| 006 | [手机分期“每期 0.6%”，真实年化是 13%：5 个免费 AI 帮你算，只有 1 个全对](recipes/006-phone-installment-apr-ai-check.md) | 7999 元手机四种付法，脚本按人民银行 IRR 口径算出正解“一次付清，比免息多剩 247 元”；免登录实测 Claude、GPT-6 Luna、元宝、GPT-5.4 mini、Mistral，谁把“免息”算成 0%、谁把 0.6% 当 7.2% | 2026-11-12 EST |
 
 ## 附录（技术向）
 

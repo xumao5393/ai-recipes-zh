@@ -1,0 +1,2 @@
+分期页面写“每期0.6%”，很多人以为年化7.2%，其实是13%；“免息但不立减”也不是0利息，折算年化7.1%。我把同一笔7999元手机账丢给5个免费AI：只有Claude全对，3个把免息算成0%，Mistral还劝你选免息，照做多花247元。原始回答全公开👇
+https://github.com/xumao5393/ai-recipes-zh/blob/main/recipes/006-phone-installment-apr-ai-check.md

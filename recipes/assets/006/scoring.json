@@ -1,0 +1,19 @@
+{
+  "rubric": {
+    "A_rate": "A 真实年化 13.0%（名义，IRR）或 13.8%（复利有效），允许 ±0.2 个百分点",
+    "B_rate": "B 真实年化 15.0%（名义）或 16.1%（有效），±0.2",
+    "C_rate": "C 真实年化 7.1%（名义）或 7.4%（有效），±0.2；写 0% 判错",
+    "rank_pick": "排序 D>C>A>B 且最终选 D，前后不矛盾",
+    "saving": "D 比第二名 C 多剩约 247 元，允许 ±5 元"
+  },
+  "answer_key": {"A": 13.03, "B": 15.0, "C": 7.12, "rank": "D>C>A>B", "saving_vs_second": 247.46},
+  "tested_date": "2026-11-12 (America/New_York, morning)",
+  "models": [
+    {"name": "Claude Haiku 5.5 (duck.ai, Fast)", "web_search": false, "stated": {"A": "13.0%", "B": "15.0%", "C": "7.1%", "rank": "D>C>A>B", "pick": "D", "saving": "247.18"}, "score": {"A_rate": 1, "B_rate": 1, "C_rate": 1, "rank_pick": 1, "saving": 1}, "total": 5},
+    {"name": "GPT-6 Luna (duck.ai, Fast)", "web_search": true, "stated": {"A": "约14.2%", "B": "15.0%", "C": "约8.4%", "rank": "D>C>A>B", "pick": "D", "saving": "约248.3"}, "score": {"A_rate": 0, "B_rate": 1, "C_rate": 0, "rank_pick": 1, "saving": 1}, "total": 3},
+    {"name": "腾讯元宝 Instant (访客)", "web_search": "未见搜索标识", "stated": {"A": "12.8%", "B": "15.0%", "C": "0.0%（但本金多300）", "rank": "D>C>A>B", "pick": "D", "saving": "约239"}, "score": {"A_rate": 0, "B_rate": 1, "C_rate": 0, "rank_pick": 1, "saving": 0}, "total": 2},
+    {"name": "GPT-5.4 mini (duck.ai, Fast)", "web_search": false, "stated": {"A": "16.6%", "B": "15.0%", "C": "0.0%", "rank": "表格 D>C>A>B，但开头写 D、A、B、C", "pick": "D", "saving": "约0~2元"}, "score": {"A_rate": 0, "B_rate": 1, "C_rate": 0, "rank_pick": 0, "saving": 0}, "total": 1},
+    {"name": "Mistral Small 4 (duck.ai)", "web_search": false, "stated": {"A": "7.2%", "B": "15%", "C": "0%", "rank": "C>D>A>B", "pick": "C", "saving": "7695.06"}, "score": {"A_rate": 0, "B_rate": 1, "C_rate": 0, "rank_pick": 0, "saving": 0}, "total": 1}
+  ],
+  "not_tested": {"千问 Qwen-快速": "发送后弹登录", "DeepSeek": "跳转登录页", "Kimi": "发送时弹微信扫码/手机号", "ChatGPT（未登录）": "Sign in to continue", "Grok（未登录）": "Sign up for free", "智谱 Z.ai GLM-5.3-Flash": "约4.5分钟仍在思考，超时"}
+}

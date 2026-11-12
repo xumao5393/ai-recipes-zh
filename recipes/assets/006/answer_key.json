@@ -1,0 +1,49 @@
+{
+  "fund_monthly_rate_pct": 0.10769,
+  "results": {
+    "A": {
+      "monthly_payment": 687.77,
+      "total_paid": 8253.28,
+      "extra_vs_D_nominal": 554.28,
+      "irr_monthly_pct": 1.0861,
+      "apr_nominal_pct": 13.03,
+      "apr_effective_pct": 13.84,
+      "cash_after_12m": -198.34,
+      "net_cost_vs_keeping_8000": 8302.34
+    },
+    "B": {
+      "monthly_payment": 694.9,
+      "total_paid": 8338.78,
+      "extra_vs_D_nominal": 639.78,
+      "irr_monthly_pct": 1.25,
+      "apr_nominal_pct": 15.0,
+      "apr_effective_pct": 16.08,
+      "cash_after_12m": -284.35,
+      "net_cost_vs_keeping_8000": 8388.35
+    },
+    "C": {
+      "monthly_payment": 666.58,
+      "total_paid": 7999.0,
+      "extra_vs_D_nominal": 300.0,
+      "irr_monthly_pct": 0.5931,
+      "apr_nominal_pct": 7.12,
+      "apr_effective_pct": 7.35,
+      "cash_after_12m": 57.45,
+      "net_cost_vs_keeping_8000": 8046.55
+    },
+    "D": {
+      "total_paid": 7699.0,
+      "cash_after_12m": 304.91,
+      "net_cost_vs_keeping_8000": 7799.09
+    }
+  },
+  "rank_best_to_worst": [
+    "D",
+    "C",
+    "A",
+    "B"
+  ],
+  "best": "D",
+  "saving_vs_second": 247.46,
+  "why_not_7_2": "0.6% 每期按最初全部本金收手续费，但本金每月在减少，平均只占用约一半本金约 6.5 个月，所以真实年化约为 7.2% 的 1.8 倍"
+}
