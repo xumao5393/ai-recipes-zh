@@ -20,6 +20,11 @@
 - 证据：`evidence/08-gap-cloud/`
 - 状态：没测成（流程偏差，如实记录）。GAP 自己的条款页返回 410，没读到条款；按产品页的说法试了 1 次 SSH，经本机代理没拿到 SSH banner，没开成 VM，只读命令一条没跑。这不能说明 GAP 本身不可用。
 
+## 14 h2.nexus 免费 15 分钟浏览器 VM
+- 文档：[14-h2-nexus免费15分钟VM-仅读条款.md](14-h2-nexus免费15分钟VM-仅读条款.md)（已过审）
+- 证据：`evidence/14-h2-nexus/`
+- 状态：只读了条款，没开 VM。条款对登录、邮箱、匿名使用和脚本自动化都没写清楚，按"条款说不清就不开"的规矩没开；免费机入口也没碰。
+
 ---
 
 本文以 [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh-hans) 协议发布。

@@ -1,0 +1,8 @@
+# true-default capture (NO DSH_TELEMETRY_MODE)  2026-11-09 14:34:03 EST
+# HOME=/tmp/dshhome-rerun02
+# cmd: env -u DSH_TELEMETRY_MODE -u DSH_TELEMETRY_DISABLED DEEPSEEK_BASE_URL=http://127.0.0.1:18990 DEEPSEEK_API_KEY=dummy HOME=/tmp/dshhome-rerun02 PATH=$PWD/node_modules/.bin:$PATH dsh headless "say hi"
+# note: env -u ensures variable is unset (true default FEEDBACK_ONLY)
+
+
+dsh: AUTH: capture-only mock
+exit=1

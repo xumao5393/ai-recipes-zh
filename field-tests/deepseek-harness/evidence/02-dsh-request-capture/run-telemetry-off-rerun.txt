@@ -1,0 +1,21 @@
+# telemetry-off capture (DSH_TELEMETRY_MODE=off)  2026-11-09 14:34:18 EST
+# HOME=/tmp/dshhome-rerun02-off
+# cmd: DSH_TELEMETRY_MODE=off DEEPSEEK_BASE_URL=http://127.0.0.1:18991 DEEPSEEK_API_KEY=dummy HOME=/tmp/dshhome-rerun02-off PATH=$PWD/node_modules/.bin:$PATH dsh headless "say hi"
+# this recreates the original 'default' group condition from 14:07
+
+dsh: warning: 1 entry did not activate
+session-telemetry-otel (@deepseek-ai/dsh-session-telemetry-otel): ValidationError: invalid config:
+  - $.mode expected "FEEDBACK_ONLY" | "DISABLED" but got "off" (at mode)
+    at resolveConfig (file:///workspace/fourday-20261109/deepseek-harness/sandbox/node_modules/@deepseek-ai/cordis/lib/index.js:248:27)
+    at file:///workspace/fourday-20261109/deepseek-harness/sandbox/node_modules/@deepseek-ai/cordis/lib/index.js:826:27
+    at Object.apply (file:///workspace/fourday-20261109/deepseek-harness/sandbox/node_modules/@deepseek-ai/cordis/lib/index.js:1508:20)
+    at dispatch (file:///workspace/fourday-20261109/deepseek-harness/sandbox/node_modules/@deepseek-ai/cordis/lib/index.js:915:19)
+    at Proxy.waterfall (file:///workspace/fourday-20261109/deepseek-harness/sandbox/node_modules/@deepseek-ai/cordis/lib/index.js:917:10)
+    at Fiber.resolveConfig (file:///workspace/fourday-20261109/deepseek-harness/sandbox/node_modules/@deepseek-ai/cordis/lib/index.js:666:24)
+    at Fiber.execute (file:///workspace/fourday-20261109/deepseek-harness/sandbox/node_modules/@deepseek-ai/cordis/lib/index.js:359:26)
+    at file:///workspace/fourday-20261109/deepseek-harness/sandbox/node_modules/@deepseek-ai/cordis/lib/index.js:436:34
+    at file:///tmp/dshhome-rerun02-off/.dsh/profiles/headless/#session-telemetry-otel
+    at file:///tmp/dshhome-rerun02-off/.dsh/profiles/headless/#include
+
+dsh: AUTH: capture-only mock
+exit=1

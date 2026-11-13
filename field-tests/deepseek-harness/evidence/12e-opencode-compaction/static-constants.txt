@@ -1,0 +1,6 @@
+# 摘自 opencode v2.2.6 二进制 strings（node_modules/@opencode/cli-linux-x64/bin/opencode），只读静态
+ble",message:"Nothing to compact yet"}},uy=[0.85,0.7,0.5,0.35],Oc=16000,EG=0.15,IG=200000,jG=32000,fy=1,Xg=2,Gc=3,th=4,Kg=[0,fy,Xg,Gc,th],Pc=2000,AG=1500,MG=2000,TG=60000,CG=300000,DG=30000,PG=0.4,LG=2,gy=`You MUST use this format for your 
+
+Lc=(e,a)=>{let s=yy(e);if(s<=0)return Number.POSITIVE_INFINITY;let r=typeof a==="string"?Math.round(s*Number.parseFloat(a)/100):a;if(r!==void 0&&r<s)return s-r;return s-Math.max(Math.floor(s*EG),s>=2*Oc?Oc:0)},KG=(e,a=Oc)=>Math.max(0,yy(e)-Math.min(Oc,a)),yy=(e)=>e.input&&e.context?Math.min(e.input,e.context):e.input||e.context,ud=(e,a)=>e.type==="assistant"&&e.model.providerID===a.providerID&&!e.error&&e.tokens!==vo
+
+initial:()=>({auto:!0,keep:15000,precompute:!1}),editor:(Re)

@@ -1,0 +1,1 @@
+tag=pct50-89301 steps=3 bytes=2000 pt=1000,89301 PT_AFTER=30000 CT= MODEL=deepseek-v4-flash EXTRA_ENV=CLAUDE_AUTOCOMPACT_PCT_OVERRIDE=50 exit=0 elapsed=0.595s

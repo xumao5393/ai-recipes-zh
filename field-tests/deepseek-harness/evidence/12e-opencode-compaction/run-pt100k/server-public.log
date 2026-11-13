@@ -1,0 +1,2 @@
+# 公开副本 2026-11-09 23:31 EST：原件移到 internal-archive（sha256 34c8b6e5e119de1f5462acb07964b3b1531fa3d26a6eb4f1325d3f26ea5ab9e9）；仅第 1 行的绝对路径改成相对专题根目录的路径，其余逐字相同。
+oai-compaction-probe 19051 repo/evidence/12e-opencode-compaction/run-pt100k 3 2000 [100000]

@@ -1,0 +1,45 @@
+{
+ "method": "POST",
+ "path": "/v1/messages",
+ "headers": {
+  "host": "127.0.0.1:18999",
+  "connection": "keep-alive",
+  "user-agent": "deepseek-harness/0.2.2-rc.1 (+https://github.com/deepseek-ai/deepseek-harness)",
+  "content-type": "application/json",
+  "accept": "text/event-stream",
+  "x-api-key": "<redacted>",
+  "anthropic-version": "2023-06-01",
+  "x-deepseek-harness-user-id": "<anonymous-user-id-redacted>",
+  "x-deepseek-harness-session-id": "session-de50a6b9-ac1e-4b46-ba1a-842ecad24018",
+  "accept-language": "*",
+  "sec-fetch-mode": "cors",
+  "accept-encoding": "gzip, deflate",
+  "content-length": "754"
+ },
+ "body_len": 754,
+ "body": {
+  "model": "deepseek-flash",
+  "stream": true,
+  "messages": [
+   {
+    "role": "user",
+    "content": [
+     {
+      "type": "text",
+      "text": "Generate the session title from this JSON array of human messages:\n[{\"seq\":8,\"text\":\"say hi\"}]"
+     }
+    ]
+   }
+  ],
+  "max_tokens": 4096,
+  "thinking": {
+   "type": "disabled"
+  },
+  "system": {
+   "length": 481,
+   "sha256": "c7c06ab4dd220c8046e470d731ae6b3b63f24aff1f890a75fb1b092aa4952842",
+   "first_line": "Create a concise title for an AI coding-assistant session from the supplied human messages.",
+   "_masked": true
+  }
+ }
+}

@@ -1,0 +1,4 @@
+$ DEEPSEEK_BASE_URL=http://127.0.0.1:18999 DEEPSEEK_API_KEY=dummy dsh headless --patch privacy.patch.yml "say hi"
+
+dsh: AUTH: capture-only mock
+exit=1

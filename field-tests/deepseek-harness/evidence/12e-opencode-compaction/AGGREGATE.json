@@ -1,0 +1,221 @@
+[
+ {
+  "run": "run-pt100k",
+  "summary": "tag=pt100k steps=3 bytes=2000 pt=100000 exit=0 elapsed=1.671s opencode=opencode v2.2.6",
+  "requests": 5,
+  "kinds": {
+   "tool#1": 1,
+   "title": 1,
+   "tool#2": 1,
+   "tool#3": 1,
+   "final": 1
+  },
+  "max_tokens_first6": [
+   256000,
+   null,
+   256000,
+   256000,
+   256000
+  ],
+  "run_jsonl_bytes": 16910,
+  "run_jsonl_lines": 12,
+  "run_jsonl_sha256": "3258bd562387c71a50a32cfc5d77715c44d7a29aa24a0fe1f31d8e33c128a297"
+ },
+ {
+  "run": "run-pt1100k",
+  "summary": "tag=pt1100k steps=3 bytes=2000 pt=1100000 exit=124 elapsed=120.115s opencode=opencode v2.2.6",
+  "requests": 6108,
+  "kinds": {
+   "tool#1": 3054,
+   "title": 1,
+   "compaction": 3053
+  },
+  "max_tokens_first6": [
+   256000,
+   null,
+   1024,
+   256000,
+   1024,
+   256000
+  ],
+  "run_jsonl_bytes": 16263581,
+  "run_jsonl_lines": 9160,
+  "run_jsonl_sha256": "c8b6b5a6c8ead9b7fde95411f1676f4033bbcf18edadf555dcc984dcc7bca8a4"
+ },
+ {
+  "run": "run-pt700k",
+  "summary": "tag=pt700k steps=3 bytes=2000 pt=700000 exit=0 elapsed=1.553s opencode=opencode v2.2.6",
+  "requests": 5,
+  "kinds": {
+   "tool#1": 1,
+   "title": 1,
+   "tool#2": 1,
+   "tool#3": 1,
+   "final": 1
+  },
+  "max_tokens_first6": [
+   256000,
+   null,
+   256000,
+   256000,
+   256000
+  ],
+  "run_jsonl_bytes": 16910,
+  "run_jsonl_lines": 12,
+  "run_jsonl_sha256": "05cde444e1a7907d333bb9e6865d51b683d5cc4dafeefc6394642d7ff82d1dd4"
+ },
+ {
+  "run": "run-pt840k",
+  "summary": "tag=pt840k steps=3 bytes=2000 pt=840000 exit=0 elapsed=1.476s opencode=opencode v2.2.6",
+  "requests": 5,
+  "kinds": {
+   "tool#1": 1,
+   "title": 1,
+   "tool#2": 1,
+   "tool#3": 1,
+   "final": 1
+  },
+  "max_tokens_first6": [
+   256000,
+   null,
+   197503,
+   197503,
+   197503
+  ],
+  "run_jsonl_bytes": 16910,
+  "run_jsonl_lines": 12,
+  "run_jsonl_sha256": "1307d99de5e33808cd85d3a3c8717de1537c4e1c0b58a681b87ff3c1ba3ee67e"
+ },
+ {
+  "run": "run-pt860k",
+  "summary": "tag=pt860k steps=3 bytes=2000 pt=860000 exit=0 elapsed=1.513s opencode=opencode v2.2.6",
+  "requests": 5,
+  "kinds": {
+   "tool#1": 1,
+   "title": 1,
+   "tool#2": 1,
+   "tool#3": 1,
+   "final": 1
+  },
+  "max_tokens_first6": [
+   256000,
+   null,
+   177503,
+   177503,
+   177503
+  ],
+  "run_jsonl_bytes": 16910,
+  "run_jsonl_lines": 12,
+  "run_jsonl_sha256": "83db2b588f6794f4b0423569f8508b70ea322563ad13c9f6c9c76a93340271e8"
+ },
+ {
+  "run": "run-pt885k",
+  "summary": "tag=pt885k steps=3 bytes=2000 pt=885000 exit=0 elapsed=1.78s opencode=opencode v2.2.6",
+  "requests": 5,
+  "kinds": {
+   "tool#1": 1,
+   "title": 1,
+   "tool#2": 1,
+   "tool#3": 1,
+   "final": 1
+  },
+  "max_tokens_first6": [
+   256000,
+   null,
+   152503,
+   152503,
+   152503
+  ],
+  "run_jsonl_bytes": 16910,
+  "run_jsonl_lines": 12,
+  "run_jsonl_sha256": "5730435fdf6a2045bcbf623c7ad7e9cb5f645cb64afd1b7cd52433a81c7e79d2"
+ },
+ {
+  "run": "run-pt890k",
+  "summary": "tag=pt890k steps=3 bytes=2000 pt=890000 exit=0 elapsed=2.016s opencode=opencode v2.2.6",
+  "requests": 5,
+  "kinds": {
+   "tool#1": 1,
+   "title": 1,
+   "tool#2": 1,
+   "tool#3": 1,
+   "final": 1
+  },
+  "max_tokens_first6": [
+   256000,
+   null,
+   147503,
+   147503,
+   147503
+  ],
+  "run_jsonl_bytes": 16910,
+  "run_jsonl_lines": 12,
+  "run_jsonl_sha256": "38b7bbe5fbe49abb6088a432c0db4ca0d3bcce6ec736c3a3350cd1411f8e50af"
+ },
+ {
+  "run": "run-pt891k",
+  "summary": "tag=pt891k steps=3 bytes=2000 pt=891000 exit=124 elapsed=20.161s opencode=opencode v2.2.6",
+  "requests": 830,
+  "kinds": {
+   "tool#1": 415,
+   "title": 1,
+   "compaction": 414
+  },
+  "max_tokens_first6": [
+   256000,
+   null,
+   156206,
+   256000,
+   156027,
+   256000
+  ],
+  "run_jsonl_bytes": 2199888,
+  "run_jsonl_lines": 1240,
+  "run_jsonl_sha256": "4a4bd936633ebdb4e731aa224227d9a70032d3f49c5263e891d326deef81bfa9"
+ },
+ {
+  "run": "run-pt895k",
+  "summary": "tag=pt895k steps=3 bytes=2000 pt=895000 exit=124 elapsed=20.163s opencode=opencode v2.2.6",
+  "requests": 814,
+  "kinds": {
+   "tool#1": 407,
+   "title": 1,
+   "compaction": 406
+  },
+  "max_tokens_first6": [
+   256000,
+   null,
+   152206,
+   256000,
+   152027,
+   256000
+  ],
+  "run_jsonl_bytes": 2162356,
+  "run_jsonl_lines": 1218,
+  "run_jsonl_sha256": "ca8fb58f826ab49c0875c90536e5779b78a8c596c6db622ff77725480c5e6453"
+ },
+ {
+  "run": "run-real1",
+  "summary": "tag=real1 steps=3 bytes=2000 pt=100000,1100000 exit=0 elapsed=1.901s opencode=opencode v2.2.6",
+  "requests": 8,
+  "kinds": {
+   "tool#1": 2,
+   "title": 1,
+   "tool#2": 2,
+   "compaction": 1,
+   "tool#3": 1,
+   "final": 1
+  },
+  "max_tokens_first6": [
+   256000,
+   null,
+   256000,
+   1024,
+   256000,
+   256000
+  ],
+  "run_jsonl_bytes": 27561,
+  "run_jsonl_lines": 18,
+  "run_jsonl_sha256": "72715e7c85e9fdaa743eb4a7d781377a4dc12d66f77f06ad1edc3c9a77ff3854"
+ }
+]

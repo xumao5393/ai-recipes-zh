@@ -1,0 +1,36 @@
+## bash-main (/workspace/fourday-20261109/deepseek-harness/repo/evidence/03-dsh-tool-loop/captured)
+  resp-01.meta.json: {'kind': 'tool_use:bash', 'bytes': 1286, 'stream': True}
+  resp-02.meta.json: {'kind': 'title', 'bytes': 804, 'stream': True}
+  resp-03.meta.json: {'kind': 'final', 'bytes': 823, 'stream': True}
+  resp-04.meta.json: {'kind': 'tool_use:bash', 'bytes': 1286, 'stream': True}
+  resp-05.meta.json: {'kind': 'title', 'bytes': 804, 'stream': True}
+  resp-06.meta.json: {'kind': 'final', 'bytes': 823, 'stream': True}
+  req-01.json: path=/v1/messages body_len=22599 tools=24
+  req-02.json: path=/v1/messages body_len=770 tools=0
+  req-03.json: path=/v1/messages body_len=22957 tools=24
+  req-04.json: path=/v1/messages body_len=22757 tools=24
+  req-05.json: path=/v1/messages body_len=769 tools=0
+  req-06.json: path=/v1/messages body_len=23115 tools=24
+## write (/workspace/fourday-20261109/deepseek-harness/repo/evidence/03-dsh-tool-loop/captured-write)
+  resp-01.meta.json: {'kind': 'tool_use:write', 'bytes': 1298, 'stream': True}
+  resp-02.meta.json: {'kind': 'title', 'bytes': 804, 'stream': True}
+  resp-03.meta.json: {'kind': 'final', 'bytes': 823, 'stream': True}
+  req-01.json: path=/v1/messages body_len=22754 tools=24
+  req-02.json: path=/v1/messages body_len=766 tools=0
+  req-03.json: path=/v1/messages body_len=23292 tools=24
+## read (/workspace/fourday-20261109/deepseek-harness/repo/evidence/03-dsh-tool-loop/captured-read)
+  resp-01.meta.json: {'kind': 'tool_use:read', 'bytes': 1253, 'stream': True}
+  resp-02.meta.json: {'kind': 'title', 'bytes': 804, 'stream': True}
+  resp-03.meta.json: {'kind': 'final', 'bytes': 823, 'stream': True}
+  req-01.json: path=/v1/messages body_len=22753 tools=24
+  req-02.json: path=/v1/messages body_len=765 tools=0
+  req-03.json: path=/v1/messages body_len=23289 tools=24
+## outside (/workspace/fourday-20261109/deepseek-harness/repo/evidence/03-dsh-tool-loop/captured-outside)
+  resp-01.meta.json: {'kind': 'tool_use:write', 'bytes': 1399, 'stream': True}
+  resp-02.meta.json: {'kind': 'tool_use:write', 'bytes': 1412, 'stream': True}
+  resp-03.meta.json: {'kind': 'title', 'bytes': 804, 'stream': True}
+  resp-04.meta.json: {'kind': 'final', 'bytes': 823, 'stream': True}
+  req-01.json: path=/v1/messages body_len=113 tools=1
+  req-02.json: path=/v1/messages body_len=22749 tools=24
+  req-03.json: path=/v1/messages body_len=761 tools=0
+  req-04.json: path=/v1/messages body_len=23322 tools=24

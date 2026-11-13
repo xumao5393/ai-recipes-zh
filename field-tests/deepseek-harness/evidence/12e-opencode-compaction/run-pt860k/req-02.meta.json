@@ -1,0 +1,22 @@
+{
+ "i": 2,
+ "ts": 1794283976.1929784,
+ "path": "/v1/chat/completions",
+ "body_len": 2155,
+ "kind": "title",
+ "n_messages": 2,
+ "tool_msgs": 0,
+ "roles": [
+  "system",
+  "user"
+ ],
+ "tools_n": 0,
+ "last_user_head": "Here is the first message of the conversation:\n\n<message>\nrun the steps\n</message>\n\nReply with only the title.",
+ "max_tokens": null,
+ "extra_keys": [
+  "model",
+  "stream",
+  "stream_options",
+  "thinking"
+ ]
+}

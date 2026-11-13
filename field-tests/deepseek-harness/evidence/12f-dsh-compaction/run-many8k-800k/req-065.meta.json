@@ -1,0 +1,28 @@
+{
+ "i": 65,
+ "ts": 1794287420.6363792,
+ "path": "/v1/messages",
+ "body_len": 42197,
+ "kind": "compaction",
+ "n_messages": 1,
+ "tool_results_in_history": 0,
+ "roles": [
+  "user"
+ ],
+ "tools_n": 24,
+ "max_tokens": 65536,
+ "has_checkpoint": true,
+ "last_user_head": "run the steps\nCurrent runtime context. This snapshot supersedes earlier runtime-context snapshots.\n\nCurrent working dire",
+ "top_keys": [
+  "dsh_plugin_packages",
+  "dsh_session_log",
+  "max_tokens",
+  "messages",
+  "model",
+  "output_config",
+  "stream",
+  "system",
+  "thinking",
+  "tools"
+ ]
+}

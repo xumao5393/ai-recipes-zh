@@ -1,0 +1,1 @@
+tag=pt200k steps=4 bytes=2000 pt=1000,200000 PT_AFTER=30000 CT= MODEL=deepseek-v4-flash EXTRA_ENV= exit=0 elapsed=0.605s

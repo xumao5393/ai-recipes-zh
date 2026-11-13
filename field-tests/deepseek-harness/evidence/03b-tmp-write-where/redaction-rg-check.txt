@@ -1,0 +1,55 @@
+# redaction-rg-check · evidence/03b-tmp-write-where/
+# 2026-11-09 America/New_York
+# Patterns scanned: token|key|secret|bearer|sk-|ghp_ and base64-looking runs len>=31
+# Method: full-tree text scan; see prior noisy hit list in this file body if needed.
+
+## Verdict
+- Real secret values found: 0
+- No plaintext Authorization / x-api-key values (only `<redacted>`).
+- No ghp_ / long sk- keys.
+- `DEEPSEEK_API_KEY` appears only as an environ **name** in host-watch (values not stored).
+- Hits on `token`/`max_tokens`/`inputTokens`/`dsh-token-meter` are field/package names, not secrets.
+
+## Raw keyword rg line count: 303 (mostly max_tokens / package names / redacted headers / env names)
+
+## Sample raw keyword hits (first 40)
+./run.stdout:7:{"type":"status","phase":"step_end","turn":1,"step":1,"usage":{"inputTokens":40,"outputTokens":32,"totalTokens":72}}
+./run.stdout:12:{"type":"status","phase":"step_end","turn":1,"step":2,"usage":{"inputTokens":40,"outputTokens":32,"totalTokens":72}}
+./run.stdout:15:{"type":"status","phase":"step_end","turn":1,"step":3,"usage":{"inputTokens":12,"outputTokens":8,"totalTokens":20}}
+./redaction-rg-check.txt:2:# patterns: token|key|secret|bearer|sk-|ghp_| base64>=31
+./redaction-rg-check.txt:5:run.stdout:7:keyword: {"type":"status","phase":"step_end","turn":1,"step":1,"usage":{"inputTokens":40,"outputTokens":32,"totalTokens":72}}
+./redaction-rg-check.txt:6:run.stdout:12:keyword: {"type":"status","phase":"step_end","turn":1,"step":2,"usage":{"inputTokens":40,"outputTokens":32,"totalTokens":72}}
+./redaction-rg-check.txt:7:run.stdout:15:keyword: {"type":"status","phase":"step_end","turn":1,"step":3,"usage":{"inputTokens":12,"outputTokens":8,"totalTokens":20}}
+./redaction-rg-check.txt:8:replay_server_03b.py:15:keyword:     return {k: ("<redacted>" if k.lower() in ("authorization", "x-api-key") else v) for k, v in h.items()}
+./redaction-rg-check.txt:9:replay_server_03b.py:66:keyword:         ("message_start", {"type":"message_start","message":{"id":mid,"type":"message","role":"assistant","content":[],"model":model,"stop_reason":None,"stop_sequence":None,"usage"
+./redaction-rg-check.txt:10:replay_server_03b.py:70:keyword:         ("message_delta", {"type":"message_delta","delta":{"stop_reason":"end_turn","stop_sequence":None},"usage":{"output_tokens":8}}),
+./redaction-rg-check.txt:11:replay_server_03b.py:79:keyword:         ("message_start", {"type":"message_start","message":{"id":mid,"type":"message","role":"assistant","content":[],"model":model,"stop_reason":None,"stop_sequence":None,"usage
+./redaction-rg-check.txt:12:replay_server_03b.py:86:keyword:         ("message_delta", {"type":"message_delta","delta":{"stop_reason":"tool_use","stop_sequence":None},"usage":{"output_tokens":32}}),
+./redaction-rg-check.txt:13:captured/req-02.json:10:keyword:   "x-api-key": "<redacted>",
+./redaction-rg-check.txt:14:captured/req-02.json:38:keyword:   "max_tokens": 256000,
+./redaction-rg-check.txt:16:captured/req-02.json:842:keyword:         "maxTokens": 256000,
+./redaction-rg-check.txt:17:captured/req-02.json:847:keyword:         "maxTokens": true
+./redaction-rg-check.txt:19:captured/req-02.json:1523:keyword:       "maxTokens": 4096,
+./redaction-rg-check.txt:20:captured/req-02.json:1634:keyword:      "name": "@deepseek-ai/dsh-llm-deepseek-api-key",
+./redaction-rg-check.txt:21:captured/req-02.json:1782:keyword:      "name": "@deepseek-ai/dsh-token-meter",
+./redaction-rg-check.txt:22:captured/req-05.json:10:keyword:   "x-api-key": "<redacted>",
+./redaction-rg-check.txt:23:captured/req-05.json:106:keyword:   "max_tokens": 256000,
+./redaction-rg-check.txt:25:captured/req-05.json:795:keyword:        "inputTokens": 40,
+./redaction-rg-check.txt:26:captured/req-05.json:796:keyword:        "outputTokens": 32,
+./redaction-rg-check.txt:27:captured/req-05.json:797:keyword:        "totalTokens": 72
+./redaction-rg-check.txt:28:captured/req-05.json:880:keyword:           "inputTokens": 40,
+./redaction-rg-check.txt:29:captured/req-05.json:881:keyword:           "outputTokens": 32,
+./redaction-rg-check.txt:30:captured/req-05.json:882:keyword:           "totalTokens": 72
+./redaction-rg-check.txt:31:captured/req-05.json:1121:keyword:      "name": "@deepseek-ai/dsh-llm-deepseek-api-key",
+./redaction-rg-check.txt:32:captured/req-05.json:1269:keyword:      "name": "@deepseek-ai/dsh-token-meter",
+./redaction-rg-check.txt:33:captured/req-04.json:10:keyword:   "x-api-key": "<redacted>",
+./redaction-rg-check.txt:34:captured/req-04.json:72:keyword:   "max_tokens": 256000,
+./redaction-rg-check.txt:36:captured/req-04.json:761:keyword:        "inputTokens": 40,
+./redaction-rg-check.txt:37:captured/req-04.json:762:keyword:        "outputTokens": 32,
+./redaction-rg-check.txt:38:captured/req-04.json:763:keyword:        "totalTokens": 72
+./redaction-rg-check.txt:39:captured/req-04.json:846:keyword:           "inputTokens": 40,
+./redaction-rg-check.txt:40:captured/req-04.json:847:keyword:           "outputTokens": 32,
+./redaction-rg-check.txt:41:captured/req-04.json:848:keyword:           "totalTokens": 72
+./redaction-rg-check.txt:42:captured/req-04.json:1116:keyword:      "name": "@deepseek-ai/dsh-llm-deepseek-api-key",
+./redaction-rg-check.txt:43:captured/req-04.json:1264:keyword:      "name": "@deepseek-ai/dsh-token-meter",
+./redaction-rg-check.txt:44:captured/req-03.json:10:keyword:   "x-api-key": "<redacted>",

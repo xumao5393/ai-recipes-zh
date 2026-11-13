@@ -1,0 +1,15 @@
+# OpenCode system_chars original search (for #10)
+# 2026-11-09 America/New_York
+
+## Files containing OpenCode system opening: 4
+- /workspace/fourday-20261109/deepseek-harness/internal-archive/06-opencode/capture-sayhi-20261109-1447/captured/req-01.json
+  system_chars=8697 path=/workspace/fourday-20261109/deepseek-harness/internal-archive/06-opencode/capture-sayhi-20261109-1447/captured/req-01.json
+- /workspace/fourday-20261109/deepseek-harness/repo/evidence/REDACTION-RG-CHECK-r7.txt
+- /workspace/fourday-20261109/deepseek-harness/repo/evidence/06-opencode/capture-sayhi-20261109-1447/captured/req-01.json
+- /workspace/fourday-20261109/deepseek-harness/repo/evidence/deep_mask_captures.py
+
+## LOG.md mentions of 8799
+L9: - 2026-11-09 14:47 EST 实测员：#6 OpenCode 2.2.6，opencode.json 将 deepseek baseURL→127.0.0.1:19016/v1，model=deepseek/deepseek-flash。"say hi"→3×POST /v1/chat/completions（正式 body_len=22803，system_chars=8799 按 system-role join len；12 工具紧凑 JSON 13600；标题 2148/2117）。有 traceparent+x-opencode-* 头。证据 capture-sayhi-20261109-1447。接着 #7 Aider。
+
+## internal-archive current OpenCode system_chars=8697
+Conclusion: no pre-path-redaction original found under /tmp or workspace; keep 8697 with dagger note.

@@ -1,0 +1,10 @@
+deepseek	晚 7.88 分钟	声明上限 5	超出
+grokbot	晚 8.18 分钟	声明上限 5	超出
+crossborder	晚 9.07 分钟	声明上限 5	超出
+boss-office	晚 9.55 分钟	声明上限 5	超出
+free-cloud	晚 10.03 分钟	声明上限 5	超出
+观察例程A	晚 8.40 分钟	声明上限 15	在窗内
+观察例程B	晚 8.73 分钟	声明上限 15	在窗内
+grokbot本次	晚 6.75 分钟	声明上限 5	超出
+n=8 最小 6.75 最大 10.03 平均 8.57 分钟
+# 公开副本（2026-11-10 04:25 EST）：例程名称改为「观察例程A/B」，其余不变。改名前 sha256 89d39b6c6d7c079c18c44a5cfebb9dbcb712991c0d1f83332eaeb68b9771caf3，存 internal-archive/routine-punctuality-2026-11-09-1918/before-rename-0425/

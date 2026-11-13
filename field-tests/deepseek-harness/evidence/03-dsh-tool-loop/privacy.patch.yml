@@ -1,0 +1,7 @@
+# 关闭随每次模型请求附带的会话日志与插件清单，并关闭遥测（实测见 run-patched.txt）
+- id: session-log-deepseek
+  disabled: true
+- id: plugin-package-inventory-deepseek
+  disabled: true
+- id: session-telemetry-otel
+  disabled: true

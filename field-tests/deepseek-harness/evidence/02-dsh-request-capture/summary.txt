@@ -1,0 +1,4 @@
+captured/req-01.json /v1/messages body_bytes= 54849 model= deepseek-flash max_tokens= 256000 thinking= {'type': 'enabled'} system_chars= 2619 tools= 24 tools_json_chars= 19787 session_log_chars= 27188 plugin_pkgs_chars= 6144
+captured/req-02.json /v1/messages body_bytes= 32923 model= deepseek-flash max_tokens= 4096 thinking= {'type': 'disabled'} system_chars= 487 tools= 0 tools_json_chars= 2 session_log_chars= 27188 plugin_pkgs_chars= 6144
+captured-patched/req-01.json /v1/messages body_bytes= 22680 model= deepseek-flash max_tokens= 256000 thinking= {'type': 'enabled'} system_chars= 2619 tools= 24 tools_json_chars= 19787 session_log_chars= 0 plugin_pkgs_chars= 0
+captured-patched/req-02.json /v1/messages body_bytes= 754 model= deepseek-flash max_tokens= 4096 thinking= {'type': 'disabled'} system_chars= 487 tools= 0 tools_json_chars= 2 session_log_chars= 0 plugin_pkgs_chars= 0

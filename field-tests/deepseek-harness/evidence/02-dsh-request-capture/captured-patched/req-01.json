@@ -1,0 +1,234 @@
+{
+ "method": "POST",
+ "path": "/v1/messages",
+ "headers": {
+  "host": "127.0.0.1:18999",
+  "connection": "keep-alive",
+  "user-agent": "deepseek-harness/0.2.2-rc.1 (+https://github.com/deepseek-ai/deepseek-harness)",
+  "content-type": "application/json",
+  "accept": "text/event-stream",
+  "x-api-key": "<redacted>",
+  "anthropic-version": "2023-06-01",
+  "x-deepseek-harness-user-id": "<anonymous-user-id-redacted>",
+  "x-deepseek-harness-session-id": "session-de50a6b9-ac1e-4b46-ba1a-842ecad24018",
+  "accept-language": "*",
+  "sec-fetch-mode": "cors",
+  "accept-encoding": "gzip, deflate",
+  "content-length": "22680"
+ },
+ "body_len": 22680,
+ "body": {
+  "model": "deepseek-flash",
+  "stream": true,
+  "messages": [
+   {
+    "role": "user",
+    "content": [
+     {
+      "type": "text",
+      "text": "say hi"
+     },
+     {
+      "type": "text",
+      "text": {
+       "length": 601,
+       "sha256": "4a6f918a537ef1fb5f57b4b150ff2acb2cd9a904b7d81ca60be6f4487e797413",
+       "first_line": "Current runtime context. This snapshot supersedes earlier runtime-context snapshots.",
+       "_masked": true
+      }
+     }
+    ]
+   }
+  ],
+  "max_tokens": 256000,
+  "thinking": {
+   "type": "enabled"
+  },
+  "output_config": {
+   "effort": "high"
+  },
+  "system": {
+   "length": 2591,
+   "sha256": "ee9256d41f7f2c95824b0c1e72a7443ac2fdfa2b3db5825448bf173a535ff3ec",
+   "first_line": "You are an AI agent powered by DeepSeek Harness.",
+   "_masked": true
+  },
+  "tools": [
+   {
+    "name": "bash",
+    "length": 2282,
+    "sha256": "16932347a8760bb5223a1e472408c4e6cac8060c0d5fc644703022ebb65081ae",
+    "_masked": true
+   },
+   {
+    "name": "create_goal",
+    "length": 579,
+    "sha256": "54ddd95b0b751cfd3aab7edd9c5b61d4dd67d5886938055bc895ce50402067b7",
+    "_masked": true
+   },
+   {
+    "name": "edit",
+    "length": 1153,
+    "sha256": "ae2e2a257c4535ce0bcb3040d3e0c70d29579758845239986079cd99ceb7b288",
+    "_masked": true
+   },
+   {
+    "name": "get_goal",
+    "length": 172,
+    "sha256": "dcf6a1d18a1aa81a42cf0b317ec1fee67ea50531406f999ed2c9985b58fdd51b",
+    "_masked": true
+   },
+   {
+    "name": "glob",
+    "length": 752,
+    "sha256": "58b321cfc6f1a504bfebf1904b673606f75e97e1051654c21bf7abb132f4d49d",
+    "_masked": true
+   },
+   {
+    "name": "grep",
+    "length": 704,
+    "sha256": "711f470334470fc0334cca3dbc673756e488c6e17b6794c5a71d6c2e0da387bc",
+    "_masked": true
+   },
+   {
+    "name": "interrupt_agent",
+    "length": 516,
+    "sha256": "b39a8a1a3ccf2824944b1583bfe326616abc23fa683c1ccc86176fbd9af2767a",
+    "_masked": true
+   },
+   {
+    "name": "job_kill",
+    "length": 372,
+    "sha256": "137e860fb3af711998ef33050edbea50764bd9525c0357f6ae900065ac80108e",
+    "_masked": true
+   },
+   {
+    "name": "job_list",
+    "length": 170,
+    "sha256": "eb3eeb2b6e3f0ca1049811906dcd1fe2263efb7eb5519b54bcfa14b4e9fb38fc",
+    "_masked": true
+   },
+   {
+    "name": "job_output",
+    "length": 617,
+    "sha256": "b75cd432e7b03749f48a230c9adc66d1589a7661e153448b296fa4a4f57f0adf",
+    "_masked": true
+   },
+   {
+    "name": "list_agents",
+    "length": 663,
+    "sha256": "9b4c42a9fe415974912882c724153517182bc303e7379448a7157d6862e588d2",
+    "_masked": true
+   },
+   {
+    "name": "read",
+    "length": 440,
+    "sha256": "70fa401c6861ae7eddd5d5d0b46e1c9ae39f08d6d0ff630349c4ea9b37f6c415",
+    "_masked": true
+   },
+   {
+    "name": "read_image",
+    "length": 391,
+    "sha256": "8eb6004991b08ed3681ab0d3e9ea05d2e270059ffbd9359fd9c24b9b7dd7018f",
+    "_masked": true
+   },
+   {
+    "name": "send_message",
+    "length": 529,
+    "sha256": "e37ef34dfa255e66d15b1556f7825263e74264b070b78a19dcb2501be47a4654",
+    "_masked": true
+   },
+   {
+    "name": "skill",
+    "length": 334,
+    "sha256": "e195042f03e762c9213dc6429972dff0efe8ceafa21cfa96979fe1e34ad83b29",
+    "_masked": true
+   },
+   {
+    "name": "subagent",
+    "length": 1163,
+    "sha256": "0ec7bc3cfcb94cdc1a6d6a65689d6a52d364b02337b04250c5c421accc53f3e4",
+    "_masked": true
+   },
+   {
+    "name": "subagent_fork",
+    "length": 1270,
+    "sha256": "04a9c578cf2f47cc151e42b2c5eaed23c1ee3754be29d6ccc12b0c2da080784c",
+    "_masked": true
+   },
+   {
+    "name": "todo_write",
+    "length": 858,
+    "sha256": "d5885be4d41efde12ad999a528201cb844acb0124472d31fd0458d5683b6faed",
+    "_masked": true
+   },
+   {
+    "name": "update_goal",
+    "length": 986,
+    "sha256": "3655c5920708ce0df9f4aeaa0a9b86292d1a451817f69cd0cd760fd22c64ee61",
+    "_masked": true
+   },
+   {
+    "name": "web_fetch",
+    "length": 244,
+    "sha256": "adebfde5c163d26aeb6da288bfda8312db2c6617907a572f4b38df8f047eee3b",
+    "_masked": true
+   },
+   {
+    "name": "web_search",
+    "length": 325,
+    "sha256": "8ff25a6c000598c73913d8253018f74dc639628cc82882351e7ad5b0b6b8e2bd",
+    "_masked": true
+   },
+   {
+    "name": "workflow",
+    "length": 3391,
+    "sha256": "5facf523585eaa93e584c842a346c01e89e7ec495c8c656495a342bfabd32778",
+    "_masked": true
+   },
+   {
+    "name": "working_directory",
+    "length": 362,
+    "sha256": "963a4e2f5def6ec252f024a38fcdd964eb9668304ca3fa4da5bbe80dcc9214e7",
+    "_masked": true
+   },
+   {
+    "name": "write",
+    "length": 856,
+    "sha256": "a189cb9bd2eee047a54a54ce7ba3093c7ada34a8292743b8bb7d563e30831128",
+    "_masked": true
+   }
+  ],
+  "_tools_meta": {
+   "tools_n": 24,
+   "tool_names": [
+    "bash",
+    "create_goal",
+    "edit",
+    "get_goal",
+    "glob",
+    "grep",
+    "interrupt_agent",
+    "job_kill",
+    "job_list",
+    "job_output",
+    "list_agents",
+    "read",
+    "read_image",
+    "send_message",
+    "skill",
+    "subagent",
+    "subagent_fork",
+    "todo_write",
+    "update_goal",
+    "web_fetch",
+    "web_search",
+    "workflow",
+    "working_directory",
+    "write"
+   ],
+   "tools_json_compact_chars": 19154,
+   "_masked": true
+  }
+ }
+}

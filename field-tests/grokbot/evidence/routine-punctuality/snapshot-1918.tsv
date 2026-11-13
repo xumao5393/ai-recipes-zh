@@ -1,0 +1,11 @@
+# 来源：本次例程运行开头系统给的例程状态快照（2026-11-09 19:18 EST），只摘名称简称、计划时间、声明的时间窗、"last run"。folder 标识已去掉。
+routine	cron_minute	declared_window	scheduled_EST	last_run_EST
+deepseek(每小时)	:00	最多晚5分钟	19:00:00	19:07:53
+grokbot(每小时)	:12	最多晚5分钟	18:12:00	18:20:11
+crossborder(每小时)	:24	最多晚5分钟	18:24:00	18:33:04
+boss-office(每小时)	:36	最多晚5分钟	18:36:00	18:45:33
+free-cloud(每小时)	:48	最多晚5分钟	18:48:00	18:58:02
+观察例程A(每3小时)	:00	早晚各15分钟	17:00:00	17:08:24
+观察例程B(每3小时)	:00	早晚各15分钟	17:00:00	17:08:44
+# 本次运行（grokbot :12）：唤醒消息写 fired 2026-11-10T00:18:45.505Z = 19:18:45 EST；本轮第一次 Shell `date` = 19:19:15 EST
+# 公开副本（2026-11-10 04:25 EST）：例程名称按 Kumo 要求改为「观察例程A/B」，其余不变。改名前副本 sha256 8f3ceac3f8b24c0ee603c675f69a3f59b06cf7fa604eae44611a34e76a21526e，存 internal-archive/routine-punctuality-2026-11-09-1918/before-rename-0425/

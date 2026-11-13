@@ -1,0 +1,216 @@
+{
+ "method": "POST",
+ "path": "/v1/messages?beta=true",
+ "headers": {
+  "Accept": "application/json",
+  "Content-Type": "application/json",
+  "User-Agent": "claude-cli/2.1.321 (external, sdk-cli)",
+  "X-Claude-Code-Session-Id": "cc8a8959-91a5-4590-9487-498621d554c7",
+  "X-Stainless-Arch": "x64",
+  "X-Stainless-Lang": "js",
+  "X-Stainless-OS": "Linux",
+  "X-Stainless-Package-Version": "0.128.0",
+  "X-Stainless-Retry-Count": "0",
+  "X-Stainless-Runtime": "node",
+  "X-Stainless-Runtime-Version": "v26.12.1",
+  "X-Stainless-Timeout": "600",
+  "anthropic-beta": "claude-code-20250219,interleaved-thinking-2025-05-14,context-management-2025-06-27,mid-conversation-tool-changes-2026-07-01,inline-tools-2026-09-15,advisor-tool-2026-03-01,thinking-token-count-2026-05-13,advanced-tool-use-2025-11-20,effort-2025-11-24",
+  "anthropic-dangerous-direct-browser-access": "true",
+  "anthropic-version": "2023-06-01",
+  "x-api-key": "<REDACTED len=13>",
+  "x-app": "cli",
+  "Connection": "keep-alive",
+  "Host": "127.0.0.1:19005",
+  "Accept-Encoding": "gzip, deflate, br, zstd",
+  "Content-Length": "46907"
+ },
+ "body_len": 46907,
+ "body": {
+  "model": "deepseek-chat",
+  "messages": [
+   {
+    "role": "user",
+    "content": [
+     {
+      "type": "text",
+      "text": {
+       "length": 576,
+       "sha256": "6f46cca4983803f5f10a2f0d46f9fe7e265bc6c21216a9f70c2bda2c6da79e34",
+       "first_line": "<system-reminder>",
+       "_masked": true
+      }
+     },
+     {
+      "type": "text",
+      "text": "say hi"
+     }
+    ]
+   },
+   {
+    "role": "system",
+    "content": [
+     {
+      "type": "text",
+      "text": {
+       "length": 8982,
+       "sha256": "6725be12000a51c0c05b5aeb576676feac646a7bd97bc9e4611a4a30af791ac9",
+       "first_line": "# Environment",
+       "_masked": true
+      },
+      "cache_control": {
+       "type": "ephemeral"
+      }
+     }
+    ]
+   }
+  ],
+  "system": [
+   {
+    "type": "text",
+    "text": {
+     "length": 74,
+     "sha256": "2b7bfedabbbf58ece9f04afe1ba727ba6ce13d91a730ce693188d379d7a737ab",
+     "first_line": "x-anthropic-billing-header: cc_version=2.1.321.463; cc_entrypoint=sdk-cli;",
+     "_masked": true
+    }
+   },
+   {
+    "type": "text",
+    "cache_control": {
+     "type": "ephemeral"
+    },
+    "text": {
+     "length": 62,
+     "sha256": "0d7062851dd7bd7e66d4be4f12ac4951e3d2f587ec408295333a49963bd3f6b7",
+     "first_line": "You are a Claude agent, built on Anthropic's Claude Agent SDK.",
+     "_masked": true
+    }
+   },
+   {
+    "type": "text",
+    "cache_control": {
+     "type": "ephemeral"
+    },
+    "text": {
+     "length": 6538,
+     "sha256": "47e54f213c21c4bea044ca612978ad1c591a8037a2e43c46e735784095bb9e21",
+     "first_line": "",
+     "_masked": true
+    }
+   }
+  ],
+  "tools": [
+   {
+    "name": "Agent",
+    "length": 5246,
+    "sha256": "2cb5f971a6989b9140d636a821a6af432bf36b754405fff7a50108c1fb478cd7",
+    "_masked": true
+   },
+   {
+    "name": "Bash",
+    "length": 3715,
+    "sha256": "f9143af49ef965e59d3b358342489c3588548a9953e244701dc2c9b423b2f597",
+    "_masked": true
+   },
+   {
+    "name": "Edit",
+    "length": 964,
+    "sha256": "6430d0c60f48540c7dc2e2cc80f853f708bb1dadc39f97e28e4e26053090e877",
+    "_masked": true
+   },
+   {
+    "name": "ListAgents",
+    "length": 1151,
+    "sha256": "0a3591a577c63d2fac503182f6cb2ecbb82be907338aac90656a21e49a11dc15",
+    "_masked": true
+   },
+   {
+    "name": "Read",
+    "length": 1919,
+    "sha256": "a7d718db4e9dbf542d31a03bdae7e22214c7fadc4f900566d6c0f6149aeb4411",
+    "_masked": true
+   },
+   {
+    "name": "ReportFindings",
+    "length": 2177,
+    "sha256": "d742f97bb17e9e25c3953843dbd594cd55b320995da9f24baf7bd9a6f5271075",
+    "_masked": true
+   },
+   {
+    "name": "ScheduleWakeup",
+    "length": 4886,
+    "sha256": "24fdfa8e91c8ca4c543d60a44f10f0f7cdde8464899c3cc7e4195bf37d0cd03f",
+    "_masked": true
+   },
+   {
+    "name": "Skill",
+    "length": 1803,
+    "sha256": "c3282cbcede58552e3c72b83b0d382d7094836bc25cca78f4a213183e705c51f",
+    "_masked": true
+   },
+   {
+    "name": "ToolSearch",
+    "length": 1440,
+    "sha256": "59c6a9f11182fd5f9216fb29b3a1c7e4f9b8dbd2075324928642271478fa3372",
+    "_masked": true
+   },
+   {
+    "name": "Workflow",
+    "length": 5355,
+    "sha256": "b09d3792832d290ee8fe0bca1f37c97fd0e6ed72b7b759369c6e3244685938d2",
+    "_masked": true
+   },
+   {
+    "name": "DeferredToolPlaceholder",
+    "length": 204,
+    "sha256": "8a1d4180a3eb06e2a60dbd0826e75c5a176bde34e20dd175d7df9edaf8cdcb40",
+    "_masked": true
+   },
+   {
+    "name": "Write",
+    "length": 639,
+    "sha256": "416c9b17ff1f7d9b3ab29616ff64b67503cc5aae15f4e4ebe22bddafe00c5d65",
+    "_masked": true
+   }
+  ],
+  "_tools_meta": {
+   "tools_n": 12,
+   "tool_names": [
+    "Agent",
+    "Bash",
+    "Edit",
+    "ListAgents",
+    "Read",
+    "ReportFindings",
+    "ScheduleWakeup",
+    "Skill",
+    "ToolSearch",
+    "Workflow",
+    "DeferredToolPlaceholder",
+    "Write"
+   ],
+   "tools_json_compact_chars": 29512,
+   "_masked": true
+  },
+  "metadata": {
+   "user_id": "{\"device_id\":\"fdf1a95eaf4bb4e33ea5df3e853d14eb8a563dc76d8345f374aee52a443d3a44\",\"account_uuid\":\"\",\"session_id\":\"cc8a8959-91a5-4590-9487-498621d554c7\"}"
+  },
+  "max_tokens": 32000,
+  "thinking": {
+   "type": "adaptive",
+   "display": "omitted"
+  },
+  "context_management": {
+   "edits": [
+    {
+     "type": "clear_thinking_20251015",
+     "keep": "all"
+    }
+   ]
+  },
+  "output_config": {
+   "effort": "high"
+  },
+  "stream": true
+ }
+}

@@ -1,0 +1,1 @@
+tag=stuck300k steps=4 bytes=2000 pt=1000,300000 PT_AFTER= CT= MODEL=deepseek-v4-flash EXTRA_ENV= exit=1 elapsed=0.633s

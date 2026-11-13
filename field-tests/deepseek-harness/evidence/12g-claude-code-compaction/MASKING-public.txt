@@ -1,0 +1,8 @@
+# MASKING · 12g-claude-code-compaction（公开版，2026-11-10 01:30 EST）
+1. run.sh 原件不入公开库，sha256 3633a514a746f830a51fec2e3db84acd2e63e21e220edab43ca732f22f24c848，存在 internal-archive/12g-claude-code-compaction/evidence-original/。
+2. 公开脚本是 run-public.sh：只把原件 R= 一行的本机绝对路径改成必须由读者设置的环境变量 R，其余逐字相同。
+3. 之前的公开版 run.sh（用 <R> 占位，sha256 adfb0f7dadd97a89cee40dc0a23653c32c24fe752703e23ddeb1d4a8b532c351）和旧 MASKING.txt（sha256 914cc318494ab0ae3dee0e3b06652b23274077c4d91c480af12aaf92bb4a7b8c，里面写出了本机绝对路径）已移到 internal-archive/12g-claude-code-compaction/public-before-r1/，原样未改。
+4. 原始请求体（含 Claude Code 系统提示）在 internal-archive/12g-claude-code-compaction/_raw_run-*，不入库。
+5. （2026-11-10 04:24 EST）req-*.meta.json 里的 last_user_head / first_user_head 字段截的是 Claude Code 内置提示词开头，不公开。有这两个字段的 81 个文件，原件移到 internal-archive/12g-claude-code-compaction/meta-head-originals/（清单和 sha256 在 meta-head-originals.SHA256SUMS）。公开副本只把这两个字段换成「<Claude Code 内置提示词片段，不公开>」，再加一个 public_copy_of_sha256 字段，写原件的 sha256，其他字段不变。
+6. （同上）bisect-1m.txt 第 2 行和运行数据矛盾，已在文件末尾追加更正，原行保留。
+7. （04:24 EST 更正第 5 条）实际处理的是 201 个文件，也就是所有带这两个字段非空值的文件。81 是其中含「CRITICAL」「being continued」「system-reminder」这几个字样的文件数，第 5 条写成了 81，不对。

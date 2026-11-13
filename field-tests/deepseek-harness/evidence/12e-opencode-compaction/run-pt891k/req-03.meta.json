@@ -1,0 +1,25 @@
+{
+ "i": 3,
+ "ts": 1794284267.7632253,
+ "path": "/v1/chat/completions",
+ "body_len": 27808,
+ "kind": "compaction",
+ "n_messages": 5,
+ "tool_msgs": 1,
+ "roles": [
+  "system",
+  "user",
+  "assistant",
+  "tool",
+  "user"
+ ],
+ "tools_n": 12,
+ "last_user_head": "You MUST summarize the conversation above into a structured summary that will be given to another agent to resume the work.\n\nSummarize only what the user and th",
+ "max_tokens": 156206,
+ "extra_keys": [
+  "max_tokens",
+  "model",
+  "stream",
+  "stream_options"
+ ]
+}

@@ -1,0 +1,4 @@
+strace: not installed.
+Tried: apt-get install strace -> debian InRelease 500 / not signed.
+Tried: curl .deb from deb.debian.org / http.us.debian.org -> 404/500.
+No strace run performed. Used /proc sampling + cmdline instead (host_watch.py).

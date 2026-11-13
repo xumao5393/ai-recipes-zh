@@ -1,0 +1,39 @@
+# recalc_system_and_plugins.py output
+# cwd evidence dir: /workspace/fourday-20261109/deepseek-harness/repo/evidence/02-dsh-request-capture
+
+== system algorithm on captured/req-01.json and req-02.json ==
+req-01.json: {'system_type': 'str', 'raw_chars_A': 2591, 'json_dumps_chars_B': 2619, 'dumps_minus_raw': 28, 'n_newlines_in_raw': 26, 'n_backslash_in_raw': 0, 'n_quote_in_raw': 0}
+req-02.json: {'system_type': 'str', 'raw_chars_A': 481, 'json_dumps_chars_B': 487, 'dumps_minus_raw': 6, 'n_newlines_in_raw': 4, 'n_backslash_in_raw': 0, 'n_quote_in_raw': 0}
+
+Explanation: system is a JSON string. Algorithm A = len(str).
+Algorithm B = len(json.dumps(str)) = A + 2 (quotes) + escape expansion.
+For req-01: B-A = 28 = 2 quotes + 26 escape extras (mostly \n).
+For req-02: B-A = 6 = 2 quotes + 4 escape extras.
+Original summary.txt system_chars used B; summary-rerun used A.
+Correct 口径 for '系统提示字符数': A (raw chars) => 2591 / 481.
+
+== per-file metrics ==
+file body_bytes system_A system_B tools tools_json_compact session_log_compact plugin_compact plugin_spaced
+captured/req-01.json 54849 2591 2619 24 19154 26279 5794 6144
+captured/req-02.json 32923 481 487 0 2 26279 5794 6144
+captured-patched/req-01.json 22680 2591 2619 24 19154 0 0 0
+captured-patched/req-02.json 754 481 487 0 2 0 0 0
+captured-true-default/req-01.json 54923 2591 2619 24 19154 26279 5868 6222
+captured-true-default/req-02.json 32997 481 487 0 2 26279 5868 6222
+captured-telemetry-off-rerun/req-01.json 54849 2591 2619 24 19154 26279 5794 6144
+captured-telemetry-off-rerun/req-02.json 32923 481 487 0 2 26279 5794 6144
+
+== true-default vs telemetry-off plugin delta ==
+true-default: body_bytes=54923 plugin_compact=5868 plugin_spaced=6222
+telemetry-off: body_bytes=54849 plugin_compact=5794 plugin_spaced=6144
+delta body_bytes: 74
+delta plugin_compact: 74
+delta plugin_spaced: 78
+Note: body_bytes comes from the raw HTTP body (compact JSON as sent).
+plugin_spaced (default json.dumps) over-counts vs body; compact matches the +74 body delta.
+
+== original captured/req-01 plugin_pkgs ==
+compact=5794 spaced=6144  (summary.txt had 6144 which is spaced)
+verify spaced len=6144 compact len=5794
+session_log spaced=27188 compact=26279
+tools spaced=19787 compact=19154

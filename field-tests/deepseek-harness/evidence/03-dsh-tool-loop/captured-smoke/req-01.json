@@ -1,0 +1,29 @@
+{
+ "ts": 1794252732.986826,
+ "method": "POST",
+ "path": "/v1/messages",
+ "headers": {
+  "Host": "127.0.0.1:19001",
+  "User-Agent": "curl/8.14.1",
+  "Accept": "*/*",
+  "content-type": "application/json",
+  "Content-Length": "127"
+ },
+ "body_len": 127,
+ "body": {
+  "model": "deepseek-flash",
+  "stream": true,
+  "messages": [
+   {
+    "role": "user",
+    "content": "hi"
+   }
+  ],
+  "tools": [
+   {
+    "name": "bash"
+   }
+  ],
+  "max_tokens": 100
+ }
+}

@@ -1,0 +1,37 @@
+[
+  {
+    "type": "session",
+    "sessionId": "session-8affde11-2a99-4cf0-9ba9-fc344a137251",
+    "cwd": "/workspace/fourday-20261109/deepseek-harness/repo/evidence/03b-tmp-write-where/workdir"
+  },
+  {
+    "type": "tool_call",
+    "tool": "bash",
+    "description": "03b diag write sleep",
+    "command_len": 502
+  },
+  {
+    "type": "tool_result",
+    "status": "completed",
+    "result": "HOST_PID=2\nNS_MNT=mnt:[4026532337]\nTMPDIR_VAL=UNSET\nID=uid=1000(<user>) gid=1000(<user>) groups=1000(<user>)\nDF_TMP\nFilesystem      Size  Used Avail Use% Mounted on\ntmpfs           7.9G  4.0K  7.9G   1% /tmp\nMOUNTINFO_TMP\n315 287 0:55 / /tmp rw,nosuid,nodev,relatime - tmpfs tmpfs rw,mode=755,uid=1000,gid=1000\nLS\n-rw-r--r-- 1 box box 32 Nov  9 14:56 /tmp/dsh03b-dsh03b-20261109-145405-59568077.txt\nREALPATH=/tmp/dsh03b-dsh03b-20261109-145405-59568077.txt\nSLEEP\nAFTER_SLEEP\n-rw-r--r-- 1 box box 32 Nov  9 14:56 /tmp/dsh03b-dsh03b-20261109-145405-59568077.txt\n"
+  },
+  {
+    "type": "tool_call",
+    "tool": "bash",
+    "description": "03b readback",
+    "command_len": 209
+  },
+  {
+    "type": "tool_result",
+    "status": "completed",
+    "result": "READBACK\nls: cannot access '/tmp/dsh03b-dsh03b-20261109-145405-59568077.txt': No such file or directory\nCONTENT\ncat: /tmp/dsh03b-dsh03b-20261109-145405-59568077.txt: No such file or directory\nNS_MNT=mnt:[4026532334]\nHOST_PID=2\n"
+  },
+  {
+    "type": "final",
+    "sessionId": "session-8affde11-2a99-4cf0-9ba9-fc344a137251",
+    "reason": {
+      "kind": "completed"
+    },
+    "text": "03b-done"
+  }
+]

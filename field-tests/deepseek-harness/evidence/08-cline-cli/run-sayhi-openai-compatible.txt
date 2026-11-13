@@ -1,0 +1,11 @@
+{"ts":"2026-11-09T20:07:23.716Z","type":"hook_event","hookEventName":"agent_start","agentId":"agent_174b4df7-bd34-4afe-af16-a09fb59aaf05","taskId":"conv_1794254843709_hlf7tmo","parentAgentId":null}
+{"ts":"2026-11-09T20:07:23.717Z","type":"agent_event","event":{"type":"iteration_start","iteration":1}}
+{"ts":"2026-11-09T20:07:23.755Z","type":"hook_event","hookEventName":"agent_error","agentId":"agent_174b4df7-bd34-4afe-af16-a09fb59aaf05","taskId":"conv_1794254843709_hlf7tmo","parentAgentId":null}
+{"ts":"2026-11-09T20:07:23.756Z","type":"agent_event","event":{"type":"error","error":{"name":"Error","message":"capture-only mock","stack":"Error: capture-only mock\n    at execute (/$bunfs/root/chunk-jgv0a50x.js:280:7022)\n    at processTicksAndRejections (native:7:39)"},"errorClass":"auth","recoverable":false,"iteration":1}}
+{"ts":"2026-11-09T20:07:23.885Z","type":"run_result","finishReason":"error","iterations":1,"usage":{"inputTokens":0,"outputTokens":0,"cacheReadTokens":0,"cacheWriteTokens":0,"totalCost":0},"aggregateUsage":{"inputTokens":0,"outputTokens":0,"cacheReadTokens":0,"cacheWriteTokens":0,"totalCost":0},"durationMs":46,"text":"capture-only mock","model":{"id":"deepseek-v4-flash","provider":"openai-compatible"}}
+{"ts":"2026-11-09T20:07:23.885Z","type":"error","message":"capture-only mock"}
+
+real	0m1.248s
+user	0m1.629s
+sys	0m0.229s
+exit=1

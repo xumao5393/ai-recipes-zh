@@ -1,0 +1,1 @@
+tag=hdr-sfx steps=2 bytes=2000 pt=1000,2000000 PT_AFTER=30000 CT= MODEL=deepseek-v4-flash[1m] EXTRA_ENV= exit=0 elapsed=0.452s

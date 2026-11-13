@@ -1,0 +1,4 @@
+{
+ "kind": "title",
+ "cmd": "rm -f deleteme.txt && ls deleteme.txt keep.txt"
+}

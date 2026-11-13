@@ -1,0 +1,1 @@
+tag=pt891k steps=3 bytes=2000 pt=891000 exit=124 elapsed=20.161s opencode=opencode v2.2.6

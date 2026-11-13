@@ -1,0 +1,1 @@
+tag=noauto-300k steps=3 bytes=2000 pt=1000,300000 PT_AFTER=30000 CT= MODEL=deepseek-v4-flash EXTRA_ENV=DISABLE_AUTO_COMPACT=1 exit=1 elapsed=0.471s

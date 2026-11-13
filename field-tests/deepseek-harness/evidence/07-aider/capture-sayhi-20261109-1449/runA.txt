@@ -1,0 +1,23 @@
+==== RUN A: --model deepseek/deepseek-chat ====
+Detected dumb terminal, disabling fancy input and pretty output.
+
+Update git name with: git config user.name "Your Name"
+Update git email with: git config user.email "you@example.com"
+You can skip this check with --no-gitignore
+Added .aider* to .gitignore
+Aider v0.86.2
+Model: deepseek/deepseek-chat with diff edit format, prompt cache, infinite 
+output
+Git repo: .git with 1 files
+Repo-map: using 4096 tokens, auto refresh
+
+
+https://aider.chat/HISTORY.html#release-notes
+
+litellm.AuthenticationError: AuthenticationError: DeepseekException - 
+{"type":"error","error":{"type":"authentication_error","message":"capture-only 
+mock"}}
+The API provider is not able to authenticate you. Check your API key.
+
+exit=0 elapsed_s=3.798
+stderr head:

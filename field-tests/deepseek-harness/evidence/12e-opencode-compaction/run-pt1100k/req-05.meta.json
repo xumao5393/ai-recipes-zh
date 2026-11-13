@@ -1,0 +1,25 @@
+{
+ "i": 5,
+ "ts": 1794283979.5956254,
+ "path": "/v1/chat/completions",
+ "body_len": 28768,
+ "kind": "compaction",
+ "n_messages": 5,
+ "tool_msgs": 1,
+ "roles": [
+  "system",
+  "user",
+  "assistant",
+  "tool",
+  "user"
+ ],
+ "tools_n": 12,
+ "last_user_head": "Update the existing checkpoint in the conversation above into one consolidated summary.\n\nNewer history always takes precedence over the existing checkpoint. Pre",
+ "max_tokens": 1024,
+ "extra_keys": [
+  "max_tokens",
+  "model",
+  "stream",
+  "stream_options"
+ ]
+}

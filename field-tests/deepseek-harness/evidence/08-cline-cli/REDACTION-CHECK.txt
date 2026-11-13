@@ -1,0 +1,32 @@
+REDACTION-CHECK · 08-cline-cli · Mon, 09 Nov 2026 15:30:24 -0500
+scope: evidence/08-cline-cli/ (exclude this file from rg self-hits)
+
+=== rg -n 'input_schema' ===
+count=0
+
+=== rg -n '"parameters"' ===
+count=0
+
+=== rg -n 'sk-FAKE|sk-[A-Za-z0-9]{8,}|LOCAL-TEST' ===
+count=0
+
+=== rg -n '/home/box|/Users/[A-Za-z]' ===
+count=0
+
+=== rg -n '"name": "<unknown>"' ===
+count=0
+
+=== tools first_line / unknown (python) ===
+tool_or_summary_first_line_count= 0
+unknown_name_count= 0
+system_first_line_kept=True
+tools_n= 25 compact= 17323 team= 18
+
+=== 08-only long strings >200 (excl masked digests) ===
+count= 0
+
+=== scan_long_strings.py (full evidence); 08 hits ===
+full_scan_exit=1 count_line=# long-string scan (>200 chars, excl. short user inputs / masked digests) # count=606 
+08_hits_in_full_scan=0
+
+PASS_CRITERIA: input_schema=0 parameters=0 sk-fake=0 /home/box=0 unknown=0 tools_first_line=0 08_long_raw=0

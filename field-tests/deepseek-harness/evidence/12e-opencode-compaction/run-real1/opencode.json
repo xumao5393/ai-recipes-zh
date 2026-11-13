@@ -1,0 +1,2 @@
+{"$schema":"https://opencode.ai/config.json","model":"deepseek/deepseek-flash",
+ "providers":{"deepseek":{"settings":{"baseURL":"http://127.0.0.1:19065/v1","headerTimeout":5000,"chunkTimeout":5000}}}}

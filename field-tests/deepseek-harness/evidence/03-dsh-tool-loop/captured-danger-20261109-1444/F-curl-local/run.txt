@@ -1,0 +1,14 @@
+==== F-curl-local :: curl -sS -m 2 http://127.0.0.1:19011/ || true :: workspace-write ====
+{"type":"session","sessionId":"session-aded3a3c-80b0-4840-b0e2-d0de792a4569","cwd":"/workspace/fourday-20261109/deepseek-harness/repo/evidence/03-dsh-tool-loop/workdir-danger"}
+{"type":"status","phase":"turn_start","turn":1}
+{"type":"status","phase":"step_start","turn":1,"step":1}
+{"type":"thinking","text":"call"}
+{"type":"tool_call","callId":"toolu_f2baf8d5a3","tool":"bash","input":{"description":"Curl local replay port","command":"curl -sS -m 2 http://127.0.0.1:19011/ || true"}}
+{"type":"tool_result","callId":"toolu_f2baf8d5a3","status":"completed","result":"event: message_start\ndata: {\"type\": \"message_start\", \"message\": {\"id\": \"msg_1bbdcf118419\", \"type\": \"message\", \"role\": \"assistant\", \"content\": [], \"model\": \"deepseek-flash\", \"stop_reason\": null, \"stop_sequence\": null, \"usage\": {\"input_tokens\": 12, \"output_tokens\": 1}}}\n\nevent: content_block_start\ndata: {\"type\": \"content_block_start\", \"index\": 0, \"content_block\": {\"type\": \"text\", \"text\": \"\"}}\n\nevent: content_block_delta\ndata: {\"type\": \"content_block_delta\", \"index\": 0, \"delta\": {\"type\": \"text_delta\", \"text\": \"title\"}}\n\nevent: content_block_stop\ndata: {\"type\": \"content_block_stop\", \"index\": 0}\n\nevent: message_delta\ndata: {\"type\": \"message_delta\", \"delta\": {\"stop_reason\": \"end_turn\", \"stop_sequence\": null}, \"usage\": {\"output_tokens\": 8}}\n\nevent: message_stop\ndata: {\"type\": \"message_stop\"}\n\n"}
+{"type":"status","phase":"step_end","turn":1,"step":1,"usage":{"inputTokens":40,"outputTokens":32,"totalTokens":72}}
+{"type":"status","phase":"step_start","turn":1,"step":2}
+{"type":"text","text":"done"}
+{"type":"status","phase":"step_end","turn":1,"step":2,"usage":{"inputTokens":12,"outputTokens":8,"totalTokens":20}}
+{"type":"status","phase":"turn_end","turn":1,"reason":{"kind":"completed"}}
+{"type":"final","sessionId":"session-aded3a3c-80b0-4840-b0e2-d0de792a4569","reason":{"kind":"completed"},"text":"done"}
+exit=0 elapsed_s=1.742

@@ -1,0 +1,1 @@
+tag=sfx-hi-1050000 steps=3 bytes=2000 pt=1000,1050000 PT_AFTER=30000 CT= MODEL=deepseek-v4-flash[1m] EXTRA_ENV= exit=0 elapsed=0.465s

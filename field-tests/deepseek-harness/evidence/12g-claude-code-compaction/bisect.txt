@@ -1,0 +1,16 @@
+165000 no
+172500 compact
+168750 compact
+166875 compact
+165937 no
+166406 compact
+166171 no
+166288 no
+166347 compact
+166317 compact
+166302 compact
+166295 no
+166298 no
+166300 no
+166301 compact
+no-compact max=166300 compact min=166301

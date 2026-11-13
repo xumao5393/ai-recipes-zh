@@ -1,0 +1,2 @@
+[32mProvider configured:[0m [36mopenai-compatible[0m (deepseek-v4-flash)
+auth_exit=0

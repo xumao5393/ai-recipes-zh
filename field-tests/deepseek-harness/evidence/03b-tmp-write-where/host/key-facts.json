@@ -1,0 +1,1694 @@
+[
+  {
+    "t": 1.525,
+    "pid": 155499,
+    "ppid": 155498,
+    "ns_mnt": "mnt:[4026532337]",
+    "ns_mnt_same_as_host": false,
+    "mountinfo_tmp_lines": [
+      "315 287 0:55 / /tmp rw,nosuid,nodev,relatime - tmpfs tmpfs rw,mode=755,uid=1000,gid=1000"
+    ],
+    "root_tmp_files": {
+      "dsh03b-dsh03b-20261109-145405-59568077.txt": {
+        "size": 32,
+        "content_head": "dsh03b-20261109-145405-59568077\n"
+      }
+    },
+    "cmd_head": "bwrap --ro-bind / / --dev /dev --unshare-pid --proc /proc --die-with-parent --tmpfs /tmp --bind /workspace/<evidence-root>/... /workspace/<evidence-root>/... -- bash -c MARK='dsh03b-20261109-145405-59568077'; F=/tmp/dsh03b-$MARK.txt; echo \"$MARK\" > \"$F\"; echo HOST_PID=$$; echo NS_MNT=$(readlink /proc/self/ns/mnt 2>/dev/null || echo NA); echo TMPDIR_VAL=${TMPDIR:-UNSET}; echo ID=$(id); echo DF_TMP;",
+    "environ_name_count": 78
+  },
+  {
+    "t": 1.525,
+    "pid": 155500,
+    "ppid": 155499,
+    "ns_mnt": "mnt:[4026532337]",
+    "ns_mnt_same_as_host": false,
+    "mountinfo_tmp_lines": [
+      "315 287 0:55 / /tmp rw,nosuid,nodev,relatime - tmpfs tmpfs rw,mode=755,uid=1000,gid=1000"
+    ],
+    "root_tmp_files": {
+      "dsh03b-dsh03b-20261109-145405-59568077.txt": {
+        "size": 32,
+        "content_head": "dsh03b-20261109-145405-59568077\n"
+      }
+    },
+    "cmd_head": "bash -c MARK='dsh03b-20261109-145405-59568077'; F=/tmp/dsh03b-$MARK.txt; echo \"$MARK\" > \"$F\"; echo HOST_PID=$$; echo NS_MNT=$(readlink /proc/self/ns/mnt 2>/dev/null || echo NA); echo TMPDIR_VAL=${TMPDIR:-UNSET}; echo ID=$(id); echo DF_TMP; df -h /tmp 2>&1 | sed -n '1,3p'; echo MOUNTINFO_TMP; awk '$5==\"/tmp\" || $5 ~ /^\\/tmp\\// {print}' /proc/self/mountinfo 2>/dev/null || true; echo LS; ls -la \"$F\";",
+    "environ_name_count": 78
+  },
+  {
+    "t": 1.78,
+    "pid": 155499,
+    "ppid": 155498,
+    "ns_mnt": "mnt:[4026532337]",
+    "ns_mnt_same_as_host": false,
+    "mountinfo_tmp_lines": [
+      "315 287 0:55 / /tmp rw,nosuid,nodev,relatime - tmpfs tmpfs rw,mode=755,uid=1000,gid=1000"
+    ],
+    "root_tmp_files": {
+      "dsh03b-dsh03b-20261109-145405-59568077.txt": {
+        "size": 32,
+        "content_head": "dsh03b-20261109-145405-59568077\n"
+      }
+    },
+    "cmd_head": "bwrap --ro-bind / / --dev /dev --unshare-pid --proc /proc --die-with-parent --tmpfs /tmp --bind /workspace/<evidence-root>/... /workspace/<evidence-root>/... -- bash -c MARK='dsh03b-20261109-145405-59568077'; F=/tmp/dsh03b-$MARK.txt; echo \"$MARK\" > \"$F\"; echo HOST_PID=$$; echo NS_MNT=$(readlink /proc/self/ns/mnt 2>/dev/null || echo NA); echo TMPDIR_VAL=${TMPDIR:-UNSET}; echo ID=$(id); echo DF_TMP;",
+    "environ_name_count": 78
+  },
+  {
+    "t": 1.78,
+    "pid": 155500,
+    "ppid": 155499,
+    "ns_mnt": "mnt:[4026532337]",
+    "ns_mnt_same_as_host": false,
+    "mountinfo_tmp_lines": [
+      "315 287 0:55 / /tmp rw,nosuid,nodev,relatime - tmpfs tmpfs rw,mode=755,uid=1000,gid=1000"
+    ],
+    "root_tmp_files": {
+      "dsh03b-dsh03b-20261109-145405-59568077.txt": {
+        "size": 32,
+        "content_head": "dsh03b-20261109-145405-59568077\n"
+      }
+    },
+    "cmd_head": "bash -c MARK='dsh03b-20261109-145405-59568077'; F=/tmp/dsh03b-$MARK.txt; echo \"$MARK\" > \"$F\"; echo HOST_PID=$$; echo NS_MNT=$(readlink /proc/self/ns/mnt 2>/dev/null || echo NA); echo TMPDIR_VAL=${TMPDIR:-UNSET}; echo ID=$(id); echo DF_TMP; df -h /tmp 2>&1 | sed -n '1,3p'; echo MOUNTINFO_TMP; awk '$5==\"/tmp\" || $5 ~ /^\\/tmp\\// {print}' /proc/self/mountinfo 2>/dev/null || true; echo LS; ls -la \"$F\";",
+    "environ_name_count": 78
+  },
+  {
+    "t": 2.035,
+    "pid": 155499,
+    "ppid": 155498,
+    "ns_mnt": "mnt:[4026532337]",
+    "ns_mnt_same_as_host": false,
+    "mountinfo_tmp_lines": [
+      "315 287 0:55 / /tmp rw,nosuid,nodev,relatime - tmpfs tmpfs rw,mode=755,uid=1000,gid=1000"
+    ],
+    "root_tmp_files": {
+      "dsh03b-dsh03b-20261109-145405-59568077.txt": {
+        "size": 32,
+        "content_head": "dsh03b-20261109-145405-59568077\n"
+      }
+    },
+    "cmd_head": "bwrap --ro-bind / / --dev /dev --unshare-pid --proc /proc --die-with-parent --tmpfs /tmp --bind /workspace/<evidence-root>/... /workspace/<evidence-root>/... -- bash -c MARK='dsh03b-20261109-145405-59568077'; F=/tmp/dsh03b-$MARK.txt; echo \"$MARK\" > \"$F\"; echo HOST_PID=$$; echo NS_MNT=$(readlink /proc/self/ns/mnt 2>/dev/null || echo NA); echo TMPDIR_VAL=${TMPDIR:-UNSET}; echo ID=$(id); echo DF_TMP;",
+    "environ_name_count": 78
+  },
+  {
+    "t": 2.035,
+    "pid": 155500,
+    "ppid": 155499,
+    "ns_mnt": "mnt:[4026532337]",
+    "ns_mnt_same_as_host": false,
+    "mountinfo_tmp_lines": [
+      "315 287 0:55 / /tmp rw,nosuid,nodev,relatime - tmpfs tmpfs rw,mode=755,uid=1000,gid=1000"
+    ],
+    "root_tmp_files": {
+      "dsh03b-dsh03b-20261109-145405-59568077.txt": {
+        "size": 32,
+        "content_head": "dsh03b-20261109-145405-59568077\n"
+      }
+    },
+    "cmd_head": "bash -c MARK='dsh03b-20261109-145405-59568077'; F=/tmp/dsh03b-$MARK.txt; echo \"$MARK\" > \"$F\"; echo HOST_PID=$$; echo NS_MNT=$(readlink /proc/self/ns/mnt 2>/dev/null || echo NA); echo TMPDIR_VAL=${TMPDIR:-UNSET}; echo ID=$(id); echo DF_TMP; df -h /tmp 2>&1 | sed -n '1,3p'; echo MOUNTINFO_TMP; awk '$5==\"/tmp\" || $5 ~ /^\\/tmp\\// {print}' /proc/self/mountinfo 2>/dev/null || true; echo LS; ls -la \"$F\";",
+    "environ_name_count": 78
+  },
+  {
+    "t": 2.289,
+    "pid": 155499,
+    "ppid": 155498,
+    "ns_mnt": "mnt:[4026532337]",
+    "ns_mnt_same_as_host": false,
+    "mountinfo_tmp_lines": [
+      "315 287 0:55 / /tmp rw,nosuid,nodev,relatime - tmpfs tmpfs rw,mode=755,uid=1000,gid=1000"
+    ],
+    "root_tmp_files": {
+      "dsh03b-dsh03b-20261109-145405-59568077.txt": {
+        "size": 32,
+        "content_head": "dsh03b-20261109-145405-59568077\n"
+      }
+    },
+    "cmd_head": "bwrap --ro-bind / / --dev /dev --unshare-pid --proc /proc --die-with-parent --tmpfs /tmp --bind /workspace/<evidence-root>/... /workspace/<evidence-root>/... -- bash -c MARK='dsh03b-20261109-145405-59568077'; F=/tmp/dsh03b-$MARK.txt; echo \"$MARK\" > \"$F\"; echo HOST_PID=$$; echo NS_MNT=$(readlink /proc/self/ns/mnt 2>/dev/null || echo NA); echo TMPDIR_VAL=${TMPDIR:-UNSET}; echo ID=$(id); echo DF_TMP;",
+    "environ_name_count": 78
+  },
+  {
+    "t": 2.289,
+    "pid": 155500,
+    "ppid": 155499,
+    "ns_mnt": "mnt:[4026532337]",
+    "ns_mnt_same_as_host": false,
+    "mountinfo_tmp_lines": [
+      "315 287 0:55 / /tmp rw,nosuid,nodev,relatime - tmpfs tmpfs rw,mode=755,uid=1000,gid=1000"
+    ],
+    "root_tmp_files": {
+      "dsh03b-dsh03b-20261109-145405-59568077.txt": {
+        "size": 32,
+        "content_head": "dsh03b-20261109-145405-59568077\n"
+      }
+    },
+    "cmd_head": "bash -c MARK='dsh03b-20261109-145405-59568077'; F=/tmp/dsh03b-$MARK.txt; echo \"$MARK\" > \"$F\"; echo HOST_PID=$$; echo NS_MNT=$(readlink /proc/self/ns/mnt 2>/dev/null || echo NA); echo TMPDIR_VAL=${TMPDIR:-UNSET}; echo ID=$(id); echo DF_TMP; df -h /tmp 2>&1 | sed -n '1,3p'; echo MOUNTINFO_TMP; awk '$5==\"/tmp\" || $5 ~ /^\\/tmp\\// {print}' /proc/self/mountinfo 2>/dev/null || true; echo LS; ls -la \"$F\";",
+    "environ_name_count": 78
+  },
+  {
+    "t": 2.544,
+    "pid": 155499,
+    "ppid": 155498,
+    "ns_mnt": "mnt:[4026532337]",
+    "ns_mnt_same_as_host": false,
+    "mountinfo_tmp_lines": [
+      "315 287 0:55 / /tmp rw,nosuid,nodev,relatime - tmpfs tmpfs rw,mode=755,uid=1000,gid=1000"
+    ],
+    "root_tmp_files": {
+      "dsh03b-dsh03b-20261109-145405-59568077.txt": {
+        "size": 32,
+        "content_head": "dsh03b-20261109-145405-59568077\n"
+      }
+    },
+    "cmd_head": "bwrap --ro-bind / / --dev /dev --unshare-pid --proc /proc --die-with-parent --tmpfs /tmp --bind /workspace/<evidence-root>/... /workspace/<evidence-root>/... -- bash -c MARK='dsh03b-20261109-145405-59568077'; F=/tmp/dsh03b-$MARK.txt; echo \"$MARK\" > \"$F\"; echo HOST_PID=$$; echo NS_MNT=$(readlink /proc/self/ns/mnt 2>/dev/null || echo NA); echo TMPDIR_VAL=${TMPDIR:-UNSET}; echo ID=$(id); echo DF_TMP;",
+    "environ_name_count": 78
+  },
+  {
+    "t": 2.544,
+    "pid": 155500,
+    "ppid": 155499,
+    "ns_mnt": "mnt:[4026532337]",
+    "ns_mnt_same_as_host": false,
+    "mountinfo_tmp_lines": [
+      "315 287 0:55 / /tmp rw,nosuid,nodev,relatime - tmpfs tmpfs rw,mode=755,uid=1000,gid=1000"
+    ],
+    "root_tmp_files": {
+      "dsh03b-dsh03b-20261109-145405-59568077.txt": {
+        "size": 32,
+        "content_head": "dsh03b-20261109-145405-59568077\n"
+      }
+    },
+    "cmd_head": "bash -c MARK='dsh03b-20261109-145405-59568077'; F=/tmp/dsh03b-$MARK.txt; echo \"$MARK\" > \"$F\"; echo HOST_PID=$$; echo NS_MNT=$(readlink /proc/self/ns/mnt 2>/dev/null || echo NA); echo TMPDIR_VAL=${TMPDIR:-UNSET}; echo ID=$(id); echo DF_TMP; df -h /tmp 2>&1 | sed -n '1,3p'; echo MOUNTINFO_TMP; awk '$5==\"/tmp\" || $5 ~ /^\\/tmp\\// {print}' /proc/self/mountinfo 2>/dev/null || true; echo LS; ls -la \"$F\";",
+    "environ_name_count": 78
+  },
+  {
+    "t": 2.799,
+    "pid": 155499,
+    "ppid": 155498,
+    "ns_mnt": "mnt:[4026532337]",
+    "ns_mnt_same_as_host": false,
+    "mountinfo_tmp_lines": [
+      "315 287 0:55 / /tmp rw,nosuid,nodev,relatime - tmpfs tmpfs rw,mode=755,uid=1000,gid=1000"
+    ],
+    "root_tmp_files": {
+      "dsh03b-dsh03b-20261109-145405-59568077.txt": {
+        "size": 32,
+        "content_head": "dsh03b-20261109-145405-59568077\n"
+      }
+    },
+    "cmd_head": "bwrap --ro-bind / / --dev /dev --unshare-pid --proc /proc --die-with-parent --tmpfs /tmp --bind /workspace/<evidence-root>/... /workspace/<evidence-root>/... -- bash -c MARK='dsh03b-20261109-145405-59568077'; F=/tmp/dsh03b-$MARK.txt; echo \"$MARK\" > \"$F\"; echo HOST_PID=$$; echo NS_MNT=$(readlink /proc/self/ns/mnt 2>/dev/null || echo NA); echo TMPDIR_VAL=${TMPDIR:-UNSET}; echo ID=$(id); echo DF_TMP;",
+    "environ_name_count": 78
+  },
+  {
+    "t": 2.799,
+    "pid": 155500,
+    "ppid": 155499,
+    "ns_mnt": "mnt:[4026532337]",
+    "ns_mnt_same_as_host": false,
+    "mountinfo_tmp_lines": [
+      "315 287 0:55 / /tmp rw,nosuid,nodev,relatime - tmpfs tmpfs rw,mode=755,uid=1000,gid=1000"
+    ],
+    "root_tmp_files": {
+      "dsh03b-dsh03b-20261109-145405-59568077.txt": {
+        "size": 32,
+        "content_head": "dsh03b-20261109-145405-59568077\n"
+      }
+    },
+    "cmd_head": "bash -c MARK='dsh03b-20261109-145405-59568077'; F=/tmp/dsh03b-$MARK.txt; echo \"$MARK\" > \"$F\"; echo HOST_PID=$$; echo NS_MNT=$(readlink /proc/self/ns/mnt 2>/dev/null || echo NA); echo TMPDIR_VAL=${TMPDIR:-UNSET}; echo ID=$(id); echo DF_TMP; df -h /tmp 2>&1 | sed -n '1,3p'; echo MOUNTINFO_TMP; awk '$5==\"/tmp\" || $5 ~ /^\\/tmp\\// {print}' /proc/self/mountinfo 2>/dev/null || true; echo LS; ls -la \"$F\";",
+    "environ_name_count": 78
+  },
+  {
+    "t": 3.056,
+    "pid": 155499,
+    "ppid": 155498,
+    "ns_mnt": "mnt:[4026532337]",
+    "ns_mnt_same_as_host": false,
+    "mountinfo_tmp_lines": [
+      "315 287 0:55 / /tmp rw,nosuid,nodev,relatime - tmpfs tmpfs rw,mode=755,uid=1000,gid=1000"
+    ],
+    "root_tmp_files": {
+      "dsh03b-dsh03b-20261109-145405-59568077.txt": {
+        "size": 32,
+        "content_head": "dsh03b-20261109-145405-59568077\n"
+      }
+    },
+    "cmd_head": "bwrap --ro-bind / / --dev /dev --unshare-pid --proc /proc --die-with-parent --tmpfs /tmp --bind /workspace/<evidence-root>/... /workspace/<evidence-root>/... -- bash -c MARK='dsh03b-20261109-145405-59568077'; F=/tmp/dsh03b-$MARK.txt; echo \"$MARK\" > \"$F\"; echo HOST_PID=$$; echo NS_MNT=$(readlink /proc/self/ns/mnt 2>/dev/null || echo NA); echo TMPDIR_VAL=${TMPDIR:-UNSET}; echo ID=$(id); echo DF_TMP;",
+    "environ_name_count": 78
+  },
+  {
+    "t": 3.056,
+    "pid": 155500,
+    "ppid": 155499,
+    "ns_mnt": "mnt:[4026532337]",
+    "ns_mnt_same_as_host": false,
+    "mountinfo_tmp_lines": [
+      "315 287 0:55 / /tmp rw,nosuid,nodev,relatime - tmpfs tmpfs rw,mode=755,uid=1000,gid=1000"
+    ],
+    "root_tmp_files": {
+      "dsh03b-dsh03b-20261109-145405-59568077.txt": {
+        "size": 32,
+        "content_head": "dsh03b-20261109-145405-59568077\n"
+      }
+    },
+    "cmd_head": "bash -c MARK='dsh03b-20261109-145405-59568077'; F=/tmp/dsh03b-$MARK.txt; echo \"$MARK\" > \"$F\"; echo HOST_PID=$$; echo NS_MNT=$(readlink /proc/self/ns/mnt 2>/dev/null || echo NA); echo TMPDIR_VAL=${TMPDIR:-UNSET}; echo ID=$(id); echo DF_TMP; df -h /tmp 2>&1 | sed -n '1,3p'; echo MOUNTINFO_TMP; awk '$5==\"/tmp\" || $5 ~ /^\\/tmp\\// {print}' /proc/self/mountinfo 2>/dev/null || true; echo LS; ls -la \"$F\";",
+    "environ_name_count": 78
+  },
+  {
+    "t": 3.311,
+    "pid": 155499,
+    "ppid": 155498,
+    "ns_mnt": "mnt:[4026532337]",
+    "ns_mnt_same_as_host": false,
+    "mountinfo_tmp_lines": [
+      "315 287 0:55 / /tmp rw,nosuid,nodev,relatime - tmpfs tmpfs rw,mode=755,uid=1000,gid=1000"
+    ],
+    "root_tmp_files": {
+      "dsh03b-dsh03b-20261109-145405-59568077.txt": {
+        "size": 32,
+        "content_head": "dsh03b-20261109-145405-59568077\n"
+      }
+    },
+    "cmd_head": "bwrap --ro-bind / / --dev /dev --unshare-pid --proc /proc --die-with-parent --tmpfs /tmp --bind /workspace/<evidence-root>/... /workspace/<evidence-root>/... -- bash -c MARK='dsh03b-20261109-145405-59568077'; F=/tmp/dsh03b-$MARK.txt; echo \"$MARK\" > \"$F\"; echo HOST_PID=$$; echo NS_MNT=$(readlink /proc/self/ns/mnt 2>/dev/null || echo NA); echo TMPDIR_VAL=${TMPDIR:-UNSET}; echo ID=$(id); echo DF_TMP;",
+    "environ_name_count": 78
+  },
+  {
+    "t": 3.311,
+    "pid": 155500,
+    "ppid": 155499,
+    "ns_mnt": "mnt:[4026532337]",
+    "ns_mnt_same_as_host": false,
+    "mountinfo_tmp_lines": [
+      "315 287 0:55 / /tmp rw,nosuid,nodev,relatime - tmpfs tmpfs rw,mode=755,uid=1000,gid=1000"
+    ],
+    "root_tmp_files": {
+      "dsh03b-dsh03b-20261109-145405-59568077.txt": {
+        "size": 32,
+        "content_head": "dsh03b-20261109-145405-59568077\n"
+      }
+    },
+    "cmd_head": "bash -c MARK='dsh03b-20261109-145405-59568077'; F=/tmp/dsh03b-$MARK.txt; echo \"$MARK\" > \"$F\"; echo HOST_PID=$$; echo NS_MNT=$(readlink /proc/self/ns/mnt 2>/dev/null || echo NA); echo TMPDIR_VAL=${TMPDIR:-UNSET}; echo ID=$(id); echo DF_TMP; df -h /tmp 2>&1 | sed -n '1,3p'; echo MOUNTINFO_TMP; awk '$5==\"/tmp\" || $5 ~ /^\\/tmp\\// {print}' /proc/self/mountinfo 2>/dev/null || true; echo LS; ls -la \"$F\";",
+    "environ_name_count": 78
+  },
+  {
+    "t": 3.566,
+    "pid": 155499,
+    "ppid": 155498,
+    "ns_mnt": "mnt:[4026532337]",
+    "ns_mnt_same_as_host": false,
+    "mountinfo_tmp_lines": [
+      "315 287 0:55 / /tmp rw,nosuid,nodev,relatime - tmpfs tmpfs rw,mode=755,uid=1000,gid=1000"
+    ],
+    "root_tmp_files": {
+      "dsh03b-dsh03b-20261109-145405-59568077.txt": {
+        "size": 32,
+        "content_head": "dsh03b-20261109-145405-59568077\n"
+      }
+    },
+    "cmd_head": "bwrap --ro-bind / / --dev /dev --unshare-pid --proc /proc --die-with-parent --tmpfs /tmp --bind /workspace/<evidence-root>/... /workspace/<evidence-root>/... -- bash -c MARK='dsh03b-20261109-145405-59568077'; F=/tmp/dsh03b-$MARK.txt; echo \"$MARK\" > \"$F\"; echo HOST_PID=$$; echo NS_MNT=$(readlink /proc/self/ns/mnt 2>/dev/null || echo NA); echo TMPDIR_VAL=${TMPDIR:-UNSET}; echo ID=$(id); echo DF_TMP;",
+    "environ_name_count": 78
+  },
+  {
+    "t": 3.566,
+    "pid": 155500,
+    "ppid": 155499,
+    "ns_mnt": "mnt:[4026532337]",
+    "ns_mnt_same_as_host": false,
+    "mountinfo_tmp_lines": [
+      "315 287 0:55 / /tmp rw,nosuid,nodev,relatime - tmpfs tmpfs rw,mode=755,uid=1000,gid=1000"
+    ],
+    "root_tmp_files": {
+      "dsh03b-dsh03b-20261109-145405-59568077.txt": {
+        "size": 32,
+        "content_head": "dsh03b-20261109-145405-59568077\n"
+      }
+    },
+    "cmd_head": "bash -c MARK='dsh03b-20261109-145405-59568077'; F=/tmp/dsh03b-$MARK.txt; echo \"$MARK\" > \"$F\"; echo HOST_PID=$$; echo NS_MNT=$(readlink /proc/self/ns/mnt 2>/dev/null || echo NA); echo TMPDIR_VAL=${TMPDIR:-UNSET}; echo ID=$(id); echo DF_TMP; df -h /tmp 2>&1 | sed -n '1,3p'; echo MOUNTINFO_TMP; awk '$5==\"/tmp\" || $5 ~ /^\\/tmp\\// {print}' /proc/self/mountinfo 2>/dev/null || true; echo LS; ls -la \"$F\";",
+    "environ_name_count": 78
+  },
+  {
+    "t": 3.821,
+    "pid": 155499,
+    "ppid": 155498,
+    "ns_mnt": "mnt:[4026532337]",
+    "ns_mnt_same_as_host": false,
+    "mountinfo_tmp_lines": [
+      "315 287 0:55 / /tmp rw,nosuid,nodev,relatime - tmpfs tmpfs rw,mode=755,uid=1000,gid=1000"
+    ],
+    "root_tmp_files": {
+      "dsh03b-dsh03b-20261109-145405-59568077.txt": {
+        "size": 32,
+        "content_head": "dsh03b-20261109-145405-59568077\n"
+      }
+    },
+    "cmd_head": "bwrap --ro-bind / / --dev /dev --unshare-pid --proc /proc --die-with-parent --tmpfs /tmp --bind /workspace/<evidence-root>/... /workspace/<evidence-root>/... -- bash -c MARK='dsh03b-20261109-145405-59568077'; F=/tmp/dsh03b-$MARK.txt; echo \"$MARK\" > \"$F\"; echo HOST_PID=$$; echo NS_MNT=$(readlink /proc/self/ns/mnt 2>/dev/null || echo NA); echo TMPDIR_VAL=${TMPDIR:-UNSET}; echo ID=$(id); echo DF_TMP;",
+    "environ_name_count": 78
+  },
+  {
+    "t": 3.821,
+    "pid": 155500,
+    "ppid": 155499,
+    "ns_mnt": "mnt:[4026532337]",
+    "ns_mnt_same_as_host": false,
+    "mountinfo_tmp_lines": [
+      "315 287 0:55 / /tmp rw,nosuid,nodev,relatime - tmpfs tmpfs rw,mode=755,uid=1000,gid=1000"
+    ],
+    "root_tmp_files": {
+      "dsh03b-dsh03b-20261109-145405-59568077.txt": {
+        "size": 32,
+        "content_head": "dsh03b-20261109-145405-59568077\n"
+      }
+    },
+    "cmd_head": "bash -c MARK='dsh03b-20261109-145405-59568077'; F=/tmp/dsh03b-$MARK.txt; echo \"$MARK\" > \"$F\"; echo HOST_PID=$$; echo NS_MNT=$(readlink /proc/self/ns/mnt 2>/dev/null || echo NA); echo TMPDIR_VAL=${TMPDIR:-UNSET}; echo ID=$(id); echo DF_TMP; df -h /tmp 2>&1 | sed -n '1,3p'; echo MOUNTINFO_TMP; awk '$5==\"/tmp\" || $5 ~ /^\\/tmp\\// {print}' /proc/self/mountinfo 2>/dev/null || true; echo LS; ls -la \"$F\";",
+    "environ_name_count": 78
+  },
+  {
+    "t": 4.076,
+    "pid": 155499,
+    "ppid": 155498,
+    "ns_mnt": "mnt:[4026532337]",
+    "ns_mnt_same_as_host": false,
+    "mountinfo_tmp_lines": [
+      "315 287 0:55 / /tmp rw,nosuid,nodev,relatime - tmpfs tmpfs rw,mode=755,uid=1000,gid=1000"
+    ],
+    "root_tmp_files": {
+      "dsh03b-dsh03b-20261109-145405-59568077.txt": {
+        "size": 32,
+        "content_head": "dsh03b-20261109-145405-59568077\n"
+      }
+    },
+    "cmd_head": "bwrap --ro-bind / / --dev /dev --unshare-pid --proc /proc --die-with-parent --tmpfs /tmp --bind /workspace/<evidence-root>/... /workspace/<evidence-root>/... -- bash -c MARK='dsh03b-20261109-145405-59568077'; F=/tmp/dsh03b-$MARK.txt; echo \"$MARK\" > \"$F\"; echo HOST_PID=$$; echo NS_MNT=$(readlink /proc/self/ns/mnt 2>/dev/null || echo NA); echo TMPDIR_VAL=${TMPDIR:-UNSET}; echo ID=$(id); echo DF_TMP;",
+    "environ_name_count": 78
+  },
+  {
+    "t": 4.076,
+    "pid": 155500,
+    "ppid": 155499,
+    "ns_mnt": "mnt:[4026532337]",
+    "ns_mnt_same_as_host": false,
+    "mountinfo_tmp_lines": [
+      "315 287 0:55 / /tmp rw,nosuid,nodev,relatime - tmpfs tmpfs rw,mode=755,uid=1000,gid=1000"
+    ],
+    "root_tmp_files": {
+      "dsh03b-dsh03b-20261109-145405-59568077.txt": {
+        "size": 32,
+        "content_head": "dsh03b-20261109-145405-59568077\n"
+      }
+    },
+    "cmd_head": "bash -c MARK='dsh03b-20261109-145405-59568077'; F=/tmp/dsh03b-$MARK.txt; echo \"$MARK\" > \"$F\"; echo HOST_PID=$$; echo NS_MNT=$(readlink /proc/self/ns/mnt 2>/dev/null || echo NA); echo TMPDIR_VAL=${TMPDIR:-UNSET}; echo ID=$(id); echo DF_TMP; df -h /tmp 2>&1 | sed -n '1,3p'; echo MOUNTINFO_TMP; awk '$5==\"/tmp\" || $5 ~ /^\\/tmp\\// {print}' /proc/self/mountinfo 2>/dev/null || true; echo LS; ls -la \"$F\";",
+    "environ_name_count": 78
+  },
+  {
+    "t": 4.331,
+    "pid": 155499,
+    "ppid": 155498,
+    "ns_mnt": "mnt:[4026532337]",
+    "ns_mnt_same_as_host": false,
+    "mountinfo_tmp_lines": [
+      "315 287 0:55 / /tmp rw,nosuid,nodev,relatime - tmpfs tmpfs rw,mode=755,uid=1000,gid=1000"
+    ],
+    "root_tmp_files": {
+      "dsh03b-dsh03b-20261109-145405-59568077.txt": {
+        "size": 32,
+        "content_head": "dsh03b-20261109-145405-59568077\n"
+      }
+    },
+    "cmd_head": "bwrap --ro-bind / / --dev /dev --unshare-pid --proc /proc --die-with-parent --tmpfs /tmp --bind /workspace/<evidence-root>/... /workspace/<evidence-root>/... -- bash -c MARK='dsh03b-20261109-145405-59568077'; F=/tmp/dsh03b-$MARK.txt; echo \"$MARK\" > \"$F\"; echo HOST_PID=$$; echo NS_MNT=$(readlink /proc/self/ns/mnt 2>/dev/null || echo NA); echo TMPDIR_VAL=${TMPDIR:-UNSET}; echo ID=$(id); echo DF_TMP;",
+    "environ_name_count": 78
+  },
+  {
+    "t": 4.331,
+    "pid": 155500,
+    "ppid": 155499,
+    "ns_mnt": "mnt:[4026532337]",
+    "ns_mnt_same_as_host": false,
+    "mountinfo_tmp_lines": [
+      "315 287 0:55 / /tmp rw,nosuid,nodev,relatime - tmpfs tmpfs rw,mode=755,uid=1000,gid=1000"
+    ],
+    "root_tmp_files": {
+      "dsh03b-dsh03b-20261109-145405-59568077.txt": {
+        "size": 32,
+        "content_head": "dsh03b-20261109-145405-59568077\n"
+      }
+    },
+    "cmd_head": "bash -c MARK='dsh03b-20261109-145405-59568077'; F=/tmp/dsh03b-$MARK.txt; echo \"$MARK\" > \"$F\"; echo HOST_PID=$$; echo NS_MNT=$(readlink /proc/self/ns/mnt 2>/dev/null || echo NA); echo TMPDIR_VAL=${TMPDIR:-UNSET}; echo ID=$(id); echo DF_TMP; df -h /tmp 2>&1 | sed -n '1,3p'; echo MOUNTINFO_TMP; awk '$5==\"/tmp\" || $5 ~ /^\\/tmp\\// {print}' /proc/self/mountinfo 2>/dev/null || true; echo LS; ls -la \"$F\";",
+    "environ_name_count": 78
+  },
+  {
+    "t": 4.585,
+    "pid": 155499,
+    "ppid": 155498,
+    "ns_mnt": "mnt:[4026532337]",
+    "ns_mnt_same_as_host": false,
+    "mountinfo_tmp_lines": [
+      "315 287 0:55 / /tmp rw,nosuid,nodev,relatime - tmpfs tmpfs rw,mode=755,uid=1000,gid=1000"
+    ],
+    "root_tmp_files": {
+      "dsh03b-dsh03b-20261109-145405-59568077.txt": {
+        "size": 32,
+        "content_head": "dsh03b-20261109-145405-59568077\n"
+      }
+    },
+    "cmd_head": "bwrap --ro-bind / / --dev /dev --unshare-pid --proc /proc --die-with-parent --tmpfs /tmp --bind /workspace/<evidence-root>/... /workspace/<evidence-root>/... -- bash -c MARK='dsh03b-20261109-145405-59568077'; F=/tmp/dsh03b-$MARK.txt; echo \"$MARK\" > \"$F\"; echo HOST_PID=$$; echo NS_MNT=$(readlink /proc/self/ns/mnt 2>/dev/null || echo NA); echo TMPDIR_VAL=${TMPDIR:-UNSET}; echo ID=$(id); echo DF_TMP;",
+    "environ_name_count": 78
+  },
+  {
+    "t": 4.585,
+    "pid": 155500,
+    "ppid": 155499,
+    "ns_mnt": "mnt:[4026532337]",
+    "ns_mnt_same_as_host": false,
+    "mountinfo_tmp_lines": [
+      "315 287 0:55 / /tmp rw,nosuid,nodev,relatime - tmpfs tmpfs rw,mode=755,uid=1000,gid=1000"
+    ],
+    "root_tmp_files": {
+      "dsh03b-dsh03b-20261109-145405-59568077.txt": {
+        "size": 32,
+        "content_head": "dsh03b-20261109-145405-59568077\n"
+      }
+    },
+    "cmd_head": "bash -c MARK='dsh03b-20261109-145405-59568077'; F=/tmp/dsh03b-$MARK.txt; echo \"$MARK\" > \"$F\"; echo HOST_PID=$$; echo NS_MNT=$(readlink /proc/self/ns/mnt 2>/dev/null || echo NA); echo TMPDIR_VAL=${TMPDIR:-UNSET}; echo ID=$(id); echo DF_TMP; df -h /tmp 2>&1 | sed -n '1,3p'; echo MOUNTINFO_TMP; awk '$5==\"/tmp\" || $5 ~ /^\\/tmp\\// {print}' /proc/self/mountinfo 2>/dev/null || true; echo LS; ls -la \"$F\";",
+    "environ_name_count": 78
+  },
+  {
+    "t": 4.841,
+    "pid": 155499,
+    "ppid": 155498,
+    "ns_mnt": "mnt:[4026532337]",
+    "ns_mnt_same_as_host": false,
+    "mountinfo_tmp_lines": [
+      "315 287 0:55 / /tmp rw,nosuid,nodev,relatime - tmpfs tmpfs rw,mode=755,uid=1000,gid=1000"
+    ],
+    "root_tmp_files": {
+      "dsh03b-dsh03b-20261109-145405-59568077.txt": {
+        "size": 32,
+        "content_head": "dsh03b-20261109-145405-59568077\n"
+      }
+    },
+    "cmd_head": "bwrap --ro-bind / / --dev /dev --unshare-pid --proc /proc --die-with-parent --tmpfs /tmp --bind /workspace/<evidence-root>/... /workspace/<evidence-root>/... -- bash -c MARK='dsh03b-20261109-145405-59568077'; F=/tmp/dsh03b-$MARK.txt; echo \"$MARK\" > \"$F\"; echo HOST_PID=$$; echo NS_MNT=$(readlink /proc/self/ns/mnt 2>/dev/null || echo NA); echo TMPDIR_VAL=${TMPDIR:-UNSET}; echo ID=$(id); echo DF_TMP;",
+    "environ_name_count": 78
+  },
+  {
+    "t": 4.841,
+    "pid": 155500,
+    "ppid": 155499,
+    "ns_mnt": "mnt:[4026532337]",
+    "ns_mnt_same_as_host": false,
+    "mountinfo_tmp_lines": [
+      "315 287 0:55 / /tmp rw,nosuid,nodev,relatime - tmpfs tmpfs rw,mode=755,uid=1000,gid=1000"
+    ],
+    "root_tmp_files": {
+      "dsh03b-dsh03b-20261109-145405-59568077.txt": {
+        "size": 32,
+        "content_head": "dsh03b-20261109-145405-59568077\n"
+      }
+    },
+    "cmd_head": "bash -c MARK='dsh03b-20261109-145405-59568077'; F=/tmp/dsh03b-$MARK.txt; echo \"$MARK\" > \"$F\"; echo HOST_PID=$$; echo NS_MNT=$(readlink /proc/self/ns/mnt 2>/dev/null || echo NA); echo TMPDIR_VAL=${TMPDIR:-UNSET}; echo ID=$(id); echo DF_TMP; df -h /tmp 2>&1 | sed -n '1,3p'; echo MOUNTINFO_TMP; awk '$5==\"/tmp\" || $5 ~ /^\\/tmp\\// {print}' /proc/self/mountinfo 2>/dev/null || true; echo LS; ls -la \"$F\";",
+    "environ_name_count": 78
+  },
+  {
+    "t": 5.096,
+    "pid": 155499,
+    "ppid": 155498,
+    "ns_mnt": "mnt:[4026532337]",
+    "ns_mnt_same_as_host": false,
+    "mountinfo_tmp_lines": [
+      "315 287 0:55 / /tmp rw,nosuid,nodev,relatime - tmpfs tmpfs rw,mode=755,uid=1000,gid=1000"
+    ],
+    "root_tmp_files": {
+      "dsh03b-dsh03b-20261109-145405-59568077.txt": {
+        "size": 32,
+        "content_head": "dsh03b-20261109-145405-59568077\n"
+      }
+    },
+    "cmd_head": "bwrap --ro-bind / / --dev /dev --unshare-pid --proc /proc --die-with-parent --tmpfs /tmp --bind /workspace/<evidence-root>/... /workspace/<evidence-root>/... -- bash -c MARK='dsh03b-20261109-145405-59568077'; F=/tmp/dsh03b-$MARK.txt; echo \"$MARK\" > \"$F\"; echo HOST_PID=$$; echo NS_MNT=$(readlink /proc/self/ns/mnt 2>/dev/null || echo NA); echo TMPDIR_VAL=${TMPDIR:-UNSET}; echo ID=$(id); echo DF_TMP;",
+    "environ_name_count": 78
+  },
+  {
+    "t": 5.096,
+    "pid": 155500,
+    "ppid": 155499,
+    "ns_mnt": "mnt:[4026532337]",
+    "ns_mnt_same_as_host": false,
+    "mountinfo_tmp_lines": [
+      "315 287 0:55 / /tmp rw,nosuid,nodev,relatime - tmpfs tmpfs rw,mode=755,uid=1000,gid=1000"
+    ],
+    "root_tmp_files": {
+      "dsh03b-dsh03b-20261109-145405-59568077.txt": {
+        "size": 32,
+        "content_head": "dsh03b-20261109-145405-59568077\n"
+      }
+    },
+    "cmd_head": "bash -c MARK='dsh03b-20261109-145405-59568077'; F=/tmp/dsh03b-$MARK.txt; echo \"$MARK\" > \"$F\"; echo HOST_PID=$$; echo NS_MNT=$(readlink /proc/self/ns/mnt 2>/dev/null || echo NA); echo TMPDIR_VAL=${TMPDIR:-UNSET}; echo ID=$(id); echo DF_TMP; df -h /tmp 2>&1 | sed -n '1,3p'; echo MOUNTINFO_TMP; awk '$5==\"/tmp\" || $5 ~ /^\\/tmp\\// {print}' /proc/self/mountinfo 2>/dev/null || true; echo LS; ls -la \"$F\";",
+    "environ_name_count": 78
+  },
+  {
+    "t": 5.351,
+    "pid": 155499,
+    "ppid": 155498,
+    "ns_mnt": "mnt:[4026532337]",
+    "ns_mnt_same_as_host": false,
+    "mountinfo_tmp_lines": [
+      "315 287 0:55 / /tmp rw,nosuid,nodev,relatime - tmpfs tmpfs rw,mode=755,uid=1000,gid=1000"
+    ],
+    "root_tmp_files": {
+      "dsh03b-dsh03b-20261109-145405-59568077.txt": {
+        "size": 32,
+        "content_head": "dsh03b-20261109-145405-59568077\n"
+      }
+    },
+    "cmd_head": "bwrap --ro-bind / / --dev /dev --unshare-pid --proc /proc --die-with-parent --tmpfs /tmp --bind /workspace/<evidence-root>/... /workspace/<evidence-root>/... -- bash -c MARK='dsh03b-20261109-145405-59568077'; F=/tmp/dsh03b-$MARK.txt; echo \"$MARK\" > \"$F\"; echo HOST_PID=$$; echo NS_MNT=$(readlink /proc/self/ns/mnt 2>/dev/null || echo NA); echo TMPDIR_VAL=${TMPDIR:-UNSET}; echo ID=$(id); echo DF_TMP;",
+    "environ_name_count": 78
+  },
+  {
+    "t": 5.351,
+    "pid": 155500,
+    "ppid": 155499,
+    "ns_mnt": "mnt:[4026532337]",
+    "ns_mnt_same_as_host": false,
+    "mountinfo_tmp_lines": [
+      "315 287 0:55 / /tmp rw,nosuid,nodev,relatime - tmpfs tmpfs rw,mode=755,uid=1000,gid=1000"
+    ],
+    "root_tmp_files": {
+      "dsh03b-dsh03b-20261109-145405-59568077.txt": {
+        "size": 32,
+        "content_head": "dsh03b-20261109-145405-59568077\n"
+      }
+    },
+    "cmd_head": "bash -c MARK='dsh03b-20261109-145405-59568077'; F=/tmp/dsh03b-$MARK.txt; echo \"$MARK\" > \"$F\"; echo HOST_PID=$$; echo NS_MNT=$(readlink /proc/self/ns/mnt 2>/dev/null || echo NA); echo TMPDIR_VAL=${TMPDIR:-UNSET}; echo ID=$(id); echo DF_TMP; df -h /tmp 2>&1 | sed -n '1,3p'; echo MOUNTINFO_TMP; awk '$5==\"/tmp\" || $5 ~ /^\\/tmp\\// {print}' /proc/self/mountinfo 2>/dev/null || true; echo LS; ls -la \"$F\";",
+    "environ_name_count": 78
+  },
+  {
+    "t": 5.605,
+    "pid": 155499,
+    "ppid": 155498,
+    "ns_mnt": "mnt:[4026532337]",
+    "ns_mnt_same_as_host": false,
+    "mountinfo_tmp_lines": [
+      "315 287 0:55 / /tmp rw,nosuid,nodev,relatime - tmpfs tmpfs rw,mode=755,uid=1000,gid=1000"
+    ],
+    "root_tmp_files": {
+      "dsh03b-dsh03b-20261109-145405-59568077.txt": {
+        "size": 32,
+        "content_head": "dsh03b-20261109-145405-59568077\n"
+      }
+    },
+    "cmd_head": "bwrap --ro-bind / / --dev /dev --unshare-pid --proc /proc --die-with-parent --tmpfs /tmp --bind /workspace/<evidence-root>/... /workspace/<evidence-root>/... -- bash -c MARK='dsh03b-20261109-145405-59568077'; F=/tmp/dsh03b-$MARK.txt; echo \"$MARK\" > \"$F\"; echo HOST_PID=$$; echo NS_MNT=$(readlink /proc/self/ns/mnt 2>/dev/null || echo NA); echo TMPDIR_VAL=${TMPDIR:-UNSET}; echo ID=$(id); echo DF_TMP;",
+    "environ_name_count": 78
+  },
+  {
+    "t": 5.605,
+    "pid": 155500,
+    "ppid": 155499,
+    "ns_mnt": "mnt:[4026532337]",
+    "ns_mnt_same_as_host": false,
+    "mountinfo_tmp_lines": [
+      "315 287 0:55 / /tmp rw,nosuid,nodev,relatime - tmpfs tmpfs rw,mode=755,uid=1000,gid=1000"
+    ],
+    "root_tmp_files": {
+      "dsh03b-dsh03b-20261109-145405-59568077.txt": {
+        "size": 32,
+        "content_head": "dsh03b-20261109-145405-59568077\n"
+      }
+    },
+    "cmd_head": "bash -c MARK='dsh03b-20261109-145405-59568077'; F=/tmp/dsh03b-$MARK.txt; echo \"$MARK\" > \"$F\"; echo HOST_PID=$$; echo NS_MNT=$(readlink /proc/self/ns/mnt 2>/dev/null || echo NA); echo TMPDIR_VAL=${TMPDIR:-UNSET}; echo ID=$(id); echo DF_TMP; df -h /tmp 2>&1 | sed -n '1,3p'; echo MOUNTINFO_TMP; awk '$5==\"/tmp\" || $5 ~ /^\\/tmp\\// {print}' /proc/self/mountinfo 2>/dev/null || true; echo LS; ls -la \"$F\";",
+    "environ_name_count": 78
+  },
+  {
+    "t": 5.859,
+    "pid": 155499,
+    "ppid": 155498,
+    "ns_mnt": "mnt:[4026532337]",
+    "ns_mnt_same_as_host": false,
+    "mountinfo_tmp_lines": [
+      "315 287 0:55 / /tmp rw,nosuid,nodev,relatime - tmpfs tmpfs rw,mode=755,uid=1000,gid=1000"
+    ],
+    "root_tmp_files": {
+      "dsh03b-dsh03b-20261109-145405-59568077.txt": {
+        "size": 32,
+        "content_head": "dsh03b-20261109-145405-59568077\n"
+      }
+    },
+    "cmd_head": "bwrap --ro-bind / / --dev /dev --unshare-pid --proc /proc --die-with-parent --tmpfs /tmp --bind /workspace/<evidence-root>/... /workspace/<evidence-root>/... -- bash -c MARK='dsh03b-20261109-145405-59568077'; F=/tmp/dsh03b-$MARK.txt; echo \"$MARK\" > \"$F\"; echo HOST_PID=$$; echo NS_MNT=$(readlink /proc/self/ns/mnt 2>/dev/null || echo NA); echo TMPDIR_VAL=${TMPDIR:-UNSET}; echo ID=$(id); echo DF_TMP;",
+    "environ_name_count": 78
+  },
+  {
+    "t": 5.859,
+    "pid": 155500,
+    "ppid": 155499,
+    "ns_mnt": "mnt:[4026532337]",
+    "ns_mnt_same_as_host": false,
+    "mountinfo_tmp_lines": [
+      "315 287 0:55 / /tmp rw,nosuid,nodev,relatime - tmpfs tmpfs rw,mode=755,uid=1000,gid=1000"
+    ],
+    "root_tmp_files": {
+      "dsh03b-dsh03b-20261109-145405-59568077.txt": {
+        "size": 32,
+        "content_head": "dsh03b-20261109-145405-59568077\n"
+      }
+    },
+    "cmd_head": "bash -c MARK='dsh03b-20261109-145405-59568077'; F=/tmp/dsh03b-$MARK.txt; echo \"$MARK\" > \"$F\"; echo HOST_PID=$$; echo NS_MNT=$(readlink /proc/self/ns/mnt 2>/dev/null || echo NA); echo TMPDIR_VAL=${TMPDIR:-UNSET}; echo ID=$(id); echo DF_TMP; df -h /tmp 2>&1 | sed -n '1,3p'; echo MOUNTINFO_TMP; awk '$5==\"/tmp\" || $5 ~ /^\\/tmp\\// {print}' /proc/self/mountinfo 2>/dev/null || true; echo LS; ls -la \"$F\";",
+    "environ_name_count": 78
+  },
+  {
+    "t": 6.114,
+    "pid": 155499,
+    "ppid": 155498,
+    "ns_mnt": "mnt:[4026532337]",
+    "ns_mnt_same_as_host": false,
+    "mountinfo_tmp_lines": [
+      "315 287 0:55 / /tmp rw,nosuid,nodev,relatime - tmpfs tmpfs rw,mode=755,uid=1000,gid=1000"
+    ],
+    "root_tmp_files": {
+      "dsh03b-dsh03b-20261109-145405-59568077.txt": {
+        "size": 32,
+        "content_head": "dsh03b-20261109-145405-59568077\n"
+      }
+    },
+    "cmd_head": "bwrap --ro-bind / / --dev /dev --unshare-pid --proc /proc --die-with-parent --tmpfs /tmp --bind /workspace/<evidence-root>/... /workspace/<evidence-root>/... -- bash -c MARK='dsh03b-20261109-145405-59568077'; F=/tmp/dsh03b-$MARK.txt; echo \"$MARK\" > \"$F\"; echo HOST_PID=$$; echo NS_MNT=$(readlink /proc/self/ns/mnt 2>/dev/null || echo NA); echo TMPDIR_VAL=${TMPDIR:-UNSET}; echo ID=$(id); echo DF_TMP;",
+    "environ_name_count": 78
+  },
+  {
+    "t": 6.114,
+    "pid": 155500,
+    "ppid": 155499,
+    "ns_mnt": "mnt:[4026532337]",
+    "ns_mnt_same_as_host": false,
+    "mountinfo_tmp_lines": [
+      "315 287 0:55 / /tmp rw,nosuid,nodev,relatime - tmpfs tmpfs rw,mode=755,uid=1000,gid=1000"
+    ],
+    "root_tmp_files": {
+      "dsh03b-dsh03b-20261109-145405-59568077.txt": {
+        "size": 32,
+        "content_head": "dsh03b-20261109-145405-59568077\n"
+      }
+    },
+    "cmd_head": "bash -c MARK='dsh03b-20261109-145405-59568077'; F=/tmp/dsh03b-$MARK.txt; echo \"$MARK\" > \"$F\"; echo HOST_PID=$$; echo NS_MNT=$(readlink /proc/self/ns/mnt 2>/dev/null || echo NA); echo TMPDIR_VAL=${TMPDIR:-UNSET}; echo ID=$(id); echo DF_TMP; df -h /tmp 2>&1 | sed -n '1,3p'; echo MOUNTINFO_TMP; awk '$5==\"/tmp\" || $5 ~ /^\\/tmp\\// {print}' /proc/self/mountinfo 2>/dev/null || true; echo LS; ls -la \"$F\";",
+    "environ_name_count": 78
+  },
+  {
+    "t": 6.368,
+    "pid": 155499,
+    "ppid": 155498,
+    "ns_mnt": "mnt:[4026532337]",
+    "ns_mnt_same_as_host": false,
+    "mountinfo_tmp_lines": [
+      "315 287 0:55 / /tmp rw,nosuid,nodev,relatime - tmpfs tmpfs rw,mode=755,uid=1000,gid=1000"
+    ],
+    "root_tmp_files": {
+      "dsh03b-dsh03b-20261109-145405-59568077.txt": {
+        "size": 32,
+        "content_head": "dsh03b-20261109-145405-59568077\n"
+      }
+    },
+    "cmd_head": "bwrap --ro-bind / / --dev /dev --unshare-pid --proc /proc --die-with-parent --tmpfs /tmp --bind /workspace/<evidence-root>/... /workspace/<evidence-root>/... -- bash -c MARK='dsh03b-20261109-145405-59568077'; F=/tmp/dsh03b-$MARK.txt; echo \"$MARK\" > \"$F\"; echo HOST_PID=$$; echo NS_MNT=$(readlink /proc/self/ns/mnt 2>/dev/null || echo NA); echo TMPDIR_VAL=${TMPDIR:-UNSET}; echo ID=$(id); echo DF_TMP;",
+    "environ_name_count": 78
+  },
+  {
+    "t": 6.368,
+    "pid": 155500,
+    "ppid": 155499,
+    "ns_mnt": "mnt:[4026532337]",
+    "ns_mnt_same_as_host": false,
+    "mountinfo_tmp_lines": [
+      "315 287 0:55 / /tmp rw,nosuid,nodev,relatime - tmpfs tmpfs rw,mode=755,uid=1000,gid=1000"
+    ],
+    "root_tmp_files": {
+      "dsh03b-dsh03b-20261109-145405-59568077.txt": {
+        "size": 32,
+        "content_head": "dsh03b-20261109-145405-59568077\n"
+      }
+    },
+    "cmd_head": "bash -c MARK='dsh03b-20261109-145405-59568077'; F=/tmp/dsh03b-$MARK.txt; echo \"$MARK\" > \"$F\"; echo HOST_PID=$$; echo NS_MNT=$(readlink /proc/self/ns/mnt 2>/dev/null || echo NA); echo TMPDIR_VAL=${TMPDIR:-UNSET}; echo ID=$(id); echo DF_TMP; df -h /tmp 2>&1 | sed -n '1,3p'; echo MOUNTINFO_TMP; awk '$5==\"/tmp\" || $5 ~ /^\\/tmp\\// {print}' /proc/self/mountinfo 2>/dev/null || true; echo LS; ls -la \"$F\";",
+    "environ_name_count": 78
+  },
+  {
+    "t": 6.623,
+    "pid": 155499,
+    "ppid": 155498,
+    "ns_mnt": "mnt:[4026532337]",
+    "ns_mnt_same_as_host": false,
+    "mountinfo_tmp_lines": [
+      "315 287 0:55 / /tmp rw,nosuid,nodev,relatime - tmpfs tmpfs rw,mode=755,uid=1000,gid=1000"
+    ],
+    "root_tmp_files": {
+      "dsh03b-dsh03b-20261109-145405-59568077.txt": {
+        "size": 32,
+        "content_head": "dsh03b-20261109-145405-59568077\n"
+      }
+    },
+    "cmd_head": "bwrap --ro-bind / / --dev /dev --unshare-pid --proc /proc --die-with-parent --tmpfs /tmp --bind /workspace/<evidence-root>/... /workspace/<evidence-root>/... -- bash -c MARK='dsh03b-20261109-145405-59568077'; F=/tmp/dsh03b-$MARK.txt; echo \"$MARK\" > \"$F\"; echo HOST_PID=$$; echo NS_MNT=$(readlink /proc/self/ns/mnt 2>/dev/null || echo NA); echo TMPDIR_VAL=${TMPDIR:-UNSET}; echo ID=$(id); echo DF_TMP;",
+    "environ_name_count": 78
+  },
+  {
+    "t": 6.623,
+    "pid": 155500,
+    "ppid": 155499,
+    "ns_mnt": "mnt:[4026532337]",
+    "ns_mnt_same_as_host": false,
+    "mountinfo_tmp_lines": [
+      "315 287 0:55 / /tmp rw,nosuid,nodev,relatime - tmpfs tmpfs rw,mode=755,uid=1000,gid=1000"
+    ],
+    "root_tmp_files": {
+      "dsh03b-dsh03b-20261109-145405-59568077.txt": {
+        "size": 32,
+        "content_head": "dsh03b-20261109-145405-59568077\n"
+      }
+    },
+    "cmd_head": "bash -c MARK='dsh03b-20261109-145405-59568077'; F=/tmp/dsh03b-$MARK.txt; echo \"$MARK\" > \"$F\"; echo HOST_PID=$$; echo NS_MNT=$(readlink /proc/self/ns/mnt 2>/dev/null || echo NA); echo TMPDIR_VAL=${TMPDIR:-UNSET}; echo ID=$(id); echo DF_TMP; df -h /tmp 2>&1 | sed -n '1,3p'; echo MOUNTINFO_TMP; awk '$5==\"/tmp\" || $5 ~ /^\\/tmp\\// {print}' /proc/self/mountinfo 2>/dev/null || true; echo LS; ls -la \"$F\";",
+    "environ_name_count": 78
+  },
+  {
+    "t": 6.882,
+    "pid": 155499,
+    "ppid": 155498,
+    "ns_mnt": "mnt:[4026532337]",
+    "ns_mnt_same_as_host": false,
+    "mountinfo_tmp_lines": [
+      "315 287 0:55 / /tmp rw,nosuid,nodev,relatime - tmpfs tmpfs rw,mode=755,uid=1000,gid=1000"
+    ],
+    "root_tmp_files": {
+      "dsh03b-dsh03b-20261109-145405-59568077.txt": {
+        "size": 32,
+        "content_head": "dsh03b-20261109-145405-59568077\n"
+      }
+    },
+    "cmd_head": "bwrap --ro-bind / / --dev /dev --unshare-pid --proc /proc --die-with-parent --tmpfs /tmp --bind /workspace/<evidence-root>/... /workspace/<evidence-root>/... -- bash -c MARK='dsh03b-20261109-145405-59568077'; F=/tmp/dsh03b-$MARK.txt; echo \"$MARK\" > \"$F\"; echo HOST_PID=$$; echo NS_MNT=$(readlink /proc/self/ns/mnt 2>/dev/null || echo NA); echo TMPDIR_VAL=${TMPDIR:-UNSET}; echo ID=$(id); echo DF_TMP;",
+    "environ_name_count": 78
+  },
+  {
+    "t": 6.882,
+    "pid": 155500,
+    "ppid": 155499,
+    "ns_mnt": "mnt:[4026532337]",
+    "ns_mnt_same_as_host": false,
+    "mountinfo_tmp_lines": [
+      "315 287 0:55 / /tmp rw,nosuid,nodev,relatime - tmpfs tmpfs rw,mode=755,uid=1000,gid=1000"
+    ],
+    "root_tmp_files": {
+      "dsh03b-dsh03b-20261109-145405-59568077.txt": {
+        "size": 32,
+        "content_head": "dsh03b-20261109-145405-59568077\n"
+      }
+    },
+    "cmd_head": "bash -c MARK='dsh03b-20261109-145405-59568077'; F=/tmp/dsh03b-$MARK.txt; echo \"$MARK\" > \"$F\"; echo HOST_PID=$$; echo NS_MNT=$(readlink /proc/self/ns/mnt 2>/dev/null || echo NA); echo TMPDIR_VAL=${TMPDIR:-UNSET}; echo ID=$(id); echo DF_TMP; df -h /tmp 2>&1 | sed -n '1,3p'; echo MOUNTINFO_TMP; awk '$5==\"/tmp\" || $5 ~ /^\\/tmp\\// {print}' /proc/self/mountinfo 2>/dev/null || true; echo LS; ls -la \"$F\";",
+    "environ_name_count": 78
+  },
+  {
+    "t": 7.138,
+    "pid": 155499,
+    "ppid": 155498,
+    "ns_mnt": "mnt:[4026532337]",
+    "ns_mnt_same_as_host": false,
+    "mountinfo_tmp_lines": [
+      "315 287 0:55 / /tmp rw,nosuid,nodev,relatime - tmpfs tmpfs rw,mode=755,uid=1000,gid=1000"
+    ],
+    "root_tmp_files": {
+      "dsh03b-dsh03b-20261109-145405-59568077.txt": {
+        "size": 32,
+        "content_head": "dsh03b-20261109-145405-59568077\n"
+      }
+    },
+    "cmd_head": "bwrap --ro-bind / / --dev /dev --unshare-pid --proc /proc --die-with-parent --tmpfs /tmp --bind /workspace/<evidence-root>/... /workspace/<evidence-root>/... -- bash -c MARK='dsh03b-20261109-145405-59568077'; F=/tmp/dsh03b-$MARK.txt; echo \"$MARK\" > \"$F\"; echo HOST_PID=$$; echo NS_MNT=$(readlink /proc/self/ns/mnt 2>/dev/null || echo NA); echo TMPDIR_VAL=${TMPDIR:-UNSET}; echo ID=$(id); echo DF_TMP;",
+    "environ_name_count": 78
+  },
+  {
+    "t": 7.138,
+    "pid": 155500,
+    "ppid": 155499,
+    "ns_mnt": "mnt:[4026532337]",
+    "ns_mnt_same_as_host": false,
+    "mountinfo_tmp_lines": [
+      "315 287 0:55 / /tmp rw,nosuid,nodev,relatime - tmpfs tmpfs rw,mode=755,uid=1000,gid=1000"
+    ],
+    "root_tmp_files": {
+      "dsh03b-dsh03b-20261109-145405-59568077.txt": {
+        "size": 32,
+        "content_head": "dsh03b-20261109-145405-59568077\n"
+      }
+    },
+    "cmd_head": "bash -c MARK='dsh03b-20261109-145405-59568077'; F=/tmp/dsh03b-$MARK.txt; echo \"$MARK\" > \"$F\"; echo HOST_PID=$$; echo NS_MNT=$(readlink /proc/self/ns/mnt 2>/dev/null || echo NA); echo TMPDIR_VAL=${TMPDIR:-UNSET}; echo ID=$(id); echo DF_TMP; df -h /tmp 2>&1 | sed -n '1,3p'; echo MOUNTINFO_TMP; awk '$5==\"/tmp\" || $5 ~ /^\\/tmp\\// {print}' /proc/self/mountinfo 2>/dev/null || true; echo LS; ls -la \"$F\";",
+    "environ_name_count": 78
+  },
+  {
+    "t": 7.393,
+    "pid": 155499,
+    "ppid": 155498,
+    "ns_mnt": "mnt:[4026532337]",
+    "ns_mnt_same_as_host": false,
+    "mountinfo_tmp_lines": [
+      "315 287 0:55 / /tmp rw,nosuid,nodev,relatime - tmpfs tmpfs rw,mode=755,uid=1000,gid=1000"
+    ],
+    "root_tmp_files": {
+      "dsh03b-dsh03b-20261109-145405-59568077.txt": {
+        "size": 32,
+        "content_head": "dsh03b-20261109-145405-59568077\n"
+      }
+    },
+    "cmd_head": "bwrap --ro-bind / / --dev /dev --unshare-pid --proc /proc --die-with-parent --tmpfs /tmp --bind /workspace/<evidence-root>/... /workspace/<evidence-root>/... -- bash -c MARK='dsh03b-20261109-145405-59568077'; F=/tmp/dsh03b-$MARK.txt; echo \"$MARK\" > \"$F\"; echo HOST_PID=$$; echo NS_MNT=$(readlink /proc/self/ns/mnt 2>/dev/null || echo NA); echo TMPDIR_VAL=${TMPDIR:-UNSET}; echo ID=$(id); echo DF_TMP;",
+    "environ_name_count": 78
+  },
+  {
+    "t": 7.393,
+    "pid": 155500,
+    "ppid": 155499,
+    "ns_mnt": "mnt:[4026532337]",
+    "ns_mnt_same_as_host": false,
+    "mountinfo_tmp_lines": [
+      "315 287 0:55 / /tmp rw,nosuid,nodev,relatime - tmpfs tmpfs rw,mode=755,uid=1000,gid=1000"
+    ],
+    "root_tmp_files": {
+      "dsh03b-dsh03b-20261109-145405-59568077.txt": {
+        "size": 32,
+        "content_head": "dsh03b-20261109-145405-59568077\n"
+      }
+    },
+    "cmd_head": "bash -c MARK='dsh03b-20261109-145405-59568077'; F=/tmp/dsh03b-$MARK.txt; echo \"$MARK\" > \"$F\"; echo HOST_PID=$$; echo NS_MNT=$(readlink /proc/self/ns/mnt 2>/dev/null || echo NA); echo TMPDIR_VAL=${TMPDIR:-UNSET}; echo ID=$(id); echo DF_TMP; df -h /tmp 2>&1 | sed -n '1,3p'; echo MOUNTINFO_TMP; awk '$5==\"/tmp\" || $5 ~ /^\\/tmp\\// {print}' /proc/self/mountinfo 2>/dev/null || true; echo LS; ls -la \"$F\";",
+    "environ_name_count": 78
+  },
+  {
+    "t": 7.649,
+    "pid": 155499,
+    "ppid": 155498,
+    "ns_mnt": "mnt:[4026532337]",
+    "ns_mnt_same_as_host": false,
+    "mountinfo_tmp_lines": [
+      "315 287 0:55 / /tmp rw,nosuid,nodev,relatime - tmpfs tmpfs rw,mode=755,uid=1000,gid=1000"
+    ],
+    "root_tmp_files": {
+      "dsh03b-dsh03b-20261109-145405-59568077.txt": {
+        "size": 32,
+        "content_head": "dsh03b-20261109-145405-59568077\n"
+      }
+    },
+    "cmd_head": "bwrap --ro-bind / / --dev /dev --unshare-pid --proc /proc --die-with-parent --tmpfs /tmp --bind /workspace/<evidence-root>/... /workspace/<evidence-root>/... -- bash -c MARK='dsh03b-20261109-145405-59568077'; F=/tmp/dsh03b-$MARK.txt; echo \"$MARK\" > \"$F\"; echo HOST_PID=$$; echo NS_MNT=$(readlink /proc/self/ns/mnt 2>/dev/null || echo NA); echo TMPDIR_VAL=${TMPDIR:-UNSET}; echo ID=$(id); echo DF_TMP;",
+    "environ_name_count": 78
+  },
+  {
+    "t": 7.649,
+    "pid": 155500,
+    "ppid": 155499,
+    "ns_mnt": "mnt:[4026532337]",
+    "ns_mnt_same_as_host": false,
+    "mountinfo_tmp_lines": [
+      "315 287 0:55 / /tmp rw,nosuid,nodev,relatime - tmpfs tmpfs rw,mode=755,uid=1000,gid=1000"
+    ],
+    "root_tmp_files": {
+      "dsh03b-dsh03b-20261109-145405-59568077.txt": {
+        "size": 32,
+        "content_head": "dsh03b-20261109-145405-59568077\n"
+      }
+    },
+    "cmd_head": "bash -c MARK='dsh03b-20261109-145405-59568077'; F=/tmp/dsh03b-$MARK.txt; echo \"$MARK\" > \"$F\"; echo HOST_PID=$$; echo NS_MNT=$(readlink /proc/self/ns/mnt 2>/dev/null || echo NA); echo TMPDIR_VAL=${TMPDIR:-UNSET}; echo ID=$(id); echo DF_TMP; df -h /tmp 2>&1 | sed -n '1,3p'; echo MOUNTINFO_TMP; awk '$5==\"/tmp\" || $5 ~ /^\\/tmp\\// {print}' /proc/self/mountinfo 2>/dev/null || true; echo LS; ls -la \"$F\";",
+    "environ_name_count": 78
+  },
+  {
+    "t": 7.907,
+    "pid": 155499,
+    "ppid": 155498,
+    "ns_mnt": "mnt:[4026532337]",
+    "ns_mnt_same_as_host": false,
+    "mountinfo_tmp_lines": [
+      "315 287 0:55 / /tmp rw,nosuid,nodev,relatime - tmpfs tmpfs rw,mode=755,uid=1000,gid=1000"
+    ],
+    "root_tmp_files": {
+      "dsh03b-dsh03b-20261109-145405-59568077.txt": {
+        "size": 32,
+        "content_head": "dsh03b-20261109-145405-59568077\n"
+      }
+    },
+    "cmd_head": "bwrap --ro-bind / / --dev /dev --unshare-pid --proc /proc --die-with-parent --tmpfs /tmp --bind /workspace/<evidence-root>/... /workspace/<evidence-root>/... -- bash -c MARK='dsh03b-20261109-145405-59568077'; F=/tmp/dsh03b-$MARK.txt; echo \"$MARK\" > \"$F\"; echo HOST_PID=$$; echo NS_MNT=$(readlink /proc/self/ns/mnt 2>/dev/null || echo NA); echo TMPDIR_VAL=${TMPDIR:-UNSET}; echo ID=$(id); echo DF_TMP;",
+    "environ_name_count": 78
+  },
+  {
+    "t": 7.907,
+    "pid": 155500,
+    "ppid": 155499,
+    "ns_mnt": "mnt:[4026532337]",
+    "ns_mnt_same_as_host": false,
+    "mountinfo_tmp_lines": [
+      "315 287 0:55 / /tmp rw,nosuid,nodev,relatime - tmpfs tmpfs rw,mode=755,uid=1000,gid=1000"
+    ],
+    "root_tmp_files": {
+      "dsh03b-dsh03b-20261109-145405-59568077.txt": {
+        "size": 32,
+        "content_head": "dsh03b-20261109-145405-59568077\n"
+      }
+    },
+    "cmd_head": "bash -c MARK='dsh03b-20261109-145405-59568077'; F=/tmp/dsh03b-$MARK.txt; echo \"$MARK\" > \"$F\"; echo HOST_PID=$$; echo NS_MNT=$(readlink /proc/self/ns/mnt 2>/dev/null || echo NA); echo TMPDIR_VAL=${TMPDIR:-UNSET}; echo ID=$(id); echo DF_TMP; df -h /tmp 2>&1 | sed -n '1,3p'; echo MOUNTINFO_TMP; awk '$5==\"/tmp\" || $5 ~ /^\\/tmp\\// {print}' /proc/self/mountinfo 2>/dev/null || true; echo LS; ls -la \"$F\";",
+    "environ_name_count": 78
+  },
+  {
+    "t": 8.166,
+    "pid": 155499,
+    "ppid": 155498,
+    "ns_mnt": "mnt:[4026532337]",
+    "ns_mnt_same_as_host": false,
+    "mountinfo_tmp_lines": [
+      "315 287 0:55 / /tmp rw,nosuid,nodev,relatime - tmpfs tmpfs rw,mode=755,uid=1000,gid=1000"
+    ],
+    "root_tmp_files": {
+      "dsh03b-dsh03b-20261109-145405-59568077.txt": {
+        "size": 32,
+        "content_head": "dsh03b-20261109-145405-59568077\n"
+      }
+    },
+    "cmd_head": "bwrap --ro-bind / / --dev /dev --unshare-pid --proc /proc --die-with-parent --tmpfs /tmp --bind /workspace/<evidence-root>/... /workspace/<evidence-root>/... -- bash -c MARK='dsh03b-20261109-145405-59568077'; F=/tmp/dsh03b-$MARK.txt; echo \"$MARK\" > \"$F\"; echo HOST_PID=$$; echo NS_MNT=$(readlink /proc/self/ns/mnt 2>/dev/null || echo NA); echo TMPDIR_VAL=${TMPDIR:-UNSET}; echo ID=$(id); echo DF_TMP;",
+    "environ_name_count": 78
+  },
+  {
+    "t": 8.166,
+    "pid": 155500,
+    "ppid": 155499,
+    "ns_mnt": "mnt:[4026532337]",
+    "ns_mnt_same_as_host": false,
+    "mountinfo_tmp_lines": [
+      "315 287 0:55 / /tmp rw,nosuid,nodev,relatime - tmpfs tmpfs rw,mode=755,uid=1000,gid=1000"
+    ],
+    "root_tmp_files": {
+      "dsh03b-dsh03b-20261109-145405-59568077.txt": {
+        "size": 32,
+        "content_head": "dsh03b-20261109-145405-59568077\n"
+      }
+    },
+    "cmd_head": "bash -c MARK='dsh03b-20261109-145405-59568077'; F=/tmp/dsh03b-$MARK.txt; echo \"$MARK\" > \"$F\"; echo HOST_PID=$$; echo NS_MNT=$(readlink /proc/self/ns/mnt 2>/dev/null || echo NA); echo TMPDIR_VAL=${TMPDIR:-UNSET}; echo ID=$(id); echo DF_TMP; df -h /tmp 2>&1 | sed -n '1,3p'; echo MOUNTINFO_TMP; awk '$5==\"/tmp\" || $5 ~ /^\\/tmp\\// {print}' /proc/self/mountinfo 2>/dev/null || true; echo LS; ls -la \"$F\";",
+    "environ_name_count": 78
+  },
+  {
+    "t": 8.422,
+    "pid": 155499,
+    "ppid": 155498,
+    "ns_mnt": "mnt:[4026532337]",
+    "ns_mnt_same_as_host": false,
+    "mountinfo_tmp_lines": [
+      "315 287 0:55 / /tmp rw,nosuid,nodev,relatime - tmpfs tmpfs rw,mode=755,uid=1000,gid=1000"
+    ],
+    "root_tmp_files": {
+      "dsh03b-dsh03b-20261109-145405-59568077.txt": {
+        "size": 32,
+        "content_head": "dsh03b-20261109-145405-59568077\n"
+      }
+    },
+    "cmd_head": "bwrap --ro-bind / / --dev /dev --unshare-pid --proc /proc --die-with-parent --tmpfs /tmp --bind /workspace/<evidence-root>/... /workspace/<evidence-root>/... -- bash -c MARK='dsh03b-20261109-145405-59568077'; F=/tmp/dsh03b-$MARK.txt; echo \"$MARK\" > \"$F\"; echo HOST_PID=$$; echo NS_MNT=$(readlink /proc/self/ns/mnt 2>/dev/null || echo NA); echo TMPDIR_VAL=${TMPDIR:-UNSET}; echo ID=$(id); echo DF_TMP;",
+    "environ_name_count": 78
+  },
+  {
+    "t": 8.422,
+    "pid": 155500,
+    "ppid": 155499,
+    "ns_mnt": "mnt:[4026532337]",
+    "ns_mnt_same_as_host": false,
+    "mountinfo_tmp_lines": [
+      "315 287 0:55 / /tmp rw,nosuid,nodev,relatime - tmpfs tmpfs rw,mode=755,uid=1000,gid=1000"
+    ],
+    "root_tmp_files": {
+      "dsh03b-dsh03b-20261109-145405-59568077.txt": {
+        "size": 32,
+        "content_head": "dsh03b-20261109-145405-59568077\n"
+      }
+    },
+    "cmd_head": "bash -c MARK='dsh03b-20261109-145405-59568077'; F=/tmp/dsh03b-$MARK.txt; echo \"$MARK\" > \"$F\"; echo HOST_PID=$$; echo NS_MNT=$(readlink /proc/self/ns/mnt 2>/dev/null || echo NA); echo TMPDIR_VAL=${TMPDIR:-UNSET}; echo ID=$(id); echo DF_TMP; df -h /tmp 2>&1 | sed -n '1,3p'; echo MOUNTINFO_TMP; awk '$5==\"/tmp\" || $5 ~ /^\\/tmp\\// {print}' /proc/self/mountinfo 2>/dev/null || true; echo LS; ls -la \"$F\";",
+    "environ_name_count": 78
+  },
+  {
+    "t": 8.678,
+    "pid": 155499,
+    "ppid": 155498,
+    "ns_mnt": "mnt:[4026532337]",
+    "ns_mnt_same_as_host": false,
+    "mountinfo_tmp_lines": [
+      "315 287 0:55 / /tmp rw,nosuid,nodev,relatime - tmpfs tmpfs rw,mode=755,uid=1000,gid=1000"
+    ],
+    "root_tmp_files": {
+      "dsh03b-dsh03b-20261109-145405-59568077.txt": {
+        "size": 32,
+        "content_head": "dsh03b-20261109-145405-59568077\n"
+      }
+    },
+    "cmd_head": "bwrap --ro-bind / / --dev /dev --unshare-pid --proc /proc --die-with-parent --tmpfs /tmp --bind /workspace/<evidence-root>/... /workspace/<evidence-root>/... -- bash -c MARK='dsh03b-20261109-145405-59568077'; F=/tmp/dsh03b-$MARK.txt; echo \"$MARK\" > \"$F\"; echo HOST_PID=$$; echo NS_MNT=$(readlink /proc/self/ns/mnt 2>/dev/null || echo NA); echo TMPDIR_VAL=${TMPDIR:-UNSET}; echo ID=$(id); echo DF_TMP;",
+    "environ_name_count": 78
+  },
+  {
+    "t": 8.678,
+    "pid": 155500,
+    "ppid": 155499,
+    "ns_mnt": "mnt:[4026532337]",
+    "ns_mnt_same_as_host": false,
+    "mountinfo_tmp_lines": [
+      "315 287 0:55 / /tmp rw,nosuid,nodev,relatime - tmpfs tmpfs rw,mode=755,uid=1000,gid=1000"
+    ],
+    "root_tmp_files": {
+      "dsh03b-dsh03b-20261109-145405-59568077.txt": {
+        "size": 32,
+        "content_head": "dsh03b-20261109-145405-59568077\n"
+      }
+    },
+    "cmd_head": "bash -c MARK='dsh03b-20261109-145405-59568077'; F=/tmp/dsh03b-$MARK.txt; echo \"$MARK\" > \"$F\"; echo HOST_PID=$$; echo NS_MNT=$(readlink /proc/self/ns/mnt 2>/dev/null || echo NA); echo TMPDIR_VAL=${TMPDIR:-UNSET}; echo ID=$(id); echo DF_TMP; df -h /tmp 2>&1 | sed -n '1,3p'; echo MOUNTINFO_TMP; awk '$5==\"/tmp\" || $5 ~ /^\\/tmp\\// {print}' /proc/self/mountinfo 2>/dev/null || true; echo LS; ls -la \"$F\";",
+    "environ_name_count": 78
+  },
+  {
+    "t": 8.933,
+    "pid": 155499,
+    "ppid": 155498,
+    "ns_mnt": "mnt:[4026532337]",
+    "ns_mnt_same_as_host": false,
+    "mountinfo_tmp_lines": [
+      "315 287 0:55 / /tmp rw,nosuid,nodev,relatime - tmpfs tmpfs rw,mode=755,uid=1000,gid=1000"
+    ],
+    "root_tmp_files": {
+      "dsh03b-dsh03b-20261109-145405-59568077.txt": {
+        "size": 32,
+        "content_head": "dsh03b-20261109-145405-59568077\n"
+      }
+    },
+    "cmd_head": "bwrap --ro-bind / / --dev /dev --unshare-pid --proc /proc --die-with-parent --tmpfs /tmp --bind /workspace/<evidence-root>/... /workspace/<evidence-root>/... -- bash -c MARK='dsh03b-20261109-145405-59568077'; F=/tmp/dsh03b-$MARK.txt; echo \"$MARK\" > \"$F\"; echo HOST_PID=$$; echo NS_MNT=$(readlink /proc/self/ns/mnt 2>/dev/null || echo NA); echo TMPDIR_VAL=${TMPDIR:-UNSET}; echo ID=$(id); echo DF_TMP;",
+    "environ_name_count": 78
+  },
+  {
+    "t": 8.933,
+    "pid": 155500,
+    "ppid": 155499,
+    "ns_mnt": "mnt:[4026532337]",
+    "ns_mnt_same_as_host": false,
+    "mountinfo_tmp_lines": [
+      "315 287 0:55 / /tmp rw,nosuid,nodev,relatime - tmpfs tmpfs rw,mode=755,uid=1000,gid=1000"
+    ],
+    "root_tmp_files": {
+      "dsh03b-dsh03b-20261109-145405-59568077.txt": {
+        "size": 32,
+        "content_head": "dsh03b-20261109-145405-59568077\n"
+      }
+    },
+    "cmd_head": "bash -c MARK='dsh03b-20261109-145405-59568077'; F=/tmp/dsh03b-$MARK.txt; echo \"$MARK\" > \"$F\"; echo HOST_PID=$$; echo NS_MNT=$(readlink /proc/self/ns/mnt 2>/dev/null || echo NA); echo TMPDIR_VAL=${TMPDIR:-UNSET}; echo ID=$(id); echo DF_TMP; df -h /tmp 2>&1 | sed -n '1,3p'; echo MOUNTINFO_TMP; awk '$5==\"/tmp\" || $5 ~ /^\\/tmp\\// {print}' /proc/self/mountinfo 2>/dev/null || true; echo LS; ls -la \"$F\";",
+    "environ_name_count": 78
+  },
+  {
+    "t": 9.188,
+    "pid": 155499,
+    "ppid": 155498,
+    "ns_mnt": "mnt:[4026532337]",
+    "ns_mnt_same_as_host": false,
+    "mountinfo_tmp_lines": [
+      "315 287 0:55 / /tmp rw,nosuid,nodev,relatime - tmpfs tmpfs rw,mode=755,uid=1000,gid=1000"
+    ],
+    "root_tmp_files": {
+      "dsh03b-dsh03b-20261109-145405-59568077.txt": {
+        "size": 32,
+        "content_head": "dsh03b-20261109-145405-59568077\n"
+      }
+    },
+    "cmd_head": "bwrap --ro-bind / / --dev /dev --unshare-pid --proc /proc --die-with-parent --tmpfs /tmp --bind /workspace/<evidence-root>/... /workspace/<evidence-root>/... -- bash -c MARK='dsh03b-20261109-145405-59568077'; F=/tmp/dsh03b-$MARK.txt; echo \"$MARK\" > \"$F\"; echo HOST_PID=$$; echo NS_MNT=$(readlink /proc/self/ns/mnt 2>/dev/null || echo NA); echo TMPDIR_VAL=${TMPDIR:-UNSET}; echo ID=$(id); echo DF_TMP;",
+    "environ_name_count": 78
+  },
+  {
+    "t": 9.188,
+    "pid": 155500,
+    "ppid": 155499,
+    "ns_mnt": "mnt:[4026532337]",
+    "ns_mnt_same_as_host": false,
+    "mountinfo_tmp_lines": [
+      "315 287 0:55 / /tmp rw,nosuid,nodev,relatime - tmpfs tmpfs rw,mode=755,uid=1000,gid=1000"
+    ],
+    "root_tmp_files": {
+      "dsh03b-dsh03b-20261109-145405-59568077.txt": {
+        "size": 32,
+        "content_head": "dsh03b-20261109-145405-59568077\n"
+      }
+    },
+    "cmd_head": "bash -c MARK='dsh03b-20261109-145405-59568077'; F=/tmp/dsh03b-$MARK.txt; echo \"$MARK\" > \"$F\"; echo HOST_PID=$$; echo NS_MNT=$(readlink /proc/self/ns/mnt 2>/dev/null || echo NA); echo TMPDIR_VAL=${TMPDIR:-UNSET}; echo ID=$(id); echo DF_TMP; df -h /tmp 2>&1 | sed -n '1,3p'; echo MOUNTINFO_TMP; awk '$5==\"/tmp\" || $5 ~ /^\\/tmp\\// {print}' /proc/self/mountinfo 2>/dev/null || true; echo LS; ls -la \"$F\";",
+    "environ_name_count": 78
+  },
+  {
+    "t": 9.444,
+    "pid": 155499,
+    "ppid": 155498,
+    "ns_mnt": "mnt:[4026532337]",
+    "ns_mnt_same_as_host": false,
+    "mountinfo_tmp_lines": [
+      "315 287 0:55 / /tmp rw,nosuid,nodev,relatime - tmpfs tmpfs rw,mode=755,uid=1000,gid=1000"
+    ],
+    "root_tmp_files": {
+      "dsh03b-dsh03b-20261109-145405-59568077.txt": {
+        "size": 32,
+        "content_head": "dsh03b-20261109-145405-59568077\n"
+      }
+    },
+    "cmd_head": "bwrap --ro-bind / / --dev /dev --unshare-pid --proc /proc --die-with-parent --tmpfs /tmp --bind /workspace/<evidence-root>/... /workspace/<evidence-root>/... -- bash -c MARK='dsh03b-20261109-145405-59568077'; F=/tmp/dsh03b-$MARK.txt; echo \"$MARK\" > \"$F\"; echo HOST_PID=$$; echo NS_MNT=$(readlink /proc/self/ns/mnt 2>/dev/null || echo NA); echo TMPDIR_VAL=${TMPDIR:-UNSET}; echo ID=$(id); echo DF_TMP;",
+    "environ_name_count": 78
+  },
+  {
+    "t": 9.444,
+    "pid": 155500,
+    "ppid": 155499,
+    "ns_mnt": "mnt:[4026532337]",
+    "ns_mnt_same_as_host": false,
+    "mountinfo_tmp_lines": [
+      "315 287 0:55 / /tmp rw,nosuid,nodev,relatime - tmpfs tmpfs rw,mode=755,uid=1000,gid=1000"
+    ],
+    "root_tmp_files": {
+      "dsh03b-dsh03b-20261109-145405-59568077.txt": {
+        "size": 32,
+        "content_head": "dsh03b-20261109-145405-59568077\n"
+      }
+    },
+    "cmd_head": "bash -c MARK='dsh03b-20261109-145405-59568077'; F=/tmp/dsh03b-$MARK.txt; echo \"$MARK\" > \"$F\"; echo HOST_PID=$$; echo NS_MNT=$(readlink /proc/self/ns/mnt 2>/dev/null || echo NA); echo TMPDIR_VAL=${TMPDIR:-UNSET}; echo ID=$(id); echo DF_TMP; df -h /tmp 2>&1 | sed -n '1,3p'; echo MOUNTINFO_TMP; awk '$5==\"/tmp\" || $5 ~ /^\\/tmp\\// {print}' /proc/self/mountinfo 2>/dev/null || true; echo LS; ls -la \"$F\";",
+    "environ_name_count": 78
+  },
+  {
+    "t": 9.699,
+    "pid": 155499,
+    "ppid": 155498,
+    "ns_mnt": "mnt:[4026532337]",
+    "ns_mnt_same_as_host": false,
+    "mountinfo_tmp_lines": [
+      "315 287 0:55 / /tmp rw,nosuid,nodev,relatime - tmpfs tmpfs rw,mode=755,uid=1000,gid=1000"
+    ],
+    "root_tmp_files": {
+      "dsh03b-dsh03b-20261109-145405-59568077.txt": {
+        "size": 32,
+        "content_head": "dsh03b-20261109-145405-59568077\n"
+      }
+    },
+    "cmd_head": "bwrap --ro-bind / / --dev /dev --unshare-pid --proc /proc --die-with-parent --tmpfs /tmp --bind /workspace/<evidence-root>/... /workspace/<evidence-root>/... -- bash -c MARK='dsh03b-20261109-145405-59568077'; F=/tmp/dsh03b-$MARK.txt; echo \"$MARK\" > \"$F\"; echo HOST_PID=$$; echo NS_MNT=$(readlink /proc/self/ns/mnt 2>/dev/null || echo NA); echo TMPDIR_VAL=${TMPDIR:-UNSET}; echo ID=$(id); echo DF_TMP;",
+    "environ_name_count": 78
+  },
+  {
+    "t": 9.699,
+    "pid": 155500,
+    "ppid": 155499,
+    "ns_mnt": "mnt:[4026532337]",
+    "ns_mnt_same_as_host": false,
+    "mountinfo_tmp_lines": [
+      "315 287 0:55 / /tmp rw,nosuid,nodev,relatime - tmpfs tmpfs rw,mode=755,uid=1000,gid=1000"
+    ],
+    "root_tmp_files": {
+      "dsh03b-dsh03b-20261109-145405-59568077.txt": {
+        "size": 32,
+        "content_head": "dsh03b-20261109-145405-59568077\n"
+      }
+    },
+    "cmd_head": "bash -c MARK='dsh03b-20261109-145405-59568077'; F=/tmp/dsh03b-$MARK.txt; echo \"$MARK\" > \"$F\"; echo HOST_PID=$$; echo NS_MNT=$(readlink /proc/self/ns/mnt 2>/dev/null || echo NA); echo TMPDIR_VAL=${TMPDIR:-UNSET}; echo ID=$(id); echo DF_TMP; df -h /tmp 2>&1 | sed -n '1,3p'; echo MOUNTINFO_TMP; awk '$5==\"/tmp\" || $5 ~ /^\\/tmp\\// {print}' /proc/self/mountinfo 2>/dev/null || true; echo LS; ls -la \"$F\";",
+    "environ_name_count": 78
+  },
+  {
+    "t": 9.954,
+    "pid": 155499,
+    "ppid": 155498,
+    "ns_mnt": "mnt:[4026532337]",
+    "ns_mnt_same_as_host": false,
+    "mountinfo_tmp_lines": [
+      "315 287 0:55 / /tmp rw,nosuid,nodev,relatime - tmpfs tmpfs rw,mode=755,uid=1000,gid=1000"
+    ],
+    "root_tmp_files": {
+      "dsh03b-dsh03b-20261109-145405-59568077.txt": {
+        "size": 32,
+        "content_head": "dsh03b-20261109-145405-59568077\n"
+      }
+    },
+    "cmd_head": "bwrap --ro-bind / / --dev /dev --unshare-pid --proc /proc --die-with-parent --tmpfs /tmp --bind /workspace/<evidence-root>/... /workspace/<evidence-root>/... -- bash -c MARK='dsh03b-20261109-145405-59568077'; F=/tmp/dsh03b-$MARK.txt; echo \"$MARK\" > \"$F\"; echo HOST_PID=$$; echo NS_MNT=$(readlink /proc/self/ns/mnt 2>/dev/null || echo NA); echo TMPDIR_VAL=${TMPDIR:-UNSET}; echo ID=$(id); echo DF_TMP;",
+    "environ_name_count": 78
+  },
+  {
+    "t": 9.954,
+    "pid": 155500,
+    "ppid": 155499,
+    "ns_mnt": "mnt:[4026532337]",
+    "ns_mnt_same_as_host": false,
+    "mountinfo_tmp_lines": [
+      "315 287 0:55 / /tmp rw,nosuid,nodev,relatime - tmpfs tmpfs rw,mode=755,uid=1000,gid=1000"
+    ],
+    "root_tmp_files": {
+      "dsh03b-dsh03b-20261109-145405-59568077.txt": {
+        "size": 32,
+        "content_head": "dsh03b-20261109-145405-59568077\n"
+      }
+    },
+    "cmd_head": "bash -c MARK='dsh03b-20261109-145405-59568077'; F=/tmp/dsh03b-$MARK.txt; echo \"$MARK\" > \"$F\"; echo HOST_PID=$$; echo NS_MNT=$(readlink /proc/self/ns/mnt 2>/dev/null || echo NA); echo TMPDIR_VAL=${TMPDIR:-UNSET}; echo ID=$(id); echo DF_TMP; df -h /tmp 2>&1 | sed -n '1,3p'; echo MOUNTINFO_TMP; awk '$5==\"/tmp\" || $5 ~ /^\\/tmp\\// {print}' /proc/self/mountinfo 2>/dev/null || true; echo LS; ls -la \"$F\";",
+    "environ_name_count": 78
+  },
+  {
+    "t": 10.21,
+    "pid": 155499,
+    "ppid": 155498,
+    "ns_mnt": "mnt:[4026532337]",
+    "ns_mnt_same_as_host": false,
+    "mountinfo_tmp_lines": [
+      "315 287 0:55 / /tmp rw,nosuid,nodev,relatime - tmpfs tmpfs rw,mode=755,uid=1000,gid=1000"
+    ],
+    "root_tmp_files": {
+      "dsh03b-dsh03b-20261109-145405-59568077.txt": {
+        "size": 32,
+        "content_head": "dsh03b-20261109-145405-59568077\n"
+      }
+    },
+    "cmd_head": "bwrap --ro-bind / / --dev /dev --unshare-pid --proc /proc --die-with-parent --tmpfs /tmp --bind /workspace/<evidence-root>/... /workspace/<evidence-root>/... -- bash -c MARK='dsh03b-20261109-145405-59568077'; F=/tmp/dsh03b-$MARK.txt; echo \"$MARK\" > \"$F\"; echo HOST_PID=$$; echo NS_MNT=$(readlink /proc/self/ns/mnt 2>/dev/null || echo NA); echo TMPDIR_VAL=${TMPDIR:-UNSET}; echo ID=$(id); echo DF_TMP;",
+    "environ_name_count": 78
+  },
+  {
+    "t": 10.21,
+    "pid": 155500,
+    "ppid": 155499,
+    "ns_mnt": "mnt:[4026532337]",
+    "ns_mnt_same_as_host": false,
+    "mountinfo_tmp_lines": [
+      "315 287 0:55 / /tmp rw,nosuid,nodev,relatime - tmpfs tmpfs rw,mode=755,uid=1000,gid=1000"
+    ],
+    "root_tmp_files": {
+      "dsh03b-dsh03b-20261109-145405-59568077.txt": {
+        "size": 32,
+        "content_head": "dsh03b-20261109-145405-59568077\n"
+      }
+    },
+    "cmd_head": "bash -c MARK='dsh03b-20261109-145405-59568077'; F=/tmp/dsh03b-$MARK.txt; echo \"$MARK\" > \"$F\"; echo HOST_PID=$$; echo NS_MNT=$(readlink /proc/self/ns/mnt 2>/dev/null || echo NA); echo TMPDIR_VAL=${TMPDIR:-UNSET}; echo ID=$(id); echo DF_TMP; df -h /tmp 2>&1 | sed -n '1,3p'; echo MOUNTINFO_TMP; awk '$5==\"/tmp\" || $5 ~ /^\\/tmp\\// {print}' /proc/self/mountinfo 2>/dev/null || true; echo LS; ls -la \"$F\";",
+    "environ_name_count": 78
+  },
+  {
+    "t": 10.465,
+    "pid": 155499,
+    "ppid": 155498,
+    "ns_mnt": "mnt:[4026532337]",
+    "ns_mnt_same_as_host": false,
+    "mountinfo_tmp_lines": [
+      "315 287 0:55 / /tmp rw,nosuid,nodev,relatime - tmpfs tmpfs rw,mode=755,uid=1000,gid=1000"
+    ],
+    "root_tmp_files": {
+      "dsh03b-dsh03b-20261109-145405-59568077.txt": {
+        "size": 32,
+        "content_head": "dsh03b-20261109-145405-59568077\n"
+      }
+    },
+    "cmd_head": "bwrap --ro-bind / / --dev /dev --unshare-pid --proc /proc --die-with-parent --tmpfs /tmp --bind /workspace/<evidence-root>/... /workspace/<evidence-root>/... -- bash -c MARK='dsh03b-20261109-145405-59568077'; F=/tmp/dsh03b-$MARK.txt; echo \"$MARK\" > \"$F\"; echo HOST_PID=$$; echo NS_MNT=$(readlink /proc/self/ns/mnt 2>/dev/null || echo NA); echo TMPDIR_VAL=${TMPDIR:-UNSET}; echo ID=$(id); echo DF_TMP;",
+    "environ_name_count": 78
+  },
+  {
+    "t": 10.465,
+    "pid": 155500,
+    "ppid": 155499,
+    "ns_mnt": "mnt:[4026532337]",
+    "ns_mnt_same_as_host": false,
+    "mountinfo_tmp_lines": [
+      "315 287 0:55 / /tmp rw,nosuid,nodev,relatime - tmpfs tmpfs rw,mode=755,uid=1000,gid=1000"
+    ],
+    "root_tmp_files": {
+      "dsh03b-dsh03b-20261109-145405-59568077.txt": {
+        "size": 32,
+        "content_head": "dsh03b-20261109-145405-59568077\n"
+      }
+    },
+    "cmd_head": "bash -c MARK='dsh03b-20261109-145405-59568077'; F=/tmp/dsh03b-$MARK.txt; echo \"$MARK\" > \"$F\"; echo HOST_PID=$$; echo NS_MNT=$(readlink /proc/self/ns/mnt 2>/dev/null || echo NA); echo TMPDIR_VAL=${TMPDIR:-UNSET}; echo ID=$(id); echo DF_TMP; df -h /tmp 2>&1 | sed -n '1,3p'; echo MOUNTINFO_TMP; awk '$5==\"/tmp\" || $5 ~ /^\\/tmp\\// {print}' /proc/self/mountinfo 2>/dev/null || true; echo LS; ls -la \"$F\";",
+    "environ_name_count": 78
+  },
+  {
+    "t": 10.722,
+    "pid": 155499,
+    "ppid": 155498,
+    "ns_mnt": "mnt:[4026532337]",
+    "ns_mnt_same_as_host": false,
+    "mountinfo_tmp_lines": [
+      "315 287 0:55 / /tmp rw,nosuid,nodev,relatime - tmpfs tmpfs rw,mode=755,uid=1000,gid=1000"
+    ],
+    "root_tmp_files": {
+      "dsh03b-dsh03b-20261109-145405-59568077.txt": {
+        "size": 32,
+        "content_head": "dsh03b-20261109-145405-59568077\n"
+      }
+    },
+    "cmd_head": "bwrap --ro-bind / / --dev /dev --unshare-pid --proc /proc --die-with-parent --tmpfs /tmp --bind /workspace/<evidence-root>/... /workspace/<evidence-root>/... -- bash -c MARK='dsh03b-20261109-145405-59568077'; F=/tmp/dsh03b-$MARK.txt; echo \"$MARK\" > \"$F\"; echo HOST_PID=$$; echo NS_MNT=$(readlink /proc/self/ns/mnt 2>/dev/null || echo NA); echo TMPDIR_VAL=${TMPDIR:-UNSET}; echo ID=$(id); echo DF_TMP;",
+    "environ_name_count": 78
+  },
+  {
+    "t": 10.722,
+    "pid": 155500,
+    "ppid": 155499,
+    "ns_mnt": "mnt:[4026532337]",
+    "ns_mnt_same_as_host": false,
+    "mountinfo_tmp_lines": [
+      "315 287 0:55 / /tmp rw,nosuid,nodev,relatime - tmpfs tmpfs rw,mode=755,uid=1000,gid=1000"
+    ],
+    "root_tmp_files": {
+      "dsh03b-dsh03b-20261109-145405-59568077.txt": {
+        "size": 32,
+        "content_head": "dsh03b-20261109-145405-59568077\n"
+      }
+    },
+    "cmd_head": "bash -c MARK='dsh03b-20261109-145405-59568077'; F=/tmp/dsh03b-$MARK.txt; echo \"$MARK\" > \"$F\"; echo HOST_PID=$$; echo NS_MNT=$(readlink /proc/self/ns/mnt 2>/dev/null || echo NA); echo TMPDIR_VAL=${TMPDIR:-UNSET}; echo ID=$(id); echo DF_TMP; df -h /tmp 2>&1 | sed -n '1,3p'; echo MOUNTINFO_TMP; awk '$5==\"/tmp\" || $5 ~ /^\\/tmp\\// {print}' /proc/self/mountinfo 2>/dev/null || true; echo LS; ls -la \"$F\";",
+    "environ_name_count": 78
+  },
+  {
+    "t": 10.977,
+    "pid": 155499,
+    "ppid": 155498,
+    "ns_mnt": "mnt:[4026532337]",
+    "ns_mnt_same_as_host": false,
+    "mountinfo_tmp_lines": [
+      "315 287 0:55 / /tmp rw,nosuid,nodev,relatime - tmpfs tmpfs rw,mode=755,uid=1000,gid=1000"
+    ],
+    "root_tmp_files": {
+      "dsh03b-dsh03b-20261109-145405-59568077.txt": {
+        "size": 32,
+        "content_head": "dsh03b-20261109-145405-59568077\n"
+      }
+    },
+    "cmd_head": "bwrap --ro-bind / / --dev /dev --unshare-pid --proc /proc --die-with-parent --tmpfs /tmp --bind /workspace/<evidence-root>/... /workspace/<evidence-root>/... -- bash -c MARK='dsh03b-20261109-145405-59568077'; F=/tmp/dsh03b-$MARK.txt; echo \"$MARK\" > \"$F\"; echo HOST_PID=$$; echo NS_MNT=$(readlink /proc/self/ns/mnt 2>/dev/null || echo NA); echo TMPDIR_VAL=${TMPDIR:-UNSET}; echo ID=$(id); echo DF_TMP;",
+    "environ_name_count": 78
+  },
+  {
+    "t": 10.977,
+    "pid": 155500,
+    "ppid": 155499,
+    "ns_mnt": "mnt:[4026532337]",
+    "ns_mnt_same_as_host": false,
+    "mountinfo_tmp_lines": [
+      "315 287 0:55 / /tmp rw,nosuid,nodev,relatime - tmpfs tmpfs rw,mode=755,uid=1000,gid=1000"
+    ],
+    "root_tmp_files": {
+      "dsh03b-dsh03b-20261109-145405-59568077.txt": {
+        "size": 32,
+        "content_head": "dsh03b-20261109-145405-59568077\n"
+      }
+    },
+    "cmd_head": "bash -c MARK='dsh03b-20261109-145405-59568077'; F=/tmp/dsh03b-$MARK.txt; echo \"$MARK\" > \"$F\"; echo HOST_PID=$$; echo NS_MNT=$(readlink /proc/self/ns/mnt 2>/dev/null || echo NA); echo TMPDIR_VAL=${TMPDIR:-UNSET}; echo ID=$(id); echo DF_TMP; df -h /tmp 2>&1 | sed -n '1,3p'; echo MOUNTINFO_TMP; awk '$5==\"/tmp\" || $5 ~ /^\\/tmp\\// {print}' /proc/self/mountinfo 2>/dev/null || true; echo LS; ls -la \"$F\";",
+    "environ_name_count": 78
+  },
+  {
+    "t": 11.233,
+    "pid": 155499,
+    "ppid": 155498,
+    "ns_mnt": "mnt:[4026532337]",
+    "ns_mnt_same_as_host": false,
+    "mountinfo_tmp_lines": [
+      "315 287 0:55 / /tmp rw,nosuid,nodev,relatime - tmpfs tmpfs rw,mode=755,uid=1000,gid=1000"
+    ],
+    "root_tmp_files": {
+      "dsh03b-dsh03b-20261109-145405-59568077.txt": {
+        "size": 32,
+        "content_head": "dsh03b-20261109-145405-59568077\n"
+      }
+    },
+    "cmd_head": "bwrap --ro-bind / / --dev /dev --unshare-pid --proc /proc --die-with-parent --tmpfs /tmp --bind /workspace/<evidence-root>/... /workspace/<evidence-root>/... -- bash -c MARK='dsh03b-20261109-145405-59568077'; F=/tmp/dsh03b-$MARK.txt; echo \"$MARK\" > \"$F\"; echo HOST_PID=$$; echo NS_MNT=$(readlink /proc/self/ns/mnt 2>/dev/null || echo NA); echo TMPDIR_VAL=${TMPDIR:-UNSET}; echo ID=$(id); echo DF_TMP;",
+    "environ_name_count": 78
+  },
+  {
+    "t": 11.233,
+    "pid": 155500,
+    "ppid": 155499,
+    "ns_mnt": "mnt:[4026532337]",
+    "ns_mnt_same_as_host": false,
+    "mountinfo_tmp_lines": [
+      "315 287 0:55 / /tmp rw,nosuid,nodev,relatime - tmpfs tmpfs rw,mode=755,uid=1000,gid=1000"
+    ],
+    "root_tmp_files": {
+      "dsh03b-dsh03b-20261109-145405-59568077.txt": {
+        "size": 32,
+        "content_head": "dsh03b-20261109-145405-59568077\n"
+      }
+    },
+    "cmd_head": "bash -c MARK='dsh03b-20261109-145405-59568077'; F=/tmp/dsh03b-$MARK.txt; echo \"$MARK\" > \"$F\"; echo HOST_PID=$$; echo NS_MNT=$(readlink /proc/self/ns/mnt 2>/dev/null || echo NA); echo TMPDIR_VAL=${TMPDIR:-UNSET}; echo ID=$(id); echo DF_TMP; df -h /tmp 2>&1 | sed -n '1,3p'; echo MOUNTINFO_TMP; awk '$5==\"/tmp\" || $5 ~ /^\\/tmp\\// {print}' /proc/self/mountinfo 2>/dev/null || true; echo LS; ls -la \"$F\";",
+    "environ_name_count": 78
+  },
+  {
+    "t": 11.491,
+    "pid": 155499,
+    "ppid": 155498,
+    "ns_mnt": "mnt:[4026532337]",
+    "ns_mnt_same_as_host": false,
+    "mountinfo_tmp_lines": [
+      "315 287 0:55 / /tmp rw,nosuid,nodev,relatime - tmpfs tmpfs rw,mode=755,uid=1000,gid=1000"
+    ],
+    "root_tmp_files": {
+      "dsh03b-dsh03b-20261109-145405-59568077.txt": {
+        "size": 32,
+        "content_head": "dsh03b-20261109-145405-59568077\n"
+      }
+    },
+    "cmd_head": "bwrap --ro-bind / / --dev /dev --unshare-pid --proc /proc --die-with-parent --tmpfs /tmp --bind /workspace/<evidence-root>/... /workspace/<evidence-root>/... -- bash -c MARK='dsh03b-20261109-145405-59568077'; F=/tmp/dsh03b-$MARK.txt; echo \"$MARK\" > \"$F\"; echo HOST_PID=$$; echo NS_MNT=$(readlink /proc/self/ns/mnt 2>/dev/null || echo NA); echo TMPDIR_VAL=${TMPDIR:-UNSET}; echo ID=$(id); echo DF_TMP;",
+    "environ_name_count": 78
+  },
+  {
+    "t": 11.491,
+    "pid": 155500,
+    "ppid": 155499,
+    "ns_mnt": "mnt:[4026532337]",
+    "ns_mnt_same_as_host": false,
+    "mountinfo_tmp_lines": [
+      "315 287 0:55 / /tmp rw,nosuid,nodev,relatime - tmpfs tmpfs rw,mode=755,uid=1000,gid=1000"
+    ],
+    "root_tmp_files": {
+      "dsh03b-dsh03b-20261109-145405-59568077.txt": {
+        "size": 32,
+        "content_head": "dsh03b-20261109-145405-59568077\n"
+      }
+    },
+    "cmd_head": "bash -c MARK='dsh03b-20261109-145405-59568077'; F=/tmp/dsh03b-$MARK.txt; echo \"$MARK\" > \"$F\"; echo HOST_PID=$$; echo NS_MNT=$(readlink /proc/self/ns/mnt 2>/dev/null || echo NA); echo TMPDIR_VAL=${TMPDIR:-UNSET}; echo ID=$(id); echo DF_TMP; df -h /tmp 2>&1 | sed -n '1,3p'; echo MOUNTINFO_TMP; awk '$5==\"/tmp\" || $5 ~ /^\\/tmp\\// {print}' /proc/self/mountinfo 2>/dev/null || true; echo LS; ls -la \"$F\";",
+    "environ_name_count": 78
+  },
+  {
+    "t": 11.747,
+    "pid": 155499,
+    "ppid": 155498,
+    "ns_mnt": "mnt:[4026532337]",
+    "ns_mnt_same_as_host": false,
+    "mountinfo_tmp_lines": [
+      "315 287 0:55 / /tmp rw,nosuid,nodev,relatime - tmpfs tmpfs rw,mode=755,uid=1000,gid=1000"
+    ],
+    "root_tmp_files": {
+      "dsh03b-dsh03b-20261109-145405-59568077.txt": {
+        "size": 32,
+        "content_head": "dsh03b-20261109-145405-59568077\n"
+      }
+    },
+    "cmd_head": "bwrap --ro-bind / / --dev /dev --unshare-pid --proc /proc --die-with-parent --tmpfs /tmp --bind /workspace/<evidence-root>/... /workspace/<evidence-root>/... -- bash -c MARK='dsh03b-20261109-145405-59568077'; F=/tmp/dsh03b-$MARK.txt; echo \"$MARK\" > \"$F\"; echo HOST_PID=$$; echo NS_MNT=$(readlink /proc/self/ns/mnt 2>/dev/null || echo NA); echo TMPDIR_VAL=${TMPDIR:-UNSET}; echo ID=$(id); echo DF_TMP;",
+    "environ_name_count": 78
+  },
+  {
+    "t": 11.747,
+    "pid": 155500,
+    "ppid": 155499,
+    "ns_mnt": "mnt:[4026532337]",
+    "ns_mnt_same_as_host": false,
+    "mountinfo_tmp_lines": [
+      "315 287 0:55 / /tmp rw,nosuid,nodev,relatime - tmpfs tmpfs rw,mode=755,uid=1000,gid=1000"
+    ],
+    "root_tmp_files": {
+      "dsh03b-dsh03b-20261109-145405-59568077.txt": {
+        "size": 32,
+        "content_head": "dsh03b-20261109-145405-59568077\n"
+      }
+    },
+    "cmd_head": "bash -c MARK='dsh03b-20261109-145405-59568077'; F=/tmp/dsh03b-$MARK.txt; echo \"$MARK\" > \"$F\"; echo HOST_PID=$$; echo NS_MNT=$(readlink /proc/self/ns/mnt 2>/dev/null || echo NA); echo TMPDIR_VAL=${TMPDIR:-UNSET}; echo ID=$(id); echo DF_TMP; df -h /tmp 2>&1 | sed -n '1,3p'; echo MOUNTINFO_TMP; awk '$5==\"/tmp\" || $5 ~ /^\\/tmp\\// {print}' /proc/self/mountinfo 2>/dev/null || true; echo LS; ls -la \"$F\";",
+    "environ_name_count": 78
+  },
+  {
+    "t": 12.003,
+    "pid": 155499,
+    "ppid": 155498,
+    "ns_mnt": "mnt:[4026532337]",
+    "ns_mnt_same_as_host": false,
+    "mountinfo_tmp_lines": [
+      "315 287 0:55 / /tmp rw,nosuid,nodev,relatime - tmpfs tmpfs rw,mode=755,uid=1000,gid=1000"
+    ],
+    "root_tmp_files": {
+      "dsh03b-dsh03b-20261109-145405-59568077.txt": {
+        "size": 32,
+        "content_head": "dsh03b-20261109-145405-59568077\n"
+      }
+    },
+    "cmd_head": "bwrap --ro-bind / / --dev /dev --unshare-pid --proc /proc --die-with-parent --tmpfs /tmp --bind /workspace/<evidence-root>/... /workspace/<evidence-root>/... -- bash -c MARK='dsh03b-20261109-145405-59568077'; F=/tmp/dsh03b-$MARK.txt; echo \"$MARK\" > \"$F\"; echo HOST_PID=$$; echo NS_MNT=$(readlink /proc/self/ns/mnt 2>/dev/null || echo NA); echo TMPDIR_VAL=${TMPDIR:-UNSET}; echo ID=$(id); echo DF_TMP;",
+    "environ_name_count": 78
+  },
+  {
+    "t": 12.003,
+    "pid": 155500,
+    "ppid": 155499,
+    "ns_mnt": "mnt:[4026532337]",
+    "ns_mnt_same_as_host": false,
+    "mountinfo_tmp_lines": [
+      "315 287 0:55 / /tmp rw,nosuid,nodev,relatime - tmpfs tmpfs rw,mode=755,uid=1000,gid=1000"
+    ],
+    "root_tmp_files": {
+      "dsh03b-dsh03b-20261109-145405-59568077.txt": {
+        "size": 32,
+        "content_head": "dsh03b-20261109-145405-59568077\n"
+      }
+    },
+    "cmd_head": "bash -c MARK='dsh03b-20261109-145405-59568077'; F=/tmp/dsh03b-$MARK.txt; echo \"$MARK\" > \"$F\"; echo HOST_PID=$$; echo NS_MNT=$(readlink /proc/self/ns/mnt 2>/dev/null || echo NA); echo TMPDIR_VAL=${TMPDIR:-UNSET}; echo ID=$(id); echo DF_TMP; df -h /tmp 2>&1 | sed -n '1,3p'; echo MOUNTINFO_TMP; awk '$5==\"/tmp\" || $5 ~ /^\\/tmp\\// {print}' /proc/self/mountinfo 2>/dev/null || true; echo LS; ls -la \"$F\";",
+    "environ_name_count": 78
+  },
+  {
+    "t": 12.258,
+    "pid": 155499,
+    "ppid": 155498,
+    "ns_mnt": "mnt:[4026532337]",
+    "ns_mnt_same_as_host": false,
+    "mountinfo_tmp_lines": [
+      "315 287 0:55 / /tmp rw,nosuid,nodev,relatime - tmpfs tmpfs rw,mode=755,uid=1000,gid=1000"
+    ],
+    "root_tmp_files": {
+      "dsh03b-dsh03b-20261109-145405-59568077.txt": {
+        "size": 32,
+        "content_head": "dsh03b-20261109-145405-59568077\n"
+      }
+    },
+    "cmd_head": "bwrap --ro-bind / / --dev /dev --unshare-pid --proc /proc --die-with-parent --tmpfs /tmp --bind /workspace/<evidence-root>/... /workspace/<evidence-root>/... -- bash -c MARK='dsh03b-20261109-145405-59568077'; F=/tmp/dsh03b-$MARK.txt; echo \"$MARK\" > \"$F\"; echo HOST_PID=$$; echo NS_MNT=$(readlink /proc/self/ns/mnt 2>/dev/null || echo NA); echo TMPDIR_VAL=${TMPDIR:-UNSET}; echo ID=$(id); echo DF_TMP;",
+    "environ_name_count": 78
+  },
+  {
+    "t": 12.258,
+    "pid": 155500,
+    "ppid": 155499,
+    "ns_mnt": "mnt:[4026532337]",
+    "ns_mnt_same_as_host": false,
+    "mountinfo_tmp_lines": [
+      "315 287 0:55 / /tmp rw,nosuid,nodev,relatime - tmpfs tmpfs rw,mode=755,uid=1000,gid=1000"
+    ],
+    "root_tmp_files": {
+      "dsh03b-dsh03b-20261109-145405-59568077.txt": {
+        "size": 32,
+        "content_head": "dsh03b-20261109-145405-59568077\n"
+      }
+    },
+    "cmd_head": "bash -c MARK='dsh03b-20261109-145405-59568077'; F=/tmp/dsh03b-$MARK.txt; echo \"$MARK\" > \"$F\"; echo HOST_PID=$$; echo NS_MNT=$(readlink /proc/self/ns/mnt 2>/dev/null || echo NA); echo TMPDIR_VAL=${TMPDIR:-UNSET}; echo ID=$(id); echo DF_TMP; df -h /tmp 2>&1 | sed -n '1,3p'; echo MOUNTINFO_TMP; awk '$5==\"/tmp\" || $5 ~ /^\\/tmp\\// {print}' /proc/self/mountinfo 2>/dev/null || true; echo LS; ls -la \"$F\";",
+    "environ_name_count": 78
+  },
+  {
+    "t": 12.512,
+    "pid": 155499,
+    "ppid": 155498,
+    "ns_mnt": "mnt:[4026532337]",
+    "ns_mnt_same_as_host": false,
+    "mountinfo_tmp_lines": [
+      "315 287 0:55 / /tmp rw,nosuid,nodev,relatime - tmpfs tmpfs rw,mode=755,uid=1000,gid=1000"
+    ],
+    "root_tmp_files": {
+      "dsh03b-dsh03b-20261109-145405-59568077.txt": {
+        "size": 32,
+        "content_head": "dsh03b-20261109-145405-59568077\n"
+      }
+    },
+    "cmd_head": "bwrap --ro-bind / / --dev /dev --unshare-pid --proc /proc --die-with-parent --tmpfs /tmp --bind /workspace/<evidence-root>/... /workspace/<evidence-root>/... -- bash -c MARK='dsh03b-20261109-145405-59568077'; F=/tmp/dsh03b-$MARK.txt; echo \"$MARK\" > \"$F\"; echo HOST_PID=$$; echo NS_MNT=$(readlink /proc/self/ns/mnt 2>/dev/null || echo NA); echo TMPDIR_VAL=${TMPDIR:-UNSET}; echo ID=$(id); echo DF_TMP;",
+    "environ_name_count": 78
+  },
+  {
+    "t": 12.512,
+    "pid": 155500,
+    "ppid": 155499,
+    "ns_mnt": "mnt:[4026532337]",
+    "ns_mnt_same_as_host": false,
+    "mountinfo_tmp_lines": [
+      "315 287 0:55 / /tmp rw,nosuid,nodev,relatime - tmpfs tmpfs rw,mode=755,uid=1000,gid=1000"
+    ],
+    "root_tmp_files": {
+      "dsh03b-dsh03b-20261109-145405-59568077.txt": {
+        "size": 32,
+        "content_head": "dsh03b-20261109-145405-59568077\n"
+      }
+    },
+    "cmd_head": "bash -c MARK='dsh03b-20261109-145405-59568077'; F=/tmp/dsh03b-$MARK.txt; echo \"$MARK\" > \"$F\"; echo HOST_PID=$$; echo NS_MNT=$(readlink /proc/self/ns/mnt 2>/dev/null || echo NA); echo TMPDIR_VAL=${TMPDIR:-UNSET}; echo ID=$(id); echo DF_TMP; df -h /tmp 2>&1 | sed -n '1,3p'; echo MOUNTINFO_TMP; awk '$5==\"/tmp\" || $5 ~ /^\\/tmp\\// {print}' /proc/self/mountinfo 2>/dev/null || true; echo LS; ls -la \"$F\";",
+    "environ_name_count": 78
+  },
+  {
+    "t": 12.767,
+    "pid": 155499,
+    "ppid": 155498,
+    "ns_mnt": "mnt:[4026532337]",
+    "ns_mnt_same_as_host": false,
+    "mountinfo_tmp_lines": [
+      "315 287 0:55 / /tmp rw,nosuid,nodev,relatime - tmpfs tmpfs rw,mode=755,uid=1000,gid=1000"
+    ],
+    "root_tmp_files": {
+      "dsh03b-dsh03b-20261109-145405-59568077.txt": {
+        "size": 32,
+        "content_head": "dsh03b-20261109-145405-59568077\n"
+      }
+    },
+    "cmd_head": "bwrap --ro-bind / / --dev /dev --unshare-pid --proc /proc --die-with-parent --tmpfs /tmp --bind /workspace/<evidence-root>/... /workspace/<evidence-root>/... -- bash -c MARK='dsh03b-20261109-145405-59568077'; F=/tmp/dsh03b-$MARK.txt; echo \"$MARK\" > \"$F\"; echo HOST_PID=$$; echo NS_MNT=$(readlink /proc/self/ns/mnt 2>/dev/null || echo NA); echo TMPDIR_VAL=${TMPDIR:-UNSET}; echo ID=$(id); echo DF_TMP;",
+    "environ_name_count": 78
+  },
+  {
+    "t": 12.767,
+    "pid": 155500,
+    "ppid": 155499,
+    "ns_mnt": "mnt:[4026532337]",
+    "ns_mnt_same_as_host": false,
+    "mountinfo_tmp_lines": [
+      "315 287 0:55 / /tmp rw,nosuid,nodev,relatime - tmpfs tmpfs rw,mode=755,uid=1000,gid=1000"
+    ],
+    "root_tmp_files": {
+      "dsh03b-dsh03b-20261109-145405-59568077.txt": {
+        "size": 32,
+        "content_head": "dsh03b-20261109-145405-59568077\n"
+      }
+    },
+    "cmd_head": "bash -c MARK='dsh03b-20261109-145405-59568077'; F=/tmp/dsh03b-$MARK.txt; echo \"$MARK\" > \"$F\"; echo HOST_PID=$$; echo NS_MNT=$(readlink /proc/self/ns/mnt 2>/dev/null || echo NA); echo TMPDIR_VAL=${TMPDIR:-UNSET}; echo ID=$(id); echo DF_TMP; df -h /tmp 2>&1 | sed -n '1,3p'; echo MOUNTINFO_TMP; awk '$5==\"/tmp\" || $5 ~ /^\\/tmp\\// {print}' /proc/self/mountinfo 2>/dev/null || true; echo LS; ls -la \"$F\";",
+    "environ_name_count": 78
+  },
+  {
+    "t": 13.022,
+    "pid": 155499,
+    "ppid": 155498,
+    "ns_mnt": "mnt:[4026532337]",
+    "ns_mnt_same_as_host": false,
+    "mountinfo_tmp_lines": [
+      "315 287 0:55 / /tmp rw,nosuid,nodev,relatime - tmpfs tmpfs rw,mode=755,uid=1000,gid=1000"
+    ],
+    "root_tmp_files": {
+      "dsh03b-dsh03b-20261109-145405-59568077.txt": {
+        "size": 32,
+        "content_head": "dsh03b-20261109-145405-59568077\n"
+      }
+    },
+    "cmd_head": "bwrap --ro-bind / / --dev /dev --unshare-pid --proc /proc --die-with-parent --tmpfs /tmp --bind /workspace/<evidence-root>/... /workspace/<evidence-root>/... -- bash -c MARK='dsh03b-20261109-145405-59568077'; F=/tmp/dsh03b-$MARK.txt; echo \"$MARK\" > \"$F\"; echo HOST_PID=$$; echo NS_MNT=$(readlink /proc/self/ns/mnt 2>/dev/null || echo NA); echo TMPDIR_VAL=${TMPDIR:-UNSET}; echo ID=$(id); echo DF_TMP;",
+    "environ_name_count": 78
+  },
+  {
+    "t": 13.022,
+    "pid": 155500,
+    "ppid": 155499,
+    "ns_mnt": "mnt:[4026532337]",
+    "ns_mnt_same_as_host": false,
+    "mountinfo_tmp_lines": [
+      "315 287 0:55 / /tmp rw,nosuid,nodev,relatime - tmpfs tmpfs rw,mode=755,uid=1000,gid=1000"
+    ],
+    "root_tmp_files": {
+      "dsh03b-dsh03b-20261109-145405-59568077.txt": {
+        "size": 32,
+        "content_head": "dsh03b-20261109-145405-59568077\n"
+      }
+    },
+    "cmd_head": "bash -c MARK='dsh03b-20261109-145405-59568077'; F=/tmp/dsh03b-$MARK.txt; echo \"$MARK\" > \"$F\"; echo HOST_PID=$$; echo NS_MNT=$(readlink /proc/self/ns/mnt 2>/dev/null || echo NA); echo TMPDIR_VAL=${TMPDIR:-UNSET}; echo ID=$(id); echo DF_TMP; df -h /tmp 2>&1 | sed -n '1,3p'; echo MOUNTINFO_TMP; awk '$5==\"/tmp\" || $5 ~ /^\\/tmp\\// {print}' /proc/self/mountinfo 2>/dev/null || true; echo LS; ls -la \"$F\";",
+    "environ_name_count": 78
+  },
+  {
+    "t": 13.277,
+    "pid": 155499,
+    "ppid": 155498,
+    "ns_mnt": "mnt:[4026532337]",
+    "ns_mnt_same_as_host": false,
+    "mountinfo_tmp_lines": [
+      "315 287 0:55 / /tmp rw,nosuid,nodev,relatime - tmpfs tmpfs rw,mode=755,uid=1000,gid=1000"
+    ],
+    "root_tmp_files": {
+      "dsh03b-dsh03b-20261109-145405-59568077.txt": {
+        "size": 32,
+        "content_head": "dsh03b-20261109-145405-59568077\n"
+      }
+    },
+    "cmd_head": "bwrap --ro-bind / / --dev /dev --unshare-pid --proc /proc --die-with-parent --tmpfs /tmp --bind /workspace/<evidence-root>/... /workspace/<evidence-root>/... -- bash -c MARK='dsh03b-20261109-145405-59568077'; F=/tmp/dsh03b-$MARK.txt; echo \"$MARK\" > \"$F\"; echo HOST_PID=$$; echo NS_MNT=$(readlink /proc/self/ns/mnt 2>/dev/null || echo NA); echo TMPDIR_VAL=${TMPDIR:-UNSET}; echo ID=$(id); echo DF_TMP;",
+    "environ_name_count": 78
+  },
+  {
+    "t": 13.277,
+    "pid": 155500,
+    "ppid": 155499,
+    "ns_mnt": "mnt:[4026532337]",
+    "ns_mnt_same_as_host": false,
+    "mountinfo_tmp_lines": [
+      "315 287 0:55 / /tmp rw,nosuid,nodev,relatime - tmpfs tmpfs rw,mode=755,uid=1000,gid=1000"
+    ],
+    "root_tmp_files": {
+      "dsh03b-dsh03b-20261109-145405-59568077.txt": {
+        "size": 32,
+        "content_head": "dsh03b-20261109-145405-59568077\n"
+      }
+    },
+    "cmd_head": "bash -c MARK='dsh03b-20261109-145405-59568077'; F=/tmp/dsh03b-$MARK.txt; echo \"$MARK\" > \"$F\"; echo HOST_PID=$$; echo NS_MNT=$(readlink /proc/self/ns/mnt 2>/dev/null || echo NA); echo TMPDIR_VAL=${TMPDIR:-UNSET}; echo ID=$(id); echo DF_TMP; df -h /tmp 2>&1 | sed -n '1,3p'; echo MOUNTINFO_TMP; awk '$5==\"/tmp\" || $5 ~ /^\\/tmp\\// {print}' /proc/self/mountinfo 2>/dev/null || true; echo LS; ls -la \"$F\";",
+    "environ_name_count": 78
+  }
+]

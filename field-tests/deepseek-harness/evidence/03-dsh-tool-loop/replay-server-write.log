@@ -1,0 +1,4 @@
+anthropic_replay on 127.0.0.1:19001 out=/workspace/fourday-20261109/deepseek-harness/repo/evidence/03-dsh-tool-loop/captured-write tool=write
+[replay] POST /v1/messages "POST /v1/messages HTTP/1.1" 200 -
+[replay] POST /v1/messages "POST /v1/messages HTTP/1.1" 200 -
+[replay] POST /v1/messages "POST /v1/messages HTTP/1.1" 200 -

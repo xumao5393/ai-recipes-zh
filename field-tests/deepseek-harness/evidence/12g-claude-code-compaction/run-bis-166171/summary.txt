@@ -1,0 +1,1 @@
+tag=bis-166171 steps=3 bytes=2000 pt=1000,166171 PT_AFTER=30000 CT= MODEL=deepseek-v4-flash EXTRA_ENV= exit=0 elapsed=0.474s

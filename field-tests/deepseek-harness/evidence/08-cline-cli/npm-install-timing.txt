@@ -1,0 +1,21 @@
+cmd: npm i ./cline-3.0.74.tgz --prefer-offline --no-audit --no-fund
+cwd: /tmp/cline-install-timing
+date: Mon, 09 Nov 2026 15:27:49 -0500
+n=1 note: bash TIMEFORMAT real/user/sys; prefer-offline from local npm cache
+npm warn deprecated node-domexception@1.0.0: Use your platform's native DOMException instead
+npm warn deprecated @opentelemetry/sdk-trace-base@2.6.1: Use @opentelemetry/sdk-trace package
+npm warn deprecated @opentelemetry/sdk-trace-base@2.6.1: Use @opentelemetry/sdk-trace package
+
+added 321 packages in 4s
+npm warn install-scripts 2 packages have install scripts not yet covered by allowScripts:
+npm warn install-scripts   protobufjs@7.6.6 (postinstall: node scripts/postinstall)
+npm warn install-scripts   cline@3.0.74 (postinstall: node ./postinstall.mjs || true)
+npm warn install-scripts
+npm warn install-scripts Run `npm install-scripts ls` to review, or `npm install-scripts approve <pkg>` to allow.
+real 4.301
+user 4.598
+sys 3.333
+npm_exit=0
+--- du ---
+345897572	node_modules
+416M	node_modules

@@ -1,0 +1,4 @@
+{
+ "kind": "final",
+ "cmd": "curl -sS -m 2 http://127.0.0.1:19011/ || true"
+}

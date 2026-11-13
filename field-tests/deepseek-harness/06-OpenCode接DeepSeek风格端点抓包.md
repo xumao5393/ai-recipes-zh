@@ -27,7 +27,7 @@
 6. **遥测**：抓包只覆盖 `baseURL` 上的模型请求；是否另有 OTLP/分析上报 **未测**。请求头里的 `traceparent` 表明具备分布式追踪上下文，不等于已外发。
 7. 无 dsh 的 `dsh_session_log` / `dsh_plugin_packages` 顶层字段。有 `stream_options`；标题请求带 `thinking`。
 
-保存时对 session/project/trace 头与工作区绝对路径做了打码（见 `CORRECTIONS.md`）。LOG.md（14:47 EST）曾记 **system_chars=8,799**（system-role join）；**仅有记录、无原件可复核**。当前 internal-archive / #10 表为 **8,697**（归档前已做路径打码的版本）。差异**推测**来自路径打码，**无未打码原件可复核**。
+保存时对 session/project/trace 头与工作区绝对路径做了打码（见 `CORRECTIONS.md`（更正记录，暂未入库））。LOG.md（14:47 EST）曾记 **system_chars=8,799**（system-role join）；**仅有记录、无原件可复核**。当前 internal-archive / #10 表为 **8,697**（归档前已做路径打码的版本）。差异**推测**来自路径打码，**无未打码原件可复核**。
 
 ## 绕法 / 失败
 - 配置里写 `deepseek-chat` 时，`opencode models` 未列出该 ID；改用列表中的 `deepseek/deepseek-flash`。

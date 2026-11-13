@@ -1,0 +1,17 @@
+# MASKING · 08-cline-cli
+
+时区：America/New_York（EST）。规则：Kumo — 别家产品的 system prompt / 工具定义原文一律不进 repo。
+
+## 做了什么
+- 原件：`deepseek-harness/internal-archive/08-cline-cli/req-01.raw.json`（专题根下、repo 外；不同步公开仓库）。
+- repo 内 `capture-sayhi-openai-compatible/req-01.summary.json`：
+  - system → `{length, sha256, first_line, _masked}`（保留 first_line）
+  - `tools[]` → 每项 `{name, length, sha256, _masked}`（无 first_line；第10轮）
+  - `_tools_meta`：`tools_n` / `tool_names` / `tools_json_compact_chars`（紧凑 = `json.dumps(..., separators=(',',':'))`，与 #10 `recalc_compare.py` 同口径）/ `tools_json_spaced_chars`（原 tools_summary.length=18174）/ team 计数
+- `tools-recalc.json`：在原件上重算的脚本输出（含 compact/spaced 对照）。
+- Authorization 头已 `<redacted>`；假 key 值不写入 key-storage-check（只留 length + sha256 + equals_test_fake_key）。
+- 第10轮：`strip_tool_first_line.py` 的 DIRS 已加入 `08-cline-cli`。
+
+## 开源对应源码链接
+npm 包 `cline@3.0.74`（CLI）；内置 deepseek 提供方片段见 `source-deepseek-snippet.txt`。
+- 2026-11-09 15:32 EST：key-storage-check.txt 中 ls -l 的用户名/组名 box 改为 <user>，删去注释「# box path; article uses <user> if home」；原件在 internal-archive/08-cline-cli/key-storage-check.txt。

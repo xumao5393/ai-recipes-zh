@@ -1,0 +1,16 @@
+# MASKING · 03b-tmp-write-where
+
+时区：America/New_York。第8轮补打码。
+
+## 做了什么
+- 原件移到：`deepseek-harness/internal-archive/03b-tmp-write-where/captured/`（repo 外，不同步）。
+- repo 内 `req-02`/`req-03`/`req-04`/`req-05`：顶层 system、tools、dsh_session_log 内嵌 system/tools、Current runtime context 等改为 `{length,sha256,first_line}`。
+- `req-01` 为 curl 自测（见 NOTE.md），无长 system。
+- 本机路径 → `<REDACTED_PATH>`。
+
+## 说明
+internal-archive 为本地内部归档，不随公开仓库发布。
+
+- 2026-11-09 15:16 EST 追加：run.stdout、run.events-summary.json、tool-results.txt、captured/req-04.json、req-05.json 里的本机用户名 (box) 改成 (<user>)，uid/gid 数字保留。原件已复制到 internal-archive/03b-tmp-write-where/，不随仓库发布。
+
+- 2026-11-09 15:20 EST 追加（第9轮）：tools[] 每项摘要删掉 first_line（它含工具描述原文和 input_schema 开头），只留 {name, length, sha256}；system 的 first_line 保留。脚本 evidence/strip_tool_first_line.py。

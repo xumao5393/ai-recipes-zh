@@ -1,0 +1,1 @@
+ls: cannot access '/tmp/dsh-bash-outside.txt': No such file or directory

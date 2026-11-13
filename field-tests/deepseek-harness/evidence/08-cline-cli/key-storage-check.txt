@@ -1,0 +1,21 @@
+key-storage-check (r10 remake)
+path_redacted: /tmp/clinehome/data/settings/providers.json
+ls_-l: -rw------- 1 <user> <user> 604 Nov  9 15:07 /tmp/clinehome/data/settings/providers.json
+mode_octal: 600
+uid: 1000 gid: 1000
+note: value itself and the fake key used for the test are NOT stored here
+fake_key_len_only: 18
+fake_key_sha256: 92f18ec82164e3aee56267c9615a7a1b893fa573199a0954ed301b02974495b2
+fields_string_in_file:
+  path=$.lastUsedProvider length=17 sha256=7e341752813dcf844ffc5197123e0f41f6cfe860a8ea52cb8f92749667afc142 equals_test_fake_key=false
+  path=$.providers.deepseek.settings.provider length=8 sha256=6f7ac1823da81d2e52d1a1549ee69c85bbf8bb56d06682849e7c09da2785ce3b equals_test_fake_key=false
+  path=$.providers.deepseek.settings.model length=17 sha256=f61ff5cf8e1cc88da6944d6bcd3e2e7da5ff27dd3288a8781908018cb8240cd6 equals_test_fake_key=false
+  path=$.providers.deepseek.updatedAt length=24 sha256=7ea7d99dd146684f35eabcde4b739e28ec080e1a207f2c3707c7fdab466c45ae equals_test_fake_key=false
+  path=$.providers.deepseek.tokenSource length=6 sha256=36bde66f289a35683683b041c6d8f418a5f36607b547da25d00ad55891e80b88 equals_test_fake_key=false
+  path=$.providers.openai-compatible.settings.provider length=17 sha256=7e341752813dcf844ffc5197123e0f41f6cfe860a8ea52cb8f92749667afc142 equals_test_fake_key=false
+  path=$.providers.openai-compatible.settings.apiKey length=18 sha256=92f18ec82164e3aee56267c9615a7a1b893fa573199a0954ed301b02974495b2 equals_test_fake_key=true
+  path=$.providers.openai-compatible.settings.model length=17 sha256=f61ff5cf8e1cc88da6944d6bcd3e2e7da5ff27dd3288a8781908018cb8240cd6 equals_test_fake_key=false
+  path=$.providers.openai-compatible.settings.baseUrl length=25 sha256=7a8e4a3097a53827dad75327d27339d8ef8426d89df1d9f00031ea34baa7def3 equals_test_fake_key=false
+  path=$.providers.openai-compatible.updatedAt length=24 sha256=245dbdf964a7f45fed5da0eff0e4818d0f2906ef0384cc926594a6b6aedbae23 equals_test_fake_key=false
+  path=$.providers.openai-compatible.tokenSource length=6 sha256=36bde66f289a35683683b041c6d8f418a5f36607b547da25d00ad55891e80b88 equals_test_fake_key=false
+any_field_equals_test_fake_key: true

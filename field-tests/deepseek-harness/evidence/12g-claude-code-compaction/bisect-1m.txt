@@ -1,0 +1,4 @@
+maxctx (CLAUDE_CODE_MAX_CONTEXT_TOKENS=1000000 deepseek-v4-flash) BYTES=2000 no-compact max=966300 compact min=966301
+sfx (X_NONE=1 deepseek-v4-flash[1m]) BYTES=2000 no-compact max=999999 compact min=1000000
+pct50 (CLAUDE_AUTOCOMPACT_PCT_OVERRIDE=50 deepseek-v4-flash) BYTES=2000 no-compact max=89300 compact min=89301
+# 更正 2026-11-10 04:24 EST（实测员）：上面第 2 行不对，原行保留不改。run-sfx-hi-1000000（[1m]，回报 1,000,000）实际压缩 0 次；run-sfx-hi-1050000/1200000/2000000 同组也是不压缩。sfx 这组在测到的范围内都没压缩，不存在 compact min=1000000 这个边界。

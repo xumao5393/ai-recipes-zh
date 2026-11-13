@@ -1,0 +1,26 @@
+{
+ "i": 2,
+ "ts": 1794287350.0343058,
+ "path": "/v1/messages",
+ "body_len": 33097,
+ "kind": "title",
+ "n_messages": 1,
+ "tool_results_in_history": 0,
+ "roles": [
+  "user"
+ ],
+ "tools_n": 0,
+ "max_tokens": 4096,
+ "has_checkpoint": false,
+ "last_user_head": "Generate the session title from this JSON array of human messages:\n[{\"seq\":8,\"text\":\"run the steps\"}]",
+ "top_keys": [
+  "dsh_plugin_packages",
+  "dsh_session_log",
+  "max_tokens",
+  "messages",
+  "model",
+  "stream",
+  "system",
+  "thinking"
+ ]
+}

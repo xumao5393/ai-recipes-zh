@@ -1,0 +1,29 @@
+{
+ "ts": 1794252804.8087304,
+ "method": "POST",
+ "path": "/v1/messages",
+ "headers": {
+  "Host": "127.0.0.1:19001",
+  "User-Agent": "curl/8.14.1",
+  "Accept": "*/*",
+  "content-type": "application/json",
+  "Content-Length": "113"
+ },
+ "body_len": 113,
+ "body": {
+  "model": "x",
+  "stream": true,
+  "messages": [
+   {
+    "role": "user",
+    "content": "t"
+   }
+  ],
+  "tools": [
+   {
+    "name": "write"
+   }
+  ],
+  "max_tokens": 10
+ }
+}

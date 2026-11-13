@@ -1,0 +1,1 @@
+--: line 16: /workspace/fourday-20261109/deepseek-harness/sandbox-aider/.venv/bin/aider: No such file or directory

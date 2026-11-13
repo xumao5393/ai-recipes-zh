@@ -1,0 +1,11 @@
+# danger command probes 2026-11-09 America/New_York
+# each case n=1, local replay, permission-mode=workspace-write
+## F-rm-workspace
+exit=0 elapsed_s=1.873
+status=completed result="keep.txt\n[stderr]\nls: cannot access 'deleteme.txt': No such file or directory\n[exit code: 2]"
+## F-curl-local
+exit=0 elapsed_s=1.742
+status=completed result='event: message_start\ndata: {"type": "message_start", "message": {"id": "msg_1bbdcf118419", "type": "message", "role": "assistant", "content": [], "model": "deepseek-flash", "stop_reason": null, "stop_sequence": null, "usage": {"input_tokens": 12, "output_tokens": 1}}}\n\nevent: content_block_start\ndata: {"type": "content_block_start", "index": 0, "content_block": {"type": "text", "text": ""}}\n\nevent: content_block_delta\ndata: {"type": "content_block_delta", "index":
+## F-bash-write-outside
+exit=0 elapsed_s=1.658
+status=completed result='-rw-r--r-- 1 box box 13 Nov  9 14:45 /tmp/dsh-bash-outside.txt\n'

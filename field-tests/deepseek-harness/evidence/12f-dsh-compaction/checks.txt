@@ -1,0 +1,30 @@
+# scan: steps=1 bytes=9000; tool_result chars in req-003 (9003=intact, 5159=pruned head4096+marker+tail1024)
+s9k-700000 tool_result_chars [9003] ['exit=0', 'elapsed=1.535s']
+s9k-720000 tool_result_chars [9003] ['exit=0', 'elapsed=1.776s']
+s9k-724000 tool_result_chars [9003] ['exit=0', 'elapsed=1.726s']
+bis-724500 tool_result_chars [9003] ['exit=0', 'elapsed=1.847s']
+bis-724625 tool_result_chars [9003] ['exit=0', 'elapsed=1.753s']
+bis-724687 tool_result_chars [9003] ['exit=0', 'elapsed=1.871s']
+bis-724718 tool_result_chars [9003] ['exit=0', 'elapsed=1.771s']
+bis-724734 tool_result_chars [9003] ['exit=0', 'elapsed=1.64s']
+bis-724742 tool_result_chars [9003] ['exit=0', 'elapsed=1.679s']
+bis-724746 tool_result_chars [9003] ['exit=0', 'elapsed=1.727s']
+bis-724748 tool_result_chars [9003] ['exit=0', 'elapsed=1.667s']
+bis-724749 tool_result_chars [5159] ['exit=0', 'elapsed=1.741s']
+bis-724750 tool_result_chars [5159] ['exit=0', 'elapsed=1.725s']
+s9k-725000 tool_result_chars [5159] ['exit=0', 'elapsed=1.892s']
+s9k-726000 tool_result_chars [5159] ['exit=0', 'elapsed=1.722s']
+s9k-727000 tool_result_chars [5159] ['exit=0', 'elapsed=1.696s']
+s9k-730000 tool_result_chars [5159] ['exit=0', 'elapsed=1.752s']
+
+# big outputs: steps=10 bytes=200000; tool_result chars in final request
+big100k [49931, 49931, 49931, 49931, 49931, 49931, 49931, 49931, 49931, 49931] tag=big100k steps=10 bytes=200000 pt=100000 pt_after=none exit=0 elapsed=2.028s
+big800k [5159, 5159, 5159, 5159, 5159, 5159, 5159, 5159, 5159, 5159] tag=big800k steps=10 bytes=200000 pt=800000 pt_after=none exit=0 elapsed=2.345s
+
+# baseline small: pt100k / pt800k steps=3 bytes=2000 -> no compaction request
+pt100k tag=pt100k steps=3 bytes=2000 pt=100000 pt_after=none exit=0 elapsed=2.733s requests 5 compaction 0
+pt800k tag=pt800k steps=3 bytes=2000 pt=800000 pt_after=none exit=0 elapsed=1.731s requests 5 compaction 0
+real-after tag=real-after steps=70 bytes=8000 pt=800000 pt_after=30000 exit=0 elapsed=5.18s requests 74 compaction 2
+
+# threshold arithmetic: min(1048576*0.8, 1048576-256000-65536) = 727040
+# first pruned reported input 724749 + output 32 + tool_result estimate ceil(9003/4)+4+4 = 727040

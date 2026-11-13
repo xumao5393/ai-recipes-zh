@@ -1,0 +1,22 @@
+{
+ "method": "POST",
+ "path": "/v1/messages",
+ "headers": {
+  "Host": "127.0.0.1:19032",
+  "User-Agent": "curl/8.14.1",
+  "Accept": "*/*",
+  "content-type": "application/json",
+  "Content-Length": "73"
+ },
+ "body_len": 73,
+ "body": {
+  "model": "x",
+  "stream": true,
+  "messages": [
+   {
+    "role": "user",
+    "content": "ping"
+   }
+  ]
+ }
+}

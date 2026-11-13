@@ -1,0 +1,2 @@
+空目录：-P deepseek 运行时本地抓包服务未收到任何请求。
+推断（依据：run-sayhi-20261109-1507.txt 报错文本与 curl-real-endpoint-nokey.txt 无 key 直连官方对照一致）请求打到了真实 api.deepseek.com；本地无该次请求体抓包。第10轮起不再向真实端点复现。

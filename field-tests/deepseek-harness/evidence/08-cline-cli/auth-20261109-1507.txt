@@ -1,0 +1,2 @@
+[31merror:[0m base URL is only supported for OpenAI and OpenAI-compatible providers
+auth_exit=1

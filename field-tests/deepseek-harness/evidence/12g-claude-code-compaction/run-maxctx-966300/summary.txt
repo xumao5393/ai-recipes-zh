@@ -1,0 +1,1 @@
+tag=maxctx-966300 steps=3 bytes=2000 pt=1000,966300 PT_AFTER=30000 CT= MODEL=deepseek-v4-flash EXTRA_ENV=CLAUDE_CODE_MAX_CONTEXT_TOKENS=1000000 exit=0 elapsed=0.589s

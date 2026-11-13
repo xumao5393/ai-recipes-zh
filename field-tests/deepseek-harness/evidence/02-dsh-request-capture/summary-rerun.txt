@@ -1,0 +1,16 @@
+## captured — original "default" (actually had DSH_TELEMETRY_MODE=off)
+captured/req-01.json //v1/messages body_bytes= 54849 model= deepseek-flash max_tokens= 256000 thinking= {'type': 'enabled'} system_chars= 2591 tools= 24 tools_json_chars= 19787 session_log_chars= 27188 plugin_pkgs_chars= 6144
+captured/req-02.json //v1/messages body_bytes= 32923 model= deepseek-flash max_tokens= 4096 thinking= {'type': 'disabled'} system_chars= 481 tools= 0 tools_json_chars= 2 session_log_chars= 27188 plugin_pkgs_chars= 6144
+
+## captured-patched — original patched
+captured-patched/req-01.json //v1/messages body_bytes= 22680 model= deepseek-flash max_tokens= 256000 thinking= {'type': 'enabled'} system_chars= 2591 tools= 24 tools_json_chars= 19787 session_log_chars= 0 plugin_pkgs_chars= 0
+captured-patched/req-02.json //v1/messages body_bytes= 754 model= deepseek-flash max_tokens= 4096 thinking= {'type': 'disabled'} system_chars= 481 tools= 0 tools_json_chars= 2 session_log_chars= 0 plugin_pkgs_chars= 0
+
+## captured-true-default — rerun true default (unset DSH_TELEMETRY_MODE)
+captured-true-default/req-01.json //v1/messages body_bytes= 54923 model= deepseek-flash max_tokens= 256000 thinking= {'type': 'enabled'} system_chars= 2591 tools= 24 tools_json_chars= 19787 session_log_chars= 27188 plugin_pkgs_chars= 6222
+captured-true-default/req-02.json //v1/messages body_bytes= 32997 model= deepseek-flash max_tokens= 4096 thinking= {'type': 'disabled'} system_chars= 481 tools= 0 tools_json_chars= 2 session_log_chars= 27188 plugin_pkgs_chars= 6222
+
+## captured-telemetry-off-rerun — rerun with DSH_TELEMETRY_MODE=off
+captured-telemetry-off-rerun/req-01.json //v1/messages body_bytes= 54849 model= deepseek-flash max_tokens= 256000 thinking= {'type': 'enabled'} system_chars= 2591 tools= 24 tools_json_chars= 19787 session_log_chars= 27188 plugin_pkgs_chars= 6144
+captured-telemetry-off-rerun/req-02.json //v1/messages body_bytes= 32923 model= deepseek-flash max_tokens= 4096 thinking= {'type': 'disabled'} system_chars= 481 tools= 0 tools_json_chars= 2 session_log_chars= 27188 plugin_pkgs_chars= 6144
+

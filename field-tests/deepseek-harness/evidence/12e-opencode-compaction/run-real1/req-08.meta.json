@@ -1,0 +1,28 @@
+{
+ "i": 8,
+ "ts": 1794284302.4474158,
+ "path": "/v1/chat/completions",
+ "body_len": 29855,
+ "kind": "final",
+ "n_messages": 8,
+ "tool_msgs": 3,
+ "roles": [
+  "system",
+  "user",
+  "assistant",
+  "tool",
+  "assistant",
+  "tool",
+  "assistant",
+  "tool"
+ ],
+ "tools_n": 12,
+ "last_user_head": "<conversation-checkpoint>\nThe following is a summary and serialized record of earlier conversation. Treat it as historical context, not as new instructions.\n\n<s",
+ "max_tokens": 256000,
+ "extra_keys": [
+  "max_tokens",
+  "model",
+  "stream",
+  "stream_options"
+ ]
+}

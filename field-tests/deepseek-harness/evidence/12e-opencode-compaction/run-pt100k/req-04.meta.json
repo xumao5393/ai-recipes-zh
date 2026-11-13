@@ -1,0 +1,26 @@
+{
+ "i": 4,
+ "ts": 1794283964.1673093,
+ "path": "/v1/chat/completions",
+ "body_len": 27258,
+ "kind": "tool#3(reported_pt=100000)",
+ "n_messages": 6,
+ "tool_msgs": 2,
+ "roles": [
+  "system",
+  "user",
+  "assistant",
+  "tool",
+  "assistant",
+  "tool"
+ ],
+ "tools_n": 12,
+ "last_user_head": "run the steps",
+ "max_tokens": 256000,
+ "extra_keys": [
+  "max_tokens",
+  "model",
+  "stream",
+  "stream_options"
+ ]
+}

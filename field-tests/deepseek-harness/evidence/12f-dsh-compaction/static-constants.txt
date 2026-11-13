@@ -1,0 +1,31 @@
+# static excerpts from installed dsh 0.2.2-rc.1 packages (read-only grep, not runtime behavior)
+## dsh-compaction-basic/lib/index.js (0.2.2-rc.1)
+L15: const DEFAULT_THRESHOLD_RATIO = .8;
+L17: const DEFAULT_RETAIN_RATIO = .16;
+L63: const headroomTokens = config.headroomTokens ?? 65536;
+L64: const maxTokens = config.maxTokens ?? headroomTokens;
+L66: const thresholdRatio = config.thresholdRatio ?? DEFAULT_THRESHOLD_RATIO;
+L82: compactionRetries: config.compactionRetries ?? 1,
+L132: const thresholdTokens = Math.floor(Math.min(contextWindow * policy.thresholdRatio, pressureBudgetTokens));
+L133: const retainTokens = policy.retainTokens === void 0 ? Math.floor(messageBudgetTokens * policy.retainRatio) : policy.retainTokens;
+L758: return header.config.maxTokens ?? defaultMaxTokens ?? 0;
+L960: if (measurement.totalTokens < spec.thresholdTokens) return null;
+L969: if (range === null) {
+L977: throw new Error(`compaction still above threshold after ${spec.compactionRetries + 1} compaction attempts (${measurement.totalTokens} estimated tokens >= threshold ${spec.thresholdTokens})`);
+## dsh-compaction-tool-result-pruner/lib/index.js (0.2.2-rc.1)
+L8: const PRUNE_MARKER = "\n\n[... tool result middle pruned ...]\n\n";
+L11: thresholdChars: 8192,
+L12: headChars: 4096,
+L13: tailChars: 1024
+## dsh-token-meter/lib/index.js (0.2.2-rc.1)
+L16: const CHARS_PER_TOKEN = 4;
+L18: const BLOCK_OVERHEAD = 4;
+L65: return Math.ceil(characters / CHARS_PER_TOKEN) + 4;
+L75: return estimateContent(message.content) + 4;
+L781: return usage.inputTokens + (usage.cacheReadTokens ?? 0) + (usage.cacheWriteTokens ?? 0) + usage.outputTokens;
+L859: baseline = usage !== null && usageTokens(usage) >= estimatedAnchorTokens ? {
+## dsh-llm-deepseek/lib/index.js (0.2.2-rc.1)
+L17: const OFFICIAL_CONTEXT_WINDOW = 1048576;
+L38: const DEFAULT_CONTEXT_WINDOW = 1e6;
+L40: const DEFAULT_MAX_TOKENS = 256e3;
+L450: maxTokens: config.maxTokens ?? 256e3,

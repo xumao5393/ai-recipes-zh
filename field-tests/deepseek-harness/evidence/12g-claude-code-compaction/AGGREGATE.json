@@ -1,0 +1,500 @@
+[
+ {
+  "run": "run-bis-165000",
+  "summary": "tag=bis-165000 steps=3 bytes=2000 pt=1000,165000 PT_AFTER=30000 CT= MODEL=deepseek-v4-flash EXTRA_ENV= exit=0 elapsed=0.48s",
+  "requests": 4,
+  "kinds": {
+   "tool#1": 1,
+   "tool#2": 1,
+   "tool#3": 1,
+   "final": 1
+  },
+  "compaction": 0
+ },
+ {
+  "run": "run-bis-165937",
+  "summary": "tag=bis-165937 steps=3 bytes=2000 pt=1000,165937 PT_AFTER=30000 CT= MODEL=deepseek-v4-flash EXTRA_ENV= exit=0 elapsed=0.472s",
+  "requests": 4,
+  "kinds": {
+   "tool#1": 1,
+   "tool#2": 1,
+   "tool#3": 1,
+   "final": 1
+  },
+  "compaction": 0
+ },
+ {
+  "run": "run-bis-166171",
+  "summary": "tag=bis-166171 steps=3 bytes=2000 pt=1000,166171 PT_AFTER=30000 CT= MODEL=deepseek-v4-flash EXTRA_ENV= exit=0 elapsed=0.474s",
+  "requests": 4,
+  "kinds": {
+   "tool#1": 1,
+   "tool#2": 1,
+   "tool#3": 1,
+   "final": 1
+  },
+  "compaction": 0
+ },
+ {
+  "run": "run-bis-166288",
+  "summary": "tag=bis-166288 steps=3 bytes=2000 pt=1000,166288 PT_AFTER=30000 CT= MODEL=deepseek-v4-flash EXTRA_ENV= exit=0 elapsed=0.494s",
+  "requests": 4,
+  "kinds": {
+   "tool#1": 1,
+   "tool#2": 1,
+   "tool#3": 1,
+   "final": 1
+  },
+  "compaction": 0
+ },
+ {
+  "run": "run-bis-166295",
+  "summary": "tag=bis-166295 steps=3 bytes=2000 pt=1000,166295 PT_AFTER=30000 CT= MODEL=deepseek-v4-flash EXTRA_ENV= exit=0 elapsed=0.477s",
+  "requests": 4,
+  "kinds": {
+   "tool#1": 1,
+   "tool#2": 1,
+   "tool#3": 1,
+   "final": 1
+  },
+  "compaction": 0
+ },
+ {
+  "run": "run-bis-166298",
+  "summary": "tag=bis-166298 steps=3 bytes=2000 pt=1000,166298 PT_AFTER=30000 CT= MODEL=deepseek-v4-flash EXTRA_ENV= exit=0 elapsed=0.457s",
+  "requests": 4,
+  "kinds": {
+   "tool#1": 1,
+   "tool#2": 1,
+   "tool#3": 1,
+   "final": 1
+  },
+  "compaction": 0
+ },
+ {
+  "run": "run-bis-166300",
+  "summary": "tag=bis-166300 steps=3 bytes=2000 pt=1000,166300 PT_AFTER=30000 CT= MODEL=deepseek-v4-flash EXTRA_ENV= exit=0 elapsed=0.469s",
+  "requests": 4,
+  "kinds": {
+   "tool#1": 1,
+   "tool#2": 1,
+   "tool#3": 1,
+   "final": 1
+  },
+  "compaction": 0
+ },
+ {
+  "run": "run-bis-166301",
+  "summary": "tag=bis-166301 steps=3 bytes=2000 pt=1000,166301 PT_AFTER=30000 CT= MODEL=deepseek-v4-flash EXTRA_ENV= exit=0 elapsed=0.534s",
+  "requests": 6,
+  "kinds": {
+   "tool#1": 1,
+   "tool#2": 2,
+   "compaction": 1,
+   "tool#3": 1,
+   "final": 1
+  },
+  "compaction": 1
+ },
+ {
+  "run": "run-bis-166302",
+  "summary": "tag=bis-166302 steps=3 bytes=2000 pt=1000,166302 PT_AFTER=30000 CT= MODEL=deepseek-v4-flash EXTRA_ENV= exit=0 elapsed=0.533s",
+  "requests": 6,
+  "kinds": {
+   "tool#1": 1,
+   "tool#2": 2,
+   "compaction": 1,
+   "tool#3": 1,
+   "final": 1
+  },
+  "compaction": 1
+ },
+ {
+  "run": "run-bis-166317",
+  "summary": "tag=bis-166317 steps=3 bytes=2000 pt=1000,166317 PT_AFTER=30000 CT= MODEL=deepseek-v4-flash EXTRA_ENV= exit=0 elapsed=0.527s",
+  "requests": 6,
+  "kinds": {
+   "tool#1": 1,
+   "tool#2": 2,
+   "compaction": 1,
+   "tool#3": 1,
+   "final": 1
+  },
+  "compaction": 1
+ },
+ {
+  "run": "run-bis-166347",
+  "summary": "tag=bis-166347 steps=3 bytes=2000 pt=1000,166347 PT_AFTER=30000 CT= MODEL=deepseek-v4-flash EXTRA_ENV= exit=0 elapsed=0.524s",
+  "requests": 6,
+  "kinds": {
+   "tool#1": 1,
+   "tool#2": 2,
+   "compaction": 1,
+   "tool#3": 1,
+   "final": 1
+  },
+  "compaction": 1
+ },
+ {
+  "run": "run-bis-166406",
+  "summary": "tag=bis-166406 steps=3 bytes=2000 pt=1000,166406 PT_AFTER=30000 CT= MODEL=deepseek-v4-flash EXTRA_ENV= exit=0 elapsed=0.602s",
+  "requests": 6,
+  "kinds": {
+   "tool#1": 1,
+   "tool#2": 2,
+   "compaction": 1,
+   "tool#3": 1,
+   "final": 1
+  },
+  "compaction": 1
+ },
+ {
+  "run": "run-bis-166875",
+  "summary": "tag=bis-166875 steps=3 bytes=2000 pt=1000,166875 PT_AFTER=30000 CT= MODEL=deepseek-v4-flash EXTRA_ENV= exit=0 elapsed=0.591s",
+  "requests": 6,
+  "kinds": {
+   "tool#1": 1,
+   "tool#2": 2,
+   "compaction": 1,
+   "tool#3": 1,
+   "final": 1
+  },
+  "compaction": 1
+ },
+ {
+  "run": "run-bis-168750",
+  "summary": "tag=bis-168750 steps=3 bytes=2000 pt=1000,168750 PT_AFTER=30000 CT= MODEL=deepseek-v4-flash EXTRA_ENV= exit=0 elapsed=0.512s",
+  "requests": 6,
+  "kinds": {
+   "tool#1": 1,
+   "tool#2": 2,
+   "compaction": 1,
+   "tool#3": 1,
+   "final": 1
+  },
+  "compaction": 1
+ },
+ {
+  "run": "run-bis-172500",
+  "summary": "tag=bis-172500 steps=3 bytes=2000 pt=1000,172500 PT_AFTER=30000 CT= MODEL=deepseek-v4-flash EXTRA_ENV= exit=0 elapsed=0.531s",
+  "requests": 6,
+  "kinds": {
+   "tool#1": 1,
+   "tool#2": 2,
+   "compaction": 1,
+   "tool#3": 1,
+   "final": 1
+  },
+  "compaction": 1
+ },
+ {
+  "run": "run-hdr-plain",
+  "summary": "tag=hdr-plain steps=2 bytes=2000 pt=1000,300000 PT_AFTER=30000 CT= MODEL=deepseek-v4-flash EXTRA_ENV= exit=0 elapsed=0.477s",
+  "requests": 5,
+  "kinds": {
+   "tool#1": 1,
+   "tool#2": 2,
+   "compaction": 1,
+   "final": 1
+  },
+  "compaction": 1
+ },
+ {
+  "run": "run-hdr-sfx",
+  "summary": "tag=hdr-sfx steps=2 bytes=2000 pt=1000,2000000 PT_AFTER=30000 CT= MODEL=deepseek-v4-flash[1m] EXTRA_ENV= exit=0 elapsed=0.452s",
+  "requests": 3,
+  "kinds": {
+   "tool#1": 1,
+   "tool#2": 1,
+   "final": 1
+  },
+  "compaction": 0
+ },
+ {
+  "run": "run-maxctx-966300",
+  "summary": "tag=maxctx-966300 steps=3 bytes=2000 pt=1000,966300 PT_AFTER=30000 CT= MODEL=deepseek-v4-flash EXTRA_ENV=CLAUDE_CODE_MAX_CONTEXT_TOKENS=1000000 exit=0 elapsed=0.589s",
+  "requests": 4,
+  "kinds": {
+   "tool#1": 1,
+   "tool#2": 1,
+   "tool#3": 1,
+   "final": 1
+  },
+  "compaction": 0
+ },
+ {
+  "run": "run-maxctx-966301",
+  "summary": "tag=maxctx-966301 steps=3 bytes=2000 pt=1000,966301 PT_AFTER=30000 CT= MODEL=deepseek-v4-flash EXTRA_ENV=CLAUDE_CODE_MAX_CONTEXT_TOKENS=1000000 exit=0 elapsed=0.631s",
+  "requests": 6,
+  "kinds": {
+   "tool#1": 1,
+   "tool#2": 2,
+   "compaction": 1,
+   "tool#3": 1,
+   "final": 1
+  },
+  "compaction": 1
+ },
+ {
+  "run": "run-maxctx1m-300k",
+  "summary": "tag=maxctx1m-300k steps=3 bytes=2000 pt=1000,300000 PT_AFTER=30000 CT= MODEL=deepseek-v4-flash EXTRA_ENV=CLAUDE_CODE_MAX_CONTEXT_TOKENS=1000000 exit=0 elapsed=0.454s",
+  "requests": 4,
+  "kinds": {
+   "tool#1": 1,
+   "tool#2": 1,
+   "tool#3": 1,
+   "final": 1
+  },
+  "compaction": 0
+ },
+ {
+  "run": "run-noauto-300k",
+  "summary": "tag=noauto-300k steps=3 bytes=2000 pt=1000,300000 PT_AFTER=30000 CT= MODEL=deepseek-v4-flash EXTRA_ENV=DISABLE_AUTO_COMPACT=1 exit=1 elapsed=0.471s",
+  "requests": 2,
+  "kinds": {
+   "tool#1": 1,
+   "tool#2": 1
+  },
+  "compaction": 0
+ },
+ {
+  "run": "run-pct50-120k",
+  "summary": "tag=pct50-120k steps=3 bytes=2000 pt=1000,120000 PT_AFTER=30000 CT= MODEL=deepseek-v4-flash EXTRA_ENV=CLAUDE_AUTOCOMPACT_PCT_OVERRIDE=50 exit=0 elapsed=0.569s",
+  "requests": 6,
+  "kinds": {
+   "tool#1": 1,
+   "tool#2": 2,
+   "compaction": 1,
+   "tool#3": 1,
+   "final": 1
+  },
+  "compaction": 1
+ },
+ {
+  "run": "run-pct50-80k",
+  "summary": "tag=pct50-80k steps=3 bytes=2000 pt=1000,80000 PT_AFTER=30000 CT= MODEL=deepseek-v4-flash EXTRA_ENV=CLAUDE_AUTOCOMPACT_PCT_OVERRIDE=50 exit=0 elapsed=0.501s",
+  "requests": 4,
+  "kinds": {
+   "tool#1": 1,
+   "tool#2": 1,
+   "tool#3": 1,
+   "final": 1
+  },
+  "compaction": 0
+ },
+ {
+  "run": "run-pct50-89300",
+  "summary": "tag=pct50-89300 steps=3 bytes=2000 pt=1000,89300 PT_AFTER=30000 CT= MODEL=deepseek-v4-flash EXTRA_ENV=CLAUDE_AUTOCOMPACT_PCT_OVERRIDE=50 exit=0 elapsed=0.475s",
+  "requests": 4,
+  "kinds": {
+   "tool#1": 1,
+   "tool#2": 1,
+   "tool#3": 1,
+   "final": 1
+  },
+  "compaction": 0
+ },
+ {
+  "run": "run-pct50-89301",
+  "summary": "tag=pct50-89301 steps=3 bytes=2000 pt=1000,89301 PT_AFTER=30000 CT= MODEL=deepseek-v4-flash EXTRA_ENV=CLAUDE_AUTOCOMPACT_PCT_OVERRIDE=50 exit=0 elapsed=0.595s",
+  "requests": 6,
+  "kinds": {
+   "tool#1": 1,
+   "tool#2": 2,
+   "compaction": 1,
+   "tool#3": 1,
+   "final": 1
+  },
+  "compaction": 1
+ },
+ {
+  "run": "run-pt150k",
+  "summary": "tag=pt150k steps=4 bytes=2000 pt=1000,150000 PT_AFTER=30000 CT= MODEL=deepseek-v4-flash EXTRA_ENV= exit=0 elapsed=0.553s",
+  "requests": 5,
+  "kinds": {
+   "tool#1": 1,
+   "tool#2": 1,
+   "tool#3": 1,
+   "tool#4": 1,
+   "final": 1
+  },
+  "compaction": 0
+ },
+ {
+  "run": "run-pt180k",
+  "summary": "tag=pt180k steps=4 bytes=2000 pt=1000,180000 PT_AFTER=30000 CT= MODEL=deepseek-v4-flash EXTRA_ENV= exit=0 elapsed=0.572s",
+  "requests": 7,
+  "kinds": {
+   "tool#1": 1,
+   "tool#2": 2,
+   "compaction": 1,
+   "tool#3": 1,
+   "tool#4": 1,
+   "final": 1
+  },
+  "compaction": 1
+ },
+ {
+  "run": "run-pt200k",
+  "summary": "tag=pt200k steps=4 bytes=2000 pt=1000,200000 PT_AFTER=30000 CT= MODEL=deepseek-v4-flash EXTRA_ENV= exit=0 elapsed=0.605s",
+  "requests": 7,
+  "kinds": {
+   "tool#1": 1,
+   "tool#2": 2,
+   "compaction": 1,
+   "tool#3": 1,
+   "tool#4": 1,
+   "final": 1
+  },
+  "compaction": 1
+ },
+ {
+  "run": "run-pt300k",
+  "summary": "tag=pt300k steps=4 bytes=2000 pt=1000,300000 PT_AFTER=30000 CT= MODEL=deepseek-v4-flash EXTRA_ENV= exit=0 elapsed=0.554s",
+  "requests": 7,
+  "kinds": {
+   "tool#1": 1,
+   "tool#2": 2,
+   "compaction": 1,
+   "tool#3": 1,
+   "tool#4": 1,
+   "final": 1
+  },
+  "compaction": 1
+ },
+ {
+  "run": "run-pt50k",
+  "summary": "tag=pt50k steps=3 bytes=2000 pt=50000 PT_AFTER= CT= MODEL=deepseek-v4-flash EXTRA_ENV= exit=0 elapsed=0.587s",
+  "requests": 4,
+  "kinds": {
+   "tool#1": 1,
+   "tool#2": 1,
+   "tool#3": 1,
+   "final": 1
+  },
+  "compaction": 0
+ },
+ {
+  "run": "run-pt900k",
+  "summary": "tag=pt900k steps=4 bytes=2000 pt=1000,900000 PT_AFTER=30000 CT= MODEL=deepseek-v4-flash EXTRA_ENV= exit=0 elapsed=0.663s",
+  "requests": 7,
+  "kinds": {
+   "tool#1": 1,
+   "tool#2": 2,
+   "compaction": 1,
+   "tool#3": 1,
+   "tool#4": 1,
+   "final": 1
+  },
+  "compaction": 1
+ },
+ {
+  "run": "run-sfx-999999",
+  "summary": "tag=sfx-999999 steps=3 bytes=2000 pt=1000,999999 PT_AFTER=30000 CT= MODEL=deepseek-v4-flash[1m] EXTRA_ENV=X_NONE=1 exit=0 elapsed=0.432s",
+  "requests": 4,
+  "kinds": {
+   "tool#1": 1,
+   "tool#2": 1,
+   "tool#3": 1,
+   "final": 1
+  },
+  "compaction": 0
+ },
+ {
+  "run": "run-sfx-hi-1000000",
+  "summary": "tag=sfx-hi-1000000 steps=3 bytes=2000 pt=1000,1000000 PT_AFTER=30000 CT= MODEL=deepseek-v4-flash[1m] EXTRA_ENV= exit=0 elapsed=0.47s",
+  "requests": 4,
+  "kinds": {
+   "tool#1": 1,
+   "tool#2": 1,
+   "tool#3": 1,
+   "final": 1
+  },
+  "compaction": 0
+ },
+ {
+  "run": "run-sfx-hi-1050000",
+  "summary": "tag=sfx-hi-1050000 steps=3 bytes=2000 pt=1000,1050000 PT_AFTER=30000 CT= MODEL=deepseek-v4-flash[1m] EXTRA_ENV= exit=0 elapsed=0.465s",
+  "requests": 4,
+  "kinds": {
+   "tool#1": 1,
+   "tool#2": 1,
+   "tool#3": 1,
+   "final": 1
+  },
+  "compaction": 0
+ },
+ {
+  "run": "run-sfx-hi-1200000",
+  "summary": "tag=sfx-hi-1200000 steps=3 bytes=2000 pt=1000,1200000 PT_AFTER=30000 CT= MODEL=deepseek-v4-flash[1m] EXTRA_ENV= exit=0 elapsed=0.473s",
+  "requests": 4,
+  "kinds": {
+   "tool#1": 1,
+   "tool#2": 1,
+   "tool#3": 1,
+   "final": 1
+  },
+  "compaction": 0
+ },
+ {
+  "run": "run-sfx-hi-2000000",
+  "summary": "tag=sfx-hi-2000000 steps=3 bytes=2000 pt=1000,2000000 PT_AFTER=30000 CT= MODEL=deepseek-v4-flash[1m] EXTRA_ENV= exit=0 elapsed=0.559s",
+  "requests": 4,
+  "kinds": {
+   "tool#1": 1,
+   "tool#2": 1,
+   "tool#3": 1,
+   "final": 1
+  },
+  "compaction": 0
+ },
+ {
+  "run": "run-stuck300k",
+  "summary": "tag=stuck300k steps=4 bytes=2000 pt=1000,300000 PT_AFTER= CT= MODEL=deepseek-v4-flash EXTRA_ENV= exit=1 elapsed=0.633s",
+  "requests": 8,
+  "kinds": {
+   "tool#1": 1,
+   "tool#2": 4,
+   "compaction": 3
+  },
+  "compaction": 3
+ },
+ {
+  "run": "run-suffix1m-300k",
+  "summary": "tag=suffix1m-300k steps=3 bytes=2000 pt=1000,300000 PT_AFTER=30000 CT= MODEL=deepseek-v4-flash[1m] EXTRA_ENV=X_NONE=1 exit=0 elapsed=0.443s",
+  "requests": 4,
+  "kinds": {
+   "tool#1": 1,
+   "tool#2": 1,
+   "tool#3": 1,
+   "final": 1
+  },
+  "compaction": 0
+ },
+ {
+  "run": "run-win1m-300k",
+  "summary": "tag=win1m-300k steps=3 bytes=2000 pt=1000,300000 PT_AFTER=30000 CT= MODEL=deepseek-v4-flash EXTRA_ENV=CLAUDE_CODE_AUTO_COMPACT_WINDOW=1000000 exit=0 elapsed=0.514s",
+  "requests": 6,
+  "kinds": {
+   "tool#1": 1,
+   "tool#2": 2,
+   "compaction": 1,
+   "tool#3": 1,
+   "final": 1
+  },
+  "compaction": 1
+ },
+ {
+  "run": "run-win1m-900k",
+  "summary": "tag=win1m-900k steps=3 bytes=2000 pt=1000,900000 PT_AFTER=30000 CT= MODEL=deepseek-v4-flash EXTRA_ENV=CLAUDE_CODE_AUTO_COMPACT_WINDOW=1000000 exit=0 elapsed=0.53s",
+  "requests": 6,
+  "kinds": {
+   "tool#1": 1,
+   "tool#2": 2,
+   "compaction": 1,
+   "tool#3": 1,
+   "final": 1
+  },
+  "compaction": 1
+ }
+]

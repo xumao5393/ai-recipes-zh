@@ -1,0 +1,5 @@
+/tmp/dsh-spill-xf4fdE
+/tmp/dsh-subprocess-jlYOX0
+/tmp/dsh-spill-qEFRuY
+/tmp/dsh-spill-emE0r8
+/tmp/dsh-subprocess-dGOtFR

@@ -1,0 +1,40 @@
+usage: aider [-h] [--model MODEL] [--openai-api-key OPENAI_API_KEY]
+             [--openai-api-base OPENAI_API_BASE]
+             [--openai-api-type OPENAI_API_TYPE]
+             [--openai-api-version OPENAI_API_VERSION]
+             [--openai-api-deployment-id OPENAI_API_DEPLOYMENT_ID]
+             [--set-env ENV_VAR_NAME=value] [--api-key PROVIDER=KEY]
+             [--weak-model WEAK_MODEL] [--editor-model EDITOR_MODEL]
+             [--attribute-commit-message-author | --no-attribute-commit-message-author]
+             [--attribute-commit-message-committer | --no-attribute-commit-message-committer]
+             [--message COMMAND] [--message-file MESSAGE_FILE]
+             [--commit-language COMMIT_LANGUAGE] [--yes-always] [-v]
+             [--4o] [--mini] [--4-turbo] [--35turbo] [--deepseek] [--o1-mini]
+  -h, --help            show this help message and exit
+  --model MODEL         Specify the model to use for the main chat [env var:
+  --openai-api-key OPENAI_API_KEY
+  --openai-api-base OPENAI_API_BASE
+  --openai-api-type OPENAI_API_TYPE
+                        (deprecated, use --set-env OPENAI_API_TYPE=<value>)
+  --openai-api-version OPENAI_API_VERSION
+                        (deprecated, use --set-env OPENAI_API_VERSION=<value>)
+  --openai-api-deployment-id OPENAI_API_DEPLOYMENT_ID
+                        (deprecated, use --set-env
+                        (deprecated, use --set-env
+  --set-env ENV_VAR_NAME=value
+Model settings:
+                        List known models which match the (partial) MODEL name
+                        Specify a file with aider model settings for unknown
+  --alias ALIAS:MODEL   Add a model alias (can be used multiple times) [env
+  --weak-model WEAK_MODEL
+                        Specify the model to use for commit messages and chat
+  --editor-model EDITOR_MODEL
+                        Specify the model to use for editor tasks (default
+                        Specify the edit format for the editor model (default:
+                        Check if model accepts settings like
+                        Restore the previous chat history messages (default:
+                        Set the color for tool error messages (default:
+                        Set the color for tool warning messages (default:
+  --attribute-commit-message-author, --no-attribute-commit-message-author
+                        Prefix commit messages with 'aider: ' if aider
+                        AIDER_ATTRIBUTE_COMMIT_MESSAGE_AUTHOR]

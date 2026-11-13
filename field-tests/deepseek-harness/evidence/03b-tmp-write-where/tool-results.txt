@@ -1,0 +1,28 @@
+status=completed
+HOST_PID=2
+NS_MNT=mnt:[4026532337]
+TMPDIR_VAL=UNSET
+ID=uid=1000(<user>) gid=1000(<user>) groups=1000(<user>)
+DF_TMP
+Filesystem      Size  Used Avail Use% Mounted on
+tmpfs           7.9G  4.0K  7.9G   1% /tmp
+MOUNTINFO_TMP
+315 287 0:55 / /tmp rw,nosuid,nodev,relatime - tmpfs tmpfs rw,mode=755,uid=1000,gid=1000
+LS
+-rw-r--r-- 1 box box 32 Nov  9 14:56 /tmp/dsh03b-dsh03b-20261109-145405-59568077.txt
+REALPATH=/tmp/dsh03b-dsh03b-20261109-145405-59568077.txt
+SLEEP
+AFTER_SLEEP
+-rw-r--r-- 1 box box 32 Nov  9 14:56 /tmp/dsh03b-dsh03b-20261109-145405-59568077.txt
+
+
+---
+
+status=completed
+READBACK
+ls: cannot access '/tmp/dsh03b-dsh03b-20261109-145405-59568077.txt': No such file or directory
+CONTENT
+cat: /tmp/dsh03b-dsh03b-20261109-145405-59568077.txt: No such file or directory
+NS_MNT=mnt:[4026532334]
+HOST_PID=2
+

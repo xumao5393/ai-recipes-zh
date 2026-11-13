@@ -1,0 +1,26 @@
+# MASKING · 03-dsh-tool-loop
+
+时区：America/New_York（EST）。规则：Kumo 2026-11-09 — 别家产品的 system prompt / 工具定义原文一律不进 repo。
+
+## 做了什么
+- 原件移到：`deepseek-harness/internal-archive/03-dsh-tool-loop/...`（**专题根下、repo 外**；本地内部归档，**不随仓库发布 / 不同步 GitHub**）。
+- repo 内 `req-*.json` 改为打码版：
+  - 顶层 `system` 字符串或 system 块的 `text` → `{length, sha256, first_line, _masked}`
+  - `messages` 里 `role==system` 的 `content` 同上
+  - 每个 `tools[]` 元素 → 对原 tool 对象紧凑 JSON 做 `{length, sha256, first_line, name, _masked}`
+  - 另写 `_tools_meta`: `tools_n`, `tool_names`, `tools_json_compact_chars`（紧凑长度按**打码前原件**计算）
+  - 本机路径 `/tmp/cchome/...`、`/tmp/dshhome...`、`/tmp/ochome...`、`/tmp/aiderhome...` → `<REDACTED_PATH>`
+- `length` / `sha256` 均针对**打码前**原文（UTF-8），以便 #10 等统计仍可核对。
+
+## dsh 工具循环抓包。同上。F-curl-local/req-03 仍是 curl（见 NOTE.md），亦按结构打码。
+
+## 开源对应源码链接
+（查到再写；查不到留空）
+
+同 02。
+
+## 第8轮补充
+- 继续打码嵌套字段：dsh_session_log.events（system/message、request/header.tools）、Current runtime/DSH file policy、Claude Environment / system-reminder、Aider 内置 user/assistant 对话。
+- 自检：evidence/scan_long_strings.py + REDACTION-RG-CHECK-r8.txt
+
+- 2026-11-09 15:20 EST 追加（第9轮）：tools[] 每项摘要删掉 first_line（它含工具描述原文和 input_schema 开头），只留 {name, length, sha256}；system 的 first_line 保留。脚本 evidence/strip_tool_first_line.py。

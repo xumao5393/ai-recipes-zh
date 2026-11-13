@@ -1,0 +1,208 @@
+{
+  "meta": {
+    "source": "internal-archive/08-cline-cli/req-01.raw.json",
+    "script_note": "same口径 as evidence/10-compare-draft/recalc_compare.py: json.dumps(..., ensure_ascii=False, separators=(\",\",\":\"))",
+    "tools_n": 25,
+    "tool_names": [
+      "read_files",
+      "search_codebase",
+      "run_commands",
+      "fetch_web_content",
+      "editor",
+      "ask_question",
+      "spawn_agent",
+      "team_spawn_teammate",
+      "team_shutdown_teammate",
+      "team_status",
+      "team_task",
+      "team_run_task",
+      "team_cancel_run",
+      "team_list_runs",
+      "team_await_runs",
+      "team_send_message",
+      "team_broadcast",
+      "team_read_mailbox",
+      "team_mission_log",
+      "team_cleanup",
+      "team_create_outcome",
+      "team_attach_outcome_fragment",
+      "team_review_outcome_fragment",
+      "team_finalize_outcome",
+      "team_list_outcomes"
+    ],
+    "non_team_tools_n": 7,
+    "non_team_tools": [
+      "read_files",
+      "search_codebase",
+      "run_commands",
+      "fetch_web_content",
+      "editor",
+      "ask_question",
+      "spawn_agent"
+    ],
+    "team_tools_n": 18,
+    "tools_json_compact_chars": 17323,
+    "tools_json_spaced_chars": 18174,
+    "spaced_note": "json.dumps default (indent=None, separators=(\", \", \": \")) = former tools_summary.length 18174",
+    "system_chars": 4257,
+    "body_len_http": 21820
+  },
+  "system_digest": {
+    "length": 4257,
+    "sha256": "2318e79e540429bb61554e12e32aff51910c1aa8dfae8426bcfa5512bf130a12",
+    "first_line": "You are Cline, an AI coding agent. Your primary goal is to assist users with var",
+    "_masked": true
+  },
+  "tools": [
+    {
+      "name": "read_files",
+      "length": 2192,
+      "sha256": "bcf7331f6fb552030b657ee9f55ee17138bb36bd430d1804d4c72fb37d3c6394",
+      "_masked": true
+    },
+    {
+      "name": "search_codebase",
+      "length": 726,
+      "sha256": "73391edc3c20e27f2dc8195b407739a51eae1c527bd3348648822441d2bcba0c",
+      "_masked": true
+    },
+    {
+      "name": "run_commands",
+      "length": 1440,
+      "sha256": "916e974e87f24a9c160440af420677c5829cdc228afea2a19536398a42cbf571",
+      "_masked": true
+    },
+    {
+      "name": "fetch_web_content",
+      "length": 853,
+      "sha256": "599db40153fdcdf5e2896a67b0cbaa237edf3d1c95f68f9e1305735060f2870c",
+      "_masked": true
+    },
+    {
+      "name": "editor",
+      "length": 2116,
+      "sha256": "b0747e6fb3377c47287927e4244d932ca2dc84208ed85e0f2c68c6c6ab691bec",
+      "_masked": true
+    },
+    {
+      "name": "ask_question",
+      "length": 940,
+      "sha256": "54c5d987a39aade8b13356f31a1cb129789cd942335b39f1f61672f16e9a4f12",
+      "_masked": true
+    },
+    {
+      "name": "spawn_agent",
+      "length": 499,
+      "sha256": "8083b8b3e04c90ca360084539c1c4750b9c0e39fbc15e2bddfefcd170d80e49b",
+      "_masked": true
+    },
+    {
+      "name": "team_spawn_teammate",
+      "length": 423,
+      "sha256": "871946d9c62a16a9629666e8f5158c88c03c277261d402bfedb0586e4de770c8",
+      "_masked": true
+    },
+    {
+      "name": "team_shutdown_teammate",
+      "length": 370,
+      "sha256": "8f000f2f45c10482b0aecdae2d08db2ffb5047e10c4d13d06a06e79f42384c7d",
+      "_masked": true
+    },
+    {
+      "name": "team_status",
+      "length": 225,
+      "sha256": "1cfb86532d8319d183cdd23d3f3874cddbe3b4bedb5d898de2a20b7c3aebe1c9",
+      "_masked": true
+    },
+    {
+      "name": "team_task",
+      "length": 1234,
+      "sha256": "6a0894e6adffad01c745831db4052d8c2790e9e71f4672a0a6d9e512911d3601",
+      "_masked": true
+    },
+    {
+      "name": "team_run_task",
+      "length": 886,
+      "sha256": "542aad9cefa77bc9923241d7a462762b83d29e4a309092a9d5d9d66ad761dee6",
+      "_masked": true
+    },
+    {
+      "name": "team_cancel_run",
+      "length": 349,
+      "sha256": "c7e930e10ad707f8585915f95703c4cb2af11fa8aab3dbf97612bd458020b316",
+      "_masked": true
+    },
+    {
+      "name": "team_list_runs",
+      "length": 657,
+      "sha256": "185eb517a956403e04be1d4502d00aa195489224f1770cf293847dcda56b5fb7",
+      "_masked": true
+    },
+    {
+      "name": "team_await_runs",
+      "length": 437,
+      "sha256": "c9cbde03123a5d2ea2872b7e54ef4c5ff3530fa792bb7ca1e72d615b784248f4",
+      "_masked": true
+    },
+    {
+      "name": "team_send_message",
+      "length": 542,
+      "sha256": "bd7614f8f0575956f737cec01c94ca1dbcbaf62292defc132a550df2fd0d7571",
+      "_masked": true
+    },
+    {
+      "name": "team_broadcast",
+      "length": 439,
+      "sha256": "bf5b41c1402c79aed617f4dc2166c81ae2079585274b657076eb169dcb116a76",
+      "_masked": true
+    },
+    {
+      "name": "team_read_mailbox",
+      "length": 282,
+      "sha256": "298d2e75012f899f8e3caf127fbd314e50c44b73d0a1526dc31ce07aa133309c",
+      "_masked": true
+    },
+    {
+      "name": "team_mission_log",
+      "length": 664,
+      "sha256": "723146fb5ee83ecce300857f357fec4c9c35b44aeb82b246665635578e732dc7",
+      "_masked": true
+    },
+    {
+      "name": "team_cleanup",
+      "length": 211,
+      "sha256": "c7e889f9fc7068181dbd0dbf448479d77aebe6e46f15ec6fda6d771a88ccf4ed",
+      "_masked": true
+    },
+    {
+      "name": "team_create_outcome",
+      "length": 533,
+      "sha256": "8011eda5679636d3e11825a477f0726ae663d333a54b9a19e57502bd8bf3232f",
+      "_masked": true
+    },
+    {
+      "name": "team_attach_outcome_fragment",
+      "length": 501,
+      "sha256": "7dfc4e75a1eec377326ff01c905eddfd46676ab3bba2aae3fd7892eb0d750138",
+      "_masked": true
+    },
+    {
+      "name": "team_review_outcome_fragment",
+      "length": 348,
+      "sha256": "cad5e5592634a98d6ba6c0056d2bb983bc0868198cb80b218b367a622c52af34",
+      "_masked": true
+    },
+    {
+      "name": "team_finalize_outcome",
+      "length": 258,
+      "sha256": "91cf8ab006d5803bb966493ea491245344433e2e09a115bac8d950c35881a816",
+      "_masked": true
+    },
+    {
+      "name": "team_list_outcomes",
+      "length": 172,
+      "sha256": "f43a9128e138f8dd8af5b00ec2a6cb775cce8798b1300c8a750dee072904757c",
+      "_masked": true
+    }
+  ]
+}

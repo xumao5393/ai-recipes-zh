@@ -1,0 +1,18 @@
+# Package citations (path + line numbers only; short excerpts for verification)
+# file: sandbox/node_modules/@deepseek-ai/dsh-sandbox-local/lib/index.js
+L22: function bwrapProfileArgs(policy) {
+L35: 		args.push("--tmpfs", "/tmp");
+L36: 		for (const root of workspaceWritableRoots(policy)) args.push("--bind", root, root);
+L45: function landlockProfileArgs(policy) {
+L47: 	if (policy.mode === "workspace-write") readWrite.push("/tmp", ...workspaceWritableRoots(policy));
+L176: 	linux: ["bwrap", "landlock"],
+L340: 			case "bwrap": return ["bwrap", ...bwrapProfileArgs(policy)];
+
+# file: sandbox/node_modules/@deepseek-ai/dsh-bash-sandbox/README.md
+L39: | `workspace-write` | Writes only under the policy's workspace root plus `/tmp` (ephemeral under bwrap, the host `/tmp` under Landlock, `/private/tmp` plus the per-user temp dir under Seatbelt) |
+L40: | `danger-full-access` | No confinement; the provider is never consulted, and results carry `sandbox: { mode, denied: false }` |
+L78: The executor is the sandboxing Service Provider for the `ctx.shell` seam: it inherits `dsh-bash-local`'s process mechanics and awaits confinement of each command's exact `['bash', '-c', command]` argv through `ctx.sandbox.confine()`, spawni
+
+# file: sandbox/node_modules/@deepseek-ai/dsh-sandbox-local/README.md
+L73: Selection is by platform first, probes second: each platform has a runner chain (`linux`: `bwrap` then Landlock; `darwin`: Seatbelt; `win32`: the ACL restricted-token runner). A sole candidate is selected without a probe; competing candidates are functionally probed once in chain order, and the firs
+L77: The bwrap profile combines a read-only host root, a fresh `/dev`, and `/proc` from a private PID namespace — commands manage their descendants but cannot see host processes, so procfs magic links cannot bypass the mounts; `workspace-write` adds an ephemeral `/tmp` and writable binds for the workspac

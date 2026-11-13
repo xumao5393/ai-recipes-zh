@@ -1,0 +1,81 @@
+{
+ "method": "POST",
+ "path": "/v1/chat/completions",
+ "headers": {
+  "Host": "127.0.0.1:19017",
+  "Accept": "*/*",
+  "Accept-Encoding": "gzip, deflate",
+  "Connection": "keep-alive",
+  "User-Agent": "litellm/1.81.10",
+  "Authorization": "<redacted>",
+  "Content-Type": "application/json",
+  "Content-Length": "11046"
+ },
+ "body_len": 11046,
+ "body": {
+  "model": "deepseek-chat",
+  "messages": [
+   {
+    "role": "system",
+    "content": {
+     "length": 6605,
+     "sha256": "f83e2485b2133552904062f7471c948e899e58e1851b68da71c4562a6379a5bd",
+     "first_line": "Act as an expert software developer.",
+     "_masked": true
+    }
+   },
+   {
+    "role": "user",
+    "content": {
+     "length": 219,
+     "sha256": "3194e81911331a58457c3446b14d4bdd6d5fd5b0776fc796d3e3ef26e2ec5c4a",
+     "first_line": "Here are summaries of some files present in my git repository.",
+     "_masked": true
+    }
+   },
+   {
+    "role": "assistant",
+    "content": {
+     "length": 58,
+     "sha256": "233e4fae435381cc493d34029b8ce74de433cb2d79e0b5e0b65e5c5f0020703a",
+     "first_line": "Ok, I won't try and edit those files without asking first.",
+     "_masked": true
+    }
+   },
+   {
+    "role": "user",
+    "content": {
+     "length": 404,
+     "sha256": "1a41817194006f7a156b7f0d170d4cbb32bc4a0ecd4c4e9c727662a1f359655a",
+     "first_line": "Don't try and edit any existing code without asking me to add the files to the chat!",
+     "_masked": true
+    }
+   },
+   {
+    "role": "assistant",
+    "content": {
+     "length": 113,
+     "sha256": "ae46fa66b8e68fde42732ca654ddbba495597fff77d8b9a53d09efc36e921dad",
+     "first_line": "Ok, based on your requests I will suggest which files need to be edited and then stop and wait for your approval.",
+     "_masked": true
+    }
+   },
+   {
+    "role": "user",
+    "content": "say hi"
+   },
+   {
+    "role": "system",
+    "content": {
+     "length": 3039,
+     "sha256": "87b1e2cb19de2079a882a5371d5b72078e41b082258b536596cc1ca1cc2255de",
+     "first_line": "# *SEARCH/REPLACE block* Rules:",
+     "_masked": true
+    }
+   }
+  ],
+  "temperature": 0,
+  "stream": true,
+  "max_tokens": 8192
+ }
+}

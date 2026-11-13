@@ -1,0 +1,11 @@
+{"ts":"2026-11-09T20:07:04.885Z","type":"hook_event","hookEventName":"agent_start","agentId":"agent_3d3c6f41-7ad4-4a55-b3f2-b5f09b23113f","taskId":"conv_1794254824879_ep9khcr","parentAgentId":null}
+{"ts":"2026-11-09T20:07:04.886Z","type":"agent_event","event":{"type":"iteration_start","iteration":1}}
+{"ts":"2026-11-09T20:07:05.319Z","type":"hook_event","hookEventName":"agent_error","agentId":"agent_3d3c6f41-7ad4-4a55-b3f2-b5f09b23113f","taskId":"conv_1794254824879_ep9khcr","parentAgentId":null}
+{"ts":"2026-11-09T20:07:05.320Z","type":"agent_event","event":{"type":"error","error":{"name":"Error","message":"Authentication Fails (governor)","stack":"Error: Authentication Fails (governor)\n    at execute (/$bunfs/root/chunk-jgv0a50x.js:280:7022)\n    at processTicksAndRejections (native:7:39)"},"errorClass":"auth","recoverable":false,"iteration":1}}
+{"ts":"2026-11-09T20:07:05.442Z","type":"run_result","finishReason":"error","iterations":1,"usage":{"inputTokens":0,"outputTokens":0,"cacheReadTokens":0,"cacheWriteTokens":0,"totalCost":0},"aggregateUsage":{"inputTokens":0,"outputTokens":0,"cacheReadTokens":0,"cacheWriteTokens":0,"totalCost":0},"durationMs":440,"text":"Authentication Fails (governor)","model":{"id":"deepseek-v4-flash","provider":"deepseek","info":{"id":"deepseek-v4-flash","name":"deepseek-v4-flash","contextWindow":128000,"maxInputTokens":128000,"capabilities":["streaming","tools","images"]}}}
+{"ts":"2026-11-09T20:07:05.443Z","type":"error","message":"Authentication Fails (governor)"}
+
+real	0m1.748s
+user	0m1.970s
+sys	0m0.291s
+exit=1

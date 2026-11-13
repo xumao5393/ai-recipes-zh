@@ -1,0 +1,2 @@
+BYTES=20000 no-compact max=160300 compact min=160301
+BYTES=200 no-compact max=166900 compact min=166901

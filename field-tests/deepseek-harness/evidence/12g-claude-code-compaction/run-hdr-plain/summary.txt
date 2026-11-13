@@ -1,0 +1,1 @@
+tag=hdr-plain steps=2 bytes=2000 pt=1000,300000 PT_AFTER=30000 CT= MODEL=deepseek-v4-flash EXTRA_ENV= exit=0 elapsed=0.477s

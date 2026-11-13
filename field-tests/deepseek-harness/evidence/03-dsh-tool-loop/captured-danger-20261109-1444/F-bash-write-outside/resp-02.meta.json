@@ -1,0 +1,4 @@
+{
+ "kind": "title",
+ "cmd": "echo outside-bash > /tmp/dsh-bash-outside.txt; ls -la /tmp/dsh-bash-outside.txt"
+}
