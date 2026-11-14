@@ -1,0 +1,2 @@
+年底被裁拿N+1，HR明细先别急着签。我编了一份常见“三招”明细：按基本工资算基数、12年9个月算成12.5、免税线说成2.4万并入工资，实发少了10.5万。丢给免费AI审：元宝三处全挑出、税只该交600也算对；Gemini快速版找到克扣，却把税估成1–2万。原始回答全公开👇
+https://github.com/xumao5393/ai-recipes-zh/blob/main/recipes/008-layoff-n-plus-1-ai-check.md

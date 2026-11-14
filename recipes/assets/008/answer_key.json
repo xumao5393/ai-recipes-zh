@@ -1,0 +1,54 @@
+{
+ "cap_monthly_base": 24000,
+ "tax_free_threshold": 288000,
+ "小周": {
+  "N_months": 3.5,
+  "N_base": 8000,
+  "N": 28000.0,
+  "plus1": 8000,
+  "total": 36000.0,
+  "taxable_excess": 0,
+  "tax": 0.0,
+  "net": 36000.0
+ },
+ "小吴": {
+  "N_months": 13,
+  "N_base": 22000,
+  "N": 286000,
+  "plus1": 22000,
+  "total": 308000,
+  "taxable_excess": 20000,
+  "tax": 600.0,
+  "net": 307400.0
+ },
+ "小郑": {
+  "N_months": 12,
+  "N_base": 24000,
+  "N": 288000,
+  "plus1": 50000,
+  "total": 338000,
+  "taxable_excess": 50000,
+  "tax": 2480.0,
+  "net": 335520.0
+ },
+ "merge_with_salary": "不合并：超过免税额的部分单独适用综合所得税率表计税",
+ "hr_claim_xiaozheng": "HR 对：月工资超当地月平均工资3倍，按24000元/月计且最多12年，法定N=288000（公司自愿多给不违法）",
+ "round2": {
+  "hr": {
+   "N": 225000.0,
+   "plus1": 18000,
+   "total": 243000,
+   "tax": 40580,
+   "net": 202420
+  },
+  "legal_N_months": 13,
+  "legal_N": 286000,
+  "legal_plus1": 22000,
+  "legal_total": 308000,
+  "legal_tax": 600.0,
+  "legal_net": 307400.0,
+  "pre_tax_shortfall": 65000,
+  "over_withheld_tax": 39980.0,
+  "net_shortfall": 104980.0
+ }
+}
