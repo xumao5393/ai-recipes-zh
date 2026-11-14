@@ -1,0 +1,37 @@
+{
+ "growth_30y": 1.56308,
+ "小王": {
+  "taxable_income": 6000,
+  "marginal_rate": 0.03,
+  "tax_without": 180.0,
+  "tax_with_12000": 0.0,
+  "tax_saved_2026": 180.0,
+  "pension_value_30y": 18756.96,
+  "withdrawal_tax_30y": 562.71,
+  "net_gain_vs_not_30y": -281.36,
+  "recommended_contribution": 0
+ },
+ "小李": {
+  "taxable_income": 150000,
+  "marginal_rate": 0.2,
+  "tax_without": 13080.0,
+  "tax_with_12000": 11280.0,
+  "tax_saved_2026": 1800.0,
+  "pension_value_30y": 18756.96,
+  "withdrawal_tax_30y": 562.71,
+  "net_gain_vs_not_30y": 2250.83,
+  "recommended_contribution": 12000
+ },
+ "小张": {
+  "taxable_income": 384000,
+  "marginal_rate": 0.25,
+  "tax_without": 64080.0,
+  "tax_with_12000": 61080.0,
+  "tax_saved_2026": 3000.0,
+  "pension_value_30y": 18756.96,
+  "withdrawal_tax_30y": 562.71,
+  "net_gain_vs_not_30y": 4126.53,
+  "recommended_contribution": 12000
+ },
+ "dec28": "12 月 31 日前缴费计入 2026 年度扣除；未在预扣环节扣的，在 2027 年 3 月 1 日—6 月 30 日综合所得汇算清缴时申报退税"
+}

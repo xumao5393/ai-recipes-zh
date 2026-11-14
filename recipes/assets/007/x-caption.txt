@@ -1,0 +1,2 @@
+年底都在说“存1.2万个人养老金能退税”，但不是人人划算：月薪7000的人存满只省180，退休领取要交563，30年后反亏281；月薪2.3万存满会从20%档掉回10%，只省1800不是2400。我让5个免费AI算同一笔账：GPT-6 Luna和元宝全对，3个算错这档，Mistral还劝低收入者存满。原文和原始回答👇
+https://github.com/xumao5393/ai-recipes-zh/blob/main/recipes/007-personal-pension-12000-ai-check.md
